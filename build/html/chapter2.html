@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Organization of the geneXplain platform &mdash; genexplain-platform 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="User Guide" href="chapter_test.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> genexplain-platform
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter_test.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Organization of the geneXplain platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-user-interface">The User Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#work-space">Work Space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tree-area">Tree Area</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#databases">Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data">Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#analyses">Analyses</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#the-info-box">The Info Box</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#info-tab">Info tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search">Search</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#the-operations-field">The Operations Field</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-organize-the-user-work-space">How to organize the user work space</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changing-user-password-and-personal-data">Changing user password and personal data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-project-data-folder-creating-new-folders">User Project, Data folder, creating new folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-check-information-about-the-available-work-space">How to check information about the available work space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-toolbar">User toolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-properties-or-how-to-fix-the-releases-of-the-databases-to-be">Project properties, or how to fix the releases of the databases to be</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-handle-tables-tracks-diagrams-basics">How to handle tables, tracks, diagrams: basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-handling">File handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#file-selection">File selection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-handling-in-the-tree-area">File handling in the Tree Area</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-operations-with-tracks">Basic operations with tracks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#diagram-handling">Diagram handling</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">genexplain-platform</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Organization of the geneXplain platform</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chapter2.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="organization-of-the-genexplain-platform">
+<h1>Organization of the geneXplain platform<a class="headerlink" href="#organization-of-the-genexplain-platform" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-user-interface">
+<h2>The User Interface<a class="headerlink" href="#the-user-interface" title="Permalink to this headline">¶</a></h2>
+<p>When you open the geneXplain platform for the first time, a window opens that
+contains the following areas:</p>
+<p><strong>A</strong> The Work Space, which is the main part of the window.</p>
+<blockquote>
+<div><strong>B</strong> The Tree Area (to the left of the Work Space), where you find the
+collection of Databases, the uploaded Data files and the available Analyses
+methods under the corresponding tabs, organized in a hierarchical tree
+structure.</div></blockquote>
+<p><strong>C</strong> The Info Box (in the left lower part), where you can select the data
+resource to search in, or where you will get Information about the data file or
+analysis method that you select with a single click in the Tree Area.</p>
+<p><strong>D</strong> The Operations Field (right lower part), providing a number of options
+under the different tabs in a context-dependent manner.</p>
+<p><strong>E</strong> The general Control Panel, on top of the different areas, showing a
+context-dependent set of icons for the available operations.</p>
+<p><img alt="Netti_image2" src="_images/UI_2.png" /></p>
+<div class="section" id="work-space">
+<h3>Work Space<a class="headerlink" href="#work-space" title="Permalink to this headline">¶</a></h3>
+<p>When you open the platform, the Work Space will show you all those research
+areas that are supported by a number of bioinformatic workflows each. Clicking
+on one of these tiled buttons will open a detailed listing of functions and
+pre-composed workflows, which you can launch by directly activating the given
+hyperlinks.</p>
+<p>The listings of each Area introduce each Chapter of this User Guide that
+explains the functionality provided:</p>
+<p>| Area              | Chapter | Area                             | Chapter |
+|——————-|———|———————————-|———|
+| RNA-seq           | 4       | Pathways                         | 12      |
+| Proteomics        | 5       | NGS                              | 13      |
+| Epigenomics       | 6       | Genomic variants                 | 14      |
+| ChIP-seq          | 7       | Metabolism                       | 15      |
+| Sequence analysis | 8       | Popular functions                | 16      |
+| miRNA             | 9       | Gene or protein list             | 17      |
+| Microarrays       | 10      | Complete list of workflows       | 18      |
+| Drug targets      | 11      | Working with different databases | 19      |</p>
+<p>The first workflow in nearly any Area is Load data, which is separately
+described in <strong>Chapter-3</strong>, before the individual Areas are being depicted.</p>
+<p>Also in the Work Space, all major input requirements will have to be done, the
+progress of a workflow and the results output will appear here as well.</p>
+</div>
+<div class="section" id="tree-area">
+<h3>Tree Area<a class="headerlink" href="#tree-area" title="Permalink to this headline">¶</a></h3>
+<p>In the Tree Area (<strong>B</strong> in the figure of Section 2.1), you find three tabs:
+<strong>Databases</strong>, <strong>Data</strong>, and <strong>Analyses</strong>. Under each of these tabs, you find a
+tree-structured listing of contents: the available databases, the data files to
+work with, and the analysis methods you can apply. You can open any subdirectory
+by a single mouse click on the respective item and using the button</p>
+<p><img alt="image/image_001" src="image/image_001" /></p>
+<p>, or by a double-click on the name of the folder to be opened.</p>
+<div class="section" id="databases">
+<h4>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h4>
+<p>Under this tab, you find all databases that are at your disposal: a number of
+public databases (yellow symbols) as well as commercial ones that you have a
+valid license for (green symbols). Write access may be additionally indicated by
+a black “W” within the symbol, which may be red in case that write access,
+although principally possible for this database, has not been activated in your
+case.</p>
+<p>Select one of the databases in the Tree Area by a single click with the left
+mouse button; double click will open the subdirectory. For instance, when you
+wish to go to GeneWays, you have to click once on the little white triangle next
+to the term GeneWays, or double-click on the term itself to open the directory
+underneath; either operation, or already a single click onto the name of the
+database, suffice to indicate this data resource in the Info Box, along with a
+short description.</p>
+<p>Presently, by default, you should see the following listing of available
+databases:</p>
+<p><img alt="media/f8076deca758ee37388bfac039487e40.png" src="media/f8076deca758ee37388bfac039487e40.png" /></p>
+<p>How you can work with the different databases will be explained in
+<strong>Chapter19</strong>.</p>
+</div>
+<div class="section" id="data">
+<h4>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h4>
+<p>On the tab Data, you will find your own datasets as well as predefined ones in
+the directories <strong>Examples</strong>, <strong>Projects</strong>, and <strong>Public</strong>.</p>
+<p>In the directory <strong>Examples</strong>, we provide you with a number of sample data you
+may use for getting familiar with the system. Presently, these are some
+optimization examples as well as one application example on expression data of
+Psoriasis patient samples.</p>
+<p>The optimization example refers to the CD95L pathway (<em>Reactome entry
+REACT_900</em>), shown as diagram <em>CD95 signaling pathway</em> under Diagrams. Under
+Plots, you find an example for a successful parameter optimization
+(<em>C3C8_plot</em>), with the dots giving the experimental values for four different
+molecules, and the straight lines showing the simulation results.</p>
+<p>Under the heading <strong>Projects</strong>, you should initially find only one directory
+with your username, with the two subfolders <strong>Data</strong> and <strong>Journal</strong>. <strong>Data</strong>
+will be the place where all your own data will be deposited. Here, you can
+define own subdirectories by opening a context menu with the right mouse button
+and selecting the option New folder:</p>
+<p>Each option in this menu can also be selected by the corresponding icon on top
+of the tabs.</p>
+<p>The sub-directory <strong>Journal</strong> stores a history of your activities. Opening it in
+the Work Space shows you a list of all methods that you have previously
+launched, including time stamp.</p>
+<p>The root directory <strong>Public</strong> is presently not used yet; it is planned to
+provide a platform for sharing own results with a wider community at a later
+stage.</p>
+</div>
+<div class="section" id="analyses">
+<h4>Analyses<a class="headerlink" href="#analyses" title="Permalink to this headline">¶</a></h4>
+<p>On this tab, you find all methods you may apply using the geneXplain platform,
+including the pre-defined workflows:</p>
+<p>In the directory <strong>JavaScript</strong>, a collection of scripts have been gathered that
+all can be called by your own scripts. The geneXplain platform provides you with
+the possibility to create your own scripts on the Script tab in the Operations
+Field. For instance, enter there the command “help (boxPlot);” (boxPlot is the
+first JavaScript in the subdirectory <strong>Functions</strong>) and press Execute (or just
+Enter): Some help text about boxPlot will be printed to the Work Space:</p>
+<p>Under <strong>Functions</strong>, a number of standard JavaScript functions are listed,
+whereas in the subdirectory <strong>Host object</strong>, a collection of scripts have been
+put together that were specifically developed for the gXp platform.</p>
+<p>The directory <strong>Methods</strong> contains all individual tools, or Bricks, that perform
+specific tasks in one of the listed areas. Each method can be launched either by
+double-clicking on the respective item, which will open the corresponding input
+mask in the Work Space, or through the context menu that you can open with a
+right-button mouse click on the method of interest.</p>
+<p>In the directory <strong>Workflows</strong>, you find basically the same functional groups of
+pre-defined workflows that are also listed on the Start page of the platform
+(Work Space). Please note that the first two items on the Start page are
+important preparatory tasks, but not workflows according to the definition of
+the geneXplain platform. Please, refer to the following Chapters for operating
+the pre-defined workflows and to <strong>Chapter22</strong> for creating your own
+workflows.</p>
+</div>
+</div>
+<div class="section" id="the-info-box">
+<h3>The Info Box<a class="headerlink" href="#the-info-box" title="Permalink to this headline">¶</a></h3>
+<p>The Info Box shows two tabs, <strong>Info</strong> and <strong>Search</strong>.</p>
+<div class="section" id="info-tab">
+<h4>Info tab<a class="headerlink" href="#info-tab" title="Permalink to this headline">¶</a></h4>
+<p>Under the Info tab, you will find short descriptions about the database, data
+file or analysis method that you have clicked in the Tree Area. In many cases,
+you will just see the name of the directory or file as <strong>ID</strong>, or the complete
+path displayed in the field <strong>Complete name</strong>, and the number of subdirectories
+and files right under the activated node as <strong>Size</strong>.</p>
+<p>The information shown on the Info tab can be viewed in a separate window by
+clicking the button</p>
+<p><img alt="media/23aa661e8a1703b9be7a7b23c58495ec.emf" src="media/23aa661e8a1703b9be7a7b23c58495ec.emf" /></p>
+<p>.</p>
+<p>In case the activated file is a table (icon</p>
+<p><img alt="media/d373ccf59d81fcd62088646e06661e33.emf" src="media/d373ccf59d81fcd62088646e06661e33.emf" /></p>
+<p>or derived images; see 25.2.3), the number of rows in the table will be
+indicated as Size. Optionally, a <strong>Description</strong> is shown as well, depending on
+whether it has been entered when the file was generated. By clicking on the icon</p>
+<p><img alt="media/ae8f91dec92cdd11babcd95a4f48ecb0.emf" src="media/ae8f91dec92cdd11babcd95a4f48ecb0.emf" /></p>
+<p>, you may edit some of the information in a newly opened window. Depending on
+the file type, the edit window may look like this:</p>
+<p>Gray fields cannot be edited, contents of fields with white background can be
+changed manually, additional information can be entered in the pink fields which
+will then appear on the Info tab, if the changes made are saved afterwards with
+the [Save] button of the Edit window.</p>
+<p>Depending on the type of directory or file that you have activated in the Tree
+Area, different types of information can be selected for the display on the Info
+tab. This can be done by the selection box right to the tabs in the Info Box,
+initially always showing “Default”:</p>
+<p><img alt="media/7b819f03991b4590ebe48669f432b4d5.emf" src="media/7b819f03991b4590ebe48669f432b4d5.emf" /></p>
+<p>Please, feel encouraged to find out the effects of the different views offered
+here.</p>
+<p>When you have a network diagram opened in the Work Space (<strong>A</strong> in the figure of
+chapter 2) and you select a molecule or reaction with one click, you find
+information about the selected element in the Info box.</p>
+</div>
+<div class="section" id="search">
+<h4>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h4>
+<p>As long as you are under the tabs Data or Analyses in the Tree Area, you see
+here only the message “Select database to search in …, maybe along with fields
+and data from an earlier search.</p>
+<p><img alt="media/6e8f79179d62cc58f0fe7fd2c7a1e3b1.png" src="media/6e8f79179d62cc58f0fe7fd2c7a1e3b1.png" /></p>
+<p>This field gets activated as soon as you go to the tab Databases in the Tree
+Area, and then click on one of the databases listed there. For instance, when
+you wish to go to GeneWays, you have to click once on the little white triangle
+next to the term GeneWays, or double-click on the term itself to open the
+directory underneath; either operation, or already a single click onto the name
+of the database, suffices to indicate this data resource in the Info Box:</p>
+<p><img alt="media/5ba9394685b6c3af7cac56dab9ca5652.png" src="media/5ba9394685b6c3af7cac56dab9ca5652.png" /></p>
+<p>You can insert your search term (e.g., a gene symbol) into the field underneath.
+Clicking on the icon</p>
+<p><img alt="media/128ee81ad2100c1fcef053ce5f783d49.emf" src="media/128ee81ad2100c1fcef053ce5f783d49.emf" /></p>
+<p>launches the search. The search routine scans for exact matches, but use of
+wildcards is possible. Thus, searching for elk* returns results for elk1,
+elk2p1, elk3, and elk4.</p>
+<p>The results will be shown in the Operations Field, under the tab Search result.
+For instance, when searching in GeneWays for JAG1, the following result table
+will be displayed:</p>
+<p><img alt="media/cbf6dfcdd516d010e3db5502af3a3021.png" src="media/cbf6dfcdd516d010e3db5502af3a3021.png" /></p>
+<p>The search term is highlighted in bold.</p>
+<p>In some cases, the search results can be narrowed down by further specifying the
+search space in the Info Box.</p>
+<p>More about how to operate the individual databases will be explained in
+<strong>Chapter19</strong>.</p>
+</div>
+</div>
+<div class="section" id="the-operations-field">
+<h3>The Operations Field<a class="headerlink" href="#the-operations-field" title="Permalink to this headline">¶</a></h3>
+<p>In the <strong>Operations Field</strong> (<strong>D</strong> in the figure of the Section introduction
+2.1) a number of essential functions to operate the geneXplain platform are
+provided on a number of tabs. How many and which tabs are shown depends very
+much on the context.</p>
+<p>Please note that not all tabs are always visible due to space constraints. In
+these cases, double arrowheads left and right of the tabs indicate that there
+are additional ones, reachable by clicking on these double arrowheads.</p>
+<p><img alt="media/81112f0c55e994b03948409ddbbd702b.emf" src="media/81112f0c55e994b03948409ddbbd702b.emf" /></p>
+<p>The function of the individual tabs will be explained in more detail in those
+sections where their effect is part of a certain operation. In general, the icon</p>
+<p><img alt="media/fc66a907dd4b019161a894cdb645178e.emf" src="media/fc66a907dd4b019161a894cdb645178e.emf" /></p>
+<p>initiates the corresponding activity within the Operations Field, whereas</p>
+<p><img alt="media/3e53735d232abf5ba7b39eb6bcde6a8f.emf" src="media/3e53735d232abf5ba7b39eb6bcde6a8f.emf" /></p>
+<p>applies to the results generated in the Operations Field of the Work Space.</p>
+<p>The full range of functions that you can make use of in the Operations Field is
+explained in greater detail in Chapter 21.</p>
+</div>
+</div>
+<div class="section" id="how-to-organize-the-user-work-space">
+<h2>How to organize the user work space<a class="headerlink" href="#how-to-organize-the-user-work-space" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="changing-user-password-and-personal-data">
+<h3>Changing user password and personal data<a class="headerlink" href="#changing-user-password-and-personal-data" title="Permalink to this headline">¶</a></h3>
+<p>Your first password for the geneXplain platform is automatically generated and
+sent to you by e-mail. Once you enter the platform you can change your password
+and also have an option to edit your personal information.</p>
+<p>To change password and edit the personal data, select the <em>Account info</em> button
+(</p>
+<p><img alt="media/ef77cb8ce8ceebe415e55d7f594de8d2.gif" src="media/ef77cb8ce8ceebe415e55d7f594de8d2.gif" />C:UserssktandonDownloadsiconsaccount_info.gif</p>
+<p>) on the top menu control panel:</p>
+<p><img alt="media/3f85cf9453f512072b96f011c360d674.png" src="media/3f85cf9453f512072b96f011c360d674.png" /></p>
+<p>Your account information will be displayed in the work space as shown below:</p>
+<p><img alt="media/8e734d02757c73b0241ebf2aef2ff7b2.png" src="media/8e734d02757c73b0241ebf2aef2ff7b2.png" /></p>
+<p>The option to change the password is highlighted by the red oval. Once you press
+[Change], you get an option to enter the new password:</p>
+<p><img alt="media/54cc7c0ac88934361077e173285c15a0.png" src="media/54cc7c0ac88934361077e173285c15a0.png" /></p>
+<p>To change the account details, press the button [Edit account info] in the form
+above, highlighted by the green oval. The edit form looks like this:</p>
+<p><img alt="media/8629def8ba4463283ed3ae2cf311ff25.png" src="media/8629def8ba4463283ed3ae2cf311ff25.png" /></p>
+<p>Fill-in your details and press [Save]. Before saving, the system verifies your
+password to enable the changes made in the form. After entering the password the
+changes are saved.</p>
+</div>
+<div class="section" id="user-project-data-folder-creating-new-folders">
+<h3>User Project, Data folder, creating new folders<a class="headerlink" href="#user-project-data-folder-creating-new-folders" title="Permalink to this headline">¶</a></h3>
+<p>When you enter your account for the first time, you can see the following three
+folders in the Tree Area under the <em>Data</em> tab (red oval on the picture below):
+Examples, Projects and Public. Each of these folders can be expanded by clicking
+on the small triangle on the left side of the folder name (green oval on the
+picture below).</p>
+<p>The folder Projects is your folder in the tree where you are going to make all
+the analyses.</p>
+<p><img alt="media/ac799659784927465044fc3129b9eca6.png" src="media/ac799659784927465044fc3129b9eca6.png" /></p>
+<p>If you expand the Project folder, you can see the project that was created upon
+registration of your account (</p>
+<p><img alt="media/ab0f0406eb982519b2b38b759586bf59.png" src="media/ab0f0406eb982519b2b38b759586bf59.png" /></p>
+<p>), and if you expand it further, you can see the folder Data. This location,
+<em>data/Projects/User project/Data/</em> is exactly the location where you can upload
+your data and save all the analysis results.</p>
+<p><img alt="media/7faf3da3fad98291d69fa75a3654cdaa.png" src="media/7faf3da3fad98291d69fa75a3654cdaa.png" /></p>
+<p>Upon one mouse click on the folder Data, as in the picture above, you can apply
+the button</p>
+<p><img alt="media/14ec1077a2c1ea580222571519821744.emf" src="media/14ec1077a2c1ea580222571519821744.emf" /></p>
+<p>from the top control menu to create a new folder within the selected one.</p>
+<p><img alt="media/4d07680434a62c4cffada207d0f0b33f.png" src="media/4d07680434a62c4cffada207d0f0b33f.png" /></p>
+<p>In this way, you can define the hierarchical organization of your folders and
+sub-folders within your project, for example as shown below.</p>
+<p>Every time when you run a workflow, you need to specify a location of the
+results folder, and you can specify any particular location within your project
+area.</p>
+<p><img alt="media/2ee4bf909d50d1da26a29d5d540eb5a0.png" src="media/2ee4bf909d50d1da26a29d5d540eb5a0.png" /></p>
+<p>There are two other folders available for you initially, Examples and Public.
+The folder Examples contains pre-analyzed publicly available data sets, which
+you are welcome to have a look through our examples. You can copy tables or
+tracks from these two folders into your project area and use them, for example,
+for test runs.</p>
+<p><img alt="media/65fc35b9c6bb79fbdc1e8c32e7b651d4.png" src="media/65fc35b9c6bb79fbdc1e8c32e7b651d4.png" /></p>
+<p>The Public folder contains publicly available data sets which might be useful to
+apply for various analysis purposes.</p>
+<p><img alt="media/b14d62bdfbaab80e366067403215dbe7.png" src="media/b14d62bdfbaab80e366067403215dbe7.png" /></p>
+<p>All users have read access to the folders Examples and Public, but no write
+access. You cannot save any files directly in the Examples or Public folder.
+However, you can copy tables and tracks from these two folders into your project
+area and then modify and work with them as you like.</p>
+</div>
+<div class="section" id="how-to-check-information-about-the-available-work-space">
+<h3>How to check information about the available work space<a class="headerlink" href="#how-to-check-information-about-the-available-work-space" title="Permalink to this headline">¶</a></h3>
+<p>To check your totally available work space, go with mouse over to the project
+name, so that it is highlighted in blue as shown below. In the Info Box you can
+see information about this project including disk quota. This is the space
+available for you. If you plan to upload large files, please make sure you have
+enough work space available.</p>
+<p><img alt="media/297f3553da63ae22b1fe3709bc20e403.png" src="media/297f3553da63ae22b1fe3709bc20e403.png" /></p>
+<p>To check how much space out of your quota is already occupied, go with mouse
+over to the <em>Data</em> folder within your project, so that it is highlighted in blue
+as shown below. In the Info Box you can see information about this folder
+including its size on the disk.</p>
+<p><img alt="media/3ee5b3362e734e1637e070624ba1902c.png" src="media/3ee5b3362e734e1637e070624ba1902c.png" /></p>
+<p>In the same way, you can check the size for every individual folder in your
+project.</p>
+<p><strong>Note</strong>*.* If additional work space or storage space is required, especially if
+you plan to upload and analyze large data files, please feel free to ask for
+details (info&#64;genexplain.com).</p>
+</div>
+<div class="section" id="user-toolbar">
+<h3>User toolbar<a class="headerlink" href="#user-toolbar" title="Permalink to this headline">¶</a></h3>
+<p>In the Control Panel (see E in the figure of Section 2.1), the set of icons on
+the left side is fixed by default, whereas the right side is customizable. Here,
+you can create a user-specific toolbar with your most frequently used analysis
+methods, workflows and datasets. To create your own toolbar you can drag and
+drop your favorite workflows and files for which you often need a quick access
+into the Control Panel. The User tool bar will then be located at the top right
+top corner, highlighted by a red oval in the screenshot below.</p>
+<p>To add any analysis method/workflow/gene set, open the respective method in the
+Tree Area or in the Work Space and drag &amp; drop it onto the user toolbar as shown
+below.</p>
+<p><img alt="media/f9e2ae8c4fc42b2720731b544abdb8ae.png" src="media/f9e2ae8c4fc42b2720731b544abdb8ae.png" /></p>
+<p>You can quickly open your favorite items from this icon menu. To open any
+method, place the cursor on the symbol and you get the complete name of the
+method which can be clicked to open in the workspace as shown below:</p>
+<p><img alt="media/ff3a767fb439f2187193ff0945e92a61.png" src="media/ff3a767fb439f2187193ff0945e92a61.png" /></p>
+<p>In the above screenshot, the method ‘Site search on gene set’ has been opened
+through the user toolbar. If you want to remove any method from the user
+toolbar, right click the symbol and you will get an option ‘REMOVE’.</p>
+</div>
+<div class="section" id="project-properties-or-how-to-fix-the-releases-of-the-databases-to-be">
+<h3>Project properties, or how to fix the releases of the databases to be<a class="headerlink" href="#project-properties-or-how-to-fix-the-releases-of-the-databases-to-be" title="Permalink to this headline">¶</a></h3>
+<p>applied in user’s projects</p>
+<p>The geneXplain platform provides access to several versions of the databases
+installed.</p>
+<p>You can select your desired version of the database and fix it for your project
+using the <em>Project properties</em> feature. By default the latest version of all
+databases are applied. Project Properties form can be opened via the button</p>
+<p><img alt="media/9e17a94280337bb2f0bafbaee53097e1.png" src="media/9e17a94280337bb2f0bafbaee53097e1.png" /></p>
+<p>in the control panel:</p>
+<p><img alt="media/0503765681d77fdb334c6c1577bf119d.png" src="media/0503765681d77fdb334c6c1577bf119d.png" /></p>
+<p>The form opens as shown below:</p>
+<p><img alt="media/29b721cdcceb5827b074a38e45373cac.png" src="media/29b721cdcceb5827b074a38e45373cac.png" /></p>
+<p>For each database shown in the form, the available versions can be selected
+using the drop down menu. As shown below, TRANSPATH® 2016.3 database version is
+selected. After selection press [Save] and the selected version of the database
+will be used in this project for all the analyses.</p>
+<p><img alt="media/a1a25f4df18c9521fa197f849c3a2705.png" src="media/a1a25f4df18c9521fa197f849c3a2705.png" /></p>
+<p>Important to note, this change is applied for one selected project, the project
+name is shown on the top of the form, highlighted by the red oval on the picture
+above. If you have several projects, you can fix database versions for each
+project individually.</p>
+</div>
+</div>
+<div class="section" id="how-to-handle-tables-tracks-diagrams-basics">
+<h2>How to handle tables, tracks, diagrams: basics<a class="headerlink" href="#how-to-handle-tables-tracks-diagrams-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-handling">
+<h3>File handling<a class="headerlink" href="#file-handling" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="file-selection">
+<h4>File selection<a class="headerlink" href="#file-selection" title="Permalink to this headline">¶</a></h4>
+<p>All analysis tools, and likewise all prepared workflows, require input data from
+a file in the Tree Area. The respective file can be loaded into an analysis
+toolby</p>
+<ul class="simple">
+<li>simple dragging-and-dropping of the file from the Tree Area into the
+corresponding field in the Work Space, or</li>
+<li>by clicking into this field and making the selection from the directory
+which opens.</li>
+</ul>
+<p>Multiple selections can be done only in the second way.</p>
+</div>
+<div class="section" id="file-handling-in-the-tree-area">
+<h4>File handling in the Tree Area<a class="headerlink" href="#file-handling-in-the-tree-area" title="Permalink to this headline">¶</a></h4>
+<p>On mouse-over, the file name will gain a faint-bluish background. Upon a single
+click on a file name, its background will turn into a persistent light blue, and
+information about this file will be displayed in the Info Box. Double-clicking
+on a file will open it under a new tab in the Work Space, and the file name will
+be additionally emphasized by bold lettering as long as the corresponding tab is
+in the Work Space’s foreground. Only files with an icon attached can be opened
+this way.</p>
+<p>Files can also be opened by right-clicking on them and selecting the “Open
+table” option. You can also delete files (“Remove”; default value is “No”)this
+way. Both functions are also available through the corresponding icons (</p>
+<p><img alt="media/0b60d59819bc65a21b99b68ded60108f.gif" src="media/0b60d59819bc65a21b99b68ded60108f.gif" />open.gif</p>
+<p>and</p>
+<p><img alt="media/0196ec0a9b06797265d023f921811da8.gif" src="media/0196ec0a9b06797265d023f921811da8.gif" />remove_de.gif</p>
+<p>, resp.) in the Control Panel on top of the different frames.</p>
+<p>While opening and deleting files works for nearly any file, the third option is
+different among distinct file types:</p>
+<ul>
+<li><p class="first">Tables (</p>
+<p><img alt="media/d373ccf59d81fcd62088646e06661e33.emf" src="media/d373ccf59d81fcd62088646e06661e33.emf" /></p>
+<blockquote>
+<div><p>and derivatives) can be exported. When activating this function, a
+selection of different formats is provided for the file to be generated.
+It is also available through the icon</p>
+</div></blockquote>
+<p><img alt="media/7b51f8cb4f6fd7797bc3872a20a42599.gif" src="media/7b51f8cb4f6fd7797bc3872a20a42599.gif" /></p>
+<blockquote>
+<div><p>export.gif</p>
+</div></blockquote>
+<blockquote>
+<div><p>on top of the Tree Area.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Diagrams (</p>
+<p><img alt="media/5b73f941e915d5a9a47508c27730b787.emf" src="media/5b73f941e915d5a9a47508c27730b787.emf" /></p>
+<blockquote>
+<div><p>) can be expanded/collapsed to show/hide their components (nodes and
+edges); this function can also be accessed by clicking on the white
+arrowhead next to the diagram icon.</p>
+</div></blockquote>
+</li>
+</ul>
+<p>Plots (</p>
+<p><img alt="media/e16c5085d2766bce7561c588951ab4c0.emf" src="media/e16c5085d2766bce7561c588951ab4c0.emf" /></p>
+<p>) can be edited. Only under this option, their complete deletion is possible as
+well.</p>
+</div>
+</div>
+<div class="section" id="tables">
+<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
+<p>Any table may be opened by double-clicking the corresponding name in the Tree
+Area. It will open under a new tab in the Work Space.</p>
+<p>The contents of the table are sorted according to the values in one of its
+columns. Being opened for the first time, a default column is defined for
+sorting, usually the ID column. This default column is indicated by a blue
+arrowhead. If this arrowhead points upwards, the table rows are sorted in
+ascending order of this column’s values. Clicking on this arrowhead will change
+it into a downwards pointing one, while the values are sorted in descending
+order. Correspondingly, you may sort the table according to the values of any
+other column in ascending or descending order by clicking on the up- or
+downwards pointing gray arrowhead on top of this column, respectively.</p>
+<p>On top of the table, you can navigate between the individual pages of the table;
+it is also shown on which page out of how many pages in total you are, and in
+the right top corner, the page size in terms of number of entries (rows) is
+shown and can be adjusted.</p>
+<p>You can edit the contents of a table by pressing the [Edit] button in the right
+upper corner. Now, you can manually edit the contents of each cell in the table.
+With the [Apply] option, you will save this change, while [Cancel] quits it.</p>
+<p>Even without activating the Edit function, you can select</p>
+<ul class="simple">
+<li>individual rows with a left-mouse click,</li>
+<li>several ones by keeping the Ctrl key pressed,</li>
+<li>a range of rows with the Shift key pressed when clicking on the last row of
+the range to be selected, or</li>
+<li>[Select all] by clicking on the corresponding button.</li>
+</ul>
+<p>The selected rows can be saved as a separate file, which by default is given the
+name <em><original file name> subset</em>, but you can change this name.</p>
+</div>
+<div class="section" id="basic-operations-with-tracks">
+<h3>Basic operations with tracks<a class="headerlink" href="#basic-operations-with-tracks" title="Permalink to this headline">¶</a></h3>
+<p>View track in genome browser</p>
+<p>Upon double-clicking on a track name in the tree area the track will be opened
+in the work space in the genome browser.</p>
+<p><img alt="media/062f3692a4b9aa6fdd3b928139684ddb.png" src="media/062f3692a4b9aa6fdd3b928139684ddb.png" /></p>
+<p>In the pop-up window <em>Add tracks to genome browser</em> you can select which tracks,
+among those available in Ensembl, should be opened together with your track.
+Here, three tracks are selected, <em>GC-content</em>, <em>Genes</em>, and <em>Variations</em>. When
+the selection is ready, push the [Ok] to get the following view with your track
+on top:</p>
+<p><img alt="media/3d0f6a8138ea1fa49bc1fa97629a56d5.png" src="media/3d0f6a8138ea1fa49bc1fa97629a56d5.png" /></p>
+<p>On the tab name you can see genome, species and build information for this
+track, highlighted by the red oval.</p>
+<p>The small triangles on the right side of the track name can be used to jump to
+the next or previous site of this track:</p>
+<p><img alt="media/88531e9d854ca7d1b250f20b006e9b04.png" src="media/88531e9d854ca7d1b250f20b006e9b04.png" /></p>
+<p>Use the buttons</p>
+<p><img alt="media/6fb7177e3985ae70dbe54dc65e9ce8e5.png" src="media/6fb7177e3985ae70dbe54dc65e9ce8e5.png" /></p>
+<p>in the top control menu to zoom in and out.</p>
+<p>The buttons</p>
+<p><img alt="media/64581c4d344e6bf39275c9ffa53b6c0e.png" src="media/64581c4d344e6bf39275c9ffa53b6c0e.png" /></p>
+<p>help to shift the visible part to the left or to the right.</p>
+<p>The same effect can be also achieved by dragging the picture with the mouse.</p>
+<p>You can also jump between different chromosomes by selecting the chromosome
+number in the field <em>Sequence (chromosome)</em>.</p>
+<p>As the next step to enrich the visualization, and to gather more information
+about your track of interest, you can add the additional pre-existing tracks
+from the folder <em>Examples</em> . The pre-exisiting tracks can be visualized using
+the
+URL:<a class="reference external" href="https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20analysis/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/SNP_indels.vcf_site_loss">https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20analysis/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/SNP_indels.vcf_site_loss</a>.</p>
+<p><img alt="media/0b7faad7977fe23adb6cdd4d63bdb978.png" src="media/0b7faad7977fe23adb6cdd4d63bdb978.png" /></p>
+<p>Open track as a table</p>
+<p>To open a track as a table, use a right mouse click on the track name in the
+tree area or [Ctrl + mouse click] for Mac users.</p>
+<p>Using the same menu, you can apply other functions to the selected track, e.g.
+export it in available formats or delete it.</p>
+<p><img alt="media/fad1c99f9954911e41aca5e873ad7bde.png" src="media/fad1c99f9954911e41aca5e873ad7bde.png" /></p>
+<p>A tabular view for the same track is shown below. Each row corresponds to one
+fragment. For each fragment, you can see the column <strong>ID</strong> with the fragment
+number, <strong>Chromosome</strong>, positions in the respective columns <strong>From</strong> and <strong>To</strong>,
+and several additional columns, three in this case.</p>
+<p><img alt="media/e1bbd3a119cd63765204735d0e9e73ba.png" src="media/e1bbd3a119cd63765204735d0e9e73ba.png" /></p>
+<p>Filter track by condition*.*</p>
+<p>When any track is opened as a table, it can be filtered by any condition in the
+specified columns. Filter options are available under the tab Filters in the
+operations field.</p>
+<p><img alt="media/5aaf21557a6ec25286963851db0af460.png" src="media/5aaf21557a6ec25286963851db0af460.png" /></p>
+<p>Here, the filter is applied to select the fragments located on chromosome 1.</p>
+</div>
+</div>
+<div class="section" id="diagram-handling">
+<h2>Diagram handling<a class="headerlink" href="#diagram-handling" title="Permalink to this headline">¶</a></h2>
+<p>Diagrams are provided by a number of databases and tools in the platform. The
+general schema of their use is that an overview of the corresponding graph is
+shown in the Operation Field, under the tab Overview, while a full-sized picture
+is shown in the Work Space, where usually only a part of the whole diagram fits
+on the screen. The diagrams exhibit components as ovals, reactions as squares,
+and links as lines or arrows.</p>
+<p><img alt="media/d2c34c3e2f6594bfbd9711b1b2863103.png" src="media/d2c34c3e2f6594bfbd9711b1b2863103.png" /></p>
+<p>The section displayed can be shifted either in the Work Space by moving the
+mouse pointer (hand symbol) keeping the left mouse button pressed, or by
+shifting the blue-dotted rectangle in the Operation Field (mouse over: pointer
+symbol turns into a <strong>four-arrow plus sign</strong>, shifting can be performed while
+keeping the left mouse button pressed).</p>
+<p>To facilitate orientation in large diagrams, individual edges are highlighted
+(turning from a thin, usually black arrow into a thick light-blue one).</p>
+<p>Double-click on an individual node will show information about this component
+under the Info tab of the Info Box (this works for BioModels).</p>
+<p>Diagrams can be zoomed in and zoomed out, by click on the buttons</p>
+<p><img alt="media/65b191751b9996cc91860bdf1bdc58f0.png" src="media/65b191751b9996cc91860bdf1bdc58f0.png" /></p>
+<p>or</p>
+<p><img alt="media/8ae7724b79ee5f10a8cfc01ef9fd5a04.png" src="media/8ae7724b79ee5f10a8cfc01ef9fd5a04.png" /></p>
+<p>, correspondingly.</p>
+<p>They can be exported in several formats by clicking the button</p>
+<p><img alt="media/2fde7d826d1a2a88928490c9133c4556.png" src="media/2fde7d826d1a2a88928490c9133c4556.png" /></p>
+<p>.</p>
+<p><img alt="media/dc11c551d7ef6d67cc48328930b74dcd.png" src="media/dc11c551d7ef6d67cc48328930b74dcd.png" /></p>
+<p>Diagrams can be zoomed in and zoomed out, by clicking on the buttons</p>
+<p><img alt="media/b59c404c4487a1135a2eab98e0bde155.png" src="media/b59c404c4487a1135a2eab98e0bde155.png" /></p>
+<p>or</p>
+<p><img alt="media/56e2b324f8d8ed08a3d6c714982a193b.png" src="media/56e2b324f8d8ed08a3d6c714982a193b.png" /></p>
+<p>, respectively.</p>
+<p>Diagram nodes can be multi-selected via the [Ctrl] button (picture below).
+Selected nodes can be used for <em>Alignments</em> or <em>Distribution</em> editing within the
+diagram or can be saved as a subset.</p>
+<p><img alt="media/8796d4c3fd429a0979030833edb77812.png" src="media/8796d4c3fd429a0979030833edb77812.png" /></p>
+<p>Five alignment methods are available in the tool bar (see picture below) after
+opening a diagram in the workspace.</p>
+<p><img alt="media/33d37c9d9f3bcafe595d0f4f768edd9f.png" src="media/33d37c9d9f3bcafe595d0f4f768edd9f.png" /></p>
+<p>After pushing one of the buttons in the toolbar, the selected nodes in the
+diagram are aligned accordingly. The picture below shows an <em>Up alignment</em> of
+all nodes.</p>
+<p><img alt="media/ec7d55b5557d8d4c4bdf755732303760.png" src="media/ec7d55b5557d8d4c4bdf755732303760.png" /></p>
+<p>Two distribution methods horizontally</p>
+<p><img alt="media/9e7d2ff171070050fd2e2786ea7e7442.png" src="media/9e7d2ff171070050fd2e2786ea7e7442.png" /></p>
+<p>and vertically</p>
+<p><img alt="media/613428b662c50d261e39bccea9d5cbd5.png" src="media/613428b662c50d261e39bccea9d5cbd5.png" /></p>
+<p>are available in the tool bar after opening a diagram in the workspace. After
+pushing one of the buttons in the toolbar, the selected nodes in the diagram are
+positioned accordingly. The picture below shows a <em>Vertically distribution</em> of
+one node.</p>
+<p><img alt="media/a690135340a39d871eca1c558f36f2f2.png" src="media/a690135340a39d871eca1c558f36f2f2.png" /></p>
+<p>For edge editing you can use either the dialog box or a clickable connecting
+line to add new edges to a diagram.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="chapter_test.html" class="btn btn-neutral float-left" title="User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, jkoschma
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
