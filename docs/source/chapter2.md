@@ -7,10 +7,10 @@ contains the following areas:
 
 **A** The Work Space, which is the main part of the window.
 
->   **B** The Tree Area (to the left of the Work Space), where you find the
->   collection of Databases, the uploaded Data files and the available Analyses
->   methods under the corresponding tabs, organized in a hierarchical tree
->   structure.
+**B** The Tree Area (to the left of the Work Space), where you find the
+collection of Databases, the uploaded Data files and the available Analyses
+methods under the corresponding tabs, organized in a hierarchical tree
+structure.
 
 **C** The Info Box (in the left lower part), where you can select the data
 resource to search in, or where you will get Information about the data file or
