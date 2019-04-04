@@ -1,0 +1,21 @@
+# User Guide
+## The User Interface
+
+When you open the geneXplain platform for the first time, a window opens that
+contains the following areas:
+
+**A** The Work Space, which is the main part of the window.
+
+**B** The Tree Area (to the left of the Work Space), where you find the
+   collection of Databases, the uploaded Data files and the available Analyses
+   methods under the corresponding tabs, organized in a hierarchical tree
+   structure.
+
+**C** The Info Box (in the left lower part), where you can select the data
+resource to search in, or where you will get Information about the data file or
+analysis method that you select with a single click in the Tree Area.
+
+**D** The Operations Field (right lower part), providing a number of options
+under the different tabs in a context-dependent manner.
+
+## blabla
