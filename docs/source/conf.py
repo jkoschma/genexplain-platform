@@ -25,9 +25,8 @@ copyright = '2019, jkoschma'
 author = 'jkoschma'
 
 # The short X.Y version
-version = ''
-# The full version, including alpha/beta/rc tags
-release = '0.0.1'
+version = '2'
+
 
 
 # -- General configuration ---------------------------------------------------

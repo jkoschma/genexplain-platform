@@ -5,8 +5,8 @@ Guide
 .. toctree::
    :maxdepth: 2
     
-   Introduction
-   chapter2   
+   Introduction_new
+   Organization_platform_new  
 
 Indices and tables
 ==================
