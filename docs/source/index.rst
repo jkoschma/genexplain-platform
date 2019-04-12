@@ -6,7 +6,8 @@ Guide
    :maxdepth: 2
     
    Introduction_new
-   Organization_platform_new  
+   Organization_platform_new
+   Load_data_new
 
 Indices and tables
 ==================
