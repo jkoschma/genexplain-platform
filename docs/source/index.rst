@@ -3,7 +3,7 @@ Welcome to genexplain-platform's documentation!
 Guide
 ^^^^^
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
     
    Introduction_new
    Organization_platform_new
