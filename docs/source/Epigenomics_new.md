@@ -408,7 +408,7 @@ MEALR differs from other tools in the following points.
 >   transcription factor motifs.
 
 MEALR calculates the score x of the ith sequence according to the kth matrix as
-$$x_{\text{ik}} = \log(\frac{1}{{\ L}_{i}}\sum_{w_{i}}^{}{\ \exp}\left( S_{w}
+$$x_{\text{ik}} = \log(\frac{1}{{\ L}}_{i}\sum_{w_{i}^{}{\ \exp}}\left( S_{w}
 \right))\$$, where Sw is the log-odds score of the wth window of matrix length.
 Each sequence is therefore associated with a vector of scores, one from each
 matrix, and a class (Yes, No).
