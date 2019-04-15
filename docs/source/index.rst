@@ -8,6 +8,12 @@ Guide
    Introduction_new
    Organization_platform_new
    Load_data_new
+   RNA_Seq
+   Proteomics_new
+   Epigenomics_new
+   Chip-seq
+   Sequence_files
+   Drug_targets
 
 Indices and tables
 ==================
