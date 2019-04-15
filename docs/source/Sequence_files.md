@@ -1,12 +1,12 @@
-Sequence analysis
+# Sequence analysis
 
 ![](media/3728bf448cbcc9ac8dd3f58e9709f27f.png)
 
-Analyze any DNA sequence
+## Analyze any DNA sequence
 
-Search for TF binding sites
+### Search for TF binding sites
 
-Search for TF binding sites with TRANSFAC®
+#### Search for TF binding sites with TRANSFAC®
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in any input DNA sequence in EMBL, Fasta or Genbank formats. Using
@@ -58,7 +58,7 @@ called *Plants*. It can be found here:
 **Step 4.** Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
 
-Results
+### Results
 
 The results folder consists of a summary table and a track with sites as shown
 below:
@@ -127,7 +127,7 @@ Info box.
 **Note***.* This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-Search for TF binding sites with GTRD
+#### Search for TF binding sites with GTRD
 
 This workflow is similar to the one described above. The difference is in the
 default profile applied for the TFBS search; in this workflow it is the profile
@@ -136,9 +136,9 @@ tab *Databases*, in the folder GTRD/Data/profiles/
 
 Correspondingly, the site search results from these two workflows are different.
 
-Analyze any DNA sequence for site enrichment
+### Analyze any DNA sequence for site enrichment
 
-Analyze any DNA sequence for site enrichment with TRANSFAC®
+#### Analyze any DNA sequence for site enrichment with TRANSFAC®
 
 This workflow is designed to search for enriched transcription factor binding
 sites, TFBSs, in any input DNA sequence as compared to a background DNA
@@ -196,7 +196,7 @@ called *Plants*. It can be found here:
 **Step 4**. Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
 
-Results
+#### Results
 
 The results folder consists of several tables and tracks as shown below:
 
@@ -289,7 +289,7 @@ sequences.
 **Note***.* This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-Analyze any DNA sequence for site enrichment (GTRD)
+#### Analyze any DNA sequence for site enrichment (GTRD)
 
 This workflow is similar to the one described above. The difference is in the
 default profile applied for the TFBS search; in this workflow it is the profile
