@@ -1,18 +1,11 @@
-1.  miRNA
+# miRNA
 
 When you open this Area, a list of workflows optimized for working with microRNA
 data will show up, which looks as follows:
 
 ![](media/6e36212d6179b8b42e2d721e2a3472cd.png)
 
-For detailed explanation of their function and how to operate them, please refer
-to the following chapters:
-
-| Load gene or protein list                   | See Chapter 3    |
-|---------------------------------------------|------------------|
-| Detect differentially expressed miRNA genes | See Chapter 10.2 |
-
-1.  Prediction of miRNA binding sites
+## Prediction of miRNA binding sites
 
 MicroRNAs, or miRNAs, post-transcriptionally affect (mostly: repress) the
 expression of protein-coding genes. The human genome encodes over 1000 miRNA
@@ -25,8 +18,7 @@ http://www.mirbase.org). The last step of the workflow is based on the [miRmap
 method](http://mirmap.ezlab.org/) (*analyses/Galaxy/microRNA/mirmap*;
 http://mirmap.ezlab.org*)*, published by Vejnar & Zdobnov, [Nucleic Acids Res.
 40:11673-11683, 2012](http://nar.oxfordjournals.org/content/40/22/11673.long).
-The result of the workflow is a table with all predicted miRNA binding sites and
-a track for visualization in the created sequence collection. The workflow can
+The result of the workflow is a table with all predicted miRNA binding sites and a track for visualization in the created sequence collection. The workflow can
 be found on the Start page via the miRNA button.
 
 ![](media/91da47a1c58b93106e4ba84d21ff8264.png)
@@ -106,24 +98,11 @@ sites)](http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA binding
 site prediction (miRNA-155 target genes)/Data/hsa-miR-155-5p published target
 genes (miRNA binding sites)/)
 
-The result folder contains the following tables: Ensembl transcript (
-
-![](media/58a651441dabd63ab3c797123cddc94c.png)
-
-),Site output (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) with all predicted miRNA binding sites, Site output track (
-
-![](media/63c261f0c221451d4288c10e2d1294d3.png)
-
-) for visualization of predicted miRNA sites, Summary output (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) and Transcript region track
-
+The result folder contains the following tables: Ensembl transcript (![](media/58a651441dabd63ab3c797123cddc94c.png)),
+Site output (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with all predicted miRNA binding sites, 
+Site output track (![](media/63c261f0c221451d4288c10e2d1294d3.png)) 
+for visualization of predicted miRNA sites, Summary output (![](media/d373ccf59d81fcd62088646e06661e33.emf)) and 
+Transcript region track 
 ![](media/cc436960ae1f31127ebd5268d7e2f8d7.png)
 
 .
@@ -153,11 +132,7 @@ sequence of the site**.
 ![](media/17224e8d7b2da192fbdf8ad6fc140dc4.png)
 
 The **Site output track** enables the visualization of the predicted sites in
-the 3’ UTRs of the input gene list. With a double-click on (
-
-![](media/9deda4691eadc41d2bf4de7ded20d805.png)
-
-) in the results folder, the dialog box *Configure genome for track* is opened.
+the 3’ UTRs of the input gene list. With a double-click on (![](media/9deda4691eadc41d2bf4de7ded20d805.png)) in the results folder, the dialog box *Configure genome for track* is opened.
 
 ![](media/074c5e687fae125d0a9084f5531ea81e.png)
 
@@ -165,9 +140,7 @@ Within this dialog box, first set the field **Sequence source** to *Custom…*
 
 ![](media/8d4e002da954402db8e37cad8e5d7113.png)
 
-and [Save] it. The dialog box is automatically adjusted, and the field
-
-*Sequence collection* becomes available.
+and [Save] it. The dialog box is automatically adjusted, and the field *Sequence collection* becomes available.
 
 ![](media/41437a1bd1c0fc0e8f4c0661be141102.png)
 
