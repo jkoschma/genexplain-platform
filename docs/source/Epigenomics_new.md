@@ -289,33 +289,11 @@ is 200-400 fragments with the length of the individual fragments not exceeding
 
 ### Results
 
-The results folder contains the tables Transcription factors (
-
-![](media/5c714caac5a4e02a10c45ea2e68c199a.png)
-
-) and Site optimization summary (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-), the tracks Yes sites opt and no sites opt (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-), and the folder modules  
-(
-
-![](media/94ab27f0ac0bba5fa804cb60fd756136.gif)
-
-).
+The results folder contains the tables Transcription factors (![](media/5c714caac5a4e02a10c45ea2e68c199a.png)) and Site optimization summary (![](media/8ed589ee0b31e1b240c071d30254a8be.png)), the tracks Yes sites opt and no sites opt (![](media/368076561774990443d1e26a25dd9f3e.emf)), and the folder modules (![](media/94ab27f0ac0bba5fa804cb60fd756136.gif)).
 
 ![](media/4e8763b687ecd0fa9a16890351b671d1.png)
 
-The table **Site optimization summary** (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-) contains those site models, here TRANSFAC® matrices, that are over-represented
-in the Yes track as compared to the No track.
+The table **Site optimization summary** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models, here TRANSFAC® matrices, that are over-represented in the Yes track as compared to the No track.
 
 ![](media/f4ee2402955b19ada5063bbda4c49a1e.png)
 
@@ -323,12 +301,7 @@ Each row of the table represents the result for one PWM from the input profile.
 Only those PWMs with Yes-No ratio \>1 are included in the output. For details of
 the output columns please refer to Section 20.1.2.
 
-The **Modules** folder (
-
-![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)
-
-) is a result of the analysis *Construct composite modules*. It contains two
-tables, two tracks, one histogram, and one model view as shown below:
+The **Modules** folder (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)) is a result of the analysis *Construct composite modules*. It contains two tables, two tracks, one histogram, and one model view as shown below:
 
 ![](media/fd1ece0dbdda404fa9a392b734b5ff27.png)
 
@@ -353,7 +326,7 @@ located in the promoter region of MMP23B gene.
 
 For more details on the individual output tables and tracks as well as for
 **visualization** of the identified composite modules in the genome browser
-please refer to Section 20.1.5.
+please refer to the chapter Construct Composite modules
 
 The output table **Transcription factors**
 
