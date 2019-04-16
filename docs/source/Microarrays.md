@@ -31,11 +31,7 @@ If your readings were from a dual-channel experiment, please tick the checkbox
 In the field Output name, you find a suggested name for the output file. The
 default name is “Normalized (\<*Normalization_method*\>)”, which you can edit
 (just click into this field and change the default name). An accordingly named
-file with the icon
-
-![](media/46c719ec81af12ba8c66724eb544f99a.emf)
-
-will appear in the Tree Area after the procedure run successfully.
+file will appear in the Tree Area after the procedure run successfully.
 
 You may also have noticed that some further information about the analyses to be
 employed is displayed in both the Info Box as well as in the Operations Field
