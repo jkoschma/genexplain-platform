@@ -93,11 +93,8 @@ Step 5. Press the button [Run workflow] and wait till the workflow is completed.
 **Results**
 
 The results folder contains four tables with the results of the enrichment
-analysis (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-) divided by the three branches of Gene Ontology, biological process, molecular
+analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) 
+divided by the three branches of Gene Ontology, biological process, molecular
 function and cellular component, as well as by the Reactome pathways. Path to
 the current output folder is:
 
