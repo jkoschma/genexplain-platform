@@ -1,4 +1,4 @@
-Discover functional enrichment
+# Discover functional enrichment
 
 This set of workflows helps to identify certain functional groups in your input
 list of genes or proteins, namely those that are particularly affected in a
@@ -20,7 +20,7 @@ from the previous analysis steps of microarray or RNA-seq experiments, or
 proteins identified in proteomics experiments, the lists of genes located nearby
 of ChIP_seq peaks, etc.
 
-Gene Set Enrichment Analysis (GSEA)
+## Gene Set Enrichment Analysis (GSEA)
 
 There are two types of workflows, depending on the format of the input tables.
 You can start the GSEA with the normalized microarray tables, before calculating
@@ -32,7 +32,7 @@ Alternatively, you can start the GSEA with any gene or protein table having a
 numerical column that can be used for enrichment calculations, e.g. expression
 fold change after calculating DEGs.
 
-GSEA by GO categories and metabolic pathways
+### GSEA by GO categories and metabolic pathways
 
 Gene set enrichment analysis (GSEA) with GO categories or with metabolic pathway
 annotation in REACTOME can be done by either starting from raw data of any of
@@ -76,11 +76,7 @@ input files:
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/GSE31193_RAW/Control%20normalized%20(RMA)>
 
 It is important to note that for this workflow, the input tables should have
-Affymetrix probeset IDs in the ID column. Such tables have an (
-
-![](media/a5b8d32085a5d5f18b698c9698977ea6.png)
-
-) icon in the tree area and look like:
+Affymetrix probeset IDs in the ID column. Such tables have an (![](media/a5b8d32085a5d5f18b698c9698977ea6.png)) icon in the tree area and look like:
 
 ![](media/def40905309134e16381d153dc33edb4.png)
 
@@ -129,7 +125,7 @@ The distribution of LogFoldChange values is shown in the Histogram:
 
 ![](media/626a195570d0b0d95d6c3631025f4cba.png)
 
-GSEA by GO categories and metabolic pathways for a single gene table
+### GSEA by GO categories and metabolic pathways for a single gene table
 
 This workflow performs the GSEA divided by the three branches of Gene Ontology,
 biological process, molecular function and cellular component, as well as by the
@@ -176,14 +172,10 @@ note that the results folder should be located in your *Project* in the tree.
 
 Step 5. Press the button [Run workflow] and wait till the workflow is completed.
 
-Results
+### Results
 
 The results folder contains four tables with the results of the enrichment
-analysis (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-) corresponding to the three branches of Gene Ontology, biological process,
+analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) corresponding to the three branches of Gene Ontology, biological process,
 molecular function and cellular component as well as by the Reactome pathways.
 
 ![](media/9bf5362b277e2826b7d89fdad6c19e1f.png)
@@ -195,7 +187,7 @@ accessed through the path:
 data/Examples/HCV infection in liver GSE31193, Affymetrix U133 Plus 2.0
 microarray/Data/IFN 24h vs Control/IFN.24hours vs Control Genes Ensembl
 
-1.  GSEA by GO categories, signaling pathways and diseases
+### GSEA by GO categories, signaling pathways and diseases
 
 Also, this type of gene set enrichment analysis (GSEA) can be done by either
 starting from raw data of any of the widely used experimental platforms
@@ -224,7 +216,7 @@ analysis and the interpretation of the results”.
 **Note.** This workflow is available together with a valid HumanPSD™/TRANSPATH®
 license. Please feel free to ask for details (info\@genexplain.com).
 
-Single gene table
+## Single gene table
 
 This workflow is similar to the GSEA by GO categories workflow, it requires
 exactly the same format of the input table, and the steps to launch this
@@ -240,7 +232,7 @@ analysis and the interpretation of the results”.**
 **Note.** This workflow is available together with a valid HumanPSD™/TRANSPATH®
 license. Please feel free to ask for details (info\@genexplain.com).
 
-1.  GSEA with a selected ontology
+### GSEA with a selected ontology
 
 This workflow performs a GSEA with one selected ontology for an input gene or
 protein table. It is important to note that such a table should have a numerical
@@ -294,18 +286,14 @@ Step 5. Press the button [Run workflow] and wait till the workflow is completed.
 Results
 
 The results folder contains one table with the results of the enrichment
-analysis (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-) by the selected ontology. It can be accessed using the URL:
+analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) by the selected ontology. It can be accessed using the URL:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN%2024h%20vs%20Control%20DEGs%2C%20aj%20p-val%3C0.05%20Genes%20Ensembl%20(Enrichment%20analysis%20GO%20(biological%20process))>
 
 The GSEA results are described in detail in a separate section “**About the GSEA
 analysis and the interpretation of the results”.**
 
-1.  Functional classification
+## Functional classification
 
 An alternative approach to GSEA is another group of workflows, Functional
 classification, which comprises several “Mapping to ontologies” workflows. The
@@ -324,16 +312,15 @@ being obtained by chance is.
 The difference between the workflows within this group is in the ontologies
 applied as well as in the number of input tables.
 
-1.  Mapping to GO categories and metabolic pathways
+### Mapping to GO categories and metabolic pathways
 
-Single gene or protein table
+#### Single gene or protein table
 
 This workflow is designed to classify an input gene set based on several
 ontologies, and to identify terms hits for which are overrepresented in the
 input set. The input file can be any gene or protein table. There is only one
 obligatory column, the column with gene or protein IDs; all other columns are
-optional.  
-In the first step, the input table is converted into a table with Ensembl Gene
+optional.  In the first step, the input table is converted into a table with Ensembl Gene
 IDs. This table with Ensembl Gene IDs is subjected to a functional
 classification.
 
@@ -378,11 +365,8 @@ Family Tumor versus Neuroblastoma/Upregulated Ensembl genes (Mapping to
 ontologies)
 
 It contains several tables with the resulting mapping, one table each for the
-applied ontological groups (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-), as well as one gene table (
+applied ontological groups (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)), as well as one gene table
+(
 
 ![](media/3376044660b26a160e52442bb6a63338.png)
 
@@ -469,7 +453,7 @@ IDs, and the result is shown in this table. For example, if your input was a
 table with UniProt IDs, it is converted into Ensembl gene IDs and included in
 the results folder of this workflow.
 
-2 Gene sets and comparison
+### Gene sets and comparison
 
 This workflow is designed to map two input tables to all Gene Ontology
 categories (*biological process*, *molecular function* and *cellular component*)
@@ -537,21 +521,10 @@ applied in this workflow and two tables (
 ![](media/3376044660b26a160e52442bb6a63338.png)
 
 ). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (
+into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf))
 
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
 
-) with the mapped ontology results, one table (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) with the analysis comparison result and one plot (
-
-![](media/e16c5085d2766bce7561c588951ab4c0.emf)
-
-). Please refer to section 10.3.2.1 for the description of the resulting tables.
-
-Multiple gene sets
+### Multiple gene sets
 
 This workflow is designed to classify several sets of genes or proteins based on
 the three GO branches, Reactome and HumanCyc pathways and TF classification.
@@ -568,9 +541,9 @@ The output is a folder which contains subfolders with the results for each
 individual input table. The subfolders are automatically given the same names as
 the input tables.
 
-1.  Mapping to GO categories and signaling pathways
+## Mapping to GO categories and signaling pathways
 
-Single gene or protein table
+### Single gene or protein table
 
 The steps of this workflow are the same as described above, only difference is
 in the ontologies applied. In this workflow, your input table is mapped to GO
@@ -605,7 +578,7 @@ menu.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
-2 Gene sets and comparison
+## Gene sets and comparison
 
 **Mapping to GO ontologies and comparison for two gene sets (HumanPSD™):**
 
@@ -671,24 +644,12 @@ ontology and two tables (
 ![](media/3376044660b26a160e52442bb6a63338.png)
 
 ). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-) with the mapped ontology/pathway/classification results, one table (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) with the analysis comparison result and one plot (
-
-![](media/e16c5085d2766bce7561c588951ab4c0.emf)
-
-).
+into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology/pathway/classification results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf)).
 
 Note**.** This workflow is available together with a valid HumanPSD™ license.
 Please, feel free to ask for details (info\@genexplain.com).
 
-Multiple gene sets
+### Multiple gene sets
 
 This workflow is designed to classify several sets of genes or proteins based on
 the three GO branches, Reactome and HumanCyc pathways, TF classification, and
@@ -707,9 +668,9 @@ the input tables.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-1.  Mapping to GO categories, signaling pathways and diseases
+## Mapping to GO categories, signaling pathways and diseases
 
-Single gene or protein table
+### Single gene or protein table
 
 The steps of this workflow are the same as described for other mapping to
 ontologies workflow. The difference is in the ontologies applied. In this
@@ -749,7 +710,7 @@ Toxicogenomic Database, where you can find more details about this disease:
 HumanPSD™/TRANSPATH® license. Please, feel free to ask for details
 (info\@genexplain.com).
 
-2 Gene sets and comparison
+### Gene sets and comparison
 
 **Mapping to ontologies and comparison for two gene sets (TRANSPATH®)**
 
@@ -815,26 +776,13 @@ ontology and two tables (
 ![](media/3376044660b26a160e52442bb6a63338.png)
 
 ). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (
+into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology/pathway/classification results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf)). Individual tables are described in the previous sections.
 
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
+**Note.** This workflow is available together with a valid TRANSPATH® license.Please, feel free to ask for details (info\@genexplain.com).
 
-) with the mapped ontology/pathway/classification results, one table (
+## Mapping with selected classification
 
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) with the analysis comparison result and one plot (
-
-![](media/e16c5085d2766bce7561c588951ab4c0.emf)
-
-). Individual tables are described in the previous sections.
-
-**Note.** This workflow is available together with a valid TRANSPATH® license.
-Please, feel free to ask for details (info\@genexplain.com).
-
-1.  Mapping with selected classification
-
-Single gene set
+### Single gene set
 
 This workflow is designed to map one input tables to one selected ontology
 classification. The input can be any gene or protein table. In the first step,
@@ -875,15 +823,9 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default.
 
-The result folder contains 1 table (
+The result folder contains 1 table (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl table and one table (
 
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-) with the converted Ensembl table and one table (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-) with the mapped ontology results.
+![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology results.
 
 data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
 Family Tumor versus Neuroblastoma/Downregulated Ensembl genes (Reactome pathways
@@ -892,11 +834,7 @@ Family Tumor versus Neuroblastoma/Downregulated Ensembl genes (Reactome pathways
 ![](media/50e9f3e4c84e0d91559576ce3c3680da.png)
 
 Let’s consider the output table with the mapping results. The tables with the
-mapped selected category (
-
-![](media/53c2e6f818cea497939bd96d86b10eab.png)
-
-) look like:
+mapped selected category (![](media/53c2e6f818cea497939bd96d86b10eab.png)) look like:
 
 ![](media/be14ca9422ad9d1ac94cc2cf4de997ff.png)
 
@@ -917,7 +855,7 @@ numbers of hits. The genes mapped to each category are explicitly listed in the
 column Hit names. As the lists can get quite long, only a few genes are shown by
 default in each row. To get the full list, press [more].
 
-2 Mapping to ontology - select a classification (2 Gene tables)
+### Mapping to ontology - select a classification (2 Gene tables)
 
 This workflow is designed to map each of the two input tables to one selected
 ontology classification, to identify term hits and to compare the results. The
@@ -930,7 +868,7 @@ results*, icon
 
 ![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
 
-. Please refer to section 13.3 for details on this particular analysis method.
+Please refer to section 13.3 for details on this particular analysis method.
 The comparison can help to reveal terms that show different enrichment across
 certain conditions.
 
@@ -1048,7 +986,7 @@ datasets.
 
 ![](media/c38a888831bb44c8319e7dc0bfe5e776.png)
 
-Multiple gene sets
+### Multiple gene sets
 
 This workflow is designed to classify a multiple set of genes by enrichment
 analysis using GO, Reactome, HumanCyc and TF classification databases. Gene sets
@@ -1079,7 +1017,7 @@ The same steps are repeated for the next input table, and several cycles are
 performed automatically corresponding to the number of tables in the input
 folder.
 
-1.  Cross-species mapping to ontologies, using ortholog information (HumanPSD™)
+## Cross-species mapping to ontologies, using ortholog information (HumanPSD™)
 
 The Input can be any gene or protein table for mouse or rat. The workflow will
 convert the list to desired species output and map it to various ontologies. In
@@ -1151,11 +1089,11 @@ a diagram opens in the workspace.
 
 ![](media/c41c1e290dbf05771877e9768f957656.png)
 
-**The table TF classification** (
+**The table TF classification**
 
-![](media/c0f635e97c7a0f1ec8d1540225873985.png)
+(![](media/c0f635e97c7a0f1ec8d1540225873985.png)).
 
-). Your input table is mapped to the classification of Transcription factors
+Your input table is mapped to the classification of Transcription factors
 (*Nucleic Acids Res. 41, D165-D170 (2013)*), which is also integrated in the
 platform. In the column **ID** the identifiers of the TF classification are
 shown. They are hyperlinked to the corresponding classification categories:
