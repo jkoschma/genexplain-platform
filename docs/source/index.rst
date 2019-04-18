@@ -11,8 +11,11 @@ Guide
    RNA_Seq
    Proteomics_new
    Epigenomics_new
-   Chip-seq
+   Chip_seq
    Sequence_files
+   miRNA
+   Microarrays
+   Functional_enrichment
    Drug_targets
 
 Indices and tables
