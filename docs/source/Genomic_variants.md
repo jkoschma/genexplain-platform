@@ -1,24 +1,14 @@
-Genomic variants
+# Genomic variants
 
 ![](media/ad16a78dcbc709354acbd975c086c714.png)
 
 Genomic variants can be uploaded in the platform in different formats. The files
-uploaded in *bed* format are shown in the tree area as tracks (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-). Genomic variants can be also uploaded as a table, where the ID column
-contains standard SNP IDs (e.g. rs10010325). When imported into the platform,
-the tables with this type of ID have a special icon (
-
-![](media/cd690ff706ce19d33fcdb2150aa52687.emf)
-
-) in the tree area. An example of such a table can be found in the *Examples*
-folder:
+uploaded in *bed* format are shown in the tree area as tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)). Genomic variants can be also uploaded as a table, where the ID column contains standard SNP IDs (e.g. rs10010325). When imported into the platform,
+the tables with this type of ID have a special icon (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) in the tree area. An example of such a table can be found in the *Examples* folder:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19>
 
-1.  Find genome variants and indels from full-genome NGS
+## Find genome variants and indels from full-genome NGS
 
 This workflow is based on a framework to discover genotype variations in
 full-genome NGS data by De Pristo et al., [Nature
@@ -27,21 +17,17 @@ Genetics](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/) 43:491-498,
 indels, base quality score recalibration, SNP discovery and genotyping to find
 all potential variants.
 
-In the first part of the workflow the input sequences are mapped using the [BWA
-tool](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper)
+In the first part of the workflow the input sequences are mapped using the [BWA tool](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper)
 (Galaxy). BWA is a fast light-weight tool that aligns relatively short sequences
 to a sequence database, such as the human reference genome (published by Li &
-Durbin,
-[Bioinformatics](http://bioinformatics.oxfordjournals.org/content/25/14/1754.long)
-25:1754-1760, 2009).
+Durbin, [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/25/14/1754.long) 25:1754-1760, 2009).
 
 The second part includes local realignment around indels, base quality score
 recalibration, SNP discovery and genotyping to find all potential variants.
 After the first part, and after identification of duplicates and covariates, the
 workflow creates a first output as a new BAM file. Then the recalibrated BAM
 file is used as an input for SNP discovery and genotyping to find all potential
-variants by
-[GATK](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk)
+variants by [GATK](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk)
 (Genome Analysis Toolkit).
 
 To launch the workflow, follow these steps:
@@ -66,7 +52,8 @@ Myeloid Leukemia Patient Genotyping/Data/SRR944150 reverse.fastq)
 **Step 3**. Specify the **OutputFolder** location and name and press the button
 [Run workflow].
 
-All results are saved in the result folder:  
+All results are saved in the result folder: 
+
 data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150
 forward.fastq (Genome variants and indels from RNA-seq)
 
@@ -81,18 +68,14 @@ BWA-MEM, which is the latest, is generally recommended for high-quality queries
 as it is faster and more accurate. BWA-MEM also has better performance than
 BWA-backtrack for 70-100bp Illumina reads.
 
-In the next step the sorted files are subjected to the [Mark
-Duplicates](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/picard_beta/picard_MarkDuplicates)
-method.
+In the next step the sorted files are subjected to the [Mark Duplicates](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/picard_beta/picard_MarkDuplicates) method.
 
 This method removes duplicates. The purpose is to mitigate the effects of PCR
 amplification bias introduced during library construction. Two read pairs are
 considered duplicate if they align to the same genomic position. The resulting
-MarkDuplikates1.log file is stored in the log folder and the
-MarkDuplikates1.stat file is stored in the stat folder.
+MarkDuplikates1.log file is stored in the log folder and the MarkDuplikates1.stat file is stored in the stat folder.
 
-The next step is a local realignment. Read mapping algorithms operate on each
-read independently, locally realigning reads such that the number of mismatching
+The next step is a local realignment. Read mapping algorithms operate on each read independently, locally realigning reads such that the number of mismatching
 bases is minimized across all reads. Output files are Realigner.log and
 TargetCreator.log in the log folder, ddup1.bam, Realigned.bam and
 realigner.intervals in the tmp folder.
@@ -129,22 +112,11 @@ In the track visualization the information about each variation (either a base
 substitution or an indel) is shown in the info box when clicking on each
 variation.
 
-1.  Visualize variants in genome browser
+### Visualize variants in genome browser
 
-The genomic variants shown in the tree area as tracks (
+The genomic variants shown in the tree area as tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)) can be directly visualized in the genome browser. Tables with SNP IDs (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) should be first processed into the tracks. For this, you can apply the method called SNP matching (![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)); 
 
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-) can be directly visualized in the genome browser. Tables with SNP IDs (
-
-![](media/cd690ff706ce19d33fcdb2150aa52687.emf)
-
-) should be first processed into the tracks. For this, you can apply the method
-called SNP matching (
-
-![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)
-
-); for details please refer to the section 17.1.1.
+for details please refer to the indiviual description of the method. 
 
 ![](media/e233fae40ec167387b52ee684666540e.png)
 
@@ -152,7 +124,7 @@ A mouse click on the links Human, Mouse or Rat immediately opens up a genome
 browser for the corresponding species in the work space, and the corresponding
 Ensembl database appears in the tree area.
 
-1.  Human
+### Human
 
 When *Human* is selected, the genome browser opens up the latest Ensembl build,
 hg19 chromosomes GRCh37, highlighted by the red oval.
@@ -177,7 +149,7 @@ shown here, in the screenshot below:
 For further details regarding visualizations, please refer to the basic
 operations with tracks, Section 2.3.3.
 
-1.  Mouse
+### Mouse
 
 When *Mouse* is selected, the genome browser opens up the latest Ensembl build
 for mouse, mm10 chromosomes GRCm38
@@ -186,7 +158,7 @@ for mouse, mm10 chromosomes GRCm38
 
 The further steps of the visualization are similar to the human tracks.
 
-1.  Rat
+### Rat
 
 When *Rat* is selected, the genome browser opens up the latest Ensembl build for
 rat, rn5 chromosomes Rnor_5.0
@@ -195,18 +167,18 @@ rat, rn5 chromosomes Rnor_5.0
 
 The further steps of the visualization are similar to the human tracks.
 
-1.  Identify and classify genes with genomic variants
+### Identify and classify genes with genomic variants
 
 Genomic variants are represented in the same format as genome intervals or
 ChIP-seq peaks, i.e. with their absolute chromosomal positional locations.
-Therefore, please apply correspondingly the workflows explained in detail under
-6.1.1 or 7.2.1.
+Therefore, please apply correspondingly the workflows explained in detail under Epigenomics and Chip_Seq sections.
 
-1.  Identify TFBS affected by genomic variations
 
-2.  Enriched TF sites around regulatory SNPs and SIFT analysis
+## Identify TFBS affected by genomic variations
 
-Analysis with TRANSFAC®
+### Enriched TF sites around regulatory SNPs and SIFT analysis
+
+#### Analysis with TRANSFAC®
 
 The input form of this workflow, when opened form the Start page, is the
 following:
@@ -215,12 +187,7 @@ following:
 
 **Step 1**. Specify an input table in the field **Input SNP table**. A table
 with standard SNP IDs in the format like *rs10010325* can be used as an input.
-The tables with this type of IDs have a special icon (
-
-![](media/cd690ff706ce19d33fcdb2150aa52687.emf)
-
-) in the tree area. In this example the following input table with 180 SNPs is
-used:
+The tables with this type of IDs have a special icon (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) in the tree area. In this example the following input table with 180 SNPs is used:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19>
 
@@ -257,7 +224,7 @@ tracks:
 The results shown here can be found in the trea area: data/Examples/SNPs linked
 to human height/Data/SNP_height_hg19 (Analyze SNP list (TRANSFAC))
 
-Subfolder *All SNPs*
+#### Subfolder *All SNPs*
 
 This folder includes one gene table and one track.
 
@@ -278,11 +245,7 @@ blue boxes correspond to exons, and the lines between exons symbolize introns,
 drawn in logarithmic scale. SNPs are shown by vertical red lines. This schema
 provides an overview of SNP location within genes.
 
-A track (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-) represents the results of the SNP mapping to genomic positions. In this
+A track (![](media/368076561774990443d1e26a25dd9f3e.emf)) represents the results of the SNP mapping to genomic positions. In this
 example, out of 180 input SNPs 148 were mapped to the genome, and for them the
 following information is shown:
 
@@ -293,18 +256,14 @@ chromosomal location, absolute positions, length, and strand. In the column
 **Type** the value *variation* is shown for all SNPs, and in the column
 **Property: name** SNP IDs are shown.
 
-Subfolder SNPs in exons
+#### Subfolder SNPs in exons
 
 This folder includes two tables, both present information for those SNPs that
 are located in exons. In our example, 19 out of 148 SNPs mapped to the genome
 are located in exons.
 
 One of the tables contains standard SNP IDs in the **ID** column, and has the
-same icon as the input SNP table (
-
-![](media/cd690ff706ce19d33fcdb2150aa52687.emf)
-
-).
+same icon as the input SNP table (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)).
 
 ![](media/4c944019ab8f4cacd1ed38455f4a1df3.png)
 
@@ -321,11 +280,9 @@ If your input SNP table contains more columns in addition to IDs, all these
 columns will be preserved and will be added to the right side of this table.
 
 The other table in this subfolder results from the *SIFT analysis,* and is
-represented by an icon for a general table (
+represented by an icon for a general table (![](media/d373ccf59d81fcd62088646e06661e33.emf)).
 
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-). SIFT is a widely accepted method to check whether a particular variation is
+SIFT is a widely accepted method to check whether a particular variation is 
 synonymous or non-synonymous, and in case of a non-synonymous variation whether
 it is damaging or tolerated. More details about SIFT can be found under
 <http://sift.jcvi.org/www/SIFT_help.html>.
@@ -349,30 +306,21 @@ The columns **Gene ID**, **Gene Name**, **Gene Desc** show information about
 which genes and gene products are affected and might be even damaged by a given
 variation.
 
-Subfolder SNPs regulatory
+#### Subfolder SNPs regulatory
 
 This subfolder contains three tables and one track.
 
 ![](media/a61454e910e023b0a0f79604f379b2c8.png)
 
 In this example, 129 out of 148 SNPs mapped to the genome are located in introns
-or gene flanking regions. The table (
-
-![](media/cd690ff706ce19d33fcdb2150aa52687.emf)
-
-) contains standard SNP IDs in the **ID** column, and has the same icon as the
-input SNP table, and as the table with SNPs in exons. The structure of the
+or gene flanking regions. The table (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) contains standard SNP IDs in the **ID** column, and has the same icon as the input SNP table, and as the table with SNPs in exons. The structure of the
 latter was described above in detail, under the subheading *Subfolder SNPs in
 exons*.
 
 The other two tables and one track in this subfolder present the results of the
 TFBS search in the SNP surrounding regions.
 
-The table *Summary: TFBSs around regulatory SNPs* (
-
-![](media/bdc0950b9334b3367ad87519e4ad0791.png)
-
-) shown below has been sorted by the values in the **Yes-No ratio** column.
+The table *Summary: TFBSs around regulatory SNPs* (![](media/bdc0950b9334b3367ad87519e4ad0791.png)) shown below has been sorted by the values in the **Yes-No ratio** column.
 
 ![](media/1874fdda5460ba74ee2bbdc8682baf5e.png)
 
@@ -471,7 +419,7 @@ with several TFBSs, e.g. with the binding sites for c-Maf and PPARγ.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
-Analysis with GTRD
+#### Analysis with GTRD
 
 This workflow is similar to the one described above. The difference is in the
 database applied for the TFBS search; in this workflow it is the GTRD database.
@@ -485,7 +433,7 @@ data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyze SNP list
 
 ![](media/94cc28038e1de833c5586cc9c9a9d041.png)
 
-1.  Find enriched TF binding sites in variation sites
+### Find enriched TF binding sites in variation sites
 
 This workflow is designed to study variations (mutations) located especially
 within promoter regions. It helps to address the questions, which TFBSs are
@@ -523,11 +471,9 @@ and indels from full-genome NGS*. Both workflows can be found under
 <http://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/>
 
 In the following example we took as input the track SNP_indels.vcf, which can be
-found at: [data/Examples/Chronic Myeloid Leukemia Patient
-Genotyping/Data/SNP_indels.vcf](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf)
+found at: [data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf)
 
-This vcf file was produced by the workflow *Find genome variants and indels from
-full-genome NGS*.
+This vcf file was produced by the workflow *Find genome variants and indels from full-genome NGS*.
 
 **Step 3**. Specify the **Gene promoters**. By default all promoters -1000 to
 +100 bp relative to the TSS from Ensembl 65.37 genome version are used.
@@ -536,7 +482,7 @@ full-genome NGS*.
 identification of the enriched motifs around variation sites. The default
 profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC®
 release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
-2014.4/Data/profiles/) available.
+2019.1/Data/profiles/) available.
 
 **Step 5**. Specify the **Variation surrounding region** in base pairs. By
 default 15 bp are used. Within these region/window the search for enriched TFBSs
@@ -582,7 +528,7 @@ screenshot below.
 
 ![](media/4c524c2d4d2e8215012e65a09eab7804.png)
 
-1.  Mutation effect on sites analysis
+### Mutation effect on sites analysis
 
 This method allows to find transcription factor binding sites (TFBSs) affected
 by variations or mutations.
@@ -686,7 +632,7 @@ given variation created or enhanced corresponding TFBS.
 The last column **Property: siteModel** gives a link to the matrix model and can
 be opened in the workspace to view the matrix logo.
 
-1.  SIFT (Sorting Tolerant From Intolerant) analysis
+### SIFT (Sorting Tolerant From Intolerant) analysis
 
 The SIFT analysis tool predicts whether a single amino acid substitution (AAS)
 affects protein function, based on sequence homology and the physical properties
@@ -762,17 +708,14 @@ following additional fields in the output** table.
 
 ![](media/6f22556b0c7e9bfc0a77c11c060fd2b6.png)
 
-**Step 3.** Define where the output table should be located in your project
+**Step 12** Define where the output table should be located in your project
 tree. You can do so by clicking on the pink field “select element” in the field
 **Output**, and a new window will be opened, where you can select the location
 of the table and define its name.
 
 Start the SIFT analysis by pressing the [Run workflow] button.
 
-An example output table can be found here: [data/Examples/SNPs linked to human
-height/Data/SNP_height_hg19 (Analyse SNP list (TRANSFAC))/SNPs in
-exons/SNP_height_hg19 matched SNPs in exons
-SIFT](http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons%20SIFT)
+An example output table can be found here: [data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyse SNP list (TRANSFAC))/SNPs in exons/SNP_height_hg19 matched SNPs in exons SIFT](http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons%20SIFT)
 
 ![](media/86dc142d686842b3ce52f4fb0fc1c8fd.png)
 
