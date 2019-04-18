@@ -41,21 +41,16 @@ the main Work Space and looks as shown below:
 drag&drop or select the files from the Tree area. Here, a set of files from the
 Example folder is used as input.
 
-[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150
-forward.fastq](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic
-Myeloid Leukemia Patient Genotyping/Data/SRR944150 forward.fastq)
+[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 forward.fastq]
 
-[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150
-reverse.fastq](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic
-Myeloid Leukemia Patient Genotyping/Data/SRR944150 reverse.fastq)
+[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 reverse.fastq]
 
 **Step 3**. Specify the **OutputFolder** location and name and press the button
 [Run workflow].
 
-All results are saved in the result folder: 
+#### All results are saved in the result folder: 
 
-data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150
-forward.fastq (Genome variants and indels from RNA-seq)
+data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 forward.fastq (Genome variants and indels from RNA-seq)
 
 In the first step the input fastq sequences are subjected to the BWA method from
 Illumina. BWA is a software package for mapping low-divergent sequences against
@@ -167,7 +162,7 @@ rat, rn5 chromosomes Rnor_5.0
 
 The further steps of the visualization are similar to the human tracks.
 
-### Identify and classify genes with genomic variants
+## Identify and classify genes with genomic variants
 
 Genomic variants are represented in the same format as genome intervals or
 ChIP-seq peaks, i.e. with their absolute chromosomal positional locations.
