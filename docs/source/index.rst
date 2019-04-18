@@ -18,6 +18,7 @@ Guide
    Functional_enrichment
    Analyze_regulatory_regions
    Drug_targets
+   Genomic_variants
 
 Indices and tables
 ==================
