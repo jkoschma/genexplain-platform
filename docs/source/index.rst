@@ -16,6 +16,7 @@ Guide
    miRNA
    Microarrays
    Functional_enrichment
+   Analyze_regulatory_regions
    Drug_targets
 
 Indices and tables
