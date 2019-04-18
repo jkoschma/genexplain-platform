@@ -1,18 +1,19 @@
-1.  Analyze regulatory regions
+# Analyze regulatory regions
 
 This set of workflows helps to find putative TF binding sites in the DNA
 sequences under study. There are several workflows in this group that perform
 searches in different genomic regions, either in promoters, in the peaks
 calculated from ChIP-seq data, or in any input DNA sequences. This group of
 workflows is designed using the core functionality of a “site search on gene
-set” analysis as described in Section 20.1.2.
+set” analysis as described in the methods description.
 
-1.  Motif quality analysis
+## Motif quality analysis
 
 This tool analyzes the quality of a motif model. The “Motif quality analysis”
 item is located in the NGS folder of the analysis methods
 ([analyses/Methods/Site analysis/Motif quality
-analysis](http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect%20on%20sites))
+analysis]
+(http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect%20on%20sites))
 and in the start page group ‘Microarrays’ under section ‘Analyze regulatory
 regions’.
 
@@ -68,9 +69,9 @@ https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Encode%20TFBS%20CEB
 The output table can be used to create a ROC curve for the visualization of the
 motif quality and for comparison of different motifs.
 
-![C:\\Users\\adm\\Downloads\\ROC50.tif](media/d770d9bfc4cca63bbcc0341eb294ec0a.tiff)
+![](media/d770d9bfc4cca63bbcc0341eb294ec0a.tiff)
 
-1.  Create matrix logo
+### Create matrix logo
 
 This tool creates logo representations for position weight or frequency matrices
 of transcription factor binding sites.
@@ -106,13 +107,8 @@ region into four sections.
 Output folder – Specify the name and path of the output folder for the created
 logos.
 
-Here, we take a profile created by the workflow ‘[Identify enriched composite
-modules in promoters
-(TRANSFAC®)](http://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify
-enriched composite modules in promoters (TRANSFAC(R))&fromDE=data/Examples/Brain
-Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus
-Neuroblastoma/Upregulated Ensembl genes filtered (LogFC>1)’ as input can be
-accessed using the URL
+Here, we take a profile created by the workflow ‘[Identify enriched composite modules in promoters(TRANSFAC®)] 
+Input can be accessed using the URL:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(enriched%20motifs%20and%20CMA)/Profile>
 
@@ -124,8 +120,6 @@ The output folder contains one PNG image for each matrix of the specified input.
 Existing files in the output folder are not overwritten. In case of name
 conflicts the tool suffixes a number to the file name as shown below:
 
-:
-
 ![](media/e13ea4addebe5f4404b7301a1388be54.png)
 
 The matrix logo output image is as shown below:
@@ -135,27 +129,22 @@ The matrix logo output image is as shown below:
 Each matrix image can be exported in either .jpeg, .png, or .bmp file formats
 using the ‘Export document’ button.
 
-1.  Identify enriched TF sites in promoters
+## Identify enriched TF sites in promoters
 
-2.  Version 2.0 (Adjusted p-values)
+### Version 2.0 (Adjusted p-values)
 
-TRANSFAC®
+### TRANSFAC®
 
 This workflow is designed to find individual motifs enriched in the promoters of
 the input gene set as compared with a background set (No set). In the first part
 of the workflow, the enriched motifs are identified by the method
-*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon
+*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon (![](media/4be066f3c65d99b2fcf74faf062ed913.png)
 
-![](media/4be066f3c65d99b2fcf74faf062ed913.png)
+Please refer to indiviual methods description for details on this particular analysis method.
+Filtered enriched motifs serve as a basis to construct a specific profile, and this profile is run on the promoters of the input gene set, method *analyses/Methods/Site analysis/Site search on gene set*, icon 
 
-. Please refer to section 20.1.4 for details on this particular analysis method.
-Filtered enriched motifs serve as a basis to construct a specific profile, and
-this profile is run on the promoters of the input gene set, method
-*analyses/Methods/Site analysis/Site search on gene set*, icon
+(![](media/f92a3f997475d3aff7b33819c5b95f67.png)
 
-![](media/f92a3f997475d3aff7b33819c5b95f67.png)
-
-. Details about this individual method are given in section 6.1.2.
 
 To launch the workflow, follow these steps:
 
@@ -222,12 +211,7 @@ data/Examples/HCV infection in liver GSE31193, Affymetrix U133 Plus 2.0
 microarray/Data/IFN 6h vs Control/IFN 6hours vs Control UP LogFC\>1.5, 125 genes
 (enriched motifs_TRANSFAC(R))
 
-The table **Enriched Motifs** (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-) contains those site models, here TRANSFAC® matrices, which are enriched in the
-Yes set in comparison with the No set as shown below.
+The table **Enriched Motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below:
 
 ![](media/e0c69e7a68b82c59bf4f2d66667e80ec.png)
 
@@ -245,23 +229,14 @@ Motifs for IRF, STAT, ICSBP transcription factors are highly enriched, with adj.
 site FE \>2, as shown in the screenshot above. This is a very relevant result
 considering that here the effect of IFNγ on liver cells is studied.
 
-The table **Profile** (
-
-![](media/cc3badf61d49a95e3466827ae711bce4.png)
-
-) presents details for PWMs with *adj. site FE \>1*.
+The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*.
 
 ![](media/05ab2d3c73f33a44606f23389e190327.png)
 
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis.
 
-**Site search analysis output** (
-
-![](media/7e4f615deb96b42535625740c3eb2caa.png)
-
-) serves to visualize enriched motifs in the promoters. This folder contains
-four tracks (
+**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) serves to visualize enriched motifs in the promoters. This folder contains four tracks (
 
 ![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)
 
@@ -269,16 +244,13 @@ four tracks (
 
 ![](media/e95a29d01b7107d4ca9f868dfef7629a.png)
 
-Each track can be opened in the genome browser by double-clicking. A
-visualization of the track *yes sites* is shown below:
+Each track can be opened in the genome browser by double-clicking. A visualization of the track *yes sites* is shown below:
 
 ![](media/46fcffdb60c98469d43a167b18519812.png)
 
-The same track can be opened as a table; for this use right mouse click on the
-track name in the tree area or Ctrl +mouse click for Mac users.
+The same track can be opened as a table; for this use right mouse click on the track name in the tree area or Ctrl +mouse click for Mac users.
 
-With the same menu, you can apply other functions to the selected track, e.g.
-export it in available formats or delete.
+With the same menu, you can apply other functions to the selected track, e.g. export it in available formats or delete.
 
 ![](media/3aed9744253fd9b3050969c18c80024b.png)
 
@@ -286,11 +258,11 @@ Table view on the track *yes sites* is the following:
 
 ![](media/6d6f80c50f844a023878d4e433a3fe32.png)
 
-Sites table
+### Sites table
 
 ![](media/50739faeef67c05f5b5a979e887b7764.png)
 
-, gives the list of Transcription Factor matrcies linked to the enriched motifs.
+gives the list of Transcription Factor matrcies linked to the enriched motifs.
 For Each Transcription factor Yes-No ratio is calculated along with the P-value
 and Matrix logo. Detailed report on selected matrices can be obtained while
 selecting each transcription factor and pressing the report on selected matrices
@@ -317,8 +289,7 @@ gene.
 ![](media/c933698a6315e9af4bedfa3ec6cac7f1.png)
 
 This table can be further annotated to add a column with expression values, as
-shown below. Details for annotation of the tables are given in the section
-16.1.1.
+shown below. 
 
 ![](media/946ed2646b3caf1a5337cc4e89b438f6.png)
 
@@ -335,10 +306,10 @@ page as shown below:
 
 This report can be exported in HTML format for further use.
 
-**Note***.* This workflow is available together with a valid TRANSFAC® license.  
+**Note** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-GTRD
+### GTRD
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. It is very similar to the
@@ -346,12 +317,11 @@ workflow described above in Section 10.4. The only difference is in the PWM
 library applied. Here, site search is done with the help of the GTRD library
 (see 19.8 for further details about this library).
 
-For the input form and description of the results folder, please refer to
-Section 10.4.
+For the input form and description of the results folder, please refer to the description of the workflow Analyze Regulatory regions
 
-1.  Version 1.2 (Classical)
+## Version 1.2 (Classical)
 
-TRANSFAC®
+### TRANSFAC®
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. Site search is done with the
@@ -427,20 +397,20 @@ check what the default parameters are, or modify them according to your needs.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-GTRD
+### GTRD
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. It is very similar to the
-workflow described above in Section 10.4. The only difference is in the PWM
+workflow described above using TRANSFAC(R) database. The only difference is in the PWM
 library applied. Here, site search is done with the help of the GTRD library
 (see 19.8 for further details about this library).
 
 For the input form and description of the results folder, please refer to
-Section 10.4.
+description above. 
 
-1.  Identify composite modules in promoters
+### Identify composite modules in promoters
 
-2.  Version 2.0 (Adjusted p-values) with TRANSFAC®
+#### Version 2.0 (Adjusted p-values) with TRANSFAC®
 
 This workflow is designed to find pairs of sites in the promoters of the input
 gene set. This workflow enables the identification of combinations of several
@@ -453,8 +423,7 @@ method *analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon
 
 ![](media/4be066f3c65d99b2fcf74faf062ed913.png)
 
-. Please refer to Section 20.1.4.1 for details on this individual analysis
-method.
+Please refer to the individual analysis method description for the method search for enriched TFBSs. 
 
 Motifs with an enrichment of \>1.0 fold serve as a basis for constructing a
 specific profile, and this profile is run on the promoters of the input gene
@@ -462,9 +431,8 @@ set, method *analyses/Methods/Site analysis/Site search on gene set*, icon
 
 ![](media/f92a3f997475d3aff7b33819c5b95f67.png)
 
-. Details about this individual method are given in the section 20.1.2. In the
-second part of this workflow, composite modules are identified based on the
-enriched TFBSs. For more details about CMA analysis refer to section 20.1.5.
+ In the second part of this workflow, composite modules are identified based on the
+enriched TFBSs. For more details about CMA analysis refer to indiviual method description. 
 
 To launch the workflow, follow these steps:
 
@@ -484,7 +452,9 @@ treated with interferon-γ (IFNγ) as compared with non-treated cells.
 
 **Step 3**. Similarly input the NO set from the tree area. By default the
 workflow uses a subset of 300 genes randomly taken out of the human housekeeping
-genes. **Step 4**. After input of the Yes and No sets, the species (human, mouse
+genes.
+
+**Step 4**. After input of the Yes and No sets, the species (human, mouse
 or rat) is adjusted automatically. Verify the species shown in the species
 field.
 
@@ -558,20 +528,9 @@ The table **Profile** (
 This profile is an intermediate result of the workflow, and it is used further
 for *Site search on gene set* analysis.
 
-**Site search analysis output** (
+**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) is an intermediate result of the workflow, and its results are used further for the identification of composite modules. Details about the individual output files in this folder can be found in indiviual method description. 
 
-![](media/7e4f615deb96b42535625740c3eb2caa.png)
-
-) is an intermediate result of the workflow, and its results are used further
-for the identification of composite modules. Details about the individual output
-files in this folder can be found in Section 20.1.4.
-
-The **Modules** folder (
-
-![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)
-
-) is a result of the analysis *Construct composite modules*. It contains two
-tables, two tracks, one histogram, and one model view as shown below:
+The **Modules** folder (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)) is a result of the analysis *Construct composite modules*. It contains two tables, two tracks, one histogram, and one model view as shown below:
 
 ![](media/fd1ece0dbdda404fa9a392b734b5ff27.png)
 
@@ -590,9 +549,7 @@ is shown below.
 
 ![](media/0ec6449077f76ea9f958039e6f2f541e.png)
 
-For more details on the individual output tables and tracks as well as for
-**visualization** of the identified composite modules in the genome browser
-please refer to Section 20.1.4.
+For more details on the individual output tables and tracks as well as for **visualization** of the identified composite modules in the genome browser please refer to indiviual method description. 
 
 The output table *Transcription factors Ensembl genes*
 
@@ -609,7 +566,7 @@ seventeen transcription factors shown in the table above are candidate
 regulators of genes in the input *Yes set*. They are suggested to regulate
 transcription of Yes-genes via the identified composite elements. This table can
 be further annotated to add a column with expression values, as shown below.
-Details for annotation of the tables are given in Section 16.1.1.
+Details for annotation of the tables are given in description of Annotate table. 
 
 ![](media/8032ffb665be0418f0072e062039b0b4.png)
 
@@ -622,27 +579,15 @@ modules.
 **Note***.* This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-1.  Version 1.2 (Classical) with TRANSFAC®
+### Version 1.2 (Classical) with TRANSFAC®
 
 This workflow enables the identification of combinations of several TFBSs in the
 promoters of the genes under study (Yes-set). Such combinations of sites are
 referred to as composite modules. The resulting composite module differentiates
 the Yes-set from a background set (No-set).
 
-In the first part of the workflow a *Site search on gene set (*
-
-![](media/f92a3f997475d3aff7b33819c5b95f67.png)
-
-*)* is performed with your selected Yes-set, No-set and a specified profile of
-matrices. You can refer to section 9.3 for details of this method. In the second
-part of this workflow, composite modules are identified (
-
-![](media/3b61812fc765ebaebbe367ed9bfe35bd.png)
-
-) based on the identified single sites in the Yes and No sets. For more details
-about the hierarchical structure of the composite modules, search for composite
-modules, visualization and interpretation of the results refer to section
-20.1.5.4.
+In the first part of the workflow a *Site search on gene set* (![](media/f92a3f997475d3aff7b33819c5b95f67.png)) is performed with your selected Yes-set, No-set and a specified profile of matrices. You can refer to indiviual method description for the description of this method. In the second part of this workflow, composite modules are identified (![](media/3b61812fc765ebaebbe367ed9bfe35bd.png))
+based on the identified single sites in the Yes and No sets. For more details about the hierarchical structure of the composite modules, search for composite modules, visualization and interpretation of the results refer to the description of the method Identify Composite Modules. 
 
 To launch the workflow, follow these steps:
 
@@ -700,19 +645,13 @@ and No sets and on the number of iterations. The recommended size of the Yes set
 is 150 genes maximum, and the recommended size of the No set is 300 genes
 maximum.
 
-Results
+## Results
 
 The results folder consists of two folders and one table as shown below:
 
 ![](media/f1be8c61ba87a911a39802e730c99a79.png)
 
-Site search analysis output (
-
-![](media/7e4f615deb96b42535625740c3eb2caa.png)
-
-) The summary table of the site search is shown below. Identified TFBSs are used
-further for the identification of composite modules. Details about the
-individual output files can be found in Section 20.1.2.
+Site search analysis output (![](media/7e4f615deb96b42535625740c3eb2caa.png)) The summary table of the site search is shown below. Identified TFBSs are used further for the identification of composite modules. 
 
 ![](media/0ed59ac0c3224d6c33b3fd292ef261e7.png)
 
@@ -725,23 +664,8 @@ particular run of the workflow was done with.
 
 ![](media/d2bcc7858c2a29da299c8bc92cd71f68.png)
 
-The **modules**
-
-![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)
-
-folder can be expanded in the tree area. It contains two tables (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-), two tracks (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-), and two plots (
-
-![](media/e16c5085d2766bce7561c588951ab4c0.emf)
-
-):
+The **modules** (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)) folder can be expanded in the tree area. It contains 
+two tables (![](media/3376044660b26a160e52442bb6a63338.png)), two tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)), and two plots (![](media/e16c5085d2766bce7561c588951ab4c0.emf)):
 
 ![](media/fd1ece0dbdda404fa9a392b734b5ff27.png)
 
@@ -754,8 +678,7 @@ The plot **Histogram** is a distribution of scores for individual promoters:
 ![](media/edfca13bf7dab59ce03c037034cec28c.png)
 
 For a detailed interpretation of the histogram as well as for a visualization of
-the identified composite modules in the genome browser, please refer to section
-20.1.5.5.
+the identified composite modules in the genome browser, please refer to description of the compostie module method. 
 
 The output table Transcription factors Ensembl genes is a list of transcription
 factors linked to the site models in the composite module. For each
@@ -767,12 +690,11 @@ description, HGNC gene symbol, species, and site model (TRANSFAC® PMW name):
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-1.  Cross-species identification of enriched motifs in promoters using ortholog
-    information (TRANSFAC®)
+### Cross-species identification of enriched motifs in promoters using ortholog information (TRANSFAC®)
 
 This workflow is designed to find individual motifs enriched in the promoters of
 the input gene set as compared with a background set (No set). It is very
-similar to the workflow described in section 10.4.3.1 except that here you can
+similar to the workflow described above except that here you can
 use an input table for any species and get the output for the desired species.
 
 The workflow can be accessed from the start page here:
@@ -785,11 +707,10 @@ In the first part of the workflow, enriched motifs are identified by the method
 
 ![](media/7262880155aba8a0362954fe7cd09fb5.png)
 
-. Please refer to section 20.1.4 for details on this particular analysis method.
+Please refer details on this particular analysis method.
 Filtered enriched motifs serve as a basis to construct a specific profile, and
 this profile is applied to the promoters of the input gene set, method
-*analyses/Methods/Site analysis/Site search on gene set*. Details about this
-individual method are given in section 6.1.2. The last step is a conversion to
+*analyses/Methods/Site analysis/Site search on gene set*. The last step is a conversion to
 homology transcription factors.
 
 The input form looks as shown below:
@@ -875,17 +796,13 @@ factors linked to the enriched motifs. For each transcription factor, the
 Ensembl gene ID is provided, as well as gene description, HGNC gene symbol,
 species, and site model (TRANSFAC® PWM name). This table can be further
 annotated to add a column with expression values, as shown below. Details for
-annotation of the tables are given in the section 16.1.1.
+annotation of the tables are given in the section Annotate table 
 
-1.  Visualization of site search results
+### Visualization of site search results
 
 This method visualizes results of the site search analyses. It can be found
 under the tab *Analyses*, in the folder Methods/Site analysis/Site search report
-(
-
-![](media/37177588ef1548341e24a247bb59e445.png)
-
-). Here the default input form is shown:
+(![](media/37177588ef1548341e24a247bb59e445.png)). Here the default input form is shown:
 
 ![](media/a9c6f66629c88d2125071f81a6ae8080.png)
 
