@@ -1,10 +1,10 @@
-1.  Metabolism
+# Metabolism
 
 ![](media/0fb63da1494f75eac021f7632690e129.png)
 
-1.  Analyze metabolic networks
+## Analyze metabolic networks
 
-2.  Find longest metabolic chain
+## Find longest metabolic chain
 
 The goal of this analysis is to find longest chains which contain as many
 elements from the input collection as possible. Here chain means a path which
@@ -30,14 +30,11 @@ reactions or both directions.
 
 **Step 3**: Selection of **Max**imal search **radius**, the default is 10.
 
-**Step 4**: Selection of **Max**imal **depth** which will be used **by the
-Dijkstra** search algorithm, the default is 100.
+**Step 4**: Selection of **Max**imal **depth** which will be used **by the Dijkstra** search algorithm, the default is 100.
 
-**Step 5**: Specify the **Score cutoff** – Molecules with a Score lower than
-specified will be excluded from the result.
+**Step 5**: Specify the **Score cutoff** – Molecules with a Score lower than specified will be excluded from the result.
 
-**Step 6**: Specify the **Search collection**, which can be one of the drop-down
-menu shown below.
+**Step 6**: Specify the **Search collection**, which can be one of the drop-down menu shown below.
 
 ![](media/b350bec02cf321b9025188e61b5ca6f3.png)
 
@@ -70,11 +67,11 @@ each row and visualize the results as shown below:
 
 Similarly, other long chains can be visualized from the result table.
 
-1.  Find metabolic clusters by shortest path
+## Find metabolic clusters by shortest path
 
 Please refer to Section 3 and apply the steps explained there correspondingly.
 
-1.  Find metabolic clusters by all path
+### Find metabolic clusters by all path
 
 This analysis allows you to generate a cluster of genes/molecules upstream or
 downstream or both by taking reactions and all intermediate molecules from a
@@ -109,7 +106,7 @@ project tree. You can do so by clicking on the pink box (select element) in the
 field **Output name**, and a new window will open, where you can select the
 location of the results folder and define its name.
 
-1.  Flux Balance Analysis
+### Flux Balance Analysis
 
 To launch this workflow, open the workflow input form from the Start page:
 
@@ -123,7 +120,8 @@ set**.
 For this example, all further steps are demonstrated with the following input
 set:
 
-[http://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(LogFC%3E1)](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20)
+[http://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(LogFC%3E1)]
+(http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20)
 
 **Step 2**: Specify the metabolism database (**MetDB**) by selecting Recon2 or
 HMR from the drop-down menu. As default the Recon2 database is selected.
@@ -146,7 +144,7 @@ location of the results table and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-Visualization and interpretation of results
+### Visualization and interpretation of results
 
 The results consist of several files and one folder:
 
