@@ -69,7 +69,7 @@ Similarly, other long chains can be visualized from the result table.
 
 ## Find metabolic clusters by shortest path
 
-Please refer to Section 3 and apply the steps explained there correspondingly.
+Please refer to the description of the method cluster by shortest path and apply the steps explained there correspondingly.
 
 ### Find metabolic clusters by all path
 
