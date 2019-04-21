@@ -4,7 +4,7 @@
 
 ## Analyze metabolic networks
 
-## Find longest metabolic chain
+### Find longest metabolic chain
 
 The goal of this analysis is to find longest chains which contain as many
 elements from the input collection as possible. Here chain means a path which
@@ -67,7 +67,7 @@ each row and visualize the results as shown below:
 
 Similarly, other long chains can be visualized from the result table.
 
-## Find metabolic clusters by shortest path
+### Find metabolic clusters by shortest path
 
 Please refer to the description of the method cluster by shortest path and apply the steps explained there correspondingly.
 
