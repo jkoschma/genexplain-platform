@@ -1,8 +1,8 @@
-1.  Popular functions
+# Popular functions
 
 ![](media/9552765f7390b07d15cf0a2fcb7dff18.png)
 
-1.  Operations with tables
+## Operations with tables
 
 Any table may be opened by double-clicking the corresponding name in the Tree
 Area. It will open under a new tab in the Work Space.
@@ -40,7 +40,7 @@ Even without activating the Edit function, you can select
 The selected rows can be saved as a separate file, which by default is given the
 name *\<original file name\> subset*, but you can change this name.
 
-Changing the table structure in the Operations Field
+### Changing the table structure in the Operations Field
 
 Having opened a table in the Work Space, e.g. by double clicking on its name in
 the Tree Area, it is possible to edit its structure in the Operations Field
@@ -68,11 +68,7 @@ pressing the button
 ![](media/704660205a0257d66dac45ba39818f41.emf)
 
 in the control panel right on top of the Operations Field. Here, you can also
-add new (
-
-![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)
-
-) columns. Before removing a column with the button
+add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)) columns. Before removing a column with the button
 
 ![](media/381ac2058d3640e12b44bfaef9665e4d.emf)
 
@@ -81,14 +77,9 @@ specifying this column; the selected item will be highlighted in blue. But be
 careful: Deleting it from the table will irrevocably erase the column including
 all its contents!
 
-1.  Annotate table
+### Annotate table
 
-The analysis method *Annotate table* (
-
-![](media/fe60f1326ac4b780e0b3db07619a4411.emf)
-
-) can be found in the Tree Area, under the Analyses tab in the folder *Methods*,
-subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Annotate table* (![](media/fe60f1326ac4b780e0b3db07619a4411.emf)) can be found in the Tree Area, under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Annotate%20table>
 
@@ -155,12 +146,12 @@ In this result table two new columns are added, Gene description and Gene
 symbol, to the right of the ID column. The ID column itself, and all the other
 columns are exactly the same as they were in the input table.
 
-Annotate a gene or protein table with expression values
+### Annotate a gene or protein table with expression values
 
 You may wish to see the expression values in any gene or protein table. In this
 example, let’s consider the annotation of the master regulatory molecules table
 with fold change values. Such a table can be generated, e.g. by the workflows
-*Find master regulators in networks,* described in Section 5.1.1.
+*Find master regulators in networks,* 
 
 Further steps are shown with the following input table:
 
@@ -193,16 +184,11 @@ In this result table one new column is added, LogFoldChange, to the right of the
 ID column. The ID column, and all the other columns are exactly the same as they
 were in the input table.
 
-1.  Convert identifiers for a gene table
+## Convert identifiers for a gene table
 
-Single gene table
+### Single gene table
 
-The analysis method *Convert table* (
-
-![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)
-
-) can be found in the tree area, on the Analyses tab in the folder *Methods*,
-subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Convert table* (![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)) can be found in the tree area, on the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Convert%20table>
 
@@ -303,7 +289,7 @@ well. Numerical values are calculated according to the selected rule.
 Similarly, any other table in the tree area with gene or protein identifiers can
 be converted into the desired type of identifiers.
 
-Multiple gene sets
+### Multiple gene sets
 
 The input is a folder with several gene tables. The steps of this workflow for
 each individual gene table are the same as described in the section above. The
@@ -314,7 +300,7 @@ The output is a folder which contains subfolders with the results for each
 individual input table. The subfolders are automatically given the same names as
 the input tables.
 
-1.  Join tables
+## Join tables
 
 The analysis method *Join tables* (
 
@@ -354,7 +340,7 @@ tables* (
 
 ).
 
-1.  Intersect tables
+## Intersect tables
 
 The analysis method *Intersect tables* (
 
@@ -384,7 +370,7 @@ several rows are merged into a single one if merge columns option is selected.
 Output table - Name of the table where the results will be saved. If a table
 with that name already exists it will be replaced.
 
-1.  Venn diagram
+## Venn diagram
 
 With this feature you can create VENN diagrams from the input tables as well as
 to get tables of common and unique genes according to the sections of the VENN
@@ -456,7 +442,7 @@ The output is a folder comprising several tables and one diagram as shown below:
 
 ![](media/f665b394e7ee2dff8f5ef7bae281fbed.png)
 
-Results
+### Results
 
 **Diagram** opens automatically in the work space when the analysis is
 completed, can be found in the Examples folder using the URL
@@ -508,7 +494,7 @@ Each of the resulting tables can be used for all operations with tables and
 serve as input for a number of workflows, e.g. for functional classifications,
 promoter analysis, pathway analysis and more.
 
-1.  Operations with tracks
+## Operations with tracks
 
 The folder *Data manipulation* contains several methods allowing useful
 operations with tracks, among other methods. This folder can be found on the
@@ -516,14 +502,9 @@ operations with tracks, among other methods. This folder can be found on the
 information about their chromosomal location and absolute positions of the
 beginning and of the end. Optionally, any additional information about the
 fragments can be included. Tracks are very often available in BED format. Within
-the geneXplain platform, tracks in the tree area are shown as (
+the geneXplain platform, tracks in the tree area are shown as (![](media/368076561774990443d1e26a25dd9f3e.emf)). As for the basic operations with tracks, kindly refer to the previous descriptions (2.3.3).
 
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-). As for the basic operations with tracks, kindly refer to the previous
-descriptions (2.3.3).
-
-1.  Annotate track with genes
+## Annotate track with genes
 
 The method *Annotate track with genes* (
 
@@ -589,7 +570,7 @@ intron of the ERI1 gene.
 input track, you might be interested to increase the gene-bound extension
 regions in the input form, and run the analysis again.
 
-1.  Intersect tracks
+## Intersect tracks
 
 Track intersection provides two types of operations whose results are either the
 intersection itself or the difference of two tracks. In the first case, the
@@ -625,7 +606,7 @@ positions (sometimes called "overhanging ends"). Note that this limit is applied
 to each side of an input interval, not to the total number of uncovered end
 positions.
 
-1.  Gene set to track
+## Gene set to track
 
 The method *Gene set to track* (
 
@@ -676,7 +657,7 @@ number of Ensembl genes in the input table. There are columns for
 assigned as *misc_feature*. Other columns present in the input table are all
 added on the right side of this table, e.g. here **Affymetrix ID** column.
 
-1.  Track to gene set
+## Track to gene set
 
 The method *Track to gene set* (
 
@@ -801,7 +782,7 @@ to allow for a reasonable schematic representation.
 All Ensembl gene IDs are hyperlinked, and upon click on them the corresponding
 Ensembl gene page is opened in a new tab of the browser.
 
-1.  Process track with sites
+## Process track with sites
 
 In general, a track is a set of intervals where positions are specified that we
 can map on a chromosome. These track files can be visualized in a genome browser
@@ -869,7 +850,7 @@ The detailed view of the processed track is as shown below:
 have a track with 219bp. This processed track can be used further for other site
 analysis functions.
 
-1.  Create random track
+## Create random track
 
 This method creates a track of randomly sampled sequence regions, also denoted
 as intervals, segments or subsequences. Upstream regions of genes serve as
@@ -924,7 +905,7 @@ Random number seed: If greater than 0, this number will be supplied as seed for
 the random number generator in order to be able to reproduce the sampling
 result.
 
-1.  Create transcript region track
+## Create transcript region track
 
 This method allows for creating tracks specific for particular transcript
 regions, e.g. promoters, 5’ UTRs, 3’ UTRs, exons, introns.
@@ -1021,7 +1002,7 @@ The resulting tracks file can be used as input for various other workflows, for
 example to search for TF binding sites, enriched motifs and composite modules,
 and others.
 
-1.  Create tissue-specific promoter track
+## Create tissue-specific promoter track
 
 The analysis method ‘Create tissue-specific promoter track’ can be found on the
 Start page, under the button ‘Popular functions’.
@@ -1079,7 +1060,7 @@ https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE
 These set of promoters can be used as an input for other site analysis
 workflows.
 
-1.  Track statistics
+## Track statistics
 
 The analysis method *Track Statistics* can be found on the Start page, under the
 button ‘Popular functions’ as shown below:
@@ -1190,7 +1171,7 @@ The link to an output HTML file using a track file as input is here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201%20stats/Report>
 
-1.  Mutation effect analysis
+## Mutation effect analysis
 
 This tool allows to find proteins affected by mutations. The mutation effect
 analysis determines the effect of a certain genomic mutation on a protein, such
@@ -1311,7 +1292,7 @@ below.
 
 ![](media/2a7a9aac46faf2e9e8f965ad116ada5a.png)
 
-1.  Remove overlapping sites
+## Remove overlapping sites
 
 This method removes overlapping sites from any track and constructs a subset of
 the input track with no sites overlap in the output track. It can be found under
@@ -1370,7 +1351,7 @@ output tracks are shown below:
 
 ![](media/cb37a49f1e380e83ded5fd6f95e872a2.png)
 
-1.  Statistical methods
+## Statistical methods
 
 These methods have been described in detail in other sections, where they
 contribute essentially to certain workflows. Please, refer to these sections as
@@ -1381,7 +1362,7 @@ specified below.
 | LIMMA (Linear Models for MicroArrays) | See Section 4.2.1  |
 | EBarrays                              | See Section 4.2.2  |
 
-1.  Compare analysis results
+### Compare analysis results
 
 This tool compares P-values in two analysis results. Analyses of interest are,
 for instance, binding sites or GO term enrichment results. The comparison can
