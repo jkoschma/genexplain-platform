@@ -525,7 +525,7 @@ https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1
 **Step 3**. In the Classification field, select the option Repository folder
 from the drop-down menu, as shown below.
 
-![](media/image001.png)
+![](media/image001.PNG)
 
 **Step 4**. As soon as the option Repository folder is selected, two additional
 fields will automatically appear in the input form, Path to classification root
