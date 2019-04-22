@@ -468,11 +468,7 @@ visible in the last column of the table.
 ![](media/471e122934f3168fd0ba47a5f3e024dc.png)
 
 Let’s close the summary table to return to the search form of the DrugExpress
-database. To search by the drug name, you can type in your search term and press
-
-![](media/be0e9a41b72792c2bc9708972431d45d.png)
-
-.
+database. To search by the drug name, you can type in your search term and press ![](media/be0e9a41b72792c2bc9708972431d45d.png)
 
 ![](media/f4073da4cb4f922c7861215c4647b223.png)
 
@@ -482,11 +478,7 @@ the database with all columns described above.
 ![](media/b4241cbac102fe0a851cea51e54134f4.png)
 
 To search within the DrugExpress database by the gene name please type in your
-search term and press
-
-![](media/be0e9a41b72792c2bc9708972431d45d.png)
-
-button.
+search term and press ![](media/be0e9a41b72792c2bc9708972431d45d.png) button.
 
 Example. Searching for Caspase10 (casp10) returns 5 entries. The resulting table
 contains the following columns, the Accession numbers of the linked drug, Drug
@@ -552,12 +544,12 @@ name.
 
 **Step 7**. Press the [Run] button and wait till the analysis is completed.
 
-Results of the functional classification using DrugExpress
+### Results of the functional classification using DrugExpress
 
 As a result, a table is generated with all columns as usual for *Functional
 classification* results, shown below. You can find the resulting table at:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20DrugExpress
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20DrugExpress
 
 Each row corresponds to one ontological category, which in this case is one of
 the subfolders or tables from the DrugExpress folder*.* The names of the tables
