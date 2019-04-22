@@ -302,11 +302,8 @@ the input tables.
 
 ## Join tables
 
-The analysis method *Join tables* (
+The analysis method *Join tables* (![](media/baa0074f347e4d1fffb95512e381430d.png)) can be found in the Tree Area under the Analyses tab in the folder *Methods*,
 
-![](media/baa0074f347e4d1fffb95512e381430d.png)
-
-) can be found in the Tree Area under the Analyses tab in the folder *Methods*,
 subfolder *Data manipulation*. The complete path to this method is:
 
 https://platform.genexplain.com/bioumlweb/\#de=analyses/Methods/Data%20manipulation/Join%20tables
@@ -334,20 +331,11 @@ Output table - Name of the table where results will be saved. If a table with
 that name already exists it will be replaced.
 
 If you like to join more than two tables, please see method *Join several
-tables* (
-
-![](media/4ef0b7512b0965e9aa03b36b0a2cd121.png)
-
-).
+tables* (![](media/4ef0b7512b0965e9aa03b36b0a2cd121.png)).
 
 ## Intersect tables
 
-The analysis method *Intersect tables* (
-
-![](media/4c5375b31768461c6c7a66d41aec8edc.png)
-
-) can be found in the Tree Area, under the Analyses tab in the folder *Methods*,
-subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Intersect tables* (![](media/4c5375b31768461c6c7a66d41aec8edc.png)) can be found in the Tree Area, under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Intersect%20tables>
 
@@ -378,11 +366,7 @@ diagrams.  VENN diagrams are images that show all possible logical relations
 between the input tables. As input, two or three gene tables can be provided for
 which you wish to know common and unique genes. These input tables can be in any
 format (gene or protein IDs). The VENN diagram function can be found under the
-tab *Analyses*, in the folder Methods/Data manipulation/Venn diagrams (
-
-![](media/181dad300c340e1ac75e0f4b1380b3aa.png)
-
-).
+tab *Analyses*, in the folder Methods/Data manipulation/Venn diagrams (![](media/181dad300c340e1ac75e0f4b1380b3aa.png)).
 
 The initial form of this analysis looks as it is shown below:
 
@@ -452,11 +436,7 @@ https://platform.genexplain.com/bioumlweb/\#de=data/Examples/HCV%20infection%20i
 ![](media/0815f948ec087558dec9a69285f8a6e9.png)
 
 This picture can be exported in png, jpg, or bmp formats with the help of the
-Export (
-
-![](media/452bc1b764b8f6b945a7c4c723578861.png)
-
-) button on the top control panel.
+Export (![](media/452bc1b764b8f6b945a7c4c723578861.png)) button on the top control panel.
 
 For the same input files, if you specify the input table names under the expert
 options as L1, L2, and L3 respectively, and un-check the *Simple picture* box,
@@ -506,12 +486,7 @@ the geneXplain platform, tracks in the tree area are shown as (![](media/3680765
 
 ## Annotate track with genes
 
-The method *Annotate track with genes* (
-
-![](media/660e619d8a95fd8d5d936e411e8ec6b6.png)
-
-) helps to add information about nearby located genes to each fragment. The
-input form is shown below:
+The method *Annotate track with genes* (![](media/660e619d8a95fd8d5d936e411e8ec6b6.png)) helps to add information about nearby located genes to each fragment. The input form is shown below:
 
 ![](media/58de33019378ccc22112a61734b16f0d.png)
 
@@ -608,11 +583,7 @@ positions.
 
 ## Gene set to track
 
-The method *Gene set to track* (
-
-![](media/f7f381d6ea50c68ea4cbe61d9fd3c3f3.png)
-
-) aims at creating a track corresponding to any table with Ensembl gene IDs. As
+The method *Gene set to track* (![](media/f7f381d6ea50c68ea4cbe61d9fd3c3f3.png)) aims at creating a track corresponding to any table with Ensembl gene IDs. As 
 with the fragments of the output track, this method takes the gene regions
 around TSS (transcription start sites). It is a useful method to create a track
 of gene promoters or upstream regions for any input gene table. The input form
@@ -659,11 +630,7 @@ added on the right side of this table, e.g. here **Affymetrix ID** column.
 
 ## Track to gene set
 
-The method *Track to gene set* (
-
-![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)
-
-) aims at identifying genes located close to the fragments in the input track.
+The method *Track to gene set* (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)) aims at identifying genes located close to the fragments in the input track.
 Genes overlapping with at least one input fragment are considered resulting
 target genes. The input form is shown below:
 
@@ -672,11 +639,8 @@ target genes. The input form is shown below:
 **Input track**. Specify input track. You can drag & drop it from your project
 within the tree area. Alternatively, you may click on the pink field *select
 element* and a new window will be opened, where you can select the input track.
-With the [track Plus] button (
-
-![](media/f812715ebe7d631a00e0dbd8a8ad4784.png)
-
-) you can add another track to have several tracks analyzed together.
+With the [track Plus] button (![](media/f812715ebe7d631a00e0dbd8a8ad4784.png))
+you can add another track to have several tracks analyzed together.
 
 **Species**. Choose human, mouse or rat species from the drop-down menu.
 
@@ -1009,8 +973,7 @@ Start page, under the button ‘Popular functions’.
 
 This method uses a set of Ensembl genes as input and extracts promoter regions
 by mapping it against the TSS locations defined in CAGE data in the Fantom5
-([Nature
-507:462–470](http://www.nature.com/nature/journal/v507/n7493/full/nature13182.html))
+([Nature 507:462–470](http://www.nature.com/nature/journal/v507/n7493/full/nature13182.html))
 database (see also 19.10).
 
 ![](media/e13fcb2265de29539017985fbdfa507d.png)
@@ -1180,8 +1143,7 @@ of Single Nucleotide Variations (mutations), and determines the type for each
 mutation.
 
 The analysis “Mutation effect” can be found in the NGS folder of analysis
-methods ([analyses/Methods/NGS/Mutation
-effect](http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect))
+methods ([analyses/Methods/NGS/Mutation effect](http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect))
 or on the start page button ‘Popular functions’ under the section ‘Operations
 with tracks’.
 
@@ -1220,9 +1182,7 @@ and you can specify the sequences location manually.
 
 **Step 3**. Specify the path and name of the Output track.
 
-After completion the output track file ([SNP_indels.vcf with mutation
-effect](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20with%20mutation%20effect))
-is opened by default in the work space.
+After completion the output track file ([SNP_indels.vcf with mutation effect](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20with%20mutation%20effect)) is opened by default in the work space.
 
 This resulting track can be found in the Examples folder under the URL:
 
@@ -1353,14 +1313,7 @@ output tracks are shown below:
 
 ## Statistical methods
 
-These methods have been described in detail in other sections, where they
-contribute essentially to certain workflows. Please, refer to these sections as
-specified below.
-
-| Principal Component Analysis (PCA)    | See Section 10.1.4 |
-|---------------------------------------|--------------------|
-| LIMMA (Linear Models for MicroArrays) | See Section 4.2.1  |
-| EBarrays                              | See Section 4.2.2  |
+Principal Component Analysis (PCA), LIMMA (Linear Models for MicroArrays), EBarrays have been described in detail in other sections, where they contribute essentially to certain workflows. Please refer to the workflow descriptions for the detailed explanation of these methods. 
 
 ### Compare analysis results
 
