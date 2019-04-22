@@ -442,7 +442,7 @@ compounds. Along with the individual files, there are 17 subfolders, in which
 the files are grouped according to the classification of the respective drugs
 (for example, “adrenergic antagonist”).
 
-Search with DrugExpress Database
+### Search with DrugExpress Database
 
 To search within the DrugExpress database you have to switch from Default mode
 to DrugExpress, mode using the drop-down menu at the top right corner (see
@@ -501,7 +501,7 @@ that significantly change their expression in response to the treatment.
 
 ![](media/7c196226cee200c45700d272de8774f4.png)
 
-Functional analysis applying DrugExpress, the input form
+### Functional analysis applying DrugExpress, the input form
 
 The classification of drugs can be also applied to any gene signatures, for
 example to the genes differentially expressed under certain disease conditions.
@@ -515,11 +515,7 @@ folder. Any input gene or protein table will be classified using the DrugExpress
 data. 17 subfolders and 642 gene tables will be used as categories for the
 classification of the input table. We will exemplify this in the following.
 
-**Step 1**. Open Functional classification analysis (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-), under the tab Analyses, folder Methods, subfolder Functional classification.
+**Step 1**. Open Functional classification analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)), under the tab Analyses, folder Methods, subfolder Functional classification.
 
 ![](media/35f6bfc53347a96eaaa413ae03dcfe8b.png)
 
@@ -528,20 +524,16 @@ species in the input fields, Source data set and Species, respectively.
 
 Please note that if the table you plan to classify has other IDs, you first need
 to convert it into a table with Ensembl IDs. This can be done using the *Convert
-table* (
-
-![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)
-
-) function located at analyses/Methods/Data manipulation/Convert table.
+table* (![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)) function located at analyses/Methods/Data manipulation/Convert table.
 
 For this example, the following input table is used:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes
 
 **Step 3**. In the Classification field, select the option Repository folder
 from the drop-down menu, as shown below.
 
-![](media/81cae727d27936c5c49632584aad6fd2.png)
+![](media/image001.png)
 
 **Step 4**. As soon as the option Repository folder is selected, two additional
 fields will automatically appear in the input form, Path to classification root
@@ -565,7 +557,7 @@ Results of the functional classification using DrugExpress
 As a result, a table is generated with all columns as usual for *Functional
 classification* results, shown below. You can find the resulting table at:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20DrugExpress>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20DrugExpress
 
 Each row corresponds to one ontological category, which in this case is one of
 the subfolders or tables from the DrugExpress folder*.* The names of the tables
@@ -576,7 +568,7 @@ p-values, as well as hit names.
 All IDs are internally hyperlinked, and with a click on each name the
 corresponding gene table will be opened.
 
-![](media/83db1c7b31f5b7cffda2b3a7fdc48f57.png)
+![](media/image002.png)
 
 For this example, we classified genes up-regulated in the Ewing brain tumor
 versus neuroblastoma, using DrugExpress gene signatures. Each resulting line
@@ -591,6 +583,7 @@ to be up-regulated by resveratrol; the p-value of this classification is
 4.7654E-4 This might be an interesting hint, because resveratrol has a potential
 anticancer activity.
 
-| [./media/image46.png](./media/image46.png) **Tip.** Any user-created ontology or collection of tables can be used for the classification of input gene lists, in a similar way as it has been shown for DrugExpress. To do this, you need to create a corresponding folder in your project, which can contain a hierarchy of subfolders as well. Importantly, each table in such a folder should have Ensembl IDs. Each subfolder and individual table will be used as a separate classification category, and will result in a separate line in the resulting table. |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+ ![](media/image003.png)
+ 
+ **Tip.** Any user-created ontology or collection of tables can be used for the classification of input gene lists, in a similar way as it has been shown for DrugExpress. To do this, you need to create a corresponding folder in your project, which can contain a hierarchy of subfolders as well. Importantly, each table in such a folder should have Ensembl IDs. Each subfolder and individual table will be used as a separate classification category, and will result in a separate line in the resulting table. |
+                                                                                                                                                                                                                                                                                                                                                                                                                |
