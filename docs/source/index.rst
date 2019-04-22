@@ -19,6 +19,8 @@ Guide
    Analyze_regulatory_regions
    Drug_targets
    Genomic_variants
+   Metabolism
+   Popular_Functions
 
 Indices and tables
 ==================
