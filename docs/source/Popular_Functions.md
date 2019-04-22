@@ -1035,9 +1035,7 @@ Fastq file. This information is helpful to calculate the number of reads in a
 particular input file which is a pre-requisite for many workflows. The input
 form is shown below:
 
-| [./media/image71.png](./media/image71.png) |   |
-|--------------------------------------------|---|
-
+![] (media/image71.png)
 
 The input form parameters are as follows:
 
