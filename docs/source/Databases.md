@@ -1,10 +1,10 @@
-1.  Working with the different databases
+# Working with the different databases
 
 Working with one of the databases listed in the Tree Area involves several,
 frequently all four areas of your screen. In this chapter, we will briefly
 demonstrate how to operate the individual databases.
 
-1.  Biomodels
+## Biomodels
 
 Biomodels is a source of mathematical models suitable for simulating biological
 processes. They have been compiled by the BioModels.Net project
@@ -21,11 +21,9 @@ displayed at once. Selecting one of the models is by double-clicking on the
 respective name.
 
 Searching for a model starts from the Search tab in the Info Box. You may enter,
-for instance, *glycolysis* and start the search with the button
+for instance, *glycolysis* and start the search with the button ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
 
-![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
-
-. You will get back 75 entries, the contents displayed under the tab Search
+You will get back 75 entries, the contents displayed under the tab Search
 result in the Operations Field, the information given being essentially
 self-explaining: A short description of the model including references is given.
 You may open any model by a click on the corresponding Accession number in the
@@ -34,15 +32,13 @@ last column.
 ![](media/21cddec78781bc8d2293767048d6ea0d.png)
 
 Having opened one of the diagrams by either method, the network schema will
-appear in the Work Space as well as in the Operations Field, tab Overview; see
-Section 23.3 for editing these diagrams. The tab Layout provides a number of
-options for changing the layout style of the diagram (see description of the
-method Diagram layouts); none of these options will change the diagram contents.
+appear in the Work Space as well as in the Operations Field, tab Overview. The tab Layout provides a number of
+options for changing the layout style of the diagram (see description of the method Diagram layouts); none of these options will change the diagram contents.
 Clicking on an individual node will show information about this component and
 its role in this model within the Info Box (tab Info).
 
 Many Biomodels have been optimized for dynamic simulation. Open, for instance,
-the subdirectory Diagrams and double-click
+the subdirectory Diagrams and double-click 
 *Goldbeter1991_MinMitOscil_ExplInact*. The diagram will open in the Work Space,
 the tab Info in the Info Box will show some details about the model, database
 links for the individual components. In the Operations Field, under the tab “My
@@ -51,18 +47,9 @@ original reference, its abstract and the PubMed link. Further information about
 how the model was constructed is added.
 
 Under the tabs Simulation, you will find the default settings for the
-simulation, which can be changed before launching the simulation (
+simulation, which can be changed before launching the simulation (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)). The simulation results will be graphically displayed in a new window, which can be saved as image using the Export button (![](media/92f14730b6f1cf00fb5cd1f07873c31a.emf)) in the Control Panel . For this, a number of formats are available.
 
-![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)
-
-). The simulation results will be graphically displayed in a new window, which
-can be saved as image using the Export button (
-
-![](media/92f14730b6f1cf00fb5cd1f07873c31a.emf)
-
-) in the Control Panel . For this, a number of formats are available.
-
-1.  Biopath
+## Biopath
 
 Biopath is a collection of molecular pathways, manually annotated from original
 scientific publications and comprising biological models and diagrams. A more
@@ -77,34 +64,18 @@ individual entities in the Info Box, after a single click with the left mouse
 button on the corresponding entity. The Diagrams can be opened by double-click
 with the left mouse button, or by opening a context menu with the right mouse
 button and selecting “Open diagram”. These diagrams contain their components
-listed underneath as nodes (
-
-![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)
-
-) and edges (
-
-![edge.gif](media/9c3855c990a6f0e4e296a150586f0ed9.gif)
-
-), for which additional information can be retrieved in the same way as for the
-whole diagram. Many of them may be assigned to a hierarchy of compartments (
-
-![](media/c0bb7611647e0a7531c1fbc224dbabf6.emf)
-
-).
+listed underneath as nodes (![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)) and edges (![edge.gif] media/9c3855c990a6f0e4e296a150586f0ed9.gif)), for which additional information can be retrieved in the same way as for the
+whole diagram. Many of them may be assigned to a hierarchy of compartments (![](media/c0bb7611647e0a7531c1fbc224dbabf6.emf)).
 
 If you select the Biopath database for a search, you may enter a gene name into
 the field of the Search tab in the Info Box (try, for instance, AKT1). In the
-Operations Field, under the tab Search result, you will find the following hit:
-
-![](media/4c844e25d933cbf9a06899e3a6b811db.emf)
+Operations Field, under the tab Search result, you will find the following hit: ![](media/4c844e25d933cbf9a06899e3a6b811db.emf)
 
 It shows the molecule encoded by the gene AKT1 being involved in the insulin
 pathway. The hyperlinked Accession number here opens a pathway diagram from the
 Biopath database, which includes insulin and AKT1 as well as the path between
 them. The pathway is shown in full in the Work Space; an overview is depicted
-under the “Overview” tab of the Operations Field:
-
-![](media/2ec82c5526ba23279889d434a28ae23d.emf)
+under the “Overview” tab of the Operations Field: ![](media/2ec82c5526ba23279889d434a28ae23d.emf)
 
 The part of the diagram that is displayed in the Work Space is framed by the
 dotted blue line in the Overview, which can be shifted with the mouse, the Work
@@ -121,16 +92,14 @@ In the diagram, green arrows represent conversions, magenta edges catalytic
 effects. To facilitate overview in complex diagrams, individual edges are
 highlighted in light blue on mouse-over.
 
-1.  Ensembl
+## Ensembl
 
 The Ensembl database provides annotation of genes from the Ensembl genome
-databases (<http://www.ensembl.org/index.html>).
-
-Presently, there are human, mouse and rat Ensembl data included in the
+databases (<http://www.ensembl.org/index.html>). Presently, there are human, mouse and rat Ensembl data included in the
 geneXplain platform, separately listed on the Databases tab. The following
 versions are provided:
 
-Human:
+**Human**:
 
 -   Genome build hg38, version 84.38
 
@@ -140,7 +109,7 @@ Human:
 
 -   Genome build hg18, version 61.37f
 
-Mouse:
+**Mouse:**
 
 -   Genome build mm10, version 72.38
 
@@ -148,7 +117,7 @@ Mouse:
 
 -   Genome build mm9, version 65.37
 
-Rat:
+**Rat:**
 
 -   Genome build rn5, version 71.5
 
@@ -160,55 +129,23 @@ In the subdirectories “Sequences/Chromosomes …” the individual chromosomes
 the corresponding genome are stored. A double-click on an individual chromosome
 symbol opens the corresponding object with its annotation in the genome browser
 of the geneXplain platform. Here, you can move the mouse pointer along the
-sequence to select a certain position. With the buttons
-
-![](media/3da760db5195d8ed5ee107501015d941.emf)
-
-and
-
-![](media/74fda49af74daf13361690bef9152994.emf)
-
-(zoom-out and zoom-in, resp.), you can go up to a level where you have the whole
-chromosome displayed or down to a level where you see the individual
-nucleotides. The most extreme views can also be directly selected with the
-buttons
-
-![](media/ce5572977dad932fce424780e029b4ae.emf)
-
-(overview) and
-
-![](media/631a49f0dad9d8c9bb05cf211c5e833c.emf)
-
-(detail; see below). A moderate view is provided as “default” (
-
-![](media/cab21d423ff2dab7b9fd3f3f448447d5.emf)
-
-).
+sequence to select a certain position. With the buttons ![](media/3da760db5195d8ed5ee107501015d941.emf) and 
+![](media/74fda49af74daf13361690bef9152994.emf) (zoom-out and zoom-in, resp.), you can go up to a level where you have the whole
+chromosome displayed or down to a level where you see the individual nucleotides. The most extreme views can also be directly selected with the buttons ![](media/ce5572977dad932fce424780e029b4ae.emf) (overview) and ![](media/631a49f0dad9d8c9bb05cf211c5e833c.emf) (detail; see below). A moderate view is provided as “default” ( ![](media/cab21d423ff2dab7b9fd3f3f448447d5.emf)).
 
 ![](media/66782d3d701ea1b39fb6f969e75e3cd4.emf)
 
 ![](media/efee8b23289ee6f68970fa17bcc78abf.emf)
 
 At an intermediate resolution of, e.g., human chromosome 1, you see individual
-genes highlighted in the Work Space:
-
-![](media/ce8f00f15956f0128c11090158e3de83.emf)
+genes highlighted in the Work Space: ![](media/ce8f00f15956f0128c11090158e3de83.emf)
 
 The alignment of genes and other genomic data against a reference genome can be
 viewed as data tracks in genome browser. The GeneTrack shows the localization of
 primary transcripts including intron/exon structure and direction of
 transcription. Scrolling backwards and forward through the genome can be done
 using the arrowheads next to the track name, or with the buttons “Page backward”
-(
-
-![](media/ba8eace4020e30c8fd4bbabe6c03f414.emf)
-
-) and “Page forward”  
-(
-
-![](media/83f174ee084b76d0bb4fa833351ed5cd.emf)
-
-), respectively.
+(![](media/ba8eace4020e30c8fd4bbabe6c03f414.emf)) and “Page forward”  (![](media/83f174ee084b76d0bb4fa833351ed5cd.emf)), respectively.
 
 Information about individual genes is displayed in the Info Box after clicking
 on the respective gene symbol in the Work Space; on the Sites tab of the
@@ -242,37 +179,27 @@ available tracks are listed with the symbol
 
 ![](media/368076561774990443d1e26a25dd9f3e.emf)
 
-. Just drag-and-drop the track of interest to the Work Space will render the
+Just drag-and-drop the track of interest to the Work Space will render the
 corresponding data amenable to the browser.
 
 The Ensembl database sections are searchable in the same way as described
 before: Just click on the name of the respective database in the Tree Area, so
 that it receives a light-blue background and its path appears on the Search tab
-of the Info Box. Enter your search term, launch the search by pressing
-
-![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
-
-, and find your Search results on the respective tab on the Operations Field.
+of the Info Box. Enter your search term, launch the search by pressing ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf) and find your Search results on the respective tab on the Operations Field.
 Among the multiple hits, the one with the perfect match will be highlighted in
 bold.
 
-1.  Gene Ontology (GO)
+## Gene Ontology (GO)
 
 Contents from Gene Ontology are imported into the geneXplain platform and are
-updated regularly. The present version is 06.2015.
-
+updated regularly. The present version is 06.2015. 
 GO is searchable in the same way as described before: Just click on the name GO
 in the Tree Area, so that it receives a light-blue background and its path
 appears on the Search tab of the Info Box. Enter your search term, launch the
-search by pressing
-
-![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
-
-, and find your Search results on the respective tab on the Operations Field.
-When clicking on linked descriptions, additional information will appear in the
+search by pressing ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf), and find your Search results on the respective tab on the Operations Field. When clicking on linked descriptions, additional information will appear in the
 Info Box, Info tab.
 
-1.  GeneWays
+## GeneWays
 
 GeneWays is a database about genes and their functional interactions. The
 underlying data (version 7.0) have been retrieved from the original scientific
@@ -291,13 +218,9 @@ link to the PubMed entries of the corresponding publication in the Info Box.
 A single click on the term GeneWays in the Tree Area / Databases suffices to
 indicate this data source in the Info Box, tab Search. You can insert your
 search term (e.g., a gene symbol) into the field underneath. Clicking on the
-icon
-
-![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
-
-launches the search. The search routine scans for exact matches, but use of
+icon ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf) launches the search. The search routine scans for exact matches, but use of
 wildcards is possible. Thus, searching for elk\* returns results for elk1,
-elk2p1, elk3, and elk4.
+elk2p1, elk3, and elk4. 
 
 The results will be shown in the Operations Field, under the tab Search result.
 For instance, when searching in GeneWays for JAG1, the following result table
@@ -314,7 +237,7 @@ depending on your browser settings. Rows referring to reactions show a different
 type of accession number, they are linked to a PubMed entry of the corresponding
 publication.
 
-1.  Reactome
+## Reactome
 
 Reactome is a database that provides information on biological objects such as
 proteins, protein complexes, reactions etc. It is an open-source, open access,
@@ -329,7 +252,7 @@ So far 6387 diagrams have been imported from version 57 of this database into
 the geneXplain platform. They can be used as graphical and editable schemata. In
 the Tree Area, all components are listed in each diagram subdirectory.
 
-1.  TRANSPATH®
+## TRANSPATH®
 
 TRANSPATH® is BIOBASE’s database about signal transduction and metabolic
 pathways in human and the most important model organisms, mouse and rat. Its
@@ -361,7 +284,7 @@ are displayed in the Operations Field, amenable to further activities.
 
 ![](media/0977749d9e357f605a53a67809ec0014.png)
 
-1.  GTRD
+## GTRD
 
 GTRD (Gene Transcription Regulation Database) is a database of weight matrices
 to recognize transcription factor binding sites. The GTRD library of weight
@@ -411,7 +334,7 @@ individual TFs.
 
 ![](media/80057caf83c0a4be586e47ea65885c60.emf)
 
-1.  TRANSFAC®
+## TRANSFAC®
 
 TRANSFAC® is the most comprehensive database on eukaryotic transcription factors
 (TFs), their genomic DNA-binding sites and DNA-binding profiles. It is a
@@ -443,7 +366,7 @@ role in a certain biological context, as defined by the profile name.
 The TRANSFAC folder “Dictionaries” contains mostly files with links to other
 databases for internal use of the program.
 
-1.  Fantom5 cell-type and tissue-specific transcription start sites
+### Fantom5 cell-type and tissue-specific transcription start sites
 
 The Fantom5 databases (Fantom5-Cell and Fantom5-Tissue) provide cell- and
 tissue-type specific transcription start site (TSS) annotations derived from
@@ -462,7 +385,7 @@ line) on the basis of the Poisson distribution. For this, local background CTSS
 rates were calculated from flanking regions (blue areas) of a putative TSS (red
 line), excluding its direct vicinity (red area).
 
-![D:\\gxp\\prj\\internal\\platform\\release_3.1\\Fantom5\\Schema_cage_macs_method.tif](media/fde51b8fb1e8cf16fa50a57e95c484dd.tiff)
+![](media/fde51b8fb1e8cf16fa50a57e95c484dd.tiff)
 
 In the second step, we further refined the initial CTSS clusters using a Hidden
 Markov Model (HMM). The HMM modelled CTSS hits in TSS regions as well as in the
@@ -480,7 +403,7 @@ gene sets using the tool named “Create tissue-specific promoter track”.
 
 ![](media/f840fbf8862d86505aac54daa3285e7f.png)
 
-1.  Other data sets
+## Other data sets
 
 In addition to databases, there are several datasets available within the
 platform that might be interesting to make use of in particular analyses. The
@@ -489,7 +412,7 @@ project *Data sets*.
 
 ![](media/ac7c02c4984f1875b4e9b1b5acfcecb6.png)
 
-1.  DrugExpress – genome-wide transcriptional signatures of drug response
+## DrugExpress – genome-wide transcriptional signatures of drug response
 
 The folder DrugExpress contains sets of genes that significantly change their
 expression in response to treatment by different drugs. It originates from the
