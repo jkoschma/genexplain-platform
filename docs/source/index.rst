@@ -21,6 +21,7 @@ Guide
    Genomic_variants
    Metabolism
    Popular_Functions
+   Databases
 
 Indices and tables
 ==================
