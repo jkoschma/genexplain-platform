@@ -1,14 +1,12 @@
-1.  Description of analysis methods
+# Description of analysis methods
 
-    1.  Sequence analysis methods
+## Sequence analysis methods
 
-    2.  SNP matching
+## SNP matching
 
 NGS DNA sequencing is a powerful analytical method to discover novel SNPs and
 detect known SNPs. The geneXplain platform provides a unique analysis method
-termed SNP matching. Using this method and an SNP table (derived after
-sequencing) as input, the corresponding SNP loci are mapped to Ensembl genes so
-that you can get an annotated SNP table as output.
+termed SNP matching. Using this method and an SNP table (derived after sequencing) as input, the corresponding SNP loci are mapped to Ensembl genes so that you can get an annotated SNP table as output.
 
 By default the SNP matching tool looks as shown below:
 
@@ -43,7 +41,7 @@ Output table 3 (ALC_SNPs_track)
 The output tables can be further used for any other analysis of the geneXplain
 platform.
 
-1.  Site search on gene set
+## Site search on gene set
 
 This feature provides you with an option to search for putative transcription
 factor binding sites (TFBS) in a set of genes. As input for the analysis you are
@@ -58,40 +56,36 @@ The initial form of this analysis looks as it is shown below:
 
 To perform this analysis you have to input two datasets:
 
-Yes set**:** This is the set of genes that you want to analyze, for example
+**Yes set**:  This is the set of genes that you want to analyze, for example
 these can be genes the expression of which has changed in an experiment (test
 set). Tables with Ensembl gene IDs can be used as input in this column. In case
 you have a file with different identifiers, you can first use the Convert table
 function in the Data manipulation folder.
 
-No set**:** This is the set of background genes (control set). This again should
+**No set**: This is the set of background genes (control set). This again should
 be a gene table with Ensembl gene IDs as input.
 
 These two datasets might be taken from the output tables of previous analyses;
-see, e.g., Detect differentially expressed genes (Section 10.2).
+see, e.g., Detect differentially expressed genes as described previously. 
 
-Species**:** A pull down menu allows you to select the biological species
+**Species**: A pull down menu allows you to select the biological species
 according to the species of your Yes and No gene sets. Currently, the analysis
 can be done for human, mouse and rat genes.
 
-From**:** You can indicate the gene region where the search for putative TFBS
+**From**: You can indicate the gene region where the search for putative TFBS
 should be done. Here, you enter the 5’ border of the region, relative to the
 transcription start site (TSS) as it is annotated in the current version of
 Ensembl.
 
-To**:** Here, you enter the 3’ border of the region relative to the TSS.
+**To**: Here, you enter the 3’ border of the region relative to the TSS.
 
-Profile**:** This is a predefined set of positional weight matrices with a
+**Profile**:  This is a predefined set of positional weight matrices with a
 particular threshold. By default, the TRANSFAC® profile
-*vertebrate_non_redundant_minSUM* is applied.  
-You can use other available TRANSFAC® profiles. Alternatively, you can apply
-profiles in the GTRD database. Currently, there are three profiles included in
-the GTRD database; they depend on the threshold for matrices: strong threshold
-(with an Individual Probability Score (IPS) higher than 6), moderate threshold
+*vertebrate_non_redundant_minSUM* is applied.  You can use other available TRANSFAC® profiles. Alternatively, you can apply
+profiles in the GTRD database. Currently, there are three profiles included in the GTRD database; they depend on the threshold for matrices: strong threshold (with an Individual Probability Score (IPS) higher than 6), moderate threshold
 (with IPS higher than 5), and weak threshold (with IPS higher than 4).
 
-You also have the option to import matrices and profiles into the geneXplain
-platform and use them for your further analysis.
+You also have the option to import matrices and profiles into the geneXplain platform and use them for your further analysis.
 
 To perform site search following steps are recommended:
 
@@ -99,7 +93,8 @@ To perform site search following steps are recommended:
 
 Here, the set of genes from the Example folder is used as input Yes set :
 
-[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)](https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtere)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)
+
 
 **Step 2.** Input pre-saved No set. You can drag-and-drop as usual. Here, the
 set of human housekeeping genes from the Example folder is used as input No set,
@@ -134,35 +129,7 @@ The analysis will start as shown below:
 Wait until the analysis is complete as shown by the progress bar. The output of
 Site search on gene set contains one table and six tracks:
 
-summary table (
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-), yes promoters (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-), no promoters (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-), yes sites (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-), no sites (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-), yes sites optimized (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-) and no sites optimized (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-).
+summary table (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)), yes promoters (![](media/84954cc17be5c089cabbc26a40e58597.png)), no promoters (![](media/84954cc17be5c089cabbc26a40e58597.png)), yes sites (![](media/84954cc17be5c089cabbc26a40e58597.png)), no sites (![](media/84954cc17be5c089cabbc26a40e58597.png)), yes sites optimized (![](media/84954cc17be5c089cabbc26a40e58597.png)) and no sites optimized (![](media/84954cc17be5c089cabbc26a40e58597.png))
 
 **The summary table** is automatically opened in a new tab of the geneXplain
 platform when the analysis is completed. An example of the summary table is
@@ -181,18 +148,12 @@ they are calculated by the program at the optimization step are shown in the
 column Model cutoff, and the last column shows the p-value of the corresponding
 event.
 
-Tracks Yes promoters and No promoters
+### Tracks Yes promoters and No promoters
 
 These two files resulting from the “Site search on gene set” analysis represent
-promoters of the corresponding set, as a track (
+promoters of the corresponding set, as a track (![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png)). The track files might be used for site visualization or for further analyses,  e.g. Construct Composite Modules, Construct IPS CisModule.
 
-![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png)
-
-). The track files might be used for site visualization or for further analyses,
-e.g. Construct Composite Modules, Construct IPS CisModule.
-
-The track file *Yes promoters* when opened in the work space is shown below. The
-track file *No promoters* has a similar structure.
+The track file *Yes promoters* when opened in the work space is shown below. The track file *No promoters* has a similar structure.
 
 ![](media/e4cb02b3a7b228a47aae4e9a0f51baa9.png)
 
@@ -200,17 +161,16 @@ This table lists the positions of the promoter areas selected for the analysis
 on particular chromosomes, as shown in the columns From and To. The column
 Strand shows the strand on which each particular promoter is located. This track
 can be dragged and dropped on a particular chromosome opened in the genome
-browser to visualize the localizations of the promoters as discussed in Section
-19.3.
+browser to visualize the localizations of the promoters. 
 
-*Yes (No) sites optimized* **track.** The file *Yes sites* visualizes those
+**Yes (No) sites optimized track**: The file *Yes sites* visualizes those
 putative sites that are over-represented in the promoters of the Yes set versus
 the No set as they are located in the promoters of the Yes set. Putative TFBSs
 are shown as a track
 
 ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png)
 
-. Scores of the putative sites are optimized by the algorithm.
+Scores of the putative sites are optimized by the algorithm.
 
 ![](media/8d87062f8f7507960c4563199f1a6c7d.png)
 
@@ -232,9 +192,9 @@ optimization, and thus they contain more sites.
 
 These track files can be used as an input for other functions, for example sites
 can be visualized on chromosomes. For visualization details please refer to the
-tip in the Section 7.2.2.
+tip in the Section sites visualization. 
 
-Visualization of TFBS for individual genes and for individual matrices
+### Visualization of TFBS for individual genes and for individual matrices
 
 Having the summary table opened in the work space, you can select different rows
 and apply a couple of different functions with the help of the buttons on the
@@ -247,15 +207,8 @@ To get a visualization of TFBS for individual genes, the button
 ![](media/503b082a4dfba6501516b36e7808098b.png)
 
 should be applied on the selected matrices. After click on this button, two new
-files will be saved in the tree area, a table
-
-![](media/f72f0003eb6573163575aa494c050331.emf)
-
-and a track
-
-![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png)
-
-, as shown below. The table is automatically opened in the Work Space.
+files will be saved in the tree area, a table ![](media/f72f0003eb6573163575aa494c050331.emf) and a 
+track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png), as shown below. The table is automatically opened in the Work Space.
 
 ![](media/e979e2e02b108f9e01a490c7babecae8.png)
 
@@ -289,14 +242,9 @@ on each color box.
 This table can be exported in tab-separated format (txt) or comma-separated
 format (csv).
 
-The second file, a track
+The second file, a track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png) has the same structure as described above for other track files. For visualization details please refer to the tip in Section visualization of sites. 
 
-![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png)
-
-, has the same structure as described above for other track files. For
-visualization details please refer to the tip in Section 7.2.2.
-
-1.  Creation of customized profiles
+## Creation of customized profiles
 
 "Profile" is a term used for a collection of positional weight matrices (PWMs)
 with a particular threshold (or cutoff), also referred to as “site models”. The
@@ -307,27 +255,12 @@ regions.
 
 There are two possibilities to create a user-specific profile.
 
-Create profile from gene table
+**Create profile from gene table** ![](media/b2f5ccc1529d33dd8761b823f6293b5d.png) This option supports you in creating a new profile from any gene table. The resulting profile contains site models linked to the genes encoding the corresponding transcription factors in the input gene set. This option can be accessed via the URL: <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/Create%20profile%20from%20gene%20table>
 
-![](media/b2f5ccc1529d33dd8761b823f6293b5d.png)
-
-This option supports you in creating a new profile from any gene table. The
-resulting profile contains site models linked to the genes encoding the
-corresponding transcription factors in the input gene set. This option can be
-accessed via the URL:
-
-<https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/Create%20profile%20from%20gene%20table>
-
-Create profile from table
-
-![](media/3e9ae4e553ff710be3aa42209109c364.png)
-
-Here you can create a profile from a table of matrices. This option can be
-accessed via the URL:
-
+**Create profile from table** ![](media/3e9ae4e553ff710be3aa42209109c364.png) Here you can create a profile from a table of matrices. This option can be accessed via the URL:
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/Create%20profile%20from%20site%20model%20table>
 
-1.  Create profile from gene table
+### Create profile from gene table
 
 This function creates a new profile from any gene table. The resulting profile
 contains site models linked to the transcription factors in the input gene set.
@@ -338,7 +271,7 @@ The input form when opened in the work space is shown below:
 
 In the following, we will consider each of the input fields.
 
-Gene set: Input any gene table here for which you intend to design a profile.
+**Gene set**:  Input any gene table here for which you intend to design a profile.
 The algorithm automatically identifies transcription factor genes in the input
 table and the matrices linked to these factors in the TRANSFAC® database. These
 matrices will be put into the newly created profile.
@@ -347,12 +280,13 @@ Further steps are demonstrated with the table of genes available in one of the
 platform examples present in the Tree Area. The example file can be accessed
 using the URL:
 
-[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered](https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-valu)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered
 
-Species: Select the biological species corresponding to the input gene set from
+
+**Species:** Select the biological species corresponding to the input gene set from
 the drop-down menu.
 
-Reference profile: Specify one of the TRANSFAC® profiles available. Cutoffs for
+**Reference profile:** Specify one of the TRANSFAC® profiles available. Cutoffs for
 the corresponding matrices will be copied from the selected reference TRANSFAC®
 profile into the newly created profile.
 
@@ -365,7 +299,7 @@ Please note that this analysis method works only for the TRANSFAC® profiles.
 
 ![](media/e4cfeb2fbbcb386b9f0504640526f264.png)
 
-Output path: Specify the path to store the result and indicate the name for the
+**Output path:** Specify the path to store the result and indicate the name for the
 new profile.
 
 Having filled all the input fields, launch the analysis with the [Run] button.
@@ -390,14 +324,9 @@ The core is represented by the 5 consecutive most conserved nucleotides. The
 columns Core cutoff, Core start and Core length provide details about the core
 of each matrix. In the last column the matrix logo is shown.
 
-In the Tree Area, the newly created profile has the symbol
+In the Tree Area, the newly created profile has the symbol ![](media/ee5e3b08fd5644d7223f613a9074e503.png) , the same symbol as for all other profiles, and is ready to use for the analysis of regulatory regions.
 
-![](media/ee5e3b08fd5644d7223f613a9074e503.png)
-
-, the same symbol as for all other profiles, and is ready to use for the
-analysis of regulatory regions.
-
-Suggestion when to use “Create profile from gene table”
+#### Suggestion when to use “Create profile from gene table”
 
 If you plan to do a promoter analysis for differentially expressed genes from a
 particular experiment, you might be interested in creating a profile from a
@@ -419,12 +348,11 @@ the same experimental conditions, and thus it might be reasonable to apply it
 for the promoter analysis of genes up-regulated or down-regulated in this
 experiment.
 
-1.  Create profile from site model table
+### Create profile from site model table
 
 This function creates a profile from the table of site models. For example, a
 new profile can be created from the *summary* table resulting from the workflow
-“Analyze promoters (TRANSFAC®)” or “Upstream analysis (TRANSFAC® and
-TRANSPATH®)”.
+“Analyze promoters (TRANSFAC®)” or “Upstream analysis (TRANSFAC® and TRANSPATH®)”.
 
 The analysis input form can be found in the Tree Area, under the Analyses tab,
 in the folder Methods/Site analysis. The opened input form is shown below.
@@ -433,27 +361,27 @@ in the folder Methods/Site analysis. The opened input form is shown below.
 
 Let us consider the individual input fields:
 
-Input table: Input a table with matrices for which you intend to design a
+**Input table:** Input a table with matrices for which you intend to design a
 profile. The input table should contain TRANSFAC® matrix IDs as row names. Such
 a table can be the result of a site search analysis.
 
 In the following, further steps are demonstrated with a table of site models
 from one of the examples. The example file can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary
 
-Reference profile: In this field, you indicate the profile where the cutoffs for
+**Reference profile:** In this field, you indicate the profile where the cutoffs for
 the new profile should be taken from. It is filled automatically if the input
 table is a result of a site search analysis or derived from it, and it
 corresponds to the profile used for site search. You also have an option to
 manually select the reference profile from the available TRANSFAC® profiles.
 
-Cutoffs column: In this field you specify which column of the input table should
+**Cutoffs column:** In this field you specify which column of the input table should
 be considered for the cutoff values. It is filled automatically if the input
 table is the result of a site search optimization analysis. It is advisable to
 use "(none)" to leave the cutoffs as in the reference profile.
 
-Output profile: Specify the path to store the result and indicate the name for
+**Output profile:** Specify the path to store the result and indicate the name for
 the new profile.
 
 To launch the analysis, fill the input fields and press [Run]. The process will
@@ -464,11 +392,11 @@ start as shown below:
 After completion of the analysis the output profile is opened automatically as
 shown below:
 
-![](media/d5c063fad928e9348f1e1ab4810858ad.png)
+![](media/image004.png)
 
 An example profile created from this gene table can be found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary%20profile>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/summary%20profile
 
 Each row summarizes the information for one site model. In the column Name the
 name of the site model is given, which in the majority of cases is the same as
@@ -479,14 +407,9 @@ The core is represented by the 5 consecutive most conserved nucleotides. The
 columns Core cutoff, Core start and Core length give details about the core of
 each matrix. In the last column the matrix logo of each matrix is shown.
 
-The new created profile has the symbol
+The new created profile has the symbol ![](media/ee5e3b08fd5644d7223f613a9074e503.png), the same symbol as for all other profiles, and is ready to use for the analysis of regulatory regions.
 
-![](media/ee5e3b08fd5644d7223f613a9074e503.png)
-
-, the same symbol as for all other profiles, and is ready to use for the
-analysis of regulatory regions.
-
-Suggestion when to use “Create profile from table”
+#### Suggestion when to use “Create profile from table”
 
 Creating a new profile from a table of site models (matrices) might be very
 useful e.g. if you plan to focus the analysis on those matrices shown to be
@@ -505,7 +428,7 @@ for your genes of interest, you can run it on the same set of genes without
 optimization, and then use the results as input to construct composite promoter
 models.
 
-1.  Create profile from matrix library
+### Create profile from matrix library
 
 This tool can set score cutoffs for an entire matrix library and store a
 corresponding profile, which in turn can be applied binding site analyses.
@@ -518,32 +441,32 @@ that will be applied to all matrices.
 
 The input parameters are as follows.
 
-Input matrix library: Selection of the matrix library. All matrices of the
+**Input matrix library:** Selection of the matrix library. All matrices of the
 library will be present in the profile (“Output profile”).
 
-Core-cutoff: The cutoff for the matrix core, which is the five consecutive
+**Core-cutoff:** The cutoff for the matrix core, which is the five consecutive
 matrix position which are most selective for certain nucleotides. When the
 matrix cutoff is defined by a P-value, the core cutoff will be 0 for all
 matrices.
 
-Template for cutoffs: The P-value threshold according to which the score cutoff
+**Template for cutoffs:** The P-value threshold according to which the score cutoff
 for each matrix will be set. Selecting the “Custom…” option presents a new field
 to set one common cutoff for all matrices of the library.
 
 ![](media/f97276fe90ba7a820f367b0f21b2cf76.png)
 
-Nucleotide distribution template: The distribution of nucleotides on which
+**Nucleotide distribution template:** The distribution of nucleotides on which
 P-value calculations are based. Selecting the “Custom…” option enables custom
 setting of individual base frequencies.
 
 ![](media/23ab75630b112a42adfde44349853f71.png)
 
-Output profile: The path for the output profile.
+**Output profile:** The path for the output profile.
 
 An profile can be created as follows.
 
 **Step 1.** Input the matrix library. As usual, you can drag-and-drop. Here we
-use the TRANSFAC® 2013.1 library:
+use the TRANSFAC® 2017.1 library:
 
 ![](media/086ca27dca04c025ede8a31bb907d670.png)
 
