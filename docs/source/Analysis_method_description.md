@@ -477,9 +477,9 @@ projects.
 Clicking the [Run] button will invoke the analysis. A part of the resulting
 profile is shown below: Resulting profile can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/matrix%20profile>
 
-1.  Search for enriched TFBSs
+
+### Search for enriched TFBSs
 
 The platform comprises tools that are dedicated to discovering types of binding
 sites enriched in a set of sequences. They are named “Search for enriched TFBSs
@@ -499,7 +499,7 @@ present the results of analyzing binding site enrichment. Hence, a “Search for
 enriched TFBSs” is for you if you wish to gain insight into enriched binding
 sites quickly and in an uncomplicated way.
 
-1.  Search for enriched TFBSs (genes)
+#### Search for enriched TFBSs (genes)
 
 Let us begin with the analysis for gene promoters. The figure below depicts the
 input mask of the analysis tool. The parameters are similar to those used by
@@ -507,36 +507,36 @@ input mask of the analysis tool. The parameters are similar to those used by
 
 ![](media/6fe3f4043f93e7e94d7782f9cebf432c.png)
 
-Yes set: This is the set of genes that you want to analyze, for example these
+**Yes set**: This is the set of genes that you want to analyze, for example these
 can be genes with altered expression. The program accepts genes specified by
 Ensembl gene identifiers. Note that the “Convert table” functionality in the
 “Data manipulation” folder can map other identifiers to the required Ensembl
 genes.
 
-No set: This is the set of background genes (control set), which also need to be
+**No set**: This is the set of background genes (control set), which also need to be
 specified by Ensemble gene IDs.
 
 These two datasets might be taken from the output tables of previous analyses;
-see, e.g., “Detect differentially expressed genes” (Section 10.2).
+see, e.g., “Detect differentially expressed genes” 
 
-Species: This option specifies the biological species of Yes and No gene sets.
+**Species**: This option specifies the biological species of Yes and No gene sets.
 Currently, the method is applicable to human, mouse or rat genes.
 
-From and To: These values define the length and location of promoter regions
+**From and To**: These values define the length and location of promoter regions
 (upstream and downstream) relative to the transcription start site (TSS).
 Respective sequence regions are extracted for each Yes and No gene according to
 Ensembl annotation.
 
-Input motif profile: The profile lists the PWMs (motifs) to be used for binding
+**Input motif profile**: The profile lists the PWMs (motifs) to be used for binding
 site prediction together with a score cutoff. By default, this field is set to
 the last profiled set in your workspace. Note that cutoffs in the profile are
 ignored, because the “Search for enriched TFBSs” determines a starting threshold
 specified in the Initial cutoff field.
 
-Output path: In this field you select a path in the workspace to store the
+**Output path**: In this field you select a path in the workspace to store the
 output table.
 
-Initial cutoff: This cutoff determines the starting point of the analysis with
+**Initial cutoff**: This cutoff determines the starting point of the analysis with
 respect to the score threshold to predict binding sites. The choice is expressed
 as frequency of predicted sites per base. By default, the analysis begins with a
 frequency of 5 sites in 100 bases (0.05). From the initial cutoff the algorithm
@@ -550,15 +550,15 @@ The steps of an analysis can be described as follows:
 the set of genes from the Example folder is used as input Yes set, can be
 accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes
 
 **Step 2.** Input No set (drag-and-drop). Our example uses the set of
 “Non-changed Ensembl genes”
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes
 
 **Step 3.** Select the TRANSFAC® or GTRD profile from the available profiles. In
-this example, we select the TRANSFAC® 2017.21 profile named “vertebrates”:
+this example, we select the TRANSFAC® 2017.2 profile named “vertebrates”:
 
 ![](media/b998776f5a2cde7a635c00d64e207c72.png)
 
@@ -576,9 +576,9 @@ Clicking the [Run] button will invoke the analysis. The *summary* table
 ![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
 
 is automatically opened in a new tab when the analysis is completed. Here is a
-part of the output for our example:
+part of the output from our example:
 
-![](media/3483f0f7ab05947fa5149dfe4a956a26.png)
+![](media/image005.PNG)
 
 Each row of the output table represents the result for one PWM from the input
 profile. Fold enrichment (FE) values quantify the enrichment of binding sites in
@@ -605,40 +605,35 @@ into the table presentation upon demand.
 
 ![](media/f13513cfd6f637d767d97d0415e387f0.png)
 
-1.  Search for enriched TFBSs (tracks)
+### Search for enriched TFBSs (tracks)
 
 The “tracks” variant of the “Search for enriched TFBSs” can be applied to
-sequence tracks signified by the symbol (
-
-![](media/aa2481777d4b84fd8deca9568f7350c4.png)
-
-). For instance, a track may contain genomic intervals identified by a ChIP-seq
-experiment.
+sequence tracks signified by the symbol (![](media/aa2481777d4b84fd8deca9568f7350c4.png)). For instance, a track may contain genomic intervals identified by a ChIP-seq experiment.
 
 ![](media/85b52ad335d2da9de261a7404f884874.png)
 
 The analysis uses the following parameters:
 
-Yes set: This is the track that you want to analyze, for example these can be
+**Yes set:** This is the track that you want to analyze, for example these can be
 ChIP-seq intervals bound a transcription factor.
 
-No set: This is the set of background intervals (control set).
+**No set:** This is the set of background intervals (control set).
 
-Sequence source: Both Yes and No track need to refer to a common source, such as
+**Sequence source:** Both Yes and No track need to refer to a common source, such as
 a genome, as specified by this parameter. Note that you can apply a custom
 source, e.g. a specifically uploaded genome. Clicking on the “Custom” option
 will open a new field to choose the custom sequence source.
 
-Input motif profile: The profile lists the PWMs (motifs) to be used for binding
+**Input motif profile:** The profile lists the PWMs (motifs) to be used for binding
 site prediction together with a score cutoff. By default, this field is set to
 the last profiled set in your workspace. Note that cutoffs in the profile are
 ignored, because the “Search for enriched TFBSs” determines a starting threshold
 specified in the Initial cutoff field.
 
-Output path: In this field you select a path in the workspace to store the
+**Output path:** In this field you select a path in the workspace to store the
 output table.
 
-Initial cutoff: This cutoff determines the starting point of the analysis with
+**Initial cutoff:** This cutoff determines the starting point of the analysis with
 respect to the score threshold to predict binding sites. The choice is expressed
 as frequency of predicted sites per base. By default, the analysis begins with a
 frequency of 5 sites in 100 bases (0.05). From the initial cutoff the algorithm
@@ -684,7 +679,7 @@ TFBSs (genes)” for further description.
 
 ![](media/7b375e223e16d362ebffa3b14d859607.png)
 
-1.  Construct composite modules
+## Construct composite modules
 
 Composite modules are combinations of several TFBSs that are found together in a
 set of regulatory sequences. We search for such combinations of TF binding sites
@@ -693,13 +688,7 @@ background set of sequences. The search for composite modules is performed using
 an in-house implementation of a genetic algorithm. As input for the genetic
 algorithm we take the output of a site search analysis.
 
-There are two individual analysis functions available with the same symbol
-
-![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
-
-; they are different with respect to the type of sequences where the search for
-composite modules is done, and correspondingly with respect to the format of the
-input data.
+There are two individual analysis functions available with the same symbol ![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png); they are different with respect to the type of sequences where the search for composite modules is done, and correspondingly with respect to the format of the input data.
 
 -   Construct composite modules analysis works on the promoter sequences
     specified relative to TSS in the set of genes. As input, it takes the
@@ -715,7 +704,7 @@ path
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/>
 
-1.  Construct composite modules
+### Construct composite modules
 
 This analysis function enables the identification of combinations of several
 TFBSs in the promoters of the genes under study (Yes-set). The resulting
@@ -726,9 +715,7 @@ with your selected Yes-set, No-set and a specified profile of matrices. If you
 are interested in finding site models for particular TFs, and see them
 eventually in the resulting composite modules, you need to be sure that such
 matrices are present in the selected profile. You can use one of the available
-TRANSFAC® profiles, or alternatively you can construct a customized profile; for
-details please see Section 20.1.3.3*.*
-
+TRANSFAC® profiles, or alternatively you can construct a customized profile as described earlier. 
 The input form for this analysis is shown below:
 
 ![](media/bc4f756873004d387f7dff149fb0c6ba.png)
@@ -744,7 +731,7 @@ marked by the symbol
 In the example below, we will use an input data set, which you can find in the
 geneXplain platform online under the following path:
 
-[http://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%20search%20-1000%20%2B100/summary](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%20search%20-1000%20%2B100/summary
 
 As you can see, this is a folder with the results of the Site search on gene
 set. If you single-click on this folder in the tree area it will be highlighted
@@ -761,20 +748,17 @@ the input field.
 
 **Step 2.** Specify Model parameters. You can specify the number of elements in
 the hierarchical structure of the desired composite module. Details and
-explanations on how to do this are explained below in Section 9.5.3
-*Hierarchical structure of the composite modules*.
+explanations on how to do this are explained  in the section *Hierarchical structure of the composite modules*.
 
 **Step 3.** Specify Output path. Specify a location for the results in your
 project in the tree area. The resulting folder will be marked by the same icon
-as the analysis,
-
-![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
+as the analysis, ![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
 
 .
 
-Results are described below in Section 20.1.5.4.
+Results are described below.
 
-1.  Construct composite modules on tracks
+### Construct composite modules on tracks
 
 This analysis is designed for identifiying combinations of several TFBSs in DNA
 sequences specified by their genomic positions (tracks). An example of a track
@@ -786,8 +770,7 @@ your selected Yes-set, No-set and specified profile of matrices. If you are
 interested in seeing the site models for particular TFs in the resulting
 composite modules, you have to make sure that such matrices are present in the
 selected profile. You can use one of the available TRANSFAC® profiles, or
-alternatively you can construct a customized profile; for details please see
-Section 20.1.3.
+alternatively you can construct a customized profile. 
 
 The input form for this analysis is shown below:
 
@@ -812,13 +795,13 @@ analysis:
 
 .
 
-Results are described below in Section 20.1.5.4.
+Results are described below . 
 
 **Note.** This analysis is the central part the workflow ChIP-Seq - Identify
 composite modules on peaks (TRANSFAC®), and it might be more convenient to use
 the workflow instead of the individual analysis.
 
-1.  Hierarchical structure of the composite modules
+#### Hierarchical structure of the composite modules
 
 Composite modules may have a complex hierarchical structure consisting of two
 levels: site models and modules. The highest hierarchical level contains several
@@ -860,7 +843,7 @@ parameters.
 
 ![](media/8d79126fd86f730883182d98a855ebd8.png)
 
-Example 1.
+**Example 1**:
 
 In the picture below (left part) you can see the composite module resulting from
 the performed analysis. On the right side of the picture the input form with
@@ -886,7 +869,7 @@ by a green circle. As we can see, this parameter is set to vary from 1 to 3, and
 correspondingly in the resulting schema, for the different matrices we can see
 N=1 or N=2 or N=3.
 
-Example 2.
+**Example 2**
 
 In this example, the number of modules (red circles) is specified from 2 to 3,
 and correspondingly the resulting promoter model contains three modules, Module
@@ -901,7 +884,7 @@ module containing two site models highlighted by blue circles.
 
 ![](media/137d5708cf7715859c97381fdba98886.png)
 
-Example 3.
+**Example 3**
 
 In this example, the number of modules (red circles) is specified from 2 to 5,
 and correspondingly the resulting promoter model consists of four modules
@@ -922,7 +905,7 @@ Based on these three examples you can specify input parameters for the number of
 modules, site models, and individual sites, depending on what resulting promoter
 model you would like to get.
 
-Site models in focus
+#### Site models in focus
 
 There are situations when researchers would like to focus on particular TFs and
 would like to find out with what other TFs they may form composite modules. Site
@@ -952,7 +935,7 @@ with the specified site models in focus.
 
 ![](media/9fffe57b1c9b2e508444698d0ef33a57.png)
 
-1.  Visualization and interpretation of the results
+### Visualization and interpretation of the results
 
 Let us consider the results of the *Construct composite module* analysis
 obtained for the following input data set, which you can find in the geneXplain
