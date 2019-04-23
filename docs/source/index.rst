@@ -22,6 +22,7 @@ Guide
    Metabolism
    Popular_Functions
    Databases
+   Analysis_method_description
 
 Indices and tables
 ==================
