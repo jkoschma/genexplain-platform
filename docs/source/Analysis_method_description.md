@@ -952,7 +952,7 @@ histogram, as shown below.
 
 ![](media/8c9e5703074a8d6ceed0849010360923.png)
 
-Model visualization in Yes set
+#### Model visualization in Yes set
 
 This table represents the primary results of the analysis, and shows the
 visualization of the identified composite modules in the promoters of the Yes
@@ -1016,7 +1016,7 @@ the individual colored box, as shown below.
 
 ![](media/4fded68f68f70bc4b4fb481147fe65c3.png)
 
-Model visualization on No set and No track
+#### Model visualization on No set and No track
 
 The table *Model visualization on No set* shows a visualization of the
 identified composite modules in the promoters of the No set.
@@ -1027,7 +1027,7 @@ Yes set* table, described above.
 The function of the **No track** is to provide a possibility for a detailed
 visualization of no promoters in a way similar to that of the **Yes track**.
 
-Histogram
+#### Histogram
 
 The distribution of scores for individual promoters is shown as a histogram,
 where the promoter score value is shown on X axis and the percentage of
@@ -1054,7 +1054,7 @@ this part of the promoters the composite model constructed is most suitable. In
 this example there are 38 promoters with the score value \>4.5; they can be
 saved as a separate gene set, and for them the model obtained works best.
 
-1.  Score calculation of the composite models
+#### Score calculation of the composite models
 
 The figure below demonstrates the calculation of the score value for the
 composite modules in the promoter sequences. The TSS is shown as a thin arrow on
@@ -1069,9 +1069,7 @@ A promoter model consists of *K* modules. The score of each module *Mk*
 
 ![](media/281cf5a811a8c0d6b0484cff2bee63fe.emf)
 
-Here,
-
-*Site Score (t,i)* is the site score for the sites found in the promoter, which
+Here, *Site Score (t,i)* is the site score for the sites found in the promoter, which
 is calculated by the Match algorithm.
 
 *mt* – the number of sites of the site model *t* found in the promoter.
@@ -1086,9 +1084,9 @@ Standard deviation (*σ*) of the normal distribution is subject of optimization
 by the genetic algorithm and represents the width of the module in the output of
 the composite module analysis.
 
-1.  About the GSEA analysis and the interpretation of the results
+## About the GSEA analysis and the interpretation of the results
 
-Schematic description of the GSEA algorithm
+### Schematic description of the GSEA algorithm
 
 The Gene Set Enrichment Analysis (GSEA) is a method that determines whether an
 independently defined set of genes shows a statistically significant enrichment
@@ -1121,7 +1119,7 @@ Enrichment Score), Rank at max, nominal p-value, FDR, for each GO category are
 calculated. ES and NES reflect how significantly genes in each particular GO
 category are enriched (over-represented) among up-regulated genes.
 
-Structure of the resulting tables with enriched ontological terms
+### Structure of the resulting tables with enriched ontological terms
 
 The resulting tables with enriched ontological categories contain twelve
 columns. Here, to have a better resolution of the screenshots, one table is
@@ -1159,7 +1157,7 @@ the lists can get quite long, only a few genes are shown by default in each row.
 To get the full list, press (more). The column Plot and View diagrams are
 described in detail in a separate sub-section below.
 
-Further possible actions with the enrichment results.
+### Further possible actions with the enrichment results.
 
 The tables with the GSEA results can be exported in txt, csv or html formats. To
 export, you can apply the *Export* button in the top control menu, highlighted
@@ -1178,7 +1176,7 @@ selected rows as…* in the top control menu, highlighted by the green oval.
 
 ![](media/4f34c80ea9a6f25695a6af1a328b6bf1.png)
 
-Enrichment plots
+### Enrichment plots
 
 As described above, there is a column **Plot** with the buttons **View** in each
 row in the GSEA resulting tables.
@@ -1218,7 +1216,7 @@ This is a distribution of ES values for a particular GO category over all
 (human) genes. ES is calculated by summing up on the previous values, so the
 most interesting parts for us are those where the plot is coming up.
 
-Interpretation of the plots
+### Interpretation of the plots
 
 For interpretation, let’s look at the red plot. The most interesting parts are
 those where the red line is ascending. In this example plot, let’s follow the
