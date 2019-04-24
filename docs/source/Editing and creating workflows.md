@@ -1,8 +1,8 @@
-1.  Editing and creating workflows
+# Editing and creating workflows
 
-    1.  Edit a pre-existing workflow
+## Edit a pre-existing workflow
 
-Tip for the workflow editing
+### Tip for the workflow editing
 
 You can easily create a similar workflow with parameter values adjusted to your
 needs. For example, you might be interested to change the number of steps used
@@ -22,7 +22,7 @@ default parameters and then save the workflow.
 In this way you will get a customized workflow, with the parameters specified
 according to your needs.
 
-1.  Create a new workflow
+### Create a new workflow
 
 To create your own workflow, please go to the Start page and click “Create your
 own workflow” under the list of pre-defined workflow groups. You will be asked
@@ -57,7 +57,7 @@ the table column “Score”).
 
 ![](media/135c3d0af9b5ab97b0647b2f760df745.emf)
 
-1.  Six steps to create a simple workflow
+### Six steps to create a simple workflow
 
 Let us go now through the steps of creating this workflow.
 
@@ -143,11 +143,7 @@ in the “Filter table” function.
 ![](media/6eef1e8c7407f0c3ce427d41f13021a8.png)
 
 **Step 6.** The workflow is now ready to be executed. To start the workflow
-please click on the “Run workflow” button (
-
-![](media/fc66a907dd4b019161a894cdb645178e.emf)
-
-) in the toolbar of the Operations Field.
+please click on the “Run workflow” button (![](media/fc66a907dd4b019161a894cdb645178e.emf)) in the toolbar of the Operations Field.
 
 In the pop-up menu “Workflow parameters” you should specify the input table.
 Please navigate to the folder with your tables and select a table which has a
@@ -155,7 +151,7 @@ column Score and press [Ok]. The workflow will be executed and a new table with
 a new name and the appendix “filtered” will be created in the same folder as the
 input table.
 
-1.  Complex workflows
+### Complex workflows
 
 More complex workflows are created by adding further workflow steps and by
 connecting them through a common data element. As in the example below, the
@@ -177,7 +173,7 @@ clicking on the respective element in the diagram.
 
 ![](media/73ba836d39419e0aba6c2f6610acded6.png)
 
-1.  Cycles and scripts
+## Cycles and scripts
 
 One more element available in the workflow is *cycle*. It can be created using
 the “cycle” button in the tool bar. It is necessary to specify the Name of the
@@ -209,14 +205,12 @@ it can be used as is, the name should be put into \$[“…”] otherwise. For
 example, the variable “TableColumn” can be accessed from a script by name
 TableColumn, but “Table column N1” should be called as \$[“Table column N1”].
 
-Example 1. Print column names
+### Print column names
 
 In the example below the data element parameter InputTable (green box) is first
 added to the workflow. Then a cycle with the following settings is added:
 
-![tc.png](media/0e7982d74044921c309449b9b8015cd2.png)
-
-,
+![tc.png](media/0e7982d74044921c309449b9b8015cd2.png),
 
 Note that expression is set to \$InputTable\$ for a cycle.
 
@@ -229,9 +223,9 @@ then will print all column names into the workflow output log.
 
 ![wfl.png](media/754657fca0f79a4938c3530aefebb388.png)
 
-Example 2. Run GO classification for all tables in a folder
+## Run GO classification for all tables in a folder
 
-![big_examle.png](media/e2a062cee5fd172e274d346a8f96465f.png)
+![big_example.png](media/e2a062cee5fd172e274d346a8f96465f.png)
 
 This workflow contains 3 input elements: InputFolder, where one or more Tables
 should be placed; ResultFolder that will be created by the method “Create
