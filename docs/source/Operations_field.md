@@ -61,9 +61,7 @@ select one of the following layout schemes:
 When you have selected another layout type, you have to press the “Prepare
 layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation Field. Pressing “Apply layout” (![](media/81716efb0f0217d46022ca249f862694.emf)) transfer the new layout to the Work Space.
 
-Here are examples how the different layouts look like; the example is the
-Caspase 12 pathway and has been taken from the database Integrated models
-(*Int_casp12_module12*):
+Here are examples how the different layouts look like; the example is the Caspase 12 pathway and has been taken from the database Integrated models (*Int_casp12_module12*):
 ![](media/image008.png)
 ![](media/image009.png)
 ![](media/image010.png)
@@ -73,18 +71,14 @@ Caspase 12 pathway and has been taken from the database Integrated models
 Some of the re-layouting options may take considerable time. If you want to interrupt the process, press the “Stop layout” button (![](media/ebd55e3b3d41c30952b8d30944210730.emf)).
 
 The layout that has been applied to the Work Space can be further edited
-manually. A single click on a node (component or reaction node) highlights it;
-it can be shifted now by mouse movement, or can be deleted (right mouse button
-click opens a context menu with the option “*Remove*”). The results of this
+manually. A single click on a node (component or reaction node) highlights it; it can be shifted now by mouse movement, or can be deleted (right mouse button click opens a context menu with the option “*Remove*”). The results of this
 manual editing can be saved to the Operation Field (![](media/335f1b9cf9381b687c9b295a7ab4882e.emf)) so that they will be retained for the following work.
 
 **Please, be careful**: changes in your own diagrams are automatically saved!
-You can even close the diagram in the Work Space, but still can undo your last
-changes with the Undo button (![](media/15c815409342eea72cc3dcc2b4a3a729.emf)). After logout, all your changes will be automatically fixed.
+You can even close the diagram in the Work Space, but still can undo your last changes with the Undo button 
+(![](media/15c815409342eea72cc3dcc2b4a3a729.emf)). After logout, all your changes will be automatically fixed.
 
-Further editing of the layout schemes can be done by parameter settings in the
-Operation Field, Layout tab. A detailed description of these layout schemes, the
-underlying algorithms and parameterization can be found in the [Help texts](http://platform.genexplain.com/help/index.html?graph_layout_algorithms.htm).
+Further editing of the layout schemes can be done by parameter settings in the Operation Field, Layout tab. A detailed description of these layout schemes, the underlying algorithms and parameterization can be found in the [Help texts](http://platform.genexplain.com/help/index.html?graph_layout_algorithms.htm).
 
 ## Expression Mapping
 
