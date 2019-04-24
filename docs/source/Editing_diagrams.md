@@ -4,7 +4,7 @@
 
 Diagram types are hierarchically organized as shown in the following scheme:
 
-![](media/e41668231e167e47963a6ab5d50cb31b.emf)
+![](media/image013.png)
 
 There are 5 types of diagrams in the geneXplain platform:
 
