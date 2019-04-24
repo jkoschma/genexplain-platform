@@ -95,20 +95,12 @@ Using these icons, you can manually add a node that represents a cell (![](media
 (![](media/f7a6f6bf613d4cb02227991104f28174.emf)), or , more specifically and if you wish to model your network as a bipartite
 diagram, with a reaction (![](media/c60e36220e3b4ebff902bf21e02d12c1.emf)).
 
-In case you wish to link two already existing nodes by a new edge, click on the
-icon ![](media/f7a6f6bf613d4cb02227991104f28174.emf), which will open a new mask where you can define the input and the output node.
-Just move the mouse cursor into the respective field and click on the node that
-should serve as input or output node, respectively. The corresponding name or
-accession number will appear in the field. The same works for linking a note (to be defined before with 
-![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type 
-![](media/9298e8be35434e50b825f64b13265af0.emf)
+In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.emf), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before with ![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type ![](media/9298e8be35434e50b825f64b13265af0.emf).
 
-.### To add an element to the diagram, several ways are available:
+### To add an element to the diagram, several ways are available:
 
 i) Search for the element using the search tab in the databases folder and then add this element to the diagram using
 the icon ![](media/9cfb8167772d37ff6f129cbdaedb18f0.png)
-
-.
 ii) Drag and drop the element from the Tree Area to the Work Space as shown
 below:
 
@@ -117,7 +109,7 @@ below:
 Please note that double clicking on the gene gives the information about that
 gene in the Info box.
 
-iii) You can then use the Graph search option as described in Section 21.4 to
+iii) You can then use the Graph search option as described earlier to
 further search for other elements upstream or downstream of those that are
 already included in the diagram. You can add elements to the new diagram as per
 your requirement as shown below.
@@ -127,26 +119,13 @@ described under “Changing the layout”.
 
 ![](media/9d2279ec13e94ccced8e9ec00b4180c9.png)
 
-iv) To create an entirely new node on the same diagram, click on the
-
-![](media/1ebbf81a61857d4fde3c63f9d3d0c50f.png)
-
-icon on the pathway diagram menu bar and click on the diagram where you want to
-add a node. You will get a message as shown below:
+iv) To create an entirely new node on the same diagram, click on the ![](media/1ebbf81a61857d4fde3c63f9d3d0c50f.png)icon on the pathway diagram menu bar and click on the diagram where you want to add a node. You will get a message as shown below:
 
 ![](media/2f590984e6972348cd9426b2a6e3ef24.png)
 
-You can add the node/Name and press [Ok]; the node will be added to the diagram.
-
-You can also link this node to another element by clicking on the
-
-![](media/e8f0faa10f55ff9729b5be95736fedde.png)
-
-icon in the pathway diagram menu bar. The tool asks the user to select input and
-output nodes.
+You can add the node/Name and press [Ok]; the node will be added to the diagram.You can also link this node to another element by clicking on the ![](media/e8f0faa10f55ff9729b5be95736fedde.png) icon in the pathway diagram menu bar. The tool asks the user to select input and output nodes.
 
 ![](media/7e655f972b7d009f5c77689e99017e50.png)
-
 You can select input and output nodes easily by clicking first on the element
 you want to select as input node, and second on the element you want to be the
 output node. The diagram after adding the node and linking it to a protein looks
@@ -164,31 +143,19 @@ highlighted blue.
 
 ![](media/c8d75a97f8f16a937f35edddf0ba53d5.png)
 
-Then choose the option “Save as” (button
-
-![](media/3ef58799207a433d23bd5440df88d85b.emf)
-
-in the Control Panel). A new mask opens (“Save document as”), where you will
-find your project and a folder labeled “data”; you should save this copy under
+Then choose the option “Save as” (![](media/3ef58799207a433d23bd5440df88d85b.emf) in the Control Panel). A new mask opens (“Save document as”), where you will find your project and a folder labeled “data”; you should save this copy under
 any new name.
 
-Changing location, color and title of the nodes on a diagram
+#### Changing location, color and title of the nodes on a diagram 
 
 When you open a diagram saved in your project, you can change color and edit the
 title of the nodes, shift one node relative to others, remove or add nodes.
-Adding new nodes to a diagram is described in the previous section, Section
-23.2.
+Adding new nodes to a diagram is described previously. 
 
 To edit a node, first, select it by a mouse click. Below, the molecule bard1 is
 selected.
 
-Apply the Edit button
-
-![](media/2dce0008e8f30f6769c1b878e71b8248.png)
-
-at the top right corner of the Info box to open the form for editing the
-selected node. The Edit button is highlighted by a red oval on the picture
-below.
+Apply the Edit button ![](media/2dce0008e8f30f6769c1b878e71b8248.png)at the top right corner of the Info box to open the form for editing the selected node. The Edit button is highlighted by a red oval on the picture below.
 
 ![](media/e090d540031f7ed6d913a3d6b1fd4227.png)
 
@@ -208,29 +175,21 @@ To remove a node from the diagram, first select this node and then right-click
 ![](media/4793ac1e9a4ac325b16404a71e21a881.png)
 
 To shift a node relative to other nodes, select it and drag to a desired
-position.
+position. 
 
-Saving changes and undo & redo functions.
+#### Saving changes and undo & redo functions.
 
 After editing of a diagram is complete, you can either save changes or undo
-them. Saving a diagram under the same path and name is done by the button
-
-![](media/b8be920b5b76978e4f2adbaebd0832fd.emf)
-
+them. Saving a diagram under the same path and name is done by the button ![](media/b8be920b5b76978e4f2adbaebd0832fd.emf)
 on the top menu. If you would like to save a diagram to a different folder or
-project, or under different name, use the Save button
-
-![](media/3ef58799207a433d23bd5440df88d85b.emf)
-In case you would like to return to the previous variant, use the Undo button
-![](media/927efa084db79f9a2ac7b5d2ee3f6983.emf)
+project, or under different name, use the Save button ![](media/3ef58799207a433d23bd5440df88d85b.emf)
+In case you would like to return to the previous variant, use the Undo button ![](media/927efa084db79f9a2ac7b5d2ee3f6983.emf)
 .
 **Important**: undo and redo functions work for one previous step, you need to
 click the same button again to undo or redo the next previous step. Please note,
 undo and redo functions work only before saving.
 
-To return to the previously saved version of a diagram, use the Revert button
-
-![](media/4899d21c99da5089c57551ea1751893d.emf)
+To return to the previously saved version of a diagram, use the Revert button ![](media/4899d21c99da5089c57551ea1751893d.emf)
 
 Further editing of diagrams includes mapping available expression data on the
 molecules and adding interactions around the selected molecules. For details on
