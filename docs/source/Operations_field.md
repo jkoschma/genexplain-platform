@@ -6,7 +6,9 @@ of tabs. How many and which tabs are shown depends very much on the context.
 
 Please note that not all tabs are always visible due to space constraints. In
 these cases, double arrowheads left and right of the tabs indicate that there
-are additional ones, reachable by clicking on these double arrowheads  ![](media/81112f0c55e994b03948409ddbbd702b.emf)
+are additional ones, reachable by clicking on these double arrowheads  
+
+![](media/image006.png)
 
 The function of the individual tabs will be explained in more detail in those
 sections where their effect is part of a certain operation. In general, the icon ![](media/fc66a907dd4b019161a894cdb645178e.emf)
