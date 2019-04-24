@@ -45,7 +45,7 @@ and visualized according to the rules of System Biology Graphic Notation.
 Please note that diagrams of Semantic type can’t be constructed under general
 user account.
 
-![](media/0fccf8e5e7ce44ddc2365b9819bd2111.emf)
+![](media/image014.png)
 
 Entity types and proteins are represented as follows:
 
