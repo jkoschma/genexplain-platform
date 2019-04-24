@@ -64,19 +64,13 @@ layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the 
 Here are examples how the different layouts look like; the example is the
 Caspase 12 pathway and has been taken from the database Integrated models
 (*Int_casp12_module12*):
-
 ![](media/image008.png)
-
 ![](media/image009.png)
-
 ![](media/image010.png)
-
 ![](media/image011.png)
-
 ![](media/image012.png)
 
-Some of the re-layouting options may take considerable time. If you want to
-interrupt the process, press the “Stop layout” button (![](media/ebd55e3b3d41c30952b8d30944210730.emf)).
+Some of the re-layouting options may take considerable time. If you want to interrupt the process, press the “Stop layout” button (![](media/ebd55e3b3d41c30952b8d30944210730.emf)).
 
 The layout that has been applied to the Work Space can be further edited
 manually. A single click on a node (component or reaction node) highlights it;
