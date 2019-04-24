@@ -24,7 +24,10 @@ the Tree Area, it is possible to edit its structure in the Operations Field
 under the tab *Columns*.
 
 For instance, if you have opened a table with data about Enrichment GO Molecular
-Mechanism (resulting from having run a GSEA), this field may look like this ![](media/5acb68e3a598feaea26ce9abc7348def.emf)
+Mechanism (resulting from having run a GSEA), this field may look like this 
+
+
+![](media/image007.png)
 
 Recognizably, you can change the column headers, the data type in the column, or
 its (usually hidden) descriptions. You may add an Expression, which may be a
