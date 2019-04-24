@@ -1,6 +1,6 @@
-1.  Editing and creating diagrams
+# Editing and creating diagrams
 
-    1.  Diagram types
+## Diagram types
 
 Diagram types are hierarchically organized as shown in the following scheme:
 
@@ -65,23 +65,18 @@ The seven new icons on the right (red frame) are specifically introduced for
 simulation functions, the one on the left replaces the icon with the capital A
 in the “Pathway diagram” option.
 
-1.  Creation of a new diagram
+## Creation of a new diagram
 
 A new diagram can be made in the Work Space by two methods:
 
 You can edit pre-composed diagrams and create a new diagram by saving it in your
-own project area (see below, 23.3).
+own project area. 
 
 You can start a new diagram in the work space by using graph search. The details
 of this method are further described below.
 
 To start with the creation of a new diagram, please select the correct folder in
-your project area and press the
-
-![](media/9ef8f58edc37cbe09b25ee7dd6ae5b98.png)
-
-icon in the Control Panel. The tool will ask you to select the type of diagram
-you want to create in the work space. In the following, the creation of a new
+your project area and press the ![](media/9ef8f58edc37cbe09b25ee7dd6ae5b98.png) icon in the Control Panel. The tool will ask you to select the type of diagram you want to create in the work space. In the following, the creation of a new
 “Pathway diagram” will be described.
 
 ![](media/88ab0295f0b01fb9138761a2636965d8.png)
@@ -95,76 +90,27 @@ A pathway diagram opened in the work space has a tool bar as shown below:
 
 ![](media/85547cc010c14f98990a75f02a06cc29.png)
 
-Using these icons, you can manually add a node that represents a cell (
-
-![](media/be8d0ce7847bc8c6375a4415cf88f98a.emf)
-
-), a cellular compartment (
-
-![](media/8b33156f5a480ddc354515802f2f4cbf.emf)
-
-), a gene (
-
-![](media/fa49f8a0d43d0f2fd4890d939877600f.emf)
-
-), an RNA (
-
-![](media/8e84537367b372dc32dc0e342f1d8446.emf)
-
-), a protein (
-
-![](media/20842be37b7ecf9fc93f406c3257435c.emf)
-
-) or a substance (or small metabolite,
-
-![](media/909d21a620cb9b65ce5613507d1aa8ab.emf)
-
-). It may also something as abstract as a concept (
-
-![](media/0fff8b043592ef5a407f5b121a63d362.emf)
-
-). These nodes may be related to each other with any kind of link (
-
-![](media/f7a6f6bf613d4cb02227991104f28174.emf)
-
-), or , more specifically and if you wish to model your network as a bipartite
-diagram, with a reaction (
-
-![](media/c60e36220e3b4ebff902bf21e02d12c1.emf)
-
-).
+Using these icons, you can manually add a node that represents a cell (![](media/be8d0ce7847bc8c6375a4415cf88f98a.emf)), a cellular compartment (![](media/8b33156f5a480ddc354515802f2f4cbf.emf)), a gene (![](media/fa49f8a0d43d0f2fd4890d939877600f.emf)), an RNA (![](media/8e84537367b372dc32dc0e342f1d8446.emf)), a protein (![](media/20842be37b7ecf9fc93f406c3257435c.emf)) or a substance (or small metabolite, ![](media/909d21a620cb9b65ce5613507d1aa8ab.emf)). It may also something as abstract as a concept (
+![]media/0fff8b043592ef5a407f5b121a63d362.emf)). These nodes may be related to each other with any kind of link 
+(![](media/f7a6f6bf613d4cb02227991104f28174.emf)), or , more specifically and if you wish to model your network as a bipartite
+diagram, with a reaction (![](media/c60e36220e3b4ebff902bf21e02d12c1.emf)).
 
 In case you wish to link two already existing nodes by a new edge, click on the
-icon
-
-![](media/f7a6f6bf613d4cb02227991104f28174.emf)
-
-, which will open a new mask where you can define the input and the output node.
+icon ![](media/f7a6f6bf613d4cb02227991104f28174.emf), which will open a new mask where you can define the input and the output node.
 Just move the mouse cursor into the respective field and click on the node that
 should serve as input or output node, respectively. The corresponding name or
-accession number will appear in the field. The same works for linking a note (to
-be defined before with
-
-![](media/f3241118e89d47eeb829a6c56760a32c.emf)
-
-) to a node by introducing an edge of the type
-
+accession number will appear in the field. The same works for linking a note (to be defined before with 
+![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type 
 ![](media/9298e8be35434e50b825f64b13265af0.emf)
 
-.
+.### To add an element to the diagram, several ways are available:
 
-To add an element to the diagram, several ways are available:
-
-i) Search for the element using the search tab in the databases folder (as
-described in the Section 2.1.3.2) and then add this element to the diagram using
-the icon
-
-![](media/9cfb8167772d37ff6f129cbdaedb18f0.png)
+i) Search for the element using the search tab in the databases folder and then add this element to the diagram using
+the icon ![](media/9cfb8167772d37ff6f129cbdaedb18f0.png)
 
 .
-
 ii) Drag and drop the element from the Tree Area to the Work Space as shown
-below.
+below:
 
 ![](media/40bf7510e8557eeccbcae0de5804f59d.png)
 
@@ -208,7 +154,7 @@ like shown below.
 
 ![](media/c4c7dbcebab8bb12dc250fa08e9570f7.png)
 
-1.  Editing a pre-composed diagram
+### Editing a pre-composed diagram
 
 Diagrams saved in the tree area can be edited in several ways. For this, please
 first copy one of the diagrams, e.g. located in the Examples folder, in your own
@@ -275,15 +221,9 @@ on the top menu. If you would like to save a diagram to a different folder or
 project, or under different name, use the Save button
 
 ![](media/3ef58799207a433d23bd5440df88d85b.emf)
-
-.
-
 In case you would like to return to the previous variant, use the Undo button
-
 ![](media/927efa084db79f9a2ac7b5d2ee3f6983.emf)
-
 .
-
 **Important**: undo and redo functions work for one previous step, you need to
 click the same button again to undo or redo the next previous step. Please note,
 undo and redo functions work only before saving.
@@ -292,9 +232,6 @@ To return to the previously saved version of a diagram, use the Revert button
 
 ![](media/4899d21c99da5089c57551ea1751893d.emf)
 
-.
-
 Further editing of diagrams includes mapping available expression data on the
 molecules and adding interactions around the selected molecules. For details on
-these two functions please refer to the sections 21.3 “Expression mapping”, and
-21.4, “Graph search”.
+these two functions please refer to “Expression mapping” and  “Graph search”.
