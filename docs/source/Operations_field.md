@@ -1,6 +1,6 @@
 # Operations field
 
-In the **Operations Field** (**D** in the figure of Section 2.1) a number of
+In the **Operations Field** (**D** in the figure described in the section organization of genexplain platform ) a number of
 essential functions to operate the geneXplain platform are provided on a number
 of tabs. How many and which tabs are shown depends very much on the context.
 
@@ -33,9 +33,7 @@ If you hide a column by unmarking it, you have to refresh the Work Space by
 pressing the button ![](media/704660205a0257d66dac45ba39818f41.emf)
 
 in the control panel right on top of the Operations Field. Here, you can also
-add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)) columns. Before removing a column with the button ![](media/381ac2058d3640e12b44bfaef9665e4d.emf)
-
-, you have to mark it by clicking somewhere in the background of the line
+add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)) columns. Before removing a column with the button ![](media/381ac2058d3640e12b44bfaef9665e4d.emf), you have to mark it by clicking somewhere in the background of the line
 specifying this column; the selected item will be highlighted in blue. But be
 careful: Deleting it from the table will irrevocably erase the column including
 all its contents!
@@ -56,14 +54,11 @@ select one of the following layout schemes:
 -   Grid layout
 
 When you have selected another layout type, you have to press the “Prepare
-layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation
-Field. Pressing “Apply layout” (![](media/81716efb0f0217d46022ca249f862694.emf)) transfer the new layout to the Work Space.
+layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation Field. Pressing “Apply layout” (![](media/81716efb0f0217d46022ca249f862694.emf)) transfer the new layout to the Work Space.
 
 Here are examples how the different layouts look like; the example is the
 Caspase 12 pathway and has been taken from the database Integrated models
-(*Int_casp12_module12*):
-
-![](media/3b683962f73e10383dedc8e8a16fb393.emf)
+(*Int_casp12_module12*): ![](media/3b683962f73e10383dedc8e8a16fb393.emf)
 
 ![](media/3b7607dfcd44101347e4081793b72ff6.emf)
 
@@ -88,8 +83,7 @@ changes with the Undo button (![](media/15c815409342eea72cc3dcc2b4a3a729.emf)). 
 
 Further editing of the layout schemes can be done by parameter settings in the
 Operation Field, Layout tab. A detailed description of these layout schemes, the
-underlying algorithms and parameterization can be found in the [Help
-texts](http://platform.genexplain.com/help/index.html?graph_layout_algorithms.htm).
+underlying algorithms and parameterization can be found in the [Help texts](http://platform.genexplain.com/help/index.html?graph_layout_algorithms.htm).
 
 ## Expression Mapping
 
