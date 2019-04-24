@@ -23,6 +23,9 @@ Guide
    Popular_Functions
    Databases
    Analysis_method_description
+   Operations_field
+   Editing_creating_workflows
+   
 
 Indices and tables
 ==================
