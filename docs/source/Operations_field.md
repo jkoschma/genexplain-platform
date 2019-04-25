@@ -52,7 +52,7 @@ When you have selected another layout type, you have to press the “Prepare
 layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation Field. Pressing “Apply layout” transfer the new layout to the Work Space.
 
 Here are examples how the different layouts look like; the example is the Caspase 12 pathway and has been taken from the database Integrated models (*Int_casp12_module12*):
-![](media/image008.png)
+![Hierarchical layout](media/image008.png)
 ![](media/image009.png)
 ![](media/image010.png)
 ![](media/image011.png)
