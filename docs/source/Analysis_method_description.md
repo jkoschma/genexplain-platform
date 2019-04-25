@@ -470,6 +470,7 @@ projects.
 
 Clicking the [Run] button will invoke the analysis. A part of the resulting
 profile is shown below: Resulting profile can be accessed using the URL:
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/matrix%20profile
 
 
 
@@ -716,11 +717,7 @@ The input form for this analysis is shown below:
 
 **Step 1**. Specify Site search result. This is the input field for the
 analysis, where you specify the results of the site search. The input field is
-marked by the symbol
-
-![](media/e8ea74032e2066ffc66882b105fec024.png)
-
-, which means that the input data set should have the same symbol.
+marked by the symbol ![](media/e8ea74032e2066ffc66882b105fec024.png) , which means that the input data set should have the same symbol.
 
 In the example below, we will use an input data set, which you can find in the
 geneXplain platform online under the following path:
@@ -747,8 +744,6 @@ explanations on how to do this are explained  in the section *Hierarchical struc
 **Step 3.** Specify Output path. Specify a location for the results in your
 project in the tree area. The resulting folder will be marked by the same icon
 as the analysis, ![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
-
-.
 
 Results are described below.
 
@@ -777,8 +772,7 @@ under study.
 track.
 
 **Step 3.** Model parameters. You can specify the number of elements in the
-hierarchical structure of the desired composite module. You may find details and
-explanations on how to do this below in Section 9.5.3 “Hierarchical structure of
+hierarchical structure of the desired composite module. detailed Explanation can be found at “Hierarchical structure of
 the composite modules”.
 
 **Step 4.** Output path. Specify a location for the results in your project in
@@ -786,8 +780,6 @@ the tree area. The resulting folder will be marked by the same icon as the
 analysis:
 
 ![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
-
-.
 
 Results are described below . 
 
@@ -1070,7 +1062,7 @@ is calculated by the Match algorithm.
 
 *Tk* – the number of site models in the module *Mk*, and
 
-![ f(x;\\mu,\\sigma\^2) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e\^{ -\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)\^2 } ](media/683830a6765ff2dbfabd9fa4fa81fa0e.png)
+![](media/683830a6765ff2dbfabd9fa4fa81fa0e.png)
 
 The final promoter score is calculated as the sum of the module scores *Mk*.
 
