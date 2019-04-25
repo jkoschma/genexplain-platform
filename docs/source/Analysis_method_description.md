@@ -202,13 +202,8 @@ top menu bar. These five buttons are marked by red oval in the figure below.
 
 ![](media/b2501c8557e23ab1ba4d04b38d718973.png)
 
-To get a visualization of TFBS for individual genes, the button
-
-![](media/503b082a4dfba6501516b36e7808098b.png)
-
-should be applied on the selected matrices. After click on this button, two new
-files will be saved in the tree area, a table ![](media/f72f0003eb6573163575aa494c050331.emf) and a 
-track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png), as shown below. The table is automatically opened in the Work Space.
+To get a visualization of TFBS for individual genes, the button ![](media/503b082a4dfba6501516b36e7808098b.png) should be applied on the selected matrices. After click on this button, two new files will be saved in the tree area, 
+a table ![](media/f72f0003eb6573163575aa494c050331.jpg) and a track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png), as shown below. The table is automatically opened in the Work Space.
 
 ![](media/e979e2e02b108f9e01a490c7babecae8.png)
 
@@ -239,8 +234,7 @@ on each color box.
 
 ![](media/65ba4fa3b411497bb35241640bd64cac.png)
 
-This table can be exported in tab-separated format (txt) or comma-separated
-format (csv).
+This table can be exported in tab-separated format (txt) or comma-separated format (csv).
 
 The second file, a track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png) has the same structure as described above for other track files. For visualization details please refer to the tip in Section visualization of sites. 
 
