@@ -47,7 +47,7 @@ function. The yellow box above (5) represents a parameter of the analysis
 function, which in this case (Filter table function) defines a filtering
 condition.
 
-![](media/a8f78a092143fb8d1901180c3e54c83e.emf)
+![](media/image015.png)
 
 Upon clicking on any component of the workflow you can see the information about
 this particular element in the Operations Field. For instance, in the figure
@@ -55,7 +55,7 @@ below, we can see the content of the parameter “Filtering condition”, which 
 set as “Score \> 2” (so the input table will be filtered by this condition in
 the table column “Score”).
 
-![](media/135c3d0af9b5ab97b0647b2f760df745.emf)
+![](media/image016.png)
 
 ### Six steps to create a simple workflow
 
@@ -143,7 +143,7 @@ in the “Filter table” function.
 ![](media/6eef1e8c7407f0c3ce427d41f13021a8.png)
 
 **Step 6.** The workflow is now ready to be executed. To start the workflow
-please click on the “Run workflow” button (![](media/fc66a907dd4b019161a894cdb645178e.emf)) in the toolbar of the Operations Field.
+please click on the “Run workflow” button in the toolbar of the Operations Field.
 
 In the pop-up menu “Workflow parameters” you should specify the input table.
 Please navigate to the folder with your tables and select a table which has a
