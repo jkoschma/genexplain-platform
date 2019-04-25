@@ -62,7 +62,8 @@ individual entities in the Info Box, after a single click with the left mouse
 button on the corresponding entity. The Diagrams can be opened by double-click
 with the left mouse button, or by opening a context menu with the right mouse
 button and selecting “Open diagram”. These diagrams contain their components
-listed underneath as nodes (![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)) and edges (![edge.gif] media/9c3855c990a6f0e4e296a150586f0ed9.gif)), for which additional information can be retrieved in the same way as for the
+listed underneath as nodes (![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)) and edges
+(![edge.gif](media/9c3855c990a6f0e4e296a150586f0ed9.gif)), for which additional information can be retrieved in the same way as for the
 whole diagram. Many of them may be assigned to a hierarchy of compartments.
 
 If you select the Biopath database for a search, you may enter a gene name into
@@ -184,7 +185,7 @@ corresponding data amenable to the browser.
 The Ensembl database sections are searchable in the same way as described
 before: Just click on the name of the respective database in the Tree Area, so
 that it receives a light-blue background and its path appears on the Search tab
-of the Info Box. Enter your search term, launch the search by pressing ![](media/search.jpg) and find your Search results on the respective tab on the Operations Field. Among the multiple hits, the one with the perfect match will be highlighted in
+of the Info Box. Enter your search term, launch the search by pressing ![](media/search.png) and find your Search results on the respective tab on the Operations Field. Among the multiple hits, the one with the perfect match will be highlighted in
 bold.
 
 ## Gene Ontology (GO)
@@ -194,16 +195,15 @@ updated regularly. The present version is 06.2015.
 GO is searchable in the same way as described before: Just click on the name GO
 in the Tree Area, so that it receives a light-blue background and its path
 appears on the Search tab of the Info Box. Enter your search term, launch the
-search by pressing ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf), and find your Search results on the respective tab on the Operations Field. When clicking on linked descriptions, additional information will appear in the
-Info Box, Info tab.
+search by pressing ![](media/search.png), and find your Search results on the respective tab on the Operations Field. When clicking on linked descriptions, additional information will appear in the Info Box, Info tab.
 
 ## GeneWays
 
 GeneWays is a database about genes and their functional interactions. The
 underlying data (version 7.0) have been retrieved from the original scientific
 literature by a sophisticated text mining system applied to more than 360,000
-full text papers and of more than eight million publication abstracts [Iossifov
-I., Rodriguez-Esteban R., Mayzus I., Millen K.J., and Rzhetsky A. Looking at
+full text papers and of more than eight million publication abstracts 
+[Iossifov I., Rodriguez-Esteban R., Mayzus I., Millen K.J., and Rzhetsky A. Looking at
 cerebellar malformations through text-mined interactomes of mice and humans.
 PLoS Comput Biol. 2009, 5:e1000559. PubMed PMID: 19893633].
 
@@ -216,9 +216,8 @@ link to the PubMed entries of the corresponding publication in the Info Box.
 A single click on the term GeneWays in the Tree Area / Databases suffices to
 indicate this data source in the Info Box, tab Search. You can insert your
 search term (e.g., a gene symbol) into the field underneath. Clicking on the
-icon ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf) launches the search. The search routine scans for exact matches, but use of
-wildcards is possible. Thus, searching for elk\* returns results for elk1,
-elk2p1, elk3, and elk4. 
+icon ![](media/search.png) launches the search. The search routine scans for exact matches, but use of
+wildcards is possible. Thus, searching for elk\* returns results for elk1, elk2p1, elk3, and elk4. 
 
 The results will be shown in the Operations Field, under the tab Search result.
 For instance, when searching in GeneWays for JAG1, the following result table
@@ -246,7 +245,7 @@ Reactome are copyright © 2003-2010 Cold Spring Harbor Laboratory (CSHL), Ontari
 Institute for Cancer Research (OICR) and the European Bioinformatics Institute
 (EBI).
 
-So far 6387 diagrams have been imported from version 57 of this database into
+So far 7583 diagrams have been imported from version 63 of this database into
 the geneXplain platform. They can be used as graphical and editable schemata. In
 the Tree Area, all components are listed in each diagram subdirectory.
 
@@ -320,8 +319,7 @@ suitable for visualization in the Genome Browser.
 
 Under “views”, available matrices (PWMs), underlying ChIP-seq experiments or the
 TFs themselves can be browsed. They are arranged according to the most recent
-classification of human TFs
-(<http://www.edgar-wingender.de/huTF_classification.html>) and extended to mouse
+classification of human TFs (<http://www.edgar-wingender.de/huTF_classification.html>) and extended to mouse
 and rat homologs.
 
 ![](media/bd1cc352901a31cb25eb309fa0ec72c4.png)
@@ -383,7 +381,7 @@ line) on the basis of the Poisson distribution. For this, local background CTSS
 rates were calculated from flanking regions (blue areas) of a putative TSS (red
 line), excluding its direct vicinity (red area).
 
-![](media/fde51b8fb1e8cf16fa50a57e95c484dd.tiff)
+![](media/image025.png)
 
 In the second step, we further refined the initial CTSS clusters using a Hidden
 Markov Model (HMM). The HMM modelled CTSS hits in TSS regions as well as in the
@@ -505,7 +503,7 @@ folder. Any input gene or protein table will be classified using the DrugExpress
 data. 17 subfolders and 642 gene tables will be used as categories for the
 classification of the input table. We will exemplify this in the following.
 
-**Step 1**. Open Functional classification analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)), under the tab Analyses, folder Methods, subfolder Functional classification.
+**Step 1**. Open Functional classification analysis, under the tab Analyses, folder Methods, subfolder Functional classification.
 
 ![](media/35f6bfc53347a96eaaa413ae03dcfe8b.png)
 
@@ -514,7 +512,7 @@ species in the input fields, Source data set and Species, respectively.
 
 Please note that if the table you plan to classify has other IDs, you first need
 to convert it into a table with Ensembl IDs. This can be done using the *Convert
-table* (![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)) function located at analyses/Methods/Data manipulation/Convert table.
+table* function located at analyses/Methods/Data manipulation/Convert table.
 
 For this example, the following input table is used:
 
