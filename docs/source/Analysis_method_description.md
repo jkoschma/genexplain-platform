@@ -926,8 +926,7 @@ with the specified site models in focus.
 Let us consider the results of the *Construct composite module* analysis
 obtained for the following input data set, which you can find in the geneXplain
 platform online under the following path:
-
-[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20sites%20-1000..100/CMA%202%20to%205%20modules%20(Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20sites%20-500..100)/Model%20visualization%20on%20Yes%20set](https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20sites%20-1000..100/CMA%202%20to%205%20modules%20(Upregu)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/CMA%202%20to%205%20modules%20(Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search)/Model%20visualization%20on%20Yes%20set>
 
 Input parameters used were the following:
 
@@ -974,7 +973,7 @@ shown on the screenshot below.
 
 ![](media/bf638696e45c4e140355deb4ffbac687.png)
 
-Yes track
+*Yes track*
 
 The Yes track provides essential information about the regulation of individual
 promoters and is therefore important to be included in the visualization of
