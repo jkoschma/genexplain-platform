@@ -1053,7 +1053,7 @@ sites belong to (three site models – red, green and blue).
 A promoter model consists of *K* modules. The score of each module *Mk*
 (*Score(Mk)*, *k* = 1, …, *K*) is calculated according to this formula:
 
-![](media/281cf5a811a8c0d6b0484cff2bee63fe.emf)
+![](media/image017.png)
 
 Here, *Site Score (t,i)* is the site score for the sites found in the promoter, which
 is calculated by the Match algorithm.
@@ -1109,7 +1109,7 @@ category are enriched (over-represented) among up-regulated genes.
 
 The resulting tables with enriched ontological categories contain twelve
 columns. Here, to have a better resolution of the screenshots, one table is
-shown in two parts. This is the result of a GSEA using the PROTEOME™ biological
+shown in two parts. This is the result of a GSEA using the HumanPSD™ biological
 process.
 
 ![](media/5412aad3c440fe6d5295028bd452edc5.png)
