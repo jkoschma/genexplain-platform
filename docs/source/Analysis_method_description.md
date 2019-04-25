@@ -1170,7 +1170,7 @@ Let’s open a visualization plot for the category defense response.
 
 ![](media/b0ed70bf7d39a31e20b6b1001d62e168.png)
 
-X-axis
+**X-axis**
 
 On this line, all (human in this example) genes present in the input table are
 ranked from 1 to approximately 23,000 according to their LogFoldChange. The
@@ -1180,22 +1180,22 @@ At the left end of the line X, up-regulated genes are located, and
 down-regulated genes at the right end . The smaller the rank of a gene is, the
 higher is its up-regulation.
 
-Y-axis, right
+**Y-axis, right**
 
 This axis shows the values of the LogFoldChange. Positive values correspond to
 up-regulated genes, negative values to down-regulated genes.
 
-Blue plot
+**Blue plot**
 
 This is a distribution of LogFoldChange values among all (human) genes.
 
-Y-axis, left
+**Y-axis, left**
 
 This axis shows the values of the ES parameter (also known in statistics as
 Kolmogorov-Smirnov score). Positive values correspond to up-regulated genes,
 negative values to down-regulated genes.
 
-Red plot
+**Red plot**
 
 This is a distribution of ES values for a particular GO category over all
 (human) genes. ES is calculated by summing up on the previous values, so the
@@ -1225,7 +1225,7 @@ the green line crosses the X-axis at approximately 4,500. To know this value
 exactly, look at the table, and in the column Rank at max for this category, you
 can find the number 4328.
 
-To describe this plot, we can say:
+*To describe this plot, we can say:*
 
 “Genes belonging to the GO category *defense response* are enriched among the
 top 4328 up-regulated genes”.
