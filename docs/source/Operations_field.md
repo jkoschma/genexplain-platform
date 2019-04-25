@@ -84,7 +84,8 @@ expressed genes and calculated fold change values for expression mapping.
 **Important note.** The format of the table with expression data that can be
 used depends on the format of the diagram. If the diagram was constructed based
 on the TRANSPATH® database, the format of the table to drag and drop should be
-“Proteins: Transpath peptides”, and the table should have the symbol ![](media/89c7830ace79b222186c5cf0821d31c2.jpg)
+“Proteins: Transpath peptides”, and the table should have the symbol
+![](media/89c7830ace79b222186c5cf0821d31c2.jpg)
 
 If the diagram was constructed based on the GeneWays database, the format of the table to drag and drop should be “Genes: Entrez”, and the table should have the symbol ![](media/f72f0003eb6573163575aa494c050331.jpg)
 
@@ -148,7 +149,7 @@ directions) and number of steps (depth) in the selected direction.
 
 Graph search can be done in several iterations.
 
-First iteration of a graph search.
+### First iteration of a graph search.
 
 To perform a graph search the following steps are recommended:
 
@@ -157,10 +158,7 @@ To perform a graph search the following steps are recommended:
     element. On the picture below, the molecule “PAK1-isoform1” has been
     selected, marked by the red oval.
 
--   Use the button ![](media/029eeb77ca380c74cf5b449796292725.png)
-
-    to add the selected molecule to the elements pane. The added element is
-    marked by the blue oval on the picture below.
+-   Use the button ![](media/029eeb77ca380c74cf5b449796292725.png) to add the selected molecule to the elements pane. The added element is marked by the blue oval on the picture below.
 
 ![](media/c6c33eaf94baac72cc95180c17bdce45.png)
 
@@ -175,9 +173,7 @@ To perform a graph search the following steps are recommended:
 
 ![](media/737443056068107eed27d9f36ac0ee08.png)
 
--   Use
-
-    ![](media/89edb7069f163fa24089d0ef20e1a21e.png)
+-   Use ![](media/89edb7069f163fa24089d0ef20e1a21e.png)
 
     to start the search. Once the search is finished you get the search results
     in the elements pane as shown in the screenshot below.
@@ -194,11 +190,8 @@ To perform a graph search the following steps are recommended:
     the others.
 
 -   In the next step, found molecules can be added to the current diagram by
-    using the
-
-    ![](media/9cfb8167772d37ff6f129cbdaedb18f0.png)
-
-    icon. By default all found molecules are checked. The user can uncheck some
+    using the ![](media/9cfb8167772d37ff6f129cbdaedb18f0.png) icon. 
+    By default all found molecules are checked. The user can uncheck some
     of the molecules in the column **Add** before adding to the diagram. Only
     the molecules checked in the column **Add** are added to the diagram. Here,
     all molecules are added, as shown on the picture below.
@@ -208,10 +201,10 @@ To perform a graph search the following steps are recommended:
 Now, the layout for the extended diagram can be specified, details of the
 layouts are described in Section “Changing the layout”.
 
-If you would like to remove the search results and select another molecule, the
-button ![](media/ff7d4cd8626978ea821b1fbd2cfdf8c5.emf) can be applied.
+If you would like to remove the search results and select another molecule, the *delete*
+button can be applied.
 
-Second and next iterations of the graph search.
+### Second and next iterations of the graph search.
 
 -   Having several molecules in the element pane at the previous iteration of a
     graph search, the user can start searching again in the specified direction
