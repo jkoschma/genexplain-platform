@@ -11,19 +11,14 @@ are additional ones, reachable by clicking on these double arrowheads
 ![](media/image006.png)
 
 The function of the individual tabs will be explained in more detail in those
-sections where their effect is part of a certain operation. In general, the icon ![](media/fc66a907dd4b019161a894cdb645178e.emf)
-
-initiates the corresponding activity within the Operations Field, whereas ![](media/3e53735d232abf5ba7b39eb6bcde6a8f.emf)
-
-applies to the results generated in the Operations Field of the Work Space.
+sections where their effect is part of a certain operation. In general, the icon ![](media/fc66a907dd4b019161a894cdb645178e.jpg)
+initiates the corresponding activity within the Operations Field, whereas ![](media/3e53735d232abf5ba7b39eb6bcde6a8f.jpg) applies to the results generated in the Operations Field of the Work Space.
 
 ## Changing the table structure in the Operations Field
 
 Having opened a table in the Work Space, e.g. by double clicking on its name in
 the Tree Area, it is possible to edit its structure in the Operations Field
-under the tab *Columns*.
-
-For instance, if you have opened a table with data about Enrichment GO Molecular
+under the tab *Columns*. For instance, if you have opened a table with data about Enrichment GO Molecular
 Mechanism (resulting from having run a GSEA), this field may look like this 
 
 
@@ -32,16 +27,11 @@ Mechanism (resulting from having run a GSEA), this field may look like this
 Recognizably, you can change the column headers, the data type in the column, or
 its (usually hidden) descriptions. You may add an Expression, which may be a
 mathematical formula, formulated in Java script; you find detailed explanations
-for this when you press the Edit key (![](media/ffd1d4f4ad01ff1bcc5d6c39b9d641b3.emf)) next to this field. In the last column, you can specify which columns are visible or shall be hidden (unmarking a column here does NOT delete it, it hides it from the currently displayed table).
+for this when you press the *Edit* key next to this field. In the last column, you can specify which columns are visible or shall be hidden (unmarking a column here does NOT delete it, it hides it from the currently displayed table).
 
-If you hide a column by unmarking it, you have to refresh the Work Space by
-pressing the button ![](media/704660205a0257d66dac45ba39818f41.emf)
+If you hide a column by unmarking it, you have to refresh the Work Space by pressing the *Refresh* button in the control panel right on top of the Operations Field. Here, you can also add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.jpg)) columns. Before removing a column with the button ![](media/381ac2058d3640e12b44bfaef9665e4d.jpg), you have to mark it by clicking somewhere in the background of the line specifying this column; the selected item will be highlighted in blue. 
 
-in the control panel right on top of the Operations Field. Here, you can also
-add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)) columns. Before removing a column with the button ![](media/381ac2058d3640e12b44bfaef9665e4d.emf), you have to mark it by clicking somewhere in the background of the line
-specifying this column; the selected item will be highlighted in blue. But be
-careful: Deleting it from the table will irrevocably erase the column including
-all its contents!
+But be careful: Deleting it from the table will irrevocably erase the column including all its contents!
 
 ### Changing the layout
 
@@ -59,7 +49,7 @@ select one of the following layout schemes:
 -   Grid layout
 
 When you have selected another layout type, you have to press the “Prepare
-layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation Field. Pressing “Apply layout” (![](media/81716efb0f0217d46022ca249f862694.emf)) transfer the new layout to the Work Space.
+layout” button (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)), showing the new layout at the right of the same window in the Operation Field. Pressing “Apply layout” transfer the new layout to the Work Space.
 
 Here are examples how the different layouts look like; the example is the Caspase 12 pathway and has been taken from the database Integrated models (*Int_casp12_module12*):
 ![](media/image008.png)
@@ -68,17 +58,13 @@ Here are examples how the different layouts look like; the example is the Caspas
 ![](media/image011.png)
 ![](media/image012.png)
 
-Some of the re-layouting options may take considerable time. If you want to interrupt the process, press the “Stop layout” button (![](media/ebd55e3b3d41c30952b8d30944210730.emf)).
+Some of the re-layouting options may take considerable time. If you want to interrupt the process, press the “Stop layout” button. 
 
-The layout that has been applied to the Work Space can be further edited
-manually. A single click on a node (component or reaction node) highlights it; it can be shifted now by mouse movement, or can be deleted (right mouse button click opens a context menu with the option “*Remove*”). The results of this
-manual editing can be saved to the Operation Field (![](media/335f1b9cf9381b687c9b295a7ab4882e.emf)) so that they will be retained for the following work.
+The layout that has been applied to the Work Space can be further edited manually. A single click on a node (component or reaction node) highlights it; it can be shifted now by mouse movement, or can be deleted (right mouse button click opens a context menu with the option “*Remove*”). The results of this manual editing can be saved to the Operation Field so that they will be retained for the following work.
 
-**Please, be careful**: changes in your own diagrams are automatically saved!
-You can even close the diagram in the Work Space, but still can undo your last changes with the Undo button 
-(![](media/15c815409342eea72cc3dcc2b4a3a729.emf)). After logout, all your changes will be automatically fixed.
+**Please, be careful**: changes in your own diagrams are automatically saved! You can even close the diagram in the Work Space, but still can undo your last changes with the Undo button (![](media/15c815409342eea72cc3dcc2b4a3a729.jpg)). After logout, all your changes will be automatically fixed.
 
-Further editing of the layout schemes can be done by parameter settings in the Operation Field, Layout tab. A detailed description of these layout schemes, the underlying algorithms and parameterization can be found in the [Help texts](http://platform.genexplain.com/help/index.html?graph_layout_algorithms.htm).
+Further editing of the layout schemes can be done by parameter settings in the Operation Field, Layout tab.
 
 ## Expression Mapping
 
@@ -98,18 +84,12 @@ expressed genes and calculated fold change values for expression mapping.
 **Important note.** The format of the table with expression data that can be
 used depends on the format of the diagram. If the diagram was constructed based
 on the TRANSPATH® database, the format of the table to drag and drop should be
-“Proteins: Transpath peptides”, and the table should have the symbol 
+“Proteins: Transpath peptides”, and the table should have the symbol ![](media/89c7830ace79b222186c5cf0821d31c2.jpg)
 
-![](media/89c7830ace79b222186c5cf0821d31c2.emf)
-
-If the diagram was constructed based on the GeneWays database, the format of
-the table to drag and drop should be “Genes: Entrez”, and the table should have
-the symbol ![](media/f72f0003eb6573163575aa494c050331.emf)
+If the diagram was constructed based on the GeneWays database, the format of the table to drag and drop should be “Genes: Entrez”, and the table should have the symbol ![](media/f72f0003eb6573163575aa494c050331.jpg)
 
 Please check the format of the table with expression data before dragging and
-dropping it over the diagram, and if necessary, convert it to the required
-format with the function “Convert table” that can be found at the
-analyses/Methods/Data manipulation/Convert table.
+dropping it over the diagram, and if necessary, convert it to the required format with the function “Convert table” that can be found at the analyses/Methods/Data manipulation/Convert table.
 
 After the table with expression data is dragged and dropped, the up- and
 down-regulated genes are automatically highlighted, and the expression mapping
