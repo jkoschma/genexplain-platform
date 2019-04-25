@@ -49,37 +49,23 @@ under the tab *Columns*.
 For instance, if you have opened a table with data about Enrichment GO Molecular
 Mechanism (resulting from having run a GSEA), this field may look like this:
 
-![](media/5acb68e3a598feaea26ce9abc7348def.emf)
+![](media/image026.png)
 
 Recognizably, you can change the column headers, the data type in the column, or
 its (usually hidden) descriptions. You may add an Expression, which may be a
 mathematical formula, formulated in Java script; you find detailed explanations
-for this when you press the Edit key (
+for this when you press the Edit key (![](media/Edit.png)) next to this field. In the last column, you can specify which columns are
+visible or shall be hidden (unmarking a column here does NOT delete it, it hides it from the currently displayed table).
 
-![](media/ffd1d4f4ad01ff1bcc5d6c39b9d641b3.emf)
-
-) next to this field. In the last column, you can specify which columns are
-visible or shall be hidden (unmarking a column here does NOT delete it, it hides
-it from the currently displayed table).
-
-If you hide a column by unmarking it, you have to refresh the Work Space by
-pressing the button
-
-![](media/704660205a0257d66dac45ba39818f41.emf)
-
+If you hide a column by unmarking it, you have to refresh the Work Space by pressing the *Refresh* button
 in the control panel right on top of the Operations Field. Here, you can also
-add new (![](media/034fae9358d6455d89ae62fd4b1b04bd.emf)) columns. Before removing a column with the button
-
-![](media/381ac2058d3640e12b44bfaef9665e4d.emf)
-
-, you have to mark it by clicking somewhere in the background of the line
-specifying this column; the selected item will be highlighted in blue. But be
+add new columns. Before removing a column with the *delete* button,  you have to mark it by clicking somewhere in the background of the line specifying this column; the selected item will be highlighted in blue. But be
 careful: Deleting it from the table will irrevocably erase the column including
 all its contents!
 
 ### Annotate table
 
-The analysis method *Annotate table* (![](media/fe60f1326ac4b780e0b3db07619a4411.emf)) can be found in the Tree Area, under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Annotate table*  can be found in the Tree Area, under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Annotate%20table>
 
@@ -188,7 +174,7 @@ were in the input table.
 
 ### Single gene table
 
-The analysis method *Convert table* (![](media/2caff7a762fafadf0b4c20c6c599ef80.emf)) can be found in the tree area, on the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Convert table*  can be found in the tree area, on the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 <https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Convert%20table>
 
@@ -205,18 +191,18 @@ The analysis input form when opened in the work space is shown below:
 
 In the following, we will consider the input fields one by one:
 
-Input table: Input the data table for which you wish to convert the identifiers.
+_Input table:_ Input the data table for which you wish to convert the identifiers.
 
-Input type: Type of identifiers in the input table. This is automatically
+_Input type:_ Type of identifiers in the input table. This is automatically
 detected in the majority of cases. However, if there are two columns with
 different identifiers in the input table, you can manually select the identifier
 you wish to convert.
 
-Output type: Type of identifiers into which you wish to convert the input type.
+*Output type:* Type of identifiers into which you wish to convert the input type.
 
-Species: Select human, mouse or rat, corresponding to the input table.
+*Species:* Select human, mouse or rat, corresponding to the input table.
 
-Numerical value treatment rule: Select one of the rules for treating the values
+*Numerical value treatment rule:* Select one of the rules for treating the values
 in the numerical columns of the input table. Rule selection is important, when
 several rows are merged into a single one. We have to take into account that one
 identifier of a given type may correspond to several identifiers of another
@@ -266,7 +252,7 @@ Example: Conversion of Ensembl gene IDs to UniProt IDs
 
 The input table with Ensembl gene IDs can be accessed via URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
 
 Fill the input fields and press [Run] as shown below:
 
@@ -302,9 +288,7 @@ the input tables.
 
 ## Join tables
 
-The analysis method *Join tables* (![](media/baa0074f347e4d1fffb95512e381430d.png)) can be found in the Tree Area under the Analyses tab in the folder *Methods*,
-
-subfolder *Data manipulation*. The complete path to this method is:
+The analysis method *Join tables* (![](media/baa0074f347e4d1fffb95512e381430d.png)) can be found in the Tree Area under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
 https://platform.genexplain.com/bioumlweb/\#de=analyses/Methods/Data%20manipulation/Join%20tables
 
@@ -431,7 +415,7 @@ The output is a folder comprising several tables and one diagram as shown below:
 **Diagram** opens automatically in the work space when the analysis is
 completed, can be found in the Examples folder using the URL
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/Venn%20analysis/Venn%20analysis/Diagram
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/Venn%20analysis/Venn%20analysis/Diagram>
 
 ![](media/0815f948ec087558dec9a69285f8a6e9.png)
 
@@ -482,7 +466,7 @@ operations with tracks, among other methods. This folder can be found on the
 information about their chromosomal location and absolute positions of the
 beginning and of the end. Optionally, any additional information about the
 fragments can be included. Tracks are very often available in BED format. Within
-the geneXplain platform, tracks in the tree area are shown as (![](media/368076561774990443d1e26a25dd9f3e.emf)). As for the basic operations with tracks, kindly refer to the previous descriptions (2.3.3).
+the geneXplain platform, tracks in the tree area are shown as (![](media/track.jpg)). 
 
 ## Annotate track with genes
 
@@ -560,20 +544,20 @@ conserved regions.
 
 The parameters can be described as follows.
 
-Input track: The input track contains the intervals which will be available in
+*Input track:* The input track contains the intervals which will be available in
 or omitted from the output track if they overlap with intervals of the filter
 track.
 
-Filter track: The filter track contains the intervals against which input
+*Filter track:* The filter track contains the intervals against which input
 intervals are tested for overlap.
 
-Operation type: Here one can select the desired input intervals, intersection or
+*Operation type:* Here one can select the desired input intervals, intersection or
 difference.
 
-Output track: The output track will contain the input intervals contained in the
+*Output track:* The output track will contain the input intervals contained in the
 intersection of difference set.
 
-Overlap coverage: The overlap coverage is the relative proportion of an input
+*Overlap coverage:* The overlap coverage is the relative proportion of an input
 interval that needs to overlap with a filter interval.
 
 Maximal uncovered flank positions: This parameter limits the number uncovered
@@ -583,8 +567,7 @@ positions.
 
 ## Gene set to track
 
-The method *Gene set to track* (![](media/f7f381d6ea50c68ea4cbe61d9fd3c3f3.png)) aims at creating a track corresponding to any table with Ensembl gene IDs. As 
-with the fragments of the output track, this method takes the gene regions
+The method *Gene set to track* (![](media/f7f381d6ea50c68ea4cbe61d9fd3c3f3.png)) aims at creating a track corresponding to any table with Ensembl gene IDs. As with the fragments of the output track, this method takes the gene regions
 around TSS (transcription start sites). It is a useful method to create a track
 of gene promoters or upstream regions for any input gene table. The input form
 is shown below:
@@ -592,8 +575,7 @@ is shown below:
 ![](media/bf3e2d56bdfb0533eb854e662e6a301c.png)
 
 **Input table**. Specify the input table with Ensembl gene IDs. If your table
-has different IDs, you need to convert it first. Details on how to convert table
-identifiers are given in the *Section 11.3.3*. You can drag & drop the table
+has different IDs, you need to convert it first. You can drag & drop the table
 from your project within the tree area. Alternatively, you may click on the pink
 field *select element* and a new window will be opened, where you can select the
 table. Here, the following table is taken as input.
@@ -687,7 +669,7 @@ the work space. Let’s consider different variants of the resulting gene tables
 depending on the selected option in the input field **Types of resulting
 column**.
 
-\+ or -.
+\+ or -
 
 This option is especially useful when two or more tracks are added as input. In
 the resulting table (below) you can see the columns corresponding to each of the
@@ -709,7 +691,7 @@ To learn more details, e.g. how many fragments are overlapping with gene regions
 and with exactly which parts of particular genes, you might be interested to
 choose other types of the output, as shown below.
 
-Count
+**Count**
 
 ![](media/528e87073fe563cb0ab537ce27c7f418.png)
 
@@ -717,7 +699,7 @@ For each gene, a gene symbol is given, and in the column **Count** you can see a
 number of the fragments overlapping with each gene. Here, the sorting is done by
 this column.
 
-Structure
+**Structure**
 
 ![](media/372e76feb740ed47e2a186157135c71c.png)
 
@@ -725,7 +707,7 @@ The column **Structure** contains the names of gene regions overlapping with the
 fragment(s). The table can be sorted by this column to get all genes where the
 fragments overlap the gene regions in focus.
 
-Positions
+**Positions**
 
 ![](media/eeab641a1a02e5288fe2182a42a487cf.png)
 
@@ -733,7 +715,7 @@ The column **Positions** presents positions at the 5’ end of the fragment
 overlapping with this gene. Positions are shown relative to the TSS of the gene
 in each row.
 
-Schematic
+**Schematic**
 
 ![](media/496fe26320cd368b71cc39144730b902.png)
 
@@ -762,17 +744,17 @@ The initial form of this analysis looks as shown below:
 
 ![](media/6cdc5bf0cd0c41f60edf870e4250657c.png)
 
-Source track: Track you want to process  
-Sequences: Sequences to use  
-Enlarge sites at start: Use positive numbers to enlarge and negative to shrink  
-Enlarge sites at end: Use positive numbers to enlarge and negative to shrink  
-Merge overlapping: Checking this box merges overlapping sites into a single
+**Source track:** Track you want to process  
+**Sequences:** Sequences to use  
+**Enlarge sites at start:** Use positive numbers to enlarge and negative to shrink  
+**Enlarge sites at end:** Use positive numbers to enlarge and negative to shrink  
+**Merge overlapping:** Checking this box merges overlapping sites into a single
 site. Site annotations will be lost!  
-Remove small sites: If checked, sites smaller then Minimal site size will be
+**Remove small sites:** If checked, sites smaller then Minimal site size will be
 removed, otherwise they will be expanded to Minimal site size  
-Minimal site size: Sites shorter than the specified size will be removed from
+**Minimal site size:** Sites shorter than the specified size will be removed from
 output  
-Output track: You should specify the path for the processed track here.
+**Output track:** You should specify the path for the processed track here.
 
 An example source track file saved in the repository to which you want to add
 sequences may look like this:
@@ -784,7 +766,7 @@ for analysis, as shown in columns From and To. The column Strand shows the
 strand of the chromosome where these promoters are located, where 1 means strand
 not applicable, 2 means forward strand, 3 means reverse strand, 4 means both
 strands. This file can be dragged and dropped on a particular chromosome opened
-in the genome browser to visualize its positions (see Section 16.2.3).
+in the genome browser to visualize its positions.
 
 This Source track file can be selected as an input to “Process track with
 Sites”. The sequences we want to map are selected from the Ensembl database as
@@ -838,34 +820,34 @@ track is provided, the sequence length argument is required.
 The input mask of the tool is shown above. The parameters are described in the
 following.
 
-Input track: This is argument is optional. The input track can be supplied to
+**Input track:** This is argument is optional. The input track can be supplied to
 obtain a random track with a similar length distribution and/or void of segments
 overlapping with input intervals.
 
-Sequence source: The sequence source specifies which sequences are associated
+**Sequence source:** The sequence source specifies which sequences are associated
 with intervals. Note that you can apply a custom source, e.g. a specifically
 uploaded genome. Clicking on the “Custom” option will open a new field to choose
 the custom sequence source.
 
-Species: Upstream regions of genes will be compiled from the annotation for the
+**Species:** Upstream regions of genes will be compiled from the annotation for the
 specified species.
 
-Standard chromosomes: If marked (default), sampling will only take into account
+**Standard chromosomes:** If marked (default), sampling will only take into account
 standard chromosomes. As non-standard chromosomes, this analysis considers for
 instance haplotype segments.
 
-Sequence number: This is the number of sequence regions to sample.
+**Sequence number:** This is the number of sequence regions to sample.
 
-Sequence length: If greater than 0, this value specifies one length for all
+**Sequence length:** If greater than 0, this value specifies one length for all
 sampled sequence regions. Otherwise, an input track must be provided and random
 interval length will be sampled from length observed in the input track.
 
-Allow overlap: If marked, sampled intervals are allowed to overlap with input
+**Allow overlap:** If marked, sampled intervals are allowed to overlap with input
 intervals.
 
-Output track: The path of the track with random track to be created.
+**Output track:** The path of the track with random track to be created.
 
-Random number seed: If greater than 0, this number will be supplied as seed for
+**Random number seed:** If greater than 0, this number will be supplied as seed for
 the random number generator in order to be able to reproduce the sampling
 result.
 
@@ -886,15 +868,15 @@ transcripts. The input should be a table with Ensemble transcripts.
 
 In the following, the input fields are shown one by one:
 
-Input transcripts **–** Enter a table of Ensemble transcripts in this field. You
+**Input transcripts** - Enter a table of Ensemble transcripts in this field. You
 can either drag and drop the file from the tree area or select it from the
 drop-down menu. In case your gene table does not have transcript information,
 use the ‘*convert table’* function(section XXX) to convert any gene or protein
 table into Ensembl transcripts.
 
-Species – Select the species of the input transcripts.
+**Species** – Select the species of the input transcripts.
 
-Transcript region – You can select the part of a transcript region which you
+**Transcript region** – You can select the part of a transcript region which you
 wish to include in the output track. The region can be selected from 3’ UTR,
 5’ UTR, promoter, intron, and exon.
 
@@ -906,10 +888,10 @@ region, the input form becomes the following:
 
 ![](media/6a7d701940cc104fbde69c8526e1311e.png)
 
-Promoter start – You should specify the first base of the promoter relative to
+**Promoter start** – You should specify the first base of the promoter relative to
 the TSS.
 
-Promoter end – Here you should specify the last base of the promoter relative to
+**Promoter end** – Here you should specify the last base of the promoter relative to
 the TSS.
 
 If 3’ UTR or 5’ UTR are selected as the transcript region, the input form looks
@@ -917,18 +899,18 @@ as follows.
 
 ![](media/317c35b68eb912d09a09835de83e9063.png)
 
-First/last exon as UTR - This check box can be used to select the first or last
+**First/last exon as UTR** - This check box can be used to select the first or last
 exon as UTR if it is not defined in the input transcript. By default this box is
 unchecked.
 
-Fixed UTR length – The column can be used to create UTRs of fixed length. By
+**Fixed UTR length** – The column can be used to create UTRs of fixed length. By
 default the method uses 300bp as the track length. Please note that actual UTRs
 can be very long.
 
-Ignore CDS information – This box is checked to ignore CDS information and
+**Ignore CDS information** – This box is checked to ignore CDS information and
 create fixed length UTRs. By default this box is checked.
 
-Output path - Specify the path to store the result and indicate the name of the
+**Output path** - Specify the path to store the result and indicate the name of the
 output track or sequences.
 
 If Exon or Intron are selected as the transcript region, the input form is
@@ -936,11 +918,11 @@ adjusted as follows:
 
 ![](media/93743502c91d37d5d7ff0d04fe34b797.png)
 
-Exon/Intron number - This field becomes active when you select Intron or Exon as
+**Exon/Intron number** - This field becomes active when you select Intron or Exon as
 the transcript region. You should specify 1, 2 ... for first, second, ...
 exon/intron, or -1, -2, ... for last, second last, ... exon/intron.
 
-Output path - Specify the path to store the result and indicate the name of the
+**Output path** - Specify the path to store the result and indicate the name of the
 output track or sequences.
 
 Below it is shown how to create a track with 5’ UTR sequences starting from the
@@ -982,25 +964,25 @@ The input form is as shown below:
 
 ![](media/beaa3d359ca060c9808f9471bbf3c160.png)
 
-Input genes: Enter the set of genes or a gene table to extract transcription
+**Input genes:** Enter the set of genes or a gene table to extract transcription
 start sites (TSSs).
 
-CAGE TSS database: Specify the path of the Fantom database.
+**CAGE TSS database:** Specify the path of the Fantom database.
 
-Cell/Tissue condition: Once you specify the database, select the cells/tissues
+**Cell/Tissue condition:** Once you specify the database, select the cells/tissues
 for which you want to create the promoter track from the drop-down menu.
 
-From/To**:** Specify the promoter length relative to the TSS; by default the
+**From/To-** Specify the promoter length relative to the TSS; by default the
 promoter length is from -1000 to +100 bp
 
-TSS selection: The TSS should be selected if there are multiple TSS. By default
+**TSS selection:** The TSS should be selected if there are multiple TSS. By default
 the most active site is considered as TSS.
 
-Substitute default: By default this box is unchecked. If checked it will
+**Substitute default:** By default this box is unchecked. If checked it will
 substitute the gene promoter by default, if the promoter is missing in the
 selected condition.
 
-Output path: Define the output file name and path in the tree area where you
+**Output path:** Define the output file name and path in the tree area where you
 wish to save the Fantom5 promoter track.
 
 For example:
@@ -1039,61 +1021,61 @@ form is shown below:
 
 The input form parameters are as follows:
 
-Source –Specify the type of input track that you wish to process using this
+**Source** –Specify the type of input track that you wish to process using this
 method. The source can vary from Track, FastQ, Solid and CSFastQ.
 
-FastQ file – This is a sequence file with reads in FastQ format.
+**FastQ file** – This is a sequence file with reads in FastQ format.
 
-CSfastq file – This is a file containing reads in color space.
+**CSfastq file** – This is a file containing reads in color space.
 
 If the source is Track, you have to specify the Input track**.** Based on the
 specified source, you should input the track to process using this method.
 
-Alignment – Specify whether to align sites on the left or on the right.
+**Alignment** – Specify whether to align sites on the left or on the right.
 
 In case the source is a Fastq or CSFasta file, you need to specify:
 
-Quality encoding – This specifies how phred quality values are encoded in the
+**Quality encoding** – This specifies how phred quality values are encoded in the
 FASTQ file. In most of the cases the system detects this value automatically.
 You may change it manually if the auto-detection worked incorrectly.
 
-Alignment – Specify whether to align sites on the left or on the right.
+**Alignment** – Specify whether to align sites on the left or on the right.
 
-Processors – This is a list of methods to gather diverse statistics:
+**Processors** – This is a list of methods to gather diverse statistics:
 
-Basic statistics – Gathers basic statistics like reads count and average read
+**Basic statistics** – Gathers basic statistics like reads count and average read
 length.
 
-Quality per base – Distribution of phred quality score along the bases.
+**Quality per base** – Distribution of phred quality score along the bases.
 
-Quality per sequence – Distribution of phred quality score among the sequences.
+**Quality per sequence** – Distribution of phred quality score among the sequences.
 
-Nucleotide content per base – Distribution of individual nucleotides along the
+**Nucleotide content per base** – Distribution of individual nucleotides along the
 bases.
 
-GC content per base – Distribution of GC along the bases.
+**GC content per base** – Distribution of GC along the bases.
 
-GC content per sequence – Draws a distribution of GC content among reads.
+**GC content per sequence** – Draws a distribution of GC content among reads.
 
-N content per base – Distribution of 'N' along the bases.
+**N content per base** – Distribution of 'N' along the bases.
 
-Sequence length distribution – Calculates a distribution of read lengths and
+**Sequence length distribution** – Calculates a distribution of read lengths and
 outputs them as a table and a chart.
 
-Duplicate sequences – Calculates the rate of sequences duplication: how many
+**Duplicate sequences** – Calculates the rate of sequences duplication: how many
 sequences occur 2, 3 etc. times relative to unique sequences. This statistic is
 based on the first 200000 reads.
 
-Overrepresented sequences – Looks for sequences which appear in more than 0.1%
+**Overrepresented sequences** – Looks for sequences which appear in more than 0.1%
 cases.
 
-Overrepresented K-mers – Search for K-mers which are represented 3x times per
+**Overrepresented K-mers** – Search for K-mers which are represented 3x times per
 sequence or 5x times per position.
 
-Overrepresented prefixes – Search for read prefixes (starting from the read
+**Overrepresented prefixes** – Search for read prefixes (starting from the read
 start) up toa length od 15 bp which are overrepresented in the set.
 
-Output path – Specify the output file name and path in the tree where you want
+**Output path** – Specify the output file name and path in the tree where you want
 to save the output file.
 
 After pressing ‘Run’ the method runs as shown below:
@@ -1141,9 +1123,8 @@ of Single Nucleotide Variations (mutations), and determines the type for each
 mutation.
 
 The analysis “Mutation effect” can be found in the NGS folder of analysis
-methods ([analyses/Methods/NGS/Mutation effect](http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect))
-or on the start page button ‘Popular functions’ under the section ‘Operations
-with tracks’.
+methods ([analyses/Methods/NGS/Mutation effect]<http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect>)
+or on the start page button ‘Popular functions’ under the section ‘Operations with tracks’.
 
 ![](media/8666624392301b96bf055f4225c491ee.png)
 
@@ -1205,41 +1186,41 @@ acid change.
 
 Possible Mutation effect types are:
 
-1. SYNONYNYMOUS_SNV - a single nucleotide change that does not cause an amino
+1. **SYNONYNYMOUS_SNV** - a single nucleotide change that does not cause an amino
 acid change
 
-2. NONSYNONYMOUS_SNV - a single nucleotide change that causes an amino acid
+2. **NONSYNONYMOUS_SNV** - a single nucleotide change that causes an amino acid
 change
 
-3. STOP_GAIN - a nonsynonymous SNV, frameshift insertion/deletion, nonframeshift
+3. **STOP_GAIN** - a nonsynonymous SNV, frameshift insertion/deletion, nonframeshift
 insertion/deletion or block substitution that leads to the creation of a stop
 codon at the variant site. For frameshift mutations, the creation of a stop
 codon downstream of the variant will not be counted as "stopgain"!
 
-4. STOP_LOSS - a nonsynonymous SNV, frameshift insertion/deletion, nonframeshift
+4.**STOP_LOSS** - a nonsynonymous SNV, frameshift insertion/deletion, nonframeshift
 insertion/deletion or block substitution that leads to the immediate elimination
 of a stop codon at the variant site
 
-5. NONFRAMESHIFT_INSERTION - an insertion of 3 or multiples of 3 nucleotides
+5.**NONFRAMESHIFT_INSERTION** - an insertion of 3 or multiples of 3 nucleotides
 that does not cause frameshift changes in the protein coding sequence
 
-6. NONFRAMESHIFT_DELETION - a deletion of 3 or mutliples of 3 nucleotides that
+6. **NONFRAMESHIFT_DELETION** - a deletion of 3 or mutliples of 3 nucleotides that
 does not cause frameshift changes in the protein coding sequence
 
-7. NONFRAMESHIFT_BLOCK_SUBSTITUTION - a block substitution of one or more
+7. **NONFRAMESHIFT_BLOCK_SUBSTITUTION** - a block substitution of one or more
 nucleotides that does not cause frameshift changes in the protein coding
 sequence
 
-8. FRAMESHIFT_INSERTION - an insertion of one or more nucleotides that causes
+8. **FRAMESHIFT_INSERTION** - an insertion of one or more nucleotides that causes
 frameshift changes in the protein coding sequence
 
-9. FRAMESHIFT_DELETION - a deletion of one or more nucleotides that causes
+9. **FRAMESHIFT_DELETION** - a deletion of one or more nucleotides that causes
 frameshift changes in the protein coding sequence
 
-10. FRAMESHIFT_BLOCK_SUBSTITUTION - a block substitution of one or more
+10.**FRAMESHIFT_BLOCK_SUBSTITUTION** - a block substitution of one or more
 nucleotides that causes frameshift changes in the protein coding sequence
 
-11. NOTHING - coding sequence is not changed
+11. **NOTHING** - coding sequence is not changed
 
 Tip. If you would like to not show the single nucleotide changes that do not
 cause an amino acid change, use Property_MutationEffect != 'NOTHING' for
@@ -1261,18 +1242,18 @@ sites. Here the default input form is shown:
 
 In the following, we will consider the input fields one by one.
 
-Input track. You can drag & drop the input track from your project within the
+**Input track** You can drag & drop the input track from your project within the
 tree area. Alternatively, you may click on the pink field “select element” and a
 new window will open, where you can select the track.
 
-Sequence source. Specify the reference genome or select *Custom* to specify the
+**Sequence source** Specify the reference genome or select *Custom* to specify the
 sequences location manually.
 
-Independent strands. Select whether you want to handle sites from different
+**Independent strands** Select whether you want to handle sites from different
 strands independently; by default it is unchecked, and strands are not handled
 independently.
 
-Overlapping site selection mode. Choose one mode from the drop-down menu for the
+**Overlapping site selection mode** Choose one mode from the drop-down menu for the
 selection of sites.
 
 ![](media/74a6da052cb67fbeff4cd1de6980883e.png)
@@ -1288,7 +1269,7 @@ that overlap with the best site, then selects the best from the remaining sites
 and removes those which overlap with the best site, and so on until no sites
 remain. The *Most 5’* and *Most 3’* select the site located at the 5’ or 3’ end.
 
-Output track. Define where the track with the result should be located in your
+**Output track** Define where the track with the result should be located in your
 project tree. You can do so by clicking on the pink box (select element) in the
 field, and a new window will open, where you can select the location of the
 resulting track and define its name.
@@ -1319,8 +1300,7 @@ This tool compares P-values in two analysis results. Analyses of interest are,
 for instance, binding sites or GO term enrichment results. The comparison can
 help to reveal items that show different enrichment across certain conditions.
 
-This analysis method can be found on the Start page under the button “Popular
-functions”.
+This analysis method can be found on the Start page under the button “Popular functions”.
 
 The input form looks as shown below:
 
@@ -1328,20 +1308,20 @@ The input form looks as shown below:
 
 In the following, the input fields are shown one by one:
 
-First analysis result **-** Enter the first input table which you wish to
+**First analysis result**  Enter the first input table which you wish to
 compare having a P-value column.
 
 Note: Currently the method does not compare FDR or log (P-value) columns.
 
-P-value column - From the drop-down menu select the P-value column which will be
+**P-value column** - From the drop-down menu select the P-value column which will be
 used for comparison.
 
-Second analysis result - Enter the second input table which you wish to compare
+**Second analysis result** - Enter the second input table which you wish to compare
 having a P-value column.
 
-P-value column - Select the P-value column from the drop-down menu.
+**P-value column** - Select the P-value column from the drop-down menu.
 
-Output folder - Specify the path to store the result and indicate the name of
+**Output folder** - Specify the path to store the result and indicate the name of
 the output folder.
 
 Here, two enrichment results are taken for comparison from the Examples folder;
