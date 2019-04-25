@@ -21,8 +21,7 @@ displayed at once. Selecting one of the models is by double-clicking on the
 respective name.
 
 Searching for a model starts from the Search tab in the Info Box. You may enter,
-for instance, *glycolysis* and start the search with the button ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf)
-
+for instance, *glycolysis* and start the search with the button ![](media/search.png)
 You will get back 75 entries, the contents displayed under the tab Search
 result in the Operations Field, the information given being essentially
 self-explaining: A short description of the model including references is given.
@@ -65,17 +64,21 @@ button on the corresponding entity. The Diagrams can be opened by double-click
 with the left mouse button, or by opening a context menu with the right mouse
 button and selecting “Open diagram”. These diagrams contain their components
 listed underneath as nodes (![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)) and edges (![edge.gif] media/9c3855c990a6f0e4e296a150586f0ed9.gif)), for which additional information can be retrieved in the same way as for the
-whole diagram. Many of them may be assigned to a hierarchy of compartments (![](media/c0bb7611647e0a7531c1fbc224dbabf6.emf)).
+whole diagram. Many of them may be assigned to a hierarchy of compartments.
 
 If you select the Biopath database for a search, you may enter a gene name into
 the field of the Search tab in the Info Box (try, for instance, AKT1). In the
-Operations Field, under the tab Search result, you will find the following hit: ![](media/4c844e25d933cbf9a06899e3a6b811db.emf)
+Operations Field, under the tab Search result, you will find the following hit: 
+
+![](media/image018.png)
 
 It shows the molecule encoded by the gene AKT1 being involved in the insulin
 pathway. The hyperlinked Accession number here opens a pathway diagram from the
 Biopath database, which includes insulin and AKT1 as well as the path between
 them. The pathway is shown in full in the Work Space; an overview is depicted
-under the “Overview” tab of the Operations Field: ![](media/2ec82c5526ba23279889d434a28ae23d.emf)
+under the “Overview” tab of the Operations Field: 
+
+![](media/image019.png)
 
 The part of the diagram that is displayed in the Work Space is framed by the
 dotted blue line in the Overview, which can be shifted with the mouse, the Work
@@ -129,23 +132,22 @@ In the subdirectories “Sequences/Chromosomes …” the individual chromosomes
 the corresponding genome are stored. A double-click on an individual chromosome
 symbol opens the corresponding object with its annotation in the genome browser
 of the geneXplain platform. Here, you can move the mouse pointer along the
-sequence to select a certain position. With the buttons ![](media/3da760db5195d8ed5ee107501015d941.emf) and 
-![](media/74fda49af74daf13361690bef9152994.emf) (zoom-out and zoom-in, resp.), you can go up to a level where you have the whole
-chromosome displayed or down to a level where you see the individual nucleotides. The most extreme views can also be directly selected with the buttons ![](media/ce5572977dad932fce424780e029b4ae.emf) (overview) and ![](media/631a49f0dad9d8c9bb05cf211c5e833c.emf) (detail; see below). A moderate view is provided as “default” ( ![](media/cab21d423ff2dab7b9fd3f3f448447d5.emf)).
-
-![](media/66782d3d701ea1b39fb6f969e75e3cd4.emf)
-
-![](media/efee8b23289ee6f68970fa17bcc78abf.emf)
+sequence to select a certain position. With the *Zoom-in*, *Zoom-out* button, you can go up to a level where you have the whole
+chromosome displayed or down to a level where you see the individual nucleotides. The view can be adjusted accordingly with the control panel buttons, mouse over message describes the functionality of the buttons in detail. The mode can be selected from detailed, default, and overview. 
+![](media/image020.png)
+![](media/image021.png)
 
 At an intermediate resolution of, e.g., human chromosome 1, you see individual
-genes highlighted in the Work Space: ![](media/ce8f00f15956f0128c11090158e3de83.emf)
+genes highlighted in the Work Space: 
+
+![](media/image022.png)
 
 The alignment of genes and other genomic data against a reference genome can be
 viewed as data tracks in genome browser. The GeneTrack shows the localization of
 primary transcripts including intron/exon structure and direction of
 transcription. Scrolling backwards and forward through the genome can be done
 using the arrowheads next to the track name, or with the buttons “Page backward”
-(![](media/ba8eace4020e30c8fd4bbabe6c03f414.emf)) and “Page forward”  (![](media/83f174ee084b76d0bb4fa833351ed5cd.emf)), respectively.
+ and “Page forward” , respectively.
 
 Information about individual genes is displayed in the Info Box after clicking
 on the respective gene symbol in the Work Space; on the Sites tab of the
@@ -164,20 +166,18 @@ sites can be invoked in the Info Box only after a resolution has been adjusted
 that allows the display of their names in the Work Space, since the names are
 the clickable items.
 
-![](media/00e0768904fec4aafcf65d2b31744efa.emf)
+![](media/image023.png)
 
 The color scheme for the display in the Work Space can be changed in the
 Operations Field; here, on the Tracks tab, you can adjust the settings of the
 genome browser:
 
-![](media/3711f44509661f0172bc78d064e83e53.emf)
+![](media/image024.png)
 
 Individual tracks can be removed from the display in the Work Space (e.g. by
 de-selecting them on this tab). The same way, they can be brought back. Another
 possibility is to open the subdirectory Tracks in the Tree Area, where all
-available tracks are listed with the symbol
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
+available tracks are listed with the symbol ![](media/track.jpg)
 
 Just drag-and-drop the track of interest to the Work Space will render the
 corresponding data amenable to the browser.
@@ -185,8 +185,7 @@ corresponding data amenable to the browser.
 The Ensembl database sections are searchable in the same way as described
 before: Just click on the name of the respective database in the Tree Area, so
 that it receives a light-blue background and its path appears on the Search tab
-of the Info Box. Enter your search term, launch the search by pressing ![](media/ba0ff3b9e7b6c5748d152dc2430d7437.emf) and find your Search results on the respective tab on the Operations Field.
-Among the multiple hits, the one with the perfect match will be highlighted in
+of the Info Box. Enter your search term, launch the search by pressing ![](media/search.jpg) and find your Search results on the respective tab on the Operations Field. Among the multiple hits, the one with the perfect match will be highlighted in
 bold.
 
 ## Gene Ontology (GO)
