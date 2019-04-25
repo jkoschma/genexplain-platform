@@ -45,8 +45,7 @@ description”, a detailed description of the model is given; it shows the
 original reference, its abstract and the PubMed link. Further information about
 how the model was constructed is added.
 
-Under the tabs Simulation, you will find the default settings for the
-simulation, which can be changed before launching the simulation (![](media/5b7a46bddb8c68dbe4093ccda986e4e2.emf)). The simulation results will be graphically displayed in a new window, which can be saved as image using the Export button (![](media/92f14730b6f1cf00fb5cd1f07873c31a.emf)) in the Control Panel . For this, a number of formats are available.
+Under the tabs Simulation, you will find the default settings for the simulation, which can be changed before launching the simulation by start button. The simulation results will be graphically displayed in a new window, which can be saved as image using the Export button in the Control Panel . For this, a number of formats are available.
 
 ## Biopath
 
