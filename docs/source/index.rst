@@ -25,7 +25,8 @@ Guide
    Analysis_method_description
    Operations_field
    Editing_creating_workflows
-   
+   Editing_diagrams
+   Editing_creating_JS_scripts
 
 Indices and tables
 ==================
