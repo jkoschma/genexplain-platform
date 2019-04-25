@@ -18,12 +18,7 @@ There are 5 types of diagrams in the geneXplain platform:
 
 -   SBML simulation (SBGN)
 
-You find them listed for selection when pressing the button
-
-![](media/570dd887b213bf48fe3acbc5453a4322.emf)
-
-to create a new diagram. This button appears on top of the Tree Area when you go
-into the Data folder of your project directory (usually under your user name).
+You find them listed for selection when pressing the button ![](media/570dd887b213bf48fe3acbc5453a4322.jpg) to create a new diagram. This button appears on top of the Tree Area when you go into the Data folder of your project directory (usually under your user name).
 
 The *Pathway type* diagram is used for formalized description of biological
 pathway structure (metabolic pathway, gene network, etc).
@@ -90,12 +85,9 @@ A pathway diagram opened in the work space has a tool bar as shown below:
 
 ![](media/85547cc010c14f98990a75f02a06cc29.png)
 
-Using these icons, you can manually add a node that represents a cell (![](media/be8d0ce7847bc8c6375a4415cf88f98a.emf)), a cellular compartment (![](media/8b33156f5a480ddc354515802f2f4cbf.emf)), a gene (![](media/fa49f8a0d43d0f2fd4890d939877600f.emf)), an RNA (![](media/8e84537367b372dc32dc0e342f1d8446.emf)), a protein (![](media/20842be37b7ecf9fc93f406c3257435c.emf)) or a substance (or small metabolite, ![](media/909d21a620cb9b65ce5613507d1aa8ab.emf)). It may also something as abstract as a concept (
-![]media/0fff8b043592ef5a407f5b121a63d362.emf)). These nodes may be related to each other with any kind of link 
-(![](media/f7a6f6bf613d4cb02227991104f28174.emf)), or , more specifically and if you wish to model your network as a bipartite
-diagram, with a reaction (![](media/c60e36220e3b4ebff902bf21e02d12c1.emf)).
+Using these icons, you can manually add a node that represents a cell,  a cellular compartment, a gene , an RNA , a protein  or a substance (or small metabolite). It may also something as abstract as a concept. These nodes may be related to each other with any kind of link, or , more specifically and if you wish to model your network as a bipartite diagram with a reaction. 
 
-In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.emf), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before with ![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type ![](media/9298e8be35434e50b825f64b13265af0.emf).
+In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.jpg), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before with ![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type ![](media/9298e8be35434e50b825f64b13265af0.emf).
 
 ### To add an element to the diagram, several ways are available:
 
