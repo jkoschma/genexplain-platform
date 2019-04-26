@@ -138,8 +138,7 @@ shown here, in the screenshot below:
 
 ![](media/3c410f1aa4e13b200c350fbaa6cc7803.png)
 
-For further details regarding visualizations, please refer to the basic
-operations with tracks, Section 2.3.3.
+For further details regarding visualizations, please refer to the basic operations with tracks
 
 ### Mouse
 
@@ -179,7 +178,7 @@ following:
 
 **Step 1**. Specify an input table in the field **Input SNP table**. A table
 with standard SNP IDs in the format like *rs10010325* can be used as an input.
-The tables with this type of IDs have a special icon (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) in the tree area. In this example the following input table with 180 SNPs is used:
+The tables with this type of IDs have a special icon (![](media/image027.png)) in the tree area. In this example the following input table with 180 SNPs is used:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19>
 
@@ -205,7 +204,7 @@ folder in the field **Results folder**.
 **Step 7**. Having filled the input form, launch the analysis with the [Run]
 button. Wait till the workflow is completed.
 
-Results
+**Results**
 
 The output is a result folder with three subfolders named *all SNPs*, *SNPs in
 exons* and *SNPs regulatory*, respectively, containing all resulting tables and
@@ -237,7 +236,7 @@ blue boxes correspond to exons, and the lines between exons symbolize introns,
 drawn in logarithmic scale. SNPs are shown by vertical red lines. This schema
 provides an overview of SNP location within genes.
 
-A track (![](media/368076561774990443d1e26a25dd9f3e.emf)) represents the results of the SNP mapping to genomic positions. In this
+A track (![](media/track.jpg)) represents the results of the SNP mapping to genomic positions. In this
 example, out of 180 input SNPs 148 were mapped to the genome, and for them the
 following information is shown:
 
@@ -255,7 +254,7 @@ are located in exons. In our example, 19 out of 148 SNPs mapped to the genome
 are located in exons.
 
 One of the tables contains standard SNP IDs in the **ID** column, and has the
-same icon as the input SNP table (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)).
+same icon as the input SNP table (![](media/image027.png)).
 
 ![](media/4c944019ab8f4cacd1ed38455f4a1df3.png)
 
@@ -272,7 +271,7 @@ If your input SNP table contains more columns in addition to IDs, all these
 columns will be preserved and will be added to the right side of this table.
 
 The other table in this subfolder results from the *SIFT analysis,* and is
-represented by an icon for a general table (![](media/d373ccf59d81fcd62088646e06661e33.emf)).
+represented by an icon for a general table. 
 
 SIFT is a widely accepted method to check whether a particular variation is 
 synonymous or non-synonymous, and in case of a non-synonymous variation whether
@@ -305,7 +304,7 @@ This subfolder contains three tables and one track.
 ![](media/a61454e910e023b0a0f79604f379b2c8.png)
 
 In this example, 129 out of 148 SNPs mapped to the genome are located in introns
-or gene flanking regions. The table (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) contains standard SNP IDs in the **ID** column, and has the same icon as the input SNP table, and as the table with SNPs in exons. The structure of the
+or gene flanking regions. The table contains standard SNP IDs in the **ID** column, and has the same icon as the input SNP table, and as the table with SNPs in exons. The structure of the
 latter was described above in detail, under the subheading *Subfolder SNPs in
 exons*.
 
@@ -327,11 +326,8 @@ The matrix cutoff values calculated by the program at the optimization step are
 shown in the column **Model cutoff**, and the last column shows the **P-value**
 of the corresponding event.
 
-The table *TFs binding around regulatory SNPs* (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-) includes transcription factors (TFs) that are associated with the PWMs listed
+The table *TFs binding around regulatory SNPs* (![](media/3376044660b26a160e52442bb6a63338.png)) 
+includes transcription factors (TFs) that are associated with the PWMs listed
 in the table above, and each row shows details for one TF, including its Ensembl
 gene ID (column **ID**), gene symbol, gene description of the corresponding TF
 (columns **Gene description**, **Gene symbol**). The column **Site model ID**
@@ -343,11 +339,7 @@ columns repeat information that is also shown in the table above.
 These TFs are suggested to have their binding sites in close proximity or even
 overlapping with SNPs, and their binding might be affected by a given SNP.
 
-The track *TFBSs around regulatory SNPs* (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-) gives information about the genomic positions of the identified TFBSs.
+The track *TFBSs around regulatory SNPs* (![](media/image029.png)) gives information about the genomic positions of the identified TFBSs.
 
 ![](media/58270296945338fd81621eefb297e42e.png)
 
@@ -411,7 +403,7 @@ with several TFBSs, e.g. with the binding sites for c-Maf and PPARγ.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
-#### Analysis with GTRD
+### Analysis with GTRD
 
 This workflow is similar to the one described above. The difference is in the
 database applied for the TFBS search; in this workflow it is the GTRD database.
@@ -420,8 +412,7 @@ different.
 
 The results of this workflow can be found under:
 
-data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyze SNP list
-(GTRD))
+data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyze SNP list (GTRD))
 
 ![](media/94cc28038e1de833c5586cc9c9a9d041.png)
 
@@ -456,6 +447,7 @@ To specify the track, you can drag & drop it from your project within the tree
 area. Alternatively, you may click on the pink field “select element” and a new
 window will open, where you can select the input track. After having selected
 the track, press the [Ok] button.  
+
 You can use either a newly imported track in vcf format, or a track that has
 been calculated within the platform, e.g. as a result of the workflow *Find
 genome variants and indels from RNA-seq* or the workflow *Find genome variants
@@ -472,8 +464,7 @@ This vcf file was produced by the workflow *Find genome variants and indels from
 
 **Step 4**. Select the **Profile**. This profile will be applied for the
 identification of the enriched motifs around variation sites. The default
-profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC®
-release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
+profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC® release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
 2019.1/Data/profiles/) available.
 
 **Step 5**. Specify the **Variation surrounding region** in base pairs. By
@@ -489,8 +480,7 @@ Start the workflow by pressing the [Run workflow] button.
 
 Below you can see the result folder for the example: [data/Examples/Chronic
 Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf (Enriched TF binding
-sites
-(TRANSFAC))/](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic
+sites(TRANSFAC))/](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic
 Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf (Enriched TF binding
 sites (TRANSFAC))/)
 
@@ -526,8 +516,7 @@ This method allows to find transcription factor binding sites (TFBSs) affected
 by variations or mutations.
 
 The analysis “Mutation effect on sites” can be found in the NGS folder of the
-analysis methods ([analyses/Methods/NGS/Mutation effect on
-sites](http://platform.genexplain.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect%20on%20sites))
+analysis methods ([analyses/Methods/NGS/Mutation effect on sites](http://platform.genexplain.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect%20on%20sites))
 or under the start page button ‘Genomic variants’ under section ‘Identify TFBS
 affected by genomic variations’.
 
@@ -565,9 +554,7 @@ and you can specify the sequences location manually.
 **Step 4**. Select the **Profile**. This profile will be applied for the
 identification of transcription factor binding sites overlapping with the
 variation positions. The default profile is *vertebrate_non_redundant_minSUM*
-from the most recent [TRANSFAC®
-release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
-2014.4/Data/profiles/) available.
+from the most recent [TRANSFAC® release] available.
 
 **Step 5**. The **Score difference** from unaffected to affected site is per
 default 5.0. This parameter is a threshold for the difference between the TFBS
@@ -585,8 +572,8 @@ TFBSs that are more strongly affected by a variation, set this parameter to 0.5
 
 **Step 5**. Specify the path and name of the **Output track**.
 
-After completion the output track file ([SNP_indels.vcf affected
-sites](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20affected%20sites))
+After completion the output track file ([SNP_indels.vcf affected sites]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20affected%20sites>
+
 is opened by default in the work space. One example of the affected identified
 site is shown in the red box (V\$EBOX_Q6_01).
 
@@ -638,8 +625,7 @@ SIFT is published in [Nat Protoc. 4:1073-1081,
 2009](http://www.nature.com/nprot/journal/v4/n7/abs/nprot.2009.86.html).
 
 The tool can be found in the Galaxy section of the geneXplain platform
-([analyses/Galaxy/Human Genome
-Variation/SIFT](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/hgv/hgv_sift))
+([analyses/Galaxy/Human Genome Variation/SIFT](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/hgv/hgv_sift))
 or on the start page button ‘Genomic variants’ under section ‘Identify TFBS
 affected by genomic variations’.
 
@@ -667,8 +653,9 @@ chr16 69875502 + G/T
 
 One example input table can be found here on the platform: [data/Examples/SNPs
 linked to human height/Data/SNP_height_hg19 (Analyse SNP list (TRANSFAC))/SNPs
-in exons/SNP_height_hg19 matched SNPs in
-exons](http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons)
+in exons/SNP_height_hg19 matched SNPs in exons]
+
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons>
 
 ![](media/3f96a7ff5d76904f56ed6413aace02af.png)
 
