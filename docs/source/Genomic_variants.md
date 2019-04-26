@@ -169,7 +169,7 @@ Therefore, please apply correspondingly the workflows explained in detail under 
 
 ### Enriched TF sites around regulatory SNPs and SIFT analysis
 
-#### Analysis with TRANSFAC®
+### Analysis with TRANSFAC®
 
 The input form of this workflow, when opened form the Start page, is the
 following:
@@ -219,12 +219,7 @@ to human height/Data/SNP_height_hg19 (Analyze SNP list (TRANSFAC))
 
 This folder includes one gene table and one track.
 
-The table *SNPs on genes, schematic map* (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-) contains all genes that were identified in the region of 10000 bp on both
-flanks around each SNP, in this example 119 genes.
+The table *SNPs on genes, schematic map* (![](media/3376044660b26a160e52442bb6a63338.png)) contains all genes that were identified in the region of 10000 bp on both flanks around each SNP, in this example 119 genes.
 
 ![](media/5fc3e2032bd018e75d834561136ece7a.png)
 
@@ -304,8 +299,7 @@ This subfolder contains three tables and one track.
 ![](media/a61454e910e023b0a0f79604f379b2c8.png)
 
 In this example, 129 out of 148 SNPs mapped to the genome are located in introns
-or gene flanking regions. The table contains standard SNP IDs in the **ID** column, and has the same icon as the input SNP table, and as the table with SNPs in exons. The structure of the
-latter was described above in detail, under the subheading *Subfolder SNPs in
+or gene flanking regions. The table contains standard SNP IDs in the **ID** column, and has the same icon as the input SNP table, and as the table with SNPs in exons. The structure of the latter was described above in detail, under the subheading *Subfolder SNPs in
 exons*.
 
 The other two tables and one track in this subfolder present the results of the
