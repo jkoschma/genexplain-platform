@@ -3,16 +3,15 @@
 ![](media/ad16a78dcbc709354acbd975c086c714.png)
 
 Genomic variants can be uploaded in the platform in different formats. The files
-uploaded in *bed* format are shown in the tree area as tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)). Genomic variants can be also uploaded as a table, where the ID column contains standard SNP IDs (e.g. rs10010325). When imported into the platform,
-the tables with this type of ID have a special icon (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) in the tree area. An example of such a table can be found in the *Examples* folder:
+uploaded in *bed* format are shown in the tree area as tracks (![](media/track.jpg)). Genomic variants can be also uploaded as a table, where the ID column contains standard SNP IDs (e.g. rs10010325). When imported into the platform,
+the tables with this type of ID have a special icon (![](media/image027.png)) in the tree area. An example of such a table can be found in the *Examples* folder:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19>
 
 ## Find genome variants and indels from full-genome NGS
 
 This workflow is based on a framework to discover genotype variations in
-full-genome NGS data by De Pristo et al., [Nature
-Genetics](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/) 43:491-498,
+full-genome NGS data by De Pristo et al., [Nature Genetics](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/) 43:491-498,
 2011. The process includes initial read mapping, local realignment around
 indels, base quality score recalibration, SNP discovery and genotyping to find
 all potential variants.
@@ -70,8 +69,7 @@ amplification bias introduced during library construction. Two read pairs are
 considered duplicate if they align to the same genomic position. The resulting
 MarkDuplikates1.log file is stored in the log folder and the MarkDuplikates1.stat file is stored in the stat folder.
 
-The next step is a local realignment. Read mapping algorithms operate on each read independently, locally realigning reads such that the number of mismatching
-bases is minimized across all reads. Output files are Realigner.log and
+The next step is a local realignment. Read mapping algorithms operate on each read independently, locally realigning reads such that the number of mismatching bases is minimized across all reads. Output files are Realigner.log and
 TargetCreator.log in the log folder, ddup1.bam, Realigned.bam and
 realigner.intervals in the tmp folder.
 
@@ -85,7 +83,7 @@ values it builds the model that predicts sequencing errors. Then it applies this
 model to calculate an empirical base quality score and overwrites the phred
 quality score in the read. Output is a new BAM file (Good.bam).
 
-![](media/975ae7fda32ef1b25121798e263147bc.emf)
+![](media/image028.png)
 
 The user can view the Good.bam files in the genome browser by double-clicking on
 it. The browser shows each aligned read and also shows nucleotides mismatching
@@ -93,8 +91,7 @@ between the reads and the reference genome sequence.
 
 ![](media/a201373cb92f10f51266b374554a5dc8.png)
 
-This file is used then for the unified GATK (Genome Analysis Toolkit) [genotyper
-method](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper)
+This file is used then for the unified GATK (Genome Analysis Toolkit) [genotyper method](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper)
 to detect the SNP-indels. It generates a table in VCF format, which can be
 viewed either as a table or as a track in the genome browser (right mouse button
 click and select either “Open track” or “Open table”).
@@ -109,7 +106,7 @@ variation.
 
 ### Visualize variants in genome browser
 
-The genomic variants shown in the tree area as tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)) can be directly visualized in the genome browser. Tables with SNP IDs (![](media/cd690ff706ce19d33fcdb2150aa52687.emf)) should be first processed into the tracks. For this, you can apply the method called SNP matching (![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)); 
+The genomic variants shown in the tree area as tracks (![](media/track.jpg)) can be directly visualized in the genome browser. Tables with SNP IDs (![](media/image027.png)) should be first processed into the tracks. For this, you can apply the method called SNP matching (![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)); 
 
 for details please refer to the indiviual description of the method. 
 
