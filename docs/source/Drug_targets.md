@@ -151,7 +151,7 @@ completed, and take a look at the results.
 
 The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC>1) (enriched upstream analysis_TF and TP); it contains several files:
 
-![](media/c0307abd46cf9fc3e0a2b356e9984018.png)
+![](media/image034.png)
 
 #### Enriched motifs
 
