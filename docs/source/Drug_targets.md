@@ -161,7 +161,7 @@ and filtered with enrichment fold \>1 can be found in the table
 
 The example has 86 detected motifs with enrichment fold \>1.
 
-![](media/fec4e0e91a9eccc915cfc4d581e47910.png)
+![](media/image035.png)
 
 The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*. This profile is an intermediate result of the workflow and is used further for *Site search on gene
 set* analysis.
