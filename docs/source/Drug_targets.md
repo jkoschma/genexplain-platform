@@ -1,6 +1,6 @@
 ﻿# Drug targets
 
-![](media/cf264659ae7cc404aa2b36c0e45d0c6e.png)
+![](media/image030.png)
 
 ## Find drug targets with TRANSFAC® and GeneWays
 
@@ -69,7 +69,7 @@ The result folder contains several files and one subfolder:
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
-![](media/7d04d0985cd0f75b9aac2469064b00dc.png)
+![](media/image031.png)
 
 The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained in there under
 “Interpretation of the results”.
@@ -77,9 +77,9 @@ The selection of the best master regulatory molecules based on Score, Z-score an
 The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
 10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-![](media/b49d86908921b91ed698a9c89909f8e5.png)
+![](media/image032.png)
 
-![](media/9ab72f0a8a79d01d8b21bc9e98492899.png)
+![](media/image033.png)
 
 #### Tip for working with the diagrams
 
