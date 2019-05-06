@@ -94,18 +94,13 @@ Let’s consider the results.
 
 [data/Examples/miRNA binding site prediction (miRNA-155 target
 genes)/Data/hsa-miR-155-5p published target genes (miRNA binding
-sites)](http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA binding
-site prediction (miRNA-155 target genes)/Data/hsa-miR-155-5p published target
-genes (miRNA binding sites)/)
+sites)] 
 
 The result folder contains the following tables: Ensembl transcript (![](media/58a651441dabd63ab3c797123cddc94c.png)),
-Site output (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with all predicted miRNA binding sites, 
+Site output (![](media/track.jpeg)) with all predicted miRNA binding sites, 
 Site output track (![](media/63c261f0c221451d4288c10e2d1294d3.png)) 
 for visualization of predicted miRNA sites, Summary output (![](media/d373ccf59d81fcd62088646e06661e33.emf)) and 
-Transcript region track 
-![](media/cc436960ae1f31127ebd5268d7e2f8d7.png)
-
-.
+Transcript region track ![](media/cc436960ae1f31127ebd5268d7e2f8d7.png)
 
 ![](media/c7575584eeb649457a4235774d69086b.png)
 
