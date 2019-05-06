@@ -4,13 +4,11 @@
 
 ## Find drug targets with TRANSFAC® and GeneWays
 
-This is very similar to the workflow described in greater detail below, Section
-11.2, with the only difference being the pathway database applied for network
-analysis. Here the search for master regulatory molecules is performed with the protein-protein interaction network of the GeneWays database. Because of the high connectivity between molecules in GeneWays, by default 4 steps upstream of the input list of TFs are considered for the search for master regulators, as compared with 10 steps when applying the TRANSPATH® database. A diagram for the top master regulator as suggested from a GeneWays-based analysis is shown below in a force-directed layout: 
+This is very similar to the workflow described in greater detail below with the only difference being the pathway database applied for network analysis. Here the search for master regulatory molecules is performed with the protein-protein interaction network of the GeneWays database. Because of the high connectivity between molecules in GeneWays, by default 4 steps upstream of the input list of TFs are considered for the search for master regulators, as compared with 10 steps when applying the TRANSPATH® database. A diagram for the top master regulator as suggested from a GeneWays-based analysis is shown below in a force-directed layout: 
 
 ![](media/09ce24edd95e9a5fd59ea97be10224e4.png)
 
-For the input form of this workflow and for the description of the corresponding results folder, please refer to Section 11.2.
+For the input form of this workflow and for the description of the corresponding results folder, please refer to the description of the workflow Find drug targets with TRANSFAC and TRANSPATH.
 
 **Note***.* This workflow is available together with a valid TRANSFAC® license.   Please feel free to ask for details (info\@genexplain.com).
 
@@ -32,7 +30,7 @@ set**.
 For this example, the further steps are demonstrated with the following input
 set:
 
-[http://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20(LogFC%3E1)](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20)
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
 **Step 2**: Specify the biological species of the input set in the field
 **Species** by selecting the required species from the drop-down menu.
@@ -68,32 +66,16 @@ The result folder contains several files and one subfolder:
 
 #### Master regulators
 
-The primary result table *Master regulators upstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) is a list of master regulatory molecules that were identified at a distance of
-up to 10 steps upstream of the input TFs. Each master regulatory molecule is
+The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
 ![](media/7d04d0985cd0f75b9aac2469064b00dc.png)
 
-Further details about the columns of this table and how to work further with it
-are given in Section 5.1.1. The selection of the best master regulatory
-molecules based on Score, Z-score and Ranks sum is explained in there under
+The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained in there under
 “Interpretation of the results”.
 
-The three *Top 3 regulators* diagrams (
-
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-)visualize the networks for each of the three top master regulators. By default,
-the top regulators are identified upon sorting the *Master regulators upstream
-10* table (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
+The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
+10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
 ![](media/b49d86908921b91ed698a9c89909f8e5.png)
 
@@ -103,28 +85,17 @@ the top regulators are identified upon sorting the *Master regulators upstream
 
 By default network diagrams are shown in the vertical hierarchical layout. The
 layout can be interactively changed into horizontal hierarchical, or force
-directed, or orthogonal layouts as described in Chapter 23. Expression data can
-be mapped on the diagrams as described in the Section 21.3.
+directed, or orthogonal layouts as described in diagram layouts. Expression data can
+be mapped on the diagrams as described in the expression mapping section.
 
 ### Results of the promoter analysis
 
-Along with the master regulatory molecules, this workflow returns the results of the promoter analysis, including TFBSs enriched in the promoters of the Yes set as compared with the No set, see *summary* (
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-). The tracks with the Yes and No promoters and with the TF binding sites (
-
-![](media/84954cc17be5c089cabbc26a40e58597.png)
-
-) are also included in the output. In the screenshot below the results of this
-workflow are shown with the subfolder Site search -1000 +100 opened:
+Along with the master regulatory molecules, this workflow returns the results of the promoter analysis, including TFBSs enriched in the promoters of the Yes set as compared with the No set, see *summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)). The tracks with the Yes and No promoters and with the TF binding sites (![](media/84954cc17be5c089cabbc26a40e58597.png)) are also included in the output. In the screenshot below the results of this workflow are shown with the subfolder Site search -1000 +100 opened:
 
 ![](media/63791140532c89631df0c874d31d1675.png)
 
-The corresponding tables and tracks are described in detail in Section 16.2.5.
 
-**Note***.* This workflow is available together with valid TRANSFAC® and
-TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
+**Note***.* This workflow is available together with valid TRANSFAC® and TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
 ## Enriched upstream analysis
 
@@ -140,7 +111,7 @@ set**.
 For this example, all further steps are demonstrated by means of the following
 input set:
 
-<http://platform.genexplain.com:8080/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/New%20workflow%203.1.1/Upregulated%20Ensembl%20genes%20filtered_2>
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
 **Step 2**: Input a No gene set. This is the set of background genes or control
 set. The default No set used for this workflow is data/Examples/Sample
@@ -178,7 +149,7 @@ completed, and take a look at the results.
 
 ### Visualization and interpretation of results
 
-The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/New workflow 3.1.1/Enriched upstream analysis_TF and TP/Upregulated; it contains several files:
+The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC>1) (enriched upstream analysis_TF and TP); it contains several files:
 
 ![](media/c0307abd46cf9fc3e0a2b356e9984018.png)
 
@@ -186,37 +157,16 @@ The result example folder can be found under data/Examples/Brain Tumor GSE1825, 
 
 The list of motifs, which were identified during the first part of the workflow
 and filtered with enrichment fold \>1 can be found in the table
-**Enriched_motifs** (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-). It contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below.
+**Enriched_motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)). It contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below:
 
 The example has 86 detected motifs with enrichment fold \>1.
 
 ![](media/fec4e0e91a9eccc915cfc4d581e47910.png)
 
-Please refer to section 10.4.3 to learn more about the site enrichment results.
-The table **Profile** (
-
-![](media/cc3badf61d49a95e3466827ae711bce4.png)
-
-) presents details for PWMs with *adj. site FE \>1*. This profile is an
-intermediate result of the workflow and is used further for *Site search on gene
+The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*. This profile is an intermediate result of the workflow and is used further for *Site search on gene
 set* analysis.
 
-**Site search analysis output** (
-
-![](media/7e4f615deb96b42535625740c3eb2caa.png)
-
-) serves to visualize enriched motifs in the promoters. This folder contains
-four tracks (
-
-![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)
-
-). The output table *Transcription factors Ensembl genes*
-
-![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)
+**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) serves to visualize enriched motifs in the promoters. This folder contains four tracks (![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)). The output table *Transcription factors Ensembl genes* ![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)
 
 is a list of transcription factors linked to the enriched motifs. For each
 transcription factor, the Ensembl gene ID is provided, as well gene description,
@@ -227,37 +177,18 @@ workflow, the master regulator search.
 
 #### Master regulators
 
-The primary result table *Master regulators upstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) is a list of master regulatory molecules that were identified at a distance of
-up to 10 steps upstream of the input TFs. Each master regulatory molecule is
+The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
 ![](media/9bc30c9065a3845d03f16d0692ae54d0.png)
 
-Further details about the columns of this table and how to work further with it
-are given in Section 5.1.1. The selection of the best master regulatory
-molecules based on Score, Z-score and Ranks sum is explained therein under
+The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under
 “Interpretation of the results”.
 
-The three *Top 3 regulators* diagrams (
+The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream 10* table 
+(![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-) visualize the networks for each of the three top master regulators. By
-default, the top regulators are identified upon sorting the *Master regulators
-upstream 10* table (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
-
-Please refer to section 5.1.1 for more details about master regulator results.
-
-**Note***.* This workflow is available together with valid TRANSFAC® and
-TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
+**Note***.* This workflow is available together with valid TRANSFAC® and TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
 ### Upstream analysis with feedback loop
 
@@ -307,42 +238,18 @@ The example result folder is here: data/Examples/Brain Tumor GSE1825, Affymetrix
 
 ### Master regulators
 
-The primary result table *Master regulators upstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) is a list of master regulatory molecules that were identified at a distance of
-up to 10 steps upstream of the input TFs. Each master regulatory molecule is
+The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
 ![](media/be7a3ab016f68fb7714daeecac453a8b.png)
 
-Further details about the columns of this table and how to work further with it
-are given in Section 5.1.1. The selection of the best master regulatory
-molecules based on Score, Z-score and Ranks sum is explained therein under
+ The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under
 “Interpretation of the results”.
 
-The three *Top 3 regulators* diagrams (
+The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
+10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-)visualize the networks for each of the three top master regulators. By default,
-the top regulators are identified upon sorting the *Master regulators upstream
-10* table (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
-
-The three *Top 3 regulators* diagrams with Expression (
-
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the *Master regulators with input expression_filtered* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
+The three *Top 3 regulators* diagrams with Expression (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the *Master regulators with input expression_filtered* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
 ![](media/b893c1f4735f3008daf49b1b35133474.png)
 
