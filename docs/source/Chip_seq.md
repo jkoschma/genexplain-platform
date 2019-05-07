@@ -3,7 +3,6 @@
 ![](media/image048.png)
 
 ## Peak calling
-
 ### MACS
 
 [MACS](http://genomebiology.com/2008/9/9/R137) is a tool to identify peaks,
