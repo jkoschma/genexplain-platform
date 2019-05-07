@@ -294,13 +294,13 @@ folder.
 **Step 4**. Having filled in the input form, launch the analysis with the [Run]
 button. Wait till the workflow is completed.
 
-Results
+**Results**
 
 The results folder contains several files as shown below. All tables with the
 resulting classifications as well as the table with clusters and the diagram of
 the largest cluster are opened by default in the work space.
 
-![](media/image054.PNG)
+![](media/image054.png)
 
 The table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)) contains those genes that are identified as located in the regions around the input peaks or fragments. By default this workflow considers the following
 regions around Ensembl genes: 10000 bp in 5’ direction from TSS and 10000 bp in
