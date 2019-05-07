@@ -199,7 +199,7 @@ normalized* and *Control normalized*. The methods Limma and EBarrays require one
 input table with all the conditions, and you can specify up to five different
 conditions for one run of each of these two methods.
 
-![](media/image038.png)
+![](media/image038.PNG)
 
 If you applied the normalization method “Experiment vs. control”, you can detect
 DEGs applying T-test and/or hypergeometric analysis to the workflows,
