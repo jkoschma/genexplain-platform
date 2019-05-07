@@ -199,7 +199,7 @@ normalized* and *Control normalized*. The methods Limma and EBarrays require one
 input table with all the conditions, and you can specify up to five different
 conditions for one run of each of these two methods.
 
-![](media/72a5a7d0cee333240c50184efc739e6e.png)
+![](media/image038.png)
 
 If you applied the normalization method “Experiment vs. control”, you can detect
 DEGs applying T-test and/or hypergeometric analysis to the workflows,
@@ -251,15 +251,17 @@ the location of the results folder and define its name.
 After entering all input fields press [Run workflow] and wait till the workflow
 is completed.
 
-The output is a folder with several files as shown below:
+The output is a folder with several files as shown below: It can be located in the Examples folder by the URL:
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)>
 
-![](media/06f9db4dc15b4acf0fc6eba445cf0ea7.png)
+
+![](media/image039.png)
 
 The table **Genes, fold change and P-value, non-filtered**. This table contains
 all genes with LogFoldChange and p-value calculated; each row corresponds to one
 gene.
 
-![](media/c6a02872bbc1c5bcfe56cdc8c3eb1aed.png)
+![](media/image040.png)
 
 The columns **ID, Gene description** and **Gene symbol** present Entrez
 identifiers for the genes, a full name for each gene, and a standard gene
