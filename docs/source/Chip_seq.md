@@ -311,7 +311,7 @@ genes. For the input track in this example, 2187 Ensembl genes are identified.
 The resulting table *Genes Ensembl* is shown below, sorted by the column
 *Count*. 
 
-![](media/eec13b878bc8da6b97f8e9775f4829df.png)
+![](media/image057.png)
 
 Each row in this table contains information about one identified gene including
 Ensembl gene ID, chromosome, exact genomic positions and strand (1 or -1), gene
@@ -319,39 +319,24 @@ symbol, and description. The column **Count** shows how many fragments on the
 input track are overlapping with each gene.
 
 These genes are then converted into TRANSPATH® proteins, the output table
-Proteins Transpath (
+Proteins Transpath (![](media/e68eb4a9fbcee7814385455c0b537f5b.png)), shown below.
 
-![](media/e68eb4a9fbcee7814385455c0b537f5b.png)
-
-), shown below.
-
-![](media/c3eba355ce27da0266da67fe593c754f.png)
+![](media/image058.png)
 
 The structure of this table is very similar to that of Genes Ensembl, the
 critical difference is the column **ID**, which represents TRANSPATH® molecule
-IDs; Ensembl gene IDs are given in the second column. Here, 2187 Ensembl genes
-are converted into 1724 TRANSPATH® proteins.
+IDs; Ensembl gene IDs are given in the second column. 
+Here 1594 Ensembl genes are converted into 1065 TRANSPATH® proteins.
 
 Resulting TRANSPATH® proteins are clustered to get functional connections
 between the gene products. By default, the workflow considers upstream direction
 from the input TRANSPATH® proteins with a radius of 3. Resulting clusters are
 present in the folder *Proteins clustered*, shown below.
 
-![](media/89beaf75662a821a2be15fc8ca48d57d.png)
+![](media/image059.png)
 
-The table *Clusters* (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) contains a list of all identified clusters, here 11. Each row shows details
-for one cluster. The clusters are sorted by their size with the largest cluster
-on top. Symbol
-
-![](media/36edc56d3b03782c870447907dbe2ae6.emf)
-
-next to each cluster name in the column **Diagram**, can be used for
-visualization. The column **Hit names** contains names of TRANSPATH® proteins in
-each cluster.
+The table *Clusters* (![](media/clusters.png)) contains a list of all identified clusters, here 12. Each row shows details
+for one cluster. The clusters are sorted by their size with the largest cluster on top.  The column **Hit names** contains names of TRANSPATH® proteins in each cluster.
 
 ![](media/10f1d68da92136d302ee5005c29182f3.png)
 
@@ -366,36 +351,19 @@ in green are added by the algorithm when necessary for the connectivity between
 the elements of the cluster.
 
 In parallel with clustering, the table Genes Ensembl undergoes to *Functional
-classification.* The results are shown in eight tables with the icon
+classification.* The results are shown in eight tables with the icon (![](media/55a378f2197094b1b37229f40b0ce0bd.png)). Each table corresponds to a separate ontological category used for the classification in this workflow.
 
-![](media/55a378f2197094b1b37229f40b0ce0bd.png)
+The resulting table, e.g. *Mapping to HumanPSD GO (disease)*, looks like this:
 
-. Each table corresponds to a separate ontological category used for the
-classification in this workflow.
+![](media/image060.png)
 
-The resulting table, e.g. *Mapping to Proteome GO (disease)*, looks like this:
+Each row corresponds to one ontological category, which in this case is one of the diseases as they are annotated in the HumanPSD™ database. Commonly accepted disease identifiers are shown in the ID column. The disease names are shown in the column Title. The column Group size represents the number of genes linked to this disease in HumanPSD™, and the column Category demonstrates the functional type of the link between genes and disease; it can be causal, correlative or negative. For each row several parameters are calculated, the expected number of hits (Expected hits), the actual number of hits (Number of hits), P-value, as well as Hit names.  IDs are hyperlinked to an external web page of CTD, the Comparative Toxicogenomics Database. With a click on each ID, a new tab will be opened displaying additional information about the disease.
 
-![](media/828b0c1bc699460be1a43c983ed2be1c.png)
-
-Each row corresponds to one ontological category, which in this case is one of
-the diseases as they are annotated in the PROTEOME™ database*.* Commonly
-accepted disease identifiers are shown in the **ID** column. The disease names
-are shown in the column **Title**. The column **Group size** represents the
-number of genes linked to this disease in PROTEOME™, and the column **Category**
-demonstrates the functional type of the link between genes and disease; it can
-be causal, correlative or negative. For each row several parameters are
-calculated, the expected number of hits (**Expected hits**), the actual number
-of hits (**Number of hits**), **P-value**, as well as **Hit names**. IDs are
-hyperlinked to an external web page of CTD, the Comparative Toxicogenomics
-Database. With a click on each ID, a new tab will be opened displaying
-additional information about the disease.
-
-**Note***.* This workflow is available together with a valid PROTEOME™ license.  
-Please, feel free to ask for details (info\@genexplain.com).
+**Note***.* This workflow is available together with a valid HumanPSD™ license. Please, feel free to ask for details (info\@genexplain.com).
 
 ### Site search with TRANSFAC®
 
-Version 2.0 (Adjusted p-values, site search on track)
+### Version 2.0 (Adjusted p-values, site search on track)
 
 #### Single interval list
 
