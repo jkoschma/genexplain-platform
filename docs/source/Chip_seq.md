@@ -804,7 +804,7 @@ completed, and take a look at the results.
 The result folder contains several files and one profile (collection of
 matrices):
 
-![](media/image071.png)
+![](media/image072.PNG)
 
 **Tracks**
 
@@ -823,7 +823,7 @@ collection of converted and filtered site models. The table *Transcription
 factors Ensembl genes* includes the corresponding 35 TFs from the second S*ite
 search summary* and is shown below:
 
-![](media/image073.png)
+![](media/image073.PNG)
 
 **Note***.* This workflow is available together with valid TRANSFAC® and
 TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
