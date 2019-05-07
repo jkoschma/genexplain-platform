@@ -727,6 +727,9 @@ proceeding to differential analysis. Cuffmerge, part of the Cufflinks package
 treats the assembled transfrags the way Cufflinks treats reads, merging them
 together parsimoniously. Output is a **Merged assembly** track.
 
+![](media/image091.png)
+
+
 ### Differential analysis with Cuffdiff
 
 The next step of the workflow is performed by Cuffdiff, part of the Cufflinks
@@ -750,7 +753,7 @@ to join all resulting gene tables into one table using the function “Join
 several tables” of the platform. The joint table can be used for detection of
 differentially expressed genes using the Limma or EBarrays functions.
 
-![](media/e6aa2584cad5a95b10ea47e3c809997f.png)
+![](media/image092.png)
 
 It should be noted here that to perform a Limma or EBarray analysis of the
 RNA-Seq data you should select the option *Unnormalized counts* in the input
