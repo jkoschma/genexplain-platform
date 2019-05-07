@@ -3,7 +3,7 @@
 When you click on the tiled button “RNA-seq” in the Work Space of the on the
 start page, the following listing will appear:
 
-![](media/f184135b542b1d492828169871e6243b.png)
+![](media/image085.png)
 
 ## RNA-seq preprocessing
 
