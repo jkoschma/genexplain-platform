@@ -58,9 +58,7 @@ In the Tree Area (**B** in the figure of Section 2.1), you find three tabs:
 **Databases**, **Data**, and **Analyses**. Under each of these tabs, you find a
 tree-structured listing of contents: the available databases, the data files to
 work with, and the analysis methods you can apply. You can open any subdirectory
-by a single mouse click on the respective item and using the button
-
-![](media/479e9da75ec5018bda0b7745ed5644f3.emf) , or by a double-click on the name of the folder to be opened.
+by a single mouse click on the respective item and using the button ![](media/image093.png) , or by a double-click on the name of the folder to be opened.
 
 #### Databases
 
@@ -83,9 +81,6 @@ Presently, by default, you should see the following listing of available
 databases:
 
 ![](media/44e95d2a9383319b845ff048b5650ee7.png)
-
-How you can work with the different databases will be explained in **Chapter
-19**.
 
 #### Data
 
@@ -184,22 +179,15 @@ path displayed in the field **Complete name**, and the number of subdirectories
 and files right under the activated node as **Size**.
 
 The information shown on the Info tab can be viewed in a separate window by
-clicking the button
-
-![](media/23aa661e8a1703b9be7a7b23c58495ec.emf)
+clicking the button ![](media/info.png)
 
 In case the activated file is a table (icon![](media/d373ccf59d81fcd62088646e06661e33.emf)
 
 or derived images; see 25.2.3), the number of rows in the table will be
 indicated as Size. Optionally, a **Description** is shown as well, depending on
-whether it has been entered when the file was generated. By clicking on the icon
+whether it has been entered when the file was generated. By clicking on the edit icon, you may edit some of the information in a newly opened window. Depending on the file type, the edit window may look like this: 
 
-![](media/ae8f91dec92cdd11babcd95a4f48ecb0.emf)
-
-, you may edit some of the information in a newly opened window. Depending on
-the file type, the edit window may look like this:
-
-![](media/589912958b9b5d467481f8cc7edbbfac.emf)
+![](mediai/image094.png)
 
 Gray fields cannot be edited, contents of fields with white background can be
 changed manually, additional information can be entered in the pink fields which
@@ -210,8 +198,7 @@ Depending on the type of directory or file that you have activated in the Tree
 Area, different types of information can be selected for the display on the Info
 tab. This can be done by the selection box right to the tabs in the Info Box,
 initially always showing “Default”:
-
-![](media/7b819f03991b4590ebe48669f432b4d5.emf)
+![](media/image095.png)
 
 Please, feel encouraged to find out the effects of the different views offered
 here.
