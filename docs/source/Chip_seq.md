@@ -272,7 +272,7 @@ In the first step of this workflow, the input track (![](media/track.jpg)) is co
 
 The input form when opened in the work space is shown below:
 
-![](media/4e9dae3276db7b44045a512f81f58d33.png)
+![](media/image053.png)
 
 **Step 1**. Specify input track in BED format in the field **Input track**.
 
@@ -300,21 +300,16 @@ The results folder contains several files as shown below. All tables with the
 resulting classifications as well as the table with clusters and the diagram of
 the largest cluster are opened by default in the work space.
 
-![](media/7cd9106a288445d078a273f9ef543196.png)
+![](media/image054.png)
 
-The table *Genes Ensembl* 
-
-(![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)) 
-
-contains those genes that are identified as located in the regions around the
-input peaks or fragments. By default this workflow considers the following
+The table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)) contains those genes that are identified as located in the regions around the input peaks or fragments. By default this workflow considers the following
 regions around Ensembl genes: 10000 bp in 5’ direction from TSS and 10000 bp in
 3’ direction from the last exon. The positions of each fragment on the input
 track are compared with positions of the extended gene regions. Genes
 overlapping with at least one input fragment are considered as resulting target
 genes. For the input track in this example, 2187 Ensembl genes are identified.
 The resulting table *Genes Ensembl* is shown below, sorted by the column
-*Count*.
+*Count*. 
 
 ![](media/eec13b878bc8da6b97f8e9775f4829df.png)
 
