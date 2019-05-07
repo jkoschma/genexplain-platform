@@ -92,7 +92,7 @@ The steps of an analysis can be described as follows:
 the set of YES intervals from the Example folder is used as input, highlighted
 blue on the screenshot below:
 
-![](media/e407226d3e0e33a72740f5640977256d.png)
+![](media/image079.png)
 
 **Step 2.** Input No set (drag-and-drop). Our example uses the set of NO
 intervals:
@@ -106,7 +106,7 @@ pull-down list:
 ![](media/image077.png)
 
 **Step 4.** Select the TRANSFAC® or GTRD profile from the available profiles. In
-this example, we select the TRANSFAC® 2013.1 profile named
+this example, we select the TRANSFAC® 2018.1 profile named
 “vertebrate_non_redundant”:
 
 ![](media/b456d5c113ef482879275812093b82dd.png)
