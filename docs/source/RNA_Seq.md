@@ -214,12 +214,7 @@ choose the sequence score from the drop-down menu and specify the genome ID.
 ![](media/98a89444d21593a5a7a9a3daf343c663.png)
 
 This enables a visualization of the BAM file information in the genome browser.
-Generated BAM file is a track and has the (
-
-![](media/368076561774990443d1e26a25dd9f3e.emf)
-
-) icon in the tree. As usual for all tracks, it with a double click opens in the
-Work Space. You can see the positions of each aligned read in the genome and
+Generated BAM file is a track and has the (![](media/track.jpg)) icon in the tree. As usual for all tracks, it with a double click opens in the Work Space. You can see the positions of each aligned read in the genome and
 upon zooming-in you get all detailed information about each read complete with
 sequence, length, and quality.
 
@@ -381,11 +376,10 @@ reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq (Gene fusions from RNA-seq)/)
 fastq reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq (Gene fusions from
 RNA-seq)/). It is highlighted in blue in the figure below:
 
-![](media/d5c40027e2f17ff66b4360d1fd06576a.png)
+![](media/image089.png)
 
 The FusionFinder program analyses FASTQ read data (reads must be of at least 50
-nucleotides long; see [input
-example](http://genomebiology.com/2009/10/10/R115/additional)) to identify gene
+nucleotides long; see [input example](http://genomebiology.com/2009/10/10/R115/additional)) to identify gene
 fusion candidates. This is achieved by performing an integrated analysis, which
 is illustrated in the original paper of Francis et al.
 
