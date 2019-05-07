@@ -73,16 +73,11 @@ The results folder contains several files.
 
 ![](media/1ef3d0598b7c19066fb17c4f0516fff0.png)
 
-The primary result table *Regulators upstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) is a list of master regulatory molecules that were identified at the distance
-up to 10 steps upstream of the input molecules. Each master regulatory molecule
+The primary result table *Regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at the distance up to 10 steps upstream of the input molecules. Each master regulatory molecule
 is characterized by a Score, Z-score, FDR, and Ranks Sum. Further details about
 these parameters can be found below, under “Interpretation of the results”.
 
-![](media/e392a206aaf039b5ca929c206a9dbda4.png)
+![](media/image081.png)
 
 The column “Reached from set” shows the number of the molecules from the input
 set that is reached from the respective master regulator, and these molecules
@@ -95,68 +90,27 @@ of the results”.
 Having this table opened in the Work Space you can find additional options
 available, specific for this kind of table. Select one or several rows in the
 table “Regulators upstream 10” by mouse click, and you can visualize the network
-of the selected master regulators
+of the selected master regulators (![](media/5e26364a23d378c5e167d19fa6076cee.png), save the network as a list of genes in the Tree Area (![](media/bec3c0dac181db1fc96d5d2772ae0ab9.png)), or save the hits of this network, listed in the column **Hit names** as a
+list of genes in the Tree Area (![](media/36471870e240f79b9f153bab8f0e6c79.png)).
 
-![](media/5e26364a23d378c5e167d19fa6076cee.png
+The table *Regulator proteins* (![](media/69beb821f961e7415301a646620e091f.png)) corresponds to the table *Regulators upstream 10* converted into the UniProtKB/Swiss-Prot IDs.
 
-, save the network as a list of genes in the Tree Area (
+The table *Regulator genes* (![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)) corresponds to the table *Regulators upstream 10* converted into the Ensembl IDs and in the table *Regulator genes annot* (![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)) the same genes are additionally annotated with gene symbols and gene descriptions.
 
-![](media/bec3c0dac181db1fc96d5d2772ae0ab9.png)
-
-), or save the hits of this network, listed in the column **Hit names** as a
-list of genes in the Tree Area  
-(
-
-![](media/36471870e240f79b9f153bab8f0e6c79.png)
-
-).
-
-The table *Regulator proteins* (
-
-![](media/69beb821f961e7415301a646620e091f.png)
-
-) corresponds to the table *Regulators upstream 10* converted into the
-UniProtKB/Swiss-Prot IDs.
-
-The table *Regulator genes* (
-
-![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)
-
-) corresponds to the table *Regulators upstream 10* converted into the Ensembl
-IDs and in the table *Regulator genes annot* (
-
-![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)
-
-) the same genes are additionally annotated with gene symbols and gene
-descriptions.
-
-The three diagrams *Top 3 regulators* (
-
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-) visualize the networks individually for each of three top master regulators.
+The three diagrams *Top 3 regulators* (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks individually for each of three top master regulators.
 By default, the top regulators are identified upon sorting the table *Regulators
-upstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
+upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
 ![](media/21422e2a8c33fc7748bd2ccc1808d661.png)
 
 The default color code for the molecules is the following:  
-blue: molecules from the input list  
-red: master regulatory molecules;  
-green: connecting molecules considered by the graph-analyzing algorithm to find
-the path from input list to the master molecule.
+**blue:** molecules from the input list  
+**red:** master regulatory molecules;  
+**green:** connecting molecules considered by the graph-analyzing algorithm to find the path from input list to the master molecule.
 
 If you are interested in visualizing the network for any other master regulator,
 you can do this in the following way. Open the table *Regulators upstream 10*
-and select the master regulator by a single mouse click, then click the button
-
-![](media/28b9a38d23d8b6738f573a8e007ea332.png)
-
-to visualize the selected row and save the new diagram.
+and select the master regulator by a single mouse click, then click the button ![](media/28b9a38d23d8b6738f573a8e007ea332.png) to visualize the selected row and save the new diagram.
 
 #### Tip for the workflow editing
 
@@ -332,14 +286,13 @@ network of the GeneWays database with a maximum radius of 4 steps upstream of an
 input gene set, a default cutoff for Score at 0.2, for FDR at 0.05, and for
 Z-score at 1.0.  
 The input form and the resulting tables are very similar to the workflow
-described above, “Find master regulators in networks (TRANSPATH®)”, please refer
-to Section 5.1.1.1.
+described above, “Find master regulators in networks (TRANSPATH®)”. 
 
 The major difference between these two workflows is the underlying database
 applied for the network analysis, either TRANSPATH® or GeneWays.
 
 More details about the GeneWays and TRANSPATH® databases can be found in
-Sections 19.5 and 19.7, respectively.
+the databases section respectively.
 
 ## Find common effectors
 
