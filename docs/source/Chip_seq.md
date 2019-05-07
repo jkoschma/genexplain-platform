@@ -434,8 +434,7 @@ select the location of the results folder and define its name.
 Wait until the workflow is completed.
 
 The **Result folder** contains several tables and three tracks; for this
-example, let’s consider the results folder located under
-[Examples]
+example, let’s consider the results folder located under 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1 binding regions in HeLa cells%2C ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))>. It is highlighted in blue in the figure below:
 
 ![](media/image063.png)
@@ -541,17 +540,10 @@ Wait until the workflow is completed.
 let’s consider the results folder located under “Examples”. It is highlighted by
 blue in the figure below:
 
-![](media/942f4b90b571e6fae6f76b22160a6eba.png)
+![](media/image067.png)
 
-The tables *Site optimization summary* (
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-) and *Transcription factors* (
-
-![](media/1e0da26a6ab305b7be6f417d521ab809.png)
-
-) are opened automatically in the Work Space as soon as the workflow is
+The tables *Site optimization summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)) and *Transcription factors* 
+(![](media/1e0da26a6ab305b7be6f417d521ab809.png)) are opened automatically in the Work Space as soon as the workflow is
 completed.
 
 **The table Site optimization summary** includes the matrices the hits of which
