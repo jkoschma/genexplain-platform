@@ -309,7 +309,7 @@ are 503, 241, and 99, respectively.
 These individual output files can be used further as input for running other
 workflows as described in the following sections.
 
-The plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf)) contains a histogram of the log fold change distribution for all genes:
+The plot (![](media/plot.png)) contains a histogram of the log fold change distribution for all genes:
 
 ![](media/561eebbc3622e5f38590682ef4c5ee30.png)
 
@@ -345,13 +345,13 @@ The workflow input form looks as shown below:
 ![](media/6d4b65421a9c3458afa0ab5ddf6d2d9c.png)
 
 The output folder and the structure of the individual tables, as well as the
-report, are similar to those described in 9.2.1.
+report, are similar to those described Detect differentially expressed genes throught T-test.
 
 ### Detect differentially expressed genes with Limma
 
 This workflow is designed to find sets of up-regulated and down-regulated genes
 starting with the normalized table of your expression data. Please refer to
-section 4.2.1 for details on this particular analysis method. This workflow is
+method description to know about LIMMA.  This workflow is
 designed for different experimental platforms (Affymetrix, Agilent and
 Illumina).
 
@@ -386,9 +386,6 @@ folder, under
 [data/Examples/Cytokine-triggered gene expression in cell cycle stages,
 GSE52465, Agilent-014850 microarray/Data/Agilent normalized DEGs with
 limma]
-(http://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered
-gene expression in cell cycle stages%2C GSE52465%2C Agilent-014850
-microarray/Data/Agilent normalized DEGs with limma/)
 
 **Step 3.** Specify the biological species of the input table in the field
 **Species** by selecting it from the drop-down menu.
@@ -459,7 +456,7 @@ The filtering criteria used are:
 Similarly to the workflow described above, this workflow is designed to find the
 set of up-regulated and down-regulated genes starting with a normalized table of
 your expression data, but using a different statistical method, EBarrays. Please
-refer to section 4.2.2 for details on this particular analysis method. This
+refer to method description for description of this method. This
 workflow is designed for different experimental platforms (Affymetrix, Agilent
 and Illumina).
 
@@ -495,8 +492,7 @@ folder, under
 
 [data/Examples/Cytokine-triggered gene expression in cell cycle stages,
 GSE52465, Agilent-014850 microarray/Data/Agilent normalized DEGs with
-EBarrays](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered gene expression in cell cycle stages%2C GSE52465%2C Agilent-014850
-microarray/Data/Agilent normalized DEGs with EBarrays/)
+EBarrays]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered gene expression in cell cycle stages%2C GSE52465%2C Agilent-014850 microarray/Data/Agilent normalized DEGs with EBarrays>
 
 **Step 3.** Specify the biological species of the input table in the field
 **Species** by selecting it from the drop-down menu.
