@@ -389,7 +389,7 @@ To launch the workflow, follow these steps:
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/5467904838cd933bdbd3b4e79afc4b50.png)
+![](media/image061.png)
 
 **Step 2.** Specify the input track in BED format in the field **Input Yes
 track**.  
@@ -401,9 +401,7 @@ press the [Ok] button.
 
 **Step 3**. Select the profile. This profile will be applied at the first part
 of the workflow for identification of the enriched motifs. The default profile
-is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC®
-release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
-2019.1/Data/profiles/) available.
+is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC® release]<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)2019.1/Data/profiles/> available.
 
 Any other TRANSFAC® profile or user-specific profile can be selected. With a
 mouse click on the field **Profile**, a pop-up window will open, where a profile
@@ -415,7 +413,7 @@ default, the most recent Ensembl human genome, hg19, is specified. Make sure you
 selected the sequence source (species and the genome build) that corresponds to
 your input set, to get correct and meaningful results.
 
-![](media/e4821f5848ec1f7cb7cddc396ee59d1c.png)
+![](media/image062.png)
 
 **Step 5**. Specify the biological species of the input set in the field
 **Species** by selecting it from the drop-down menu.
@@ -437,22 +435,15 @@ Wait until the workflow is completed.
 
 The **Result folder** contains several tables and three tracks; for this
 example, let’s consider the results folder located under
-[Examples](http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1
+[Examples]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1
 binding regions in HeLa cells%2C ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered
-exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))/). It is highlighted in blue
+exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))>. It is highlighted in blue
 in the figure below:
 
 ![](media/d3c2830cdf16da43b11cc1afd3362457.png)
 
-The tables *Enriched motifs MEALR* (
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-) and *Transcription factors* (
-
-![](media/1e0da26a6ab305b7be6f417d521ab809.png)
-
-) are opened automatically in the Work Space as soon as the workflow is
+The tables *Enriched motifs MEALR* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)) and *Transcription factors* 
+(![](media/1e0da26a6ab305b7be6f417d521ab809.png)) are opened automatically in the Work Space as soon as the workflow is
 completed.
 
 The table **Enriched motifs MEALR** includes enriched motifs in the Yes track
@@ -467,20 +458,20 @@ The table **Enriched motifs MEALR** shown below has been sorted by the values in
 the **Coefficient** column. The larger the coefficient, the more important the
 corresponding motif was for discriminating between Yes and No sequences.
 
-![](media/58571d576679f76be3a811094067c0dc.png)
+![](media/image064.png)
 
 The table **Profile** is opened automatically and is an input-specific profile,
 based on the filtered *enriched motifs MEALR* from the first part of the
 workflow.
 
-![](media/98cecd16e0022673350fb1caf03a43c1.png)
+![](media/image065.png)
 
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis in the second part of the workflow.
 
 ### Table Transcription factors Ensembl:
 
-![](media/ce4855a794bd5b238db8fcf5d6dade3b.png)
+![](media/image066.png)
 
 This table includes transcription factors (TFs) that are associated with the
 PWMs listed in the table *Site search summary*. Each row shows details for one
@@ -493,8 +484,7 @@ repeat information that is also shown in the table *Site search summary*.
 For further visualization of resulting *Yes sites opt* track please refer to
 the description of the workflow "Search for discriminative sites with TRANSFAC® (MEALR)"
 
-**Note***.* This workflow is available together with a valid TRANSFAC® license.  
-Please, feel free to ask for details (info\@genexplain.com).
+**Note***.* This workflow is available together with a valid TRANSFAC® license. Please, feel free to ask for details (info\@genexplain.com).
 
 ## Version 1.2 (Classical)
 
