@@ -66,7 +66,7 @@ Let us present an example analysis for a ChIP-seq data set consisting of 500
 peak regions and 1000 sequences randomly sampled from regulatory regions across
 the human genome. The figure below depicts the input mask of the analysis tool.
 
-![](media/5689446501397bee8eae7390c31c8584.png)
+![](media/image076.png)
 
 **Yes set**: This is the set of sequence intervals that you want to analyze, for
 example these can be ChIP-seq peak regions.
@@ -103,7 +103,7 @@ intervals:
 interval sets. If not select the corresponding sequence source from the
 pull-down list:
 
-![](media/7d5299ea8f4d59306e820e2b3018ad16.png)
+![](media/image077.png)
 
 **Step 4.** Select the TRANSFAC® or GTRD profile from the available profiles. In
 this example, we select the TRANSFAC® 2013.1 profile named
@@ -117,14 +117,11 @@ not be writable for your account requiring selection of an alternative such as
 one of your own projects. A different selection can be made easily by clicking
 on the field.
 
-Clicking the [Run] button will invoke the analysis. The *summary* table
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
+Clicking the [Run] button will invoke the analysis. The *summary* table![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
 is automatically opened in a new tab when the analysis is completed. Here is a
 part of the output for our example:
 
-![](media/7bbfba4269bced28b461fc216ddaa755.png)
+![](media/image078.png)
 
 A row of the output table contains matrix identifier and its logistic regression
 coefficient. The larger the coefficient value, the more important the
