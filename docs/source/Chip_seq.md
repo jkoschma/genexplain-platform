@@ -254,30 +254,21 @@ analysis. Gene/protein clusters are calculated based on the TRANSPATH® signalin
 network.
 
 For details, how to launch this workflow and look into the results, please refer
-to the description in section Classification by GO categories and metabolic pathways
-
-Functional classification by the TRANSPATH® pathways has found 43 signaling
-pathways and chains:
+to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 43 signaling pathways and chains:
 
 ![](media/f4795a12f824b40d45675a0f555d6c53.png)
 
 The pathway visualization diagrams can be opened in the work space upon a mouse
-click to the pathway ID. The fragment of the second top pathway, leptin
-signaling, is shown in force directed layout on the picture below. Important to
-mention, you can see protein complexes and modified forms on the TRANSPATH®
-diagrams.
+click to the pathway ID. The fragment of the second top pathway, leptin signaling, is shown in force directed layout on the picture below. Important to mention, you can see protein complexes and modified forms on the TRANSPATH® diagrams.
 
 ![](media/5235c312aab7f622cfff486418eec5bb.png)
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license.  
-Please, feel free to ask for details (info\@genexplain.com).
+**Note***.* This workflow is available together with a valid TRANSPATH® license. Please, feel free to ask for details (info\@genexplain.com).
 
 ### Classification by GO categories, signaling pathway, and diseases
 
-In the first step of this workflow, the input track (![](media/368076561774990443d1e26a25dd9f3e.emf)) is converted into a gene set using the *Track to gene set* analysis (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)), The resulting Ensembl gene list is then submitted to
-*Functional classification* using the following ontologies: HumanPSD™ GO
-biological processes, HumanPSD™ GO cellular components, HumanPSD™ GO molecular
-function, HumanPSD™ disease, TRANSPATH® pathways, TF classification, Reactome pathways, and HumanCyc pathways. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. Gene/protein clusters are calculated based on the TRANSPATH® network.
+In the first step of this workflow, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)), The resulting Ensembl gene list is then submitted to
+*Functional classification* using the following ontologies: HumanPSD™ GO biological processes, HumanPSD™ GO cellular components, HumanPSD™ GO molecular function, HumanPSD™ disease, TRANSPATH® pathways, TF classification, Reactome pathways, and HumanCyc pathways. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. Gene/protein clusters are calculated based on the TRANSPATH® network.
 
 The input form when opened in the work space is shown below:
 
