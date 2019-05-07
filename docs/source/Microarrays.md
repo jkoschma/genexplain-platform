@@ -451,7 +451,7 @@ The filtering criteria used are:
 
 -   For non-changed genes :logFC \<0.002 and logFC \>-0.002
 
-    1.  Detect differentially expressed genes with EBarrays
+### Detect differentially expressed genes with EBarrays
 
 Similarly to the workflow described above, this workflow is designed to find the
 set of up-regulated and down-regulated genes starting with a normalized table of
