@@ -497,7 +497,7 @@ The few steps to launch the workflow are described in the following.
 **Step 1**. Open workflow input form from the Start page, it will be opened in
 the main Work Space and looks as it is shown below:
 
-![](media/8e0a82a0a27922f28f298bd375d1fca5.png)
+![](media/image068.png)
 
 **Step 2.** Specify the input track in BED format in the field **Input Yes
 track**.  
@@ -513,7 +513,7 @@ default, the most recent Ensembl human genome, hg19, is specified. Make sure you
 selected the sequence source (the genome build) that corresponds to your input
 set, to get correct and meaningful results.
 
-![](media/85b6c055c93d0e5ac9c49ebd9c14878b.png)
+![](media/image069.png)
 
 **Step 4.** Specify the biological species of the input set in the field
 **Species** by selecting the required species from the drop-down menu.
@@ -601,12 +601,7 @@ details about these scores, please see Kel et al., Nucleic Acids Res.
 
 **Tip**. Further visualization of track files in the genome browser:  
 Having tracks “Yes sites opt” and “No sites opt” opened in the Work Space, the
-menu button
-
-![](media/3dedf14838c50548c1db5a37fccc0940.png)
-
-can be applied to get a visualization. First, a supplementary window is opened
-where you can select one chromosome and press [Ok], as shown below.
+menu button ![](media/3dedf14838c50548c1db5a37fccc0940.png) can be applied to get a visualization. First, a supplementary window is opened where you can select one chromosome and press [Ok], as shown below.
 
 ![](media/b030e6a40a796e1227abfc1881de74d2.png)
 
