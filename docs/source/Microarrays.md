@@ -1,6 +1,6 @@
 # Microarrays
 
-![](media/9d269be5734a3cdb2ca0635c76da2a89.png)
+![](media/image037.png)
 
 ## Normalize data
 
@@ -51,7 +51,7 @@ should look like this, with the probeset IDs in the first and the normalized
 expression values from the different CEL files in the following columns, each
 hybridization being represented in one column (picture below).
 
-![](media/39f1fd28c2993d477fbab57117ddb61c.emf)
+![](media/image036.png)
 
 **Important note.** In the geneXplain platform, the probeset IDs are mapped to
 genes based on the Ensembl database. If some of the probeset IDs are not
@@ -208,8 +208,7 @@ method “Multiple conditions”, you can detect DEGs with Limma and/or EBarrays
 highlighted in red.
 
 In this chapter, the predefined workflows for DEG calculation with T-test and
-with hypergeometric analysis are described in detail. For a description of Limma
-and EBarray please refer to the sections 4.2.1 and 4.2.2, respectively.
+with hypergeometric analysis are described in detail.
 
 ### Detect differentially expressed genes with T-test
 
