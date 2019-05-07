@@ -40,7 +40,7 @@ data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
 It contains 12 files in SRA format as shown below. Please note, this folder
 occupies **1.5 GB** work space.
 
-![](media/439e19924889c452f16951a1447c3c68.png)
+![](media/image086.png)
 
 The output folder name and folder path is automatically created, but can be
 changed in a user-specific way.
@@ -67,7 +67,7 @@ convert positions from one genome assembly to another one, and The Lift-Over
 program is widely can be applied for this task. Within the geneXplain platform,
 you can find it on the Start page under the NGS button, as highlighted below.
 
-![](media/cc48666da86573b9ab5bf965c953ff92.png)
+![](media/image087.png)
 
 This tool is based on the LiftOver utility and Chain track from the [UC Santa
 Cruz Genome Browser](http://genome.ucsc.edu/).
@@ -81,7 +81,7 @@ To launch the workflow, follow these steps:
 
 **Step1.** Open the input form from Start page. It looks as shown below:
 
-![](media/ebb8da8fe8d2ba41e018ade09f80f2f5.png)
+![](media/image088.png)
 
 **Step 2.** Specify the input track in the field **Convert coordinates of**. You
 can drag it from your project within the tree area and drop it in the box of the
