@@ -435,12 +435,10 @@ Wait until the workflow is completed.
 
 The **Result folder** contains several tables and three tracks; for this
 example, let’s consider the results folder located under
-[Examples]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1
-binding regions in HeLa cells%2C ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered
-exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))>. It is highlighted in blue
-in the figure below:
+[Examples]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1 binding regions in HeLa cells%2C ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))>. It is highlighted in blue in the figure below:
 
-![](media/d3c2830cdf16da43b11cc1afd3362457.png)
+![](media/image063.png)
 
 The tables *Enriched motifs MEALR* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)) and *Transcription factors* 
 (![](media/1e0da26a6ab305b7be6f417d521ab809.png)) are opened automatically in the Work Space as soon as the workflow is
