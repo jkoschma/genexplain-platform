@@ -1,6 +1,6 @@
 # Proteomics
 
-![](media/cb18a42b593293f9c5dc9b1e91e80f53.png)
+![](media/image080.png)
 
 ## Analyze networks
 
@@ -10,7 +10,7 @@ Potential master regulators of the processes analyzed in a typical proteomics
 experiment can be identified with the aid of pathway databases. The geneXplain
 platform support working with the TRANSPATH database (5.1.1.1; license required)
 or with the public GeneWays database (5.1.1.2). More details about both these
-database can be found in the corresponding Sections 19.7 and 19.5.
+database can be found in the databases section.
 
 ### Find master regulators with TRANSPATH®
 
