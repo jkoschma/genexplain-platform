@@ -804,31 +804,26 @@ completed, and take a look at the results.
 The result folder contains several files and one profile (collection of
 matrices):
 
-![](media/2fe9401ad0c241d590bcf7d4b325377b.png)
+![](media/image071.png)
 
-Tracks
+**Tracks**
 
 The input gene list is used to create tissue-specific promoter sequences as well
 as a random track. The random track includes 1000 random promoter sequences from
 the same sequence source as the input gene set. The resulting tracks are
 *Tissue_track* (from Input Yes genes) and *Random_tissue_track*.
 
-Enriched motifs
+**Enriched motifs**
 
 The list of motifs, which were found during the first part of the workflow, and
 were filtered by the coefficient \> 0.125, can be found in the table
-*Enriched_motifs MEALR* (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-). It contains those site models, here TRANSFAC® matrices, which are enriched in
-the *Tissue_track* in comparison with the *Random_tissue_track*. The example has
+*Enriched_motifs MEALR* (![](media/8ed589ee0b31e1b240c071d30254a8be.png)). It contains those site models, here TRANSFAC® matrices, which are enriched in the *Tissue_track* in comparison with the *Random_tissue_track*. The example has
 2 detected motifs with a coefficient \> 0.125. The *Profile* contains the matrix
 collection of converted and filtered site models. The table *Transcription
 factors Ensembl genes* includes the corresponding 35 TFs from the second S*ite
 search summary* and is shown below:
 
-![](media/75469a1bd0f68aed9ad3500f30c5341c.png)
+![](media/image073.png)
 
 **Note***.* This workflow is available together with valid TRANSFAC® and
 TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
