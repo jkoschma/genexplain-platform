@@ -84,11 +84,7 @@ the sequences in the input set. In this particular example the input sequence
 set comprises ten individual promoter sequences, and each individual promoter
 can be visualized in the genome browser.
 
-*The table Summary* (
-
-![](media/212526797a1dba72f5c0aa954785ad2d.png)
-
-) gives the site density per thousand bp for each matrix in the input sequence.
+*The table Summary* (![](media/212526797a1dba72f5c0aa954785ad2d.png)) gives the site density per thousand bp for each matrix in the input sequence.
 When opened in the work space looks as shown below:
 
 ![](media/6981890118de4efa36e2e2782e1fd237.png)
@@ -100,12 +96,7 @@ normalized per 1000 bp length for the sequences in the input set.
 
 TFBSs can be further visualized in the input sequences. For this, having the
 Summary table opened, select one or several rows, and then click the report on
-selected matrices button (
-
-![](media/df7bef658f3fe19ce96e1451a9afadc2.png)
-
-) on the control panel. In this example, all matrices with a site density \<5
-were selected. The visualization results are shown below:
+selected matrices button (![](media/df7bef658f3fe19ce96e1451a9afadc2.png)) on the control panel. In this example, all matrices with a site density \<5 were selected. The visualization results are shown below:
 
 ![](media/a86a46b2e9ef7c5375cd0910ee6d8bac.png)
 
@@ -134,15 +125,8 @@ Correspondingly, the site search results from these two workflows are different.
 This workflow is designed to search for enriched transcription factor binding
 sites, TFBSs, in any input DNA sequence as compared to a background DNA
 sequence. The central part of this workflow is performed by two individual
-methods, *Site search on track* (
-
-![](media/43d5fc50a46742b4f017b1c0efcaaeef.png)
-
-), and *Site search result optimization* (
-
-![](media/18c294ac526620448a73d4ca2e041790.png)
-
-). Both individual methods can be found under the tab *Analyses* in the folder
+methods, *Site search on track* (![](media/43d5fc50a46742b4f017b1c0efcaaeef.png)), and *Site search result optimization* (
+![](media/18c294ac526620448a73d4ca2e041790.png)). Both individual methods can be found under the tab *Analyses* in the folder
 Methods/Site analysis/.
 
 With this workflow you can analyze sequences of any species and any genomic
@@ -157,11 +141,7 @@ in the main Work Space and looks as it is shown below:
 
 **Step 2.** Specify the input Yes and No sequence sets. The Yes and No sequence
 sets can be in EMBL, FASTA or GenBank format. After loading into the platform,
-these sequences are shown in the tree area with the icon (
-
-![](media/e00449a44c3e5ba54372a9f6745a32cd.png)
-
-).
+these sequences are shown in the tree area with the icon (![](media/e00449a44c3e5ba54372a9f6745a32cd.png)).
 
 To specify the Input sequence sets, you can drag & drop it from your project
 within the tree area. Alternatively, you may click on the pink field “select
@@ -180,27 +160,23 @@ upstream of TSS. These genes are involved in different functions.
 profile is *vertebrate_non_redundant_minSUM*. In this example we use the profile
 called *Plants*. It can be found here:
 
-<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)%202014.4/Data/profiles/plants>
+<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)%202018.2/Data/profiles/plants>
 
-![](media/33ae12cce7d3a21c8aee7f35ab01e48f.png)
+![](media/image043.png)
 
 **Step 4**. Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
 
 #### Results
 
-The results folder consists of several tables and tracks as shown below:
+The results folder consists of several tables and tracks and can be accessed using the path:
+data/Examples/Plant DNA sequence analysis/Data/Arabidopsis_Chromosome 1 site enrichment
 
-![](media/8121d0c95f4507d98aa159d1569d9346.png)
+![](media/image046.png)
 
-*The table Summary* (
+*The table Summary* (![](media/212526797a1dba72f5c0aa954785ad2d.png)) gives the TFBSs enriched in the Yes set as compared with the No set. It looks as shown below:
 
-![](media/212526797a1dba72f5c0aa954785ad2d.png)
-
-) gives the TFBSs enriched in the Yes set as compared with the No set. It looks
-as shown below:
-
-![](media/9c34ce0031391bc28eb57ea8dbcd3594.png)
+![](media/image047.png)
 
 Each row summarizes the information for one site model (PWM, matrix).
 
@@ -215,11 +191,7 @@ shows the p-value of the corresponding event.
 
 TFBSs can be further visualized in the Yes sequences. For this, having the
 Summary table opened, select one or several rows, and then click the report on
-selected matrices button (
-
-![](media/df7bef658f3fe19ce96e1451a9afadc2.png)
-
-) on the control panel.
+selected matrices button (![](media/df7bef658f3fe19ce96e1451a9afadc2.png)) on the control panel.
 
 In this example, all matrices having a Yes-No ratio\>3 were selected. The
 visualization results are shown below:
@@ -232,11 +204,7 @@ mapped TFBSs. Matches for different matrices are shown in different colors. You
 can select individual matches by mouse click and get additional information in
 the Info box.
 
-*Yes (No) sites optimized tracks.* These optimized tracks (
-
-![](media/cb5d76d08ad8b9e2608166e929e43d96.png)
-
-) present those TFBSs that are over-represented in the Yes sequences versus the
+*Yes (No) sites optimized tracks.* These optimized tracks (![](media/cb5d76d08ad8b9e2608166e929e43d96.png)) present those TFBSs that are over-represented in the Yes sequences versus the
 No sequences. Scores of the putative sites are optimized by the algorithm. As
 the Yes set in this example is called *Auxin biosynthesis*, the resulting track
 is called *Auxin biosynthesis sites optimized.* When opened as a table, this
@@ -260,15 +228,8 @@ sequences in the input set. In this particular example the Yes sequence set
 comprises four individual promoter sequences, and each individual promoter can
 be visualized in the genome browser.
 
-The tables *Transcription factors Ensembl* (
-
-![](media/ca7b8566adbbd2c4da7cb9749a42b496.png)
-
-) and *Transcription factors Entrez* (
-
-![](media/5860dfbe1523dccfc06b50e8871339db.png)
-
-) aim at showing transcription factors linked to the identified site models
+The tables *Transcription factors Ensembl* (![](media/ca7b8566adbbd2c4da7cb9749a42b496.png)) and *Transcription factors Entrez* 
+(![](media/5860dfbe1523dccfc06b50e8871339db.png)) aim at showing transcription factors linked to the identified site models
 (matrices). These are potential candidate regulators of genes in the input Yes
 set. They are supposed to regulate transcription of Yes-genes via the identified
 enriched TFBSs.
