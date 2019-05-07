@@ -1,6 +1,6 @@
 # Epigenomics
 
-![](media/image073.png)
+![](media/image074.png)
 
 ## Site search with TRANSFAC(R)
 ### Site search in a single interval list
