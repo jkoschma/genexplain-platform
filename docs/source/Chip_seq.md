@@ -1,6 +1,6 @@
 # ChIP-seq
 
-![](media/9bef26eb251bc41208ee107f28cb0055.png)
+![](media/image048.png)
 
 ## Peak calling
 
@@ -195,12 +195,10 @@ default, the gene bound extensions are 10,000 bp 5’ relative to TSS and 10,000
 bp 3’ relative to the last exon.
 
 The three workflows in this group have a very similar structure. In the first
-step, the input track (![](media/368076561774990443d1e26a25dd9f3e.emf)) is converted into a gene set using the *Track to gene set* analysis (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)), The resulting Ensembl gene list is then submitted to
-*Functional classification* by several ontologies. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* 
-(![](media/7b06fdf360a51b60ca81c349e0291a0f.gif)) analysis. 
+step, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis , The resulting Ensembl gene list is then submitted to *Functional classification* by several ontologies. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. 
+
 The difference between the workflows within this group is in the ontologies applied for functional classification as well as in a
-database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated for the same input track available in one of the pre-prepared examples present in the
-*Examples* folder:  
+database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated for the same input track available in one of the pre-prepared examples present in the *Examples* folder:  
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
 
@@ -219,17 +217,13 @@ network.
 
 For details, how to launch this workflow, please refer to description of the section classification by GO categories, signaling pathways and diseases.  The results folder looks like this:
 
-![](media/6e3899a0c8935ce0eb4dccd749a9d0d8.png)
+![](media/image049.png)
 
 The input track contains 1889 in vivo binding fragments for E2F1 transcription
 factor. These fragments are found to overlap with 2187 Ensembl genes that are
-shown in the resulting table *Genes Ensembl* (
+shown in the resulting table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)). 
 
-![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)
-
-). 
-
-Functional classification by the HumanCyc pathways has found 8 metabolic
+Functional classification by the HumanCyc pathways has found 3 metabolic
 pathways:
 
 ![](media/b4b742305c09732b8ebf76d8c9f0a700.png)
@@ -243,11 +237,11 @@ The GeneWays clusters are calculated considering upstream direction from the
 identified with the maximal radius of 2 steps. The following GeneWays clusters
 are identified:
 
-![](media/c8b68fdd540cac2e984d0b3cd1900731.png)
+![](media/image50.png)
 
 The picture below presents the fragment of the cluster 1.
 
-![](media/e7266a80b99360778971f85ff216ca73.png)
+![](media/image51.png)
 
 Molecules shown in blue color are coming from the input protein list, and those
 in green are added by the algorithm when necessary for the connectivity between
