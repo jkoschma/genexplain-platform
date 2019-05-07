@@ -515,12 +515,7 @@ several diagrams corresponding to the number of the identified clusters.
 
 The table *Clusters* (![](media/clusters.png)) contains a list of all identified clusters, here 9, shown below. Each row
 shows details for one cluster. The clusters are sorted by their size with the
-largest cluster on top. The symbol 
-
-![](media/36edc56d3b03782c870447907dbe2ae6.emf)
-
-next to each cluster name in the column **Diagram** can be used for
-visualization. The column **Hit names** contains the names of the TRANSPATH®
+largest cluster on top. The symbol (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) next to each cluster name in the column **Diagram** can be used for visualization. The column **Hit names** contains the names of the TRANSPATH®
 proteins in each cluster.
 
 ![](media/d41fc1612002b92c80abdac049d0e4bc.png)
