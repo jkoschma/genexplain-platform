@@ -1,6 +1,6 @@
 # Sequence analysis
 
-![](media/3728bf448cbcc9ac8dd3f58e9709f27f.png)
+![](media/image041.png)
 
 ## Analyze any DNA sequence
 
@@ -26,22 +26,18 @@ extension. Sample EMBL, FASTA and Genbank sequences are as shown below:
 
 Sample EMBL file:
 
-![](media/00bcb6aefb622eb8ed3a154448919778.emf)
+![](media/image042.png)
 
 Sample Fasta file:
 
-![](media/dbc0d96be09e920e7615ef0964b0d254.emf)
+![](media/image043.png)
 
 Sample Genbank file:
 
-![](media/b253ec3338cb3ddfbfb63fa01189fcd8.emf)
+![](media/image044.png)
 
 After loading into the platform, the sequences in these formats are shown in the
-tree area with the icon (
-
-![](media/e00449a44c3e5ba54372a9f6745a32cd.png)
-
-).
+tree area with the icon (![](media/e00449a44c3e5ba54372a9f6745a32cd.png)).
 
 In this example, sample sequences of *Arabidopsis thaliana* are used, which were
 downloaded from the TAIR database in FASTA format
@@ -53,7 +49,7 @@ TSS, located on chromosome 1.
 profile is *vertebrate_non_redundant_minSUM*. In this example we use the profile
 called *Plants*. It can be found here:
 
-<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)%202014.4/Data/profiles/plants>
+<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)%202018.2/Data/profiles/plants>
 
 **Step 4.** Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
@@ -65,12 +61,7 @@ below:
 
 ![](media/39f150ca68e1203bc8874cd195ba708a.png)
 
-*Input sequence Sites:* This track (
-
-![](media/cb5d76d08ad8b9e2608166e929e43d96.png)
-
-) shows TFBSs that are found in the input sequences. As the input sequence set
-in this example is called *Arabidopsis_Chromosome 1*, the resulting track is
+*Input sequence Sites:* This track (![](media/cb5d76d08ad8b9e2608166e929e43d96.png)) shows TFBSs that are found in the input sequences. As the input sequence set in this example is called *Arabidopsis_Chromosome 1*, the resulting track is
 called *Arabidopsis_Chromosome 1 Sites.* When opened as a table, this track
 looks like:
 
