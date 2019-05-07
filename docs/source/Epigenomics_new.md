@@ -1,8 +1,8 @@
 # Epigenomics
 
-![](media/a77cd802a7fbddfc87f2355e745cc913.png)
+![](media/image073.png)
 
-## Site search with TRANSFAC(r)
+## Site search with TRANSFAC(R)
 ### Site search in a single interval list
 
 This workflow helps to map putative TFBSs on peaks calculated from your  
