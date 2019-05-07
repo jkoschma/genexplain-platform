@@ -251,17 +251,17 @@ ontologies: GO biological processes, GO cellular components, GO molecular
 function, TF classification, Reactome pathways, and TRANSPATH® pathways. In
 parallel, the same Ensembl gene list is subjected to *Cluster by shortest path*
 analysis. Gene/protein clusters are calculated based on the TRANSPATH® signaling
-network.
+network. For the same input as mentioned, the output path for this workflow is:
+data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered chr 1 (From tracks to target genes_Transpath)
 
 For details, how to launch this workflow and look into the results, please refer
-to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 43 signaling pathways and chains:
+to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 21 signaling pathways and chains: 
 
-![](media/f4795a12f824b40d45675a0f555d6c53.png)
+![](media/image055.png)
 
-The pathway visualization diagrams can be opened in the work space upon a mouse
-click to the pathway ID. The fragment of the second top pathway, leptin signaling, is shown in force directed layout on the picture below. Important to mention, you can see protein complexes and modified forms on the TRANSPATH® diagrams.
+The pathway visualization diagrams can be opened in the work space upon a mouse click to the pathway ID. The fragment of the second top pathway, leptin signaling, is shown in force directed layout on the picture below. Important to mention, you can see protein complexes and modified forms on the TRANSPATH® diagrams.
 
-![](media/5235c312aab7f622cfff486418eec5bb.png)
+![](media/image056.png)
 
 **Note***.* This workflow is available together with a valid TRANSPATH® license. Please, feel free to ask for details (info\@genexplain.com).
 
