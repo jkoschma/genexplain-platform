@@ -234,11 +234,11 @@ The GeneWays clusters are calculated considering upstream direction from the
 identified with the maximal radius of 2 steps. The following GeneWays clusters
 are identified:
 
-![](media/image50.png)
+![](media/image050.png)
 
 The picture below presents the fragment of the cluster 1.
 
-![](media/image51.png)
+![](media/image051.png)
 
 Molecules shown in blue color are coming from the input protein list, and those
 in green are added by the algorithm when necessary for the connectivity between
