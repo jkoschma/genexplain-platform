@@ -186,7 +186,7 @@ It depends on read length.
 
 ### Analyze ChIP-seq peaks
 
-#### Identify and classify target genes near the peaks
+### Identify and classify target genes near the peaks
 
 This group of workflows helps to identify genes located near the ChIP-seq peaks
 or near other genomic intervals. The input can be any track, and the output
