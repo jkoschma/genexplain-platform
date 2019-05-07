@@ -710,12 +710,7 @@ track, TRANSFAC) Pairs-8 Iterations-300 v2
 
 ![](media/8f7498a607dab9e7b0199a85d496275a.png)
 
-The table **Site optimization summary** (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-) contains those site models, here TRANSFAC® matrices, that are over-represented
-in the Yes track as compared to the No track.
+The table **Site optimization summary** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models, here TRANSFAC® matrices, that are over-represented in the Yes track as compared to the No track.
 
 ![](media/c9a5270f6a71557a9c7e053c30440466.png)
 
@@ -725,12 +720,7 @@ by the Yes-No ratio, matrices for E2F factors are among top 20 lines. Please
 note that the p-values of E2F matrices are extremely low, which demonstrates
 highest statistical significance of the results.
 
-The **Modules** folder (
-
-![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)
-
-). The composite module found contains two pairs, and we can see by exactly
-which site models (matrices) these pairs are formed as well as the statistical
+The **Modules** folder (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)). The composite module found contains two pairs, and we can see by exactly which site models (matrices) these pairs are formed as well as the statistical
 parameters of the overall model.
 
 ![](media/49e8e9cd6660f77ec6c02a0de375ae22.png)
@@ -780,7 +770,7 @@ your input set in order to get correct and meaningful results.
 **Step 4**: Select the **Tissue condition**, select the tissue for which you
 want to create the promoter track from the drop-down menu.
 
-![](media/47d827baf81ffa27f72597dc2a1f06ab.png)
+![](media/image070.png)
 
 **Step 5**: The **TSS selection** should be performed if there are multiple
 transcription start sites. By default, the most active site is considered as
