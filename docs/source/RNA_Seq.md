@@ -544,7 +544,7 @@ analysis of RNA-seq experiments with TopHat and Cufflinks”, Nat. Protoc.
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/cc487fc9b310fa2dedcd9978c56a5cdd.png)
+![](media/image090.png)
 
 **Step 2**. Specify the **Experiment fastq files** and the **Control fastq
 files**.  
@@ -562,7 +562,7 @@ All results are saved in the result folder:
 
 data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
 (ESCC), GSE32424, FASTQ files/Data/Fastq files (Quantification of RNA-seq (no
-de-novo assembly) hg38
+de-novo assembly)
 
 ### Read alignment with TopHat
 
