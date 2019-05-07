@@ -237,7 +237,7 @@ extent specific for the input list. In this example, Score values for the top
 molecules are between 0.28 and 0.36 (moderate), Z-score values vary between 2.8
 and 3.1 (good Z-score values, but not the best in this table).
 
-![](media/e392a206aaf039b5ca929c206a9dbda4.png)
+![](media/image082.png)
 
 By default, the table *Regulators Upstream 10* are sorted by the **Ranks sum**
 column, to suggest molecules with a balance between their well-studied status
@@ -354,15 +354,9 @@ FC\<-2) (Common effectors Transpath)
 
 ![](media/ea6958acab38d99a3fc947a6bb4b1f9c.png)
 
-The primary result table *Effectors downstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) is the list of effector molecules that were identified at the distance up to
-10 steps downstream of the input molecules. Each effector molecule is
+The primary result table *Effectors downstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is the list of effector molecules that were identified at the distance up to 10 steps downstream of the input molecules. Each effector molecule is
 characterized by Score, Z-score, FDR, and Ranks Sum. Further details about these
-parameters can be found in the Section 5.1.1.1, under “Interpretation of the
-results”.
+parameters can be found under “Interpretation of the results”.
 
 ![](media/509b5cfdbbc55ddc411d258bb2be8745.png)
 
@@ -375,71 +369,30 @@ the respective effector molecule can be reached, independent of the input list.
 Having this table opened in the Work Space you can find additional options
 available, specific for this kind of table. Select one or several rows in the
 table *Effectors downstream 10* by mouse click, and you can visualize the
-network of the selected Effectors (
+network of the selected Effectors (![](media/5e26364a23d378c5e167d19fa6076cee.png)), save the network as a list of genes in the Tree Area (![](media/bec3c0dac181db1fc96d5d2772ae0ab9.png)), or save hits of this network from the column **Hits** as a list of genes in
+the Tree Area (![](media/36471870e240f79b9f153bab8f0e6c79.png)).
 
-![](media/5e26364a23d378c5e167d19fa6076cee.png)
+The table *Effector genes annot* (![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)) corresponds to the table *Effectors downstream 10* converted into Ensembl IDs and additionally annotated with gene symbols and gene descriptions.
 
-), save the network as a list of genes in the Tree Area (
-
-![](media/bec3c0dac181db1fc96d5d2772ae0ab9.png)
-
-), or save hits of this network from the column **Hits** as a list of genes in
-the Tree Area (
-
-![](media/36471870e240f79b9f153bab8f0e6c79.png)
-
-).
-
-The table *Effector genes annot* (
-
-![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)
-
-) corresponds to the table *Effectors downstream 10* converted into Ensembl IDs
-and additionally annotated with gene symbols and gene descriptions.
-
-The table *Effector proteins* (
-
-![](media/a929c27e1f52037c707289c0fb4b34f8.png)
-
-) corresponds to the table *Effectors downstream 10* converted into the UniProt
-IDs.
-
-The table *Transpath peptides* (
-
-![](media/89c7830ace79b222186c5cf0821d31c2.emf)
-
-) corresponds to the table *Effectors downstream 10* converted into TRANSPATH®
-molecule IDs, and in the table *Transpath peptides annot* they are further
+The table *Effector proteins* (![](media/a929c27e1f52037c707289c0fb4b34f8.png)) corresponds to the table *Effectors downstream 10* converted into the UniProt IDs. The table *Transpath peptides* (![](media/image083.png)) corresponds to the table *Effectors downstream 10* converted into TRANSPATH® molecule IDs, and in the table *Transpath peptides annot* they are further
 annotated with gene symbols and gene descriptions.
 
-The three diagrams *Top 3 effectors* (
-
-![](media/094b03a9bf23c613aa111e7f3a9c298d.png)
-
-) visualize networks individually for each of the three top effector molecules.
+The three diagrams *Top 3 effectors* (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize networks individually for each of the three top effector molecules.
 By default, the top effectors are identified upon sorting the table *Effectors
-downstream 10* (
-
-![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)
-
-) by the column **Ranks sum** with the lowest rank on top.
+downstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
 ![](media/13c4966e528a7b69e7a66b7a5630249c.png)
 
 The default color code for the molecules is the following:  
-blue: molecules from the input list  
-red: master regulatory molecules;  
-green: connecting molecules considered by the graph-analyzing algorithm to find
+**blue**: molecules from the input list  
+**red**: master regulatory molecules;  
+**green**: connecting molecules considered by the graph-analyzing algorithm to find
 the path from input list to the master molecule.
 
 If you are interested in visualizing the network for any other effector
 molecule, you may do so in the following way. Open the table *Effectors
 downstream 10* and select a row with a single mouse click as shown below. Click
-on
-
-![](media/0758a1053487de946b8f031df0f90b95.png)
-
-menu button to visualize the selected row and save the new diagram into the
+on ![](media/0758a1053487de946b8f031df0f90b95.png) menu button to visualize the selected row and save the new diagram into the
 tree.
 
 ![](media/5174e2453d1c9c89ddddc3c03b3590cd.png)
@@ -475,24 +428,19 @@ the network of the GeneWays database with a maximum radius of 4 steps upstream
 of an input gene set, default cutoffs for Score at 0.2, for FDR at 0.05, and for
 Z-score at 1.0.  
 The Input form and the resulting tables are very similar to the workflow
-described above, “Find common effectors in networks (TRANSPATH®)”, please refer
-to Section 5.1.2.1.
+described above, “Find common effectors in networks (TRANSPATH®)”
 
 The major difference between these two workflows is the underlying database
 applied for the network analysis, either TRANSPATH® or GeneWays.
 
 More details about the GeneWays and TRANSPATH® databases can be found in the
-Sections 19.5 and 19.7*,* respectively.
+databases section respectively.
 
 ## Identify functional protein cluster by shortest path analysis
 
 This analysis finds functional clusters in any input table of genes or proteins.
 It can be found under the tab *Analyses*, in the folder Methods/Data
-manipulation/ Molecular networks/Cluster by shortest path (
-
-![](media/cb5de1c86c2c48c53cdfd7d8e34d45dd.png)
-
-). Here the default input form is shown:
+manipulation/ Molecular networks/Cluster by shortest path (![](media/cb5de1c86c2c48c53cdfd7d8e34d45dd.png)). Here the default input form is shown:
 
 ![](media/d3eeaf5c786cccdd8cd199fc637081c6.png)
 
@@ -526,27 +474,12 @@ specific) collection is chosen.
 **Molecules collection**. Input the collection of molecules/genes for which you
 wish to find clusters. The input table type depends on the specified search
 collection. In case of the Geneways database as search collection, the input
-type should be table with Entrez gene IDs (
-
-![](media/5c714caac5a4e02a10c45ea2e68c199a.png)
-
-). In case of TRANSPATH®, the input table should be a table with TRANSPATH®
-peptides (
-
-![](media/22c88bc56129e618a5ec50dcecb6e799.png)
-
-). In case of Reactome, the input table should be a table having Reactome
-protein IDs (
-
-![](media/a5cc14ee2e8ba1e80c18f2165b861dbc.emf)
-
-). As soon as the search collection is specified, the icon for the required
-table type is automatically shown in the field **Molecules collection**, as
+type should be table with Entrez gene IDs (![](media/5c714caac5a4e02a10c45ea2e68c199a.png)). In case of TRANSPATH®, the input table should be a table with TRANSPATH® peptides (![](media/22c88bc56129e618a5ec50dcecb6e799.png)). In case of Reactome, the input table should be a table having Reactome protein IDs (![](media/image084.png)). As soon as the search collection is specified, the icon for the required table type is automatically shown in the field **Molecules collection**, as
 shown in the two screenshots above for TRANSPATH® and GeneWays, respectively.
 
 Tip Before input your table, check which kind of IDs this table has. If
 necessary, convert your table into any of these formats. You can use the
-*Convert table* method as mentioned in Section 16.1.2.
+*Convert table* method. 
 
 **Search Direction.** Select the direction which the algorithm should consider
 to find connections between the input molecules. It can be upstream of your
@@ -580,13 +513,9 @@ several diagrams corresponding to the number of the identified clusters.
 
 ![](media/2258cd9a928576adeee783c57c44e9df.png)
 
-The table *Clusters* (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) contains a list of all identified clusters, here 9, shown below. Each row
+The table *Clusters* (![](media/clusters.png)) contains a list of all identified clusters, here 9, shown below. Each row
 shows details for one cluster. The clusters are sorted by their size with the
-largest cluster on top. The symbol
+largest cluster on top. The symbol 
 
 ![](media/36edc56d3b03782c870447907dbe2ae6.emf)
 
