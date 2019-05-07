@@ -183,9 +183,9 @@ It depends on read length.
 
 **Output summary**: A summary output track with islands
 
-### Analyze ChIP-seq peaks
+## Analyze ChIP-seq peaks
 
-### Identify and classify target genes near the peaks
+## Identify and classify target genes near the peaks
 
 This group of workflows helps to identify genes located near the ChIP-seq peaks
 or near other genomic intervals. The input can be any track, and the output
@@ -201,9 +201,7 @@ database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In 
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
 
-The results for each of the three workflows can be found in the folder:
-
-data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
+The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
 
 ### Classification by GO categories and metabolic pathways
 
@@ -222,7 +220,7 @@ The input track contains 1889 in vivo binding fragments for E2F1 transcription
 factor. These fragments are found to overlap with 2187 Ensembl genes that are
 shown in the resulting table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)). 
 
-Functional classification by the HumanCyc pathways has found 3 metabolic
+Functional classification by the HumanCyc pathways has found 8 metabolic
 pathways:
 
 ![](media/b4b742305c09732b8ebf76d8c9f0a700.png)
