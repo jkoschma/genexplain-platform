@@ -181,7 +181,7 @@ In case the activated file is a table, the number of rows in the table will be
 indicated as Size. Optionally, a **Description** is shown as well, depending on
 whether it has been entered when the file was generated. By clicking on the edit icon, you may edit some of the information in a newly opened window. Depending on the file type, the edit window may look like this: 
 
-![](mediai/image094.png)
+![](media/image094.png)
 
 Gray fields cannot be edited, contents of fields with white background can be
 changed manually, additional information can be entered in the pink fields which
