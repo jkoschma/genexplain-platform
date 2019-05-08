@@ -440,7 +440,7 @@ table” option. You can also delete files (“Remove”; default value is “No
 way. Both functions are also available through the corresponding icons in the Control Panel on top of the different frames.
 While opening and deleting files works for nearly any file, the third option is different among distinct file types:
 
-**Tables** (![](media/d373ccf59d81fcd62088646e06661e33.emf))
+**Tables** (![](media/image100.png))
 
  When activating this function, a selection of different formats is provided for the file to be generated. It is also available through the export icon on top of the Tree Area.
 
@@ -448,7 +448,7 @@ While opening and deleting files works for nearly any file, the third option is 
 
 **Plots** (![](media/plot.png)) can be edited. Only under this option, their complete deletion is possible as well.
 
-## Tables
+### Tables
 
 Any table may be opened by double-clicking the corresponding name in the Tree
 Area. It will open under a new tab in the Work Space.
