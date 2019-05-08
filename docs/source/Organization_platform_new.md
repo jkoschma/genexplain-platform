@@ -47,14 +47,14 @@ explains the functionality provided:
 | Drug targets      | 11      | Working with different databases | 19      |
 
 The first workflow in nearly any Area is Load data, which is separately
-described in Chapter 3, before the individual Areas are being depicted.
+described , before the individual Areas are being depicted.
 
 Also in the Work Space, all major input requirements will have to be done, the
 progress of a workflow and the results output will appear here as well.
 
 ### Tree Area
 
-In the Tree Area (**B** in the figure of Section 2.1), you find three tabs:
+In the Tree Area (**B** in the above figure), you find three tabs:
 **Databases**, **Data**, and **Analyses**. Under each of these tabs, you find a
 tree-structured listing of contents: the available databases, the data files to
 work with, and the analysis methods you can apply. You can open any subdirectory
@@ -160,8 +160,7 @@ In the directory **Workflows**, you find basically the same functional groups of
 pre-defined workflows that are also listed on the Start page of the platform
 (Work Space). Please note that the first two items on the Start page are
 important preparatory tasks, but not workflows according to the definition of
-the geneXplain platform. Please, refer to the following Chapters for operating
-the pre-defined workflows and to Chapter 22 for creating your own workflows.
+the geneXplain platform. Indiviual workflow desscription is described as separate sections. 
 
 ### The Info Box
 
