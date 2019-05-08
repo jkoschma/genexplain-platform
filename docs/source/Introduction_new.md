@@ -17,7 +17,7 @@ this way, an extremely powerful system will grow in which a user-driven
 selection will ensure the best tools being the most successful ones.
 
 Besides providing a wide range of sophisticated Bricks (more than 60), the
-geneXplain platform also facilitates standard analyses through a number (61) of
+geneXplain platform also facilitates standard analyses through a number  of
 pre-composed workflows presently subsumed under 8 categories.
 
 The technology behind the geneXplain platform is BioUML, which has been
@@ -25,8 +25,8 @@ developed for many years at the Institute of Systems Biology in Novosibirsk. The
 architecture is open, so that own scripts can be easily loaded into the system,
 and new Bricks can be programmed and added by each skilled person.
 
-In the following, we will guide you first through the pre-defined workflows,
-before we are going to introduce you to the different parts of the system in a
+In the following, we will guide you through the pre-defined workflows, but
+before that we are going to introduce you to the different parts of the system in a
 more systematic way.
 
 Have fun with the system, and don’t hesitate to come back to us with any
