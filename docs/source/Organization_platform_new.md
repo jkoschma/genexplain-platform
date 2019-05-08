@@ -100,7 +100,7 @@ molecules, and the straight lines showing the simulation results.
 
 ![](media/fc7abe1b4dfa1d36e5ab5435dd7600b8.png)
 
-![](media/eef16d53ad94dbd2a831020ba119afd9.emf)
+![](media/image096.png)
 
 Under the heading **Projects**, you should initially find only one directory
 with your username, with the two subfolders **Data** and **Journal**. **Data**
@@ -127,8 +127,6 @@ On this tab, you find **Galaxy** tools, **JavaScript** functions, all
 **Methods** you may apply using the geneXplain platform, including the
 pre-defined **Workflows**:
 
-![](media/daf83940709882a50161bd5bda5f3873.png)
-
 ![](media/fad808fa028b3b4e8a01723e87ac303d.png)
 
 In the directory **Galaxy**, there are sorted groups of tools for mainly RNA-seq
@@ -152,8 +150,7 @@ put together that were specifically developed for the gXp platform.
 
 The directory **Methods** contains all individual tools, or Bricks, that perform
 specific tasks in one of the listed areas. A full listing of all analysis
-methods that are presently available is given in the [Help
-texts](http://platform.genexplain.com/help/index.html?analysis_methods.htm).
+methods that are presently available is given in the [Help texts](http://platform.genexplain.com/help/index.html?analysis_methods.htm).
 Each method can be launched either by double-clicking on the respective item,
 which will open the corresponding input mask in the Work Space, or through the
 context menu that you can open with a right-button mouse click on the method of
@@ -181,9 +178,7 @@ and files right under the activated node as **Size**.
 The information shown on the Info tab can be viewed in a separate window by
 clicking the button ![](media/info.png)
 
-In case the activated file is a table (icon![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-or derived images; see 25.2.3), the number of rows in the table will be
+In case the activated file is a table, the number of rows in the table will be
 indicated as Size. Optionally, a **Description** is shown as well, depending on
 whether it has been entered when the file was generated. By clicking on the edit icon, you may edit some of the information in a newly opened window. Depending on the file type, the edit window may look like this: 
 
@@ -203,9 +198,7 @@ initially always showing “Default”:
 Please, feel encouraged to find out the effects of the different views offered
 here.
 
-When you have a network diagram opened in the Work Space (**A** in the figure of
-chapter 2) and you select a molecule or reaction with one click, you find
-information about the selected element in the Info box.
+When you have a network diagram opened in the Work Space (**A** in the figure above) and you select a molecule or reaction with one click, you find information about the selected element in the Info box.
 
 #### Search
 
@@ -225,13 +218,8 @@ of the database, suffices to indicate this data resource in the Info Box:
 ![](media/5ba9394685b6c3af7cac56dab9ca5652.png)
 
 You can insert your search term (e.g., a gene symbol) into the field underneath.
-Clicking on the icon
-
-![](media/128ee81ad2100c1fcef053ce5f783d49.emf)
-
-launches the search. The search routine scans for exact matches, but use of
-wildcards is possible. Thus, searching for elk\* returns results for elk1,
-elk2p1, elk3, and elk4.
+Clicking on the icon ![](media/search.png) launches the search. The search routine scans for exact matches, but use of
+wildcards is possible. Thus, searching for elk\* returns results for elk1, elk2p1, elk3, and elk4.
 
 The results will be shown in the Operations Field, under the tab Search result.
 For instance, when searching in GeneWays for JAG1, the following result table
@@ -244,13 +232,9 @@ The search term is highlighted in bold.
 In some cases, the search results can be narrowed down by further specifying the
 search space in the Info Box.
 
-More about how to operate the individual databases will be explained in Chapter
-19.
-
 ### The Operations Field
 
-In the **Operations Field** (**D** in the figure of the Section introduction
-2.1) a number of essential functions to operate the geneXplain platform are
+In the **Operations Field** (**D** in the figure above) a number of essential functions to operate the geneXplain platform are
 provided on a number of tabs. How many and which tabs are shown depends very
 much on the context.
 
@@ -258,27 +242,21 @@ Please note that not all tabs are always visible due to space constraints. In
 these cases, double arrowheads left and right of the tabs indicate that there
 are additional ones, reachable by clicking on these double arrowheads.
 
-![](media/81112f0c55e994b03948409ddbbd702b.emf)
+![](media/image097.png)
 
 The function of the individual tabs will be explained in more detail in those
-sections where their effect is part of a certain operation. The full range of
-functions that you can make use of in the Operations Field is explained in
-greater detail in **Chapter 21.**
+sections where their effect is part of a certain operation. 
 
-How to organize the user work space
+## How to organize the user work space
 
-## Changing user password and personal data
+### Changing user password and personal data
 
 Your first password for the geneXplain platform is automatically generated and
 sent to you by e-mail. Once you enter the platform you can change your password
 and also have an option to edit your personal information.
 
 To change password and edit the personal data, select the *Account info* button
-(
-
-![](media/3675b0521753e8230736ab24b39897c5.png)
-
-) on the top menu control panel:
+(![](media/3675b0521753e8230736ab24b39897c5.png)) on the top menu control panel:
 
 ![](media/6a0d46921205ce1f181de778c0b92536.png)
 
@@ -314,22 +292,13 @@ all the analyses.
 ![](media/1de43b94c7395fcb7802d8921e815309.png)
 
 If you expand the Project folder, you can see the project that was created upon
-registration of your account (
-
-![](media/ab0f0406eb982519b2b38b759586bf59.png)
-
-), and if you expand it further, you can see the folder Data. This location,
-*data/Projects/User project/Data/* is exactly the location where you can upload
+registration of your account (![](media/ab0f0406eb982519b2b38b759586bf59.png)), and if you expand it further, you can see the folder Data. This location, *data/Projects/User project/Data/* is exactly the location where you can upload
 your data, and save all the analysis results.
 
 ![](media/db628dbc3681c744fbb84d7cb1a59f6c.png)
 
 Upon one mouse click on the folder Data, as in the picture above, you can apply
-the button
-
-![](media/14ec1077a2c1ea580222571519821744.emf)
-
-from the top control menu to create a new folder within the selected one.
+the button ![](media/image098.png) from the top control menu to create a new folder within the selected one.
 
 ![](media/4d07680434a62c4cffada207d0f0b33f.png)
 
@@ -360,7 +329,7 @@ access. You cannot save any files directly in the Examples or Public folder.
 However, you can copy tables and tracks from these two folders into your project
 area and then modify and work with them as you like.
 
-How to check information about the available work space
+### How to check information about the available work space
 
 To check your totally available work space, go with mouse over to the project
 name, so that it is highlighted in blue as shown below. In the Info Box you can
@@ -386,7 +355,7 @@ details (info\@genexplain.com).
 
 ### User toolbar
 
-In the Control Panel (see **E** in the figure of Section 2.1), the set of icons
+In the Control Panel (see **E** in the above figure), the set of icons
 on the left side is fixed by default, whereas the right side is customizable.
 Here, you can create a user-specific toolbar with your most frequently used
 analysis methods, workflows and datasets. To create your own toolbar you can
@@ -419,11 +388,7 @@ You can select your desired version of the database and fix it for your project
 using the *Project properties* feature. By default the latest version of all
 databases are applied.
 
-Project Properties form can be opened via the button
-
-![](media/9e17a94280337bb2f0bafbaee53097e1.png)
-
-in the control panel:
+Project Properties form can be opened via the button ![](media/9e17a94280337bb2f0bafbaee53097e1.png) in the control panel:
 
 ![](media/b645eaee1074dea4bf728e5cadc5dcf3.png)
 
@@ -473,26 +438,16 @@ this way.
 
 Files can also be opened by right-clicking on them and selecting the “Open
 table” option. You can also delete files (“Remove”; default value is “No”) this
-way. Both functions are also available through the corresponding icons (
-
-![open.gif](media/0b60d59819bc65a21b99b68ded60108f.gif)
-
-and
-
-![remove_de.gif](media/0196ec0a9b06797265d023f921811da8.gif) , resp.) in the Control Panel on top of the different frames.
-While opening and deleting files works for nearly any file, the third option is
-different among distinct file types:
+way. Both functions are also available through the corresponding icons in the Control Panel on top of the different frames.
+While opening and deleting files works for nearly any file, the third option is different among distinct file types:
 
 **Tables** (![](media/d373ccf59d81fcd62088646e06661e33.emf))
 
-  When activating this function, a selection of different formats is provided for the file to be generated. It is also available through the icon
-![](media/7b51f8cb4f6fd7797bc3872a20a42599.gif)  export.gif on top of the Tree Area.
+ When activating this function, a selection of different formats is provided for the file to be generated. It is also available through the export icon on top of the Tree Area.
 
-**Diagrams** (![](media/5b73f941e915d5a9a47508c27730b787.emf)) 
-can be expanded/collapsed to show/hide their components (nodes and edges); this function can also be accessed by clicking on the white arrowhead next to the diagram icon.
+**Diagrams** (![](media/image099.png)) can be expanded/collapsed to show/hide their components (nodes and edges); this function can also be accessed by clicking on the white arrowhead next to the diagram icon.
 
-**Plots** (![](media/e16c5085d2766bce7561c588951ab4c0.emf))
-can be edited. Only under this option, their complete deletion is possible as well.
+**Plots** (![](media/plot.png)) can be edited. Only under this option, their complete deletion is possible as well.
 
 ## Tables
 
@@ -557,17 +512,9 @@ the next or previous site of this track:
 
 ![](media/88531e9d854ca7d1b250f20b006e9b04.png)
 
-Use the buttons
+Use the buttons ![](media/6fb7177e3985ae70dbe54dc65e9ce8e5.png) in the top control menu to zoom in and out.
 
-![](media/6fb7177e3985ae70dbe54dc65e9ce8e5.png)
-
-in the top control menu to zoom in and out.
-
-The buttons
-
-![](media/64581c4d344e6bf39275c9ffa53b6c0e.png)
-
-help to shift the visible part to the left or to the right.
+The buttons ![](media/64581c4d344e6bf39275c9ffa53b6c0e.png) help to shift the visible part to the left or to the right.
 
 The same effect can be also achieved by dragging the picture with the mouse.
 
@@ -581,7 +528,7 @@ several tracks. This sub-folder is highlighted in blue in the screenshot below.
 As an example, two tracks have been added, the track with DNAse hypersensitive
 sites from the ENCODE project (*DNAse HS sites clustered ENCODE UCSC hg19*), and
 the track with the experimentally proven transcription factor binding sites from
-the TRANSFAC® database (*TRANSFAC 2013.4 human sites hg19*).
+the TRANSFAC® database (*TRANSFAC 2018.1 human sites hg19*).
 
 ![](media/330d5e4e45b6960ba94b6cceff58df6d.png)
 
@@ -635,33 +582,14 @@ To facilitate orientation in large diagrams, individual edges are highlighted
 Double-click on an individual node will show information about this component
 under the Info tab of the Info Box (this works for BioModels).
 
-Diagrams can be zoomed in and zoomed out, by click on the buttons
+Diagrams can be zoomed in and zoomed out, by click on the buttons ![](media/65b191751b9996cc91860bdf1bdc58f0.png) or 
+![](media/8ae7724b79ee5f10a8cfc01ef9fd5a04.png), correspondingly.
 
-![](media/65b191751b9996cc91860bdf1bdc58f0.png)
-
-or
-
-![](media/8ae7724b79ee5f10a8cfc01ef9fd5a04.png)
-
-, correspondingly.
-
-They can be exported in several formats by clicking the button
-
-![](media/2fde7d826d1a2a88928490c9133c4556.png)
-
-.
-
+They can be exported in several formats by clicking the button ![](media/2fde7d826d1a2a88928490c9133c4556.png), 
 ![](media/dc11c551d7ef6d67cc48328930b74dcd.png)
 
-Diagrams can be zoomed in and zoomed out, by clicking on the buttons
-
-![](media/b59c404c4487a1135a2eab98e0bde155.png)
-
-or
-
-![](media/56e2b324f8d8ed08a3d6c714982a193b.png)
-
-, respectively.
+Diagrams can be zoomed in and zoomed out, by clicking on the buttons ![](media/b59c404c4487a1135a2eab98e0bde155.png) or 
+![](media/56e2b324f8d8ed08a3d6c714982a193b.png), respectively.
 
 Diagram nodes can be multi-selected via the [Ctrl] button (picture below).
 Selected nodes can be used for *Alignments* or *Distribution* editing within the
@@ -678,20 +606,11 @@ After pushing one of the buttons in the toolbar, the selected nodes in the
 diagram are aligned accordingly. The picture below shows an *Up alignment* of
 all nodes.
 
-![](media/ec7d55b5557d8d4c4bdf755732303760.png)
+![](media/ec7d55b5557d8d4c4bdf755732303760.png) 
 
-Two distribution methods horizontally
-
-![](media/9e7d2ff171070050fd2e2786ea7e7442.png)
-
-and vertically
-
-![](media/613428b662c50d261e39bccea9d5cbd5.png)
-
-are available in the tool bar after opening a diagram in the workspace. After
-pushing one of the buttons in the toolbar, the selected nodes in the diagram are
-positioned accordingly. The picture below shows a *Vertically distribution* of
-one node.
+Two distribution methods horizontally ![](media/9e7d2ff171070050fd2e2786ea7e7442.png) and vertically 
+![](media/613428b662c50d261e39bccea9d5cbd5.png) are available in the tool bar after opening a diagram in the workspace. After
+pushing one of the buttons in the toolbar, the selected nodes in the diagram are positioned accordingly. The picture below shows a *Vertically distribution* of one node.
 
 ![](media/a690135340a39d871eca1c558f36f2f2.png)
 
