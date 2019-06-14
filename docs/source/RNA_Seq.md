@@ -40,7 +40,7 @@ data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
 It contains 12 files in SRA format as shown below. Please note, this folder
 occupies **1.5 GB** work space.
 
-![](media/image086.png)
+![](media/image102.png)
 
 The output folder name and folder path is automatically created, but can be
 changed in a user-specific way.
