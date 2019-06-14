@@ -25,7 +25,7 @@ To launch the workflow, follow these steps:
 **Step1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/dcb1fb911b888332b4afc28c07733598.png)
+![](media/image101.png)
 
 **Step 2.** Specify the folder with the SRA files in the field **Input folder**.
 You can drag it from your project within the tree area and drop it in the box
