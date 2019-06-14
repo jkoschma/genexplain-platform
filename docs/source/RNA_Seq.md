@@ -369,12 +369,12 @@ Wait until the workflow is completed.
 
 The **Output folder** contains the two tables, *Fusion summary* and *Fusion
 isoforms*; for this example, let’s consider the results folder located under
-[Examples] [https://platform.genexplain.com/bioumlweb/#de=data/Examples/Detection
-of novel fusion transcripts from RNA-seq data%2C 76mer fastq
-reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq (Gene fusions from RNA-seq)/)
-(data/Examples/Detection of novel fusion transcripts from RNA-seq data, 76mer
+Examples: 
+[data/Examples/Detection of novel fusion transcripts from RNA-seq data, 76mer
 fastq reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq (Gene fusions from
-RNA-seq)/]. It is highlighted in blue in the figure below:
+RNA-seq)]. 
+
+It is highlighted in blue in the figure below:
 
 ![](media/image089.png)
 
