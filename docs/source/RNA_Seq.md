@@ -138,7 +138,7 @@ To launch the Bowtie tool, follow these steps:
 *Alignment of FASTQ with Bowtie* option in the *RNA-seq preprocessing*
 subsection. It will open in the main Work Space and looks as shown below:
 
-![](media/f69ab68434c0aee98803ee950c4af397.png)
+![](media/image103.png)
 
 **Step 2.** Specify the reference genome.
 
