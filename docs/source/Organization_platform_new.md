@@ -33,18 +33,7 @@ pre-composed workflows, which you can launch by directly activating the given
 hyperlinks.
 
 The listings of each Area introduce each Chapter of this User Guide that
-explains the functionality provided:
-
-| Area              | Chapter | Area                             | Chapter |
-|-------------------|---------|----------------------------------|---------|
-| RNA-seq           | 4       | Pathways                         | 12      |
-| Proteomics        | 5       | NGS                              | 13      |
-| Epigenomics       | 6       | Genomic variants                 | 14      |
-| ChIP-seq          | 7       | Metabolism                       | 15      |
-| Sequence analysis | 8       | Popular functions                | 16      |
-| miRNA             | 9       | Gene or protein list             | 17      |
-| Microarrays       | 10      | Complete list of workflows       | 18      |
-| Drug targets      | 11      | Working with different databases | 19      |
+explains the functionality provided. 
 
 The first workflow in nearly any Area is Load data, which is separately
 described , before the individual Areas are being depicted.
