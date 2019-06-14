@@ -70,29 +70,29 @@ the XLS format among others. Verify the automatically detected format and, if
 necessary, refine it manually using the drop-down menu. Next, verify the
 following fields.
 
-“Name for table” – the name of the uploaded Excel table is shown automatically;
+**Name for table**  – the name of the uploaded Excel table is shown automatically;
 you can modify it, and under this name the table will be shown in the tree after
 import is completed. “Sheet name” – with the help of the drop-down menu specify
 which page of the Excel file should be imported (for Excel files with multiple
 pages).
 
-“Header row index” – the number of header rows in the Excel table is detected
+**Header row index** – the number of header rows in the Excel table is detected
 automatically, in this example there is one header row. Verify automatic
 detection and if necessary correct the number. “First data row index” – the
 number of the row where the data start is detected automatically, in this
 example the data start in the second row and in the field figure “2” is shown.
 Verify automatic detection and, if necessary, correct the number.
 
-“Column for ID” – use the drop-down menu to indicate which column in the
+**Column for ID** – use the drop-down menu to indicate which column in the
 imported table contains unique identifiers. The column “ID” is suggested
 automatically. Verify automatic suggestion and refine it as necessary.
 
-“Type of the table” – this field aims to specify what type of IDs are used as
+**Type of the table** – this field aims to specify what type of IDs are used as
 identifiers in the imported Excel table. Use the drop-down menu to specify. In
 this example IDs in the Excel table correspond to Entrez gene IDs, and
 correspondingly in the figure below “Genes: Entrez” is specified.
 
-“Species” – use the drop down menu to specify the biological species that
+**Species** – use the drop down menu to specify the biological species that
 corresponds to the IDs.
 
 ![](media/873ad77300b299852ef26ac907aa702f.png)
