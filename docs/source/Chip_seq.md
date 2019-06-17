@@ -670,10 +670,7 @@ The ChIP-seq experimental technology is widely applied to a variety of
 biological problems, in particular to study genome-wide histone modification
 profiles, e.g. histone methylation and histone acetylation profiles.
 Correspondingly, the same workflow in the platform can be used to analyze
-histone modification profiles as well. The example of such an application to
-histone acetylation peaks in SAHA-treated human vascular endothelial cells is
-described in Section 6.1.3. Please refer to this section for details how to
-launch the workflow.
+histone modification profiles as well. 
 
 Here, let’s consider the results of the workflow application to find composite
 modules in the ChIP-seq peaks identified for in-vivo-bound fragments of
