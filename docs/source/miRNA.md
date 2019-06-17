@@ -38,10 +38,9 @@ of the field **Input table**. Alternatively, you may click on the pink field
 gene set as shown below.
 
 The further steps of the workflow are demonstrated on the example file, which
-can be found in the geneXplain platform under:
+can be found here:
 
-data/Examples/miRNA binding site prediction (miRNA-155 target
-genes)/Data/hsa-miR-155-5p published target genes
+[http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes]
 
 This table contains four genes that are already published targets for one
 particular miRNA, hsa-miR-155-5p, for which several target genes have been
@@ -90,17 +89,14 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default.
 
-Let’s consider the results.
+**Results**
+Output folder is found here:
 
-[data/Examples/miRNA binding site prediction (miRNA-155 target
-genes)/Data/hsa-miR-155-5p published target genes (miRNA binding
-sites)] 
+[http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes%20miRNA]
 
 The result folder contains the following tables: Ensembl transcript (![](media/58a651441dabd63ab3c797123cddc94c.png)),
-Site output (![](media/track.jpeg)) with all predicted miRNA binding sites, 
-Site output track (![](media/63c261f0c221451d4288c10e2d1294d3.png)) 
-for visualization of predicted miRNA sites, Summary output (![](media/d373ccf59d81fcd62088646e06661e33.emf)) and 
-Transcript region track ![](media/cc436960ae1f31127ebd5268d7e2f8d7.png)
+Site output and summary output tables(![](media/table.png)), Site output track (![](media/track.png)) 
+for visualization of predicted miRNA sites,  and Transcript region track ![](media/cc436960ae1f31127ebd5268d7e2f8d7.png)
 
 ![](media/c7575584eeb649457a4235774d69086b.png)
 
