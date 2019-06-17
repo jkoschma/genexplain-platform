@@ -8,8 +8,8 @@
 
 Potential master regulators of the processes analyzed in a typical proteomics
 experiment can be identified with the aid of pathway databases. The geneXplain
-platform support working with the TRANSPATH database (5.1.1.1; license required)
-or with the public GeneWays database (5.1.1.2). More details about both these
+platform support works with the TRANSPATH database (license required)
+or with the public GeneWays database. More details about both these
 database can be found in the databases section.
 
 ### Find master regulators with TRANSPATH®
@@ -42,9 +42,9 @@ gene set as shown below.
 
 The further steps of the workflow are demonstrated by means of the genes shown
 to be up-regulated in one of the pre-prepared examples. The pertinent example
-file can be found in the geneXplain platform online under the path:
+file can be found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)]
 
 ![](media/ba4dc3a97115a0dc173550cd7fb09f54.png)
 
@@ -145,7 +145,7 @@ gene/protein tables in the input folder.
 The output is a folder which contains subfolders with the results for each
 individual gene/protein table.
 
-#### Interpretation of the results
+### Interpretation of the results
 
 **Score**
 
