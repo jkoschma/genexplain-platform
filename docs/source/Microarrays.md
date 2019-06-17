@@ -1558,7 +1558,7 @@ shown. They are hyperlinked to the corresponding classification categories:
 
 ![](media/e7e07431e98e27d46b68c7fa7c46e9de.png)
 
-# Analyze regulatory regions
+## Analyze regulatory regions
 
 This set of workflows helps to find putative TF binding sites in the DNA
 sequences under study. There are several workflows in this group that perform
@@ -1567,7 +1567,7 @@ calculated from ChIP-seq data, or in any input DNA sequences. This group of
 workflows is designed using the core functionality of a “site search on gene
 set” analysis as described in the methods description.
 
-## Motif quality analysis
+### Motif quality analysis
 
 This tool analyzes the quality of a motif model. The “Motif quality analysis”
 item is located in the NGS folder of the analysis methods
@@ -1689,11 +1689,11 @@ The matrix logo output image is as shown below:
 Each matrix image can be exported in either .jpeg, .png, or .bmp file formats
 using the ‘Export document’ button.
 
-## Identify enriched TF sites in promoters
+### Identify enriched TF sites in promoters
 
-### Version 2.0 (Adjusted p-values)
+#### Version 2.0 (Adjusted p-values)
 
-### TRANSFAC®
+##### TRANSFAC®
 
 This workflow is designed to find individual motifs enriched in the promoters of
 the input gene set as compared with a background set (No set). In the first part
@@ -1818,7 +1818,7 @@ Table view on the track *yes sites* is the following:
 
 ![](media/6d6f80c50f844a023878d4e433a3fe32.png)
 
-### Sites table
+**Sites table**
 
 ![](media/50739faeef67c05f5b5a979e887b7764.png)
 
@@ -1869,19 +1869,18 @@ This report can be exported in HTML format for further use.
 **Note** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### GTRD
+##### GTRD
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. It is very similar to the
 workflow described above in Section 10.4. The only difference is in the PWM
 library applied. Here, site search is done with the help of the GTRD library
-(see 19.8 for further details about this library).
 
 For the input form and description of the results folder, please refer to the description of the workflow Analyze Regulatory regions
 
-## Version 1.2 (Classical)
+#### Version 1.2 (Classical) 
 
-### TRANSFAC®
+##### TRANSFAC®
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. Site search is done with the
@@ -1957,13 +1956,12 @@ check what the default parameters are, or modify them according to your needs.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### GTRD
+##### GTRD
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. It is very similar to the
 workflow described above using TRANSFAC(R) database. The only difference is in the PWM
 library applied. Here, site search is done with the help of the GTRD library
-(see 19.8 for further details about this library).
 
 For the input form and description of the results folder, please refer to
 description above. 
@@ -2139,7 +2137,7 @@ modules.
 **Note***.* This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### Version 1.2 (Classical) with TRANSFAC®
+#### Version 1.2 (Classical) with TRANSFAC®
 
 This workflow enables the identification of combinations of several TFBSs in the
 promoters of the genes under study (Yes-set). Such combinations of sites are
@@ -2205,7 +2203,7 @@ and No sets and on the number of iterations. The recommended size of the Yes set
 is 150 genes maximum, and the recommended size of the No set is 300 genes
 maximum.
 
-## Results
+**Results**
 
 The results folder consists of two folders and one table as shown below:
 
@@ -2333,8 +2331,7 @@ The table **Enriched Motifs** (
 ![](media/036ef405a55496f4a10ee3df573cec2c.png)
 
 ) contains those site models, here TRANSFAC® matrices, which are enriched in the
-Yes set in comparison with the No set. More details on the result can be found
-in section 10.4.3.1.
+Yes set in comparison with the No set. 
 
 The table Molecules Orthologs have a list of molecules from the input gene set
 with their site search results as shown below:
@@ -2413,11 +2410,11 @@ an example, model V\$TBX20_02 finds 30 sites in the promoter of Abca1. The
 column V\$TBX20_02 positions contains all single site positions for the first
 model in the promoter of Abca1, e.g. -516 from TSS.
 
-# Drug targets
+## Drug targets
 
 ![](media/image030.png)
 
-## Find drug targets with TRANSFAC® and GeneWays
+### Find drug targets with TRANSFAC® and GeneWays
 
 This is very similar to the workflow described in greater detail below with the only difference being the pathway database applied for network analysis. Here the search for master regulatory molecules is performed with the protein-protein interaction network of the GeneWays database. Because of the high connectivity between molecules in GeneWays, by default 4 steps upstream of the input list of TFs are considered for the search for master regulators, as compared with 10 steps when applying the TRANSPATH® database. A diagram for the top master regulator as suggested from a GeneWays-based analysis is shown below in a force-directed layout: 
 
@@ -2431,7 +2428,7 @@ For the input form of this workflow and for the description of the corresponding
 
 The geneXplain upstream analysis is an integrated promoter (TRANSFAC®) and pathway (TRANSPATH®) analysis to discover unanticipated causal relationships in your data.
 
-### Upstream analysis (TRANSFAC® and TRANSPATH®)
+#### Upstream analysis (TRANSFAC® and TRANSPATH®)
 
 To launch the workflow, open the workflow input form from the Start page:
 
@@ -2473,13 +2470,13 @@ location of the results folder and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-#### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The result folder contains several files and one subfolder:
 
 ![](media/7c75fc51d2bf2a43e208938ff09437ef.png)
 
-#### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
@@ -2496,14 +2493,14 @@ The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298
 
 ![](media/image033.png)
 
-#### Tip for working with the diagrams
+**Tip for working with the diagrams**
 
 By default network diagrams are shown in the vertical hierarchical layout. The
 layout can be interactively changed into horizontal hierarchical, or force
 directed, or orthogonal layouts as described in diagram layouts. Expression data can
 be mapped on the diagrams as described in the expression mapping section.
 
-### Results of the promoter analysis
+**Results of the promoter analysis**
 
 Along with the master regulatory molecules, this workflow returns the results of the promoter analysis, including TFBSs enriched in the promoters of the Yes set as compared with the No set, see *summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)). The tracks with the Yes and No promoters and with the TF binding sites (![](media/84954cc17be5c089cabbc26a40e58597.png)) are also included in the output. In the screenshot below the results of this workflow are shown with the subfolder Site search -1000 +100 opened:
 
@@ -2512,7 +2509,7 @@ Along with the master regulatory molecules, this workflow returns the results of
 
 **Note***.* This workflow is available together with valid TRANSFAC® and TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
-## Enriched upstream analysis
+#### Enriched upstream analysis
 
 This workflow enables a complete upstream analysis using the newest algorithm to detect enriched transcription factor binding sites (version 2.0), resulting in the identification of master regulators upstream from the transcriptional key molecules. To launch the workflow, open the workflow input form from the Start page:
 
@@ -2562,13 +2559,13 @@ location of the results folder and define its name.
 **Step 9**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC>1) (enriched upstream analysis_TF and TP); it contains several files:
 
 ![](media/image034.png)
 
-#### Enriched motifs
+**Enriched motifs**
 
 The list of motifs, which were identified during the first part of the workflow
 and filtered with enrichment fold \>1 can be found in the table
@@ -2590,7 +2587,7 @@ HGNC gene symbol, species, and site model (TRANSFAC® PWM name).
 This list of transcription factors is the input for the second part of the
 workflow, the master regulator search.
 
-#### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
@@ -2605,7 +2602,7 @@ The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298
 
 **Note***.* This workflow is available together with valid TRANSFAC® and TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
-### Upstream analysis with feedback loop
+#### Upstream analysis with feedback loop
 
 This workflow enables a complete upstream analysis, detecting enriched
 transcription factor binding sites and resulting in the identification of master
@@ -2645,13 +2642,13 @@ location of the results folder and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-#### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The example result folder is here: data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upstream analysis with feedback loop (Transfac and Transpath) and contains several files.
 
 ![](media/2a96575023aea79cd1816705428ac072.png)
 
-### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
