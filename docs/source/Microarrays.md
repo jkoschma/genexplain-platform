@@ -702,7 +702,8 @@ The input table may look like the one shown below. This table contains the
 column logFC (LogFoldChange). This table is an output of the Limma method. Input
 table used for this example can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20
+Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl]
 
 For best GSEA results, input the table with all genes analyzed, e.g. all genes
 present on the chip in the microarray experiment.
@@ -735,8 +736,7 @@ The GSEA results are described in detail in a separate section “**About the GS
 analysis and the interpretation of the results**”. The output folder can be
 accessed through the path:
 
-data/Examples/HCV infection in liver GSE31193, Affymetrix U133 Plus 2.0
-microarray/Data/IFN 24h vs Control/IFN.24hours vs Control Genes Ensembl
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl%20(Enrichment%20analysis)]
 
 #### GSEA by GO categories, signaling pathways and diseases
 
@@ -837,12 +837,12 @@ Step 5. Press the button [Run workflow] and wait till the workflow is completed.
 **Results**
 
 The results folder contains one table with the results of the enrichment
-analysis (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) by the selected ontology. It can be accessed using the URL:
+analysis by the selected ontology. It can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN%2024h%20vs%20Control%20DEGs%2C%20aj%20p-val%3C0.05%20Genes%20Ensembl%20(Enrichment%20analysis%20GO%20(biological%20process))>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20
+Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN%2024h%20vs%20Control%20DEGs%2C%20aj%20p-val%3C0.05%20Genes%20Ensembl%20(Enrichment%20analysis%20GO%20(biological%20process))]
 
-The GSEA results are described in detail in a separate section “**About the GSEA
-analysis and the interpretation of the results”.**
+The GSEA results are described in detail in a separate section “**About the GSEA analysis and the interpretation of the results”.**
 
 ### Functional classification
 
@@ -889,11 +889,10 @@ the field Input table. Alternatively, you may click on the pink field “select
 element” and a new window will be opened, where you can select the input gene
 set as shown below.
 
-The further steps of the workflow are demonstrated for the genes shown to be
-up-regulated in one of the pre-prepared examples. The pertinent example file can
-be found in the geneXplain platform under:
+The further steps of the workflow are demonstrated for the upregulated genes shown here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)
+%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes]
 
 Step 3. Specify the biological species of the input set in the field Species by
 selecting the required biological species from the drop-down menu.
@@ -909,15 +908,14 @@ The workflow is running as shown below, wait till it is completed.
 
 ![](media/c2f49074c6c3a7b8606cc2a05b2abf77.png)
 
-The results folder can be found in the examples folder under the path :
+The results folder can be found here:
 
- data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes (Mapping to
-ontologies)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20
+(Mapping%20to%20ontologies)]
 
+ 
 It contains several tables with the resulting mapping, one table each for the
-applied ontological groups (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)), as well as one gene table
-(![](media/3376044660b26a160e52442bb6a63338.png)) as shown below.
+applied ontological groups, as well as one gene table (![](media/3376044660b26a160e52442bb6a63338.png)) as shown below:
 
 ![](media/8b6964760a62589c3195e8201bb908f0.png)
 
@@ -947,7 +945,7 @@ numbers of hits. The genes mapped to each category are explicitly listed in the
 column Hit names. As the lists can get quite long, only a few genes are shown by
 default in each row. To get the full list, press [more].
 
-Tip The hits for one or several selected rows can be saved as a separate gene
+**Tip** The hits for one or several selected rows can be saved as a separate gene
 table. This can be done with the button *Save hits* in the top control menu.
 Such genes tables can be analyzed further, e.g. to find master regulatory
 molecules in the networks, and to identify transcription factors that might
@@ -973,12 +971,7 @@ They are hyperlinked to the corresponding classification categories.
 
 ![](media/a5e8440d21ab45d28267b13f667732cf.png)
 
-**The table Ensembl genes** (
-
-![](media/78414bb22b2a035950dd8d0572dc23c8.png)
-
-). The input gene or protein table is converted to a table with Ensembl gene
-IDs, and the result is shown in this table. For example, if your input was a
+**The table Ensembl genes** (![](media/78414bb22b2a035950dd8d0572dc23c8.png)). The input gene or protein table is converted to a table with Ensembl gene IDs, and the result is shown in this table. For example, if your input was a
 table with UniProt IDs, it is converted into Ensembl gene IDs and included in
 the results folder of this workflow.
 
@@ -1014,15 +1007,11 @@ set as shown below.
 
 The further steps of the workflow are demonstrated for the genes shown to be
 up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
-examples. The pertinent example file can be found in the geneXplain platform
-under:
+examples, can be found here:
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC\>1)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)]
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Downregulated Ensembl genes filtered (log
-FC\<-2)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1034,24 +1023,16 @@ location of the result folder and define its name.
 
 **Step 5.** Press the [Run workflow] button.
 
-When the workflow is completed, the result folder is opened by default. Path to
-access this result folder is:
+When the workflow is completed, the result folder is opened by default, it is found here:
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20
+(log%20FC%3E1.5)_Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Mapping%20to%20ontologies%20and%20compare)]
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (log
-FC\>1.5)_Downregulated Ensembl genes filtered (log FC\<-2) (Mapping to
-ontologies and compare)
 
 ![](media/b63eb2aaa64393221307e2bebda8d847.png)
 
 The result folder contains the three subfolders *GO* for all three GO categories
-applied in this workflow and two tables (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf))
-
+applied in this workflow and two tables (![](media/3376044660b26a160e52442bb6a63338.png)). The two tables correspond to the input tables with the identifiers converted into Ensembl gene IDs. Each subfolder contains two tables with the mapped ontology results, 
+one table with the analysis comparison result and one plot.
 
 ##### Multiple gene sets
 
@@ -1082,13 +1063,12 @@ HumanCyc, TF classification and TRANSPATH® pathways.
 The genes in the input table are mapped to the TRANSPATH® pathways using the
 latest TRANSPATH® release available in the platform. The columns ID, Title and
 Group size present information about the TRANSPATH® pathways significantly
-enriched among your input genes. Results Folder in the Examples can be accessed
-using the path:
+enriched among your input genes. Results Folder is found here:
 
- data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes (Mapping to
-ontologies Transpath)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20
+(Mapping%20to%20ontologies%20Transpath)]
 
+ 
 ![](media/8377d9aa981559b3c16c4199e744aaa5.png)
 
 The pathway identifiers provide a link to open the corresponding pathway as a
@@ -1107,35 +1087,28 @@ menu.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
-#### Gene sets and comparison
+##### Mapping to ontologies and comparison for two gene sets (TRANSPATH®)
 
-##### Mapping to GO ontologies and comparison for two gene sets (HumanPSD™):
+The specialty of this workflow in comparison with the one described above is in
+the ontologies applied. This workflow is designed to map two input tables to the
+seven following ontologies, the public Gene Ontology categories (*biological
+process*, *molecular function* and *cellular component*), TRANSPATH®, Reactome
+and HumanCyc pathways as well as transcription factor classification to identify
+hits and to compare the results. Similar to the workflows described above, the
+input can be any gene or protein tables. In the first step, the input tables are
+converted into two tables with Ensembl Gene IDs. These tables are subjected to a
+functional mapping. The last comparison step is based on the method
+*analyses/Methods/Statistical analysis/Compare analysis results*, (![](media/3a3f0dbe5893982a717cf1c1267b8147.png))
 
-The overall idea of this workflow is similar to that the one described above.
-However, this workflow is designed to map two input tables, to identify hits and
-to compare the results according to the eight particular ontologies. These are
-five proprietary ontologies (BIOBASE GmbH), namely the HumanPSD™-curated Gene
-Ontology categories (HumanPSD™ biological process, HumanPSD™ molecular function
-and HumanPSD™ cellular component), HumanPSD™ disease and TRANSPATH® pathways, as
-well as three public ontologies, Reactome pathways, HumanCyc metabolic pathways
-and the transcription factor classification.
+The comparison can help to reveal items that show different enrichment across
+certain conditions.
 
-Similarly to the workflows described above, the input can be any gene or protein
-tables. In the first step, the input tables are converted into two tables with
-Ensembl Gene IDs. These tables are then subjected to a functional mapping to the
-eight listed ontologies in parallel. The last comparison step is based on the
-method *analyses/Methods/Statistical analysis/Compare analysis results*, icon
-
-![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
-
-. Please refer to Section 16.3.1 for details on this particular analysis method.
-The comparison helps to reveal ontological categories that are different between
-two input data sets. To launch the workflow, follow these steps:
+To launch the workflow, follow these steps:
 
 **Step 1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/6a03c9e6bef2b8f244988eab32d67584.png)
+![](media/47d578610528aea1c575de6c2542ac7d.png)
 
 **Step 2.** Specify the input tables 1 and 2. The input gene sets might be lists
 of differentially regulated genes or any gene or protein list of interest. You
@@ -1149,9 +1122,9 @@ up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples. The pertinent example file can be found in the geneXplain platform
 under:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1165,18 +1138,15 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default.
 
-![](media/97f304ae8f560e3b44f194a3d1737e63.png)
+![](media/856dfb3bde0a203ee70fe7f936cc705d.png)
 
-The result folder contains eight subfolders; one subfolder for each applied
-ontology and two tables (
+The result folder contains the seven subfolders; one subfolder for each applied
+ontology and two tables (![](media/3376044660b26a160e52442bb6a63338.png)). The two tables correspond to the input tables with the identifiers converted into Ensembl gene IDs. 
 
-![](media/3376044660b26a160e52442bb6a63338.png)
+Each subfolder contains two tables with the mapped ontology/pathway/classification results, one table with the analysis comparison result and one plot. Individual tables are described in the previous sections.
 
-). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology/pathway/classification results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf)).
+**Note.** This workflow is available together with a valid TRANSPATH® license.Please, feel free to ask for details (info\@genexplain.com).
 
-Note**.** This workflow is available together with a valid HumanPSD™ license.
-Please, feel free to ask for details (info\@genexplain.com).
 
 ##### Multiple gene sets
 
@@ -1197,9 +1167,9 @@ the input tables.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### Mapping to GO categories, signaling pathways and diseases
+#### Mapping to GO categories, signaling pathways and diseases
 
-#### Single gene or protein table
+##### Single gene or protein table
 
 The steps of this workflow are the same as described for other mapping to
 ontologies workflow. The difference is in the ontologies applied. In this
@@ -1208,15 +1178,7 @@ HumanPSD™ cellular components, HumanPSD™ molecular functions, HumanPSD™ di
 Reactome, HumanCyc, TF classification and TRANSPATH® pathways.
 
 The results folder contains several tables with the resulting mapping, one table
-each for each applied ontological group (
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-), as well as one gene table (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-) as shown below.
+each for each applied ontological group , as well as one gene table (![](media/3376044660b26a160e52442bb6a63338.png)) as shown below.
 
 ![](media/453978cc6ac91b2ab841cceac19c5e88.png)
 
@@ -1239,32 +1201,31 @@ Toxicogenomic Database, where you can find more details about this disease:
 HumanPSD™/TRANSPATH® license. Please, feel free to ask for details
 (info\@genexplain.com).
 
-#### Gene sets and comparison
 
-##### Mapping to ontologies and comparison for two gene sets (TRANSPATH®)**
+##### Mapping to GO ontologies and comparison for two gene sets (HumanPSD™):
 
-The specialty of this workflow in comparison with the one described above is in
-the ontologies applied. This workflow is designed to map two input tables to the
-seven following ontologies, the public Gene Ontology categories (*biological
-process*, *molecular function* and *cellular component*), TRANSPATH®, Reactome
-and HumanCyc pathways as well as transcription factor classification to identify
-hits and to compare the results. Similar to the workflows described above, the
-input can be any gene or protein tables. In the first step, the input tables are
-converted into two tables with Ensembl Gene IDs. These tables are subjected to a
-functional mapping. The last comparison step is based on the method
-*analyses/Methods/Statistical analysis/Compare analysis results*, icon
+The overall idea of this workflow is similar to that the one described above.
+However, this workflow is designed to map two input tables, to identify hits and
+to compare the results according to the eight particular ontologies. These are
+five proprietary ontologies (BIOBASE GmbH), namely the HumanPSD™-curated Gene
+Ontology categories (HumanPSD™ biological process, HumanPSD™ molecular function
+and HumanPSD™ cellular component), HumanPSD™ disease and TRANSPATH® pathways, as
+well as three public ontologies, Reactome pathways, HumanCyc metabolic pathways
+and the transcription factor classification.
 
-![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
+Similarly to the workflows described above, the input can be any gene or protein
+tables. In the first step, the input tables are converted into two tables with
+Ensembl Gene IDs. These tables are then subjected to a functional mapping to the
+eight listed ontologies in parallel. The last comparison step is based on the
+method *analyses/Methods/Statistical analysis/Compare analysis results*,![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
 
-. The comparison can help to reveal items that show different enrichment across
-certain conditions.
-
-To launch the workflow, follow these steps:
+The comparison helps to reveal ontological categories that are different between
+two input data sets. To launch the workflow, follow these steps:
 
 **Step 1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/47d578610528aea1c575de6c2542ac7d.png)
+![](media/6a03c9e6bef2b8f244988eab32d67584.png)
 
 **Step 2.** Specify the input tables 1 and 2. The input gene sets might be lists
 of differentially regulated genes or any gene or protein list of interest. You
@@ -1278,12 +1239,11 @@ up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples. The pertinent example file can be found in the geneXplain platform
 under:
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC\>1)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)]
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Downregulated Ensembl genes filtered (log
-FC\<-2)
+[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1297,21 +1257,21 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default.
 
-![](media/856dfb3bde0a203ee70fe7f936cc705d.png)
+![](media/97f304ae8f560e3b44f194a3d1737e63.png)
 
-The result folder contains the seven subfolders; one subfolder for each applied
-ontology and two tables (
+The result folder contains eight subfolders; one subfolder for each applied
+ontology and two tables (![](media/3376044660b26a160e52442bb6a63338.png)). 
 
-![](media/3376044660b26a160e52442bb6a63338.png)
+The two tables correspond to the input tables with the identifiers converted
+into Ensembl gene IDs. Each subfolder contains two tables with the mapped ontology/pathway/classification results, one table with the analysis comparison result and one plot.
 
-). The two tables correspond to the input tables with the identifiers converted
-into Ensembl gene IDs. Each subfolder contains two tables (![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology/pathway/classification results, one table (![](media/d373ccf59d81fcd62088646e06661e33.emf)) with the analysis comparison result and one plot (![](media/e16c5085d2766bce7561c588951ab4c0.emf)). Individual tables are described in the previous sections.
+Note**.** This workflow is available together with a valid HumanPSD™ license.
+Please, feel free to ask for details (info\@genexplain.com).
 
-**Note.** This workflow is available together with a valid TRANSPATH® license.Please, feel free to ask for details (info\@genexplain.com).
 
-### Mapping with selected classification
+#### Mapping with selected classification
 
-#### Single gene set
+##### Single gene set
 
 This workflow is designed to map one input tables to one selected ontology
 classification. The input can be any gene or protein table. In the first step,
@@ -1335,7 +1295,8 @@ set as shown below.
 
 The pertinent example file can be found in the geneXplain platform under:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes]
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1352,13 +1313,11 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default.
 
-The result folder contains 1 table (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl table and one table (
+The result folder contains 1 table (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl table and one table with the mapped ontology results.
 
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)) with the mapped ontology results.
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Downregulated%20Ensembl%20genes%20(Reactome%20pathways%20(63))]
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Downregulated Ensembl genes (Reactome pathways
-(63))
 
 ![](media/50e9f3e4c84e0d91559576ce3c3680da.png)
 
@@ -1384,7 +1343,7 @@ numbers of hits. The genes mapped to each category are explicitly listed in the
 column Hit names. As the lists can get quite long, only a few genes are shown by
 default in each row. To get the full list, press [more].
 
-#### Mapping to ontology - select a classification (2 Gene tables)
+##### Mapping to ontology - select a classification (2 Gene tables)
 
 This workflow is designed to map each of the two input tables to one selected
 ontology classification, to identify term hits and to compare the results. The
@@ -1393,11 +1352,8 @@ converted into two tables with Ensembl Gene IDs. These tables with Ensembl Gene
 IDs are subjected to a functional classification. As result two mapped tables
 are stored and further compared via P-values. This final comparison step is
 based on the method *analyses/Methods/Statistical analysis/Compare analysis
-results*, icon
+results*, icon ![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
 
-![](media/3a3f0dbe5893982a717cf1c1267b8147.png)
-
-Please refer to section 13.3 for details on this particular analysis method.
 The comparison can help to reveal terms that show different enrichment across
 certain conditions.
 
@@ -1420,9 +1376,11 @@ up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples. The pertinent example file can be found in the geneXplain platform
 under:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Top%20100>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Upregulated%20Ensembl%20genes%20Top%20100]
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20Top%20100>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Downregulated%20Ensembl%20genes%20Top%20100]
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1437,38 +1395,17 @@ location of the result folder and define its name.
 
 **Step 6.** Press the [Run workflow] button.
 
-When the workflow is completed, the result folder is opened by default. Result
-folder can be accessed using the path:
+When the workflow is completed, the result folder is opened by default, found here:
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes Top 100 Mapping to
-ontology and compare
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Upregulated%20Ensembl%20genes%20Top%20100%20Mapping%20to%20ontology%20and%20compare]
 
-The result folder contains 2 tables (
-
-![](media/3376044660b26a160e52442bb6a63338.png)
-
-) with the converted Ensembl tables, two tables
-
-![](media/3b8a7050ece824b57cba8340d0d6571e.emf)
-
-with the mapped ontology results, two tables (
-
-![](media/d373ccf59d81fcd62088646e06661e33.emf)
-
-) with the analysis comparison result annotated and one plot (
-
-![](media/e16c5085d2766bce7561c588951ab4c0.emf)
-
-).
+The result folder contains 2 tables (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl tables, two tables
+with the mapped ontology results, two tables with the analysis comparison result annotated and one plot .
 
 ![](media/5eee9fa6004179afcab25138d88802fe.png)
 
-Let’s consider the output tables. The tables with the mapped selected category (
-
-![](media/53c2e6f818cea497939bd96d86b10eab.png)
-
-) look like:
+Let’s consider the output tables. The tables with the mapped selected category (![](media/53c2e6f818cea497939bd96d86b10eab.png)) look like:
 
 ![](media/87f4a4e379cacbaaf136d31c648aa6ca.png)
 
@@ -1515,7 +1452,7 @@ datasets.
 
 ![](media/c38a888831bb44c8319e7dc0bfe5e776.png)
 
-#### Multiple gene sets
+##### Multiple gene sets
 
 This workflow is designed to classify a multiple set of genes by enrichment
 analysis using GO, Reactome, HumanCyc and TF classification databases. Gene sets
@@ -1564,12 +1501,11 @@ map gene ontologies. You can drag & drop it from your project within the tree
 area. Alternatively, you may click on the pink field “select element” and a new
 window will open, where you can select the input table.
 
-Here further steps are demonstrated with the track available in one of the
-pre-prepared examples present in the Tree Area:
+Here further steps are demonstrated with a Mouse gene table found here:
 
-data/Examples/Transcriptional biomarkers to predict mouse liver tumors,
-GSE18858/Data/Normalized (RMA) DEGs with EBarrays/Naphthalene_20ppm upreg
-Ensembl Select the species of the input table
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Naphthalene_20ppm%20upreg%20Ensembl
+
+Select the species of the input table
 
 **Step 2**: Select the desired species of the output table.
 
@@ -1589,11 +1525,7 @@ folder contains diverse files as shown below:
 ![](media/7d20356de1ce4aa7da6485e13b39341a.png)
 
 Mapping to the three GO branches, biological processes, cellular components, and
-molecular functions (
-
-![](media/c0f635e97c7a0f1ec8d1540225873985.png)
-
-). The tables with the enriched categories look like:
+molecular functions (![](media/c0f635e97c7a0f1ec8d1540225873985.png)). The tables with the enriched categories look like:
 
 ![](media/85966a502e563534b53478d187fd6926.png)
 
@@ -1618,11 +1550,8 @@ a diagram opens in the workspace.
 
 ![](media/c41c1e290dbf05771877e9768f957656.png)
 
-**The table TF classification**
+**The table TF classification**(![](media/c0f635e97c7a0f1ec8d1540225873985.png)). Your input table is mapped to the classification of Transcription factors
 
-(![](media/c0f635e97c7a0f1ec8d1540225873985.png)).
-
-Your input table is mapped to the classification of Transcription factors
 (*Nucleic Acids Res. 41, D165-D170 (2013)*), which is also integrated in the
 platform. In the column **ID** the identifiers of the TF classification are
 shown. They are hyperlinked to the corresponding classification categories:
