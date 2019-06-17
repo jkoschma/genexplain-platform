@@ -657,27 +657,24 @@ Start the workflow by pressing the [Run workflow] button.
 
 All results are saved in the result folder:
 
-[data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
+data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
 (ESCC), GSE32424, FASTQ files/Data/Fastq files (Quantification of RNA-seq (with
-de novo
-assembly))](http://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq
-analysis of human esophageal squamous cell carcinoma (ESCC)%2C GSE32424%2C FASTQ
-files/Data/Fastq files (Quantification of RNA-seq (with de novo assembly))/)
+de novo assembly))
 
 ### Read alignment with TopHat
 
 The first step of the workflow is a read alignment with TopHat
 (<http://tophat.cbcb.umd.edu/>). TopHat aligns reads to the genome and discovers
-transcript splice sites. TopHat uses Bowtie
-(http://bowtie-bio.sourceforge.net/index.shtml) as an alignment ‘engine’ and
+transcript splice sites. TopHat uses Bowtie (http://bowtie-bio.sourceforge.net/index.shtml) as an alignment ‘engine’ and
 breaks up reads that Bowtie cannot align on its own into smaller pieces called
 segments.
 
 Output files are tables and tracks with insertions, deletions, splice junctions
 and the alignments.
 
-Example output of [splice junctions]
-data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(no%20de-novo%20assembly))/SRR349741.fastq%20experiment/Splice%20juopened as track:
+Example output of splice junctions [http://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(no%20de-novo%20assembly))/SRR349741.fastq%20experiment/Splice%20junctions]
+
+opened as track is shown below:
 
 ![](media/6658128803c594691ba4c5f9a8cb7c7d.png)
 
@@ -891,7 +888,7 @@ refer to the documentation of the EBarrays Bioconductor package for further
 details). Examples of an output table, a CCV plot and a Marginal fit plot are
 shown at the end of this section.
 
-![](media/e41ac9f31ea92b94df8df3d396d847c9.png)
+![](media/image107.png)
 
 ![](media/931951aad4aaba4c23b5dd6413b946a6.png)
 
