@@ -54,7 +54,7 @@ called *Plants*. It can be found here:
 **Step 4.** Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
 
-### Results
+**Results**
 
 The results folder consists of a summary table and a track with sites as shown
 below:
@@ -167,7 +167,7 @@ called *Plants*. It can be found here:
 **Step 4**. Specify the result folder location and name in your *Project* area.
 Then press the button [Run workflow]. Wait till the workflow is completed.
 
-#### Results
+**Results**
 
 The results folder consists of several tables and tracks and can be accessed using the path:
 data/Examples/Plant DNA sequence analysis/Data/Arabidopsis_Chromosome 1 site enrichment
