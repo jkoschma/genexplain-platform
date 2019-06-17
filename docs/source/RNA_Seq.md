@@ -471,12 +471,12 @@ tracks and can be opened in the genome browser by double-click on each of the
 tracks. Each short line (arrow in the higher zoom) represents an aligned “read”
 from the fastq file.
 
-![](media/ff1f7873645db43a6193ffe90930c2a0.png)
+![](media/image104.png)
 
 After zooming into each individual aligned read the insertions and deletions in
 the respective tracks of the browser become visible.
 
-![](media/dd7b53bf97db7a0408530c69ae60e05f.png)
+![](media/image105.png)
 
 The *Tophat summary* file shows the total numbers of input reads, mapped reads,
 reads with multiple alignments and the overall read alignment rate.
@@ -525,13 +525,14 @@ After Zooming in information of variation on nucleotide basis is shown.
 
 In the next step each identified variation (SNP_indels) is analysed with the
 help of the “variant_effect_predictor” algorithm
-(https://platform.genexplain.com/bioumlweb/\#de=analyses/Galaxy/ensembl/variant_effect_predictor).
-As a result it creates a final table that gives detailed information about each variation. 
+[https://platform.genexplain.com/bioumlweb/\#de=analyses/Galaxy/ensembl/variant_effect_predictor].
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20%28ESCC%29%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20%28Genome%20variants%20and%20indels%20from%20RNA-seq%29/variant%20effects
+As a result it creates a final table that gives detailed information about each variation as shown in the example below:
+
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20%28ESCC%29%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20%28Genome%20variants%20and%20indels%20from%20RNA-seq%29/variant%20effects]
 
 
-![](media/dbb1fb5bd9f7a50eb7bb653583ebf544.png)
+![](media/image106.png)
 
 ### Quantification of RNA-seq with Cufflinks (no de-novo assembly) for FASTQ files
 
