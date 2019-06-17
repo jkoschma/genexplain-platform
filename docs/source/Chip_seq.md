@@ -484,9 +484,9 @@ the description of the workflow "Search for discriminative sites with TRANSFAC®
 
 **Note***.* This workflow is available together with a valid TRANSFAC® license. Please, feel free to ask for details (info\@genexplain.com).
 
-### Version 1.2 (Classical)
+#### Version 1.2 (Classical)
 
-#### Single interval list
+##### Single interval list
 
 This workflow helps to map putative TFBSs on peaks calculated from your  
 ChIP-seq data. Site search is done with the help of the TRANSFAC® library of
@@ -639,7 +639,7 @@ intervals, bed, wig, gff, gtf and more.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-#### Multiple interval sets
+##### Multiple interval sets
 
 This workflow is designed to search for TFBSs in DNA sequences identified by the
 ChIP-seq approach, for multiple datasets.
