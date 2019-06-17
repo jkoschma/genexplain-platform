@@ -72,9 +72,9 @@ gene ids) and column ids. The output tables can be used to extract subsets of
 correlated rows or columns revealed by the hierarchical clustering and/or the
 heatmap presentation.
 
-An example can be found here: data/Examples/Brain Tumor GSE1825, Affymetrix
-HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Normalized
-(RMA) subset_heatmap
+An example can be found here: 
+
+http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Normalized%20(RMA)%20subset_heatmap
 
 **Step 1**: Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
@@ -252,7 +252,8 @@ After entering all input fields press [Run workflow] and wait till the workflow
 is completed.
 
 The output is a folder with several files as shown below: It can be located in the Examples folder by the URL:
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)]
 
 
 ![](media/image039.png)
@@ -380,12 +381,8 @@ You can drag it from your project within the tree area and drop it in the pink
 box of the fields. Alternatively, you may click on the pink field *(select
 element)* and a new window will be opened, where you can select the input table.
 
-The further steps of the workflow are demonstrated by means of the tables in one
-of the pre-prepared examples. You can find these tables in the *Examples*
-folder, under
-[data/Examples/Cytokine-triggered gene expression in cell cycle stages,
-GSE52465, Agilent-014850 microarray/Data/Agilent normalized DEGs with
-limma]
+For this example the input used can be found here:
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages%2C%20GSE52465%2C%20Agilent-014850%20microarray/Data/GSE52465_RAW/Agilent%20normalized]
 
 **Step 3.** Specify the biological species of the input table in the field
 **Species** by selecting it from the drop-down menu.
@@ -406,11 +403,12 @@ is completed. The output is a folder with 10 result folders (e.g. *Condition_1
 vs. Condition_2* for DEG calculation), a folder for each individual comparison
 (*Output limma*) and one *Output plots* folder, as shown below:
 
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages,%20GSE52465,%20Agilent-014850%20microarray/Data/Agilent%20normalized%20DEGs%20with%20limma]
+
 ![](media/23c5bb6fc19b4d60f67cf14de786d1c6.png)
 
 The **Normalized density boxplot** and the **Normalized density plot** in the
 folder *Output plots* show a quality control of the input normalized data table.
-Please refer to section 10.1.3 for details on this particular analysis method.
 
 The tables in the folder *Output limma* are the output tables from the limma
 method, sorted via adjusted p-values.
@@ -486,13 +484,8 @@ You can drag it from your project within the tree area and drop it in the pink
 box of the fields. Alternatively, you may click on the pink field *(select
 element)* and a new window will be opened, where you can select the input table.
 
-The further steps of the workflow are demonstrated by means of the tables in one
-of the pre-prepared examples. You can find these tables in the *Examples*
-folder, under
-
-[data/Examples/Cytokine-triggered gene expression in cell cycle stages,
-GSE52465, Agilent-014850 microarray/Data/Agilent normalized DEGs with
-EBarrays]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered gene expression in cell cycle stages%2C GSE52465%2C Agilent-014850 microarray/Data/Agilent normalized DEGs with EBarrays>
+Input used for this Example can be found here:
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages%2C%20GSE52465%2C%20Agilent-014850%20microarray/Data/GSE52465_RAW/Agilent%20normalized]
 
 **Step 3.** Specify the biological species of the input table in the field
 **Species** by selecting it from the drop-down menu.
@@ -514,9 +507,10 @@ The output is a folder with several result folders and files as shown below:
 
 ![](media/33da4673a80e45505ba81618ddf9c3d6.png)
 
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages,%20GSE52465,%20Agilent-014850%20microarray/Data/Agilent%20normalized%20DEGs%20with%20EBarrays]
+
 The **Normalized density boxplot** and the **Normalized density plot** in the
 folder *Output plots* show a quality control of the input normalized data table.
-Please refer to section 10.1.3 for details on this particular analysis method.
 
 The table EBarrays result and two plots in the folder *Output EBarrays* are the
 output table and plots from the EBarrays method.
