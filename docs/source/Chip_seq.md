@@ -611,12 +611,8 @@ together with your track, e.g. “Yes sites opt” (see above), and press [Ok].
 
 ![](media/236abeae3d020a7774abfb31af17ed53.png)
 
-The resulting visualization, after applying the “zoom in” button
-
-![](media/ecec5e0fb117933a394bbc7c74a29206.png)
-
-, looks like it is shown below. Matches for different matrices are shown in
-colors, and the color schema can be customized.
+The resulting visualization, after applying the “zoom in” button, looks like it is shown below. Matches for different 
+matrices are shown in colors, and the color schema can be customized.
 
 ![](media/67ed1790072e9b9c2f4688caabb6bfa3.png)
 
