@@ -500,35 +500,37 @@ output folder.
 Having filled the input form, launch the analysis with the [Run] button.
 Analysis progresses as shown below. Wait till the analysis is completed.
 
-![](media/2159df448f79c8f41f177247f2e8c6ba.png)
+![](media/image112.png)
 
 ### Results
 
-As a result of this analysis, a folder with a specified name is formed, in this
-example: E2F target genes shortest path Upstream 3, shown below. This folder
-contains one table, which represents the list of all identified clusters, and
-several diagrams corresponding to the number of the identified clusters.
+As a result of this analysis, a folder with a specified name is formed. This folder contains one table,
+which represents the list of all identified clusters, and several diagrams corresponding to the number of the identified clusters. 
+Output Folder is here:
 
-![](media/2258cd9a928576adeee783c57c44e9df.png)
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate]
+
+![](media/image113.png)
 
 The table *Clusters* (![](media/clusters.png)) contains a list of all identified clusters, here 9, shown below. Each row
 shows details for one cluster. The clusters are sorted by their size with the
 largest cluster on top. The symbol (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) next to each cluster name in the column **Diagram** can be used for visualization. The column **Hit names** contains the names of the TRANSPATH®
 proteins in each cluster.
 
-![](media/d41fc1612002b92c80abdac049d0e4bc.png)
+![](media/image114.png)
 
-The visualization of *Cluster 1* is shown below. The box **Display intermediate
-molecules** was unchecked, default setting. All the molecules shown are coming
-from the input gene/protein set. The numbers on the arrows correspond to the
-number of steps between two molecules.
+ *Cluster 1* can be visulaized here :
+ 
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203/Cluster%201]
+ 
+In this figure, the box **Display intermediate molecules** was unchecked, default setting. All the molecules shown are coming
+from the input gene/protein set. The numbers on the arrows correspond to the number of steps between two molecules.
 
-![](media/8617cdd6e779a9b1bc8b107acf0865c4.png)
+When the box **Display intermediate molecules** is checked, the same *Cluster 1* can be visualized here:
 
-When the box **Display intermediate molecules** is checked, the cluster is
-displayed as shown below. Molecules shown in blue color are coming from the
-input gene/protein list, and those in green are added by the algorithm when
-necessary for the connectivity between the input molecules. These green
-molecules are so-called intermediate molecules.
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate/Cluster%201]
 
-![](media/16f9e4f31957a0a2015ee27444efafe2.png)
+Molecules shown in blue color are coming from the input gene/protein list, and those in green are added by the algorithm when
+necessary for the connectivity between the input molecules. These green molecules are so-called intermediate molecules.
+
+
