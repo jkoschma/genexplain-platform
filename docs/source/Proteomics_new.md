@@ -436,9 +436,11 @@ databases section respectively.
 
 This analysis finds functional clusters in any input table of genes or proteins.
 It can be found under the tab *Analyses*, in the folder Methods/Data
-manipulation/ Molecular networks/Cluster by shortest path (![](media/cb5de1c86c2c48c53cdfd7d8e34d45dd.png)). Here the default input form is shown:
+manipulation/ Molecular networks/Cluster by shortest path (![](media/image110.png)). 
 
-![](media/d3eeaf5c786cccdd8cd199fc637081c6.png)
+Here the default input form is shown:
+
+![](media/image111.png)
 
 When the expert options are opened, an additional field *Input size* appears,
 and the form looks like:
