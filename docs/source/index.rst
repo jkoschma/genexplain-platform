@@ -15,7 +15,6 @@ Guide
    Sequence_files
    miRNA
    Microarrays
-   Functional_enrichment
    Analyze_regulatory_regions
    Drug_targets
    Genomic_variants
