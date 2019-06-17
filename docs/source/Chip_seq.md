@@ -197,9 +197,9 @@ The three workflows in this group have a very similar structure. In the first
 step, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis , The resulting Ensembl gene list is then submitted to *Functional classification* by several ontologies. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. 
 
 The difference between the workflows within this group is in the ontologies applied for functional classification as well as in a
-database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated for the same input track available in one of the pre-prepared examples present in the *Examples* folder:  
+database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated for the same input track available in one of the pre-prepared examples present in the *Examples* folder. 
 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
+[http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201]
 
 The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
 
@@ -218,7 +218,7 @@ For details, how to launch this workflow, please refer to description of the sec
 
 The input track contains 1889 in vivo binding fragments for E2F1 transcription
 factor. These fragments are found to overlap with 2187 Ensembl genes that are
-shown in the resulting table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)). 
+shown in the resulting table *Genes Ensembl* (![](media/image115.png)). 
 
 Functional classification by the HumanCyc pathways has found 8 metabolic
 pathways:
@@ -252,7 +252,8 @@ function, TF classification, Reactome pathways, and TRANSPATH® pathways. In
 parallel, the same Ensembl gene list is subjected to *Cluster by shortest path*
 analysis. Gene/protein clusters are calculated based on the TRANSPATH® signaling
 network. For the same input as mentioned, the output path for this workflow is:
-data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered chr 1 (From tracks to target genes_Transpath)
+
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201%20(From%20tracks%20to%20target%20genes_Transpath]
 
 For details, how to launch this workflow and look into the results, please refer
 to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 21 signaling pathways and chains: 
@@ -280,10 +281,9 @@ You can drag & drop it from your project within the tree area. Alternatively,
 you may click on the pink field *select element* and a new window will be
 opened, where you can select the input track.
 
-Here, further steps are demonstrated with the track available in one of the
-pre-prepared examples present in the Tree Area:  
+Here, further steps are demonstrated with the track available here:
 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
+[http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201]
 
 **Step 2**. After input of the track, the species (human, mouse or rat) is
 adjusted automatically. Verify the species shown in the **Species** field.
@@ -302,7 +302,7 @@ the largest cluster are opened by default in the work space.
 
 ![](media/image054.png)
 
-The table *Genes Ensembl* (![](media/e0f7ea642e5fe6c46ef1fe415323fad3.png)) contains those genes that are identified as located in the regions around the input peaks or fragments. By default this workflow considers the following
+The table *Genes Ensembl* (![](media/image115.png)) contains those genes that are identified as located in the regions around the input peaks or fragments. By default this workflow considers the following
 regions around Ensembl genes: 10000 bp in 5’ direction from TSS and 10000 bp in
 3’ direction from the last exon. The positions of each fragment on the input
 track are compared with positions of the extended gene regions. Genes
@@ -319,7 +319,7 @@ symbol, and description. The column **Count** shows how many fragments on the
 input track are overlapping with each gene.
 
 These genes are then converted into TRANSPATH® proteins, the output table
-Proteins Transpath (![](media/e68eb4a9fbcee7814385455c0b537f5b.png)), shown below.
+Proteins Transpath is, shown below:
 
 ![](media/image058.png)
 
@@ -433,9 +433,10 @@ select the location of the results folder and define its name.
 
 Wait until the workflow is completed.
 
-The **Result folder** contains several tables and three tracks; for this
-example, let’s consider the results folder located under 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1 binding regions in HeLa cells%2C ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered exp1000 dist1000 (enriched motifs 2.0_TRANSFAC(R))>. It is highlighted in blue in the figure below:
+The **Result folder** contains several tables and three tracks; can be found here:
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20(enriched%20motifs%202.0_TRANSFAC(R))]
+
+It is highlighted in blue in the figure below:
 
 ![](media/image063.png)
 
