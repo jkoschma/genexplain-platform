@@ -393,7 +393,7 @@ tree.
 
 ![](media/5174e2453d1c9c89ddddc3c03b3590cd.png)
 
-### Tip for the workflow editing
+**Tip for the workflow editing**
 
 You can easily create a similar workflow with parameter values adjusted to your
 needs. For example, you might be interested in changing the number of steps used
