@@ -166,10 +166,9 @@ and also because of their good connectivity, they are well studied and
 published. Therefore the molecules with high Score values might be biologically
 interesting as known “hubs” in a network.
 
-Let’s have a look at the table *Regulators Upstream 10*, available in the
-geneXplain platform online under the path:
+Let’s have a look at the table *Regulators Upstream 10*, available here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010]
 
 In the screenshot below, the table has been sorted by Score, and we can see
 Ku80, MULE-isoform1, NRG1 as the three top molecules with highest Score values.
@@ -210,7 +209,7 @@ we can see different molecules on top. Even by the names of these molecules the
 expert can see that they are not coming up so often in the literature, and might
 represent interesting novel candidates.
 
-![](media/8e4751ccc9366f510b39bc69b27ee0dc.png)
+![](media/image108.png)
 
 **Ranks sum**
 
@@ -254,11 +253,9 @@ and take it as input for the analysis “Annotate table”.
 
 As annotation source, you can select the table of genes expressed in the same
 experiment, e.g. the table of all expressed genes that resulted from the
-workflow “Detect differentially expressed genes”; in this example the path is:
+workflow “Detect differentially expressed genes” can be found here:
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Experiment normalized (RMA) (Differentially
-expressed genes Affy)/Genes, fold change and p-value, non-filtered
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered]
 
 As “Annotation column” you can select **LogFoldChange**, and as a result the
 suggested master regulators are annotated by their expression.
@@ -322,7 +319,7 @@ The further steps of this workflow are demonstrated with genes shown to be
 up-regulated in one of the examples. The example file can be accessed using the
 URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
 
 ![](media/ba4808538780b543e21797b67fc1e4c4.png)
 
@@ -346,13 +343,12 @@ completed, which is shown below:
 
 ![](media/b7fd854402a186fc2f1f1869389fdc29.png)
 
-The results folder contains several files; in the example given the path is:
+The results folder contains several files as shown here:
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Downregulated Ensembl genes filtered (log
-FC\<-2) (Common effectors Transpath)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Common%20effectors%20Transpath)/Effectors%20downstream%2010
 
-![](media/ea6958acab38d99a3fc947a6bb4b1f9c.png)
+
+![](media/image109.png)
 
 The primary result table *Effectors downstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is the list of effector molecules that were identified at the distance up to 10 steps downstream of the input molecules. Each effector molecule is
 characterized by Score, Z-score, FDR, and Ranks Sum. Further details about these
