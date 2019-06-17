@@ -577,10 +577,7 @@ segments.
 Output files are tables and tracks with insertions, deletions, splice junctions
 and the alignments.
 
-Example output can be found here: 
-[data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(with%20de%20novo%20assembly))/SRR349741.fastq%20experiment/Splice%]
-
-opened as track:
+Example output is opened as track:
 
 ![](media/659441a0144931c6353a02c5693f54af.png)
 
