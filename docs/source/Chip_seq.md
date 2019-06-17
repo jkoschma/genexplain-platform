@@ -15,7 +15,7 @@ can also be found [here](http://liulab.dfci.harvard.edu/MACS/).
 The platform provides two versions of the MACS algorithms, 1_3_7 and 1_4_0,
 whose parameters are explained in the following.
 
-### MACS 1_3_7
+#### MACS 1_3_7
 
 ![](media/6a63ab387c14aa99a86a704c25c0899f.png)
 
@@ -59,7 +59,7 @@ data to calculate the local bias.
 
 **Output name**: Name of the output track with MACS peaks.
 
-### MACS 1_4_0
+#### MACS 1_4_0
 
 This is an advanced version of MACS 1.3.7. During model building, the new
 algorithm selects regions within a certain range of enrichment. By default,
@@ -185,7 +185,7 @@ It depends on read length.
 
 ## Analyze ChIP-seq peaks
 
-## Identify and classify target genes near the peaks
+### Identify and classify target genes near the peaks
 
 This group of workflows helps to identify genes located near the ChIP-seq peaks
 or near other genomic intervals. The input can be any track, and the output
@@ -197,13 +197,13 @@ The three workflows in this group have a very similar structure. In the first
 step, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis , The resulting Ensembl gene list is then submitted to *Functional classification* by several ontologies. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. 
 
 The difference between the workflows within this group is in the ontologies applied for functional classification as well as in a
-database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated for the same input track available in one of the pre-prepared examples present in the *Examples* folder. 
+database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated using the same input track which can be found here: 
 
 [http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201]
 
 The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
 
-### Classification by GO categories and metabolic pathways
+#### Classification by GO categories and metabolic pathways
 
 In this workflow, the functional classification is done using the following
 ontologies: GO biological processes, GO cellular components, GO molecular
@@ -244,7 +244,7 @@ Molecules shown in blue color are coming from the input protein list, and those
 in green are added by the algorithm when necessary for the connectivity between
 the elements of the cluster.
 
-### Classification by GO categories and signaling pathways
+#### Classification by GO categories and signaling pathways
 
 In this workflow, the functional classification is done using the following
 ontologies: GO biological processes, GO cellular components, GO molecular
@@ -266,7 +266,7 @@ The pathway visualization diagrams can be opened in the work space upon a mouse 
 
 **Note***.* This workflow is available together with a valid TRANSPATH® license. Please, feel free to ask for details (info\@genexplain.com).
 
-### Classification by GO categories, signaling pathway, and diseases
+#### Classification by GO categories, signaling pathway, and diseases
 
 In the first step of this workflow, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png)), The resulting Ensembl gene list is then submitted to
 *Functional classification* using the following ontologies: HumanPSD™ GO biological processes, HumanPSD™ GO cellular components, HumanPSD™ GO molecular function, HumanPSD™ disease, TRANSPATH® pathways, TF classification, Reactome pathways, and HumanCyc pathways. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. Gene/protein clusters are calculated based on the TRANSPATH® network.
@@ -363,9 +363,9 @@ Each row corresponds to one ontological category, which in this case is one of t
 
 ### Site search with TRANSFAC®
 
-### Version 2.0 (Adjusted p-values, site search on track)
+#### Version 2.0 (Adjusted p-values, site search on track)
 
-#### Single interval list
+##### Single interval list
 
 This workflow “Identify enriched motifs in tracks (TRANSFAC®)” is designed to
 map putative enriched TFBSs on peaks calculated from your ChIP-seq data (Yes
@@ -467,7 +467,7 @@ workflow.
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis in the second part of the workflow.
 
-### Table Transcription factors Ensembl:
+**Table Transcription factors Ensembl:**
 
 ![](media/image066.png)
 
@@ -484,9 +484,9 @@ the description of the workflow "Search for discriminative sites with TRANSFAC®
 
 **Note***.* This workflow is available together with a valid TRANSFAC® license. Please, feel free to ask for details (info\@genexplain.com).
 
-## Version 1.2 (Classical)
+### Version 1.2 (Classical)
 
-### Single interval list
+#### Single interval list
 
 This workflow helps to map putative TFBSs on peaks calculated from your  
 ChIP-seq data. Site search is done with the help of the TRANSFAC® library of
@@ -570,7 +570,7 @@ cutoff values as they are calculated by the program at the optimization step are
 shown in the column **Model cutoff**, and the last column shows the **P-value**
 of the corresponding event.
 
-### Table Transcription factors:
+**Table Transcription factors:**
 
 ![](media/217fc489502c0fecd0749320e9a7488f.png)
 
@@ -639,7 +639,7 @@ intervals, bed, wig, gff, gtf and more.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### Multiple interval sets
+#### Multiple interval sets
 
 This workflow is designed to search for TFBSs in DNA sequences identified by the
 ChIP-seq approach, for multiple datasets.
