@@ -4,7 +4,7 @@
 
 ## Analyze networks
 
-## Find master regulators
+### Find master regulators
 
 Potential master regulators of the processes analyzed in a typical proteomics
 experiment can be identified with the aid of pathway databases. The geneXplain
@@ -12,14 +12,14 @@ platform support works with the TRANSPATH database (license required)
 or with the public GeneWays database. More details about both these
 database can be found in the databases section.
 
-### Find master regulators with TRANSPATH®
+#### Find master regulators with TRANSPATH®
 
 As elsewhere, these workflows can be used to analyze data of a **single protein
 table** or to mine **multiple protein sets**. These two options will be
 explained in the following, complemented by a more detailed explanation how the
 **interpretation of the results** should be done.
 
-#### Analyze a single gene table
+##### Analyze a single gene table
 
 This workflow is designed to find important master regulators in signal
 transduction pathways. The search is done based on the network of the TRANSPATH®
@@ -135,7 +135,7 @@ according to your needs.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-### Analyze multiple gene sets
+##### Analyze multiple gene sets
 
 The input is a folder with several gene/protein tables. The steps of this
 workflow for each individual gene/protein table are the same as described in the
@@ -145,7 +145,7 @@ gene/protein tables in the input folder.
 The output is a folder which contains subfolders with the results for each
 individual gene/protein table.
 
-### Interpretation of the results
+#### Interpretation of the results
 
 **Score**
 
@@ -275,7 +275,7 @@ ones specific for your input list, you might be interested to stay with the
 default sorting by Ranks sum, and consider master molecules with the lowest
 Ranks sum values.
 
-### Find master regulators with GeneWays
+#### Find master regulators with GeneWays
 
 This workflow is designed to find important master regulators in the signal
 transduction pathways. Here, a search for master regulators is done based on the
@@ -291,9 +291,9 @@ applied for the network analysis, either TRANSPATH® or GeneWays.
 More details about the GeneWays and TRANSPATH® databases can be found in
 the databases section respectively.
 
-## Find common effectors
+### Find common effectors
 
-### Find common effectors with TRANSPATH®
+#### Find common effectors with TRANSPATH®
 
 This workflow is designed to find important effectors in signal transduction
 pathways. With this workflow, the effector search is done based on the network
@@ -416,7 +416,7 @@ your needs.
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
-## Find common effectors with GeneWays
+#### Find common effectors with GeneWays
 
 This workflow is designed to find important effector molecules in signal
 transduction pathways. Here, a search for effector molecules is done based on
@@ -432,7 +432,7 @@ applied for the network analysis, either TRANSPATH® or GeneWays.
 More details about the GeneWays and TRANSPATH® databases can be found in the
 databases section respectively.
 
-## Identify functional protein cluster by shortest path analysis
+### Identify functional protein cluster by shortest path analysis
 
 This analysis finds functional clusters in any input table of genes or proteins.
 It can be found under the tab *Analyses*, in the folder Methods/Data
@@ -502,7 +502,7 @@ Analysis progresses as shown below. Wait till the analysis is completed.
 
 ![](media/image112.png)
 
-### Results
+#### Results
 
 As a result of this analysis, a folder with a specified name is formed. This folder contains one table,
 which represents the list of all identified clusters, and several diagrams corresponding to the number of the identified clusters. 
