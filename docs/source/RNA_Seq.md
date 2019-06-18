@@ -35,7 +35,7 @@ folder.
 
 **Example of an input folder:**
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/SRA%20files]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/SRA%20files>
 
 It contains 12 files in SRA format as shown below. Please note, this folder
 occupies **1.5 GB** work space.
@@ -49,7 +49,7 @@ Press [Run workflow] and wait till the workflow is completed.
 
 **Example of an output folder:**
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files>
 
 ![](media/7299fb0d9f33457de394643a9ed929ae.png)
 
@@ -88,10 +88,9 @@ can drag it from your project within the tree area and drop it in the box of the
 field.
 
 The further steps of the workflow are demonstrated by means of the tables in one
-of the pre-prepared examples. You can find these tables in the *Examples*
-folder, under
+of the pre-prepared examples. You can find these tables here:
 
-data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma (ESCC)%2C GSE32424%2C FASTQ files/Data/Lift_over 
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Lift_over>
 
 **Step 3.** Specify the **Mapping** of the input track by selecting the desired
 genome conversion from the drop-down menu.
@@ -167,11 +166,8 @@ of short reads.
 **Step 4.** Specify the input file in the field **FASTQ file**. You can either
 drag-and-drop or select the file name from the Tree area. Here, as an example,
 we use data from a published RNA-seq experiment analyzing the human esophageal
-squamous cell carcinoma (ESCC), GSE32424. FASTQ files can be found in the
-following *Examples* folder:
-
-data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
-(ESCC), GSE32424, FASTQ files
+squamous cell carcinoma (ESCC), GSE32424. FASTQ files are found here:
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files>
 
 This example contains results of an RNA-seq Illumina NGS sequencing of twelve
 clinical samples from human esophageal squamous cell carcinoma (ESCC) (seven
@@ -258,11 +254,9 @@ main Work Space and looks as shown below:
 **Step 2.** Input a folder containing BAM file(s) from the tree. You can either
 drag-and-drop or select the folder name from the Tree area. Here, as an example,
 we use data from a published RNA-seq experiment on Colon cancer retrieved from
-GEO, accession number GSE29155. The following folder from the *Examples* folder
-is used:
+GEO, accession number GSE29155. Files found here:
 
-data/Examples/RNA-Seq analysis of human prostate cancer cell line, GSE29155, BAM
-files/Data/
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20prostate%20cancer%20cell%20line,%20GSE29155,%20BAM%20files>
 
 The input folder in this example contains 11 BAM files of RNA-Seq reads obtained
 from 7 colon cancer samples and 4 normal samples using the Illumina NGS
@@ -368,11 +362,10 @@ select the location of the results folder and define its name.
 Wait until the workflow is completed.
 
 The **Output folder** contains the two tables, *Fusion summary* and *Fusion
-isoforms*; for this example, let’s consider the results folder located under
-Examples: 
-[data/Examples/Detection of novel fusion transcripts from RNA-seq data, 76mer
-fastq reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq (Gene fusions from
-RNA-seq)]. 
+isoforms* . Example is found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Detection%20of%20novel%20fusion%20transcripts%20from%20RNA-seq%20data,%2076mer%20fastq%20reads/Data/BI.081030_SL-XBF_0001_FC30CB2AAXX.7.fq%20(Gene%20fusions%20from%20RNA-seq)>
+. 
 
 It is highlighted in blue in the figure below:
 
@@ -451,10 +444,10 @@ Start the workflow by pressing the [Run workflow] button.
 In the following example we took as input the fastq file
 [SRR349741.fastq]
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files/SRR349741.fastq]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files/SRR349741.fastq>
 
 The output folder can be found here:
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20analysis/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20analysis/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)>
 
 
 The output folder contains several files and sub-folders with all results of the analysis.
@@ -523,11 +516,12 @@ After Zooming in information of variation on nucleotide basis is shown.
 
 In the next step each identified variation (SNP_indels) is analysed with the
 help of the “variant_effect_predictor” algorithm
-[https://platform.genexplain.com/bioumlweb/\#de=analyses/Galaxy/ensembl/variant_effect_predictor].
+
+<https://platform.genexplain.com/bioumlweb/\#de=analyses/Galaxy/ensembl/variant_effect_predictor>
 
 As a result it creates a final table that gives detailed information about each variation as shown in the example below:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20%28ESCC%29%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20%28Genome%20variants%20and%20indels%20from%20RNA-seq%29/variant%20effects]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20%28ESCC%29%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20%28Genome%20variants%20and%20indels%20from%20RNA-seq%29/variant%20effects>
 
 
 ![](media/image106.png)
@@ -557,11 +551,10 @@ select the location of the results folder and define its name.
 
 Start the workflow by pressing the [Run workflow] button.
 
-All results are saved in the result folder:
+Results can be accessed here:
 
-data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
-(ESCC), GSE32424, FASTQ files/Data/Fastq files (Quantification of RNA-seq (no
-de-novo assembly)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(no%20de-novo%20assembly))>
+
 
 #### Read alignment with TopHat
 
@@ -653,11 +646,8 @@ select the location of the results folder and define its name.
 
 Start the workflow by pressing the [Run workflow] button.
 
-All results are saved in the result folder:
-
-data/Examples/RNA-Seq analysis of human esophageal squamous cell carcinoma
-(ESCC), GSE32424, FASTQ files/Data/Fastq files (Quantification of RNA-seq (with
-de novo assembly))
+Results are found here:
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(with%20de%20novo%20assembly))>
 
 #### Read alignment with TopHat
 
@@ -670,7 +660,9 @@ segments.
 Output files are tables and tracks with insertions, deletions, splice junctions
 and the alignments.
 
-Example output of splice junctions [http://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(no%20de-novo%20assembly))/SRR349741.fastq%20experiment/Splice%20junctions]
+Example output of splice junctions 
+
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files%20(Quantification%20of%20RNA-seq%20(no%20de-novo%20assembly))/SRR349741.fastq%20experiment/Splice%20junctions>
 
 opened as track is shown below:
 
