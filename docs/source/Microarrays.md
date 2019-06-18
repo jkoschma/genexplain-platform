@@ -236,7 +236,7 @@ you may click on the pink field *(select element)* and a new window will be
 opened, where you can select the input tables.
 
 The further steps are demonstrated using the Affymetrix files found here:
-<[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/GSE1825_RAW]>
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/GSE1825_RAW
 
 **Step 3.** Specify the biological species of the input sets in the field
 **Species** by selecting the required biological species from the drop-down
