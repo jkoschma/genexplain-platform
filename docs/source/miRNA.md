@@ -40,7 +40,7 @@ gene set as shown below.
 The further steps of the workflow are demonstrated on the example file, which
 can be found here:
 
-[http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes>
 
 This table contains four genes that are already published targets for one
 particular miRNA, hsa-miR-155-5p, for which several target genes have been
@@ -92,7 +92,7 @@ When the workflow is completed, the result folder is opened by default.
 **Results**
 Output folder is found here:
 
-[http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes%20miRNA]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/miRNA%20binding%20site%20prediction%20(miRNA-155%20target%20genes)/Data/hsa-miR-155-5p%20published%20target%20genes%20miRNA>
 
 The result folder contains the following tables: Ensembl transcript (![](media/58a651441dabd63ab3c797123cddc94c.png)),
 Site output and summary output tables(![](media/table.png)), Site output track (![](media/track.png)) 
