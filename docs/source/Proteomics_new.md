@@ -44,7 +44,7 @@ The further steps of the workflow are demonstrated by means of the genes shown
 to be up-regulated in one of the pre-prepared examples. The pertinent example
 file can be found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
 ![](media/ba4dc3a97115a0dc173550cd7fb09f54.png)
 
@@ -168,7 +168,7 @@ interesting as known “hubs” in a network.
 
 Let’s have a look at the table *Regulators Upstream 10*, available here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010>
 
 In the screenshot below, the table has been sorted by Score, and we can see
 Ku80, MULE-isoform1, NRG1 as the three top molecules with highest Score values.
@@ -178,7 +178,7 @@ result. However, master regulators with high Scores might be of interest if you
 are looking for well-studied reliable molecules, and would like to see many of
 the input molecules connected by such master regulators (**Hit names**).
 
-![](media/d947d7d879a0104827867cec497beb86.png)
+![](media/image117.png)
 
 **Z-score**
 
@@ -255,7 +255,7 @@ As annotation source, you can select the table of genes expressed in the same
 experiment, e.g. the table of all expressed genes that resulted from the
 workflow “Detect differentially expressed genes” can be found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
 
 As “Annotation column” you can select **LogFoldChange**, and as a result the
 suggested master regulators are annotated by their expression.
@@ -319,7 +319,7 @@ The further steps of this workflow are demonstrated with genes shown to be
 up-regulated in one of the examples. The example file can be accessed using the
 URL:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
 
 ![](media/ba4808538780b543e21797b67fc1e4c4.png)
 
@@ -345,7 +345,7 @@ completed, which is shown below:
 
 The results folder contains several files as shown here:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Common%20effectors%20Transpath)/Effectors%20downstream%2010
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Common%20effectors%20Transpath)/Effectors%20downstream%2010>
 
 
 ![](media/image109.png)
@@ -508,7 +508,7 @@ As a result of this analysis, a folder with a specified name is formed. This fol
 which represents the list of all identified clusters, and several diagrams corresponding to the number of the identified clusters. 
 Output Folder is here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate>
 
 ![](media/image113.png)
 
@@ -521,14 +521,14 @@ proteins in each cluster.
 
  *Cluster 1* can be visulaized here :
  
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203/Cluster%201]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203/Cluster%201>
  
 In this figure, the box **Display intermediate molecules** was unchecked, default setting. All the molecules shown are coming
 from the input gene/protein set. The numbers on the arrows correspond to the number of steps between two molecules.
 
 When the box **Display intermediate molecules** is checked, the same *Cluster 1* can be visualized here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate/Cluster%201]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate/Cluster%201>
 
 Molecules shown in blue color are coming from the input gene/protein list, and those in green are added by the algorithm when
 necessary for the connectivity between the input molecules. These green molecules are so-called intermediate molecules.
