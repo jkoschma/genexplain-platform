@@ -15,6 +15,7 @@ Guide
    Sequence_files
    miRNA
    Microarrays
+   Drug_targets
    Genomic_variants
    Metabolism
    Popular_Functions
