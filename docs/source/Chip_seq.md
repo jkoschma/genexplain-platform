@@ -199,7 +199,7 @@ step, the input track (![](media/track.jpg)) is converted into a gene set using 
 The difference between the workflows within this group is in the ontologies applied for functional classification as well as in a
 database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated using the same input track which can be found here: 
 
-[http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
 
 The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
 
@@ -253,7 +253,7 @@ parallel, the same Ensembl gene list is subjected to *Cluster by shortest path*
 analysis. Gene/protein clusters are calculated based on the TRANSPATH® signaling
 network. For the same input as mentioned, the output path for this workflow is:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201%20(From%20tracks%20to%20target%20genes_Transpath]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201%20(From%20tracks%20to%20target%20genes_Transpath]>
 
 For details, how to launch this workflow and look into the results, please refer
 to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 21 signaling pathways and chains: 
@@ -283,7 +283,7 @@ opened, where you can select the input track.
 
 Here, further steps are demonstrated with the track available here:
 
-[http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
 
 **Step 2**. After input of the track, the species (human, mouse or rat) is
 adjusted automatically. Verify the species shown in the **Species** field.
@@ -433,8 +433,9 @@ select the location of the results folder and define its name.
 
 Wait until the workflow is completed.
 
-The **Result folder** contains several tables and three tracks; can be found here:
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20(enriched%20motifs%202.0_TRANSFAC(R))]
+The **Result folder** contains several tables and three tracks; found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20(enriched%20motifs%202.0_TRANSFAC(R))>
 
 It is highlighted in blue in the figure below:
 
@@ -679,18 +680,16 @@ transcription factor E2F1 in HeLa cells, published in Gene Expression Omnibus,
 
 **Input Yes track**. The original track of genome-wide E2F1 binding fragments
 was filtered by the length shorter than 600 bp, which resulted in 249 fragments.
-This track of 249 fragments is used as the input Yes track. It can be found in
-the *Examples* folder under:
+This track of 249 fragments is used as the input Yes track. It can be found here:
 
-data/Examples/E2F1 binding regions in HeLa cells,
-ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered exp1000 dist1000 L\<600
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20L%3C600>
+
 
 **Input No track**. A track of the far upstream fragments of the human
-housekeeping genes located on chromosome 1 is taken as the No track. It can be
-found in the *Examples* folder under:
+housekeeping genes located on chromosome 1 is taken as the No track found here:
 
-data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data/ Housekeeping
-genes (Human) track -100000 to -98000, chr 1
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/Housekeeping%20genes%20(Human)%20track%20-100000%20to%20-98000%20filtered%20chr%201>
 
 The workflow input form is completed and the run is in progress:
 
@@ -698,9 +697,8 @@ The workflow input form is completed and the run is in progress:
 
 The resulting folder can be found under:
 
-data/Examples/E2F1 binding regions in HeLa cells,
-ChIP-Seq/Data/GSM558469_E2F1_hg19 filtered exp1000 dist1000 L\<600 (CMA on
-track, TRANSFAC) Pairs-8 Iterations-300 v2
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20L%3C600%20(CMA%20on%20track,%20TRANSFAC)%20Pairs-8%20Iterations-300>
+
 
 ![](media/8f7498a607dab9e7b0199a85d496275a.png)
 
@@ -749,7 +747,7 @@ list. After having selected the list, press the [Ok] button.
 For this example, all further steps are demonstrated with the following input
 set:
 
-[http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000]
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000>
 
 
 **Step 2**: Specify the biological species of the input set in the field
