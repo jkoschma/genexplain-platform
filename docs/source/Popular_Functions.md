@@ -479,12 +479,11 @@ project within the tree area. Alternatively, you may click on the pink field
 *select element* and a new window will be opened, where you can select the input
 track.
 
--   The input track used in this example can be found under location:
+The input track used in this example can be found under location:
 
--   <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/CEBP%20in%20H1-hESC%20cells%20YES>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/CEBP%20in%20H1-hESC%20cells%20YES>
 
--   This track contains 500 in vivo binding fragments for C/EBP transcription
-    factor (Encode project).
+This track contains 500 in vivo binding fragments for C/EBP transcription factor (Encode project).
 
 **Species**. Choose human, mouse or rat from the drop-down menu.
 
