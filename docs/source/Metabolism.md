@@ -48,10 +48,9 @@ location of the results folder and define its name.
 
 **Example:**
 
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Find Master
-regulator_Transpath/Upregulated_Ensembl/Regulators upstream 10 Proteins
-Transpath peptides
+Input can be found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20isogroups>
 
 Using all other default parameters, press run and wait for the method to
 complete.
@@ -63,7 +62,7 @@ The result is a table which opens by default as shown below:
 All chains within the radius 10 are included in the results. You can click on
 each row and visualize the results as shown below:
 
-![C:\\Users\\admin\\Downloads\\Regulators upstream 10 Proteins Transpath peptides Longest chains Upstream 10 viz.png](media/b464e0cd8cec1a75faa78ecec8bb5c98.png)
+![](media/b464e0cd8cec1a75faa78ecec8bb5c98.png)
 
 Similarly, other long chains can be visualized from the result table.
 
@@ -120,7 +119,7 @@ set**.
 For this example, all further steps are demonstrated with the following input
 set:
 
-(http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20)
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20>
 
 **Step 2**: Specify the metabolism database (**MetDB**) by selecting Recon2 or
 HMR from the drop-down menu. As default the Recon2 database is selected.
@@ -143,7 +142,7 @@ location of the results table and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The results consist of several files and one folder:
 
