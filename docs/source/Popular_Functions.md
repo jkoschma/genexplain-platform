@@ -290,7 +290,7 @@ the input tables.
 
 The analysis method *Join tables* (![](media/baa0074f347e4d1fffb95512e381430d.png)) can be found in the Tree Area under the Analyses tab in the folder *Methods*, subfolder *Data manipulation*. The complete path to this method is:
 
-https://platform.genexplain.com/bioumlweb/\#de=analyses/Methods/Data%20manipulation/Join%20tables
+<https://platform.genexplain.com/bioumlweb/\#de=analyses/Methods/Data%20manipulation/Join%20tables>
 
 Applying the *Join table* method, you can join two tables together in one new
 table containing selected columns. Joining is performed according to ID matching
