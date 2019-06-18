@@ -1,4 +1,4 @@
-﻿# Drug targets
+# Drug targets
 
 ![](media/image030.png)
 
@@ -12,7 +12,7 @@ For the input form of this workflow and for the description of the corresponding
 
 **Note***.* This workflow is available together with a valid TRANSFAC® license.   Please feel free to ask for details (info\@genexplain.com).
 
-### Find drug targets with TRANSFAC® and TRANSPATH®
+## Find drug targets with TRANSFAC® and TRANSPATH®
 
 The geneXplain upstream analysis is an integrated promoter (TRANSFAC®) and pathway (TRANSPATH®) analysis to discover unanticipated causal relationships in your data.
 
@@ -58,13 +58,13 @@ location of the results folder and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-#### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The result folder contains several files and one subfolder:
 
 ![](media/7c75fc51d2bf2a43e208938ff09437ef.png)
 
-#### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
@@ -81,14 +81,14 @@ The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298
 
 ![](media/image033.png)
 
-#### Tip for working with the diagrams
+**Tip for working with the diagrams**
 
 By default network diagrams are shown in the vertical hierarchical layout. The
 layout can be interactively changed into horizontal hierarchical, or force
 directed, or orthogonal layouts as described in diagram layouts. Expression data can
 be mapped on the diagrams as described in the expression mapping section.
 
-### Results of the promoter analysis
+**Results of the promoter analysis**
 
 Along with the master regulatory molecules, this workflow returns the results of the promoter analysis, including TFBSs enriched in the promoters of the Yes set as compared with the No set, see *summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)). The tracks with the Yes and No promoters and with the TF binding sites (![](media/84954cc17be5c089cabbc26a40e58597.png)) are also included in the output. In the screenshot below the results of this workflow are shown with the subfolder Site search -1000 +100 opened:
 
@@ -97,7 +97,7 @@ Along with the master regulatory molecules, this workflow returns the results of
 
 **Note***.* This workflow is available together with valid TRANSFAC® and TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
-## Enriched upstream analysis
+### Enriched upstream analysis
 
 This workflow enables a complete upstream analysis using the newest algorithm to detect enriched transcription factor binding sites (version 2.0), resulting in the identification of master regulators upstream from the transcriptional key molecules. To launch the workflow, open the workflow input form from the Start page:
 
@@ -147,13 +147,15 @@ location of the results folder and define its name.
 **Step 9**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
-The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC>1) (enriched upstream analysis_TF and TP); it contains several files:
+The result folder contains several files and is found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(enriched%20upstream%20analysis_TF%20and%20TP)>
 
 ![](media/image034.png)
 
-#### Enriched motifs
+**Enriched motifs**
 
 The list of motifs, which were identified during the first part of the workflow
 and filtered with enrichment fold \>1 can be found in the table
@@ -175,7 +177,7 @@ HGNC gene symbol, species, and site model (TRANSFAC® PWM name).
 This list of transcription factors is the input for the second part of the
 workflow, the master regulator search.
 
-#### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
@@ -230,13 +232,13 @@ location of the results folder and define its name.
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
 completed, and take a look at the results.
 
-#### Visualization and interpretation of results
+**Visualization and interpretation of results**
 
 The example result folder is here: data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upstream analysis with feedback loop (Transfac and Transpath) and contains several files.
 
 ![](media/2a96575023aea79cd1816705428ac072.png)
 
-### Master regulators
+**Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
