@@ -624,9 +624,9 @@ out the enriched functional categories of gene expression upon treatment with
 IFN type III after 24 hours versus non-treated cells. Below are the links to the
 input files:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/GSE31193_RAW/Experiment%20normalized%20(RMA)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/GSE31193_RAW/Experiment%20normalized%20(RMA)>
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/GSE31193_RAW/Control%20normalized%20(RMA)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/GSE31193_RAW/Control%20normalized%20(RMA)>
 
 It is important to note that for this workflow, the input tables should have
 Affymetrix probeset IDs in the ID column. Such tables have an (![](media/a5b8d32085a5d5f18b698c9698977ea6.png)) icon in the tree area and look like:
@@ -700,8 +700,7 @@ The input table may look like the one shown below. This table contains the
 column logFC (LogFoldChange). This table is an output of the Limma method. Input
 table used for this example can be accessed using the URL:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20
-Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl>
 
 For best GSEA results, input the table with all genes analyzed, e.g. all genes
 present on the chip in the microarray experiment.
@@ -734,7 +733,7 @@ The GSEA results are described in detail in a separate section “**About the GS
 analysis and the interpretation of the results**”. The output folder can be
 accessed through the path:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl%20(Enrichment%20analysis)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl%20(Enrichment%20analysis)>
 
 #### GSEA by GO categories, signaling pathways and diseases
 
@@ -837,8 +836,7 @@ Step 5. Press the button [Run workflow] and wait till the workflow is completed.
 The results folder contains one table with the results of the enrichment
 analysis by the selected ontology. It can be accessed using the URL:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20
-Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN%2024h%20vs%20Control%20DEGs%2C%20aj%20p-val%3C0.05%20Genes%20Ensembl%20(Enrichment%20analysis%20GO%20(biological%20process))]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN%2024h%20vs%20Control%20DEGs,%20aj%20p-val%3C0.05%20Genes%20Ensembl%20(Enrichment%20analysis%20GO%20(biological%20process))>
 
 The GSEA results are described in detail in a separate section “**About the GSEA analysis and the interpretation of the results”.**
 
@@ -889,8 +887,7 @@ set as shown below.
 
 The further steps of the workflow are demonstrated for the upregulated genes shown here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)
-%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
 
 Step 3. Specify the biological species of the input set in the field Species by
 selecting the required biological species from the drop-down menu.
@@ -908,9 +905,7 @@ The workflow is running as shown below, wait till it is completed.
 
 The results folder can be found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20
-(Mapping%20to%20ontologies)]
-
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20(Mapping%20to%20ontologies)>
  
 It contains several tables with the resulting mapping, one table each for the
 applied ontological groups, as well as one gene table (![](media/3376044660b26a160e52442bb6a63338.png)) as shown below:
@@ -1007,9 +1002,9 @@ The further steps of the workflow are demonstrated for the genes shown to be
 up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples, can be found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1022,8 +1017,7 @@ location of the result folder and define its name.
 **Step 5.** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default, it is found here:
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20
-(log%20FC%3E1.5)_Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Mapping%20to%20ontologies%20and%20compare)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)_Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Mapping%20to%20ontologies%20and%20compare)>
 
 
 ![](media/b63eb2aaa64393221307e2bebda8d847.png)
@@ -1063,8 +1057,7 @@ latest TRANSPATH® release available in the platform. The columns ID, Title and
 Group size present information about the TRANSPATH® pathways significantly
 enriched among your input genes. Results Folder is found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20
-(Mapping%20to%20ontologies%20Transpath)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20(Mapping%20to%20ontologies%20Transpath)>
 
  
 ![](media/8377d9aa981559b3c16c4199e744aaa5.png)
@@ -1120,9 +1113,9 @@ up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples. The pertinent example file can be found in the geneXplain platform
 under:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1232,16 +1225,13 @@ of the field Input table. Alternatively, you may click on the pink field “sele
 element” and a new window will be opened, where you can select the input gene
 set as shown below.
 
-The further steps of the workflow are demonstrated for the genes shown to be
-up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
-examples. The pertinent example file can be found in the geneXplain platform
-under:
+The further steps of the workflow are demonstrated for the genes found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
-Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
-[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
-Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)]
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
+Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1289,12 +1279,9 @@ differentially regulated genes or any gene or protein list of interest. You can
 drag it from your project within the tree area and drop it in the pink box of
 the field Input table. Alternatively, you may click on the pink field “select
 element” and a new window will be opened, where you can select the input gene
-set as shown below.
+set found here:
 
-The pertinent example file can be found in the geneXplain platform under:
-
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
-Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes>
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1313,9 +1300,7 @@ When the workflow is completed, the result folder is opened by default.
 
 The result folder contains 1 table (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl table and one table with the mapped ontology results.
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
-Downregulated%20Ensembl%20genes%20(Reactome%20pathways%20(63))]
-
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20(Reactome%20pathways%20(63))>
 
 ![](media/50e9f3e4c84e0d91559576ce3c3680da.png)
 
@@ -1371,14 +1356,13 @@ gene set as shown below.
 
 The further steps of the workflow are demonstrated for the genes shown to be
 up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
-examples. The pertinent example file can be found in the geneXplain platform
-under:
+examples found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
-/Upregulated%20Ensembl%20genes%20Top%20100]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Upregulated%20Ensembl%20genes%20Top%20100>
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
-/Downregulated%20Ensembl%20genes%20Top%20100]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Downregulated%20Ensembl%20genes%20Top%20100>
 
 **Step 3.** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
@@ -1395,8 +1379,7 @@ location of the result folder and define its name.
 
 When the workflow is completed, the result folder is opened by default, found here:
 
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
-/Upregulated%20Ensembl%20genes%20Top%20100%20Mapping%20to%20ontology%20and%20compare]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Top%20100%20Mapping%20to%20ontology%20and%20compare>
 
 The result folder contains 2 tables (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl tables, two tables
 with the mapped ontology results, two tables with the analysis comparison result annotated and one plot .
@@ -1501,7 +1484,7 @@ window will open, where you can select the input table.
 
 Here further steps are demonstrated with a Mouse gene table found here:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Naphthalene_20ppm%20upreg%20Ensembl
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Naphthalene_20ppm%20upreg%20Ensembl>
 
 Select the species of the input table
 
@@ -1620,14 +1603,14 @@ below:
 Post completion the output table is opened in the work space in a new tab and
 consists of a table like the one shown below. Path to the examples is here:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/ChIPMunk/CEBP%20H1-hESC%20cells%20motif%20profile%20CEBP%20in%20H1-hESC%20cells%20YES%20roc%2050
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/ChIPMunk/CEBP%20H1-hESC%20cells%20motif%20profile%20CEBP%20in%20H1-hESC%20cells%20YES%20roc%2050>
 
 ![](media/4ba6960d6ccb65061f3272453b725a2b.png)
 
 The output table can be used to create a ROC curve for the visualization of the
 motif quality and for comparison of different motifs.
 
-![](media/d770d9bfc4cca63bbcc0341eb294ec0a.tiff)
+![](media/image116.png)
 
 ### Create matrix logo
 
@@ -1696,12 +1679,10 @@ using the ‘Export document’ button.
 This workflow is designed to find individual motifs enriched in the promoters of
 the input gene set as compared with a background set (No set). In the first part
 of the workflow, the enriched motifs are identified by the method
-*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon (![](media/4be066f3c65d99b2fcf74faf062ed913.png)
+*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, (![](media/4be066f3c65d99b2fcf74faf062ed913.png)
 
 Please refer to indiviual methods description for details on this particular analysis method.
-Filtered enriched motifs serve as a basis to construct a specific profile, and this profile is run on the promoters of the input gene set, method *analyses/Methods/Site analysis/Site search on gene set*, icon 
-
-(![](media/f92a3f997475d3aff7b33819c5b95f67.png)
+Filtered enriched motifs serve as a basis to construct a specific profile, and this profile is run on the promoters of the input gene set, method *analyses/Methods/Site analysis/Site search on gene set*, (![](media/f92a3f997475d3aff7b33819c5b95f67.png)
 
 
 To launch the workflow, follow these steps:
@@ -1731,7 +1712,7 @@ of the workflow for identification of the enriched motifs. The default profile
 is *vertebrate_human_p0.001* from the most recent TRANSFAC® release available.
 It can be found here:
 
-https://platform.genexplain.com/bioumlweb/\#de=databases/TRANSFAC(R)%202018.1/Data/profiles/vertebrate_human_p0.001
+<https://platform.genexplain.com/bioumlweb/\#de=databases/TRANSFAC(R)%202018.1/Data/profiles/vertebrate_human_p0.001>
 
 The number of matrices in the profile shown here is 5114
 
@@ -1763,11 +1744,7 @@ The results folder consists of several files and folders as shown below:
 
 ![](media/9e4bc635ffa51f7e7574ef7e968dd13f.png)
 
-It can be accessed in the Examples folder using the path shown below:
-
-data/Examples/HCV infection in liver GSE31193, Affymetrix U133 Plus 2.0
-microarray/Data/IFN 6h vs Control/IFN 6hours vs Control UP LogFC\>1.5, 125 genes
-(enriched motifs_TRANSFAC(R))
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes%20(enriched%20motifs_TRANSFAC(R))>
 
 The table **Enriched Motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below:
 
@@ -1794,11 +1771,7 @@ The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis.
 
-**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) serves to visualize enriched motifs in the promoters. This folder contains four tracks (
-
-![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)
-
-):
+**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) serves to visualize enriched motifs in the promoters. This folder contains four tracks (![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)):
 
 ![](media/e95a29d01b7107d4ca9f868dfef7629a.png)
 
@@ -1816,28 +1789,17 @@ Table view on the track *yes sites* is the following:
 
 ![](media/6d6f80c50f844a023878d4e433a3fe32.png)
 
-**Sites table**
-
-![](media/50739faeef67c05f5b5a979e887b7764.png)
-
-gives the list of Transcription Factor matrcies linked to the enriched motifs.
+**Sites table** (![](media/50739faeef67c05f5b5a979e887b7764.png))gives the list of Transcription Factor 
+matrcies linked to the enriched motifs. 
 For Each Transcription factor Yes-No ratio is calculated along with the P-value
 and Matrix logo. Detailed report on selected matrices can be obtained while
 selecting each transcription factor and pressing the report on selected matrices
-button
-
-![](media/46348235571e05c0e1074b5037ca1215.png)
-
-on the control panel.
+button (![](media/46348235571e05c0e1074b5037ca1215.png)) on the control panel.
 
 ![](media/bdbbe92c979af58f93a2f7df14fec58a.png)
 
-The output table *TOP 3 TFBS*
-
-![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)
-
-gives the binding site, and binding positions of top three transcription factors
-enriched in the promoters.
+The output table *TOP 3 TFBS* (![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)) gives the binding site, and 
+binding positions of top three transcription factors enriched in the promoters.
 
 ![](media/b96bfaae9425366801de172d63de2006.png)
 
@@ -1918,22 +1880,13 @@ Wait until the workflow is completed, which is shown below:
 
 ![](media/acea1abea11ff3857d53a0922978a6a6.png)
 
-The results folder contains several files and can be accessed using the path
-
-data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing
-Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (log
-FC\>1.5) site search
+The results folder contains several files and is found here:
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search>
 
 ![](media/c4ae5ccba2a46644092b427b0c98115c.png)
 
-The tables called *summary* (
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-), *TF Ensembl genes*, and *TF Entrez genes* are opened automatically in the
-work area as soon as the workflow is completed.
-
-For more details about the results, please refer to Section 20.1.4.
+The tables called *summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)), *TF Ensembl genes*, and *TF Entrez genes* 
+are opened automatically in the work area as soon as the workflow is completed.
 
 **Tip.** You can easily create a similar workflow with parameter values adjusted
 to your needs. For example, you can select another profile from the list of
@@ -1949,7 +1902,7 @@ gene set" analysis was selected, and in the Operations Field, on the tab
 "Workflow", all the parameters are visible. Under this mode, you can either
 check what the default parameters are, or modify them according to your needs.
 
-![C:\\Data\\Texte\\geneXplain\\product_development\\user guide\\Section_3-6-1_N6.png](media/d4edde26e93a05eddc3f3ccaa6e4d36b.png)
+![](media/d4edde26e93a05eddc3f3ccaa6e4d36b.png)
 
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
@@ -1975,17 +1928,13 @@ resulting composite module differentiates the Yes-set from a background set
 (No-set).
 
 In the first part of the workflow, the enriched motifs are identified by the
-method *analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon
-
-![](media/4be066f3c65d99b2fcf74faf062ed913.png)
+method *analyses/Methods/Site analysis/Search for enriched TFBSs (genes)* (![](media/4be066f3c65d99b2fcf74faf062ed913.png))
 
 Please refer to the individual analysis method description for the method search for enriched TFBSs. 
 
 Motifs with an enrichment of \>1.0 fold serve as a basis for constructing a
 specific profile, and this profile is run on the promoters of the input gene
-set, method *analyses/Methods/Site analysis/Site search on gene set*, icon
-
-![](media/f92a3f997475d3aff7b33819c5b95f67.png)
+set, method *analyses/Methods/Site analysis/Site search on gene set* (![](media/f92a3f997475d3aff7b33819c5b95f67.png))
 
  In the second part of this workflow, composite modules are identified based on the
 enriched TFBSs. For more details about CMA analysis refer to indiviual method description. 
@@ -2001,7 +1950,7 @@ main Work Space and looks as shown below:
 select the Yes set from the Tree area. Here, the set of up-regulated genes from
 the following *Examples* folder is used:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5%2C%20125%20genes
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes>
 
 The Yes set in this example contains 125 genes up-regulated in human liver cells
 treated with interferon-γ (IFNγ) as compared with non-treated cells.
@@ -2044,18 +1993,12 @@ maximum. The maximum recommended number of iterations is 300.
 The results folder consists of several folders and files as shown below and can
 be accessed using the path
 
- data/Examples/HCV infection in liver GSE31193, Affymetrix U133 Plus 2.0
-microarray/Data/IFN 6h vs Control/IFN 6hours vs Control UP LogFC\>1.5, 125 genes
-(enriched motifs and CMA)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes%20(enriched%20motifs%20and%20CMA)>
 
 ![](media/b731bdaa26f70485b6651532b311c840.png)
 
-The table **Enriched Motifs** (
-
-![](media/8ed589ee0b31e1b240c071d30254a8be.png)
-
-) contains those site models, here TRANSFAC® matrices, which are enriched in the
-Yes set as compared to the No set as shown below.
+The table **Enriched Motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models,
+here TRANSFAC® matrices, which are enriched in the Yes set as compared to the No set as shown below.
 
 ![](media/f94c31f4a4393dd714cfae7c896ed1cf.png)
 
@@ -2073,11 +2016,7 @@ Motifs for IRF, ISRE, ICSBP transcription factors are highly enriched, with adj.
 site FE \>2, as shown in the screenshot above. This is a very relevant result
 considering that here the effect of IFNγ on liver cells is studied.
 
-The table **Profile** (
-
-![](media/cc3badf61d49a95e3466827ae711bce4.png)
-
-) presents details for PWMs with *adj. site FE \>1*.
+The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*.
 
 ![](media/6f7db08fac68ac1b0d97670818117ed3.png)
 
@@ -2107,13 +2046,9 @@ is shown below.
 
 For more details on the individual output tables and tracks as well as for **visualization** of the identified composite modules in the genome browser please refer to indiviual method description. 
 
-The output table *Transcription factors Ensembl genes*
-
-![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)
-
-is a list of transcription factors linked to the site models in the composite
-module identified by the workflow. For each transcription factor, the Ensembl
-gene ID is provided, as well as a gene description, the HGNC gene symbol,
+The output table *Transcription factors Ensembl genes* (![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)) is a 
+list of transcription factors linked to the site models in the composite module identified by the workflow. 
+For each transcription factor, the Ensembl gene ID is provided, as well as a gene description, the HGNC gene symbol,
 species, and site model (TRANSFAC® PWM name).
 
 ![](media/d40cd14f52757bf0d1320fffebfe1052.png)
@@ -2156,13 +2091,13 @@ Step 2. Input the Yes set from the tree. You can either drag-and-drop or select
 the Yes set from the Tree area. Here, the set of genes from the Example folder
 is used as input Yes set. It can be accessed using the URL:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
 
 Step 3. Similarly input the No set from the tree area. By default the workflow
 uses a subset fo 300 genes randomly taken out of the human housekeeping genes.
 The default NO set can be found here:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Human)%20300
+<https://platform.genexplain.com/bioumlweb/\#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Human)%20300>
 
 Step 4. After input of the Yes and No sets, the species (human, mouse or rat) is
 adjusted automatically. Verify the species shown in the species field.
@@ -2221,7 +2156,7 @@ particular run of the workflow was done with.
 ![](media/d2bcc7858c2a29da299c8bc92cd71f68.png)
 
 The **modules** (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)) folder can be expanded in the tree area. It contains 
-two tables (![](media/3376044660b26a160e52442bb6a63338.png)), two tracks (![](media/368076561774990443d1e26a25dd9f3e.emf)), and two plots (![](media/e16c5085d2766bce7561c588951ab4c0.emf)):
+two tables (![](media/3376044660b26a160e52442bb6a63338.png)), two tracks (![](media/track.jpg)), and two plots (![](media/plot.png)):
 
 ![](media/fd1ece0dbdda404fa9a392b734b5ff27.png)
 
@@ -2253,15 +2188,13 @@ the input gene set as compared with a background set (No set). It is very
 similar to the workflow described above except that here you can
 use an input table for any species and get the output for the desired species.
 
-The workflow can be accessed from the start page here:
+The workflow is found here:
 
-analyses/Workflows/TRANSFAC/Cross-species identification of enriched motifs in
-promoters, using ortholog information (TRANSFAC(R))
+<https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Cross-species%20identification%20of%20enriched%20motifs%20in%20promoters,%20using%20orthologue%20information%20(TRANSFAC(R))>
+
 
 In the first part of the workflow, enriched motifs are identified by the method
-*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, icon
-
-![](media/7262880155aba8a0362954fe7cd09fb5.png)
+*analyses/Methods/Site analysis/Search for enriched TFBSs (genes)* (![](media/7262880155aba8a0362954fe7cd09fb5.png))
 
 Please refer details on this particular analysis method.
 Filtered enriched motifs serve as a basis to construct a specific profile, and
@@ -2276,12 +2209,10 @@ The input form looks as shown below:
 Step 1: Select an Input Yes gene set from the tree. You can either drag-and-drop
 or select the Yes set from the Tree area.
 
-Here, the set of up-regulated genes from the following *Examples* folder is
-used:
+The set of up-regulated genes used in this Example can be found here:
 
-data/Examples/Transcriptional biomarkers to predict mouse liver tumors,
-GSE18858/Data/Normalized (RMA) DEGs with EBarrays/Naphthalene_20ppm upreg
-Ensembl
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Naphthalene_20ppm%20upreg%20Ensembl>
+
 
 Step 2: Specify the Species of the input set and the Species of the output set.
 In this case Input is Mouse and Output species selected is human.
@@ -2291,7 +2222,7 @@ uses a subset from 300 genes randomly taken out of the human housekeeping genes.
 
 For this example the NO set used is:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Mouse)%20300
+<https://platform.genexplain.com/bioumlweb/\#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Mouse)%20300>
 
 Step 4: The profile will be applied in the first part of the workflow for the
 identification of enriched motifs. The default profile is
@@ -2316,20 +2247,16 @@ can edit the fields Start promoter and End promoter as required.
 Step 7: Specify the Result folder location and name and Press the button [Run
 workflow]. Wait till the workflow is completed.
 
-The result folder consists of several files as shown below and can be accessed
-using the URL
+The result folder consists of several files is found here:
 
-data/Examples/Transcriptional biomarkers to predict mouse liver tumors,
-GSE18858/Data/Naphthalene_20ppm upreg Ensembl (enriched motifs_TRANSFAC(R))
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Naphthalene_20ppm%20upreg%20Ensembl%20(enriched%20motifs_TRANSFAC(R))>
+
+
 
 ![](media/3da43a032a94ddc193468e8fd2765200.png)
 
-The table **Enriched Motifs** (
-
-![](media/036ef405a55496f4a10ee3df573cec2c.png)
-
-) contains those site models, here TRANSFAC® matrices, which are enriched in the
-Yes set in comparison with the No set. 
+The table **Enriched Motifs** (![](media/036ef405a55496f4a10ee3df573cec2c.png)) contains those site models, 
+here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set. 
 
 The table Molecules Orthologs have a list of molecules from the input gene set
 with their site search results as shown below:
@@ -2337,7 +2264,6 @@ with their site search results as shown below:
 ![](media/42c964d2b650c1fed9577af20331ac76.png)
 
 Every gene is linked to the corresponding matrix molecule by the Yes-No ratio.
-More details on each column of the above results can be found in section 6.1.2.
 
 The table Molecules_human contain the site models of the converted input table.
 In this case the output species is Human hence this table is Molecules_human
@@ -2369,12 +2295,10 @@ area. Alternatively, you may click on the pink field “select element”, and a
 window will open, where you select the site search result. After having selected
 the result, press the [Ok] button.
 
-For this example, all further steps are demonstrated with the following input
-set:
+For this example, all further steps are demonstrated on the following input set found here:
 
-data/Examples/Transcriptional biomarkers to predict mouse liver tumors,
-GSE18858/Data/Naphthalene_20ppm upreg Ensembl (enriched motifs_TRANSFAC(R))/Site
-search -1000 100
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Naphthalene_20ppm%20upreg%20Ensembl%20(enriched%20motifs_TRANSFAC(R))/Site%20search%20-1000%20100>
+
 
 ![](media/02271455f2aac101112f99c124de8c95.png)
 
@@ -2394,7 +2318,7 @@ automatically and looks like this:
 
 Can be accessed using the URL:
 
-https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors%2C%20GSE18858/Data/Naphthalene_20ppm%20upreg%20Ensembl%20(enriched%20motifs_TRANSFAC(R))/Site%20search%20-1000%20100/Top%203
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors%2C%20GSE18858/Data/Naphthalene_20ppm%20upreg%20Ensembl%20(enriched%20motifs_TRANSFAC(R))/Site%20search%20-1000%20100/Top%203>
 
 ![](media/53bd050fba2b047c094cc1bc439d3655.png)
 
@@ -2559,7 +2483,9 @@ completed, and take a look at the results.
 
 **Visualization and interpretation of results**
 
-The result example folder can be found under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upregulated Ensembl genes filtered (logFC>1) (enriched upstream analysis_TF and TP); it contains several files:
+The result folder contains several files and is found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(enriched%20upstream%20analysis_TF%20and%20TP)>
 
 ![](media/image034.png)
 
