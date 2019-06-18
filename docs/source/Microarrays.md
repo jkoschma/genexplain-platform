@@ -74,7 +74,8 @@ heatmap presentation.
 
 An example can be found here: 
 
-http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Normalized%20(RMA)%20subset_heatmap
+[http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Normalized%20(RMA)%20subset_heatmap]
 
 **Step 1**: Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
@@ -234,10 +235,8 @@ within the tree area and drop it in the pink box of the fields. Alternatively,
 you may click on the pink field *(select element)* and a new window will be
 opened, where you can select the input tables.
 
-The further steps of the workflow are demonstrated by means of the tables in one
-of the pre-prepared examples. You can find these tables in the *Examples*
-folder, under data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A
-microarray/Data/Ewing Family Tumor versus Neuroblastoma
+The further steps are demonstrated using the Affymetrix files found here:
+[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/GSE1825_RAW]
 
 **Step 3.** Specify the biological species of the input sets in the field
 **Species** by selecting the required biological species from the drop-down
@@ -251,9 +250,11 @@ the location of the results folder and define its name.
 After entering all input fields press [Run workflow] and wait till the workflow
 is completed.
 
-The output is a folder with several files as shown below: It can be located in the Examples folder by the URL:
-[https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
-/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)]
+The output is a folder with several files as shown below:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%
+20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
+/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)>
 
 
 ![](media/image039.png)
