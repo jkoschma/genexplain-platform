@@ -37,19 +37,20 @@ the main Work Space and looks as shown below:
 ![](media/306f08869cb6eaa30aceb44b00756644.png)
 
 **Step 2**. Input the **Forward** and **Reverse** fastq files. You can either
-drag&drop or select the files from the Tree area. Here, a set of files from the
-Example folder is used as input.
+drag&drop or select the files from the Tree area. Example files are present here:
 
-[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 forward.fastq]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq>
 
-[data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 reverse.fastq]
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20reverse.fastq>
 
 **Step 3**. Specify the **OutputFolder** location and name and press the button
 [Run workflow].
 
-#### All results are saved in the result folder: 
+**Results**:
+Results are found in a folder can be accessed here:
 
-data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SRR944150 forward.fastq (Genome variants and indels from RNA-seq)
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq%20(Genome%20variants%20and%20indels%20from%20NGS)>
+
 
 In the first step the input fastq sequences are subjected to the BWA method from
 Illumina. BWA is a software package for mapping low-divergent sequences against
@@ -104,7 +105,7 @@ In the track visualization the information about each variation (either a base
 substitution or an indel) is shown in the info box when clicking on each
 variation.
 
-### Visualize variants in genome browser
+## Visualize variants in genome browser
 
 The genomic variants shown in the tree area as tracks (![](media/track.jpg)) can be directly visualized in the genome browser. Tables with SNP IDs (![](media/image027.png)) should be first processed into the tracks. For this, you can apply the method called SNP matching (![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)); 
 
@@ -169,7 +170,7 @@ Therefore, please apply correspondingly the workflows explained in detail under 
 
 ### Enriched TF sites around regulatory SNPs and SIFT analysis
 
-### Analysis with TRANSFAC®
+#### Analysis with TRANSFAC®
 
 The input form of this workflow, when opened form the Start page, is the
 following:
@@ -212,10 +213,11 @@ tracks:
 
 ![](media/e2263ad09b67915f45990cf0ae11423e.png)
 
-The results shown here can be found in the trea area: data/Examples/SNPs linked
-to human height/Data/SNP_height_hg19 (Analyze SNP list (TRANSFAC))
+The results shown here can be found here:
 
-#### Subfolder *All SNPs*
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20(Analyse%20SNP%20list%20(TRANSFAC))>
+
+**Subfolder *All SNPs***
 
 This folder includes one gene table and one track.
 
@@ -242,7 +244,7 @@ chromosomal location, absolute positions, length, and strand. In the column
 **Type** the value *variation* is shown for all SNPs, and in the column
 **Property: name** SNP IDs are shown.
 
-#### Subfolder SNPs in exons
+**Subfolder SNPs in exons**
 
 This folder includes two tables, both present information for those SNPs that
 are located in exons. In our example, 19 out of 148 SNPs mapped to the genome
@@ -292,7 +294,7 @@ The columns **Gene ID**, **Gene Name**, **Gene Desc** show information about
 which genes and gene products are affected and might be even damaged by a given
 variation.
 
-#### Subfolder SNPs regulatory
+**Subfolder SNPs regulatory**
 
 This subfolder contains three tables and one track.
 
@@ -397,7 +399,7 @@ with several TFBSs, e.g. with the binding sites for c-Maf and PPARγ.
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
-### Analysis with GTRD
+#### Analysis with GTRD
 
 This workflow is similar to the one described above. The difference is in the
 database applied for the TFBS search; in this workflow it is the GTRD database.
@@ -406,7 +408,7 @@ different.
 
 The results of this workflow can be found under:
 
-data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyze SNP list (GTRD))
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20(Analyse%20SNP%20list%20(GTRD))>
 
 ![](media/94cc28038e1de833c5586cc9c9a9d041.png)
 
@@ -449,7 +451,7 @@ and indels from full-genome NGS*. Both workflows can be found under
 <http://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/>
 
 In the following example we took as input the track SNP_indels.vcf, which can be
-found at: [data/Examples/Chronic Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf)
+found at: <http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf>
 
 This vcf file was produced by the workflow *Find genome variants and indels from full-genome NGS*.
 
@@ -458,8 +460,8 @@ This vcf file was produced by the workflow *Find genome variants and indels from
 
 **Step 4**. Select the **Profile**. This profile will be applied for the
 identification of the enriched motifs around variation sites. The default
-profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC® release](http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)
-2019.1/Data/profiles/) available.
+profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC® release]<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)/2019.1/Data/profiles/>
+available.
 
 **Step 5**. Specify the **Variation surrounding region** in base pairs. By
 default 15 bp are used. Within these region/window the search for enriched TFBSs
@@ -472,11 +474,10 @@ select the location of the results folder and define its name.
 
 Start the workflow by pressing the [Run workflow] button.
 
-Below you can see the result folder for the example: [data/Examples/Chronic
-Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf (Enriched TF binding
-sites(TRANSFAC))/](http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic
-Myeloid Leukemia Patient Genotyping/Data/SNP_indels.vcf (Enriched TF binding
-sites (TRANSFAC))/)
+Below you can see the result folder for the example: 
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20(Enriched%20TF%20binding%20sites%20(TRANSFAC))>
+
 
 The output folder contains on sub-folder with a track and two tables.
 
@@ -566,13 +567,12 @@ TFBSs that are more strongly affected by a variation, set this parameter to 0.5
 
 **Step 5**. Specify the path and name of the **Output track**.
 
-After completion the output track file ([SNP_indels.vcf affected sites]<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20affected%20sites>
+After completion the output track file is found here:
+
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20affected%20sites>
 
 is opened by default in the work space. One example of the affected identified
 site is shown in the red box (V\$EBOX_Q6_01).
-
-This resulting track can be found in the Examples folder under the URL:
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/Affected%20binding%20sites>
 
 ![](media/02b2f7682341e6bdb27f166c52b98bb6.png)
 
@@ -645,9 +645,7 @@ chr10 115912482 - G/T
 chr10 115900918 - C/T  
 chr16 69875502 + G/T
 
-One example input table can be found here on the platform: [data/Examples/SNPs
-linked to human height/Data/SNP_height_hg19 (Analyse SNP list (TRANSFAC))/SNPs
-in exons/SNP_height_hg19 matched SNPs in exons]
+One example input table can be found here on the platform: 
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons>
 
@@ -688,7 +686,9 @@ of the table and define its name.
 
 Start the SIFT analysis by pressing the [Run workflow] button.
 
-An example output table can be found here: [data/Examples/SNPs linked to human height/Data/SNP_height_hg19 (Analyse SNP list (TRANSFAC))/SNPs in exons/SNP_height_hg19 matched SNPs in exons SIFT](http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons%20SIFT)
+An example output table can be found here: 
+
+<http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons%20SIFT>
 
 ![](media/86dc142d686842b3ce52f4fb0fc1c8fd.png)
 
