@@ -104,6 +104,8 @@ versions are provided:
 
 **Human**:
 
+-   Genome build hg38, version 91.38
+
 -   Genome build hg38, version 84.38
 
 -   Genome build hg19, version 72.37
@@ -113,6 +115,9 @@ versions are provided:
 -   Genome build hg18, version 61.37f
 
 **Mouse:**
+-   Genome build mm10, version 91.38
+
+-   Genome build mm10, version 84.38
 
 -   Genome build mm10, version 72.38
 
@@ -128,12 +133,15 @@ versions are provided:
 
 -   Genome build rn6, version 84.6
 
+-   Genome build rn6, version 91.6
+
 In the subdirectories “Sequences/Chromosomes …” the individual chromosomes of
 the corresponding genome are stored. A double-click on an individual chromosome
 symbol opens the corresponding object with its annotation in the genome browser
 of the geneXplain platform. Here, you can move the mouse pointer along the
 sequence to select a certain position. With the *Zoom-in*, *Zoom-out* button, you can go up to a level where you have the whole
 chromosome displayed or down to a level where you see the individual nucleotides. The view can be adjusted accordingly with the control panel buttons, mouse over message describes the functionality of the buttons in detail. The mode can be selected from detailed, default, and overview. 
+
 ![](media/image020.png)
 ![](media/image021.png)
 
@@ -362,7 +370,7 @@ role in a certain biological context, as defined by the profile name.
 The TRANSFAC folder “Dictionaries” contains mostly files with links to other
 databases for internal use of the program.
 
-### Fantom5 cell-type and tissue-specific transcription start sites
+**Fantom5 cell-type and tissue-specific transcription start sites**
 
 The Fantom5 databases (Fantom5-Cell and Fantom5-Tissue) provide cell- and
 tissue-type specific transcription start site (TSS) annotations derived from
@@ -399,7 +407,7 @@ gene sets using the tool named “Create tissue-specific promoter track”.
 
 ![](media/f840fbf8862d86505aac54daa3285e7f.png)
 
-## Other data sets
+**Other data sets**
 
 In addition to databases, there are several datasets available within the
 platform that might be interesting to make use of in particular analyses. The
@@ -438,7 +446,7 @@ compounds. Along with the individual files, there are 17 subfolders, in which
 the files are grouped according to the classification of the respective drugs
 (for example, “adrenergic antagonist”).
 
-### Search with DrugExpress Database
+**Search with DrugExpress Database**
 
 To search within the DrugExpress database you have to switch from Default mode
 to DrugExpress, mode using the drop-down menu at the top right corner (see
@@ -489,7 +497,7 @@ that significantly change their expression in response to the treatment.
 
 ![](media/7c196226cee200c45700d272de8774f4.png)
 
-### Functional analysis applying DrugExpress, the input form
+**Functional analysis applying DrugExpress, the input form**
 
 The classification of drugs can be also applied to any gene signatures, for
 example to the genes differentially expressed under certain disease conditions.
@@ -540,7 +548,7 @@ name.
 
 **Step 7**. Press the [Run] button and wait till the analysis is completed.
 
-### Results of the functional classification using DrugExpress
+**Results of the functional classification using DrugExpress**
 
 As a result, a table is generated with all columns as usual for *Functional
 classification* results, shown below. You can find the resulting table at:
