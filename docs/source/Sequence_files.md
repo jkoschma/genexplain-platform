@@ -169,8 +169,9 @@ Then press the button [Run workflow]. Wait till the workflow is completed.
 
 **Results**
 
-The results folder consists of several tables and tracks and can be accessed using the path:
-data/Examples/Plant DNA sequence analysis/Data/Arabidopsis_Chromosome 1 site enrichment
+The results folder consists of several tables and tracks and is found here:
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Plant%20DNA%20sequence%20analysis/Data/Arabidopsis_Chromosome%201%20site%20enrichment>
 
 ![](media/image046.png)
 
