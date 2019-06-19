@@ -89,7 +89,7 @@ Using these icons, you can manually add a node that represents a cell,  a cellul
 
 In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.jpg), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before with ![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type ![](media/9298e8be35434e50b825f64b13265af0.emf).
 
-### To add an element to the diagram, several ways are available:
+**To add an element to the diagram, several ways are available:**
 
 i) Search for the element using the search tab in the databases folder and then add this element to the diagram using
 the icon ![](media/9cfb8167772d37ff6f129cbdaedb18f0.png)
@@ -169,7 +169,7 @@ To remove a node from the diagram, first select this node and then right-click
 To shift a node relative to other nodes, select it and drag to a desired
 position. 
 
-#### Saving changes and undo & redo functions.
+**Saving changes and undo & redo functions.**
 
 After editing of a diagram is complete, you can either save changes or undo
 them. Saving a diagram under the same path and name is done by the button ![](media/b8be920b5b76978e4f2adbaebd0832fd.emf)
