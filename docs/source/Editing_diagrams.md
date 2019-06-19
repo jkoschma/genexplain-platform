@@ -87,7 +87,7 @@ A pathway diagram opened in the work space has a tool bar as shown below:
 
 Using these icons, you can manually add a node that represents a cell,  a cellular compartment, a gene , an RNA , a protein  or a substance (or small metabolite). It may also something as abstract as a concept. These nodes may be related to each other with any kind of link, or , more specifically and if you wish to model your network as a bipartite diagram with a reaction. 
 
-In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.jpg), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before with ![](media/f3241118e89d47eeb829a6c56760a32c.emf)) to a node by introducing an edge of the type ![](media/9298e8be35434e50b825f64b13265af0.emf).
+In case you wish to link two already existing nodes by a new edge, click on the icon ![](media/f7a6f6bf613d4cb02227991104f28174.jpg), which will open a new mask where you can define the input and the output node. Just move the mouse cursor into the respective field and click on the node that should serve as input or output node, respectively. The corresponding name or accession number will appear in the field. The same works for linking a note (to be defined before) to a node by introducing an edge. 
 
 **To add an element to the diagram, several ways are available:**
 
@@ -135,7 +135,7 @@ highlighted blue.
 
 ![](media/c8d75a97f8f16a937f35edddf0ba53d5.png)
 
-Then choose the option “Save as” (![](media/3ef58799207a433d23bd5440df88d85b.emf) in the Control Panel). A new mask opens (“Save document as”), where you will find your project and a folder labeled “data”; you should save this copy under
+Then choose the option “Save as” in the Control Panel. A new mask opens (“Save document as”), where you will find your project and a folder labeled “data”; you should save this copy under
 any new name.
 
 #### Changing location, color and title of the nodes on a diagram 
@@ -172,16 +172,16 @@ position.
 **Saving changes and undo & redo functions.**
 
 After editing of a diagram is complete, you can either save changes or undo
-them. Saving a diagram under the same path and name is done by the button ![](media/b8be920b5b76978e4f2adbaebd0832fd.emf)
+them. Saving a diagram under the same path and name is done by the save button
 on the top menu. If you would like to save a diagram to a different folder or
-project, or under different name, use the Save button ![](media/3ef58799207a433d23bd5440df88d85b.emf)
-In case you would like to return to the previous variant, use the Undo button ![](media/927efa084db79f9a2ac7b5d2ee3f6983.emf)
+project, or under different name, use the Save a copy button.
+In case you would like to return to the previous variant, use the Undo button. 
 .
 **Important**: undo and redo functions work for one previous step, you need to
 click the same button again to undo or redo the next previous step. Please note,
 undo and redo functions work only before saving.
 
-To return to the previously saved version of a diagram, use the Revert button ![](media/4899d21c99da5089c57551ea1751893d.emf)
+To return to the previously saved version of a diagram, use the Revert button. 
 
 Further editing of diagrams includes mapping available expression data on the
 molecules and adding interactions around the selected molecules. For details on
