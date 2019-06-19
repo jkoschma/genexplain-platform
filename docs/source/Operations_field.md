@@ -66,7 +66,7 @@ The layout that has been applied to the Work Space can be further edited manuall
 
 Further editing of the layout schemes can be done by parameter settings in the Operation Field, Layout tab.
 
-## Expression Mapping
+### Expression Mapping
 
 This function enables highlighting of up-regulated and down-regulated genes in
 the network diagrams.
@@ -149,7 +149,7 @@ directions) and number of steps (depth) in the selected direction.
 
 Graph search can be done in several iterations.
 
-### First iteration of a graph search.
+#### First iteration of a graph search.
 
 To perform a graph search the following steps are recommended:
 
@@ -204,7 +204,7 @@ layouts are described in Section “Changing the layout”.
 If you would like to remove the search results and select another molecule, the *delete*
 button can be applied.
 
-### Second and next iterations of the graph search.
+#### Second and next iterations of the graph search.
 
 -   Having several molecules in the element pane at the previous iteration of a
     graph search, the user can start searching again in the specified direction
