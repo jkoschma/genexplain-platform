@@ -329,7 +329,7 @@ genes…” as input gene table for profile creation.
 The example table is a list of non-filtered genes from the workflow “Detect
 differentially expressed genes…”:
 
-[https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered](https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-valu)
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
 
 A profile created from this gene table can be found here:
 
@@ -360,7 +360,7 @@ a table can be the result of a site search analysis.
 In the following, further steps are demonstrated with a table of site models
 from one of the examples. The example file can be accessed using the URL:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary>
 
 **Reference profile:** In this field, you indicate the profile where the cutoffs for
 the new profile should be taken from. It is filled automatically if the input
@@ -388,7 +388,7 @@ shown below:
 
 An example profile created from this gene table can be found here:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/summary%20profile
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/summary%20profile>
 
 Each row summarizes the information for one site model. In the column Name the
 name of the site model is given, which in the majority of cases is the same as
@@ -468,7 +468,7 @@ projects.
 
 Clicking the [Run] button will invoke the analysis. A part of the resulting
 profile is shown below: Resulting profile can be accessed using the URL:
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/matrix%20profile
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/matrix%20profile>
 
 
 
@@ -540,15 +540,14 @@ each PWM.
 The steps of an analysis can be described as follows:
 
 **Step 1.** Input Yes set from the tree. As usual, you can drag-and-drop. Here,
-the set of genes from the Example folder is used as input Yes set, can be
-accessed using the URL:
+the below set of genes are used:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
 
 **Step 2.** Input No set (drag-and-drop). Our example uses the set of
 “Non-changed Ensembl genes”
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes>
 
 **Step 3.** Select the TRANSFAC® or GTRD profile from the available profiles. In
 this example, we select the TRANSFAC® 2017.2 profile named “vertebrates”:
@@ -717,10 +716,9 @@ The input form for this analysis is shown below:
 analysis, where you specify the results of the site search. The input field is
 marked by the symbol ![](media/e8ea74032e2066ffc66882b105fec024.png) , which means that the input data set should have the same symbol.
 
-In the example below, we will use an input data set, which you can find in the
-geneXplain platform online under the following path:
+The below mentioned table is used for demonstration further:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%20search%20-1000%20%2B100/summary
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%20search%20-1000%20%2B100/summary>
 
 As you can see, this is a folder with the results of the Site search on gene
 set. If you single-click on this folder in the tree area it will be highlighted
