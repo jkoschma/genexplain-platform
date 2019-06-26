@@ -270,11 +270,9 @@ The algorithm automatically identifies transcription factor genes in the input
 table and the matrices linked to these factors in the TRANSFAC® database. These
 matrices will be put into the newly created profile.
 
-Further steps are demonstrated with the table of genes available in one of the
-platform examples present in the Tree Area. The example file can be accessed
-using the URL:
+Further steps are demonstrated with the table of genes present here:
 
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
 
 
 **Species:** Select the biological species corresponding to the input gene set from
