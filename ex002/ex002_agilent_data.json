@@ -1,0 +1,36 @@
+{
+    "credentials": "credentials.json",
+    "server": "https://test.genexplain.com",
+    "reconnect": true,
+    "verbose": true,
+    "replaceStrings": [
+            ["$BASE_FOLDER$", "data/Projects/Automatic_testing/Data/example_folder_jko"],
+            ["$STUDY$", "GSE52465_Agilent"]
+    ],
+    "loadTasks": [ "ex002_agilent_data_full_lib.json" ],
+    "tasks": [
+        {
+            "fromLib": "createExampleFolder"
+        },
+        
+        {
+            "fromLib": "createStudyFolder"
+        },
+        
+        {
+            "fromLib": "importAgilentFiles"
+        },
+        
+        {
+            "fromLib": "wait10s"
+        },
+        
+        {
+            "fromLib": "normalizeAgilent"
+        },
+        
+        {
+            "fromLib": "makePlots"
+        }
+    ]
+}

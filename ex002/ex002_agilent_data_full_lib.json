@@ -1,0 +1,127 @@
+{
+    "createExampleFolder": {
+        "do": "createFolder",
+        "path": "data/Projects/Automatic_testing/Data",
+        "name": "example_folder_jko"
+    },
+    
+    "createStudyFolder": {
+        "do": "createFolder",
+        "path": "$BASE_FOLDER$",
+        "name": "$STUDY$"
+    },
+    
+    "importAgilentFiles": {
+        "do": "imPort",
+        "file": "by_Neetu/GSE2639_RAW.tar",
+        "path": "$BASE_FOLDER$/$STUDY$",
+        "importer": "ZIP-archive (*.zip)",
+        "wait": true,
+        "progress": true,
+        "parameters": [{"name": "cleanupFolder",     "value":false},
+                        {"name": "preserveExtension", "value":false},
+                        {"name": "preserveArchiveStructure", "value":true },
+                        {"name": "importFormat", "value": "Agilent microarray file (*.txt)"}]
+    },
+    
+    "wait10s": {
+        "do": "external",
+        "showOutput": true,
+        "bin": "sh",
+        "params": ["gxp_wait.sh", "10"]
+        
+    },
+        
+    "makePlots": {
+        "do": "analyze",
+        "method": "Normalization quality plots",
+        "wait": true,
+        "progress": true,
+        "parameters": [
+            {   
+                "name":"inputTablePath",
+                "value": "$BASE_FOLDER$/$STUDY$/Agilent normalized"
+            },
+            {"name":"inputLogarithmBase","value":"log2"},
+            {"name":"outputFolderPath","value":"$BASE_FOLDER$/$STUDY$/Normalization_QC_plots"}
+        ]
+    },
+    
+    "normalizeAgilent": {
+        "do": "analyze",
+        "method": "Agilent normalization",
+        "wait": true,
+        "progress": true,
+        "parameters": [
+            {
+                "name":"agilentFiles",
+                "value":
+                    [
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267304_M2791.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267305_M2795.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267306_M2793.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267307_M2797.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267308_M2792.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267309_M2796.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267310_M2794.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267311_M2798.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267312_M2799.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267313_M2803.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267314_M2801.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267315_M2805.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267316_M2800.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267317_M2804.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267318_M2802.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267319_M2806.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267320_M2807.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267321_M2811.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267322_M2809.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267323_M2813.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267324_M2808.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267325_M2812.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267326_M2810.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267327_M2814.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267328_M2815.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267329_M2819.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267330_M2817.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267331_M2821.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267332_M2816.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267333_M2820.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267334_M2818.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267335_M2822.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267336_M3954.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267337_M3955.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267338_M3956.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267339_M3957.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267340_M3958.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267341_M3959.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267342_M3960.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267343_M3961.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267344_M3962.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267345_M3963.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267346_M3964.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267347_M3965.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267348_M3966.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267349_M3967.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267350_M3968.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267351_M3969.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267352_M4070.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267353_M4071.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267354_M4072.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267355_M4073.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267356_M4062.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267357_M4063.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267358_M4064.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267359_M4065.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267360_M4066.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267361_M4067.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267362_M4068.txt",
+                        "$BASE_FOLDER$/$STUDY$/GSE52465_Cytokine_txt_files/GSM1267363_M4069.txt"
+                    ]
+            },
+            {"name":"outputLogarithmBase","value":"log2"},
+            {"name":"outputPath","value":"$BASE_FOLDER$/$STUDY$/Agilent normalized"}
+        ]
+    }
+}
+    
