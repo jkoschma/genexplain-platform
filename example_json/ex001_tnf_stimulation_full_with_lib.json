@@ -1,0 +1,53 @@
+{
+    "credentials": "credentials.json",
+    "server": "https://test.genexplain.com",
+    "reconnect": true,
+    "verbose": true,
+    "replaceStrings": [
+            ["$BASE_FOLDER$", "data/Projects/Automatic_testing/Data/example_folder"],
+            ["$STUDY$", "GSE2639_HUVEC_TNF"],
+            ["$LIMMA_FILE$","TNF vs. Control"]
+    ],
+    "loadTasks": [ "ex001_tnf_stimulation_full_lib.json" ],
+    "tasks": [
+        {
+            "fromLib": "createExampleFolder"
+        },
+        
+        {
+            "fromLib": "importCelFiles"
+        },
+        
+        {
+            "fromLib": "wait10s"
+        },
+        
+        {
+            "fromLib": "createStudyFolder"
+        },
+        
+        {
+            "fromLib": "normalizeAffy"
+        },
+        
+        {
+            "fromLib": "makePlots"
+        },
+        
+        {
+            "fromLib": "makePCA"
+        },
+        
+        {
+            "fromLib": "runLimma"
+        },
+        
+        {
+            "fromLib": "convertLimmaGenes"
+        },
+        
+        {
+            "fromLib": "convertLimmaTp"
+        }
+    ]
+}

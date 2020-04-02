@@ -1,0 +1,217 @@
+{
+    "credentials": "credentials.json",
+    "server": "https://test.genexplain.com",
+    "reconnect": true,
+    "verbose": true,
+    "replaceStrings": [
+            ["$BASE_FOLDER$", "data/Projects/Automatic_testing/Data/example_folder"],
+            ["$STUDY$", "GSE2639_HUVEC_TNF"],
+            ["$LIMMA_FILE$","TNF vs. Control"]
+    ],
+    "tasks": [
+        {
+            "do": "createFolder",
+            "path": "data/Projects/Automatic_testing/Data",
+            "name": "example_folder"
+        },
+        
+        {
+            "do": "imPort",
+            "file": "cola/automat/GSE2639_HUVEC/GSE2639_HUVEC_TNF_CEL_files.zip",
+            "path": "$BASE_FOLDER$",
+            "importer": "ZIP-archive (*.zip)",
+            "wait": true,
+            "progress": true,
+            "parameters": [{"name": "cleanupFolder",     "value":false},
+                           {"name": "preserveExtension", "value":false},
+                           {"name": "preserveArchiveStructure", "value":true },
+                           {"name": "importFormat", "value": "Affymetrix CEL file (*.cel)"}]
+        },
+        
+        {
+                    "do": "external",
+                    "showOutput": true,
+                    "bin": "sh",
+                    "params": ["gxp_wait.sh", "10"]
+        },
+        
+        {
+            "do": "createFolder",
+            "path": "$BASE_FOLDER$",
+            "name": "$STUDY$"
+        },
+        
+        {
+            "do": "analyze",
+            "method": "Affymetrix normalization",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"celFiles",
+                    "value":
+                        [
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50777.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50778.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50779.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50780.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50781.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50782.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50783.CEL",
+                            "$BASE_FOLDER$/GSE2639_HUVEC_TNF_CEL_files/GSM50784.CEL"
+                        ]
+                },
+                {"name":"method","value":"RMA"},
+                {"name":"bgCorrection","value":"RMA"},
+                {"name":"normMethod","value":"quantiles"},
+                {"name":"pmCorrection","value":"pmonly"},
+                {"name":"summarization","value":"medianpolish"},
+                {"name":"cdf","value":""},
+                {"name":"outputLogarithmBase","value":"log2"},
+                {"name":"outputPath","value":"$BASE_FOLDER$/$STUDY$/Normalized (RMA)"}
+            ]
+        },
+
+        {
+            "do": "analyze",
+            "method": "Normalization quality plots",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"inputTablePath",
+                    "value": "$BASE_FOLDER$/$STUDY$/Normalized (RMA)"
+                },
+                {"name":"inputLogarithmBase","value":"log2"},
+                {"name":"outputFolderPath","value":"$BASE_FOLDER$/$STUDY$/Normalization_QC_plots"}
+            ]
+        },
+        
+        {
+            "do": "analyze",
+            "method": "PCA",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"inputTablePath",
+                    "value": "$BASE_FOLDER$/$STUDY$/Normalized (RMA)"
+                },
+                {
+                    "name": "firstName",
+                    "value": "Control"
+                },
+                {
+                    "name": "firstColumns",
+                    "value": ["GSM50777.CEL", "GSM50778.CEL", "GSM50779.CEL", "GSM50780.CEL"]
+                },
+                {
+                    "name": "secondName",
+                    "value": "TNF"
+                },
+                {
+                    "name": "secondColumns",
+                    "value": ["GSM50781.CEL", "GSM50782.CEL", "GSM50783.CEL", "GSM50784.CEL"]
+                },
+                {"name":"outputFolderPath","value":"$BASE_FOLDER$/$STUDY$/PCA"}
+            ]
+        },
+        
+        {
+            "do": "analyze",
+            "method": "Limma",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"inputTablePath",
+                    "value": "$BASE_FOLDER$/$STUDY$/Normalized (RMA)"
+                },
+                
+                {   
+                    "name":"inputLogarithmBase",
+                    "value": "log2"
+                },
+                
+                {
+                    "name": "firstName",
+                    "value": "TNF"
+                },
+                {
+                    "name": "firstColumns",
+                    "value": ["GSM50781.CEL", "GSM50782.CEL", "GSM50783.CEL", "GSM50784.CEL"]
+                },
+                {
+                    "name": "secondName",
+                    "value": "Control"
+                },
+                {
+                    "name": "secondColumns",
+                    "value": ["GSM50777.CEL", "GSM50778.CEL", "GSM50779.CEL", "GSM50780.CEL"]
+                },
+                {
+                    "name":"outputFolderPath",
+                    "value":"$BASE_FOLDER$/$STUDY$/Limma"
+                }
+            ]
+        },
+        
+        {
+            "do": "analyze",
+            "method": "Convert table",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"sourceTable",
+                    "value": "$BASE_FOLDER$/$STUDY$/Limma/$LIMMA_FILE$"
+                },
+                {
+                    "name": "species",
+                    "value": "$SPECIES$"
+                },
+                {
+                    "name": "sourceType",
+                    "value": "Probes: Affymetrix"
+                },
+                {
+                    "name": "targetType",
+                    "value": "Genes: Ensembl"
+                },
+                {
+                    "name": "outputTable",
+                    "value": "$BASE_FOLDER$/$STUDY$/Limma/$LIMMA_FILE$ Genes Ensembl"
+                }
+            ]
+        },
+        
+        {
+            "do": "analyze",
+            "method": "Convert table",
+            "wait": true,
+            "progress": true,
+            "parameters": [
+                {   
+                    "name":"sourceTable",
+                    "value": "$BASE_FOLDER$/$STUDY$/Limma/$LIMMA_FILE$"
+                },
+                {
+                    "name": "species",
+                    "value": "$SPECIES$"
+                },
+                {
+                    "name": "sourceType",
+                    "value": "Probes: Affymetrix"
+                },
+                {
+                    "name": "targetType",
+                    "value": "Proteins: Transpath"
+                },
+                {
+                    "name": "outputTable",
+                    "value": "$BASE_FOLDER$/$STUDY$/Limma/$LIMMA_FILE$ Proteins Transpath"
+                }
+            ]
+        }
+    ]
+}
