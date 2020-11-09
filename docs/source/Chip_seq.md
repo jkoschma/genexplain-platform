@@ -197,9 +197,9 @@ The three workflows in this group have a very similar structure. In the first
 step, the input track (![](media/track.jpg)) is converted into a gene set using the *Track to gene set* analysis , The resulting Ensembl gene list is then submitted to *Functional classification* by several ontologies. In parallel, the same Ensembl gene list is subjected to *Cluster by shortest path* analysis. 
 
 The difference between the workflows within this group is in the ontologies applied for functional classification as well as in a
-database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated using the same input track which can be found here: 
+database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In the three sections below, three individual workflows are demonstrated using the same input track which can be found [here:] 
 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201>
+[here]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201
 
 The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
 
