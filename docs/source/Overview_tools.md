@@ -18,7 +18,7 @@ The input form of this method, when opened in the Work Space, is shown below:
 
 ![Input form Annotate table][Input_Annotate_table]
 
-[Input_Annotate_table]: images/Annotate_table.png
+[Input_Annotate_table]: images/Annotate_table.PNG
 
 In the following, we will consider the input fields one by one:
 
@@ -55,14 +55,14 @@ drop-down menu of the field *Annotation columns*. As shown in the screenshot
 below, two columns are selected, Gene description and Gene symbol:
 
 ![Annotation columns][Annotation_columns]
-[Annotation_columns]: /images/Annotate_table_2.png
+[Annotation_columns]: /images/Annotate_table_2.PNG
 
 Last step is to define the *Output table* path. Now you can press the [Run] key to start the Annotate table tool.
 
 When the analysis is complete, the output file is automatically opened in the Work Space:
 
 ![Output table][Output_table]
-[Output_table]: /images/Annotate_table_result_2.png
+[Output_table]: /images/Annotate_table_result_2.PNG
 
 In this result table two new columns are added, Gene description and Gene
 symbol, to the right of the ID column. The ID column itself, and all the other
