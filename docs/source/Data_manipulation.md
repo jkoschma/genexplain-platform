@@ -1008,9 +1008,10 @@ as shown below, the input parameters are filled and bar graph is plotted between
 
 ![](images/pie_input_run.PNG)
 
-[Output bar graph] is opened by default in the work space
+[Output pie_chart] is opened by default in the work space
 
-[Output bar graph]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20manipulation/pie_chart
+[Output pie_chart]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20manipulation/pie_chart
+
 
 ![](images/pie_output.PNG)
 
