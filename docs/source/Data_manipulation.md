@@ -710,6 +710,8 @@ Let us consider two input tables [Table_1] and [Table_2] which need to be inters
 [Intersect_Output_table] is opened by default which contains genes which are common to both the tables. 
 
 ![](images/Intersect_table_output_01.PNG)
+
+
 [Intersect_Output_table]: 
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20manipulation/Joined
 
