@@ -856,7 +856,7 @@ The analysis method [Merge table columns] can be found in the Tree Area under th
 [Merge table columns]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20manipulation/Merge%20table%20columns
 The method merge several columns of a table into one column. Input form is as shown below:
 
-![](Merge_table_columns_input.PNG)
+![](images/Merge_table_columns_input.PNG)
 
 Parameters:
 
