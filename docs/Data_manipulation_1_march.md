@@ -1,4 +1,3 @@
-# Overview of all available tools inside the geneXplain platform
 ## Data manipulation
 
 ### Annotate diagram
