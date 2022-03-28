@@ -1,6 +1,9 @@
 # Workflows
-✨
+
 ## Common
+
+.. note:: 
+this is a test note
 
 ### Analyze any DNA sequence, EMBL
 ### Analyze any DNA sequence, Fasta
@@ -15,12 +18,14 @@ This workflow is designed to analyze a biological experiment with two conditions
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Experiment BAM files | Two or several BAM files |
-| Control BAM files | Two or several BAM files |
-| ReferenceEnsembl | Select your reference genome |
-| Results folder | Name and location of outputs |
+==================== =========================
+Parameter Description
+==================== =========================
+Experiment BAM files Two or several BAM files
+Control BAM files Two or several BAM files
+ReferenceEnsembl Select your reference genome
+Results folder Name and location of outputs
+==================== =========================
 
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
@@ -95,12 +100,13 @@ This workflow is designed to identify target genes of ChIP-seq peaks and perform
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input track | ChIP-Seq track |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
+.. tabularcolumns:: column spec
+
+|Parameter|Description|
+|Input track|ChIP-Seq track|
+|Species|Specifiy the species of your data|
+|AnnotationSource|Ensembl annotation source file|
+|Results folder|Name and location of outputs|
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Input track** ([input example][ChIP-seq track]).
 
@@ -147,14 +153,14 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Experiment normalized | Table with normalized Affymetrix data |
-| Control normalized | Table with normalized Affymetrix data |
-| Probe type | Specifiy the Affymetrix Chip type |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
+|Parameter|Description|
+|------|------|
+|Experiment normalized|Table with normalized Affymetrix data|
+|Control normalized|Table with normalized Affymetrix data|
+|Probe type|Specifiy the Affymetrix Chip type|
+|Species|Specifiy the species of your data|
+|AnnotationSource|Ensembl annotation source file|
+|Results folder|Name and location of outputs|
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Affy normalized]) and **Control normalized** ([input example][Affy con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
