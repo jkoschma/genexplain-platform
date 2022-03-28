@@ -27,6 +27,15 @@ ReferenceEnsembl Select your reference genome
 Results folder Name and location of outputs
 ==================== =========================
 
++------------------------+------------+----------+----------+
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+| (header rows optional) |            |          |          |
++========================+============+==========+==========+
+| body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | ...        | ...      |          |
++------------------------+------------+----------+----------+
+
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
 data/Examples/User Guide/Data/Input for examples/workflows/B\_1\_Experiment.fastq_alignments
