@@ -45,11 +45,13 @@ Results folder Name and location of outputs
 .. autoclass:: recommonmark.transform.AutoStructify
     :show-inheritance:
 
-|Parameter|Description|
-|Input track|ChIP-Seq track|
-|Species|Specifiy the species of your data|
-|AnnotationSource|Ensembl annotation source file|
-|Results folder|Name and location of outputs|
+| Parameter | Description |
+|------|------|
+| Input track | ChIP-Seq track |
+| Species | Specifiy the species of your data |
+| AnnotationSource | Ensembl annotation source file |
+| Results folder | Name and location of outputs |
+
 ```
 
 
