@@ -2,7 +2,7 @@
 
 ## Common
 
-``` important:: Its a new note! in markdown!
+``` important:: Its a new note! in markdown! and it makes me crazy!!!!!
 ```
 
 ### Analyze any DNA sequence, EMBL
