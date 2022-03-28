@@ -8,6 +8,7 @@ Guide
    Introduction_new
    Organization_platform_new
    Load_data_new
+   Workflows_final
    RNA_Seq
    Proteomics_new
    Epigenomics_new
