@@ -236,7 +236,7 @@ are additional ones, reachable by clicking on these double arrowheads.
 The function of the individual tabs will be explained in more detail in those
 sections where their effect is part of a certain operation. 
 
-## How to organize the user work space
+## Your data project
 
 ### Changing user password and personal data
 
