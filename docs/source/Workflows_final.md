@@ -2,8 +2,8 @@
 
 ## Common
 
-.. note:: 
-this is a test note
+``` important:: Its a note! in markdown!
+```
 
 ### Analyze any DNA sequence, EMBL
 ### Analyze any DNA sequence, Fasta
@@ -27,6 +27,10 @@ ReferenceEnsembl Select your reference genome
 Results folder Name and location of outputs
 ==================== =========================
 
+```eval_rst
+.. autoclass:: recommonmark.transform.AutoStructify
+    :show-inheritance:
+    
 +------------------------+------------+----------+----------+
 | Header row, column 1   | Header 2   | Header 3 | Header 4 |
 | (header rows optional) |            |          |          |
@@ -35,6 +39,19 @@ Results folder Name and location of outputs
 +------------------------+------------+----------+----------+
 | body row 2             | ...        | ...      |          |
 +------------------------+------------+----------+----------+
+```
+
+```eval_rst
+.. autoclass:: recommonmark.transform.AutoStructify
+    :show-inheritance:
+
+|Parameter|Description|
+|Input track|ChIP-Seq track|
+|Species|Specifiy the species of your data|
+|AnnotationSource|Ensembl annotation source file|
+|Results folder|Name and location of outputs|
+```
+
 
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
