@@ -24,7 +24,7 @@ copyright = '2019, jkoschma'
 author = 'jkoschma'
 
 # The short X.Y version
-version = '2'
+version = '3'
 
 
 
