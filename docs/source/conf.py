@@ -188,5 +188,7 @@ def setup(app):
     }, True)
     app.add_transform(AutoStructify)
 
-
+html_js_files = [
+    'js/custom.js'
+]
 
