@@ -6,7 +6,7 @@ Guide
    :maxdepth: 4
     
    Introduction_new
-   Organization_platform_new
+   How_it_works
    Load_data_new
    Workflows
    RNA_Seq
