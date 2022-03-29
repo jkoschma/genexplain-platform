@@ -3081,13 +3081,21 @@ This workflow is designed to match SNPs on transcriptional level. One part of th
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input SNP Table | One SNP table |
-| 5' and 3' gene bound extension | Define target gene region |
-| Profile | Collection of positional weight matrices from TRANSFAC(R)  |
-| SNP surrounding region, bp | Define SNP surrounding region for TFBS |
-| Results Folder | Name and location of outputs |
+```eval_rst   
++--------------------------------+-----------------------------------------------------------+
+| Parameter                      | Description                                               |
++================================+===========================================================+
+| Input SNP Table                | One SNP table                                             |
++--------------------------------+-----------------------------------------------------------+
+| 5' and 3' gene bound extension | Define target gene region                                 |
++--------------------------------+-----------------------------------------------------------+
+| Profile                        | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------------------+-----------------------------------------------------------+
+| SNP surrounding region, bp     | Define SNP surrounding region for TFBS                    |
++--------------------------------+-----------------------------------------------------------+
+| Results Folder                 | Name and location of outputs                              |
++--------------------------------+-----------------------------------------------------------+
+```
 
 One SNP table can be submitted in the input field **Input SNP Table** ([input example][SNP19 table]). You can drag and drop the SNP table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your SNP table. 
 
@@ -3115,13 +3123,21 @@ This workflow is designed to match SNPs on transcriptional level. One part of th
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input SNP Table | One SNP table |
-| 5' and 3' gene bound extension | Define target gene region |
-| Profile | Collection of positional weight matrices from TRANSFAC(R)  |
-| SNP surrounding region, bp | Define SNP surrounding region for TFBS |
-| Results Folder | Name and location of outputs |
+```eval_rst   
++--------------------------------+-----------------------------------------------------------+
+| Parameter                      | Description                                               |
++================================+===========================================================+
+| Input SNP Table                | One SNP table                                             |
++--------------------------------+-----------------------------------------------------------+
+| 5' and 3' gene bound extension | Define target gene region                                 |
++--------------------------------+-----------------------------------------------------------+
+| Profile                        | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------------------+-----------------------------------------------------------+
+| SNP surrounding region, bp     | Define SNP surrounding region for TFBS                    |
++--------------------------------+-----------------------------------------------------------+
+| Results Folder                 | Name and location of outputs                              |
++--------------------------------+-----------------------------------------------------------+
+```
 
 One SNP table can be submitted in the input field **Input SNP Table** ([input example][SNP38 table]). You can drag and drop the SNP table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your SNP table. 
 
@@ -3145,11 +3161,17 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input sequence | Input sequences |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Results folder | Name and location of outputs |
+```eval_rst   
++--------------------------------+-----------------------------------------------------------+
+| Parameter                      | Description                                               |
++================================+===========================================================+
+| Input sequence                 | Input sequences                                           |
++--------------------------------+-----------------------------------------------------------+
+| Profile                        | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------------------+-----------------------------------------------------------+
+| Results Folder                 | Name and location of outputs                              |
++--------------------------------+-----------------------------------------------------------+
+```
 
 A genomic sequence ([input example][seq example]) can be submitted in the input field **Input sequence**. You can drag and drop the sequence from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your sequence. The sequence can be in EMBL, FASTA or GenBank format.
 
@@ -3177,14 +3199,23 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes sequence set | Input sequences |
-| Input No sequence set | Background sequence |
-| Species | Specifiy the species of your data |
-| Annotation source | Ensembl annotation source file |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Results folder | Name and location of outputs |
+```eval_rst   
++------------------------+-----------------------------------------------------------+
+| Parameter              | Description                                               |
++========================+===========================================================+
+| Input Yes sequence set | Input sequences                                           |
++------------------------+-----------------------------------------------------------+
+| Input No sequence set  | Background sequence                                       |
++------------------------+-----------------------------------------------------------+
+| Species                | Define the species of your data                           |
++------------------------+-----------------------------------------------------------+
+| Annotation source      | Ensembl annotation source file                            |
++------------------------+-----------------------------------------------------------+
+| Profile                | Collection of positional weight matrices from TRANSFAC(R) |
++------------------------+-----------------------------------------------------------+
+| Results Folder         | Name and location of outputs                              |
++------------------------+-----------------------------------------------------------+
+```
 
 A genomic sequence ([input example][seq example]) can be submitted in the input field **Input Yes sequence set**. You can drag and drop the sequence from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your sequence. The sequence can be in EMBL, FASTA or GenBank format.
 
@@ -3228,16 +3259,27 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input gene set (Yes set) | Input gene table |
-| No set | Background gene table |
-| Species | Specifiy the species of your data |
-| Annotation source | Ensembl annotation source file |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| 5' flank | 5 prime position relativ to TSS (base pairs) |
-| 3' flank | 3 prime position relativ to TSS (base pairs) |
-| Results folder | Name and location of outputs |
+```eval_rst   
++--------------------------+-----------------------------------------------------------+
+| Parameter                | Description                                               |
++==========================+===========================================================+
+| Input gene set (Yes set) | Input gene table                                          |
++--------------------------+-----------------------------------------------------------+
+| No set                   | Background gene table                                     |
++--------------------------+-----------------------------------------------------------+
+| Species                  | Define the species of your data                           |
++--------------------------+-----------------------------------------------------------+
+| Annotation source        | Ensembl annotation source file                            |
++--------------------------+-----------------------------------------------------------+
+| Profile                  | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------------+-----------------------------------------------------------+
+| 5' flank                 | 5 prime position relativ to TSS (base pairs)              |
++--------------------------+-----------------------------------------------------------+
+| 3' flank                 | 3 prime position relativ to TSS (base pairs)              |
++--------------------------+-----------------------------------------------------------+
+| Results Folder           | Name and location of outputs                              |
++--------------------------+-----------------------------------------------------------+
+```
 
 A gene table ([input example][input example]) can be submitted in the input field **Input gene set (Yes set)**. You can drag and drop the input gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table can be in any format and will be converted into an Ensembl gene list.
 
@@ -3287,14 +3329,23 @@ This workflow is designed to identify enriched transcription factor binding site
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| miRNA table | Input table with miRBase IDs |
-| Promoter | Define promoter selection mode |
-| Select cell line | Please select the cell line of your interest |
+```eval_rst   
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| miRNA table           | Input table with miRBase IDs                                 |
++-----------------------+--------------------------------------------------------------+
+| Promoter              | Define promoter selection mode                               |
++-----------------------+--------------------------------------------------------------+
+| Select cell line      | Please select the cell line of your interest                 |
++-----------------------+--------------------------------------------------------------+
 | Add Ensembl promoters | Posibility to add promoter information from Ensembl database |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Result folder | Name and location of outputs |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Result Folder         | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 A table with several miRBase ([miRBase DB][MiRBase link]) IDs can be submitted in the input field **miRNA table** ([input example][miRNA table]).
 
@@ -3310,62 +3361,119 @@ You can choose a human cell line of your interest in the field **Select cell lin
 
 The following 54 cell lines are available:
 
-| Cell line |Cell line information |
-| ------ | ------ |
-|GM12864 |blood|
-|hESCT0 |embryonic cells|
-|HUVEC |blood vessels|
-|MCF7 |mammary gland/breast|
-|AG10803 |skin|
-|GM06990 |blood|
-|Hela |cervix|
-|AG04449 |skin|
-|AG09309 |skin|
-|CACO2 |colon|
-|CD14 |blood|
-|HCT116 |colon|
-|HEEpiC |esophagus|
-|HFF_MyC |foreskin|
-|A549 |lung|
-|AG04450 |lung|
-|AG09319 |gingiva|
-|AoAF |blood vessels|
-|BJ |skin|
-|CD20 |blood|
-|H7\_hESC_T14 |embryonic cells|
-|H7\_hESC_T5 |embryonic cells|
-|HAc |cartilage|
-|HFF |foreskin|
-|HPAF |blood vessels|
-|Jurkat |blood|
-|K562 |blood|
-|NHDF_Neo |skin|
-|NHLF |lung|
-|RPTEC |kidney|
-|SAEC |lung|
-|SKNSH |brain|
-|SK\_N_MC |brain|
-|WERI_Rb1 |eye|
-|WI_38 |lung|
-|WI\_38_TAM |lung|
-|GM12865 |blood|
-|NB4 |blood|
-|HRE |cervix|
-|HRPEpiC |eye|
-|HL60 |blood|
-|HBMEC |blood vessels|
-|HPF |lung|
-|PANC1 |pancreas|
-|HMEC |mammary gland/breast|
-|HVMF |placenta|
-|HMF |mammary gland/breast|
-|HCPEpiC |choroid plexus|
-|NHEK |skin|
-|HAsp |spinal cord|
-|HCM |heart|
-|GM12878 |blood|
-|HCF |heart|
-|HCFaa |heart|
+```eval_rst   
++-------------+-----------------------+
+| Cell line   | Cell line information |
++=============+=======================+
+| GM12864     | blood                 |
++-------------+-----------------------+
+| hESCT0      | embryonic cells       |
++-------------+-----------------------+
+| HUVEC       | blood vessels         |
++-------------+-----------------------+
+| MCF7        | mammary gland/breast  |
++-------------+-----------------------+
+| AG10803     | skin                  |
++-------------+-----------------------+
+| GM06990     | blood                 |
++-------------+-----------------------+
+| Hela        | cervix                |
++-------------+-----------------------+
+| AG04449     | skin                  |
++-------------+-----------------------+
+| AG09309     | skin                  |
++-------------+-----------------------+
+| CACO2       | colon                 |
++-------------+-----------------------+
+| CD14        | blood                 |
++-------------+-----------------------+
+| HCT116      | colon                 |
++-------------+-----------------------+
+| HEEpiC      | esophagus             |
++-------------+-----------------------+
+| HFF_MyC     | foreskin              |
++-------------+-----------------------+
+| A549        | lung                  |
++-------------+-----------------------+
+| AG04450     | lung                  |
++-------------+-----------------------+
+| AG09319     | gingiva               |
++-------------+-----------------------+
+| AoAF        | blood vessels         |
++-------------+-----------------------+
+| BJ          | skin                  |
++-------------+-----------------------+
+| CD20        | blood                 |
++-------------+-----------------------+
+| H7_hESC_T14 | embryonic cells       |
++-------------+-----------------------+
+| H7_hESC_T5  | embryonic cells       |
++-------------+-----------------------+
+| HAc         | cartilage             |
++-------------+-----------------------+
+| HFF         | foreskin              |
++-------------+-----------------------+
+| HPAF        | blood vessels         |
++-------------+-----------------------+
+| Jurkat      | blood                 |
++-------------+-----------------------+
+| K562        | blood                 |
++-------------+-----------------------+
+| NHDF_Neo    | skin                  |
++-------------+-----------------------+
+| NHLF        | lung                  |
++-------------+-----------------------+
+| RPTEC       | kidney                |
++-------------+-----------------------+
+| SAEC        | lung                  |
++-------------+-----------------------+
+| SKNSH       | brain                 |
++-------------+-----------------------+
+| SK_N_MC     | brain                 |
++-------------+-----------------------+
+| WERI_Rb1    | eye                   |
++-------------+-----------------------+
+| WI_38       | lung                  |
++-------------+-----------------------+
+| WI_38_TAM   | lung                  |
++-------------+-----------------------+
+| GM12865     | blood                 |
++-------------+-----------------------+
+| NB4         | blood                 |
++-------------+-----------------------+
+| HRE         | cervix                |
++-------------+-----------------------+
+| HRPEpiC     | eye                   |
++-------------+-----------------------+
+| HL60        | blood                 |
++-------------+-----------------------+
+| HBMEC       | blood vessels         |
++-------------+-----------------------+
+| HPF         | lung                  |
++-------------+-----------------------+
+| PANC1       | pancreas              |
++-------------+-----------------------+
+| HMEC        | mammary gland/breast  |
++-------------+-----------------------+
+| HVMF        | placenta              |
++-------------+-----------------------+
+| HMF         | mammary gland/breast  |
++-------------+-----------------------+
+| HCPEpiC     | choroid plexus        |
++-------------+-----------------------+
+| NHEK        | skin                  |
++-------------+-----------------------+
+| HAsp        | spinal cord           |
++-------------+-----------------------+
+| HCM         | heart                 |
++-------------+-----------------------+
+| GM12878     | blood                 |
++-------------+-----------------------+
+| HCF         | heart                 |
++-------------+-----------------------+
+| HCFaa       | heart                 |
++-------------+-----------------------+
+```
 
 You can select the check box **Add Ensembl promoters** to add promoter information from Ensembl database if specified promoter selection cannot be found in the MiRProm database.
 
