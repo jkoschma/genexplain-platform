@@ -172,7 +172,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Affy normalized]) and **Control normalized** ([input example][Affy con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
-[link nomalize Affy]: link internal !!
+[link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
 [Affy normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized%20(RMA)
 [Affy con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Control%20normalized%20(RMA)
 
@@ -232,7 +232,8 @@ The following list gives an overview of all input parameters used in this workfl
 | Results folder | Name and location of outputs |
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil tox normalized]) and **Control normalized** ([input example][Agil tox con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
-[link nomalize Affy]: internal link to method!!!
+
+[link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
 
 [Agil tox normalized]: 
 [Agil tox con normalized]: 
@@ -327,11 +328,13 @@ The following list gives an overview of all input parameters used in this workfl
 | AnnotationSource | Ensembl annotation source file |
 | Results folder | Name and location of outputs |
 
-Normalized data with Illumina probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Illumina].
+Normalized data with Illumina probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Illumina experiment and control][link nomalize Illumina].
 
-[link nomalize Illumina]: link to method internal !!!
-[Illumina normalized]: 
-[Illumina con normalized]: 
+[link nomalize Illumina]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Illumina%20experiment%20and%20control
+
+[Illumina normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Illumina%20normalized%20exp
+
+[Illumina con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Illumina%20normalized%20con
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
 
@@ -387,7 +390,8 @@ The following list gives an overview of all input parameters used in this workfl
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][Ebay normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2].
 
-[link normalize Affy2]: link to method internal !!!
+[link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
+
 [Ebay normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Normalized%20(RMA)_5_conditions_mouse
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
@@ -408,7 +412,9 @@ For down-regulated genes: log2-fold changes < -0.5 and cut-off FDR level < 0.05
 A result folder ([result example][Ebay wf result]) is generated and contains one folder with unfiltered EBarrays results ([result example][Ebay wf result2]), one folder with the diagnostic plots ([result example][Ebay wf result3]) and all filtered gene tables with significant differentially expressed genes for all condition groups compared to the control group. All output results can be exported to your local computer.
 
 [Ebay wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/
+
 [Ebay wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/EBarrays%20result
+
 [Ebay wf result3]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/EBarrays%20Marginal%20fit
 
 ### Compute differentially expressed genes using Hypergeometric test (Affymetrix probes)
@@ -432,9 +438,10 @@ The following list gives an overview of all input parameters used in this workfl
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Affy normalized]) and **Control normalized** ([input example][Affy con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
-[link nomalize Affy]: link to method !!
+[link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
 
 [Affy normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized%20(RMA)
+
 [Affy con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Control%20normalized%20(RMA)
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
@@ -496,9 +503,9 @@ The following list gives an overview of all input parameters used in this workfl
 | AnnotationSource | Ensembl annotation source file |
 | Results folder | Name and location of outputs |
 
-Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Agil].
+Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Agilent experiment and control][link nomalize Agil].
 
-[link nomalize Agil]: link internal!
+[link nomalize Agil]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Agilent%20experiment%20and%20control
 
 [Agil normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized_Agilent
 
@@ -512,8 +519,10 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. The p-value is calculated by hypergeometric analysis.
 
+```eval_rst
 > Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
 > Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
+```
 
 [paper hyper]: https://pubmed.ncbi.nlm.nih.gov/19374127/
 
