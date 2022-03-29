@@ -102,12 +102,19 @@ This workflow is designed to identify target genes of ChIP-seq peaks and perform
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input track | ChIP-Seq track |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
+```
++------------------+---------------------------------+
+| Parameter        | Description                     |
++==================+=================================+
+| Input track      | ChIP-Seq track                  |
++------------------+---------------------------------+
+| Species          | Define the species of your data |
++------------------+---------------------------------+
+| AnnotationSource | Ensembl annotation source file  |
++------------------+---------------------------------+
+| Results folder   | Name and location of outputs    |
++------------------+---------------------------------+
+```
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Input track** ([input example][ChIP-seq track]).
 
