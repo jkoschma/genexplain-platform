@@ -781,53 +781,16 @@ Non-changed genes logFC < 0.002 && logFC > -0.002
 All output results can be exported to your local computer.
 
 ### Convert identifiers for multiple gene sets
+
+### Estimate DEGs with guided linear model analysis
+
+This workflow performs a linear model analysis to identify differentially expressed genes from transcriptomics data and design contrasts between different samples with using limma statistics and an sample table (meta data). The workflow takes an table with expression values and is guided by selected experimental factors defined in a sample table with sample annotation details. The analysis aims at finding significant differences between pairs of samples (conditions) of a main factor (e.g. treatment). Furthermore, an ANOVA is carried out for all contrasts together. The primary result of the linear model analysis is further filtered to identify significant up- and down-regulated genes for each contrast.
+
 ### Explain my genes
+
 ### Find common effectors for multiple gene sets (GeneWays)
+
 ### Find common effectors in networks (GeneWays)
-### Find genome variants and indels from RNA-seq_hg19 (paired-end)
-ERROR!!!
-
-This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh37 Homo sapiens assembly (hg19), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
-
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
-
-[paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
-
-✨ [Open][workflow] the workflow in the user interface.✨
-
-[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Find%20genome%20variants%20and%20indels%20from%20RNA-seq_hg19%20(paired-end)
-
-The following list gives an overview of all input parameters used in this workflow:
-
-| Parameter | Description |
-| ------ | ------ |
-| Forward fastq | Paired forward FASTQ file |
-| Reverse fastq | Paired reverse FASTQ file |
-| OutputFolder | Name and location of outputs |
-
-One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
-data/Examples/User Guide/Data/Input for examples/workflows/SRR11940548_1.fastq
-
-One paired-end reverse FASTQ file can be submitted in the input field **Reverse fastq**. An example FASTQ file can be found here: 
-data/Examples/User Guide/Data/Input for examples/workflows/SRR11940548_2.fastq
-
-You can drag and drop the input FASTQ files from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
-
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg19) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads.
-
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper
-
-The second part of the workflow includes a local realignment around indels, a base quality score recalibration and a SNP discovery and genotyping to find all potential variants. After the identification of duplicates and covariates, the workflow creates as first output a new BAM file ([result example][BAM result]). Then the recalibrated BAM file is used as an input for SNP discovery and genotyping to find all potential variants with the GATK (Genome Analysis Toolkit) Unified Genotyper ([open tool][tool link]. The result with identified variations is a vcf file ([result example][vcf result]), which can beopened in the genome browser. Further result is a table with the variant effects ([result example][variant effects]) ot of the Variant Effect Predictor tool ([open tool][tool2 link].
-
-[BAM result]: 
-
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper
-
-[vcf result]:
-
-[variant effects]: 
-
-[tool2 link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor
 
 ### Find genome variants and indels from RNA-seq_hg19 (single-end)
 
@@ -853,50 +816,6 @@ One single-end FASTQ file can be submitted in the input field **Input fastq file
 data/Examples/User Guide/Data/Input for examples/workflows/SRR349741.fastq
 
 You can drag and drop the input FASTQ file (single-end) from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
-
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads.
-
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper
-
-The second part of the workflow includes a local realignment around indels, a base quality score recalibration and a SNP discovery and genotyping to find all potential variants. After the identification of duplicates and covariates, the workflow creates as first output a new BAM file ([result example][BAM result]). Then the recalibrated BAM file is used as an input for SNP discovery and genotyping to find all potential variants with the GATK (Genome Analysis Toolkit) Unified Genotyper ([open tool][tool link]. The result with identified variations is a vcf file ([result example][vcf result]), which can beopened in the genome browser. Further result is a table with the variant effects ([result example][variant effects]) ot of the Variant Effect Predictor tool ([open tool][tool2 link].
-
-[BAM result]: 
-
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper
-
-[vcf result]:
-
-[variant effects]: 
-
-[tool2 link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor
-
-### Find genome variants and indels from RNA-seq_hg38 (paired-end)
-ERROR !!!
-This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh38 Homo sapiens assembly (hg38), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
-
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
-
-[paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
-
-✨ [Open][workflow] the workflow in the user interface.✨
-
-[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Find%20genome%20variants%20and%20indels%20from%20RNA-seq_hg38%20(paired-end)
-
-The following list gives an overview of all input parameters used in this workflow:
-
-| Parameter | Description |
-| ------ | ------ |
-| Forward fastq | Paired forward FASTQ file |
-| Reverse fastq | Paired reverse FASTQ file |
-| OutputFolder | Name and location of outputs |
-
-One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
-
-
-One paired-end reverse FASTQ file can be submitted in the input field **Reverse fastq**. An example FASTQ file can be found here: 
-
-
-You can drag and drop the input FASTQ files from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
 
 In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads.
 
