@@ -102,7 +102,7 @@ This workflow is designed to identify target genes of ChIP-seq peaks and perform
 
 The following list gives an overview of all input parameters used in this workflow:
 
-```
+```eval_rst
 +------------------+---------------------------------+
 | Parameter        | Description                     |
 +==================+=================================+
@@ -151,11 +151,13 @@ A result folder ([result example][ChIP-seq result]) is generated and contains th
 
 [Cluster result]:
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes (Affymetrix probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set. 
 
-✨  [Open ][Affy workflow] the workflow in the user interface.✨  
+✨  [Open][Affy workflow] the workflow in the user interface.✨  
 
 [Affy workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20(Affymetrix%20probes)
 
@@ -213,11 +215,13 @@ A result folder ([result example][Affy result]) is generated and contains all ta
 
 [Affy report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Report
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes (Agilent Tox probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set.
 
-[Open][Agil tox workflow] the workflow in the user interface.
+✨  [Open][Agil tox workflow] the workflow in the user interface.✨ 
 
 [Agil tox workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20(Affymetrix%20probes)
 
@@ -236,6 +240,7 @@ Normalized data with Affymetrix probeset IDs can be submitted in the input field
 [link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
 
 [Agil tox normalized]: 
+
 [Agil tox con normalized]: 
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
@@ -262,11 +267,13 @@ A result folder ([result example][Agil tox result]) is generated and contains al
 
 [Agil report]: 
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes (Agilent probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set. 
 
-[Open][Agil workflow] the workflow in the user interface.
+[Open][Agil workflow] the workflow in the user interface.✨  [Open][Agil workflow] the workflow in the user interface.✨
 
 [Agil workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20(Agilent%20probes)
 
@@ -283,7 +290,9 @@ The following list gives an overview of all input parameters used in this workfl
 Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
 [link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
+
 [Agil normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized_Agilent
+
 [Agil con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Control%20normalized_Agilent
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
@@ -309,6 +318,8 @@ A result folder ([result example][Agil result]) is generated and contains all ta
 [Agil result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20Agil)/
 
 [Agil report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20Agil)/Report
+
+All output results can be exported to your local computer.
 
 ### Compute differentially expressed genes (Illumina probes)
 
@@ -360,11 +371,13 @@ A result folder ([result example][Illumina result]) is generated and contains al
 
 [Illumina report]: 
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using EBarrays
 
 This workflow is designed to estimate differentially expressed genes with EBarrays between specified conditions / groups.
 
-[Open][Ebay workflow] the workflow in the user interface.
+✨  [Open][Ebay workflow] the workflow in the user interface.✨ 
 
 [Ebay workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20EBarrays
 
@@ -417,11 +430,13 @@ A result folder ([result example][Ebay wf result]) is generated and contains one
 
 [Ebay wf result3]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/EBarrays%20Marginal%20fit
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using Hypergeometric test (Affymetrix probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set. 
 
-[Open][Affy hyper workflow] the workflow in the user interface.
+✨  [Open][Affy hyper workflow] the workflow in the user interface.✨ 
 
 [Affy hyper workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Hypergeometric%20test%20(Affymetrix%20probes)
 
@@ -485,11 +500,13 @@ A result folder ([result example][Affy hyper result]) is generated and contains 
 
 [Affy hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/Report
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using Hypergeometric test (Agilent probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set. 
 
-[Open][Agil hyper workflow] the workflow in the user interface.
+✨  [Open][Agil hyper workflow] the workflow in the user interface.✨ 
 
 [Agil hyper workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Hypergeometric%20test%20(Agilent%20probes)
 
@@ -549,11 +566,13 @@ A result folder ([result example][Agil hyper result]) is generated and contains 
 
 [Agil hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/Report
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using Hypergeometric test (Illumina probes)
 
 This workflow is designed to identify differentially expressed genes from an experiment data set compared to a control data set. 
 
-[Open][Illumina hyper workflow] the workflow in the user interface.
+✨  [Open][Illumina hyper workflow] the workflow in the user interface.✨ 
 
 [Illumina hyper workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Hypergeometric%20test%20(Illumina%20probes)
 
@@ -609,11 +628,13 @@ A result folder ([result example][Illumina hyper result]) is generated and conta
 
 [Illumina hyper report]: 
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using Limma
 
 This workflow is designed to estimate differentially expressed genes with limma between specified conditions / groups.
 
-[Open][Limma workflow] the workflow in the user interface.
+✨  [Open][Limma workflow] the workflow in the user interface.✨
 
 [Limma workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Limma
 
@@ -692,13 +713,15 @@ A result folder is generated and contains one folder with unfiltered EBarrays re
 
 [Limma wf result2]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Agilent%20normalized%20for%20limma%20(DEGs%20with%20limma)/shCDK6%20pool_0h%20arrested_G1-S%20vs.%20Control/
 
+All output results can be exported to your local computer.
+
 ### Compute differentially expressed genes using Limma and Metadata
 
 This workflow performs a linear model analysis to identify differentially expressed genes from transcriptomics data and design contrasts between different samples with using limma statistics and an sample table (meta data). The workflow takes an table with expression values and is guided by selected experimental factors defined in a sample table with sample annotation details. The analysis aims at finding significant differences between pairs of samples (conditions) of a main factor (e.g. treatment). Furthermore, an ANOVA is carried out for all contrasts together. The primary result of the linear model analysis is further filtered to identify significant up- and down-regulated genes for each contrast.
 
-[Open][Limma workflow] the workflow in the user interface.
+✨  [Open][Limma2 workflow] the workflow in the user interface.✨
 
-[Limma workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Limma
+[Limma2 workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Compute%20differentially%20expressed%20genes%20using%20Limma
 
 The following list gives an overview of all input parameters used in this workflow:
 
@@ -809,6 +832,10 @@ All output results can be exported to your local computer.
 
 This workflow performs a linear model analysis to identify differentially expressed genes from transcriptomics data and design contrasts between different samples with using limma statistics and an sample table (meta data). The workflow takes an table with expression values and is guided by selected experimental factors defined in a sample table with sample annotation details. The analysis aims at finding significant differences between pairs of samples (conditions) of a main factor (e.g. treatment). Furthermore, an ANOVA is carried out for all contrasts together. The primary result of the linear model analysis is further filtered to identify significant up- and down-regulated genes for each contrast.
 
+✨  [Open][DEG workflow] the workflow in the user interface.✨
+
+[DEG workflow]: 
+
 ### Explain my genes
 
 ### Find common effectors for multiple gene sets (GeneWays)
@@ -856,6 +883,8 @@ The second part of the workflow includes a local realignment around indels, a ba
 
 [tool2 link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor
 
+All output results can be exported to your local computer.
+
 ### Find genome variants and indels from RNA-seq_hg38 (single-end)
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh38 Homo sapiens assembly (hg38), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
@@ -896,6 +925,8 @@ The second part of the workflow includes a local realignment around indels, a ba
 
 [tool2 link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor
 
+All output results can be exported to your local computer.
+
 ### Find genome variants and indels from full-genome NGS_hg19
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome NGS data. The process includes initial read mapping to the reference GRCh37 Homo sapiens assembly (hg19), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
@@ -935,6 +966,8 @@ The second part of the workflow includes a local realignment around indels, a ba
 [tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper
 
 [vcf result]:
+
+All output results can be exported to your local computer.
 
 ### Find genome variants and indels from full-genome NGS_hg38
 
@@ -981,6 +1014,8 @@ The second part of the workflow includes a local realignment around indels, a ba
 ### From multiple BAM files to gene counts
 
 The workflow assigns the sequence reads with a specified reference genome of several BAM files to genomic features, in this case genes. The minimal mapping quality of counts can be adjusted. A quality accessment of the input BAM files is performed.
+
+All output results can be exported to your local computer.
 
 ### Full RNAseq analysis with HISAT2, featureCounts and limma (paired-end)
 
