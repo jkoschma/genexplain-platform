@@ -1,5 +1,5 @@
 # Workflows
-✨
+
 ## Common
 
 ### Analyze any DNA sequence, EMBL
@@ -1037,7 +1037,8 @@ The second part of the workflow includes a local realignment around indels, a ba
 ### Find master regulators for multiple gene sets (GeneWays)
 ### Find master regulators in networks (GeneWays)
 ### From multiple BAM files to gene counts
-useful????
+
+The workflow assigns the sequence reads with a specified reference genome of several BAM files to genomic features, in this case genes. The minimal mapping quality of counts can be adjusted. A quality accessment of the input BAM files is performed.
 
 ### Full RNAseq analysis with HISAT2, featureCounts and limma (paired-end)
 
