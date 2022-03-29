@@ -43,9 +43,9 @@ As reference genome the most recent Ensembl human genome (Ensembl GRCh38; hg38) 
 
 The outputs of counting genes are saved in two tables: one file contains the counts ([result example][read counts]) and the other a count summary of the counting procedure ([result example][count summary]).
 
-[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/B_1_Experiment.fastq_alignments%20experiment/B_1_Experiment.fastq_alignments_counts
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/B_1_Experiment.fastq_alignments%20experiment/B_1_Experiment.fastq_alignments_counts
 
-[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/B_1_Experiment.fastq_alignments%20experiment/B_1_Experiment.fastq_alignments_count_summary
+[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/B_1_Experiment.fastq_alignments%20experiment/B_1_Experiment.fastq_alignments_count_summary
 
 The last step of the workflow performs a differential expression analysis on raw counts with limma-voom:
 
@@ -62,9 +62,9 @@ A normalization of the data is done by limma-voom method, which applies calcNorm
 
 A result folder of the limma-voom analysis is generated and contains several tables. All raw counts from all conditions are fully joined in a common table ([result example][joined counts]), further filtering to exclude low expressed genes (less than 10 counts) generates another table ([result example][filtered counts]). 
 
-[joined counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/joined_counts
+[joined counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/joined_counts
 
-[filtered counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/filtered_counts
+[filtered counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/filtered_counts
 
 After normalization the prepared table ([result example][norm counts]) is used to determine DEGs as a final table ([result example][DEGs]) with two filtered tables of up-regulated ([result example][DEGs up]) and down-regulated genes ([result example][DEGs down]) as well as non-regulated genes ([result example][DEGs non]). A plot is generated, which compares unnormalized and normalzed data ([result example][norm plot]).
 
@@ -76,17 +76,17 @@ Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
 ```
 
-[norm counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/normalised_counts
+[norm counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/normalised_counts
 
-[DEGs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs
+[DEGs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs
 
-[DEGs up]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_filtered_upregulated
+[DEGs up]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_filtered_upregulated
 
-[DEGs down]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_filtered_downregulated
+[DEGs down]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_filtered_downregulated
 
-[DEGs non]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_non_regulated
+[DEGs non]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/DEGs_non_regulated
 
-[norm plot]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%Guide/Data/Examples%of%workflows/Common/BAM%20files%20to%20DEGs/limma_results/plots.pdf
+[norm plot]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/plots.pdf
 
 All output results can be exported to your local computer.
 
