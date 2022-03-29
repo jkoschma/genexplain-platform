@@ -15,10 +15,7 @@ This workflow is designed to analyze a biological experiment with two conditions
 
 The following list gives an overview of all input parameters used in this workflow:
 
-```eval_rst
-.. autoclass:: recommonmark.transform.AutoStructify
-    :show-inheritance:
-    
+```eval_rst   
 +------------------------+-----------------------------+
 | Parameter              | Description                 |
 +========================+=============================+
