@@ -163,19 +163,30 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+---------------------------------------+
+| Parameter             | Description                           |
++=======================+=======================================+
 | Experiment normalized | Table with normalized Affymetrix data |
-| Control normalized | Table with normalized Affymetrix data |
-| Probe type | Specifiy the Affymetrix Chip type |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+---------------------------------------+
+| Control normalized    | Table with normalized Affymetrix data |
++-----------------------+---------------------------------------+
+| Probe type            | Specifiy the Affymetrix Chip type     |
++-----------------------+---------------------------------------+
+| Species               | Define the species of your data       |
++-----------------------+---------------------------------------+
+| AnnotationSource      | Ensembl annotation source file        |
++-----------------------+---------------------------------------+
+| Results folder        | Name and location of outputs          |
++-----------------------+---------------------------------------+
+```
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Affy normalized]) and **Control normalized** ([input example][Affy con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
 [link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
+
 [Affy normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized%20(RMA)
+
 [Affy con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Control%20normalized%20(RMA)
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
@@ -227,13 +238,21 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+----------------------------------------+
+| Parameter             | Description                            |
++=======================+========================================+
 | Experiment normalized | Table with normalized Agilent tox data |
-| Control normalized | Table with normalized Agilent tox data |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+----------------------------------------+
+| Control normalized    | Table with normalized Agilent tox data |
++-----------------------+----------------------------------------+
+| Species               | Define the species of your data        |
++-----------------------+----------------------------------------+
+| AnnotationSource      | Ensembl annotation source file         |
++-----------------------+----------------------------------------+
+| Results folder        | Name and location of outputs           |
++-----------------------+----------------------------------------+
+```
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil tox normalized]) and **Control normalized** ([input example][Agil tox con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
@@ -279,13 +298,21 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+------------------------------------+
+| Parameter             | Description                        |
++=======================+====================================+
 | Experiment normalized | Table with normalized Agilent data |
-| Control normalized | Table with normalized Agilent data |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+------------------------------------+
+| Control normalized    | Table with normalized Agilent data |
++-----------------------+------------------------------------+
+| Species               | Define the species of your data    |
++-----------------------+------------------------------------+
+| AnnotationSource      | Ensembl annotation source file     |
++-----------------------+------------------------------------+
+| Results folder        | Name and location of outputs       |
++-----------------------+------------------------------------+
+```
 
 Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
@@ -331,13 +358,21 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+-------------------------------------+
+| Parameter             | Description                         |
++=======================+=====================================+
 | Experiment normalized | Table with normalized Illumina data |
-| Control normalized | Table with normalized Illumina data |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+-------------------------------------+
+| Control normalized    | Table with normalized Illumina data |
++-----------------------+-------------------------------------+
+| Species               | Define the species of your data     |
++-----------------------+-------------------------------------+
+| AnnotationSource      | Ensembl annotation source file      |
++-----------------------+-------------------------------------+
+| Results folder        | Name and location of outputs        |
++-----------------------+-------------------------------------+
+```
 
 Normalized data with Illumina probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Illumina experiment and control][link nomalize Illumina].
 
@@ -383,23 +418,41 @@ This workflow is designed to estimate differentially expressed genes with EBarra
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input table | Table with normalized data |
-| Probe type | Specifiy the microarray chip type |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Control_group | Enter control group name without spaces |
-| Columns_control | Select columns of control samples |
-| Condition\_1_group | Enter Condition 1 group name without spaces |
-| Columns\_condition_1 | Select columns of condition 1 samples |
-| Condition\_2_group | Enter Condition 2 group name without spaces |
-| Columns\_condition_2 | Select columns of condition 2 samples |
-| Condition\_3_group | Enter Condition 3 group name without spaces |
-| Columns\_condition_3 | Select columns of condition 3 samples |
-| Condition\_4_group | Enter Condition 4 group name without spaces |
-| Columns\_condition_4 | Select columns of condition 4 samples |
-| Results folder | name and location of outputs |
+```eval_rst   
++---------------------+---------------------------------------------+
+| Parameter           | Description                                 |
++=====================+=============================================+
+| Input table         | Table with normalized data                  |
++---------------------+---------------------------------------------+
+| Probe type          | Specifiy the Affymetrix Chip type           |
++---------------------+---------------------------------------------+
+| Species             | Define the species of your data             |
++---------------------+---------------------------------------------+
+| AnnotationSource    | Ensembl annotation source file              |
++---------------------+---------------------------------------------+
+| Control_group       | Enter control group name without spaces     |
++---------------------+---------------------------------------------+
+| Columns_control     | Select columns of control samples           |
++---------------------+---------------------------------------------+
+| Condition_1_group   | Enter Condition 1 group name without spaces |
++---------------------+---------------------------------------------+
+| Columns_condition_1 | Select columns of condition 1 samples       |
++---------------------+---------------------------------------------+
+| Condition_2_group   | Enter Condition 2 group name without spaces |
++---------------------+---------------------------------------------+
+| Columns_condition_2 | Select columns of condition 2 samples       |
++---------------------+---------------------------------------------+
+| Condition_3_group   | Enter Condition 3 group name without spaces |
++---------------------+---------------------------------------------+
+| Columns_condition_3 | Select columns of condition 3 samples       |
++---------------------+---------------------------------------------+
+| Condition_4_group   | Enter Condition 4 group name without spaces |
++---------------------+---------------------------------------------+
+| Columns_condition_4 | Select columns of condition 4 samples       |
++---------------------+---------------------------------------------+
+| Results folder      | Name and location of outputs                |
++---------------------+---------------------------------------------+
+```
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][Ebay normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2].
 
@@ -442,14 +495,23 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+---------------------------------------+
+| Parameter             | Description                           |
++=======================+=======================================+
 | Experiment normalized | Table with normalized Affymetrix data |
-| Control normalized | Table with normalized Affymetrix data |
-| Probe type | Specifiy the Affymetrix Chip type |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+---------------------------------------+
+| Control normalized    | Table with normalized Affymetrix data |
++-----------------------+---------------------------------------+
+| Probe type            | Specifiy the Affymetrix Chip type     |
++-----------------------+---------------------------------------+
+| Species               | Define the species of your data       |
++-----------------------+---------------------------------------+
+| AnnotationSource      | Ensembl annotation source file        |
++-----------------------+---------------------------------------+
+| Results folder        | Name and location of outputs          |
++-----------------------+---------------------------------------+
+```
 
 Normalized data with Affymetrix probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Affy normalized]) and **Control normalized** ([input example][Affy con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
 
@@ -512,13 +574,21 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+------------------------------------+
+| Parameter             | Description                        |
++=======================+====================================+
 | Experiment normalized | Table with normalized Agilent data |
-| Control normalized | Table with normalized Agilent data |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+------------------------------------+
+| Control normalized    | Table with normalized Agilent data |
++-----------------------+------------------------------------+
+| Species               | Define the species of your data    |
++-----------------------+------------------------------------+
+| AnnotationSource      | Ensembl annotation source file     |
++-----------------------+------------------------------------+
+| Results folder        | Name and location of outputs       |
++-----------------------+------------------------------------+
+```
 
 Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Agilent experiment and control][link nomalize Agil].
 
@@ -578,13 +648,21 @@ This workflow is designed to identify differentially expressed genes from an exp
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
+```eval_rst   
++-----------------------+-------------------------------------+
+| Parameter             | Description                         |
++=======================+=====================================+
 | Experiment normalized | Table with normalized Illumina data |
-| Control normalized | Table with normalized Illumina data |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Results folder | Name and location of outputs |
++-----------------------+-------------------------------------+
+| Control normalized    | Table with normalized Illumina data |
++-----------------------+-------------------------------------+
+| Species               | Define the species of your data     |
++-----------------------+-------------------------------------+
+| AnnotationSource      | Ensembl annotation source file      |
++-----------------------+-------------------------------------+
+| Results folder        | Name and location of outputs        |
++-----------------------+-------------------------------------+
+```
 
 Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Illumina].
 
@@ -640,23 +718,41 @@ This workflow is designed to estimate differentially expressed genes with limma 
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input table | Table with normalized data |
-| Probe type| Please specifiy the microarray chip type or select Illumina gene count table |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Condition_1 | Enter control group name without spaces |
-| 1_Columns | Select columns of control samples |
-| Condition_2 | Enter Condition 1 group name without spaces |
-| 2_Columns | Select columns of condition 1 samples |
-| Condition_3 | Enter Condition 2 group name without spaces |
-| 3_Columns | Select columns of condition 2 samples |
-| Condition_4 | Enter Condition 3 group name without spaces |
-| 4_Columns | Select columns of condition 3 samples |
-| Condition_5 | Enter Condition 4 group name without spaces |
-| 5_Columns | Select columns of condition 4 samples |
-| Results folder | name and location of outputs |
+```eval_rst   
++------------------+------------------------------------------------------------------------------+
+| Parameter        | Description                                                                  |
++==================+==============================================================================+
+| Input table      | Table with normalized data                                                   |
++------------------+------------------------------------------------------------------------------+
+| Probe type       | Please specifiy the microarray chip type or select Illumina gene count table |
++------------------+------------------------------------------------------------------------------+
+| Species          | Define the species of your data                                              |
++------------------+------------------------------------------------------------------------------+
+| AnnotationSource | Ensembl annotation source file                                               |
++------------------+------------------------------------------------------------------------------+
+| Condition_1      | Enter Condition 1 group name without spaces                                  |
++------------------+------------------------------------------------------------------------------+
+| 1_Columns        | Select columns of condition 1 samples                                        |
++------------------+------------------------------------------------------------------------------+
+| Condition_2      | Enter Condition 2 group name without spaces                                  |
++------------------+------------------------------------------------------------------------------+
+| 2_Columns        | Select columns of condition 2 samples                                        |
++------------------+------------------------------------------------------------------------------+
+| Condition_3      | Enter Condition 3 group name without spaces                                  |
++------------------+------------------------------------------------------------------------------+
+| 3_Columns        | Select columns of condition 3 samples                                        |
++------------------+------------------------------------------------------------------------------+
+| Condition_4      | Enter Condition 4 group name without spaces                                  |
++------------------+------------------------------------------------------------------------------+
+| 4_Columns        | Select columns of condition 4 samples                                        |
++------------------+------------------------------------------------------------------------------+
+| Condition_5      | Enter Condition 5 group name without spaces                                  |
++------------------+------------------------------------------------------------------------------+
+| 5_Columns        | Select columns of condition 5 samples                                        |
++------------------+------------------------------------------------------------------------------+
+| Results folder   | Name and location of outputs                                                 |
++------------------+------------------------------------------------------------------------------+
+```
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
 
@@ -725,20 +821,35 @@ This workflow performs a linear model analysis to identify differentially expres
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input table | Table with normalized data |
-| Probe type| Please specifiy the microarray chip type or select Illumina gene count table |
-| Type of input table | Please specifiy the values of your data |
-| Normalization method to use | Please select the normalization method or define already normalized |
-| Species | Specifiy the species of your data |
-| AnnotationSource | Ensembl annotation source file |
-| Sample table | Please select your sample annotation file (meta data) |
-| Sample ID column | Please select the column name of your sample table that breaks down your sample IDs |
-| Main | Main factor to define comparisons e.g. sample treatment |
-| Reference level | Reference level is an optinal value from the Main factor to form contrasts |
-| Compare to reference only | Include in contrasts only comparisons to the reference level |
-| Results folder | Name and location of outputs |
+```eval_rst   
++-----------------------------+-------------------------------------------------------------------------------------+
+| Parameter                   | Description                                                                         |
++=============================+=====================================================================================+
+| Input table                 | Table with normalized data                                                          |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Probe type                  | Please specifiy the microarray chip type or select Illumina gene count table        |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Type of input table         | Please specifiy the values of your data                                             |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Normalization method to use | Please select the normalization method or define already normalized                 |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Species                     | Define the species of your data                                                     |
++-----------------------------+-------------------------------------------------------------------------------------+
+| AnnotationSource            | Ensembl annotation source file                                                      |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Sample table                | Please select your sample annotation file (meta data)                               |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Sample ID column            | Please select the column name of your sample table that breaks down your sample IDs |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Main                        | Main factor to define comparisons e.g. sample treatment                             |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Reference level             | Reference level is an optinal value from the Main factor to form contrasts          |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Compare to reference only   | Include in contrasts only comparisons to the reference level                        |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Results folder              | Name and location of outputs                                                        |
++-----------------------------+-------------------------------------------------------------------------------------+
+```
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
 
@@ -836,6 +947,36 @@ This workflow performs a linear model analysis to identify differentially expres
 
 [DEG workflow]: 
 
+```eval_rst   
++-----------------------------+-------------------------------------------------------------------------------------+
+| Parameter                   | Description                                                                         |
++=============================+=====================================================================================+
+| Input table                 | Table with normalized data                                                          |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Data columns                | Please select all data columns that should be considered for the analysis         |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Input type                  | Please specifiy the values of your data                                             |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Normalization method to use | Please select the normalization method or define already normalized                 |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Species                     | Define the species of your data                                                     |
++-----------------------------+-------------------------------------------------------------------------------------+
+| AnnotationSource            | Ensembl annotation source file                                                      |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Sample table                | Please select your sample annotation file (meta data)                               |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Sample ID column            | Please select the column name of your sample table that breaks down your sample IDs |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Main                        | Main factor to define comparisons e.g. sample treatment                             |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Reference level             | Reference level is an optinal value from the Main factor to form contrasts          |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Compare to reference only   | Include in contrasts only comparisons to the reference level                        |
++-----------------------------+-------------------------------------------------------------------------------------+
+| Results folder              | Name and location of outputs                                                        |
++-----------------------------+-------------------------------------------------------------------------------------+
+```
+
 ### Explain my genes
 
 ### Find common effectors for multiple gene sets (GeneWays)
@@ -856,10 +997,15 @@ This workflow is based on a framework (De Pristo et al.) to discover genotype va
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input fastq file | FASTQ file |
-| OutputFolder | Name and location of outputs |
+```eval_rst   
++------------------+------------------------------+
+| Parameter        | Description                  |
++==================+==============================+
+| Input fastq file | FASTQ file                   |
++------------------+------------------------------+
+| OutputFolder     | Name and location of outputs |
++------------------+------------------------------+
+```
 
 One single-end FASTQ file can be submitted in the input field **Input fastq file**. An example FASTQ file can be found here:
 
@@ -899,10 +1045,15 @@ This workflow is based on a framework (De Pristo et al.) to discover genotype va
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input fastq file | FASTQ file |
-| OutputFolder | Name and location of outputs |
+```eval_rst   
++------------------+------------------------------+
+| Parameter        | Description                  |
++==================+==============================+
+| Input fastq file | FASTQ file                   |
++------------------+------------------------------+
+| OutputFolder     | Name and location of outputs |
++------------------+------------------------------+
+```
 
 One single-end FASTQ file can be submitted in the input field **Input fastq file**. An example FASTQ file can be found here:
 
@@ -941,11 +1092,17 @@ This workflow is based on a framework (De Pristo et al.) to discover genotype va
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Forward fastq | Paired forward FASTQ file |
-| Reverse fastq | Paired reverse FASTQ file |
-| OutputFolder | Name and location of outputs |
+```eval_rst   
++------------------+------------------------------+
+| Parameter        | Description                  |
++==================+==============================+
+| Forward fastq    | Paired forward FASTQ file    |
++------------------+------------------------------+
+| Reverse fastq    | Paired reverse FASTQ file    |
++------------------+------------------------------+
+| OutputFolder     | Name and location of outputs |
++------------------+------------------------------+
+```
 
 One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
 
@@ -983,11 +1140,17 @@ This workflow is based on a framework (De Pristo et al.) to discover genotype va
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Forward fastq | Paired forward FASTQ file |
-| Reverse fastq | Paired reverse FASTQ file |
-| OutputFolder | Name and location of outputs |
+```eval_rst   
++------------------+------------------------------+
+| Parameter        | Description                  |
++==================+==============================+
+| Forward fastq    | Paired forward FASTQ file    |
++------------------+------------------------------+
+| Reverse fastq    | Paired reverse FASTQ file    |
++------------------+------------------------------+
+| OutputFolder     | Name and location of outputs |
++------------------+------------------------------+
+```
 
 One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
 data/Examples/User Guide/Data/Input for examples/workflows/SRR944150 forward.fastq
