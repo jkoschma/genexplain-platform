@@ -15,12 +15,22 @@ This workflow is designed to analyze a biological experiment with two conditions
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Experiment BAM files | Two or several BAM files |
-| Control BAM files | Two or several BAM files |
-| ReferenceEnsembl | Select your reference genome |
-| Results folder | Name and location of outputs |
+```eval_rst
+.. autoclass:: recommonmark.transform.AutoStructify
+    :show-inheritance:
+    
++------------------------+-----------------------------+
+| Parameter              | Description                 |
++========================+=============================+
+| Experiment BAM files   | Two or several BAM files    |
++------------------------+-----------------------------+
+| Control BAM files      | Two or several BAM files    |
++------------------------+-----------------------------+
+| ReferenceEnsembl       | Select your reference genome|
++------------------------+-----------------------------+
+| Results folder         | Name and location of outputs|
++------------------------+-----------------------------+
+```
 
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
