@@ -28,6 +28,26 @@ The following list gives an overview of all input parameters used in this workfl
 | Results folder         | Name and location of outputs|
 +------------------------+-----------------------------+
 ```
+---
+**NOTE**
+
+It works with almost all markdown flavours (the below blank line matters).
+
+---
+
+> **_NOTE:_**  The note content.
+
+
+> One-Line Box made with Blockquote
+
+
+`One-Line Box made with Backticks`
+
+
+```
+Box made with Triple Backticks
+```
+
 
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
