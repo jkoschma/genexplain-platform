@@ -141,9 +141,7 @@ In the second part of the workflow the list of Ensembl target genes is mapped to
 
 At least two target genes must be mapped into one group (e.g. one GO term, one pathway) and a P-value threshold lower 0.05 is given for each group.
 
-A result folder ([result example][ChIP-seq result]) is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result])), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output[result example][Cluster result]. All output results can be exported to your local computer.
-
-[ChIP-seq result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/GSM558469_E2F1_hg19%20(From%20tracks%20to%20target%20genes)/
+A result folder is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result])), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output[result example][Cluster result]. All output results can be exported to your local computer.
 
 [Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/GSM558469_E2F1_hg19%20(From%20tracks%20to%20target%20genes)/Genes%20Ensembl
 
@@ -221,9 +219,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Affymetrix probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder ([result example][Affy result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy report]). All output results can be exported to your local computer.
-
-[Affy result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy report]). All output results can be exported to your local computer.
 
 [Affy report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Report
 
@@ -281,9 +277,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Agilent tox probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder ([result example][Agil tox result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil tox report]). All output results can be exported to your local computer.
-
-[Agil result]: 
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil tox report]). All output results can be exported to your local computer.
 
 [Agil report]: 
 
@@ -341,9 +335,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Agilent probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder ([result example][Agil result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
-
-[Agil result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20Agil)/
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
 
 [Agil report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20Agil)/Report
 
@@ -401,9 +393,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Illumina probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder ([result example][Illumina result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Illumina report]). All output results can be exported to your local computer.
-
-[Illumina result]: 
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Illumina report]). All output results can be exported to your local computer.
 
 [Illumina report]: 
 
@@ -476,9 +466,7 @@ For up-regulated genes: log2-fold changes > 0.5 and cut-off FDR level < 0.05
 For down-regulated genes: log2-fold changes < -0.5 and cut-off FDR level < 0.05
 ```
 
-A result folder ([result example][Ebay wf result]) is generated and contains one folder with unfiltered EBarrays results ([result example][Ebay wf result2]), one folder with the diagnostic plots ([result example][Ebay wf result3]) and all filtered gene tables with significant differentially expressed genes for all condition groups compared to the control group. All output results can be exported to your local computer.
-
-[Ebay wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/
+A result folder is generated and contains one folder with unfiltered EBarrays results ([result example][Ebay wf result2]), one folder with the diagnostic plots ([result example][Ebay wf result3]) and all filtered gene tables with significant differentially expressed genes for all condition groups compared to the control group. All output results can be exported to your local computer.
 
 [Ebay wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/EBarrays%20result
 
@@ -558,9 +546,7 @@ The resulting tables of up-regulated, down-regulated, and non-changed Affymetrix
 
 [Affy hyper output]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/UpDownReg%20Ensembl%20genes
 
-A result folder ([result example][Affy hyper result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy hyper report]). All output results can be exported to your local computer.
-
-[Affy hyper result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy hyper report]). All output results can be exported to your local computer.
 
 [Affy hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/Report
 
@@ -620,7 +606,6 @@ Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411
 
 A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file ([output example][Agil hyper result2]). If you have just two or even one sample for your experiment and for your control (e.g. one CEL file in experiment and one CEL file in control), you can apply hypergeometric analysis to calculate DEGs. In contrast to the t-test which requires at least three sample replicates, hypergeometric analysis can make calculations for two and even one sample.
 
-
 [Agil hyper result2]: 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Agilent probeset IDs. The filtering criteria are set as follows:
@@ -635,9 +620,7 @@ The resulting tables of up-regulated, down-regulated, and non-changed Agilent pr
 
 [Agil hyper output]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/UpDown%20Ensembl%20genes
 
-A result folder ([result example][Agil hyper result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
-
-[Agil hyper result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
 
 [Agil hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/Report
 
@@ -669,9 +652,9 @@ The following list gives an overview of all input parameters used in this workfl
 +-----------------------+-------------------------------------+
 ```
 
-Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Illumina].
+Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Illumina experiment and control][link nomalize Illumina].
 
-[link nomalize Agil]: link internal!
+[link nomalize Illumina]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Illumina%20experiment%20and%20control
 
 [Illumina normalized]: 
 
@@ -685,9 +668,19 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. The p-value is calculated by hypergeometric analysis.
 
-> Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
-> Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
-[Agil hyper result2]: 
+---
+**Paper**
+
+Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
+Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
+
+---
+
+[paper hyper]: https://pubmed.ncbi.nlm.nih.gov/19374127/
+
+A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file ([output example][Illumina hyper result2]). If you have just two or even one sample for your experiment and for your control (e.g. one Illumina file in experiment and one Illumina file in control), you can apply hypergeometric analysis to calculate DEGs. In contrast to the t-test which requires at least three sample replicates, hypergeometric analysis can make calculations for two and even one sample.
+
+[Illumina hyper result2]: 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Illumina probeset IDs. The filtering criteria are set as follows:
 
@@ -698,16 +691,6 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 ```
 
 The resulting tables of up-regulated, down-regulated, and non-changed Illumina probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method([output example][Illumina hyper output]).
-
-[Illumina hyper output]: 
-
-[paper hyper]: https://pubmed.ncbi.nlm.nih.gov/19374127/
-
-A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file ([output example][Agil hyper result2]). If you have just two or even one sample for your experiment and for your control (e.g. one Illumina file in experiment and one Illumina file in control), you can apply hypergeometric analysis to calculate DEGs. In contrast to the t-test which requires at least three sample replicates, hypergeometric analysis can make calculations for two and even one sample.
-
-A result folder ([result example][Illumina hyper result]) is generated and contains all tables, the histogramm and a summary HTML report ([report example][Illumina hyper report]). All output results can be exported to your local computer.
-
-[Illumina hyper result]: 
 
 [Illumina hyper report]: 
 
@@ -761,7 +744,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
 
-[link normalize Affy2]: link internal
+[link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
 
 [limma normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Agilent%20normalized%20for%20limma
 
@@ -781,6 +764,7 @@ Please select the microarray chip you have used in your experiment or your data 
 - Probes: Affymetrix miRNA-2_0
 - Probes: Affymetrix miRNA-3_0
 - Probes: Affymetrix miRNA-4_0
+- Probes: Affymetrix miRNA-4_1
 - Probes: Agilent
 - Probes: Agilent Tox Array
 - Probes: Illumina
@@ -862,7 +846,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
 
-[link normalize Affy2]: link internal
+[link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
 
 [limma normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Agilent%20normalized%20for%20limma
 
@@ -882,6 +866,7 @@ Please select the microarray chip you have used in your experiment or your data 
 - Probes: Affymetrix miRNA-2_0
 - Probes: Affymetrix miRNA-3_0
 - Probes: Affymetrix miRNA-4_0
+- Probes: Affymetrix miRNA-4_1
 - Probes: Agilent
 - Probes: Agilent Tox Array
 - Probes: Illumina
@@ -914,9 +899,13 @@ To include in contrasts only comparisons to the selected reference level you nee
 
 The workflow estimates differentially expressed genes from several experimental conditions applying limma statistics. 
 
-> Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
-> Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. 
-> [paper link][paper limma] 
+---
+**PAPER**
+
+Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
+Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. [paper link][paper limma] 
+
+--- 
 
 [paper limma]: https://link.springer.com/chapter/10.1007/0-387-29362-0_23
 
@@ -954,7 +943,7 @@ This workflow performs a linear model analysis to identify differentially expres
 
 ✨  [Open][DEG workflow] the workflow in the user interface.✨
 
-[DEG workflow]: 
+[DEG workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/Estimate%20DEGs%20with%20guided%20linear%20model%20analysis
 
 ```eval_rst   
 +-----------------------------+-------------------------------------------------------------------------------------+
@@ -996,7 +985,9 @@ This workflow performs a linear model analysis to identify differentially expres
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh37 Homo sapiens assembly (hg19), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
 
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
+> DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
+> Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and 
+> genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
 
 [paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
 
