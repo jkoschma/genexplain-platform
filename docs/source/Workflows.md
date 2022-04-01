@@ -796,11 +796,11 @@ Down regulated: logFC < -0.5 && adjusted p-value < 0.05
 Non-changed genes logFC < 0.002 && logFC > -0.002
 ```
 
-A result folder is generated and contains one folder with unfiltered EBarrays results ([result example][Limma wf result]) and seperate folders for each contrast between the defined groups with all filtered gene tables with significant differentially expressed genes ([result example][Limma wf result2]). All output results can be exported to your local computer.
+A result folder is generated and contains one folder with unfiltered limma results ([result example][Limma wf result]) and seperate folders for each contrast between the defined groups with all filtered gene tables with significant differentially expressed genes ([result example][Limma wf result2]). All output results can be exported to your local computer.
 
-[Limma wf result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Agilent%20normalized%20for%20limma%20(DEGs%20with%20limma)/
+[Limma wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Output%20limma/Control%20vs.%20IFN_24
 
-[Limma wf result2]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Agilent%20normalized%20for%20limma%20(DEGs%20with%20limma)/shCDK6%20pool_0h%20arrested_G1-S%20vs.%20Control/
+[Limma wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Control%20vs.%20IFN_24/Up-regulated%20genes%20Ensembl
 
 All output results can be exported to your local computer.
 
@@ -909,13 +909,13 @@ Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizar
 
 [paper limma]: https://link.springer.com/chapter/10.1007/0-387-29362-0_23
 
-The outputs are stored in the specified folder ([result example][Limma guide wf result]) and contains one result table for each contrast ([result example][Contrast table]), one ANOVA table ([result example][Anova table])for all coefficients as well as the resulting design matrix ([result example][Design matrix])that shows the assignment of input sample columns to factor levels. If the main factor has only two levels the ANOVA table is equivalent to the single contrast result table that is produced by this workflow. In an ANOVA table for more than two main factor levels, the first columns are the contrasts deduced from the main factor. Further information is provided by the Limma userguide ([guide link][limma guide]).
+The outputs are stored in the specified folder ([result example][Limma guide wf result]) and contains one result table for each contrast ([result example][Contrast table]), one ANOVA table ([result example][Anova table]) for all coefficients as well as the resulting design matrix ([result example][Design matrix])that shows the assignment of input sample columns to factor levels. If the main factor has only two levels the ANOVA table is equivalent to the single contrast result table that is produced by this workflow. In an ANOVA table for more than two main factor levels, the first columns are the contrasts deduced from the main factor. Further information is provided by the Limma userguide ([guide link][limma guide]).
 
-[Limma guide wf result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/
+[Limma guide wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
 
-[Contrast table]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
+[Contrast table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
 
-[Anova table]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Anova%20result
+[Anova table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Anova%20result
 
 [Design matrix]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Design%20matrix
 
@@ -923,7 +923,7 @@ The outputs are stored in the specified folder ([result example][Limma guide wf 
 
 In addition the resulting tables for each contrast are filtered by different criteria in parallel to identify up-regulated, down-regulated, and non-changed genes ([result example][Limma filtered]).
 
-[Limma filtered]:
+[Limma filtered]: 
 
 The filtering criteria are set as follows:
 
