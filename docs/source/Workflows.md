@@ -203,6 +203,7 @@ Please select the Affymetrix Chip you have used in your experiment or your data 
 - Affymetrix miRNA-2_0
 - Affymetrix miRNA-3_0
 - Affymetrix miRNA-4_0
+- - Affymetrix miRNA-4_1
 
 You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
 
@@ -535,6 +536,7 @@ Please select the Affymetrix Chip you have used in your experiment or your data 
 - Affymetrix miRNA-2_0
 - Affymetrix miRNA-3_0
 - Affymetrix miRNA-4_0
+- Affymetrix miRNA-4_1
 
 You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
 
@@ -606,10 +608,13 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. The p-value is calculated by hypergeometric analysis.
 
-```eval_rst
-> Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
-> Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
-```
+---
+**Paper**
+
+Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
+Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
+
+---
 
 [paper hyper]: https://pubmed.ncbi.nlm.nih.gov/19374127/
 
@@ -787,9 +792,13 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 The workflow estimates differentially expressed genes from several experimental conditions applying limma statistics. 
 
-> Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
-> Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. 
-> [paper link][paper limma] 
+---
+**PAPER**
+
+Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
+Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. [paper link][paper limma] 
+
+---
 
 [paper limma]: https://link.springer.com/chapter/10.1007/0-387-29362-0_23
 
@@ -1206,7 +1215,7 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
-``` important:: It is important that paired FASTQ files are stored in one common folder!
+``` important:: Your paired FASTQ files must be stored in one common folder!
 ```
 
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
@@ -1443,7 +1452,7 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
-``` important:: It is important that paired FASTQ files are stored in one common folder!
+``` important:: Your paired FASTQ files must be stored in one common folder!
 ```
 
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
@@ -1683,7 +1692,7 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
-``` important:: It is important that paired FASTQ files are stored in one common folder!
+``` important:: Your paired FASTQ files must be stored in one common folder!
 ```
 
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
