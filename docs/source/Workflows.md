@@ -28,26 +28,6 @@ The following list gives an overview of all input parameters used in this workfl
 | Results folder         | Name and location of outputs|
 +------------------------+-----------------------------+
 ```
----
-**NOTE**
-
-It works with almost all markdown flavours (the below blank line matters).
-
----
-
-> **_NOTE:_**  The note content.
-
-
-> One-Line Box made with Blockquote
-
-
-`One-Line Box made with Backticks`
-
-
-```
-Box made with Triple Backticks
-```
-
 
 Two or several BAM files can be submitted in the input field **Experiment BAM files** as one condition in your experiment like _disease_. An example BAM file can be found here: 
 
@@ -1226,6 +1206,9 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
+``` important:: It is important that paired FASTQ files are stored in one common folder!
+```
+
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
 
 data/Examples/User Guide/Data/Input for examples/workflows/ExpFASTQ_Files
@@ -1458,6 +1441,9 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 | Results folder      | Name and location of outputs          |
 +---------------------+---------------------------------------+
+```
+
+``` important:: It is important that paired FASTQ files are stored in one common folder!
 ```
 
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
@@ -1697,6 +1683,9 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
+``` important:: It is important that paired FASTQ files are stored in one common folder!
+```
+
 Two or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
 
 data/Examples/User Guide/Data/Input for examples/workflows/ExpFASTQ_Files
@@ -1745,9 +1734,7 @@ Trim n-bases from 3': 0
 Phred format: +33
 ```
 
-For each submitted FASTQ file a result folder ([result example][subread result]) is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads. 
-
-[subread result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/
+For each submitted FASTQ file a result folder is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads.
 
 [BAM result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/SRR11940548_aligned_reads
 
@@ -1890,9 +1877,7 @@ Phred format: +33
 
 A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
-For each submitted FASTQ file a result folder ([result example][subread result]) is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads. 
-
-[subread result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(single-end)/
+For each submitted FASTQ file a result folder is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads.
 
 [BAM result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(single-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_alignments
 
