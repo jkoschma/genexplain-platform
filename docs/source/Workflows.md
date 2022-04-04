@@ -3938,15 +3938,25 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes track | Input track with sequences |
-| Species | Specifiy the species of your data |
-| Sequence source | Ensembl genome version |
-| Annotation source | Ensembl annotation source file |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Filter by Coefficient | Filter for true discovery rate (TDR) |
-| Result folder | Name and location of outputs |
+```eval_rst
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| Input Yes track       | Input track with sequences                                   |
++-----------------------+--------------------------------------------------------------+
+| Species               | Define the species of your data                              |
++-----------------------+--------------------------------------------------------------+
+| Sequence source       | Ensembl genome version                                       |
++-----------------------+--------------------------------------------------------------+
+| AnnotationSource      | Ensembl annotation source file                               |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Filter by Coefficient | Filter for true discovery rate (TDR)                         |
++-----------------------+--------------------------------------------------------------+
+| Result folder        | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 Genomic sequences in track format ([input example][track example]) can be submitted in the input field **Input sequence**. You can drag and drop the track from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your track.
 
@@ -3964,19 +3974,33 @@ The correct **Sequence source** of your genomic sequences should be auto-detecte
 
 The following genome versions are available:
 
-| Ensembl version | Genome version | Short form |
-| ------ | ------ | ------ |
-| EnsemblHuman104 | GRCh38 | hg38 |
-| EnsemblHuman100 | GRCh38 | hg38 |
-| EnsemblHuman75 | GRCh37 | hg19 |
-| EnsemblHuman52 | NCBI36 | hg18 |
-| EnsemblMouse104 | GRCm39 | mm39 |
-| EnsemblMouse100 | GRCm38 | mm10 |
-| EnsemblMouse65 | NCBIM37 | mm9 |
-| EnsemblRat104 | Rnor_6.0 | rn6 |
-| EnsemblRat100 | Rnor_6.0 | rn6 |
-| EnsemblArabidopsisThaliana100 | TAIR10 | TAIR10 |
-| EnsemblZebrafish100 | GRCz11 | GRCz11 |
+```eval_rst   
++-------------------------------+----------------+------------+
+| Ensembl version               | Genome version | Short form |
++===============================+================+============+
+| EnsemblHuman104               | GRCh38         |  hg38      |
++-------------------------------+----------------+------------+
+| EnsemblHuman100               | GRCh38         | hg38       |
++-------------------------------+----------------+------------+
+| EnsemblHuman75                | GRCh37         | hg19       |
++-------------------------------+----------------+------------+
+| EnsemblHuman52                | NCBI36         | hg18       |
++-------------------------------+----------------+------------+
+| EnsemblMouse104               | GRCm39         | mm39       |
++-------------------------------+----------------+------------+
+| EnsemblMouse100               | GRCm38         | mm10       |
++-------------------------------+----------------+------------+
+| EnsemblMouse65                | NCBIM37        | mm9        |
++-------------------------------+----------------+------------+
+| EnsemblRat104                 | Rnor_6.0       | rn6        |
++-------------------------------+----------------+------------+
+| EnsemblRat100                 | Rnor_6.0       | rn6        |
++-------------------------------+----------------+------------+
+| EnsemblArabidopsisThaliana100 | TAIR10         | TAIR10     |
++-------------------------------+----------------+------------+
+| EnsemblZebrafish100           | GRCz11         | GRCz11     |
++-------------------------------+----------------+------------+
+```
 
 For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
 
@@ -4006,14 +4030,23 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes track | Input track with sequences |
-| Species | Specifiy the species of your data |
-| Sequence source | Ensembl genome version |
-| Annotation source | Ensembl annotation source file |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Result folder | Name and location of outputs |
+```eval_rst
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| Input Yes track       | Input track with sequences                                   |
++-----------------------+--------------------------------------------------------------+
+| Species               | Define the species of your data                              |
++-----------------------+--------------------------------------------------------------+
+| Sequence source       | Ensembl genome version                                       |
++-----------------------+--------------------------------------------------------------+
+| AnnotationSource      | Ensembl annotation source file                               |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Result folder        | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 Genomic sequences in track format ([input example][track example]) can be submitted in the input field **Input sequence**. You can drag and drop the track from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your track.
 
@@ -4031,19 +4064,33 @@ The correct **Sequence source** of your genomic sequences should be auto-detecte
 
 The following genome versions are available:
 
-| Ensembl version | Genome version | Short form |
-| ------ | ------ | ------ |
-| EnsemblHuman104 | GRCh38 | hg38 |
-| EnsemblHuman100 | GRCh38 | hg38 |
-| EnsemblHuman75 | GRCh37 | hg19 |
-| EnsemblHuman52 | NCBI36 | hg18 |
-| EnsemblMouse104 | GRCm39 | mm39 |
-| EnsemblMouse100 | GRCm38 | mm10 |
-| EnsemblMouse65 | NCBIM37 | mm9 |
-| EnsemblRat104 | Rnor_6.0 | rn6 |
-| EnsemblRat100 | Rnor_6.0 | rn6 |
-| EnsemblArabidopsisThaliana100 | TAIR10 | TAIR10 |
-| EnsemblZebrafish100 | GRCz11 | GRCz11 |
+```eval_rst   
++-------------------------------+----------------+------------+
+| Ensembl version               | Genome version | Short form |
++===============================+================+============+
+| EnsemblHuman104               | GRCh38         |  hg38      |
++-------------------------------+----------------+------------+
+| EnsemblHuman100               | GRCh38         | hg38       |
++-------------------------------+----------------+------------+
+| EnsemblHuman75                | GRCh37         | hg19       |
++-------------------------------+----------------+------------+
+| EnsemblHuman52                | NCBI36         | hg18       |
++-------------------------------+----------------+------------+
+| EnsemblMouse104               | GRCm39         | mm39       |
++-------------------------------+----------------+------------+
+| EnsemblMouse100               | GRCm38         | mm10       |
++-------------------------------+----------------+------------+
+| EnsemblMouse65                | NCBIM37        | mm9        |
++-------------------------------+----------------+------------+
+| EnsemblRat104                 | Rnor_6.0       | rn6        |
++-------------------------------+----------------+------------+
+| EnsemblRat100                 | Rnor_6.0       | rn6        |
++-------------------------------+----------------+------------+
+| EnsemblArabidopsisThaliana100 | TAIR10         | TAIR10     |
++-------------------------------+----------------+------------+
+| EnsemblZebrafish100           | GRCz11         | GRCz11     |
++-------------------------------+----------------+------------+
+```
 
 For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
 
@@ -4077,10 +4124,15 @@ This workflow is designed to match SNPs on transcriptional and on translational 
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input_folder | One or several SNP tables located in a folder |
-| Result_folder | Name and location of outputs |
+```eval_rst
++---------------+-----------------------------------------------+
+| Parameter     | Description                                   |
++===============+===============================================+
+| Input_folder  | One or several SNP tables located in a folder |
++---------------+-----------------------------------------------+
+| Result_folder | Name and location of outputs                  |
++---------------+-----------------------------------------------+
+```
 
 One folder with one or several SNP tables inside can be submitted in the input field **Input_folder** ([input example][SNP_TP folder]).
 
@@ -4108,10 +4160,15 @@ This workflow is designed to match SNPs on transcriptional and on translational 
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input_folder | One or several SNP tables located in a folder |
-| Result_folder | Name and location of outputs |
+```eval_rst
++---------------+-----------------------------------------------+
+| Parameter     | Description                                   |
++===============+===============================================+
+| Input_folder  | One or several SNP tables located in a folder |
++---------------+-----------------------------------------------+
+| Result_folder | Name and location of outputs                  |
++---------------+-----------------------------------------------+
+```
 
 One folder with one or several SNP tables inside can be submitted in the input field **Input_folder** ([input example][SNP_TP folder]).
 
