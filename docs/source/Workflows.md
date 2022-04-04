@@ -141,7 +141,7 @@ In the second part of the workflow the list of Ensembl target genes is mapped to
 
 At least two target genes must be mapped into one group (e.g. one GO term, one pathway) and a P-value threshold lower 0.05 is given for each group.
 
-A result folder is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result])), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output[result example][Cluster result].
+A result folder is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result]), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output ([result example][Cluster result]).
 
 [Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/GSM558469_E2F1_hg19%20(From%20tracks%20to%20target%20genes)/Genes%20Ensembl
 
@@ -277,7 +277,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Agilent tox probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil tox report]). All output results can be exported to your local computer.
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil tox report]).
 
 [Agil report]: 
 
@@ -309,9 +309,9 @@ The following list gives an overview of all input parameters used in this workfl
 +-----------------------+------------------------------------+
 ```
 
-Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Affymetrix experiment and control][link nomalize Affy].
+Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Agil normalized]) and **Control normalized** ([input example][Agil con normalized]). Such normalized files are the output of the method [Normalize Agilent experiment and control][link nomalize Agil].
 
-[link nomalize Affy]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Affymetrix%20experiment%20and%20control
+[link nomalize Agil]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Agilent%20experiment%20and%20control
 
 [Agil normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Experiment%20normalized_Agilent
 
@@ -325,7 +325,7 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. This method applies Student’s T-test and calculates p-values, thus the number of data points should be at least three for each experiment data set and control data set. A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file.
 
-In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
+In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Agilent probeset IDs. The filtering criteria are set as follows:
 
 ```sh
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
@@ -335,7 +335,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Agilent probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]).
 
 [Agil report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20Agil)/Report
 
@@ -393,7 +393,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 
 The resulting tables of up-regulated, down-regulated, and non-changed Illumina probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
-A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Illumina report]). All output results can be exported to your local computer.
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Illumina report]).
 
 [Illumina report]: 
 
@@ -466,7 +466,7 @@ For up-regulated genes: log2-fold changes > 0.5 and cut-off FDR level < 0.05
 For down-regulated genes: log2-fold changes < -0.5 and cut-off FDR level < 0.05
 ```
 
-A result folder is generated and contains one folder with unfiltered EBarrays results ([result example][Ebay wf result2]), one folder with the diagnostic plots ([result example][Ebay wf result3]) and all filtered gene tables with significant differentially expressed genes for all condition groups compared to the control group. All output results can be exported to your local computer.
+A result folder is generated and contains one folder with unfiltered EBarrays results ([result example][Ebay wf result2]), one folder with the diagnostic plots ([result example][Ebay wf result3]) and all filtered gene tables with significant differentially expressed genes for all condition groups compared to the control group.
 
 [Ebay wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Output%20EBarrays/EBarrays%20result
 
@@ -546,7 +546,7 @@ The resulting tables of up-regulated, down-regulated, and non-changed Affymetrix
 
 [Affy hyper output]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/UpDownReg%20Ensembl%20genes
 
-A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy hyper report]). All output results can be exported to your local computer.
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy hyper report]).
 
 [Affy hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/Report
 
@@ -620,7 +620,7 @@ The resulting tables of up-regulated, down-regulated, and non-changed Agilent pr
 
 [Agil hyper output]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/UpDown%20Ensembl%20genes
 
-A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil report]). All output results can be exported to your local computer.
+A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Agil hyper report]).
 
 [Agil hyper report]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized_Agilent%20(Differentially%20expressed%20genes%20hypergeom%20Agil)/Report
 
@@ -652,13 +652,13 @@ The following list gives an overview of all input parameters used in this workfl
 +-----------------------+-------------------------------------+
 ```
 
-Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Illumina experiment and control][link nomalize Illumina].
+Normalized data with Agilent probeset IDs can be submitted in the input fields **Experiment normalized** ([input example][Illumina normalized]) and **Control normalized** ([input example][Illumina con normalized]). Such normalized files are the output of the method [Normalize Illumina experiment and control][link normalize Illumina].
 
-[link nomalize Illumina]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Illumina%20experiment%20and%20control
+[link normalize Illumina]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Normalize%20Illumina%20experiment%20and%20control
 
-[Illumina normalized]: 
+[Illumina normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Illumina%20normalized%20exp
 
-[Illumina con normalized]: 
+[Illumina con normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Illumina%20normalized%20con
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
 
@@ -690,7 +690,7 @@ For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 ```
 
-The resulting tables of up-regulated, down-regulated, and non-changed Illumina probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method([output example][Illumina hyper output]).
+The resulting tables of up-regulated, down-regulated, and non-changed Illumina probeset IDs are converted into Ensembl gene tables with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method ([output example][Illumina hyper output]).
 
 [Illumina hyper report]: 
 
@@ -742,13 +742,11 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+------------------------------------------------------------------------------+
 ```
 
-Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
+Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Illumina genes derived from RNA-seq experiment can be used as input for this workflow.
 
 [link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
 
 [limma normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Agilent%20normalized%20for%20limma
-
-[limma normalized2]: 
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
 
@@ -796,8 +794,7 @@ Down regulated: logFC < -0.5 && adjusted p-value < 0.05
 Non-changed genes logFC < 0.002 && logFC > -0.002
 ```
 
-A result folder is generated and contains one folder with unfiltered limma results ([result example][Limma wf result]) and seperate folders for each contrast between the defined groups with all filtered gene tables with significant differentially expressed genes ([result example][Limma wf result2]). All output results can be exported to your local computer.
-
+A result folder is generated and contains one folder with unfiltered limma results ([result example][Limma wf result]) and seperate folders for each contrast between the defined groups with all filtered gene tables with significant differentially expressed genes ([result example][Limma wf result2]).
 [Limma wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Output%20limma/Control%20vs.%20IFN_24
 
 [Limma wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Control%20vs.%20IFN_24/Up-regulated%20genes%20Ensembl
@@ -844,13 +841,11 @@ The following list gives an overview of all input parameters used in this workfl
 +-----------------------------+-------------------------------------------------------------------------------------+
 ```
 
-Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Ilumina genes derived from RNA-seq experiment can be used as input ([input example][limma normalized2])for this workflow.
+Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Illumina genes derived from RNA-seq experiment can be used as input for this workflow.
 
 [link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
 
 [limma normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Agilent%20normalized%20for%20limma
-
-[limma normalized2]: 
 
 You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
 
@@ -923,7 +918,7 @@ The outputs are stored in the specified folder ([result example][Limma guide wf 
 
 In addition the resulting tables for each contrast are filtered by different criteria in parallel to identify up-regulated, down-regulated, and non-changed genes ([result example][Limma filtered]).
 
-[Limma filtered]: 
+[Limma filtered]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)_TNF%20DEGs%20from%20guided%20limma/Guided%20linear%20model/limma_results/TNF%20vs%20None%20result%20DEGs%20up-regulated%20annot
 
 The filtering criteria are set as follows:
 
@@ -974,6 +969,94 @@ This workflow performs a linear model analysis to identify differentially expres
 | Results folder              | Name and location of outputs                                                        |
 +-----------------------------+-------------------------------------------------------------------------------------+
 ```
+
+Normalized data from microarray experiment can be submitted in the input field **Input table** ([input example][limma normalized]). Such a normalized file is the output of the method [Affymetrix normalization][link normalize Affy2]. This workflow is designed for different microarray platforms and normalized data can be used as input from Affymetrix, Agilent or Illumina microarray data. Also a raw count table with Illumina genes derived from RNA-seq experiment can be used as input for this workflow.
+
+[link normalize Affy2]: https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Data%20normalization/Affymetrix%20normalization
+
+[limma normalized]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Data%20normalization/Agilent%20normalized%20for%20limma
+
+You can drag and drop nomalized data from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your normalized data.
+
+Please select the microarray chip you have used in your experiment or your data corresponds to in the field **Probe type** by selecting the correct one from the drop-down menu. Please select _Genes: Illumina_ if you start from raw RNA-seq counts.
+
+- Probes: Affymetrix
+- Probes: Affymetrix ST
+- Probes: Affymetrix HG-U133+ PM
+- Probes: Affymetrix HuGene-2_1-st
+- Probes: Affymetrix HuGene-2_0-st
+- Probes: Affymetrix RaGene-2_0-st
+- Probes: Affymetrix miRNA-1_0
+- Probes: Affymetrix miRNA-2_0
+- Probes: Affymetrix miRNA-3_0
+- Probes: Affymetrix miRNA-4_0
+- Probes: Affymetrix miRNA-4_1
+- Probes: Agilent
+- Probes: Agilent Tox Array
+- Probes: Illumina
+- Genes: Illumina
+
+
+Please specifiy the values of your data and select in the field **Type of input table** by choosing the specification from drop-down menu.
+
+- Normalized expression values
+- Transformed counts
+- Raw counts
+
+If you start with raw counts you need to select one normalization method in the field *Normalization method to use*. Please select _none_ if your data values are already normalized.
+
+You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
+
+For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
+
+You can drag and drop your sample annotation file (meta data) ([input example][sample table]) into the field **Sample table** from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your sample annotation file (meta data).
+
+[sample table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Sample_metadata
+
+Please select the column name of your sample table that breaks down your sample IDs in the field **Sample ID column** by choosing the correct one from the drop-down menu.
+
+Please type into the field **Main** in the column name of your main factor to define comparisons from your sample table e.g. _treatment_.
+
+Please type into the field *Reference level* optional one value from the Main factor (treatment), which will be used as reference/base level. This level will be subtracted from other levels to form contrasts. The reference level can be like _no treatment-, _healty_, _zero hours infected_, _buffer_, _reference_ or similar ones.
+
+To include in contrasts only comparisons to the selected reference level you need to activate the checkbox *Compare to reference only*.
+
+The workflow estimates differentially expressed genes from several experimental conditions applying limma statistics. 
+
+---
+**PAPER**
+
+Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
+Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. [paper link][paper limma] 
+
+--- 
+
+[paper limma]: https://link.springer.com/chapter/10.1007/0-387-29362-0_23
+
+The outputs are stored in the specified folder ([result example][Limma guide wf result]) and contains one result table for each contrast ([result example][Contrast table]), one ANOVA table ([result example][Anova table]) for all coefficients as well as the resulting design matrix ([result example][Design matrix])that shows the assignment of input sample columns to factor levels. If the main factor has only two levels the ANOVA table is equivalent to the single contrast result table that is produced by this workflow. In an ANOVA table for more than two main factor levels, the first columns are the contrasts deduced from the main factor. Further information is provided by the Limma userguide ([guide link][limma guide]).
+
+[Limma guide wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
+
+[Contrast table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
+
+[Anova table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Anova%20result
+
+[Design matrix]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Design%20matrix
+
+[limma guide]:https://www.bioconductor.org/packages/devel/bioc/vignettes/limma/inst/doc/usersguide.pdf
+
+In addition the resulting tables for each contrast are filtered by different criteria in parallel to identify up-regulated and down-regulated genes ([result example][Limma filtered]).
+
+[Limma filtered]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)_TNF%20DEGs%20from%20guided%20limma/Guided%20linear%20model/limma_results/TNF%20vs%20None%20result%20DEGs%20up-regulated%20annot
+
+The filtering criteria are set as follows:
+
+```sh
+Upregulated: logFC > 0.5 && adjusted p-value < 0.05
+Down regulated: logFC < -0.5 && adjusted p-value < 0.05
+```
+
+All output results can be exported to your local computer.
 
 ### Explain my genes
 
