@@ -808,6 +808,7 @@ Non-changed genes logFC < 0.002 && logFC > -0.002
 ```
 
 A result folder is generated and contains one folder with unfiltered limma results ([result example][Limma wf result]) and seperate folders for each contrast between the defined groups with all filtered gene tables with significant differentially expressed genes ([result example][Limma wf result2]).
+
 [Limma wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Output%20limma/Control%20vs.%20IFN_24
 
 [Limma wf result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20(DEGs%20with%20limma)/Control%20vs.%20IFN_24/Up-regulated%20genes%20Ensembl
@@ -927,7 +928,7 @@ The outputs are stored in the specified folder ([result example][Limma guide wf 
 
 [Design matrix]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/Design%20matrix
 
-[limma guide]:https://www.bioconductor.org/packages/devel/bioc/vignettes/limma/inst/doc/usersguide.pdf
+[limma guide]: https://www.bioconductor.org/packages/devel/bioc/vignettes/limma/inst/doc/usersguide.pdf
 
 In addition the resulting tables for each contrast are filtered by different criteria in parallel to identify up-regulated, down-regulated, and non-changed genes ([result example][Limma filtered]).
 
