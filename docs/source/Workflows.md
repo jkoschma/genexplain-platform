@@ -66,7 +66,7 @@ A result folder of the limma-voom analysis is generated and contains several tab
 
 [filtered counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20files%20to%20DEGs/limma_results/filtered_counts
 
-After normalization the prepared table ([result example][norm counts]) is used to determine DEGs as a final table ([result example][DEGs]) with two filtered tables of up-regulated ([result example][DEGs up]) and down-regulated genes ([result example][DEGs down]) as well as non-regulated genes ([result example][DEGs non]). A plot is generated, which compares unnormalized and normalzed data ([result example][norm plot]).
+After normalization the prepared table ([result example][norm counts]) is used to determine DEGs as a final table ([result example][DEGs]) with two filtered tables of up-regulated ([result example][DEGs up]) and down-regulated genes ([result example][DEGs down]) as well as non-regulated genes ([result example][DEGs non]). A plot is generated, which compares unnormalized and normalized data ([result example][norm plot]).
 
 Following filter conditions are used:
 
@@ -141,13 +141,13 @@ In the second part of the workflow the list of Ensembl target genes is mapped to
 
 At least two target genes must be mapped into one group (e.g. one GO term, one pathway) and a P-value threshold lower 0.05 is given for each group.
 
-A result folder is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result])), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output[result example][Cluster result]. All output results can be exported to your local computer.
+A result folder is generated and contains the two resulting target gene lists (Ensembl ID format ([result example][Ensembl result]) and Entrez ID format ([result example][Entrez result])), all resulting tables of the functional classification mapping ([result example][Mapping result]), and a subfolder with the clustering output[result example][Cluster result].
 
 [Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/GSM558469_E2F1_hg19%20(From%20tracks%20to%20target%20genes)/Genes%20Ensembl
 
 [Entrez result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/GSM558469_E2F1_hg19%20(From%20tracks%20to%20target%20genes)/Genes%20Entrez
 
-[Cluster result]:
+[Cluster result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/E2F_promoter_track%20(ChIP-seq%20target%20genes)/Genes%20clustered/Cluster%201
 
 All output results can be exported to your local computer.
 
@@ -201,7 +201,7 @@ Please select the Affymetrix Chip you have used in your experiment or your data 
 - Affymetrix miRNA-2_0
 - Affymetrix miRNA-3_0
 - Affymetrix miRNA-4_0
-- - Affymetrix miRNA-4_1
+- Affymetrix miRNA-4_1
 
 You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
 
@@ -211,7 +211,7 @@ In the first step the up- and down-regulated probes are identified and log fold 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
 
-```sh
+```enable_math
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
