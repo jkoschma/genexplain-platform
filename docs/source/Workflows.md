@@ -218,7 +218,7 @@ For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 ```
 
 ```python
-For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
+\For up-regulated probes: LogFoldChange > 0.5 \and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 ```
