@@ -211,7 +211,13 @@ In the first step the up- and down-regulated probes are identified and log fold 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
 
-```math
+```
+For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
+For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
+For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
+```
+
+```python
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
