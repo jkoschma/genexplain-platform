@@ -49,14 +49,11 @@ The outputs of counting genes are saved in two tables: one file contains the cou
 
 The last step of the workflow performs a differential expression analysis on raw counts with limma-voom:
 
-- voom: 
-Prepares RNA-Seq data for linear modelling by transforming count data to log2-counts per million (logCPM), estimating the mean-variance relationship and computing appropriate observation-level weights.
+-- voom: Prepares RNA-Seq data for linear modelling by transforming count data to log2-counts per million (logCPM), estimating the mean-variance relationship and computing appropriate observation-level weights.
 
-- lmFit:
-Fits a linear model using weighted least squares for each gene.
+-- lmFit: Fits a linear model using weighted least squares for each gene.
 
-- eBayes:
-Assesses differential expression using moderated t statistic.
+-- eBayes: Assesses differential expression using moderated t statistic.
 
 A normalization of the data is done by limma-voom method, which applies calcNormFactors from edgeR package and calculates normalization factors to scale the raw library sizes. TMM normalization method is is used - the weighted trimmed mean of M-values (to the reference) proposed by Robinson and Oshlack (2010), where the weights are from the delta method on Binomial data.
 
@@ -70,7 +67,7 @@ After normalization the prepared table ([result example][norm counts]) is used t
 
 Following filter conditions are used:
 
-```sh
+```md
 Up-regulated genes: logFC > 0.5 && P-value < 0.05
 Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
@@ -211,7 +208,7 @@ In the first step the up- and down-regulated probes are identified and log fold 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
 
-```
+```math_rst
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
