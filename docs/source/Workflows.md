@@ -3430,18 +3430,31 @@ A result folder ([result example][prom result]) is generated and contains severa
 All output results can be exported to your local computer.
 
 ### ChIP-Seq - Identify TF binding sites on peaks (TRANSFAC(R))
+
 ### ChIP-Seq - Identify TF binding sites on peaks for multiple datasets (TRANSFAC(R))
+
 ### ChIP-Seq - Identify composite modules on peaks (TRANSFAC(R))
+
 ### Cross-species identification of enriched motifs in promoters, using orthologue information (TRANSFAC(R))
+
 ### Find enriched TF binding sites in variation sites (TRANSFAC(R))
+
 ### Identify composite modules in promoters (TRANSFAC(R))
+
 ### Identify enriched composite modules in promoters (TRANSFAC(R))
+
 ### Identify enriched motifs in cell line specific miRNA promoters (TRANSFAC(R))
 
 This workflow is designed to identify enriched transcription factor binding sites in microRNA (miRNA) gene promoters from a list of miRNAs. The promoter information is taken from MiRProm database and allows selection of information for different human cell lines. MiRProm is a database of miRNA promoters.
 
-> Xu Hua, Luxiao Chen, Jin Wang, Jie Li, Edgar Wingender; Identifying cell-specific microRNA transcriptional start sites. 
-> Bioinformatics 2016; 32 (16): 2403-2410
+---
+**Paper**
+
+X. Hua, L. Chen, J. Wang, J. Li, E. Wingender; Identifying cell-specific microRNA transcriptional start sites. Bioinformatics 2016; 32 (16): 2403-2410 [paper link][paper mirprom] 
+
+---
+
+[paper mirprom]: https://academic.oup.com/bioinformatics/article/32/16/2403/2240258
 
 ✨ [Open][miRNA-cell workflow] the workflow in the user interface.✨
 
@@ -3471,7 +3484,7 @@ A table with several miRBase ([miRBase DB][MiRBase link]) IDs can be submitted i
 
 [MiRBase link]: https://www.mirbase.org/
 
-[miRNA table]: 
+[miRNA table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/miRNA%20_hodgin_lymphoma%20mature-miRNA%20miRBase
 
 You can drag and drop the miRNA table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your miRNA table.
 
@@ -3601,19 +3614,17 @@ Please choose in the field **Profile** a collection of positional weight matrice
 
 In this workflow promoter regions are extracted for the list of input miRNAs with selected specifications and a promoter track is created. As a background set 300 randomly selected miRNAs from MiRBase database version 20 are used to create a promoter track with the same selected specifications. Both tracks are analyzed for finding enriched transcription factor binding sites (TFBSs) with the MATCH(TM) tool of TRANSFAC(R) database. The selected profile with positional weight matrices is used to identify further the potential transcription factors, which may bind to the enriches TFBSs.
 
-A result folder ([result example][miRNA-cell result]) is generated and contains the two resulting promoter tracks of the input table ([result example][miRNA track]) and of the background set ([result example][background track]). The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][miRNA summary]) and can be visualized in the genome browser as a track ([result example][sites track]). The potential transcription factors ([result example][miRNA TFs]) are given in a final ENSEMBL table with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains the resulting promoter track of the input table ([result example][miRNA track]) and of the background set ([result example][background track]). The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][miRNA summary]) and can be visualized in the genome browser as a track ([result example][sites track]). The potential transcription factors ([result example][miRNA TFs]) are given in a final ENSEMBL table with annotated GeneSymbol IDs and a short description.
 
-[miRNA-cell result]: 
+[miRNA track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/miRNA_prom_track
 
-[miRNA track]: 
+[background track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/random_prom_track
 
-[background track]: 
+[miRNA summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/%20Site%20search%20summary
 
-[miRNA summary]:
+[sites track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/MATCH_track
 
-[sites track]:
-
-[miRNA TFs]:
+[miRNA TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
@@ -3629,14 +3640,23 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes genes | Input human gene table |
-| Cell_condition | Please select the tissue of your interest |
-| TSS selection | Specify promoter action mode |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Filter by Coefficient | Filter for true discovery rate (TDR) |
-| Result folder | Name and location of outputs |
+```eval_rst   
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| Input Yes genes       | Input human gene table                                       |
++-----------------------+--------------------------------------------------------------+
+| Cell_condition        | Please select the cell type of your interest                    |
++-----------------------+--------------------------------------------------------------+
+| TSS selection         | Specify promoter action mode                                 |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Filter by Coefficient | Filter for true discovery rate (TDR)                         |
++-----------------------+--------------------------------------------------------------+
+| Result Folder         | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 A human gene table ([input example][input example]) can be submitted in the input field **Input Yes genes**. You can drag and drop the human gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table must be in Ensembl format.
 
@@ -3644,7 +3664,8 @@ A human gene table ([input example][input example]) can be submitted in the inpu
 
 In this workflow promoter regions are extracted with the selected **Cell_condition** and contain cell-type-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
-> This workflow support only the species Homo sapiens.
+``` important:: This workflow support only the species Homo sapiens.
+```
 
 You need to define the promoter selection mode in the field **TSS selection** by choosing one from the drop-down menu. 3' most means nearest promoter to transcriptional start site (TSS). 5' most means farest promoter to transcriptional start site (TSS). All means that all promoter location informations are taken from Fantom5 database.
 
@@ -3672,18 +3693,31 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes gene set | Input gene table |
-| Input No gene set | Table with background genes|
-| Species | Specifiy the species of your data |
-| Annotation source | Ensembl annotation source file |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Filter by TFBS enrichment fold | Specify the enrichment fold (FE) to filter the motifs |
-| Start promoter | 5 prime position relativ to TSS (base pairs) |
-| End promoter | 3 prime position relativ to TSS (base pairs) |
-| Allow big input | Checkbox for analyzing > 500 input genes |
-| Result folder | Name and location of outputs |
+```eval_rst   
++--------------------------------+-----------------------------------------------------------+
+| Parameter                      | Description                                               |
++================================+===========================================================+
+| Input Yes gene set             | Input gene table                                          |
++--------------------------------+-----------------------------------------------------------+
+| Input No gene set              | Table with background genes                               |
++--------------------------------+-----------------------------------------------------------+
+| Species                        | Define the species of your data                           |
++--------------------------------+-----------------------------------------------------------+
+| Annotation source              | Ensembl annotation source file                            |
++--------------------------------+-----------------------------------------------------------+
+| Profile                        | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------------------+-----------------------------------------------------------+
+| Filter by TFBS enrichment fold | Specify the enrichment fold (FE) to filter the motifs     |
++--------------------------------+-----------------------------------------------------------+
+| Start promoter                 | 5 prime position relativ to TSS (base pairs)              |
++--------------------------------+-----------------------------------------------------------+
+| End promoter                   | 3 prime position relativ to TSS (base pairs)              |
++--------------------------------+-----------------------------------------------------------+
+| Allow big input                | Checkbox for analyzing > 500 input genes                  |
++--------------------------------+-----------------------------------------------------------+
+| Result Folder                  | Name and location of outputs                              |
++--------------------------------+-----------------------------------------------------------+
+```
 
 A gene table ([input example][input example]) can be submitted in the input field **Input Yes gene set**. You can drag and drop the input gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table can be in any format and will be converted into an Ensembl gene list.
 
@@ -3727,29 +3761,44 @@ All output results can be exported to your local computer.
 
 This workflow is designed to identify enriched transcription factor binding sites in microRNA (miRNA) gene promoters from a list of miRNAs. The promoter information is taken from MiRProm database and allows selection of information for different human tissue types. MiRProm is a database of miRNA promoters.
 
-> Xu Hua, Luxiao Chen, Jin Wang, Jie Li, Edgar Wingender; Identifying cell-specific microRNA transcriptional start sites. 
-> Bioinformatics 2016; 32 (16): 2403-2410
+---
+**Paper**
 
-✨ [Open][miRNA-cell workflow] the workflow in the user interface.✨
+X. Hua, L. Chen, J. Wang, J. Li, E. Wingender; Identifying cell-specific microRNA transcriptional start sites. Bioinformatics 2016; 32 (16): 2403-2410 [paper link][paper mirprom] 
 
-[miRNA-cell workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20cell%20line%20specific%20miRNA%20promoters%20(TRANSFAC(R))
+---
+
+[paper mirprom]: https://academic.oup.com/bioinformatics/article/32/16/2403/2240258
+
+✨ [Open][miRNA-tissue workflow] the workflow in the user interface.✨
+
+[miRNA-tissue workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20tissue%20specific%20miRNA%20promoters%20(TRANSFAC(R))
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| miRNA table | Input table with miRBase IDs |
-| Promoter | Define promoter selection mode |
-| Select cell line | Please select the cell line of your interest |
+```eval_rst   
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| miRNA table           | Input table with miRBase IDs                                 |
++-----------------------+--------------------------------------------------------------+
+| Promoter              | Define promoter selection mode                               |
++-----------------------+--------------------------------------------------------------+
+| Select tissue         | Please select the tissue of your interest                    |
++-----------------------+--------------------------------------------------------------+
 | Add Ensembl promoters | Posibility to add promoter information from Ensembl database |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Result folder | Name and location of outputs |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Result Folder         | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 A table with several miRBase ([miRBase DB][MiRBase link]) IDs can be submitted in the input field **miRNA table** ([input example][miRNA table]).
 
 [MiRBase link]: https://www.mirbase.org/
 
-[miRNA table]: 
+[miRNA table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/miRNA%20_hodgin_lymphoma%20mature-miRNA%20miRBase
 
 You can drag and drop the miRNA table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your miRNA table.
 
@@ -3759,28 +3808,51 @@ You can choose a human cell line of your interest in the field **Select cell lin
 
 The following 20 tissue types are available:
 
-| Tissue types |
-| ------ |
-|blood|
-|blood vessels|
-|brain|
-|cartilage|
-|cervix|
-|choroid plexus|
-|colon|
-|embryonic cells|
-|esophagus|
-|eye|
-|foreskin|
-|gingiva|
-|heart|
-|kidney|
-|lung|
-|mammary gland/breast|
-|pancreas|
-|placenta|
-|skin|
-|spinal cord|
+```eval_rst   
++----------------------+
+| Tissue types         |
++======================+
+| blood                |
++----------------------+
+| blood vessels        |
++----------------------+
+| brain                |
++----------------------+
+| cartilage            |
++----------------------+
+| cervix               |
++----------------------+
+| choroid plexus       |
++----------------------+
+| colon                |
++----------------------+
+| embryonic cells      |
++----------------------+
+| esophagus            |
++----------------------+
+| eye                  |
++----------------------+
+| foreskin             |
++----------------------+
+| gingiva              |
++----------------------+
+| heart                |
++----------------------+
+| kidney               |
++----------------------+
+| lung                 |
++----------------------+
+| mammary gland/breast |
++----------------------+
+| pancreas             |
++----------------------+
+| placenta             |
++----------------------+
+| skin                 |
++----------------------+
+| spinal cord          |
++----------------------+
+```
 
 You can select the check box **Add Ensembl promoters** to add promoter information from Ensembl database if specified promoter selection cannot be found in the MiRProm database.
 
@@ -3788,19 +3860,17 @@ Please choose in the field **Profile** a collection of positional weight matrice
 
 In this workflow promoter regions are extracted for the list of input miRNAs with selected specifications and a promoter track is created. As a background set 300 randomly selected miRNAs from MiRBase database version 20 are used to create a promoter track with the same selected specifications. Both tracks are analyzed for finding enriched transcription factor binding sites (TFBSs) with the MATCH(TM) tool of TRANSFAC(R) database. The selected profile with positional weight matrices is used to identify further the potential transcription factors, which may bind to the enriches TFBSs.
 
-A result folder ([result example][miRNA-cell result]) is generated and contains the two resulting promoter tracks of the input table ([result example][miRNA track]) and of the background set ([result example][background track]). The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][miRNA summary]) and can be visualized in the genome browser as a track ([result example][sites track]). The potential transcription factors ([result example][miRNA TFs]) are given in a final ENSEMBL table with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains the two resulting promoter tracks of the input table ([result example][miRNA track]) and of the background set ([result example][background track]). The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][miRNA summary]) and can be visualized in the genome browser as a track ([result example][sites track]). The potential transcription factors ([result example][miRNA TFs]) are given in a final ENSEMBL table with annotated GeneSymbol IDs and a short description.
 
-[miRNA-cell result]: 
+[miRNA track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/miRNA_prom_track
 
-[miRNA track]: 
+[background track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/random_prom_track
 
-[background track]: 
+[miRNA summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/%20Site%20search%20summary
 
-[miRNA summary]:
+[sites track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/MATCH_track
 
-[sites track]:
-
-[miRNA TFs]:
+[miRNA TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/miRNAs_TPA%20(enriched%20motifs%20in%20miRNA%20promoters%2C%20blood)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
@@ -3816,22 +3886,32 @@ This workflow is designed to search for enriched transcription factor binding si
 
 The following list gives an overview of all input parameters used in this workflow:
 
-| Parameter | Description |
-| ------ | ------ |
-| Input Yes genes | Input human gene table |
-| Tissue_condition | Please select the tissue of your interest |
-| TSS selection | Specify promoter action mode |
-| Profile | Collection of positional weight matrices from TRANSFAC(R) |
-| Filter by Coefficient | Filter for true discovery rate (TDR) |
-| Result folder | Name and location of outputs |
+```eval_rst   
++-----------------------+--------------------------------------------------------------+
+| Parameter             | Description                                                  |
++=======================+==============================================================+
+| Input Yes genes       | Input human gene table                                       |
++-----------------------+--------------------------------------------------------------+
+| Tissue_condition      | Please select the tissue of your interest                    |
++-----------------------+--------------------------------------------------------------+
+| TSS selection         | Specify promoter action mode                                 |
++-----------------------+--------------------------------------------------------------+
+| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
++-----------------------+--------------------------------------------------------------+
+| Filter by Coefficient | Filter for true discovery rate (TDR)                         |
++-----------------------+--------------------------------------------------------------+
+| Result Folder         | Name and location of outputs                                 |
++-----------------------+--------------------------------------------------------------+
+```
 
 A human gene table ([input example][input example]) can be submitted in the input field **Input Yes genes**. You can drag and drop the human gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table must be in Ensembl format.
 
-[input example]: 
+[input example]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/666_upreg_Ensembl-genes
 
 In this workflow promoter regions are extracted with the selected **Tissue_condition** and contain tissue-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
-> This workflow support only the species Homo sapiens.
+``` important:: This workflow support only the species Homo sapiens.
+```
 
 You need to define the promoter selection mode in the field **TSS selection** by choosing one from the drop-down menu. 3' most means nearest promoter to transcriptional start site (TSS). 5' most means farest promoter to transcriptional start site (TSS). All means that all promoter location informations are taken from Fantom5 database.
 
@@ -3839,10 +3919,9 @@ Please choose in the field **Profile** a collection of positional weight matrice
 
 The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 75% of true discovery rate, TDR. For 90% TDR, you can set this field to 0,270 and for 50% TDR to 0.05593. The filtered sited are used for the resulting visualization on genome browser.
 
-A result folder ([result example][FantomTissue result]) is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomTissue summary]) and can be visualized in the genome browser as a track ([result example][FantomTissue track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomTissue2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomTissue TFs]) with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomTissue summary]) and can be visualized in the genome browser as a track ([result example][FantomTissue track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomTissue2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomTissue TFs]) with annotated GeneSymbol IDs and a short description.
 
-[FantomTissue result]:
-[FantomTissue summary]:
+[FantomTissue summary]: 
 [FantomTissue track]:
 [FantomTissue track]:
 [FantomTissue TFs]:
