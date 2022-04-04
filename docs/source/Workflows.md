@@ -211,7 +211,7 @@ In the first step the up- and down-regulated probes are identified and log fold 
 
 In addition the results are filtered by different conditions in parallel applying the Filter table method, to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
 
-```enable_math
+```math
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
@@ -530,7 +530,17 @@ You need  to select the biological species of your data in the field **Species**
 
 For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
 
-In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. The p-value is calculated by hypergeometric analysis (Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411). A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file ([output example][Affy hyper result2]). If you have just two or even one sample for your experiment and for your control (e.g. one CEL file in experiment and one CEL file in control), you can apply hypergeometric analysis to calculate DEGs. In contrast to the t-test which requires at least three sample replicates, hypergeometric analysis can make calculations for two and even one sample.
+In the first step the up- and down-regulated probes are identified and log fold change values are calculated for all probe IDs. The p-value is calculated by hypergeometric analysis 
+
+---
+**Paper**
+
+Y. V. Kondrakhin, R. N. Sharipov, A. E. Kel, F. A. Kolpakov. (2008) Identification of Differentially Expressed Genes by 
+Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [link][paper hyper] 
+
+---
+
+A histogram with the log fold change distribution from the whole experiment is drawn and given in an output image file ([output example][Affy hyper result2]). If you have just two or even one sample for your experiment and for your control (e.g. one CEL file in experiment and one CEL file in control), you can apply hypergeometric analysis to calculate DEGs. In contrast to the t-test which requires at least three sample replicates, hypergeometric analysis can make calculations for two and even one sample.
 
 [Affy hyper result2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20hypergeom%20Affy)/Histogram
 
@@ -597,8 +607,8 @@ In the first step the up- and down-regulated probes are identified and log fold 
 ---
 **Paper**
 
-Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
-Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
+Y. V. Kondrakhin, R. N. Sharipov, A. E. Kel, F. A. Kolpakov. (2008) Identification of Differentially Expressed Genes by 
+Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [link][paper hyper] 
 
 ---
 
@@ -671,8 +681,8 @@ In the first step the up- and down-regulated probes are identified and log fold 
 ---
 **Paper**
 
-Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of Differentially Expressed Genes by 
-Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [paper link][paper hyper] 
+Y. V. Kondrakhin, R. N. Sharipov, A. E. Kel, F. A. Kolpakov. (2008) Identification of Differentially Expressed Genes by 
+Meta-Analysis of Microarray Data on Breast Cancer, In Silico Biology, 8: 383-411. [link][paper hyper] 
 
 ---
 
