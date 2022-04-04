@@ -958,13 +958,9 @@ This workflow performs a linear model analysis to identify differentially expres
 +-----------------------------+-------------------------------------------------------------------------------------+
 | Sample table                | Please select your sample annotation file (meta data)                               |
 +-----------------------------+-------------------------------------------------------------------------------------+
-| Sample ID column            | Please select the column name of your sample table that breaks down your sample IDs |
-+-----------------------------+-------------------------------------------------------------------------------------+
 | Main                        | Main factor to define comparisons e.g. sample treatment                             |
 +-----------------------------+-------------------------------------------------------------------------------------+
 | Reference level             | Reference level is an optinal value from the Main factor to form contrasts          |
-+-----------------------------+-------------------------------------------------------------------------------------+
-| Compare to reference only   | Include in contrasts only comparisons to the reference level                        |
 +-----------------------------+-------------------------------------------------------------------------------------+
 | Results folder              | Name and location of outputs                                                        |
 +-----------------------------+-------------------------------------------------------------------------------------+
@@ -1068,9 +1064,13 @@ All output results can be exported to your local computer.
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh37 Homo sapiens assembly (hg19), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
 
-> DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
-> Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and 
-> genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
+---
+**Paper**
+
+DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
+Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [paper link][paper hyper] 
+
+---
 
 [paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
 
@@ -1118,7 +1118,13 @@ All output results can be exported to your local computer.
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome RNA-seq data (single-end library). The process includes initial read mapping to the reference GRCh38 Homo sapiens assembly (hg38), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
 
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
+---
+**Paper**
+
+DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
+Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [paper link][paper hyper] 
+
+---
 
 [paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
 
@@ -1165,7 +1171,13 @@ All output results can be exported to your local computer.
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome NGS data. The process includes initial read mapping to the reference GRCh37 Homo sapiens assembly (hg19), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
 
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
+---
+**Paper**
+
+DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
+Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [paper link][paper hyper] 
+
+---
 
 [paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
 
@@ -1213,7 +1225,13 @@ All output results can be exported to your local computer.
 
 This workflow is based on a framework (De Pristo et al.) to discover genotype variations in full-genome NGS data. The process includes initial read mapping to the reference GRCh38 Homo sapiens assembly (hg38), local realignment around indels, base quality score recalibration, SNP discovery and genotyping to find all potential variants.
 
->DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., >Rivas, M. A., Hanna, M., McKenna, A., Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., >Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing >data. Nature genetics, 43(5), 491–498. https://doi.org/10.1038/ng.806 [paper link][paper hyper] 
+---
+**Paper**
+
+DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
+Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [paper link][paper hyper] 
+
+---
 
 [paper de Pristo]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083463/pdf/nihms281651.pdf
 
