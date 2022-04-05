@@ -1472,7 +1472,7 @@ After normalization the prepared table ([result example][norm counts]) is used t
 
 Following filter conditions are used:
 
-```sh
+```
 Up-regulated genes: logFC > 0.5 && P-value < 0.05
 Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
@@ -1588,7 +1588,7 @@ After normalization the prepared table ([result example][norm counts]) is used t
 
 Following filter conditions are used:
 
-```sh
+```
 Up-regulated genes: logFC > 0.5 && P-value < 0.05
 Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
@@ -1917,7 +1917,7 @@ Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scala
 
 The following parameters are set as default within the subread aligner:
 
-```sh
+```
 Number of subreads per read : 10
 Consensus threshold: 3
 Max number of mismatches: 3
@@ -1978,7 +1978,7 @@ After normalization the prepared table ([result example][norm counts]) is used t
 
 Following filter conditions are used:
 
-```sh
+```
 Up-regulated genes: logFC > 0.5 && P-value < 0.05
 Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
@@ -2125,7 +2125,7 @@ After normalization the prepared table ([result example][norm counts]) is used t
 
 Following filter conditions are used:
 
-```sh
+```
 Up-regulated genes: logFC > 0.5 && P-value < 0.05
 Down-regulated genes: logFC < -0.5 && P-value < 0.05
 Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
@@ -2726,7 +2726,7 @@ Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scala
 
 The following parameters are set as default within the subread aligner:
 
-```sh
+```
 Number of subreads per read : 10
 Consensus threshold: 3
 Max number of mismatches: 3
@@ -2824,7 +2824,7 @@ Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scala
 
 The following parameters are set as default within the subread aligner:
 
-```sh
+```
 Number of subreads per read : 10
 Consensus threshold: 3
 Max number of mismatches: 3
