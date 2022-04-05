@@ -2544,6 +2544,9 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 ```
 
+``` important:: Your paired FASTQ files must be stored in one common folder!
+```
+
 One or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
 
 data/Examples/User Guide/Data/Input for examples/workflows/ExpFASTQ_Files
@@ -2680,6 +2683,9 @@ The following list gives an overview of all input parameters used in this workfl
 +---------------------+---------------------------------------+
 | Results folder      | Name and location of outputs          |
 +---------------------+---------------------------------------+
+```
+
+``` important:: Your paired FASTQ files must be stored in one common folder!
 ```
 
 One or several paired-end FASTQ files, which are stored in one common folder can be submitted in the input field **FASTQ_Files** as one condition in your experiment like _disease_. An example folder with paired-end FASTQ files can be found here: 
