@@ -49,11 +49,13 @@ The outputs of counting genes are saved in two tables: one file contains the cou
 
 The last step of the workflow performs a differential expression analysis on raw counts with limma-voom:
 
-- voom: Prepares RNA-Seq data for linear modelling by transforming count data to log2-counts per million (logCPM), estimating the mean-variance relationship and computing appropriate observation-level weights.
+- _voom_: Prepares RNA-Seq data for linear modelling by transforming count data to log2-counts per million (logCPM), estimating the mean-variance relationship and computing appropriate observation-level weights.
 
-- lmFit: Fits a linear model using weighted least squares for each gene.
 
-- eBayes: Assesses differential expression using moderated t statistic.
+- _lmFit_: Fits a linear model using weighted least squares for each gene.
+
+
+- _eBayes_: Assesses differential expression using moderated t statistic.
 
 A normalization of the data is done by limma-voom method, which applies calcNormFactors from edgeR package and calculates normalization factors to scale the raw library sizes. TMM normalization method is is used - the weighted trimmed mean of M-values (to the reference) proposed by Robinson and Oshlack (2010), where the weights are from the delta method on Binomial data.
 
@@ -549,7 +551,7 @@ A histogram with the log fold change distribution from the whole experiment is d
 
 In addition the results are filtered by different conditions in parallel to identify up-regulated, down-regulated, and non-changed Affymetrix probeset IDs. The filtering criteria are set as follows:
 
-```sh
+```
 For up-regulated probes: LogFoldChange > 0.5 and -log(P-value) > 3
 For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
@@ -1013,13 +1015,13 @@ Please specifiy the values of your data and select in the field **Type of input 
 - Transformed counts
 - Raw counts
 
-If you start with raw counts you need to select one normalization method in the field *Normalization method to use*. Please select _none_ if your data values are already normalized.
+If you start with raw counts you need to select one normalization method in the field **Normalization method to use**. Please select _none_ if your data values are already normalized.
 
 You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
 
 For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
 
-You can drag and drop your sample annotation file (meta data) ([input example][sample table]) into the field **Sample table** from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your sample annotation file (meta data).
+You can drag and drop your sample annotation/meta data file ([input example][sample table]) into the field **Sample table** from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your sample annotation/meta data file.
 
 [sample table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Sample_metadata
 
@@ -1027,9 +1029,9 @@ Please select the column name of your sample table that breaks down your sample 
 
 Please type into the field **Main** in the column name of your main factor to define comparisons from your sample table e.g. _treatment_.
 
-Please type into the field *Reference level* optional one value from the Main factor (treatment), which will be used as reference/base level. This level will be subtracted from other levels to form contrasts. The reference level can be like _no treatment-, _healty_, _zero hours infected_, _buffer_, _reference_ or similar ones.
+Please type into the field **Reference level** optional one value from the Main factor (treatment), which will be used as reference/base level. This level will be subtracted from other levels to form contrasts. The reference level can be like _no treatment_, _healty_, _zero hours infected_, _buffer_, _reference_ or similar ones.
 
-To include in contrasts only comparisons to the selected reference level you need to activate the checkbox *Compare to reference only*.
+To include in contrasts only comparisons to the selected reference level you need to activate the checkbox **Compare to reference only**.
 
 The workflow estimates differentially expressed genes from several experimental conditions applying limma statistics. 
 
@@ -1037,13 +1039,13 @@ The workflow estimates differentially expressed genes from several experimental 
 **PAPER**
 
 Smyth, G. K. (2005). Limma: linear models for microarray data. In: Bioinformatics and 68 RNA-seq Computational Biology 
-Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. [paper link][paper limma] 
+Solutions using R and Bioconductor. R. Gentleman, V. Carey, S. Dudoit, R. Irizarry, W. Huber (eds), Springer, New York. [link][paper limma] 
 
 --- 
 
 [paper limma]: https://link.springer.com/chapter/10.1007/0-387-29362-0_23
 
-The outputs are stored in the specified folder ([result example][Limma guide wf result]) and contains one result table for each contrast ([result example][Contrast table]), one ANOVA table ([result example][Anova table]) for all coefficients as well as the resulting design matrix ([result example][Design matrix])that shows the assignment of input sample columns to factor levels. If the main factor has only two levels the ANOVA table is equivalent to the single contrast result table that is produced by this workflow. In an ANOVA table for more than two main factor levels, the first columns are the contrasts deduced from the main factor. Further information is provided by the Limma userguide ([guide link][limma guide]).
+The outputs are stored in the specified folder ([result example][Limma guide wf result]) and contains one result table for each contrast ([result example][Contrast table]), one ANOVA table ([result example][Anova table]) for all coefficients as well as the resulting design matrix ([result example][Design matrix])that shows the assignment of input sample columns to factor levels. If the main factor has only two levels the ANOVA table is equivalent to the single contrast result table that is produced by this workflow. In an ANOVA table for more than two main factor levels, the first columns are the contrasts deduced from the main factor. Further information is provided by the Limma userguide ([limma guide][limma guide]).
 
 [Limma guide wf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Normalized%20(RMA)%20DEGs%20with%20guided%20limma/limma_results/TNF%20vs%20None%20result
 
@@ -1082,7 +1084,7 @@ This workflow is based on a framework (De Pristo et al.) to discover genotype va
 **Paper**
 
 DePristo, M. A., Banks, E., Poplin, R., Garimella, K. V., Maguire, J. R., Hartl, C., Philippakis, A. A., del Angel, G., Rivas, M. A., Hanna, M., McKenna, A., 
-Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [paper link][paper hyper] 
+Fennell, T. J., Kernytsky, A. M., Sivachenko, A. Y., Cibulskis, K., Gabriel, S. B., Altshuler, D., & Daly, M. J. (2011). A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nature genetics, 43(5), 491–498. [link][paper hyper] 
 
 ---
 
@@ -1104,25 +1106,28 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+------------------------------+
 ```
 
+``` important:: This workflow is only working for human genome | GRCh37 | hg19.
+```
+
 One single-end FASTQ file can be submitted in the input field **Input fastq file**. An example FASTQ file can be found here:
 
-data/Examples/User Guide/Data/Input for examples/workflows/SRR349741.fastq
+data/Examples/User Guide/Data/Input for examples/workflows/B_1_Experiment.fastq
 
 You can drag and drop the input FASTQ file (single-end) from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads.
+In the first part of the workflow the input Illumina FASTQ files are mapped to the human genome (hg19) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads ([result example][hisat2 result]).
 
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper
+[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
-The second part of the workflow includes a local realignment around indels, a base quality score recalibration and a SNP discovery and genotyping to find all potential variants. After the identification of duplicates and covariates, the workflow creates as first output a new BAM file ([result example][BAM result]). Then the recalibrated BAM file is used as an input for SNP discovery and genotyping to find all potential variants with the GATK (Genome Analysis Toolkit) Unified Genotyper ([open tool][tool link]. The result with identified variations is a vcf file ([result example][vcf result]), which can beopened in the genome browser. Further result is a table with the variant effects ([result example][variant effects]) ot of the Variant Effect Predictor tool ([open tool][tool2 link].
+[hisat2 result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/B_1_Experiment.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq_hg19%20single)/summary_hisat2
 
-[BAM result]: 
+The second part of the workflow includes a local realignment around indels, a base quality score recalibration and a SNP discovery and genotyping to find all potential variants. After the identification of duplicates and covariates, the workflow creates as first output a new BAM file. Then the recalibrated BAM file is used as an input for SNP discovery and genotyping to find all potential variants with the GATK (Genome Analysis Toolkit) Unified Genotyper ([open tool][tool link]. The result with identified variations is a vcf file ([result example][vcf result]), which can beopened in the genome browser. Further result is a table with the variant effects ([result example][variant effects]) out of the Variant Effect Predictor tool ([open tool][tool2 link].
 
 [tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper
 
-[vcf result]:
+[vcf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/B_1_Experiment.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq_hg19%20single)/SNP_indels.vcf
 
-[variant effects]: 
+[variant effects]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/B_1_Experiment.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq_hg19%20single)/variant%20effects
 
 [tool2 link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor
 
@@ -1158,14 +1163,18 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+------------------------------+
 ```
 
+``` important:: This workflow is only working for human genome | GRCh38 | hg38.
+```
+
 One single-end FASTQ file can be submitted in the input field **Input fastq file**. An example FASTQ file can be found here:
 
+_coming soon_
 
 You can drag and drop the input FASTQ file (single-end) from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
 
 In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([open tool][tool link]. HISAT2 enables an extremely fast and sensitive alignment of reads.
 
-[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/solexa_tools/bwa_wrapper
+[tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
 The second part of the workflow includes a local realignment around indels, a base quality score recalibration and a SNP discovery and genotyping to find all potential variants. After the identification of duplicates and covariates, the workflow creates as first output a new BAM file ([result example][BAM result]). Then the recalibrated BAM file is used as an input for SNP discovery and genotyping to find all potential variants with the GATK (Genome Analysis Toolkit) Unified Genotyper ([open tool][tool link]. The result with identified variations is a vcf file ([result example][vcf result]), which can beopened in the genome browser. Further result is a table with the variant effects ([result example][variant effects]) ot of the Variant Effect Predictor tool ([open tool][tool2 link].
 
@@ -1213,11 +1222,16 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+------------------------------+
 ```
 
+``` important:: This workflow is only working for human genome | GRCh37 | hg19.
+```
+
 One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
 
+_coming soon_
 
 One paired-end reverse FASTQ file can be submitted in the input field **Reverse fastq**. An example FASTQ file can be found here: 
 
+_coming soon_
 
 You can drag and drop the input FASTQ files from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
 
@@ -1267,10 +1281,15 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+------------------------------+
 ```
 
+``` important:: This workflow is only working for human genome | GRCh38 | hg38.
+```
+
 One paired-end forward FASTQ file can be submitted in the input field **Forward fastq**. An example FASTQ file can be found here: 
+
 data/Examples/User Guide/Data/Input for examples/workflows/SRR944150 forward.fastq
 
 One paired-end reverse FASTQ file can be submitted in the input field **Reverse fastq**. An example FASTQ file can be found here: 
+
 data/Examples/User Guide/Data/Input for examples/workflows/SRR944150 reverse.fastq
 
 You can drag and drop the input FASTQ files from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input FASTQ file.
@@ -1285,13 +1304,68 @@ The second part of the workflow includes a local realignment around indels, a ba
 
 [tool link]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper
 
-[vcf result]:
+[vcf result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/SRR944150%20paired%20(Genome%20variants%20and%20indels%20from%20NGS)/SNP_indels.vcf
 
 ### Find master regulators for multiple gene sets (GeneWays)
 ### Find master regulators in networks (GeneWays)
 ### From multiple BAM files to gene counts
 
 The workflow assigns the sequence reads with a specified reference genome of several BAM files to genomic features, in this case genes. The minimal mapping quality of counts can be adjusted. A quality accessment of the input BAM files is performed.
+
+✨ [Open][workflow] the workflow in the user interface.✨
+
+[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/From%20multiple%20BAM%20files%20to%20gene%20counts
+
+The following list gives an overview of all input parameters used in this workflow:
+
+```eval_rst   
++------------------------+---------------------------------------+
+| Parameter              | Description                           |
++========================+=======================================+
+| BAM files              | One or several BAM files              |
++------------------------+---------------------------------------+
+| Adjust mapping quality | Specify the number of counts per gene |
++------------------------+---------------------------------------+
+| ReferenceEnsembl       | Select your reference genome          |
++------------------------+---------------------------------------+
+| Results folder         | Name and location of outputs          |
++------------------------+---------------------------------------+
+```
+
+One or several BAM files can be submitted in the input field **BAM Files**. An example BAM file can be found here: 
+
+data/Examples/User Guide/Data/Input for examples/workflows/B_1_Experiment.fastq_alignments
+
+You can drag and drop the input BAM file from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input BAM file.
+
+Please specify the minimum number of counts per gene in the input field **Adjust mapping quality**, where 9 means a minimum of 10 counts. If you don't like to filter your read counts, please type a zero (0) in this field. 
+
+As reference genome the most recent Ensembl human genome (Ensembl GRCh38; hg38) is used and set as default for the workflow run. You can select the reference genome of your paired-end library from the drop-down list **ReferenceEnsembl** to your needs.
+
+The following Ensembl reference genomes are available:
+
+* Ensembl GRCh38
+* Ensembl GRCh37
+* Ensembl NCBI36
+* Ensembl NCBIM39
+* Ensembl NCBIM38
+* Ensembl NCBIM38_nc
+* Ensembl NCBIM37
+* Ensembl RGSC6.0
+* Ensembl TAIR10
+* Ensembl GRCz11
+
+In the first part of the workflow the method featureCounts counting the aligned reads in BAM format to genomic features, in this case as genes ([result example][read counts]) and count summary of the counting procedure ([result example][count summary]).
+
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20to%20gene%20counts/B_1_Experiment.fastq_alignments/B_1_Experiment.fastq_alignments_counts
+
+A quality accessment of the aligned reads is done with the galaxy tool htseq-qa ([result example][count log]).
+
+[count log]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20to%20gene%20counts/B_1_Experiment.fastq_alignments/B_1_Experiment.fastq_alignments_counts_log
+
+The second part generates a table with all genes and corresponding gene counts ([result example][gene counts]), specified to the minimum mapping quality.
+
+[gene counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/BAM%20to%20gene%20counts/B_1_Experiment.fastq_alignments/B_1_Experiment.fastq_alignments_counts_filtered
 
 All output results can be exported to your local computer.
 
@@ -1355,7 +1429,7 @@ In the first part of the workflow the single-end Illumina FASTQ files are mapped
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
-In the second part of the workflow the method featureCounts counting te aligned reads in BAM format to genomic features, in this case as genes.
+In the second part of the workflow the method featureCounts counting the aligned reads in BAM format to genomic features, in this case as genes.
 
 For each FASTQ file aligment an output subfolder is generated and contains a track file with the alignment ([result example][align track]) and the alignment summary ([result example][align summary]) as well as a quality plot ([result example][align plot]).
 
