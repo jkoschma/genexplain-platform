@@ -1843,7 +1843,6 @@ Non-regulated genes: select middle percentage of DEGs (min 100 & max 1000)
 
 [DEGs non]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_HISAT2_htseq-count_limma%20(single-end)/limma_results/DEGs_non_regulated
 
-
 All output results can be exported to your local computer.
 
 ### Full RNAseq analysis with subread, featureCounts and limma (paired-end)
@@ -1904,10 +1903,17 @@ Please select the same pre-build Ensembl reference from the drop-down list **Ref
 
 In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
-> Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by 
-> seed-and-vote. Nucleic Acids Research, 41(10):e108 http://subread.sourceforge.net/
-
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
+
+---
+**Paper**
+
+Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic Acids Research, 41(10):e108 [link][paper link] 
+
+---
+
+[paper link]: http://subread.sourceforge.net/
+
 
 The following parameters are set as default within the subread aligner:
 
@@ -1925,13 +1931,13 @@ Phred format: +33
 
 For each submitted FASTQ file a result folder is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads.
 
-[BAM result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/SRR11940548_aligned_reads
+[BAM result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_alignments
 
-[indels result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/indels
+[indels result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/B_1_Experiment.fastq%20experiment/indels
 
-[log result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/alignment_summary
+[log result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/B_1_Experiment.fastq%20experiment/alignments_log
 
-[quality result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/SRR11940548%20experiment/QualityPlot.pdf
+[quality result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20Full_RNAseq_with_subread_featureCounts_limma%20(paired-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_quality_assess.pdf
 
 A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
@@ -2045,10 +2051,16 @@ Please select the same pre-build Ensembl reference from the drop-down list **Ref
 
 In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
-> Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by 
-> seed-and-vote. Nucleic Acids Research, 41(10):e108 http://subread.sourceforge.net/
-
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
+
+---
+**Paper**
+
+Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic Acids Research, 41(10):e108 [link][paper link] 
+
+---
+
+[paper link]: http://subread.sourceforge.net/
 
 The following parameters are set as default within the subread aligner:
 
