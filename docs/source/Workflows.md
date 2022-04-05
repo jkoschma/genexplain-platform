@@ -3192,7 +3192,8 @@ All output results can be exported to your local computer.
 
 This workflow is designed to predict miRNA binding sites in transcript regions of genes, which are expressed in a specific tissue based on Human Protein Atlas data and can be selected from a 61 drop-down list of different tissues available. The preserved tissue-specific gene list is used to generate a transcript region track with 3’ UTRs of these genes. The comprehensive prediction of microRNA target repression strength within these 3’ UTRs is done with the help of the miRBase database collection.
 
-> This workflow is only available for human species.
+``` important:: This workflow is only available for human species.
+```
 
 ✨ [Open][miRBaseTissue workflow] the workflow in the user interface.✨
 
@@ -3230,14 +3231,19 @@ A potential miRNA binding site is located in the 3'UTR of a given gene. For the 
 
 The result of the workflow is a table with gene ENSEMBL IDs and gene descriptions, the corresponding expression values for each gene of the selected tissue, and the difference to the average expression in all tissues for each gene.
 
-A result folder ([result example][miRBaseTissue result]) is generated and contains a table ([result example][miRBaseTissue genes]) with Ensembl gene IDs, gene descriptions, the corresponding expression values for each gene of the selected tissue, and the difference to the average expression in all tissues for each gene. This table is further coverted into a Ensembl transcript table ([result example][miRBaseTranscripts]), which is used to generate the 5' UTR transcript track ([result example][miRBaseTranscriptsTrack]) for all transcripts. The output of the method miRmap is a prediction of potential miRNA binding sites within the 3'UTR regions and results in a table of miRNA binding sites, a summary table ([result example][miRBase summary]) with miRNA names, miRmap scores and the counts of each miRNA binding site. The predicted miRNA binding sites are also available as a track ([result example][miRBase track]) to visualize them in the genome browser.
+A result folder is generated and contains a table ([result example][miRBaseTissue genes]) with Ensembl gene IDs, gene descriptions, the corresponding expression values for each gene of the selected tissue, and the difference to the average expression in all tissues for each gene. This table is further coverted into a Ensembl transcript table ([result example][miRBaseTranscripts]), which is used to generate the 5' UTR transcript track ([result example][miRBaseTranscriptsTrack]) for all transcripts. The output of the method miRmap is a prediction of potential miRNA binding sites within the 3'UTR regions and results in a table of miRNA binding sites, a summary table ([result example][miRBase summary]) with miRNA names, miRmap scores and the counts of each miRNA binding site. The predicted miRNA binding sites are summarized in a table ([result example][miRBase table]) and are also available as a track ([result example][miRBase track]) to visualize them in the genome browser.
 
-[miRBaseTissue result]: 
-[miRBaseTissue genes]:
-[miRBaseTranscripts]:
-[miRBaseTranscriptsTrack]:
-[miRBase summary]:
-[miRBase track]:
+[miRBaseTissue genes]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/breast_gene%20set
+
+[miRBaseTranscripts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/Ensembl%20transcripts
+
+[miRBaseTranscriptsTrack]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/Transcript%20region%20track
+
+[miRBase summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/Summary%20output%20table
+
+[miRBase table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/Site%20output%20table
+
+[miRBase track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/miRNA%20binding%20sites%20in%20breast%20genes%20(HumanPSD(TM))/Site%20output%20track
 
 All output results can be exported to your local computer.
 
@@ -3247,7 +3253,8 @@ All output results can be exported to your local computer.
 
 This workflow is designed to match SNPs on transcriptional level. One part of the workflow predicts variant effects on transcript level of exons. The other part of the workflow search for transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs).
 
-> This workflow is only working for human genome | GRCh37 | hg19.
+``` important:: This workflow is only working for human genome | GRCh37 | hg19.
+```
 
 ✨ [Open][SNP19_workflow] the workflow in the user interface.✨
 
@@ -3289,7 +3296,8 @@ All output results can be exported to your local computer.
 
 This workflow is designed to match SNPs on transcriptional level. One part of the workflow predicts variant effects on transcript level of exons. The other part of the workflow search for transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs).
 
-> This workflow is only working for human genome | GRCh38 | hg38.
+``` important:: This workflow is only working for human genome | GRCh38 | hg38.
+```
 
 ✨ [Open][SNP38_workflow] the workflow in the user interface.✨
 
@@ -3510,6 +3518,9 @@ X. Hua, L. Chen, J. Wang, J. Li, E. Wingender; Identifying cell-specific microRN
 
 [paper mirprom]: https://academic.oup.com/bioinformatics/article/32/16/2403/2240258
 
+``` important:: This workflow is only available for human species.
+```
+
 ✨ [Open][miRNA-cell workflow] the workflow in the user interface.✨
 
 [miRNA-cell workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20cell%20line%20specific%20miRNA%20promoters%20(TRANSFAC(R))
@@ -3688,6 +3699,9 @@ This workflow is designed to search for enriched transcription factor binding si
 
 [Fantom5 link]: https://fantom.gsc.riken.jp/5/
 
+``` important:: This workflow is only available for human species.
+```
+
 ✨ [Open][FantomCell workflow] the workflow in the user interface.✨
 
 [FantomCell workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20cell%20specific%20promoters%20(TRANSFAC(R))
@@ -3824,6 +3838,9 @@ X. Hua, L. Chen, J. Wang, J. Li, E. Wingender; Identifying cell-specific microRN
 
 [paper mirprom]: https://academic.oup.com/bioinformatics/article/32/16/2403/2240258
 
+``` important:: This workflow is only available for human species.
+```
+
 ✨ [Open][miRNA-tissue workflow] the workflow in the user interface.✨
 
 [miRNA-tissue workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20tissue%20specific%20miRNA%20promoters%20(TRANSFAC(R))
@@ -3934,6 +3951,9 @@ This workflow is designed to search for enriched transcription factor binding si
 
 [Fantom5 link]: https://fantom.gsc.riken.jp/5/
 
+``` important:: This workflow is only available for human species.
+```
+
 ✨ [Open][FantomTissue workflow] the workflow in the user interface.✨
 
 [FantomTissue workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/Identify%20enriched%20motifs%20in%20tissue%20specific%20promoters%20(TRANSFAC(R))
@@ -4032,7 +4052,7 @@ The following genome versions are available:
 +-------------------------------+----------------+------------+
 | Ensembl version               | Genome version | Short form |
 +===============================+================+============+
-| EnsemblHuman104               | GRCh38         |  hg38      |
+| EnsemblHuman104               | GRCh38         | hg38       |
 +-------------------------------+----------------+------------+
 | EnsemblHuman100               | GRCh38         | hg38       |
 +-------------------------------+----------------+------------+
@@ -4085,21 +4105,21 @@ This workflow is designed to search for enriched transcription factor binding si
 The following list gives an overview of all input parameters used in this workflow:
 
 ```eval_rst
-+-----------------------+--------------------------------------------------------------+
-| Parameter             | Description                                                  |
-+=======================+==============================================================+
-| Input Yes track       | Input track with sequences                                   |
-+-----------------------+--------------------------------------------------------------+
-| Species               | Define the species of your data                              |
-+-----------------------+--------------------------------------------------------------+
-| Sequence source       | Ensembl genome version                                       |
-+-----------------------+--------------------------------------------------------------+
-| AnnotationSource      | Ensembl annotation source file                               |
-+-----------------------+--------------------------------------------------------------+
-| Profile               | Collection of positional weight matrices from TRANSFAC(R)    |
-+-----------------------+--------------------------------------------------------------+
-| Result folder        | Name and location of outputs                                 |
-+-----------------------+--------------------------------------------------------------+
++------------------+-----------------------------------------------------------+
+| Parameter        | Description                                               |
++==================+===========================================================+
+| Input Yes track  | Input track with sequences                                |
++------------------+-----------------------------------------------------------+
+| Species          | Define the species of your data                           |
++------------------+-----------------------------------------------------------+
+| Sequence source  | Ensembl genome version                                    |
++------------------+-----------------------------------------------------------+
+| AnnotationSource | Ensembl annotation source file                            |
++------------------+-----------------------------------------------------------+
+| Profile          | Collection of positional weight matrices from TRANSFAC(R) |
++------------------+-----------------------------------------------------------+
+| Result folder    | Name and location of outputs                              |
++------------------+-----------------------------------------------------------+
 ```
 
 Genomic sequences in track format ([input example][track example]) can be submitted in the input field **Input sequence**. You can drag and drop the track from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your track.
@@ -4122,7 +4142,7 @@ The following genome versions are available:
 +-------------------------------+----------------+------------+
 | Ensembl version               | Genome version | Short form |
 +===============================+================+============+
-| EnsemblHuman104               | GRCh38         |  hg38      |
+| EnsemblHuman104               | GRCh38         | hg38       |
 +-------------------------------+----------------+------------+
 | EnsemblHuman100               | GRCh38         | hg38       |
 +-------------------------------+----------------+------------+
@@ -4150,15 +4170,13 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
 
-A result folder ([result example][match result]) is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][match summary]) and can be visualized in the genome browser as a track ([result example][match track]). The potential transcription factors are given in a final Ensembl table ([result example][match TFs]) with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][match summary]) and can be visualized in the genome browser as a track ([result example][match track]). The potential transcription factors are given in a final Ensembl table ([result example][match TFs]) with annotated GeneSymbol IDs and a short description.
 
-[match result]: 
+[match summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/E2F_promoter_track%20(enriched%20motifs%203.0_TRANSFAC(R))/%20Site%20search%20summary
 
-[match summary]: 
+[match track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/E2F_promoter_track%20(enriched%20motifs%203.0_TRANSFAC(R))/MATCH_track
 
-[match track]: 
-
-[match TFs]: 
+[match TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/E2F_promoter_track%20(enriched%20motifs%203.0_TRANSFAC(R))/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
@@ -4170,7 +4188,8 @@ All output results can be exported to your local computer.
 
 This workflow is designed to match SNPs on transcriptional and on translational level. One part of the workflow identifies enriched transcription factor binding sites (TFBS), which may be effected by genomic variations (SNPs). The other part of the workflow predicts variant effects on protein functions based on SNPs and predicts potential pathway alterations.
 
-> This workflow is only working for human genome | GRCh37 | hg19.
+``` important:: This workflow is only working for human genome | GRCh37 | hg19.
+```
 
 ✨ [Open][SNP_TP_workflow] the workflow in the user interface.✨
 
@@ -4198,7 +4217,19 @@ For matching SNPs in exons of genes, gene region of 1000bp around 5' and 3' of e
 
 Genes located within the region of 10000bp around 5' and 3' of each SNP in the input SNP tables will be considered as matched SNP target genes and are further visualized in a schematic map within the human chromosomes. These gene targets are mapped to Transpath pathways and Reactome pathways to estimate potential pathway alterations. All matched target genes are output as a genomic track to use another variant effect predictor to filter for amino acid sequence (AS) missense effects. The track is further used to find enriched transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs). A comparison is performed with a random human vcf track and the TRANSFAC(R) database. The output compromise one table with TFBSs, which are gained and another table with TFBSs, which are loss according to the present input SNPs. These tables are joined and converted into a table of transcription factors, which may get activated (gain) or repressed (loss). The assumption of gain or loss of a transcription factor binding sites can be verified by a p-value.
 
-A result folder ([result example][SNP_TP result]) is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP_map result]) and performed pathway mapping with Transpath ([result example][SNP_TP_map result]) and Reactome database ([result example][SNP_Rea_map result]) results in two seperate tables with corresponding affected pathway entires. The output SNP table of the variant effect predictor is filtered for missense results on transcript level ([result example][SNP_effect]). A joined table of enriched transcription factor binding sites around regulatory SNP estimates the gain or loss of potential transcription factor activities ([result example][SNP_gain_loss result]).
+A result folder is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP_map result]) and performed pathway mapping with Transpath ([result example][SNP_TP_map result]) and Reactome database ([result example][SNP_Rea_map result]) results in two seperate tables with corresponding affected pathway entires. The output SNP table of the variant effect predictor is filtered for missense results on transcript level ([result example][SNP_effect]). A joined table of enriched transcription factor binding sites around regulatory SNP estimates the gain or loss of potential transcription factor activities ([result example][SNP_gain_loss result]).
+
+[SNP_exons result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/matched%20SNPs_in_exons_hg19
+
+[SNP_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/all_SNPs_hg19_schematic_map_genes
+
+[SNP_TP_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/all_SNPs_matched_genes_hg19_TP_pathways
+
+[SNP_Rea_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/all_SNPs_matched_genes_hg19_Reactome_pathways
+
+[SNP_effect]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/all_SNPs_track_hg19_variants_effects_missense
+
+[SNP_gain_loss result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg19)/SNP_height/all_SNPs_track_hg19_binding_sites_loss_gain_joined_Ensembl_annot
 
 All output results can be exported to your local computer.
 
@@ -4206,7 +4237,8 @@ All output results can be exported to your local computer.
 
 This workflow is designed to match SNPs on transcriptional and on translational level. One part of the workflow identifies enriched transcription factor binding sites (TFBS), which may be effected by genomic variations (SNPs). The other part of the workflow predicts variant effects on protein functions based on SNPs and predicts potential pathway alterations.
 
-> This workflow is only working for human genome | GRCh38 | hg38.
+``` important:: This workflow is only working for human genome | GRCh38 | hg38.
+```
 
 ✨ [Open][SNP_TP_workflow] the workflow in the user interface.✨
 
@@ -4232,7 +4264,19 @@ For matching SNPs in exons of genes, gene region of 1000bp around 5' and 3' of e
 
 Genes located within the region of 10000bp around 5' and 3' of each SNP in the input SNP tables will be considered as matched SNP target genes and are further visualized in a schematic map within the human chromosomes. These gene targets are mapped to Transpath pathways and Reactome pathways to estimate potential pathway alterations. All matched target genes are output as a genomic track to use another variant effect predictor to filter for amino acid sequence (AS) missense effects. The track is further used to find enriched transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs). A comparison is performed with a random human vcf track and the TRANSFAC(R) database. The output compromise one table with TFBSs, which are gained and another table with TFBSs, which are loss according to the present input SNPs. These tables are joined and converted into a table of transcription factors, which may get activated (gain) or repressed (loss). The assumption of gain or loss of a transcription factor binding sites can be verified by a p-value.
 
-A result folder ([result example][SNP_TP result]) is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP_map result]) and performed pathway mapping with Transpath ([result example][SNP_TP_map result]) and Reactome database ([result example][SNP_Rea_map result]) results in two seperate tables with corresponding affected pathway entires. The output SNP table of the variant effect predictor is filtered for missense results on transcript level ([result example][SNP_effect]). A joined table of enriched transcription factor binding sites around regulatory SNP estimates the gain or loss of potential transcription factor activities ([result example][SNP_gain_loss result]).
+A result folder is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP_map result]) and performed pathway mapping with Transpath ([result example][SNP_TP_map result]) and Reactome database ([result example][SNP_Rea_map result]) results in two seperate tables with corresponding affected pathway entires. The output SNP table of the variant effect predictor is filtered for missense results on transcript level ([result example][SNP_effect]). A joined table of enriched transcription factor binding sites around regulatory SNP estimates the gain or loss of potential transcription factor activities ([result example][SNP_gain_loss result]).
+
+[SNP_exons result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_exons_SIFT
+
+[SNP_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_hg38_schematic_map_genes
+
+[SNP_TP_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_matched_genes_hg38_TP_pathways
+
+[SNP_Rea_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_matched_genes_hg38_Reactome_pathways
+
+[SNP_effect]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_track_hg38_variants_effects_missense
+
+[SNP_gain_loss result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/SNP%20variant%20effects%20(hg38)/200_SNPs_human/all_SNPs_track_hg38_binding_sites_loss_gain_joined_Ensembl_annot
 
 All output results can be exported to your local computer.
 
