@@ -1425,7 +1425,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the single-end Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
+In the first part of the workflow the single-end Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
@@ -1543,7 +1543,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the single-end Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. 
+In the first part of the workflow the single-end Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. 
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
@@ -1662,7 +1662,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads.
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
@@ -1780,7 +1780,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads.
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
@@ -1901,7 +1901,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
 
@@ -2049,7 +2049,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
 
@@ -2318,7 +2318,6 @@ A result folder ([result example][Map multiple genes result]) is generated for e
 
 
 ### Mapping to ontology - select a classification (2 Gene tables)
-ERROR
 
 This workflow is designed to perform a functional classification of two input gene or protein tables with mapping of one selected Ontology category and identify GO terms or pathway hits, which are overrepresented in the input table. Afterwards a comparison analysis is performed and outputs the most different ontology terms and visualize results with a plot.
 
@@ -2527,7 +2526,7 @@ The workflow aligns raw FASTQ files from paired-end library with a specified ref
 
 ✨ [Open][workflow] the workflow in the user interface.✨
 
-[workflow]: https://platform.genexplain.com/bioumlweb/#de=data/Projects/Netti/Data/workflows_6_6/more2/RNAseq%20analysis%20with%20HISAT2%20(paired-end)
+[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/RNAseq%20analysis%20with%20HISAT2%20(paired-end)
 
 The following list gives an overview of all input parameters used in this workflow:
 
@@ -2568,7 +2567,7 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the single-end Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
+In the first part of the workflow the single-end Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
@@ -2576,17 +2575,17 @@ In the second part of the workflow the method featureCounts counting te aligned 
 
 For each FASTQ file aligment an output subfolder is generated and contains a track file with the alignment ([result example][align track]) and the alignment summary ([result example][align summary]) as well as a quality plot ([result example][align plot]).
 
+[align track]: data/Examples/User Guide/Data/Examples of workflows/Common/ExpFASTQ_Files RNAseq with HISAT2 (paired-end)/SRR11940548_1.fastq/aligned_reads
+
+[align summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20HISAT2%20(paired-end)/SRR11940548_1.fastq/alignment_summary
+
+[align plot]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20HISAT2%20(paired-end)/SRR11940548_1.fastq/QualityPlot.pdf
+
 The outputs of counting genes are saved in two tables: one file contains the read counts ([result example][read counts]) and the other a count summary of the counting procedure ([result example][count summary]).
 
-[align track]: 
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20HISAT2%20(paired-end)/SRR11940548_1.fastq_counts
 
-[align summary]: 
-
-[align plot]: 
-
-[read counts]: 
-
-[count summary]: 
+[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20HISAT2%20(paired-end)/SRR11940548_1.fastq/count_summary
 
 All output results can be exported to your local computer.
 
@@ -2596,7 +2595,7 @@ The workflow aligns raw FASTQ files from single-end library with a specified ref
 
 ✨ [Open][workflow] the workflow in the user interface.✨
 
-[workflow]: https://platform.genexplain.com/bioumlweb/#de=data/Projects/Netti/Data/workflows_6_6/more2/RNAseq%20analysis%20with%20HISAT2%20(single-end)
+[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/RNAseq%20analysis%20with%20HISAT2%20(single-end)
 
 The following list gives an overview of all input parameters used in this workflow:
 
@@ -2637,23 +2636,25 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the single-end Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. 
+In the first part of the workflow the single-end Illumina FASTQ files are mapped to the selected genome using the Galaxy tool HISAT2 ([HISAT2 tool][open tool]). HISAT2 enables an extremely fast and sensitive alignment of reads. The minimum mapping quality is set default to 0 counts per gene. 
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2
 
 In the second part of the workflow the method featureCounts counting te aligned reads in BAM format to genomic features, in this case as genes.
 
-For each FASTQ file aligment an output subfolder is generated and contains a track file with the alignment ([result example][align track]) and the alignment summary ([result example][align summary]).  
+For each FASTQ file aligment an output subfolder is generated and contains a track file with the alignment ([result example][align track]) and the alignment summary ([result example][align summary]) as well as a quality plot ([result example][align plot]).  
 
-[align track]: 
+[align track]: data/Examples/User Guide/Data/Examples of workflows/Common/FASTQ_files RNAseq with HISAT2 (single-end)/B_1_Experiment.fastq experiment/B_1_Experiment.fastq aligned_reads
 
-[align summary]: 
+[align summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20HISAT2%20(single-end)/B_1_Experiment.fastq%20experiment/alignment_summary
+
+[align plot]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20HISAT2%20(single-end)/B_1_Experiment.fastq%20experiment/QualityPlot.pdf
 
 The outputs of counting genes are saved in two tables: one file contains the read counts ([result example][read counts]) and the other a count summary of the counting procedure ([result example][count summary]).
 
-[read counts]: 
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20HISAT2%20(single-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_counts 
 
-[count summary]: 
+[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20HISAT2%20(single-end)/B_1_Experiment.fastq%20experiment/count_summary
 
 All output results can be exported to your local computer.
 
@@ -2663,7 +2664,7 @@ The workflow aligns raw FASTQ files from paired-end library with a specified ref
 
 ✨ [Open][workflow] the workflow in the user interface.✨
 
-[workflow]: https://platform.genexplain.com/bioumlweb/#de=data/Projects/Netti/Data/workflows_6_6/more2/RNAseq%20analysis%20with%20Subread%20(paired-end)
+[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/RNAseq%20analysis%20with%20Subread%20(paired-end)
 
 The following list gives an overview of all input parameters used in this workflow:
 
@@ -2704,12 +2705,18 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
-
-> Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by 
-> seed-and-vote. Nucleic Acids Research, 41(10):e108 http://subread.sourceforge.net/
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
+
+---
+**Paper**
+
+Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic Acids Research, 41(10):e108 [link][paper subread] 
+
+---
+
+[paper subread]: http://subread.sourceforge.net/
 
 The following parameters are set as default within the subread aligner:
 
@@ -2725,17 +2732,15 @@ Trim n-bases from 3': 0
 Phred format: +33
 ```
 
-For each submitted FASTQ file a result folder ([result example][subread result]) is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads. 
+For each submitted FASTQ file a result folder is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads.
 
-[subread result]: 
+[BAM result]: data/Examples/User Guide/Data/Examples of workflows/Common/ExpFASTQ_Files RNAseq with Subread (paired-end)/SRR11940548_1.fastq/aligned_reads
 
-[BAM result]:
+[indels result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20Subread%20(paired-end)/SRR11940548_1.fastq/indels
 
-[indels result]: 
+[log result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20Subread%20(paired-end)/SRR11940548_1.fastq/alignment_log
 
-[log result]: 
-
-[quality result]: 
+[quality result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20Subread%20(paired-end)/SRR11940548_1.fastq/QualityPlot.pdf
 
 A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
@@ -2745,9 +2750,9 @@ In the second part of the workflow the Galaxy tool featureCounts ([featureCounts
 
 The output data are saved in two tab-delimited files: one file contains the read counts ([result example][read counts]) and the other file includes summary of counting results ([result example][count summary]).
 
-[read counts]: 
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20Subread%20(paired-end)/SRR11940548_1.fastq_counts
 
-[count summary]: 
+[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/ExpFASTQ_Files%20RNAseq%20with%20Subread%20(paired-end)/SRR11940548_1.fastq/count_summary
 
 All output results can be exported to your local computer.
 
@@ -2798,12 +2803,18 @@ The following Ensembl reference genomes are available:
 
 Please select the same pre-build Ensembl reference from the drop-down list **Reference annotation** for gene counting and gene identification. Both read alignment and read counting should use the same reference genome. For the read alignement the corresponding input field is **ReferenceEnsembl**, whereas for the read counting it is the input field **Reference annotation**. 
 
-In the first part of the workflow the paired input Illumina FASTQ files are mapped to the human genome (hg38) using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
-
-> Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by 
-> seed-and-vote. Nucleic Acids Research, 41(10):e108 http://subread.sourceforge.net/
+In the first part of the workflow the paired input Illumina FASTQ files are mapped to the selected genome using the Galaxy tool subread-align ([subread tool][open tool]). Subread is a general-purpose read aligner and uses the the “seed-and-vote” paradigm for read mapping and reports the largest mappable region for each read. It can also be used to discover genomic mutations including short indels.
 
 [open tool]: https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/subread/subread-align
+
+---
+**Paper**
+
+Liao Y, Smyth GK and Shi W (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic Acids Research, 41(10):e108 [link][paper subread] 
+
+---
+
+[paper subread]: http://subread.sourceforge.net/
 
 The following parameters are set as default within the subread aligner:
 
@@ -2821,17 +2832,15 @@ Phred format: +33
 
 A quality accessment of the aligned reads is done with the galaxy tool htseq-qa.
 
-For each submitted FASTQ file a result folder ([result example][subread result]) is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads. 
+For each submitted FASTQ file a result folder is generated and contains the alignment result as a BAM file ([result example][BAM result]), a VCF track with identified indels ([result example][indels result]), a log file as a summary ([result example][log result]) of the alignment and a quality report ([result example][quality result]) as a plot of non-aligned and aligned reads.
 
-[subread result]: 
+[BAM result]: data/Examples/User Guide/Data/Examples of workflows/Common/FASTQ_files RNAseq with Subread (single-end)/B_1_Experiment.fastq experiment/B_1_Experiment.fastq_alignments
 
-[BAM result]: 
+[indels result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20Subread%20(single-end)/B_1_Experiment.fastq%20experiment/indels
 
-[indels result]: 
+[log result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20Subread%20(single-end)/B_1_Experiment.fastq%20experiment/alignment_log
 
-[log result]: 
-
-[quality result]: 
+[quality result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20Subread%20(single-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastqQualityPlot.pdf
 
 In the second part of the workflow the Galaxy tool featureCounts ([featureCounts tool][open tool]) is counting the aligned reads in BAM format to genomic features, in our case as genes.
 
@@ -2839,61 +2848,14 @@ In the second part of the workflow the Galaxy tool featureCounts ([featureCounts
 
 The output data are saved in two tab-delimited files: one file contains the read counts ([result example][read counts]) and the other file includes summary of counting results ([result example][count summary]).
 
-[read counts]: 
+[read counts]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20Subread%20(single-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_counts
 
-[count summary]: 
+[count summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/FASTQ_files%20RNAseq%20with%20Subread%20(single-end)/B_1_Experiment.fastq%20experiment/B_1_Experiment.fastq_count_summary
 
 All output results can be exported to your local computer.
 
 ### SRA to FASTQ
 
-This workflow can be used to convert SRA data files (e. g. from NGS/RNA-seq
-experiments) into FASTQ files. The FASTQ format is widely used by a number of
-tools and the geneXplain platform is among them; on the other hand, NGS data are
-often collected in SRA format, thus the conversion of SRA format into FASTQ
-format is an important function. An example of public data stored in SRA format
-can be found here (<https://www.ncbi.nlm.nih.gov/sra?term=SRP051443>) and can be
-uploaded directly via FTP import into the geneXplain platform. The workflow “SRA
-to FASTQ” can be found on the Start page, under the NGS/RNA-seq button.
-
-![](media/37086b22f201bedb32fddceeaf62cbad.png)
-
-To launch the workflow, follow these steps:
-
-**Step1.** Open the workflow input form from the Start page. It looks as shown
-below:
-
-![](media/image101.png)
-
-**Step 2.** Specify the folder with the SRA files in the field **Input folder**.
-You can drag it from your project within the tree area and drop it in the box
-beside the folder pictogram. Alternatively, you may click on the field *(select
-element)* and a new window will be opened, where you can select the input
-folder.
-
-**Example of an input folder:**
-
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/SRA%20files>
-
-It contains 12 files in SRA format as shown below. Please note, this folder
-occupies **1.5 GB** work space.
-
-![](media/image102.png)
-
-
-> If you have a valid TRANSPATH database license, you can select one further functional classifications:
-
-- TRANSPATH Pathways
-
-
-> If you have a valid HumanPSD database license, you can select one from further functional classifications:
-
-- HumanPSD(TM) GO (biological process)
-- HumanPSD(TM) GO (cellular component)
-- HumanPSD(TM) GO (full classification)
-- HumanPSD(TM) GO (molecular function)
-- HumanPSD(TM) disease
-- TRANSPATH Pathways
 
 ## GTRD
 
