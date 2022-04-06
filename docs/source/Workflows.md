@@ -216,12 +216,6 @@ For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
 For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
 ```
 
-```python
-\For up-regulated probes: LogFoldChange > 0.5 \and -log(P-value) > 3
-For down- regulated probes: LogFoldChange < -0.5 and -log(P-value) < -3
-For non-changed genes : LogFoldChange < 0.002 and LogFoldChange > -0.002
-```
-
 The resulting tables of up-regulated, down-regulated, and non-changed Affymetrix probeset IDs are converted into Ensembl gene tablse with the Convert table method and annotated with additional gene information (gene descriptions, gene symbols, and species) via the Annotate table method.
 
 A result folder is generated and contains all tables, the histogramm and a summary HTML report ([report example][Affy report]). All output results can be exported to your local computer.
