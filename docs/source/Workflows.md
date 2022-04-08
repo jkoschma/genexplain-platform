@@ -3058,7 +3058,7 @@ This workflow is designed to perform a functional classification analysis of an 
 
 [TF class link]: https://genexplain.com/tf_class/
 
-[Open][Map genes workflow] the workflow in the user interface.
+✨ [Open][Map genes workflow] the workflow in the user interface.✨
 
 [Map genes workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/HumanPSD/Mapping%20to%20ontologies%20(HumanPSD(TM))
 
@@ -3117,8 +3117,64 @@ All output results can be exported to your local computer.
 
 ### Mapping to ontologies and comparison for two gene sets (HumanPSD(TM))
 
+This workflow is designed to perform a functional classification of two input gene or protein tables with mapping to different ontologies: HumanPSD™ (biological process), HumanPSD™ (cellular component), HumanPSD™ (molecular function), Transcription factor classification ([TFclass][TF class link]), TRANSPATH® pathways, Reactome pathways, HumanCyc pathways, HumanPSD™ disease and identify GO terms or pathway hits, which are overrepresented in the corresponding input table. Afterwards a comparison analysis is performed and outputs most different GO terms and visualize results with a plot.
+
 ``` important:: This workflow is available for human, mouse and rat species.
 ```
+
+[TF class link]: https://genexplain.com/tf_class/
+
+✨ [Open][Map compare workflow] the workflow in the user interface.✨
+
+[Map compare workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/HumanPSD/Mapping%20to%20ontologies%20and%20comparison%20for%20two%20gene%20sets%20(HumanPSD(TM))
+
+The following list gives an overview of all input parameters used in this workflow:
+
+```eval_rst   
++--------------+---------------------------------+
+| Parameter    | Description                     |
++==============+=================================+
+| InputTable1  | Gene or protein table           |
++--------------+---------------------------------+
+| InputTable2  | Gene or protein table           |
++--------------+---------------------------------+
+| Species      | Define the species of your data |
++--------------+---------------------------------+
+| OutputFolder | Name and location of outputs    |
++--------------+---------------------------------+
+```
+
+Two different gene or protein tables can be submitted in the input fields **InputTable1** ([input example][gene table1]) and **InputTable2** ([input example][gene table2]) .
+
+[gene table1]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated_top100
+
+[gene table2]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Downregulated_top100
+
+You can drag and drop the input tables from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input tables.
+
+You need  to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
+
+The workflow convert the input gene or protein lists into two new lists with Ensembl gene IDS and both are mapped seperatly to the following functional classifications:
+
+- HumanPSD™ (biological process)
+- HumanPSD™ (cellular component)
+- HumanPSD™ (molecular function)
+- Transcription factor classification
+- TRANSPATH® pathways
+- Reactome pathways
+- HumanCyc pathways
+- HumanPSD™ disease
+
+The method Compare analysis result reveals GO terms that show statistical significant difference across the two input tables.
+
+A result folder is generated and contains the converted gene or protein lists in Ensembl ID format ([result example][Ensembl result]), all resulting tables of the functional classification mapping ([result example][Mapping result]) are in category specific subfolders, which contain as well the comparison result [result example][Comparison result]. All output results can be exported to your local computer.
+
+[Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ontologies%20and%20compare%20(HumanPSD))/Upregulated_top100_Ensembl
+
+[Mapping result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ontologies%20and%20compare%20(HumanPSD))/HumanPSD%20(disease)/Mapping%20to%20HumanPSD%20(disease)%20table%201
+
+[Comparison result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ontologies%20and%20compare%20(HumanPSD))/HumanPSD%20(disease)/Analysis%20comparison
+
 
 ### Mapping to ontologies for multiple gene sets (HumanPSD(TM))
 
