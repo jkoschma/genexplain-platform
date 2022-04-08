@@ -3282,7 +3282,15 @@ For matching SNPs in exons of genes, the field **5' and 3' gene bound extension*
 
 Genes located within the region of 10000bp around 5' and 3' of each SNP in the input SNP tables will be considered as matched SNP target genes and are further visualized in a schematic map within the human chromosomes. All matched target genes are output as a genomic track and used to search for transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs). The site search is performed with the help of TRANSFAC(R) database and a selected **Profile** as a collection of positional weight matrices. The **SNP surrounding region, bp** is set to 15bp per default for processing the genomic SNP track before site search analysis is done.
 
-A result folder ([result example][SNP19 result]) is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP19_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP19_map result]). Site search results are one summary table ([result example][SNP19_summary result])of enriched transcription factor binding sites around the regulatory SNPs and a table of potential affected transcription factors ([result example][SNP19_TFs result]).
+A result folder is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP19_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP19_map result]). Site search results are one summary table ([result example][SNP19_summary result])of enriched transcription factor binding sites around the regulatory SNPs and a table of potential affected transcription factors ([result example][SNP19_TFs result]).
+
+[SNP19_exons result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/SNP_height%20(Analyse%20SNP%20list%20(TRANSFAC))_hg19/SNPs%20in%20exons/SNP_height%20matched%20SNPs%20in%20exons%20SIFT
+
+[SNP19_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/SNP_height%20(Analyse%20SNP%20list%20(TRANSFAC))_hg19/All%20SNPs/SNP_height%20SNP%20on%20genes%2C%20schematic%20map
+
+[SNP19_summary result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/SNP_height%20(Analyse%20SNP%20list%20(TRANSFAC))_hg19/SNPs%20regulatory/Summary%3A%20TFBSs%20around%20regulatory%20SNPs
+
+[SNP19_TFs result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/SNP_height%20(Analyse%20SNP%20list%20(TRANSFAC))_hg19/SNPs%20regulatory/SNP_height%20TFs%20binding%20around%20regulatory%20SNPs
 
 All output results can be exported to your local computer.
 
@@ -3323,7 +3331,15 @@ For matching SNPs in exons of genes, the field **5' and 3' gene bound extension*
 
 Genes located within the region of 10000bp around 5' and 3' of each SNP in the input SNP tables will be considered as matched SNP target genes and are further visualized in a schematic map within the human chromosomes. All matched target genes are output as a genomic track and used to search for transcription factor binding sites (TFBS), which may be affected by genomic variations (SNPs). The site search is performed with the help of TRANSFAC(R) database and a selected **Profile** as a collection of positional weight matrices. The **SNP surrounding region, bp** is set to 15bp per default for processing the genomic SNP track before site search analysis is done.
 
-A result folder ([result example][SNP38 result]) is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP38_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP38_map result]). Site search results are one summary table ([result example][SNP38_summary result])of enriched transcription factor binding sites around the regulatory SNPs and a table of potential affected transcription factors ([result example][SNP38_TFs result]).
+A result folder is generated and contains several tables and tracks. One gene table comprises all SNPs matched to exons ([result example][SNP38_exons result]) with corresponding AS substitution information, genomic region, SNP ID, SNP type and function prediction (like DAMAGING). Matched target genes are visualized in a schematic chromosomal map ([result example][SNP38_map result]). Site search results are one summary table ([result example][SNP38_summary result])of enriched transcription factor binding sites around the regulatory SNPs and a table of potential affected transcription factors ([result example][SNP38_TFs result]).
+
+[SNP38_exons result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/200_SNPs_human%20(Analyse%20SNP%20list%20(TRANSFAC))_hg38/SNPs%20in%20exons/200_SNPs_human%20matched%20SNPs%20in%20exons%20SIFT
+
+[SNP38_map result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/200_SNPs_human%20(Analyse%20SNP%20list%20(TRANSFAC))_hg38/All%20SNPs/200_SNPs_human%20SNP%20on%20genes%2C%20schematic%20map
+
+[SNP38_summary result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/200_SNPs_human%20(Analyse%20SNP%20list%20(TRANSFAC))_hg38/SNPs%20regulatory/Summary%3A%20TFBSs%20around%20regulatory%20SNPs
+
+[SNP38_TFs result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/200_SNPs_human%20(Analyse%20SNP%20list%20(TRANSFAC))_hg38/SNPs%20regulatory/200_SNPs_human%20TFs%20binding%20around%20regulatory%20SNPs
 
 All output results can be exported to your local computer.
 
