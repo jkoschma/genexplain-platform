@@ -3798,25 +3798,22 @@ A human gene table ([input example][input example]) can be submitted in the inpu
 
 In this workflow promoter regions are extracted with the selected **Cell_condition** and contain cell-type-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
-``` important:: This workflow support only the species Homo sapiens.
-```
-
 You need to define the promoter selection mode in the field **TSS selection** by choosing one from the drop-down menu. 3' most means nearest promoter to transcriptional start site (TSS). 5' most means farest promoter to transcriptional start site (TSS). All means that all promoter location informations are taken from Fantom5 database.
 
 Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
 
 The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 50% of true discovery rate, TDR. For 75% TDR you can set this field to 0.125 and for 90% TDR, you can set this field to 0,270. The filtered sited are used for the resulting visualization on genome browser.
 
-A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomCell summary]) and can be visualized in the genome browser as a track ([result example][FantomCell track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomCell2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomCell TFs]) with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][Fantom Cell summary]) and can be visualized in the genome browser as a track ([result example][Fantom Cell track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][Fantom Cell2 track]). The potential transcription factors are given in a final Ensembl table ([result example][Fantom Cell TFs]) with annotated GeneSymbol IDs and a short description.
 
 
-[FantomCell summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
+[Fantom Cell summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
 
-[FantomCell track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
+[Fantom Cell track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
 
-[FantomCell2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Cell_track
+[Fantom Cell2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Cell_track
 
-[FantomCell TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
+[Fantom Cell TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
@@ -4053,9 +4050,6 @@ A human gene table ([input example][input example]) can be submitted in the inpu
 
 In this workflow promoter regions are extracted with the selected **Tissue_condition** and contain tissue-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
-``` important:: This workflow support only the species Homo sapiens.
-```
-
 You need to define the promoter selection mode in the field **TSS selection** by choosing one from the drop-down menu. 3' most means nearest promoter to transcriptional start site (TSS). 5' most means farest promoter to transcriptional start site (TSS). All means that all promoter location informations are taken from Fantom5 database.
 
 Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
@@ -4106,7 +4100,8 @@ The following list gives an overview of all input parameters used in this workfl
 
 Genomic sequences in track format ([input example][track example]) can be submitted in the input field **Input sequence**. You can drag and drop the track from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your track.
 
-> At least 100 sequences are required as input for this workflow.
+``` important:: At least 100 sequences are required as input for this workflow.
+```
 
 [track example]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/E2F_promoter_track
 
