@@ -3053,7 +3053,8 @@ The resulting table can be exported to your local computer.
 
 This workflow is designed to perform a functional classification analysis of an input gene or protein table with mapping to different ontologies: HumanPSD™ (biological process), HumanPSD™ (cellular component), HumanPSD™ (molecular function), Transcription factor classification ([TFclass][TF class link]), TRANSPATH® pathways, Reactome pathways, HumanCyc pathways, HumanPSD™ disease and identify GO terms or pathway hits, which are overrepresented in the input table.
 
-> This workflow is available for human, mouse and rat species.
+``` important:: This workflow is available for human, mouse and rat species.
+```
 
 [TF class link]: https://genexplain.com/tf_class/
 
@@ -3079,7 +3080,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 A gene or protein table can be submitted in the input field **Input table** ([input example][gene table]).
 
-[gene table]: 
+[gene table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Upregulated_top100
 
 You can drag and drop the input table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table.
 
@@ -3108,8 +3109,6 @@ The column _Title_ and _Group size_ contain further details about the ontologica
 
 A result folder ([result example][Map genes result]) is generated and contains the converted gene list in Ensembl ID format ([result example][Ensembl result]) and all resulting tables of the functional classification mapping ([result example][Mapping result]).
 
-[Map genes result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ont%2C%20HumanPSD)/
-
 [Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ont%2C%20HumanPSD)/Ensembl%20genes
 
 [Mapping result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Upregulated_top100%20(Mapping%20to%20ont%2C%20HumanPSD)/HumanPSD%20(disease)
@@ -3118,12 +3117,15 @@ All output results can be exported to your local computer.
 
 ### Mapping to ontologies and comparison for two gene sets (HumanPSD(TM))
 
+``` important:: This workflow is available for human, mouse and rat species.
+```
 
 ### Mapping to ontologies for multiple gene sets (HumanPSD(TM))
 
 This workflow is designed to perform a functional classification analysis with a set of multiple gene tables with mapping them to different ontologies: HumanPSD™ (biological process), HumanPSD™ (cellular component), HumanPSD™ (molecular function), Transcription factor classification ([TFclass][TF class link]), TRANSPATH® pathways, Reactome pathways, HumanCyc pathways, HumanPSD™ disease and identify GO terms or pathway hits, which are overrepresented in the input table.
 
-> This workflow is available for human, mouse and rat species.
+``` important:: This workflow is available for human, mouse and rat species.
+```
 
 [TF class link]: https://genexplain.com/tf_class/
 
@@ -3172,13 +3174,11 @@ Each row in the functional classification resulting tables presents details abou
 
 The column _Title_ and _Group size_ contain further details about the ontological terms, its title and the number of genes linked to this term in the corresponding database. The column _Expected hits_ shows the number of genes expected to fall into this specific ontological term based on the size of the input set and the number of genes known from database to match this term. The column _Number of hits_ shows how many genes from the input table exactly match with one specific ontological term. The _P-value_ and the _adjusted P-value_ are calculated for the difference between expected and matched numbers of hits. The gene names mapped into each specific ontological term are listed in the column _Hit names_. As the lists can get quite long, only a few gene names are shown by defaul. To get the full list, press [more].
 
-A result folder ([result example][Multiple map result]) is generated for each input list of genes or proteins and contains the converted list in Ensembl ID format ([result example][Ensembl result]) and all resulting tables of the functional classification mapping ([result example][Mapping result]). All output results can be exported to your local computer.
+A result folder is generated for each input list of genes or proteins and contains the converted list in Ensembl ID format ([result example][Ensembl result]) and all resulting tables of the functional classification mapping ([result example][Mapping result]). All output results can be exported to your local computer.
 
-[Multiple map result]: 
+[Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Multiple_gene_sets%20(Mapping%20to%20ontologies%2C%20HumanPSD)/gene_table_1/Genes%20Ensembl
 
-[Ensembl result]: 
-
-[Mapping result]: 
+[Mapping result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/Multiple_gene_sets%20(Mapping%20to%20ontologies%2C%20HumanPSD)/gene_table_1/HumanPSD%20(disease)
 
 All output results can be exported to your local computer.
 
