@@ -3071,7 +3071,7 @@ The following list gives an overview of all input parameters used in this workfl
 +------------------+---------------------------------+
 | Species          | Define the species of your data |
 +------------------+---------------------------------+
-| AnnotationSource | Ensembl annotation source file |
+| AnnotationSource | Ensembl annotation source file  |
 +------------------+---------------------------------+
 | Results folder   | Name and location of outputs    |
 +------------------+---------------------------------+
@@ -3207,7 +3207,7 @@ The following list gives an overview of all input parameters used in this workfl
 +--------------------------------------------+-------------------------------------------+
 | Transcript region                          | Select transcript region of your interest |
 +--------------------------------------------+-------------------------------------------+
-| Result folder                               | Name and location of outputs             |
+| Result folder                              | Name and location of outputs              |
 +--------------------------------------------+-------------------------------------------+
 ```
 
@@ -3274,7 +3274,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 One SNP table can be submitted in the input field **Input SNP Table** ([input example][SNP19 table]). You can drag and drop the SNP table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your SNP table. 
 
-[SNP19 table]: 
+[SNP19 table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/SNP_height
 
 For matching SNPs in exons of genes, the field **5' and 3' gene bound extension** defines the gene region of each SNP in the input table and will match the target genes, which will be further analyzed by the _SIFT analysis_. SIFT ([tool link][SIFT link]) predicts whether an amino acid substitution affects protein function based on sequence homology and the physical properties of amino acids. SIFT can be applied to naturally occurring nonsynonymous polymorphisms and laboratory-induced missense mutations.
 
@@ -3317,7 +3317,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 One SNP table can be submitted in the input field **Input SNP Table** ([input example][SNP38 table]). You can drag and drop the SNP table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your SNP table. 
 
-[SNP38 table]: 
+[SNP38 table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/200_SNPs_human
 
 For matching SNPs in exons of genes, the field **5' and 3' gene bound extension** defines the gene region of each SNP in the input table and will match the target genes, which will be further analyzed by the _SIFT analysis_. SIFT ([tool link][SIFT link]) predicts whether an amino acid substitution affects protein function based on sequence homology and the physical properties of amino acids. SIFT can be applied to naturally occurring nonsynonymous polymorphisms and laboratory-induced missense mutations.
 
@@ -3708,7 +3708,7 @@ The following list gives an overview of all input parameters used in this workfl
 +=======================+==============================================================+
 | Input Yes genes       | Input human gene table                                       |
 +-----------------------+--------------------------------------------------------------+
-| Cell_condition        | Please select the cell type of your interest                    |
+| Cell_condition        | Please select the cell type of your interest                 |
 +-----------------------+--------------------------------------------------------------+
 | TSS selection         | Specify promoter action mode                                 |
 +-----------------------+--------------------------------------------------------------+
@@ -4022,7 +4022,7 @@ The following list gives an overview of all input parameters used in this workfl
 +-----------------------+--------------------------------------------------------------+
 | Filter by Coefficient | Filter for true discovery rate (TDR)                         |
 +-----------------------+--------------------------------------------------------------+
-| Result folder        | Name and location of outputs                                 |
+| Result folder         | Name and location of outputs                                 |
 +-----------------------+--------------------------------------------------------------+
 ```
 
