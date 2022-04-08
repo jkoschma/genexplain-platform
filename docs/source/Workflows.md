@@ -3722,7 +3722,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 A human gene table ([input example][input example]) can be submitted in the input field **Input Yes genes**. You can drag and drop the human gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table must be in Ensembl format.
 
-[input example]: 
+[input example]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/COVID_genes_Upreg
 
 In this workflow promoter regions are extracted with the selected **Cell_condition** and contain cell-type-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
@@ -3733,15 +3733,18 @@ You need to define the promoter selection mode in the field **TSS selection** by
 
 Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
 
-The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 75% of true discovery rate, TDR. For 90% TDR, you can set this field to 0,270 and for 50% TDR to 0.05593. The filtered sited are used for the resulting visualization on genome browser.
+The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 50% of true discovery rate, TDR. For 75% TDR you can set this field to 0.125 and for 90% TDR, you can set this field to 0,270. The filtered sited are used for the resulting visualization on genome browser.
 
-A result folder ([result example][FantomCell result]) is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomCell summary]) and can be visualized in the genome browser as a track ([result example][FantomCell track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomCell track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomCell TFs]) with annotated GeneSymbol IDs and a short description.
+A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomCell summary]) and can be visualized in the genome browser as a track ([result example][FantomCell track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomCell2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomCell TFs]) with annotated GeneSymbol IDs and a short description.
 
-[FantomCell result]:
-[FantomCell summary]:
-[FantomCell track]:
-[FantomCell track]:
-[FantomCell TFs]:
+
+[FantomCell summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
+
+[FantomCell track]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
+
+[FantomCell2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Tissue_track
+
+[FantomCell TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
@@ -3974,7 +3977,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 A human gene table ([input example][input example]) can be submitted in the input field **Input Yes genes**. You can drag and drop the human gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table must be in Ensembl format.
 
-[input example]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/666_upreg_Ensembl-genes
+[input example]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/COVID_genes_Upreg
 
 In this workflow promoter regions are extracted with the selected **Tissue_condition** and contain tissue-specific TSS information from Fantom5 database. For the list of input genes with selected specifications a promoter transcript region track is created. The promoters have a lenght of 1100bp and are generated for your input table and the background set of 300 house-keeping genes (-1000bp relative to TSS and +100bp relative to TSS).
 
@@ -3985,14 +3988,17 @@ You need to define the promoter selection mode in the field **TSS selection** by
 
 Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
 
-The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 75% of true discovery rate, TDR. For 90% TDR, you can set this field to 0,270 and for 50% TDR to 0.05593. The filtered sited are used for the resulting visualization on genome browser.
+The enriched motifs found by MEALR (tracks) will be filtered by the column Coefficient. The default **Filter by Coefficient** is set to have 50% of true discovery rate, TDR. For 75% TDR you can set this field to 0.125 and for 90% TDR, you can set this field to 0,270. The filtered sited are used for the resulting visualization on genome browser.
 
 A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomTissue summary]) and can be visualized in the genome browser as a track ([result example][FantomTissue track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomTissue2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomTissue TFs]) with annotated GeneSymbol IDs and a short description.
 
-[FantomTissue summary]: 
-[FantomTissue track]:
-[FantomTissue track]:
-[FantomTissue TFs]:
+[FantomTissue summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
+
+[FantomTissue track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
+
+[FantomTissue2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Tissue_track
+
+[FantomTissue TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
