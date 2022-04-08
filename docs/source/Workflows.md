@@ -3738,13 +3738,13 @@ The enriched motifs found by MEALR (tracks) will be filtered by the column Coeff
 A result folder is generated and contains several tables and tracks. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][FantomCell summary]) and can be visualized in the genome browser as a track ([result example][FantomCell track]) as well as the generated promoter tracks with the tissue specific TSSs ([result example][FantomCell2 track]). The potential transcription factors are given in a final Ensembl table ([result example][FantomCell TFs]) with annotated GeneSymbol IDs and a short description.
 
 
-[FantomCell summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
+[FantomCell summary]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Enriched%20motifs%20MEALR
 
-[FantomCell track]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
+[FantomCell track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/COVID_genes_Upreg%20Yes%20sites%20opt
 
-[FantomCell2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Tissue_track
+[FantomCell2 track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Cell_track
 
-[FantomCell TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2057)%20lung%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
+[FantomCell TFs]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/COVID_genes_Upreg%20(Enriched%20motifs%20in%2013)%20bronchial%20epithelial%20cell%20--%20normal%20specific%20promoters%2C%20Transfac)/Transcription%20factors%20Ensembl%20genes
 
 All output results can be exported to your local computer.
 
