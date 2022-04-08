@@ -2903,7 +2903,7 @@ The following list gives an overview of all input parameters used in this workfl
 
 A track with ChIP-seq peaks (genomic intervalls) can be submitted in the input fields **Input track** ([input example][ChIP-seq track]).
 
-[ChIP-seq track]: 
+[ChIP-seq track]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/E2F_promoter_track
 
 You can drag and drop the ChIP-seq track from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your ChIP-seq track.
 
@@ -2928,15 +2928,15 @@ In the second part of the workflow the list of Ensembl target genes is mapped to
 
 At least two target genes must be mapped into one group (e.g. one GO term, one pathway) and a P-value threshold lower 0.05 is given for each group.
 
-A result folder ([result example][ChIP-seq result]) is generated and contains the two resulting target tables, one as a gene list  in Ensembl ID format ([result example][Ensembl result]) and another as a TRANSPATH® protein list ([result example][TP result]). All resulting tables of the functional classification mapping ([result example][Mapping result]) are given as single classification tables, and a subfolder with the clustering output is created [result example][Cluster result].
+A result folder is generated and contains the two resulting target tables, one as a gene list  in Ensembl ID format ([result example][Ensembl result]) and another as a TRANSPATH® protein list ([result example][TP result]). All resulting tables of the functional classification mapping ([result example][Mapping result]) are given as single classification tables, and a subfolder with the clustering output is created [result example][Cluster result].
 
-[ChIP-seq result]: 
+[Ensembl result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/E2F_promoter_track%20(ChIP-seq%20target%20genes%2C%20HumanPSD)/Genes%20Ensembl
 
-[Ensembl result]: 
+[TP result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/E2F_promoter_track%20(ChIP-seq%20target%20genes%2C%20HumanPSD)/Proteins%20Transpath
 
-[TP result]: 
+[Mapping result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/E2F_promoter_track%20(ChIP-seq%20target%20genes%2C%20HumanPSD)/Mapping%20to%20HumanPSD%20GO%20(disease)
 
-[Cluster result]:
+[Cluster result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/HumanPSD/E2F_promoter_track%20(ChIP-seq%20target%20genes%2C%20HumanPSD)/Proteins%20clustered/Cluster%201
 
 All output results can be exported to your local computer.
 
