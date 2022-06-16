@@ -4352,6 +4352,92 @@ All output results can be exported to your local computer.
 ### Search for self-regulating transcription factors (TRANSFAC(R) and TRANSPATH(R))
 
 ### Upstream analysis (TRANSFAC(R) and TRANSPATH(R))
+This workflow is a comprehensive promoter and pathway analysis. At the first step the promoters of differentially regulated genes are retrieved (-1000bp relative to TSS and +100bp relative to TSS) and analyzed for potential transcription factor (TF) binding sites. To identify enriched binding sites within the promoter sequences, positional weight matrices from the TRANSFAC(R) database are used while performing the method Site search on gene set. The site search result will be further converted into a table of transcription factors that potentially have regulated the DEGs. In the second step, the pathways are reconstructed that are known to activate the previously hypothesized TFs. Molecules where these pathways converge are considered as potential master regulators of the biological process under study.
+
+✨ [Open][Upstream_workflow] the workflow in the user interface.✨
+
+[Upstream_workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC%20and%20TRANSPATH/Upstream%20analysis%20(TRANSFAC(R)%20and%20TRANSPATH(R))
+
+The following list gives an overview of all input parameters used in this workflow:
+
++--------------------+-----------------------------------------------------------+
+| Parameter          | Description                                               |
++====================+===========================================================+
+| Input Yes gene set | Input gene table                                          |
++--------------------+-----------------------------------------------------------+
+| Species            | Define the species of your data                           |
++--------------------+-----------------------------------------------------------+
+| AnnotationSource   | Ensembl annotation source file                            |
++--------------------+-----------------------------------------------------------+
+| Input No gene set  | Table with background genes                               |
++--------------------+-----------------------------------------------------------+
+| Profile            | Collection of positional weight matrices from TRANSFAC(R) |
++--------------------+-----------------------------------------------------------+
+| Start of promoter  | 5 prime position relativ to TSS (base pairs)              |
++--------------------+-----------------------------------------------------------+
+| End of promoter    | 3 prime position relativ to TSS (base pairs)              |
++--------------------+-----------------------------------------------------------+
+| Results folder     | Name and location of outputs                              |
++--------------------+-----------------------------------------------------------+
+
+A gene table (input example) can be submitted in the input field **Input gene table** ([input example][input_gene_table]). You can drag and drop the input gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table can be in any format and will be converted into an Ensembl gene list.
+
+[input_gene_table]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Upregulated_top100
+
+You need to select the biological species of your data in the field **Species** by choosing the required one from the drop-down menu.
+
+For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field **AnnotationSource** to your needs.
+
+As a background set a gene table with 300 house-keeping genes will be automatically selected in the field **Input No gene set** and correspond to the species of your input gene table.
+
+Please choose in the field **Profile** a collection of positional weight matrices from TRANSFAC(R) database for performing the search of enriched transcription factor binding sites (TFBSs) in your workflow run.
+
+Specify the promoter region relative to the transcriptional start site (TSS) as they are annotated in Ensembl. The default promoter region is -1000bp and +100bp relative to the TSS of a gene. You can edit the fields **Start of promoter** and **End of promoter**  as required.
+
+A result folder is generated and contains several tables. The identified enriched transcription factor binding sites (TFBSs) are present in a summary table ([result example][Upstream_TFBS_result]) with a matrix logo and the corresponding TF name. The potential transcription factors are given in a final table ([result example][Upstream_TF_result]) with annotated GeneSymbol IDs and a short description. From the second part of the workflow a list of master regulatory molecules ([result example][Upstream_MR_result]) is generated that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is characterized by a Score, Z-score, FDR, and Ranks sum. 
+
+[Upstream_TFBS_result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Site%20search%20-1000%20%2B100/summary%20annotated
+
+[Upstream_TF_result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Transcription%20factors%20annot
+
+[Upstream_MR_result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Master%20regulators%20upstream%2010
+
+The score value of each master regulatory molecule reflects how well this molecule is connected with other molecules in the database, and how many molecules from the input list are present in the network of this master molecule. The higher the Score value, the better is this molecule connected in the database, and the more “Hits” from the input list are present in the network of this molecule. By default, only the molecules with Score > 0.2 are shown in the output.
+
+Because molecules with high Scores are well connected in the database, they are being suggested quite often by the tool as potential master regulators even with different input lists, and sometimes such molecules are also expected to be found a priori. It is possible to say that the molecules with the highest Score values are a kind of “trivial” and expected solutions. At the same time, and also because of their good connectivity, they are well studied and published. Therefore the molecules with high Score values might be biologically interesting as known “hubs” in a network.
+
+Z-score
+
+The Z-score value reflects how specific each master molecule is for the input list. The higher the Z-score value for a molecule, the more specific this molecule is for the input list, and the lesser is the probability to find such a molecule as master regulator in another analysis. Z-score and FDR are calculated based on 1000 random results, for which 1000 random input sets of the same size were generated by the algorithm.
+
+Importantly, Score and Z-score reflect different characteristics of the suggested master regulators in the networks. Molecules with high Score values are well connected in the database, and therefore not very specific for the input list, and correspondingly they have quite moderate Z-score values.
+
+Molecules with highest Z-scores are very specific for the input list, probably because of a few connections that are specific for the input list, but generally they are not so well connected within the database and therefore have quite low Score values.
+
+Sorting by Z-score and considering top molecules might be helpful if you are interested in finding novel master regulators which are specific for your input list and generally are not well studied yet. By default, only the molecules with Z-score > 1.0 are shown in the output.
+
+Ranks sum
+
+This column helps to suggest molecules for which both values, Score and Z-score, are quite good. The column Ranks sum reflects a combination of sorting by Score and by Z-score in the following way.
+
+Upon sorting by Score from biggest values to the lowest, a rank is assigned to the molecules; the molecule with the highest Score has rank 1, etc.
+
+Upon independent sorting by Z-Score from biggest values to lowest, a rank is assigned to the molecules; the molecule with the highest Z-score has rank 1, etc.
+
+Next, for each molecule, the ranks upon sorting by Score and upon sorting by Z-Score are summed up in the column Ranks Sum. The lower the Ranks sum, the more interesting the candidate molecule is, with good Score and good Z-score values.
+
+By default, the table **Master regulators upstream 10** are sorted by the Ranks sum column, to suggest molecules with a balance between their well-studied status and high connectivity (reflected by Score), and novelty and specificity for the input list (reflected by the Z-score).
+
+The top three identified master regulators (with lowest Ranks sum) are visualized in recontructed networks ([result example][Upstream_MRviz_result]).
+
+[Upstream_MRviz_result]:https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Top%203%20regulators%2C%20TIF1-beta(h)
+
+If you are interested in finding reliable well-studied master regulators, e.g. to confirm already known ones, and would like a master regulator network to contain as many molecules from the input list as possible, you might be interested to sort by Score, and consider master molecules with the highest Score values.
+
+If you are looking for novel master regulators that are very specific for your input list, even when they are not well studied yet, you might be interested to sort by Z-score, and consider master molecules with highest Z-score values.
+
+If you are looking for a good balance between well-connected molecules and novel ones specific for your input list, you might be interested to stay with the default sorting by Ranks sum, and consider master molecules with the lowest Ranks sum values.
+
 
 ### Upstream analysis with feedback loop (TRANSFAC(R) and TRANSPATH(R))
 
