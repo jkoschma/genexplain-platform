@@ -4361,6 +4361,7 @@ This workflow is a comprehensive promoter and pathway analysis. At the first ste
 
 The following list gives an overview of all input parameters used in this workflow:
 
+```eval_rst
 +--------------------+-----------------------------------------------------------+
 | Parameter          | Description                                               |
 +====================+===========================================================+
@@ -4380,6 +4381,7 @@ The following list gives an overview of all input parameters used in this workfl
 +--------------------+-----------------------------------------------------------+
 | Results folder     | Name and location of outputs                              |
 +--------------------+-----------------------------------------------------------+
+```
 
 A gene table (input example) can be submitted in the input field **Input gene table** ([input example][input_gene_table]). You can drag and drop the input gene table from your data project within the tree area or you may click into the input field (select element) and a new window will be opened, where you can select your input table. The table can be in any format and will be converted into an Ensembl gene list.
 
