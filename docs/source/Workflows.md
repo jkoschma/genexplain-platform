@@ -3623,7 +3623,7 @@ Please choose in the field Profile a collection of positional weight matrices fr
 The [result folder] contains two tables and two tracks; 
 
 [result folder]: 
-data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC)
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC)
 
 The table site optimization summary([result example][summay_TFBS]) includes the matrices the hits of which are over-represented in the Yes track versus the No track . 
 
