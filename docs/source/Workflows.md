@@ -3620,7 +3620,7 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 Please choose in the field Profile a collection of positional weight matrices from TRANSFAC(R) database for performing the search of transcription factor binding sites (TFBSs) in your workflow run. 
 
-The result folder ([result example][TFBS result]) contains two tables and two tracks; 
+The ([result folder][TFBS result]) contains two tables and two tracks; 
 
 [TFBS result]: 
 data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC). The table site optimization summary includes the matrices the hits of which are over-represented in the Yes track versus the No track ([result example][summay_TFBS]). 
@@ -3628,7 +3628,7 @@ data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19
 [summay_TFBS]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/Site%20optimization%20summary
 
-``` important:: Please note that only the matrices with Yes-No ratio higher than 1 are included in this output table. The hits of these matrices can be interpreted as over-represented in the Yes set versus No set.
+**Important:: Please note that only the matrices with Yes-No ratio higher than 1 are included in this output table. The hits of these matrices can be interpreted as over-represented in the Yes set versus No set.**
 
 Each row summarizes the information for one PWM. For each selected matrix, the columns Yes density per 1000bp and No density per 1000bp show the number of matches normalized per 1000 bp length for the sequences in the input Yes set and input No set, respectively. The Column Yes-No ratio is the ratio of the first two columns. Only matrices with a Yes-No ratio higher than 1 are included in the summary table. The higher the Yes-No ratio, the higher is the enrichment of matches for the respective matrix in the Yes set. The matrix cutoff values as they are calculated by the program at the optimization step are shown in the column Model cutoff, and the last column shows the P-value of the corresponding event.
 
