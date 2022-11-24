@@ -3562,6 +3562,7 @@ All output results can be exported to your local computer.
 This workflow helps to map putative TFBSs on peaks calculated from your ChIP-seq data. Site search is done with the help of the TRANSFAC® library of positional weight matrices, PWMs, using the pre-computed profile vertebrate_non_redundant_minSUM.
 
 ✨ [Open][Chip-seq-TFBS] the workflow in the user interface.✨
+
 [Chip-seq-TFBS]:
 https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/ChIP-Seq%20-%20Identify%20TF%20binding%20sites%20on%20peaks%20(TRANSFAC(R))
 
@@ -3603,23 +3604,24 @@ The correct Sequence source of your genomic sequences should be auto-detected.
 
 The following genome versions are available:
 
-EnsemblHuman104 GRCh38 hg38 
-EnsemblHuman100 GRCh38 hg38 
-EnsemblHuman75 GRCh37 hg19 
-EnsemblHuman52 NCBI36 hg18 
-EnsemblMouse104 GRCm39 mm39 
-EnsemblMouse100 GRCm38 mm10 
-EnsemblMouse65 NCBIM37 mm9 
-EnsemblRat104 Rnor_6.0 rn6 
-EnsemblRat100 Rnor_6.0 rn6 
-EnsemblArabidopsisThaliana100 TAIR10 TAIR10 
-EnsemblZebrafish100 GRCz11 GRCz11 
+* EnsemblHuman104 GRCh38 hg38 
+* EnsemblHuman100 GRCh38 hg38 
+* EnsemblHuman75 GRCh37 hg19 
+* EnsemblHuman52 NCBI36 hg18 
+* EnsemblMouse104 GRCm39 mm39 
+* EnsemblMouse100 GRCm38 mm10 
+* EnsemblMouse65 NCBIM37 mm9 
+* EnsemblRat104 Rnor_6.0 rn6 
+* EnsemblRat100 Rnor_6.0 rn6 
+* EnsemblArabidopsisThaliana100 TAIR10 TAIR10 
+* EnsemblZebrafish100 GRCz11 GRCz11 
 
 For gene annotation the most recent Ensembl database is used and set as default for the workflow run. You can adapt the database version in the field Annotation Source to your needs.
 
 Please choose in the field Profile a collection of positional weight matrices from TRANSFAC(R) database for performing the search of transcription factor binding sites (TFBSs) in your workflow run. 
 
 The result folder ([result example][TFBS result]) contains two tables and two tracks; 
+
 [TFBS result]: 
 data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC). The table site optimization summary includes the matrices the hits of which are over-represented in the Yes track versus the No track ([result example][summay_TFBS]). 
 
@@ -3638,15 +3640,15 @@ https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Ex
 Tracks [(Yes sites opt) [Yes_opt]] and [(No sites opt) [No_opt]] presents details for each individual match for every PWM. Columns Sequence (chromosome) name, From, To, Length and Strand show the genomic location of the match including chromosome number, start and end positions, strand and length of the match, respectively. The column Type contains information about the type of the elements; in this case all matches are considered as “TF binding site”. Further columns keep information about PWM producing each match (column Property:matrix) as well as a score of the core (column Property:coreScore) and a score for the whole matrix (column Property:score). The column Property: siteModel contains an identifier for the site model, which is the matrix together with the cutoff applied (for details about these scores, please see Kel et al., Nucleic Acids Res. 31:3576-3579, 2003).
 
 
+The tracks can be visualized in the genome browser and this view help to visually co-localize information on different tracks. 
+
+Note. This workflow is available together with a valid TRANSFAC® license.Please, feel free to ask for details (info@genexplain.com).
+
 [Yes_opt]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/GSM558469_E2F1_hg19%20filtered%20Yes%20sites%20opt
 
 [No_opt]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/Housekeeping_genes_human_track_Ensembl_100_100000_98000%20No%20sites%20opt
-
-The tracks can be visualized in the genome browser and this view help to visually co-localize information on different tracks. 
-
-Note. This workflow is available together with a valid TRANSFAC® license.Please, feel free to ask for details (info@genexplain.com).
 
 ### ChIP-Seq - Identify TF binding sites on peaks for multiple datasets (TRANSFAC(R))
 
