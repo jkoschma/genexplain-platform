@@ -3620,10 +3620,12 @@ For gene annotation the most recent Ensembl database is used and set as default 
 
 Please choose in the field Profile a collection of positional weight matrices from TRANSFAC(R) database for performing the search of transcription factor binding sites (TFBSs) in your workflow run. 
 
-The ([result folder][TFBS result]) contains two tables and two tracks; 
+The [result folder] contains two tables and two tracks; 
 
-[TFBS result]: 
-data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC). The table site optimization summary includes the matrices the hits of which are over-represented in the Yes track versus the No track ([result example][summay_TFBS]). 
+[result folder]: 
+data/Examples/User Guide/Data/Examples of workflows/Transfac/GSM558469_E2F1_hg19 filtered (Site search on track, TRANSFAC). 
+
+The table site optimization summary includes the matrices the hits of which are over-represented in the Yes track versus the No track ([result example][summay_TFBS]). 
 
 [summay_TFBS]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/Site%20optimization%20summary
@@ -3637,17 +3639,17 @@ The table transcription factors (TFs) ([result example][Transcription_factor]) a
 [Transcription_factor]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/GSM558469_E2F1_hg19%20filtered%20Transcription%20factors
 
-Tracks [(Yes sites opt) [Yes_opt]] and [(No sites opt) [No_opt]] presents details for each individual match for every PWM. Columns Sequence (chromosome) name, From, To, Length and Strand show the genomic location of the match including chromosome number, start and end positions, strand and length of the match, respectively. The column Type contains information about the type of the elements; in this case all matches are considered as “TF binding site”. Further columns keep information about PWM producing each match (column Property:matrix) as well as a score of the core (column Property:coreScore) and a score for the whole matrix (column Property:score). The column Property: siteModel contains an identifier for the site model, which is the matrix together with the cutoff applied (for details about these scores, please see Kel et al., Nucleic Acids Res. 31:3576-3579, 2003).
+Tracks [Yes sites opt] and [No sites opt] presents details for each individual match for every PWM. Columns Sequence (chromosome) name, From, To, Length and Strand show the genomic location of the match including chromosome number, start and end positions, strand and length of the match, respectively. The column Type contains information about the type of the elements; in this case all matches are considered as “TF binding site”. Further columns keep information about PWM producing each match (column Property:matrix) as well as a score of the core (column Property:coreScore) and a score for the whole matrix (column Property:score). The column Property: siteModel contains an identifier for the site model, which is the matrix together with the cutoff applied (for details about these scores, please see Kel et al., Nucleic Acids Res. 31:3576-3579, 2003).
 
 
 The tracks can be visualized in the genome browser and this view help to visually co-localize information on different tracks. 
 
 Note. This workflow is available together with a valid TRANSFAC® license.Please, feel free to ask for details (info@genexplain.com).
 
-[Yes_opt]:
+[Yes sites opt]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/GSM558469_E2F1_hg19%20filtered%20Yes%20sites%20opt
 
-[No_opt]:
+[No sites opt]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/Housekeeping_genes_human_track_Ensembl_100_100000_98000%20No%20sites%20opt
 
 ### ChIP-Seq - Identify TF binding sites on peaks for multiple datasets (TRANSFAC(R))
