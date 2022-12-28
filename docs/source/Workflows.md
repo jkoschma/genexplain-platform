@@ -3652,9 +3652,86 @@ https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Ex
 [No sites opt]:
 https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac/GSM558469_E2F1_hg19%20filtered%20(Site%20search%20on%20track%2C%20TRANSFAC)/Housekeeping_genes_human_track_Ensembl_100_100000_98000%20No%20sites%20opt
 
-### ChIP-Seq - Identify TF binding sites on peaks for multiple datasets (TRANSFAC(R))
-
 ### ChIP-Seq - Identify composite modules on peaks (TRANSFAC(R))
+
+This workflow finds pairs of TFBSs that discriminate between two tracks, the Yes and the No tracks. As the Yes track, the ChIP-seq peaks identified as binding profiles for particular transcription factors can be considered.
+
+The ChIP-seq experimental technology is widely applied to a variety of biological problems, in particular to study genome-wide histone modification profiles, e.g. histone methylation and histone acetylation profiles. Correspondingly, the same workflow in the platform can be used to analyze histone modification profiles as well.
+
+✨ [Open][workflow] the workflow in the user interface.✨
+
+[workflow]: https://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/TRANSFAC/ChIP-Seq%20-%20Identify%20composite%20modules%20on%20peaks%20(TRANSFAC(R))
+
+The following list gives an overview of all input parameters used in this workflow:
+
+```eval_rst
++------------------+-----------------------------------------------------------+
+| Parameter        | Description                                               |
++==================+===========================================================+
+| Input Yes track  | ChIP-Seq track                                            | 
++------------------+-----------------------------------------------------------+
+| Input NO track   | Background track                                          |                                  
++------------------+-----------------------------------------------------------+
+| Species          | Define the species of your data                           |
++------------------+-----------------------------------------------------------+
+| Sequence Source  |  Ensembl Genome version                                   |
++------------------+-----------------------------------------------------------+
+| AnnotationSource | Ensembl annotation source file                            |
++------------------+-----------------------------------------------------------+
+| Profile          | Collection of positional weight matrices from TRANSFAC(R) |
++------------------+-----------------------------------------------------------+
+| Minimal number of| Minimum number of pair of sites                           |
+| pairs            |                                                           |
++------------------+-----------------------------------------------------------+
+| Maximal number of| Maximum number of pair of sites                           |
+| pairs            |                                                           |
++------------------+-----------------------------------------------------------+
+| Number of        | Number of Iterations for genetic algorithm                |
+| Iterations       |                                                           |
++------------------+-----------------------------------------------------------+
+| Results Folder   | Define the species of your data                           |
+```
+
+Here, let’s consider the results of the workflow application to find composite modules in the ChIP-seq peaks identified for in-vivo-bound fragments of transcription factor E2F1 in HeLa cells, published in Gene Expression Omnibus, GSM558469.
+
+**Input Yes track** ([input example][ChIP-seq track filtered]) and **Input No track** 
+
+[ChIP-seq track filtered]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20L%3C600
+
+Input Yes track. The original track of genome-wide E2F1 binding fragments was filtered by the length shorter than 600 bp, which resulted in 249 fragments. This track of 249 fragments is used as the input Yes track. It can be found here:
+
+
+
+Input No track. A track of the far upstream fragments of the human housekeeping genes located on chromosome 1 is taken as the No track found here:
+
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/Housekeeping%20genes%20(Human)%20track%20-100000%20to%20-98000%20filtered%20chr%201
+
+The workflow input form is completed and the run is in progress:
+
+
+
+The resulting folder can be found under:
+
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells,%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20exp1000%20dist1000%20L%3C600%20(CMA%20on%20track,%20TRANSFAC)%20Pairs-8%20Iterations-300
+
+
+
+The table Site optimization summary () contains those site models, here TRANSFAC® matrices, that are over-represented in the Yes track as compared to the No track.
+
+
+
+Each row of the table represents the result for one PWM from the input profile. Only those PWMs with Yes-No ratio >1 are included in the output. Upon sorting by the Yes-No ratio, matrices for E2F factors are among top 20 lines. Please note that the p-values of E2F matrices are extremely low, which demonstrates highest statistical significance of the results.
+
+The Modules folder (). The composite module found contains two pairs, and we can see by exactly which site models (matrices) these pairs are formed as well as the statistical parameters of the overall model.
+
+
+
+Both pairs contain matrices for E2F factors.
+
+For more details on the individual output tables and tracks as well as for visualization of the identified composite modules in the genome browser please refer to the description of the method Identify composite modules.
+
+Note*.* This workflow is available together with a valid TRANSFAC® license.
+Please, feel free to ask for details (info@genexplain.com).
 
 ### Cross-species identification of enriched motifs in promoters, using orthologue information (TRANSFAC(R))
 
