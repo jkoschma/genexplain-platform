@@ -131,11 +131,11 @@ Paste the DNA sequence in the window “Type file content here”, and in the fi
 ## Upload SRA files by SRR ID
 If you would like to upload data from the Sequence Read Archive (SRA) you can do it directly using the SRR IDs of the respective samples. For this, choose the button [Raw] on the form “Import file”, and paste the SRR IDs of the sample(s) of your interest in one row as shown below:
 
-First image.png
+![](images/First image.png)
 
 When you will click on [OK], you will see that the platform has automatically detected the type of your file(s) as Sequence Read Archive files:
 
-Second image.png
+![](images/Second image.png)
 
 Click on [Start] to launch the import.
 
