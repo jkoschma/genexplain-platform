@@ -58,7 +58,7 @@ to classify or scan sequences for occurrences of combinations of transcription f
 represented by TRANSFAC&#174; PWMs. The models are taken from the MEALR library whose training data
 originate from the TRANSFAC&#174; collection of high-throughput sequencing experiments.
 
-## Input parameters
+**Input parameters**
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -73,14 +73,14 @@ originate from the TRANSFAC&#174; collection of high-throughput sequencing exper
 | Model accuracy cutoff | Select models with test set accuracy equal or better than the accuracy cutoff prior to search |
 | Output folder | Output folder for analysis results |
 
-## Classification and scan modes
+**Classification and scan modes**
 
 The _Classification mode_ evaluates input sequences as a whole, whereas the _scan mode_ analyzes
 sequence windows separated by the given _step size_ (sliding window). In scan mode, the _Best hit_
 method reports the best scoring sequence window disregarding a cutoff and the _Cutoff_ method
 reports the best non-overlapping windows satisfying the specified cutoff.
 
-### Note
+**Note**
 
 The _MEALR search_ applies sequence length limits. The minimal sequence length for _scan_ **and**
 _classification_ modes is **50** base characters. The _classification_ mode supports sequences up to
@@ -95,7 +95,7 @@ Cell and tissue sources can be selected to focus on a subset of CRMs which have 
 data from respective sources. Please note that selection of multiple cells and/or tissues gathers
 all CRMs that are associated with any one of selected sources.
 
-## Output
+**Output**
 
 The output folder encompasses a table and sequence track with information about model hits.
 The output table contains sequence start and end points of hits, model ids, match probabilities as
@@ -121,7 +121,7 @@ region as well as the genomic sequence id, start and end coordinates.
 | Probability | CRM probability |
 
 
-## Example analysis
+**Example analysis**
 
 <a href="https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/MEALR%20combinatorial%20regulation%20analysis/TRANSFAC(R)%20MEALR%20combinatorial%20regulation%20analysis">Open</a> the tool in the user interface.
 
