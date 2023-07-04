@@ -12,6 +12,7 @@ Guide
    RNA_Seq
    Proteomics_new
    Epigenomics_new
+   MEALR combinatorial regulation analysis
    Chip_seq
    Sequence_files
    miRNA
