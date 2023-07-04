@@ -1,6 +1,6 @@
 # How it works
 
-![](media/start_page.png)
+![](media/start_Page.png)
 
 ## The user interface
 
