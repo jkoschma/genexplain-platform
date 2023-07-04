@@ -3772,23 +3772,20 @@ occurs.
 
 Input parameters that can be specified for the analysis are described in the following table.
 
+```eval_rst   
 | Parameter | Description |
-| Input sequence set | Input sequences are provided by a track which can be either genomic intervals, e.g. imported as BED file, or custom sequences, e.g. imported as FASTA file. |
-
-| Cell sources | The search can focus on one or more cell sources selected from this list. The list encompasses the cell sources in which binding site locations were measured in the original experiments and on which MEALR models were eventually trained. If both cell and tissue sources are selected, the search includes all models that refer to any one of the selected cell or tissue sources. |
-
+|Input sequence set | Input sequences are provided by a track which can be either genomic intervals, e.g. imported as BED file, or custom               sequences,e.g. imported as FASTA file.|
+| Cell sources |  The search can focus on one or more cell sources selected from this list. The list encompasses the cell sources in which binding site locations
+were measured in the original experiments and on which MEALR models were eventually trained. If both cell and tissue sources are selected, the search
+includes all models that refer to any one of the selected cell or tissue source |
 | Tissue sources | The search can focus on one or more tissue sources selected from this list. The list encompasses the tissue sources in which binding site locations were measured in the original experiments and on which MEALR models were eventually trained. If both cell and tissue sources are selected, the search includes all models that refer to any one of the selected cell or tissue sources. |
-
 | Model accuracy cutoff | Models acceptable for the search can be filtered by their accuracy that has been validated by cross validation with held-out test data|
-
 |Probability cutoff | The probability cutoff filters hits to report only those whose probability of representing a potential binding site according to respective model is at least as high as the specified threshold |
-
 | Importance cutoff | TRANSFAC&reg; PWMs isolated from hits of the initial MEALR model search can be filtered to represent those with at least the specified importance weight within underlying logistic regression models. |
-
 | Reference profile | This profile specifies the cutoffs that are applied in the MATCH<sup>TM</sup> prediction of potential binding sites with the PWMs of MEALR models. |
-
 | Result folder | Results are stored in this folder |
 
+```
 **Output**
 The workflow output contains the following items.
 | Output item | Description |
