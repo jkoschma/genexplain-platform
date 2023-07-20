@@ -46,8 +46,8 @@ matrices by increasing the threshold.
 The output contains the TRANSFAC&#174; PWMs extracted from MEALR models according to specified
 cutoffs. This table can further be applied in several analyses, e.g. to extract corresponding
 transcription factors using the tool <a href=""></a> or to create a profile for binding site
-predictions (<a href="https://test2.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/Create%20profile%20from%20site%20model%20table">
-Create profile from site model table</a>) with <a href="https://test2.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/TRANSFAC(R)%20Match(TM)%20for%20tracks">MATCH<sup>TM</sup></a>.
+predictions (<a href="https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/Create%20profile%20from%20site%20model%20table">
+Create profile from site model table</a>) with <a href="https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/Site%20analysis/TRANSFAC(R)%20Match(TM)%20for%20tracks">MATCH<sup>TM</sup></a>.
 
 <table>
 <thead>
