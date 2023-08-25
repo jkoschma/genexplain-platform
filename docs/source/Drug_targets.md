@@ -148,10 +148,6 @@ The list of motifs, which were identified during the first part of the workflow
 and filtered with enrichment fold \>1 can be found in the table
 **Enriched_motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)). It contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below:
 
-The example has 86 detected motifs with enrichment fold \>1.
-
-![](media/image0111.png)
-
 The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*. This profile is an intermediate result of the workflow and is used further for *Site search on gene
 set* analysis.
 
