@@ -65,7 +65,7 @@ https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Ex
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
-![](images/image100.png)
+![](media/image100.png)
 
 The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained in there under
 “Interpretation of the results”.
