@@ -153,22 +153,19 @@ set* analysis.
 
 **Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) serves to visualize enriched motifs in the promoters. This folder contains four tracks (![](media/2acd5c07ebbaeecadf7d773c2736fbbc.png)). The output table *Transcription factors Ensembl genes* ![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)
 
-is a list of transcription factors linked to the enriched motifs. For each
-transcription factor, the Ensembl gene ID is provided, as well gene description,
+is a list of transcription factors linked to the enriched motifs. For each transcription factor, the Ensembl gene ID is provided, as well gene description,
 HGNC gene symbol, species, and site model (TRANSFAC® PWM name).
 
-This list of transcription factors is the input for the second part of the
-workflow, the master regulator search.
+This list of transcription factors is the input for the second part of the workflow, the master regulator search.
 
 **Master regulators**
 
-The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
-characterized by a Score, Z-score, FDR, and Ranks Sum.
+The primary result table [*Enriched Master regulators upstream 10*] (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
+characterized by a Score, Z-score, FDR, and Ranks Sum. 
 
-![](media/9bc30c9065a3845d03f16d0692ae54d0.png)
+[*Enriched Master regulators upstream 10*]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(enriched%20upstream%20analysis_TF%20and%20TP)/Master%20regulators%20upstream%2010
 
-The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under
-“Interpretation of the results”.
+The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under “Interpretation of the results”.
 
 The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream 10* table 
 (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
