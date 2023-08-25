@@ -230,7 +230,6 @@ The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298
 
 The three *Top 3 regulators* diagrams with Expression (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the *Master regulators with input expression_filtered* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-![](media/b893c1f4735f3008daf49b1b35133474.png)
 
 The output of the workflow shows the top master regulator huntingtin, which was found as a feedback-loop regulated molecule according to the input parameters.
 
