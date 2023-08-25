@@ -1,6 +1,6 @@
 # Drug targets
 
-![](media/image030.PNG)
+![](media/image030.png)
 
 ## Find drug targets with TRANSFAC® and GeneWays
 
