@@ -144,10 +144,11 @@ characterized by a Score, Z-score, FDR, and Ranks Sum.
 The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
 10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-The three *Top 3 regulators* diagrams with Expression (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the *Master regulators with input expression_filtered* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
+The three *Top 3 regulators* diagrams with Expression (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the [*Master regulators with input expression_filtered*] (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
+[*Master regulators with input expression_filtered*]:
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath)/Master%20regulators%20with%20input%20expression_filtered
 
-The output of the workflow shows the top master regulator huntingtin, which was found as a feedback-loop regulated molecule according to the input parameters.
 
 **Note***.* This workflow is available together with valid TRANSFAC® and
 TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
