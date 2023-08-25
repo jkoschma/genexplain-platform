@@ -29,8 +29,7 @@ set**.
 
 For this example, the further steps are demonstrated with the following input
 set:
-
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/workflows/Upregulated_top100>
 
 **Step 2**: Specify the biological species of the input set in the field
 **Species** by selecting the required species from the drop-down menu.
