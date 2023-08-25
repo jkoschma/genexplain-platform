@@ -72,17 +72,13 @@ The selection of the best master regulatory molecules based on Score, Z-score an
 
 The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
 10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
-
 ![](media/image032.png)
-
 ![](media/image033.png)
 
 **Tip for working with the diagrams**
 
-By default network diagrams are shown in the vertical hierarchical layout. The
-layout can be interactively changed into horizontal hierarchical, or force
-directed, or orthogonal layouts as described in diagram layouts. Expression data can
-be mapped on the diagrams as described in the expression mapping section.
+By default, network diagrams are shown in the vertical hierarchical layout. The layout can be interactively changed into horizontal hierarchical, or force
+directed, or orthogonal layouts as described in diagram layouts. Expression data can be mapped on the diagrams as described in the expression mapping section.
 
 **Results of the promoter analysis**
 
@@ -107,17 +103,14 @@ set**.
 For this example, all further steps are demonstrated by means of the following
 input set:
 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100>
 
-**Step 2**: Input a No gene set. This is the set of background genes or control
-set. The default No set used for this workflow is data/Examples/Sample
+**Step 2**: Input a No gene set. This is the set of background genes or control set. The default No set used for this workflow is data/Examples/Sample
 data/Data/Housekeeping genes (Human). If your Yes set is from mouse or rat, you may wish to adjust the No set accordingly.
 
-**Step 3**: Define a TRANSFAC® profile. The default profile is
-vertebrate_human_p0.001. Any other TRANSFAC® profile or user-specific profile can be chosen. With a mouse click on the field **Profile**, a pop-up window will open, where a profile can be selected.
+**Step 3**: Define a TRANSFAC® profile. The default profile is vertebrate_human_p0.001. Any other TRANSFAC® profile or user-specific profile can be chosen. With a mouse click on the field **Profile**, a pop-up window will open, where a profile can be selected.
 
-**Step 4**: Specify the biological species of the input set in the field
-**Species** by selecting the required species from the drop-down menu.
+**Step 4**: Specify the biological species of the input set in the field **Species** by selecting the required species from the drop-down menu.
 
 **Step 5:** Filter by TFBS enrichment fold: In this field you can specify the
 enrichment fold (FE) to filter the motifs. By default, FE is 1.0, which means
@@ -145,11 +138,8 @@ completed, and take a look at the results.
 
 **Visualization and interpretation of results**
 
-The result folder contains several files and is found here:
-
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(enriched%20upstream%20analysis_TF%20and%20TP)>
-
-![](media/image034.png)
+The [Enriched Upstream Analysis result] folder contains several files. 
+[Enriched Upstream Analysis result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(enriched%20upstream%20analysis_TF%20and%20TP)/Enriched%20motifs
 
 **Enriched motifs**
 
