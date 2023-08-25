@@ -55,13 +55,9 @@ field **Results folder**, and a new window will open, where you can select the
 location of the results folder and define its name.
 
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
-completed, and take a look at the results.
+completed, and take a look at the [results].
 
 **Visualization and interpretation of results**
-
-The result folder contains several files and one subfolder:
-
-![](media/7c75fc51d2bf2a43e208938ff09437ef.png)
 
 **Master regulators**
 
