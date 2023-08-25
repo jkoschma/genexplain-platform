@@ -100,11 +100,10 @@ This workflow enables a complete upstream analysis using the newest algorithm to
 regulated genes, as the Input Yes gene set. You can drag & drop it from your
 project within the Tree Area and drop in the pink box of the field **Input gene
 set**.
+[input set used for example]
 
-For this example, all further steps are demonstrated by means of the following
-input set:
-
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100>
+[input set used for example]:
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100
 
 **Step 2**: Input a No gene set. This is the set of background genes or control set. The default No set used for this workflow is data/Examples/Sample
 data/Data/Housekeeping genes (Human). If your Yes set is from mouse or rat, you may wish to adjust the No set accordingly.
