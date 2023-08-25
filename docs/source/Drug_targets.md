@@ -188,7 +188,7 @@ set**.
 For this example, all further steps are demonstrated with the following input
 set:
 
-<http://platform.genexplain.com:8080/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/UpDownReg%20Ensembl%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100>
 
 **Step 2**: Specify the biological species of the input set in the field
 **Species** by selecting the required species from the drop-down menu.
@@ -214,19 +214,14 @@ completed, and take a look at the results.
 
 **Visualization and interpretation of results**
 
-The example result folder is here: data/Examples/Brain Tumor GSE1825, Affymetrix HG-U133A microarray/Data/Ewing Family Tumor versus Neuroblastoma/Upstream analysis with feedback loop (Transfac and Transpath) and contains several files.
-
-![](media/2a96575023aea79cd1816705428ac072.png)
+The Output folder for Upstream Analysis with feedback loop is here:  data/Examples/User Guide/Data/Examples of workflows/Transfac and Transpath/Upregulated Ensembl genes filtered (logFC>1) subsetTop100 (Upstream analysis with feedback Transfac and Transpath) and contains several files.
 
 **Master regulators**
 
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
-![](media/be7a3ab016f68fb7714daeecac453a8b.png)
-
- The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under
-“Interpretation of the results”.
+ The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained therein under “Interpretation of the results”.
 
 The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298d.png))visualize the networks for each of the three top master regulators. By default, the top regulators are identified upon sorting the *Master regulators upstream
 10* table (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
