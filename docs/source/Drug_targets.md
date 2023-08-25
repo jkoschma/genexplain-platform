@@ -55,8 +55,8 @@ field **Results folder**, and a new window will open, where you can select the
 location of the results folder and define its name.
 
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
-completed, and take a look at the [results].
-[results]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Site%20search%20-1000%20%2B100/summary
+completed, and take a look at the results here:
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Site%20search%20-1000%20%2B100/summary
 
 **Visualization and interpretation of results**
 
@@ -65,7 +65,7 @@ completed, and take a look at the [results].
 The primary result table *Master regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at a distance of up to 10 steps upstream of the input TFs. Each master regulatory molecule is
 characterized by a Score, Z-score, FDR, and Ranks Sum.
 
-![](media/image031.png)
+![](media/image100.PNG)
 
 The selection of the best master regulatory molecules based on Score, Z-score and Ranks sum is explained in there under
 “Interpretation of the results”.
