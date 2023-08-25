@@ -139,6 +139,7 @@ completed, and take a look at the results.
 **Visualization and interpretation of results**
 
 The [Enriched Upstream Analysis result] folder contains several files. 
+
 [Enriched Upstream Analysis result]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(enriched%20upstream%20analysis_TF%20and%20TP)/Enriched%20motifs
 
 **Enriched motifs**
@@ -149,7 +150,7 @@ and filtered with enrichment fold \>1 can be found in the table
 
 The example has 86 detected motifs with enrichment fold \>1.
 
-![](media/image035.png)
+![](media/image0111.png)
 
 The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*. This profile is an intermediate result of the workflow and is used further for *Site search on gene
 set* analysis.
