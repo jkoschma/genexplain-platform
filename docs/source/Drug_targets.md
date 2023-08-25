@@ -132,7 +132,7 @@ completed, and take a look at the results.
 
 The [Output folder for Upstream Analysis with feedback loop] contains several files and can be accessed from the link below:
 
-[Output folder for Upstream Analysis with feedback loop]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath
+[Output folder for Upstream Analysis with feedback loop]: https://platform.genexplain.com/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath/Transcription%20factors%20annot
 
 **Master regulators**
 
@@ -147,7 +147,7 @@ The three *Top 3 regulators* diagrams (![](media/094b03a9bf23c613aa111e7f3a9c298
 The three *Top 3 regulators* diagrams with Expression (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) visualize the networks for each of the three top master regulators, which have expression values from the input table. These master regulators with expression values are the results of a feedback loop; they are regulated by themselves. By default, the top regulators with expression values are identified upon sorting the [*Master regulators with input expression_filtered*] (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
 [*Master regulators with input expression_filtered*]:
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath)/Master%20regulators%20with%20input%20expression_filtered
+https://platform.genexplain.com/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath/Master%20regulators%20with%20input%20expression_filtered
 
 
 **Note***.* This workflow is available together with valid TRANSFAC® and
