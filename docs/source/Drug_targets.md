@@ -55,8 +55,9 @@ field **Results folder**, and a new window will open, where you can select the
 location of the results folder and define its name.
 
 **Step 7**: Press the [Run workflow] button. Wait until the workflow is
-completed, and take a look at the results here:
-https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Site%20search%20-1000%20%2B100/summary
+completed, and take a look at the [Upstream Analysis results]
+
+[Upstream Analysis results]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated_top100%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Site%20search%20-1000%20%2B100/summary
 
 **Visualization and interpretation of results**
 
