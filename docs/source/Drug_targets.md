@@ -132,7 +132,7 @@ completed, and take a look at the results.
 
 The [Output folder for Upstream Analysis with feedback loop] contains several files and can be accessed from the link below:
 
-[Output folder for Upstream Analysis with feedback loop]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20subsetTop100%20(Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath)
+[Output folder for Upstream Analysis with feedback loop]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transfac%20and%20Transpath/Upregulated%20Ensembl%20genes%20Upstream%20analysis%20with%20feedback%20Transfac%20and%20Transpath
 
 **Master regulators**
 
