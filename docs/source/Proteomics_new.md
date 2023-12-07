@@ -1,6 +1,8 @@
 # Proteomics
 
-![](media/image080.png)
+<!--![](media/image080.png)-->
+
+![](new_images/proteomics/proteomics1.png)
 
 ## Analyze networks
 
@@ -10,13 +12,13 @@ Potential master regulators of the processes analyzed in a typical proteomics
 experiment can be identified with the aid of pathway databases. The geneXplain
 platform support works with the TRANSPATH database (license required)
 or with the public GeneWays database. More details about both these
-database can be found in the databases section.
+databases can be found in the databases section.
 
 #### Find master regulators with TRANSPATH®
 
 As elsewhere, these workflows can be used to analyze data of a **single protein
 table** or to mine **multiple protein sets**. These two options will be
-explained in the following, complemented by a more detailed explanation how the
+explained in the following, complemented by a more detailed explanation of how the
 **interpretation of the results** should be done.
 
 ##### Analyze a single gene table
@@ -31,7 +33,9 @@ To launch the workflow, follow these steps:
 **Step 1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/2630f8692349f3032e7010b5b6d4f684.png)
+<!--![](media/2630f8692349f3032e7010b5b6d4f684.png)-->
+
+![](new_images/proteomics/proteomics2.png)
 
 **Step2.** Specify input gene set. The input gene set might be a list of
 differentially regulated genes or any gene or protein list of interest. You can
@@ -44,9 +48,11 @@ The further steps of the workflow are demonstrated by means of the genes shown
 to be up-regulated in one of the pre-prepared examples. The pertinent example
 file can be found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+<https://platform.genexplain.com/#de=data/Examples/TNF-stimulation%20of%20HUVECs%20GSE2639%2C%20Affymetrix%20HG-U133A%20microarray/Data/Upregulated%20Ensembl%20genes%20(Master%20regulators%20Transpath)/Regulator%20genes>
 
-![](media/ba4dc3a97115a0dc173550cd7fb09f54.png)
+<!--![](media/ba4dc3a97115a0dc173550cd7fb09f54.png)-->
+
+![](new_images/proteomics/proteomics3.png)
 
 When you have selected the gene set, press [Ok].
 
@@ -60,24 +66,32 @@ tree. You can do so by clicking on the pink field “select element” in the fi
 location of the results folder and define its name (below default output name is
 shown).
 
-![](media/ac52b19b89fdd3d0af0c90dcac35c771.png)
+<!--![](media/ac52b19b89fdd3d0af0c90dcac35c771.png)-->
+
+![](new_images/proteomics/proteomics4.png)
 
 After you have given the name, press [Ok].
 
 **Step5.** Press the [Run workflow] button. Wait until the workflow is
 completed, which is shown below:
 
-![](media/3f496695a39bcb32b4e0f7faee3fe5e1.png)
+<!--![](media/3f496695a39bcb32b4e0f7faee3fe5e1.png)-->
+
+![](new_images/proteomics/proteomics5.png)
 
 The results folder contains several files.
 
-![](media/1ef3d0598b7c19066fb17c4f0516fff0.png)
+<!--![](media/1ef3d0598b7c19066fb17c4f0516fff0.png)-->
+
+![](new_images/proteomics/proteomics6.png)
 
 The primary result table *Regulators upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is a list of master regulatory molecules that were identified at the distance up to 10 steps upstream of the input molecules. Each master regulatory molecule
 is characterized by a Score, Z-score, FDR, and Ranks Sum. Further details about
 these parameters can be found below, under “Interpretation of the results”.
 
-![](media/image081.png)
+<!--![](media/image081.png)-->
+
+![](new_images/proteomics/proteomics7.png)
 
 The column “Reached from set” shows the number of the molecules from the input
 set that is reached from the respective master regulator, and these molecules
@@ -101,7 +115,9 @@ The three diagrams *Top 3 regulators* (![](media/094b03a9bf23c613aa111e7f3a9c298
 By default, the top regulators are identified upon sorting the table *Regulators
 upstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) by the column **Ranks sum** with the lowest rank on top.
 
-![](media/21422e2a8c33fc7748bd2ccc1808d661.png)
+<!--![](media/21422e2a8c33fc7748bd2ccc1808d661.png)-->
+
+![](new_images/proteomics/proteomics8.png)
 
 The default color code for the molecules is the following:  
 **blue:** molecules from the input list  
@@ -127,12 +143,14 @@ can select the analysis box you would like to modify. On the screenshot below
 tab "Workflow", all the parameters are visible. Under this mode, you can modify
 default parameters and then save the workflow.
 
-![](media/6d30331150608160ad6917c2016762f3.png)
+<!--![](media/6d30331150608160ad6917c2016762f3.png)-->
+
+![](new_images/proteomics/proteomics9.png)
 
 In this way you will get a customized workflow, with the parameters specified
 according to your needs.
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license.  
+**Note** This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 ##### Analyze multiple gene sets
@@ -168,17 +186,19 @@ interesting as known “hubs” in a network.
 
 Let’s have a look at the table *Regulators Upstream 10*, available here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010>
+<https://platform.genexplain.com/bioumlweb/#de=data/Projects/Example/Data/Regulator%20genes%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010>
 
 In the screenshot below, the table has been sorted by Score, and we can see
-Ku80, MULE-isoform1, NRG1 as the three top molecules with highest Score values.
+PTP1B(h), Ubc5C(h), AKT-1(h) as the three top molecules with highest Score values.
 These are well-studied molecules, and in many cases there is no surprise for the
 researcher to find such molecules as master regulators; it is a kind of expected
 result. However, master regulators with high Scores might be of interest if you
 are looking for well-studied reliable molecules, and would like to see many of
 the input molecules connected by such master regulators (**Hit names**).
 
-![](media/image117.png)
+<!--![](media/image117.png)-->
+
+![](new_images/proteomics/proteomics10.png)
 
 **Z-score**
 
@@ -209,7 +229,9 @@ we can see different molecules on top. Even by the names of these molecules the
 expert can see that they are not coming up so often in the literature, and might
 represent interesting novel candidates.
 
-![](media/image108.png)
+<!--![](media/image108.png)-->
+
+![](new_images/proteomics/proteomics11.png)
 
 **Ranks sum**
 
@@ -236,7 +258,9 @@ extent specific for the input list. In this example, Score values for the top
 molecules are between 0.28 and 0.36 (moderate), Z-score values vary between 2.8
 and 3.1 (good Z-score values, but not the best in this table).
 
-![](media/image082.png)
+<!--![](media/image082.png)-->
+
+![](new_images/proteomics/proteomics12.png)
 
 By default, the table *Regulators Upstream 10* are sorted by the **Ranks sum**
 column, to suggest molecules with a balance between their well-studied status
@@ -255,7 +279,7 @@ As annotation source, you can select the table of genes expressed in the same
 experiment, e.g. the table of all expressed genes that resulted from the
 workflow “Detect differentially expressed genes” can be found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
 
 As “Annotation column” you can select **LogFoldChange**, and as a result the
 suggested master regulators are annotated by their expression.
@@ -306,7 +330,9 @@ To launch the workflow, follow these steps:
 **Step 1.** Open the workflow input form via the Start page. It looks as shown
 below:
 
-![](media/6ecc78de21619234b11342b5d6c6cf7b.png)
+<!--![](media/6ecc78de21619234b11342b5d6c6cf7b.png)-->
+
+![](new_images/proteomics/proteomics13.png)
 
 **Step2.** Specify the input gene set. The input gene set might be a list of
 differentially regulated genes or any gene or protein list of interest. You can
@@ -319,9 +345,11 @@ The further steps of this workflow are demonstrated with genes shown to be
 up-regulated in one of the examples. The example file can be accessed using the
 URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Get%20Transcripts%20track%20input/Downregulated%20Ensembl%20genes%20filtered%20(logFC%3C-2)%20Transcripts%20Ensembl>
 
-![](media/ba4808538780b543e21797b67fc1e4c4.png)
+<!--![](media/ba4808538780b543e21797b67fc1e4c4.png)-->
+
+![](new_images/proteomics/proteomics14.png)
 
 After you have selected the gene set, press [Ok].
 
@@ -334,27 +362,32 @@ tree. You can do so by clicking on the pink field “select element” in the fi
 location of the results folder and define its name (below default output name is
 shown).
 
-![](media/ad41669a21186b9167cf142185a384b1.png)
+<!--![](media/ad41669a21186b9167cf142185a384b1.png)-->
+
+![](new_images/proteomics/proteomics15.png)
 
 After you have specified the name, press [Ok].
 
 **Step 5.** Press the button [Run workflow]. Wait until the workflow is
 completed, which is shown below:
 
-![](media/b7fd854402a186fc2f1f1869389fdc29.png)
+<!--![](media/b7fd854402a186fc2f1f1869389fdc29.png)-->
+
+![](new_images/proteomics/proteomics16.png)
 
 The results folder contains several files as shown here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Common%20effectors%20Transpath)/Effectors%20downstream%2010>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Transpath/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Common%20effectors%20Transpath)/Effector%20genes%20annot>
 
-
-![](media/image109.png)
+![](new_images/proteomics/proteomics17.png)
 
 The primary result table *Effectors downstream 10* (![](media/5b3535df9d4879cfc60672fb8ca6a0a4.png)) is the list of effector molecules that were identified at the distance up to 10 steps downstream of the input molecules. Each effector molecule is
 characterized by Score, Z-score, FDR, and Ranks Sum. Further details about these
 parameters can be found under “Interpretation of the results”.
 
-![](media/509b5cfdbbc55ddc411d258bb2be8745.png)
+<!--![](media/509b5cfdbbc55ddc411d258bb2be8745.png)-->
+
+![](new_images/proteomics/proteomics18.png)
 
 The column **Reached from set** shows the number of molecules from the input
 list from which the respective effector molecule can be reached.
@@ -368,7 +401,7 @@ table *Effectors downstream 10* by mouse click, and you can visualize the
 network of the selected Effectors (![](media/5e26364a23d378c5e167d19fa6076cee.png)), save the network as a list of genes in the Tree Area (![](media/bec3c0dac181db1fc96d5d2772ae0ab9.png)), or save hits of this network from the column **Hits** as a list of genes in
 the Tree Area (![](media/36471870e240f79b9f153bab8f0e6c79.png)).
 
-The table *Effector genes annot* (![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)) corresponds to the table *Effectors downstream 10* converted into Ensembl IDs and additionally annotated with gene symbols and gene descriptions.
+The table *Effector genes annot* (![](media/f044fa62fd4ed8b5cf233c608c6f5893.png)) corresponds to the table *Effectors downstream 10*  converted into Ensembl IDs and additionally annotated with gene symbols and gene descriptions.
 
 The table *Effector proteins* (![](media/a929c27e1f52037c707289c0fb4b34f8.png)) corresponds to the table *Effectors downstream 10* converted into the UniProt IDs. The table *Transpath peptides* (![](media/image083.png)) corresponds to the table *Effectors downstream 10* converted into TRANSPATH® molecule IDs, and in the table *Transpath peptides annot* they are further
 annotated with gene symbols and gene descriptions.
@@ -391,7 +424,9 @@ downstream 10* and select a row with a single mouse click as shown below. Click
 on ![](media/0758a1053487de946b8f031df0f90b95.png) menu button to visualize the selected row and save the new diagram into the
 tree.
 
-![](media/5174e2453d1c9c89ddddc3c03b3590cd.png)
+<!--![](media/5174e2453d1c9c89ddddc3c03b3590cd.png)-->
+
+![](new_images/proteomics/proteomics19.png)
 
 **Tip for the workflow editing**
 
@@ -411,9 +446,11 @@ default parameters and then save the workflow.
 In this way you will get a customized workflow, with the parameters adapted to
 your needs.
 
-![](media/77b84545cebb36a5c76a5e201a4f489b.png)
+<!--![](media/77b84545cebb36a5c76a5e201a4f489b.png)-->
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license.  
+![](new_images/proteomics/proteomics20.png)
+
+**Note** This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 #### Find common effectors with GeneWays
@@ -440,12 +477,14 @@ manipulation/ Molecular networks/Cluster by shortest path (![](media/image110.pn
 
 Here the default input form is shown:
 
-![](media/image111.png)
+![](new_images/proteomics/proteomics21.png)
 
 When the expert options are opened, an additional field *Input size* appears,
 and the form looks like:
 
-![](media/704779b156c6d3260f8d504a89dff608.png)
+<!--![](media/704779b156c6d3260f8d504a89dff608.png)-->
+
+![](new_images/proteomics/proteomics22.png)
 
 In the following, we will consider the input fields one by one.
 
@@ -456,7 +495,7 @@ table. You can choose a search collection from the drop-down menu, as shown on
 the screenshot below. Four search collections are available: GeneWays, HMR,
 Recon2, Reactome, TRANSPATH® (Species specific).
 
-![](media/3fec10162513cc8cd70d684deec43c7d.png)
+![](new_images/proteomics/proteomics23.png)
 
 If you are interested in applying TRANSPATH®, you have to choose either the
 *Species specific* or the *TF specific* collection. This choice depends on the
@@ -500,7 +539,7 @@ output folder.
 Having filled the input form, launch the analysis with the [Run] button.
 Analysis progresses as shown below. Wait till the analysis is completed.
 
-![](media/image112.png)
+![](new_images/proteomics/proteomics24.png)
 
 #### Results
 
@@ -508,29 +547,20 @@ As a result of this analysis, a folder with a specified name is formed. This fol
 which represents the list of all identified clusters, and several diagrams corresponding to the number of the identified clusters. 
 Output Folder is here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate>
+<https://platform.genexplain.com/bioumlweb/#de=data/Projects/Test%20121/Data/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20Proteins%20Transpath/Cluster%201>
 
-![](media/image113.png)
+![](new_images/proteomics/proteomics25.png)
 
 The table *Clusters* (![](media/clusters.png)) contains a list of all identified clusters, here 9, shown below. Each row
 shows details for one cluster. The clusters are sorted by their size with the
 largest cluster on top. The symbol (![](media/094b03a9bf23c613aa111e7f3a9c298d.png)) next to each cluster name in the column **Diagram** can be used for visualization. The column **Hit names** contains the names of the TRANSPATH®
 proteins in each cluster.
 
-![](media/image114.png)
+![](new_images/proteomics/proteomics26.png)
 
- *Cluster 1* can be visulaized here :
- 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203/Cluster%201>
- 
-In this figure, the box **Display intermediate molecules** was unchecked, default setting. All the molecules shown are coming
-from the input gene/protein set. The numbers on the arrows correspond to the number of steps between two molecules.
-
-When the box **Display intermediate molecules** is checked, the same *Cluster 1* can be visualized here:
-
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20Transpath%20peptides%20TP%20peptides%20shortest%20path%20Both%203_with%20intermediate/Cluster%201>
+ *Cluster 1* can be visualized here by clicking on it in the column **Diagram**.
+  
+In this figure, the parameter **Display intermediate molecules** was unchecked in the workflow, default setting. All the molecules shown are coming from the input gene/protein set. The numbers on the arrows correspond to the number of steps between two molecules.
 
 Molecules shown in blue color are coming from the input gene/protein list, and those in green are added by the algorithm when
 necessary for the connectivity between the input molecules. These green molecules are so-called intermediate molecules.
-
-
