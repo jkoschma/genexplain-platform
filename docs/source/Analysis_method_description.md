@@ -10,36 +10,126 @@ termed SNP matching. Using this method and an SNP table (derived after sequencin
 
 By default the SNP matching tool looks as shown below:
 
-![](media/c6f8a970a2834ee8840b90637eeb2b3f.png)
+![](new_images/analysis_methods/1.png)
 
 Example:
 
 An example data file to be used as an input table for SNP matching may look like
 this:
 
-![](media/af9d726547d15813e11d89e132a5df1e.png)
+![](new_images/analysis_methods/2.png)
 
+<!--
 In this table, ID is the SNP identifier, CHR is the chromosome, P is some
 p-value, and POS_B36 is the genomic position of a given SNP in NCBI-build36
 human genome.
+-->
 
 You can save this table in the repository and input the saved table in the SNP
 matching tool. The tool yields three output files as shown below:
 
-Output table 1 (ALC_SNPs_annotated)
+Output table 1 (SNPs_annotated)
 
-![](media/cc4b87de632222049454c568ea235817.png)
+![](new_images/analysis_methods/3.png)
 
-Output table 2 (ALC_SNPs_genes)
+Output table 2 (SNPs_genes)
 
-![](media/6b8857d473a45391369f81f9cd962f52.png)
+![](new_images/analysis_methods/4.png)
 
-Output table 3 (ALC_SNPs_track)
+Output table 3 (track)
 
-![](media/3ea64da1ebe491c6ecc857d2c1dc04e3.png)
+![](new_images/analysis_methods/1.png)
 
 The output tables can be further used for any other analysis of the geneXplain
 platform.
+
+## Molecular networks
+
+**Goal**: to search for important molecules in signal transduction cascade.
+
+### Input and output
+
+**Input**: a set of genes/molecules to start analysis with. For instance, this can be a set of transcription factors, which may result from a promoter analysis or a set of ligands/receptors that trigger a certain (set of) pathway(s).
+
+Two separate analyses are available:
+
+- **Effector search** for molecules downstream of the molecules in the input list
+- **Regulator search** for molecules upstream of the molecules in the input list
+
+**Output**: a set of proteins or their encoding genes, which may play a key role in regulating (or being regulated by) a maximal number of start molecules.
+
+### Parameters
+
+- **Molecules collection** – Input the collection of molecules/genes
+- **Weighting column** (expert) – Column to replace weights in search graph
+- **Limit input size (expert) – Limit size of input list
+- **Input size** (expert) – Size of input list
+- **Max radius** – Maximal search radius
+- **Score cutoff** – Molecules with Score lower than specified will be excluded from the result
+- **Search collection** – Collection containing reactions
+- **Custom search collection** – Path to the custom search collection
+- **Relation sign** – Consider only specified type of relation chain between molecules.
+- **Species** – Species to which analysis should be confined
+- **Calculate FDR** – If true, analysis will calculate False Discovery Rate
+- **FDR cutoff** – Molecules with FDR higher than specified will be excluded from the result
+- **Z-score cutoff** – Molecules with Z-score lower than specified will be excluded from the result
+- **Random seed** – Seed for FDR random generator
+- **Penalty** (expert) – Penalty value for false positives
+- **Decorators** – Possibility to modify search collection with custom interaction sets
+- **Normalize multi-forms** (expert) – Normalize weights of multiple forms
+- **Output name** – Output name.
+
+### Alforithm description
+
+In drug target search analysis one searches for signaling molecules and corresponding networks that can transmit a signal to or receive a signal from several of input molecules within a certain limit of reaction steps. A search starts from each molecule of an input set *V<sub>x</sub>* and constructs the shortest paths to all nodes *V* of the complete network within a given maximal path cost *R* (i.e, the sum of the costs of all edges in the shortest path from a vertex in *V<sub>x</sub>* to a vertex in *V* should be smaller than or equal to *R*). The search can be conducted in reverse direction of the edges leading to input molecules (upstream) or in the same direction (downstream).
+
+The **Specificity score** is calculated for every molecule found according to:
+
+![](new_images/analysis_methods/6.png)
+
+Where:
+- **R** — Max radius (input parameter)
+- **p** — Penalty (input parameter)
+- **N(X,r)** — total number of molecules reachable from key molecule X within the radius r.
+- **N<sub>max</sub>(r)** — maximal value of *N(X,r)* over all key molecules X found for this radius.
+- **M(X,r)** — sum of *w(X)* for all hits reachable from key molecule X within the radius r, where *w(X)* — weight of hit X. It equals to *w<sub>b</sub>(X)* if “Normalize multi-forms” is unchecked. Otherwise it’s *w<sub>b</sub>(X)/I(X)*, where *I(X)* is the number of multiforms of X in the input set (not total number of multiforms in the database). In both cases *w<sub>b</sub>(X)* is the base weight of hit X. It equals the corresponding value in “Weighting column” or 1 if “Weighting column” is not specified.
+- **M<sub>max</sub>(r)** — maximal value of *M(X,r)* over all key molecules X found for this radius.
+
+**FDR**
+
+Each individual drug target molecule gets a *p*-value (FDR) assigned, which represents the probability to occupy the observed rank or higher ranks by random chance. It is estimated on-the-fly by random sampling. The ranking of the key nodes is defined by sorting them according to the Score above in descending order. It should be noted that the rank is defined by the ranks of the occurring scores, which means that more than one key node can share the same score value in some cases. Molecules which do not have any hits get assigned the last rank since the score is zero in this case.
+
+**Z-Score**
+
+In addition to the FDR, each drug target molecule gets a *Z*-Score
+
+![](new_images/analysis_methods/7.png)
+
+which measures the deviation of the observed rank *X* of the key node from the expected rank *μ* in random case, divided by the standard deviation. In this formula, the rank above distribution is assumed to comply the normal distribution. Key nodes with *Z* greater than 1.0 are considered significant.
+
+**Context algorithm**
+
+For the purpose of incorporating additional contextual knowledge, e.g. a certain disease which we know to be related to the anticipated analysis, we implemented a method which encodes this additional context information as modified edge costs in the signaling network. The context information has to be provided as a second gene set (context genes). The idea is based on attracting the drug target molecule search (e.g. the underlying Dijkstra algorithm for shortest paths) towards context genes by decreasing the costs of those edges that are close to the context genes. It features two major aspects:
+
+1. Attraction ("gravity") of the shortest-paths towards context genes C
+2. Distribution of the attraction power to an extended surrounding area around C in order to prefer shortest paths close to context genes in case there is no path possible that goes through the context gene directly. ("gravity range").
+
+### Result columns
+
+- **ID** — key molecule identifier in respective database
+- **Key molecule name** — molecule title
+- **Reached from set** — number of molecules from input set, that were reached from key molecule within the distance given
+- **Reachable total** — total number of molecules, that can be reached from key molecule within the distance given
+- **Score** — specificity score value calculated as described above
+- **FDR** — *p*-value, which represents the probability to occupy the observed rank or higher ranks by random chance
+- **Z-Score** — z-score, according the equation above
+- **Hits** — identifiers of molecules from input set, that were reached from key molecule within the distance given
+- **Hits names** — titles of molecules from input set, that were reached from key molecule within the distance given
+
+### References
+
+1. Kel, A., Voss, N., Jauregui, R., Kel-Margoulis, O. and Wingender, E.: Beyond microarrays: Find key transcription factors controlling signal transduction pathways BMC Bioinformatics 7(Suppl. 2), S13 (2006).
+
 
 ## Site search on gene set
 
@@ -52,7 +142,7 @@ matrices with a particular threshold (profile).
 
 The initial form of this analysis looks as it is shown below:
 
-![](media/339db7d329ff8561fd38a132a4cb5066.png)
+![](new_images/analysis_methods/8.png)
 
 To perform this analysis you have to input two datasets:
 
@@ -90,17 +180,17 @@ You also have the option to import matrices and profiles into the geneXplain pla
 To perform site search following steps are recommended:
 
 **Step 1.** Input Yes set from the tree
-
+<!--
 Here, the set of genes from the Example folder is used as input Yes set :
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
-
+-->
 
 **Step 2.** Input pre-saved No set. You can drag-and-drop as usual. Here, the
 set of human housekeeping genes from the Example folder is used as input No set,
 highlighted blue on the screenshot below:
 
-![](media/ca39eb7bc9ee639b6ef5f2776bcd77a2.png)
+<!--![](media/ca39eb7bc9ee639b6ef5f2776bcd77a2.png)-->
 
 **Step 3.** Select the species and the promoter length. By default the promoter
 length is set as -1000 to +100 relative to the TSS. In this example, the range  
@@ -108,9 +198,9 @@ length is set as -1000 to +100 relative to the TSS. In this example, the range
 
 **Step 4.** Select the TRANSFAC® or GTRD profile from the pre-saved profiles in
 the tool. In this example the default TRANSFAC® profile
-*vertebrate_non_redundant_minSUM* is used:
+*vertebrate_non_redundant_minSUM* is used.
 
-![](media/554a372fac06348c4baff012f89dfc58.png)
+<!--![](media/554a372fac06348c4baff012f89dfc58.png)-->
 
 **Step 5.** Identify the output path. Define where the folder with the results
 should be located in your project tree. You can do so by clicking on the pink
@@ -118,13 +208,11 @@ field “select element” in the field Output path, and a new window will be
 opened, where you can select the location of the results folder and define its
 name.
 
-Important: please define the output path within one of your Project folders.
-
 Press [Run].
 
 The analysis will start as shown below:
 
-![](media/7c781173aee3e7269ab433fe28894d20.png)
+![](new_images/analysis_methods/9.png)
 
 Wait until the analysis is complete as shown by the progress bar. The output of
 Site search on gene set contains one table and six tracks:
@@ -135,7 +223,7 @@ summary table (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)), yes promoters (
 platform when the analysis is completed. An example of the summary table is
 shown below:
 
-![](media/128c4b6580c00f953f4ed4c0d56fcfc1.png)
+![](new_images/analysis_methods/10.png)
 
 Each row summarizes the information for one PWM. For each selected matrix, the
 columns Yes density per 1000bp and No density per 1000bp show the number of
@@ -198,19 +286,19 @@ tip in the Section sites visualization.
 
 Having the summary table opened in the work space, you can select different rows
 and apply a couple of different functions with the help of the buttons on the
-top menu bar. These five buttons are marked by red oval in the figure below.
+top menu bar. These five buttons are in the top middle in the figure below.
 
-![](media/b2501c8557e23ab1ba4d04b38d718973.png)
+![](new_images/analysis_methods/11.png)
 
 To get a visualization of TFBS for individual genes, the button ![](media/503b082a4dfba6501516b36e7808098b.png) should be applied on the selected matrices. After click on this button, two new files will be saved in the tree area, 
 a table ![](media/f72f0003eb6573163575aa494c050331.jpg) and a track ![](media/d5eeb5ca90cb5d665ad192f9464ccf54.png), as shown below. The table is automatically opened in the Work Space.
 
-![](media/e979e2e02b108f9e01a490c7babecae8.png)
+![](new_images/analysis_methods/12.png)
 
 Let’s consider this table in more detail. Each row corresponds to one individual
 gene.
 
-![](media/373acc324fbe4c79de5cd7d3ce69f7b7.png)
+<!--![](media/373acc324fbe4c79de5cd7d3ce69f7b7.png)-->
 
 The column ID presents the Ensembl ID for each gene, and the gene symbol is
 shown in the column Symbol. The column Sites view shows a schematic
@@ -221,7 +309,7 @@ matrices together in the promoter of each particular gene. The next columns are
 named as matrices in the summary table and represent the number of TFBSs for
 each matrix in each particular gene.
 
-On the picture above the table is sorted by the column Total count, and on the
+In the picture above the table is sorted by the column Total count, and on the
 top we can see those genes that contain the highest total number of sites. This
 table can be sorted by different columns corresponding to individual matrices,
 and then on the top you will see those genes that contain the highest number of
@@ -261,7 +349,7 @@ contains site models linked to the transcription factors in the input gene set.
 
 The input form when opened in the work space is shown below:
 
-![](media/5ba54a712db3e8683d047b2dae300b89.png)
+![](new_images/analysis_methods/13.png)
 
 In the following, we will consider each of the input fields.
 
@@ -272,8 +360,7 @@ matrices will be put into the newly created profile.
 
 Further steps are demonstrated with the table of genes present here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered>
-
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20Transcripts%20Ensembl>
 
 **Species:** Select the biological species corresponding to the input gene set from
 the drop-down menu.
@@ -289,20 +376,22 @@ selection is done, press [Ok].
 
 Please note that this analysis method works only for the TRANSFAC® profiles.
 
-![](media/e4cfeb2fbbcb386b9f0504640526f264.png)
+![](new_images/analysis_methods/14.png)
 
 **Output path:** Specify the path to store the result and indicate the name for the
 new profile.
 
 Having filled all the input fields, launch the analysis with the [Run] button.
+<!--
 The process will start as shown below:
 
 ![](media/79644be5e669a5e43d1e60d5b0065f91.png)
+-->
 
 After completion of the analysis the output profile is opened automatically as
 shown below:
 
-![](media/ec70ab5953cd914863df404dfee5f214.png)
+![](new_images/analysis_methods/15.png)
 
 Let us now have a look into the newly created profile.
 
@@ -325,7 +414,7 @@ particular experiment, you might be interested in creating a profile from a
 table of genes expressed under the same conditions. For example, you might take
 one of the tables resulting from the workflows “Detect differentially expressed
 genes…” as input gene table for profile creation.
-
+<!--
 The example table is a list of non-filtered genes from the workflow “Detect
 differentially expressed genes…”:
 
@@ -334,7 +423,7 @@ differentially expressed genes…”:
 A profile created from this gene table can be found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma_new/Genes%2C%20fold%20change%20and%20p-value%2C%20non-filtered%20profile>
-
+-->
 Such a profile contains matrices for the transcription factors expressed under
 the same experimental conditions, and thus it might be reasonable to apply it
 for the promoter analysis of genes up-regulated or down-regulated in this
@@ -349,7 +438,7 @@ new profile can be created from the *summary* table resulting from the workflow
 The analysis input form can be found in the Tree Area, under the Analyses tab,
 in the folder Methods/Site analysis. The opened input form is shown below.
 
-![](media/8c63d7fe713796416b59e387f78acf5c.png)
+![](new_images/analysis_methods/16.png)
 
 Let us consider the individual input fields:
 
@@ -360,7 +449,7 @@ a table can be the result of a site search analysis.
 In the following, further steps are demonstrated with a table of site models
 from one of the examples. The example file can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search/summary>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20Transcripts%20Ensembl>
 
 **Reference profile:** In this field, you indicate the profile where the cutoffs for
 the new profile should be taken from. It is filled automatically if the input
@@ -376,19 +465,20 @@ use "(none)" to leave the cutoffs as in the reference profile.
 **Output profile:** Specify the path to store the result and indicate the name for
 the new profile.
 
-To launch the analysis, fill the input fields and press [Run]. The process will
+To launch the analysis, fill the input fields and press [Run].<!-- The process will
 start as shown below:
 
-![](media/59bd63c997ffa8a6f64bc968d8571633.png)
+![](media/59bd63c997ffa8a6f64bc968d8571633.png)-->
 
 After completion of the analysis the output profile is opened automatically as
 shown below:
 
-![](media/image004.png)
+![](new_images/analysis_methods/17.png)
 
-An example profile created from this gene table can be found here:
+<!--An example profile created from this gene table can be found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/summary%20profile>
+-->
 
 Each row summarizes the information for one site model. In the column Name the
 name of the site model is given, which in the majority of cases is the same as
@@ -405,7 +495,7 @@ The new created profile has the symbol ![](media/ee5e3b08fd5644d7223f613a9074e50
 
 Creating a new profile from a table of site models (matrices) might be very
 useful e.g. if you plan to focus the analysis on those matrices shown to be
-over-represented upon the first run of promoter analysis and plan further to
+overrepresented upon the first run of promoter analysis and plan further to
 construct composite promoter models.
 
 For this, you first run a site search with optimization, e.g. the workflow
@@ -457,20 +547,18 @@ setting of individual base frequencies.
 
 An profile can be created as follows.
 
-**Step 1.** Input the matrix library. As usual, you can drag-and-drop. Here we
-use the TRANSFAC® 2017.1 library:
+**Step 1.** Input the matrix library. As usual, you can drag-and-drop. Use the latest TRANSFAC® library:
 
 ![](media/086ca27dca04c025ede8a31bb907d670.png)
 
 **Step 2.** Edit other input parameters as shown in the figure above. The output
 profile path needs to be chosen in a writable directory, e.g. one of your
 projects.
-
+<!--
 Clicking the [Run] button will invoke the analysis. A part of the resulting
 profile is shown below: Resulting profile can be accessed using the URL:
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/matrix%20profile>
-
-
+-->
 
 ### Search for enriched TFBSs
 
@@ -498,7 +586,7 @@ Let us begin with the analysis for gene promoters. The figure below depicts the
 input mask of the analysis tool. The parameters are similar to those used by
 “Site search on gene set” and are described in the following.
 
-![](media/6fe3f4043f93e7e94d7782f9cebf432c.png)
+![](new_images/analysis_methods/19.png)
 
 **Yes set**: This is the set of genes that you want to analyze, for example these
 can be genes with altered expression. The program accepts genes specified by
@@ -507,7 +595,7 @@ Ensembl gene identifiers. Note that the “Convert table” functionality in the
 genes.
 
 **No set**: This is the set of background genes (control set), which also need to be
-specified by Ensemble gene IDs.
+specified by Ensembl gene IDs.
 
 These two datasets might be taken from the output tables of previous analyses;
 see, e.g., “Detect differentially expressed genes” 
@@ -539,20 +627,20 @@ each PWM.
 
 The steps of an analysis can be described as follows:
 
-**Step 1.** Input Yes set from the tree. As usual, you can drag-and-drop. Here,
+**Step 1.** Input Yes set from the tree. As usual, you can drag-and-drop.<!-- Here,
 the below set of genes are used:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>-->
 
 **Step 2.** Input No set (drag-and-drop). Our example uses the set of
 “Non-changed Ensembl genes”
-
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes>
+<!--
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Non-changed%20Ensembl%20genes>-->
 
 **Step 3.** Select the TRANSFAC® or GTRD profile from the available profiles. In
-this example, we select the TRANSFAC® 2017.2 profile named “vertebrates”:
+this example, we select the TRANSFAC® profile named “vertebrates_non_redundant_minSUM”:
 
-![](media/b998776f5a2cde7a635c00d64e207c72.png)
+![](new_images/analysis_methods/20.png)
 
 **Step 4.** Edit the output path (highlighted green in the figure above). After
 setting the Yes gene set, a default output path is suggested. The Example folder
@@ -563,14 +651,14 @@ easily by clicking on the field.
 We keep the defaults for promoter range (starting from 1000th base upstream to
 the 100th base downstream of the TSS) and initial cutoff.
 
-Clicking the [Run] button will invoke the analysis. The *summary* table
+Clicking the [Run] button will invoke the analysis.<!-- The *summary* table
 
 ![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
 
 is automatically opened in a new tab when the analysis is completed. Here is a
 part of the output from our example:
 
-![](media/image005.PNG)
+![](media/image005.PNG)-->
 
 Each row of the output table represents the result for one PWM from the input
 profile. Fold enrichment (FE) values quantify the enrichment of binding sites in
@@ -595,19 +683,19 @@ Additional columns are available via the “Columns” tab of the lower-right pa
 Each column is also accompanied by a concise description and can be included
 into the table presentation upon demand.
 
-![](media/f13513cfd6f637d767d97d0415e387f0.png)
+![](new_images/analysis_methods/21.png)
 
 ### Search for enriched TFBSs (tracks)
 
 The “tracks” variant of the “Search for enriched TFBSs” can be applied to
 sequence tracks signified by the symbol (![](media/aa2481777d4b84fd8deca9568f7350c4.png)). For instance, a track may contain genomic intervals identified by a ChIP-seq experiment.
 
-![](media/85b52ad335d2da9de261a7404f884874.png)
+![](new_images/analysis_methods/22.png)
 
 The analysis uses the following parameters:
 
 **Yes set:** This is the track that you want to analyze, for example these can be
-ChIP-seq intervals bound a transcription factor.
+ChIP-seq intervals bound to a transcription factor.
 
 **No set:** This is the set of background intervals (control set).
 
@@ -633,7 +721,7 @@ iterates over higher cutoffs and eventually reports the one that resulted in
 optimal enrichment of binding sites in the Yes set. This is done separately for
 each PWM.
 
-The platform is provides an out-of-the-box example for this tool under
+The platform provides an out-of-the-box example for this tool under
 “*data/Examples/ Encode TFBS CEBPB in H1-hESC cells*”. The ChIP-seq experiment
 targeted CEBPB binding sites in H1-hESC cells. The steps of an analysis can be
 described as follows:
@@ -641,33 +729,28 @@ described as follows:
 **Step 1.** Input the Yes set from the tree. As usual, you can drag-and-drop.
 The YES set contains the 500 most significant peaks:
 
-![](media/71b57615bb5bb37c64184d3ecea2e53a.png)
+<!--![](media/71b57615bb5bb37c64184d3ecea2e53a.png)-->
 
 **Step 2.** Input the No set (drag-and-drop). The NO set contains 1000 random
 intervals from promoter regions with the same length distribution as the 500 YES
 intervals:
 
-![](media/44be64ad47f8dfa662bbdd3630278705.png)
+![](new_images/analysis_methods/23.png)
 
 **Step 3.**
 
 Select the TRANSFAC® or GTRD profile from the available profiles. In this
-example, we select the TRANSFAC® 2017.2 profile named “vertebrates”:
-
+example, we select the latest TRANSFAC® profile named “vertebrates_non_redundant_minSUM”:
+<!--
 ![](media/65a66771e453ff031a28e4e279779a4e.png)
+-->
 
 **Step 4.** Edit the output path. After setting the Yes gene set, a default
 output path is suggested. The Example folder may however not be writable for
 your account requiring selection of an alternative such as one of your own
 projects. A different selection can be made easily by clicking on the field.
 
-Clicking the [Run] button will invoke the analysis. The *summary* table
-
-![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)
-
-is automatically opened in a new tab when the analysis is completed. A part of
-the output for our example is shown below. Please refer to “Search for enriched
-TFBSs (genes)” for further description.
+Clicking the [Run] button will invoke the analysis. The *summary* table ![](media/98b0f737f28ec29fc9cebfd96cc78bca.png) is automatically opened in a new tab when the analysis is completed. A part of the output for our example is shown below. Please refer to “Search for enriched TFBSs (genes)” for further description.
 
 ![](media/7b375e223e16d362ebffa3b14d859607.png)
 
@@ -710,15 +793,16 @@ matrices are present in the selected profile. You can use one of the available
 TRANSFAC® profiles, or alternatively you can construct a customized profile as described earlier. 
 The input form for this analysis is shown below:
 
-![](media/bc4f756873004d387f7dff149fb0c6ba.png)
+![](new_images/analysis_methods/24.png)
 
 **Step 1**. Specify Site search result. This is the input field for the
 analysis, where you specify the results of the site search. The input field is
 marked by the symbol ![](media/e8ea74032e2066ffc66882b105fec024.png) , which means that the input data set should have the same symbol.
-
+<!--
 The below mentioned table is used for demonstration further:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20(Upstream%20analysis%20Transfac%20and%20Geneways)/Site%20search%20-1000%20%2B100/summary>
+-->
 
 As you can see, this is a folder with the results of the Site search on gene
 set. If you single-click on this folder in the tree area it will be highlighted
@@ -726,7 +810,7 @@ in blue, and in the Info box you can find a description of all the details about
 Yes-set, No-set, profile, promoter regions applied to get these results (cf.
 screenshot below).
 
-![](media/36e4c1e100150461a5b2729a8f7ae476.png)
+![](new_images/analysis_methods/25.png)
 
 You can drag & drop the name of the folder *Upregulated Ensembl genes
 LogFoldChange \>1.2 sites -500..100, profile 0.001* into the input field, or you
@@ -745,7 +829,7 @@ Results are described below.
 
 ### Construct composite modules on tracks
 
-This analysis is designed for identifiying combinations of several TFBSs in DNA
+This analysis is designed for identifying combinations of several TFBSs in DNA
 sequences specified by their genomic positions (tracks). An example of a track
 that is very often used is a set of the ChIP-seq data. The resulting composite
 module differentiates between a Yes-track and a background (No-track).
@@ -759,7 +843,7 @@ alternatively you can construct a customized profile.
 
 The input form for this analysis is shown below:
 
-![](media/7c8f50db427fd89605c21ed1f67c47c1.png)
+![](new_images/analysis_methods/26.png)
 
 **Step 1**. Experiment track is the input field for the Yes-track, or track
 under study.
@@ -773,13 +857,11 @@ the composite modules”.
 
 **Step 4.** Output path. Specify a location for the results in your project in
 the tree area. The resulting folder will be marked by the same icon as the
-analysis:
-
-![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
+analysis: ![](media/6b9704df8be416f8ef2a41a4a0c7c62c.png)
 
 Results are described below . 
 
-**Note.** This analysis is the central part the workflow ChIP-Seq - Identify
+**Note.** This analysis is the central part of the workflow ChIP-Seq - Identify
 composite modules on peaks (TRANSFAC®), and it might be more convenient to use
 the workflow instead of the individual analysis.
 
@@ -920,9 +1002,9 @@ with the specified site models in focus.
 ### Visualization and interpretation of the results
 
 Let us consider the results of the *Construct composite module* analysis
-obtained for the following input data set, which you can find in the geneXplain
+obtained for the following input data set. <!-- which you can find in the geneXplain
 platform online under the following path:
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/CMA%202%20to%205%20modules%20(Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search)/Model%20visualization%20on%20Yes%20set>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/CMA%202%20to%205%20modules%20(Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search)/Model%20visualization%20on%20Yes%20set>-->
 
 Input parameters used were the following:
 
@@ -1136,7 +1218,7 @@ The column Number of hits shows how many genes from the input set fall into the
 enrichment group; these genes are explicitly listed in the column Hit names. As
 the lists can get quite long, only a few genes are shown by default in each row.
 To get the full list, press (more). The column Plot and View diagrams are
-described in detail in a separate sub-section below.
+described in detail in a separate subsection below.
 
 ### Further possible actions with the enrichment results.
 
@@ -1205,9 +1287,9 @@ red line from its left end to its maximum.
 
 The starting point for the red line is 0 on the Kolmogorov-Smirnov score axis.  
 Next, the algorithm takes each gene within the category "defense response", and
-looks what the LogFoldChange for this gene is. If gene is up-regulated, the red
-line grows.Then the algorithm takes the next gene from "GDP binding" and again
-looks what the LogFoldChange for the 2d gene is. If it is also up-regulated, the
+looks at what the LogFoldChange for this gene is. If a gene is up-regulated, the red
+line grows. Then the algorithm takes the next gene from "GDP binding" and again
+looks at what the LogFoldChange for the second gene is. If it is also up-regulated, the
 red line grows further. This is called incremental growth: the closer the next
 gene is to the previous one on the X-axis, the more pronounced is the growth of
 the red line.
