@@ -10,15 +10,15 @@ from an FTP address, choose an item from the tree in the geneXplain platform, or
 paste data, e.g. a DNA sequence. Use one of the buttons [Computer], [Web/FTP],
 [Repository] or [Raw] to start the import.
 
-![](media/cb469556e47eb254570598ce3d1b0bcb.png)
+![](new_images/load_data/1.png)
 
 ## Import a file from a local computer
 
 Let us assume you wish to detect differentially expressed genes in your
 microarray experiments, which is one of the following workflow groups on the
-Start page. In this case, you might be interested to upload an archive (ZIP,
+Start page. In this case, you might be interested in uploading an archive (ZIP,
 TAR, GZ,…) of several CEL files (when you worked with an Affymetrix platform).
-In case of importing raw microarray results, we recommend to create a single ZIP
+In case of importing raw microarray results, we recommend creating a single ZIP
 archive of all files that you plan to normalize together. Please note that
 uploading is a lengthy process, and it may take some time. However, if in the
 uploading bar you see no progress and just 0% for about 10-15 minutes, please
@@ -26,7 +26,7 @@ cancel and start again, it might be that the server was overloaded at that
 moment. Wait till the progress bar is completed. The picture below shows an
 ongoing uploading.
 
-![](media/8f628bfb999b85ae43ee9c02e7c25a42.png)
+![](new_images/load_data/2.png)
 
 The uploading step is similar for all file formats. After the uploading step has
 been completed, the next step is specific for the file format, and different
@@ -42,17 +42,17 @@ the automatic detection and if necessary refine it manually using the drop-down
 menu. Next, verify four fields as follows.
 
 In case that here exists already a folder with the same name as the imported
-file, it will be replaced by imported data if you activate the check box
+file, it will be replaced by imported data if you activate the checkbox
 “Cleanup existing folder”. Checking the box “Preserve extension” means that
 individual CEL files will keep the extension ”.CEL” after importing.
 
 Checking the box “Preserve archive structure” allows you to keep the archive
 structure (folders and subfolders) after importing. Next, choose the type of the
-files within the imported archive (if an archive is imported), here “Affymetrix
+files within the imported archive (if an archive is imported), here the “Affymetrix
 CEL files” row is selected, indicated by the dark blue background in the picture
 below. Finally, press the [Import] button.
 
-![](media/a580e0d7a97084637e56f1e92c5c25ac.png)
+![](new_images/load_data/3.png)
 
 Each imported archive or individual file will appear in the Data tree of the
 Tree Area when import is complete.
@@ -62,7 +62,7 @@ Tree Area when import is complete.
 After the uploading step of an Excel table is completed, the following
 additional options will be displayed as shown below:
 
-![](media/b716024f64967961b92884ab3ee05e12.png)
+![](new_images/load_data/4.png)
 
 The format of the imported file is detected automatically and is indicated in
 the field “Format”. In the figure above it is the Tabular format, which includes
@@ -85,7 +85,7 @@ Verify automatic detection and, if necessary, correct the number.
 
 **Column for ID** – use the drop-down menu to indicate which column in the
 imported table contains unique identifiers. The column “ID” is suggested
-automatically. Verify automatic suggestion and refine it as necessary.
+automatically. Verify automatic suggestions and refine it as necessary.
 
 **Type of the table** – this field aims to specify what type of IDs are used as
 identifiers in the imported Excel table. Use the drop-down menu to specify. In
@@ -95,7 +95,7 @@ correspondingly in the figure below “Genes: Entrez” is specified.
 **Species** – use the drop down menu to specify the biological species that
 corresponds to the IDs.
 
-![](media/873ad77300b299852ef26ac907aa702f.png)
+![](new_images/load_data/5.png)
 
 After that, press the [Import] button, and you can find the imported table in
 the tree, under the location specified in the “Import file” form in the field
@@ -115,7 +115,7 @@ are located on a web server, this would be a preferable way of importing.
 First, press [Web/FTP] button on the “Import file” form, and indicate the ftp
 address in the newly opened form as shown below:
 
-![](media/77e6d6d27e74cab3d99b2239074ab0ce.png)
+![](new_images/load_data/6.png)
 
 ## Paste plain DNA sequence
 
@@ -123,7 +123,7 @@ If you would like to import a plain DNA sequence, not saved in any file before,
 first, choose the button [Raw] on the form “Import file”, and a new form will be
 opened as shown below:
 
-![](media/a4e5918358b6206142f233059a38531f.png)
+![](new_images/load_data/7.png)
 
 Paste the DNA sequence in the window “Type file content here”, and in the field
 “Name” specify a name as it should appear in the tree after importing.

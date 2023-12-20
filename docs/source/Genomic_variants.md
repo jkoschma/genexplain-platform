@@ -1,8 +1,8 @@
 # Genomic variants
 
-![](media/ad16a78dcbc709354acbd975c086c714.png)
+![](new_images/genomic_variants/1.png)
 
-Genomic variants can be uploaded in the platform in different formats. The files
+Genomic variants can be uploaded to the platform in different formats. The files
 uploaded in *bed* format are shown in the tree area as tracks (![](media/track.jpg)). Genomic variants can be also uploaded as a table, where the ID column contains standard SNP IDs (e.g. rs10010325). When imported into the platform,
 the tables with this type of ID have a special icon (![](media/image027.png)) in the tree area. An example of such a table can be found in the *Examples* folder:
 
@@ -31,19 +31,19 @@ variants by [GATK](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/
 
 To launch the workflow, follow these steps:
 
-**Step 1**. Open the workflow input form from the Start page. It will open in
+**Step 1** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/306f08869cb6eaa30aceb44b00756644.png)
+![](new_images/genomic_variants/2.png)
 
-**Step 2**. Input the **Forward** and **Reverse** fastq files. You can either
-drag&drop or select the files from the Tree area. Example files are present here:
+**Step 2** Input the **Forward** and **Reverse** fastq files. You can either
+drag and drop or select the files from the Tree area. Example files are present here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq>
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20reverse.fastq>
 
-**Step 3**. Specify the **OutputFolder** location and name and press the button
+**Step 3** Specify the **OutputFolder** location and name and press the button
 [Run workflow].
 
 **Results**:
@@ -90,16 +90,16 @@ The user can view the Good.bam files in the genome browser by double-clicking on
 it. The browser shows each aligned read and also shows nucleotides mismatching
 between the reads and the reference genome sequence.
 
-![](media/a201373cb92f10f51266b374554a5dc8.png)
+![](new_images/genomic_variants/3.png)
 
 This file is used then for the unified GATK (Genome Analysis Toolkit) [genotyper method](http://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper)
 to detect the SNP-indels. It generates a table in VCF format, which can be
 viewed either as a table or as a track in the genome browser (right mouse button
 click and select either “Open track” or “Open table”).
 
-![](media/387ed042c6abdf764abaae225a271622.png)
+![](new_images/genomic_variants/4.png)
 
-![](media/e9a362274fcadc05e4d5a4cbf2b3f807.png)
+![](new_images/genomic_variants/5.png)
 
 In the track visualization the information about each variation (either a base
 substitution or an indel) is shown in the info box when clicking on each
@@ -109,9 +109,9 @@ variation.
 
 The genomic variants shown in the tree area as tracks (![](media/track.jpg)) can be directly visualized in the genome browser. Tables with SNP IDs (![](media/image027.png)) should be first processed into the tracks. For this, you can apply the method called SNP matching (![](media/eefe0f0792c468b05a84eeebcc69ddc6.png)); 
 
-for details please refer to the indiviual description of the method. 
+For details please refer to the individual description of the method. 
 
-![](media/e233fae40ec167387b52ee684666540e.png)
+![](new_images/genomic_variants/6.png)
 
 A mouse click on the links Human, Mouse or Rat immediately opens up a genome
 browser for the corresponding species in the work space, and the corresponding
@@ -120,16 +120,16 @@ Ensembl database appears in the tree area.
 ### Human
 
 When *Human* is selected, the genome browser opens up the latest Ensembl build,
-hg19 chromosomes GRCh37, highlighted by the red oval.
+hg38 chromosomes GRCh38.
 
-![](media/3edfdbcd97cabfdc782b594c32241e58.png)
+![](new_images/genomic_variants/7.png)
 
 In the pop-up window *Add tracks to genome browser* you can select which tracks
 among those available in Ensembl should be opened together with your track of
 the genomic variants. Two tracks are selected by default, *GC-content* and
 *Genes*. When the selection is ready, push the [Ok] to get the following view:
 
-![](media/e8f7f008cb453d1c2550ec0fdf06a690.png)
+![](new_images/genomic_variants/8.png)
 
 Now you can drag & drop your track with the genomic variants on the genome
 browser to add it to the default tracks. As an example, the following track is
@@ -137,25 +137,25 @@ shown here, in the screenshot below:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20(Analyse%20SNP%20list%20(TRANSFAC))/All%20SNPs/SNP_height_hg19%20track>
 
-![](media/3c410f1aa4e13b200c350fbaa6cc7803.png)
+![](new_images/genomic_variants/9.png)
 
 For further details regarding visualizations, please refer to the basic operations with tracks
 
 ### Mouse
 
 When *Mouse* is selected, the genome browser opens up the latest Ensembl build
-for mouse, mm10 chromosomes GRCm38
+for mouse, mm39 chromosomes GRCm39
 
-![](media/6b9911ceb09f3c93fd8132840f2e5161.png)
+![](new_images/genomic_variants/10.png)
 
 The further steps of the visualization are similar to the human tracks.
 
 ### Rat
 
 When *Rat* is selected, the genome browser opens up the latest Ensembl build for
-rat, rn5 chromosomes Rnor_5.0
+rat, rn6 chromosomes Rnor_6.0
 
-![](media/947bc4eb087cfca4705c480443f33bd9.png)
+![](new_images/genomic_variants/11.png)
 
 The further steps of the visualization are similar to the human tracks.
 
@@ -172,37 +172,37 @@ Therefore, please apply correspondingly the workflows explained in detail under 
 
 #### Analysis with TRANSFAC®
 
-The input form of this workflow, when opened form the Start page, is the
+The input form of this workflow, when opened from the Start page, is the
 following:
 
-![](media/43978743b02af7aedd7cf37b50f5c26c.png)
+![](new_images/genomic_variants/12.png)
 
-**Step 1**. Specify an input table in the field **Input SNP table**. A table
+**Step 1** Specify an input table in the field **Input SNP table**. A table
 with standard SNP IDs in the format like *rs10010325* can be used as an input.
 The tables with this type of IDs have a special icon (![](media/image027.png)) in the tree area. In this example the following input table with 180 SNPs is used:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19>
 
-**Step 2**. Specify the region around each SNP in the field **5’ and 3’ gene
+**Step 2** Specify the region around each SNP in the field **5’ and 3’ gene
 bound extension**. By default this region is 10000 bp long. Genes located within
 the region of 10000 bp around each SNP in the input list will be considered as
 SNP target genes.
 
-**Step 3**. Specify a TRANSFAC® profile in the field **Profile**. The workflow
+**Step 3** Specify a TRANSFAC® profile in the field **Profile**. The workflow
 uses the default profile vertebrate_non_redundant_minFN from the TRANSFAC®
 library, but another TRANSFAC profile can be chosen as needed.
 
-**Step 4**. Specify the region around each SNP that will be analyzed for
+**Step 4** Specify the region around each SNP that will be analyzed for
 potential TFBSs in the field **SNP surrounding region.** The default length of
 this region is 30 bp on each flank.
 
-**Step 5**. Select a species corresponding to your input table from the
+**Step 5** Select a species corresponding to your input table from the
 drop-down menu in the field **Species**.
 
-**Step 6**. Specify the path to store the results and the name of the output
+**Step 6** Specify the path to store the results and the name of the output
 folder in the field **Results folder**.
 
-**Step 7**. Having filled the input form, launch the analysis with the [Run]
+**Step 7** Having filled the input form, launch the analysis with the [Run]
 button. Wait till the workflow is completed.
 
 **Results**
@@ -349,27 +349,20 @@ site model producing each match (column **Property:siteModel**) as well as a
 score of the core (column **Property:coreScore**), and a score for the whole
 site model (column **Property:score**).
 
-**Tip. Further visualization of tracks in the genome browser:**  
-When having tracks opened in the Work Space, the menu button
+**Tip** When having tracks opened in the Work Space, the menu button (![](media/3dedf14838c50548c1db5a37fccc0940.png)) on the top panel can be applied to visualize it. A supplementary window *Add tracks to genome browser* will open. Here you can select tracks that can be visualized together with your track (shown below).
 
-![](media/3dedf14838c50548c1db5a37fccc0940.png)
-
-on the top panel can be applied to visualize it. A supplementary window *Add
-tracks to genome browser* will open. Here you can select tracks that can be
-visualized together with your track (shown below).
-
-![](media/4ba510533ff7a1d4b607885ffd4369c7.png)
+![](new_images/genomic_variants/13.png)
 
 After pressing [Ok] you will get the picture shown below with your track in
 focus at the top position.
 
-![](media/dfcee150019f9f63140435c0c118e70b.png)
+![](new_images/genomic_variants/14.png)
 
 A number of options are available to navigate the browser and get the desired
 view. You can use several buttons at the top panel to zoom in and out, and to
 shift the visible part of the map left or right.
 
-![](media/5f54be9a8b375c6cb2cd356273c9b8b6.png)
+![](new_images/genomic_variants/15.png)
 
 With the help of the small triangles next to the track names you can jump to the
 next or previous element of this track.
@@ -381,22 +374,21 @@ or specify exact positions in the *Position* window.
 
 When having a track opened in the genome browser, you can drag & drop any other
 track over the same picture to add it to the browser, where you can find it
-below the bottom-most track. You can drag & drop it then to any track into
+below the bottom-most track. You can drag & drop it then to any track into the 
 desired position.
 
 For example, you can add the track with all input SNPs from the folder *All
 SNPs*, and shift it to the top position, and then jump to the position of the
 1st SNP along the chromosome. The resulting picture is shown below.
 
-![](media/30785f06d107d3668f7cff9550ce72cd.png)
+![](new_images/genomic_variants/16.png)
 
 Next, you can zoom in down to the nucleotide level, and get the following
-picture, where one of the identified regulatory SNPs, rs2284746, is overlapping
-with several TFBSs, e.g. with the binding sites for c-Maf and PPARγ.
+picture, where one of the identified regulatory SNPs is overlapping with several TFBSs.
 
-![](media/428200b7d31442c8670d5b028e3ecfe5.png)
+![](new_images/genomic_variants/17.png)
 
-**Note.** This workflow is available together with a valid TRANSFAC® license.  
+**Note** This workflow is available together with a valid TRANSFAC® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
 #### Analysis with GTRD
@@ -431,14 +423,14 @@ used for visualization in the genome browser.
 
 The workflow can be found on the Start page, in the section “Genomic variants”.
 
-![](media/4026bec07046a85a3cb95cd0c89d6f66.png)
+![](new_images/genomic_variants/18.png)
 
-**Step 1.** Open the workflow input form from the Start page. It will open in
+**Step 1** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/eaa10040476dc6856610a3c77384122f.png)
+![](new_images/genomic_variants/19.png)
 
-**Step 2**. Specify the **Input Variation track** in vcf format.  
+**Step 2** Specify the **Input Variation track** in vcf format.  
 To specify the track, you can drag & drop it from your project within the tree
 area. Alternatively, you may click on the pink field “select element” and a new
 window will open, where you can select the input track. After having selected
@@ -447,27 +439,27 @@ the track, press the [Ok] button.
 You can use either a newly imported track in vcf format, or a track that has
 been calculated within the platform, e.g. as a result of the workflow *Find
 genome variants and indels from RNA-seq* or the workflow *Find genome variants
-and indels from full-genome NGS*. Both workflows can be found under
+and indels from full-genome NGS*. Both workflows can be found under 
+
 <http://platform.genexplain.com/bioumlweb/#de=analyses/Workflows/Common/>
 
 In the following example we took as input the track SNP_indels.vcf, which can be
-found at: <http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf>
+found at: <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/SNP_indels.vcf>
 
 This vcf file was produced by the workflow *Find genome variants and indels from full-genome NGS*.
 
-**Step 3**. Specify the **Gene promoters**. By default all promoters -1000 to
+**Step 3** Specify the **Gene promoters**. By default all promoters -1000 to
 +100 bp relative to the TSS from Ensembl 65.37 genome version are used.
 
-**Step 4**. Select the **Profile**. This profile will be applied for the
+**Step 4** Select the **Profile**. This profile will be applied for the
 identification of the enriched motifs around variation sites. The default
-profile is *vertebrate_non_redundant_minSUM* from the most recent [TRANSFAC® release]<http://platform.genexplain.com/bioumlweb/#de=databases/TRANSFAC(R)/2019.1/Data/profiles/>
-available.
+profile is *vertebrate_non_redundant_minSUM* from the most recent TRANSFAC® release available.
 
-**Step 5**. Specify the **Variation surrounding region** in base pairs. By
+**Step 5** Specify the **Variation surrounding region** in base pairs. By
 default 15 bp are used. Within these region/window the search for enriched TFBSs
 will be performed.
 
-**Step 6.** Define where the folder with the results should be located in your
+**Step 6** Define where the folder with the results should be located in your
 project tree. You can do so by clicking on the pink field “select element” in
 the field **Results Folder**, and a new window will be opened, where you can
 select the location of the results folder and define its name.
@@ -479,7 +471,7 @@ Below you can see the result folder for the example:
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf%20(Enriched%20TF%20binding%20sites%20(TRANSFAC))>
 
 
-The output folder contains on sub-folder with a track and two tables.
+The output folder contains one sub-folder with a track and two tables.
 
 ![](media/3aeb97991951f8468384e9346d5f9668.png)
 
@@ -488,13 +480,13 @@ over-represented around variation (mutation) sites in promoters, in this case 14
 site models. By default this table is sorted by the Yes-No ratio, with the most
 over-represented model on top.
 
-![](media/46694b1c74b72f52aa515962487704a7.png)
+![](new_images/genomic_variants/20.png)
 
 For a visualization of the over-represented TF binding sites in the variation
 sites you can open the *SNP_indels.vcf TFBS around regulatory Variations* track
 in the genome browser.
 
-![](media/949e2846c745f9f762fa0e5e34f49b44.png)
+![](new_images/genomic_variants/21.png)
 
 The table *SNP_indels.vcf TFBS around regulatory Variations* presents the list
 of TFs corresponding to the over-represented site models, in this case 14 TFs.
@@ -503,11 +495,11 @@ well as the **Gene description** and **Gene symbol** for each transcription
 factor. The results can be sorted by **Yes-No ratio**, as it is shown on the
 screenshot below.
 
-![](media/4c524c2d4d2e8215012e65a09eab7804.png)
+![](new_images/genomic_variants/22.png)
 
 ### Mutation effect on sites analysis
 
-This method allows to find transcription factor binding sites (TFBSs) affected
+This method finds transcription factor binding sites (TFBSs) affected
 by variations or mutations.
 
 The analysis “Mutation effect on sites” can be found in the NGS folder of the
@@ -515,43 +507,43 @@ analysis methods ([analyses/Methods/NGS/Mutation effect on sites](http://platfor
 or under the start page button ‘Genomic variants’ under section ‘Identify TFBS
 affected by genomic variations’.
 
-**Step 1.** Open the analysis form from the Start page. It will open in the main
+**Step 1** Open the analysis form from the Start page. It will open in the main
 Work Space and looks as shown below:
 
-![](media/7e910641276a93cd3de18f780bc24fba.png)
+![](new_images/genomic_variants/23.png)
 
-**Step 2**. The Input **VCF track** is a track file with mutations and should be
+**Step 2** The Input **VCF track** is a track file with mutations and should be
 in vcf format.
 
 One input example is here on the platform:
 
-<http://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/SNP_indels.vcf>
 
 Open the track file as a table, and for each variation point you can see several
 columns with genomic position, chromosome, alternative nucleotide, etc., as
 shown below.
 
-![](media/56c443c29d3666e302a2c68ccf794332.png)
+![](new_images/genomic_variants/24.png)
 
-**Step 3**. Verify the **Sequences source** and use the drop-down menu for
+**Step 3** Verify the **Sequences source** and use the drop-down menu for
 different Ensembl genome annotations of human, mouse and rat, as shown below.
 
-![](media/f63fac460738528136e9eccf599b9c5a.png)
+![](new_images/genomic_variants/25.png)
 
-Alternatively, you can choose 'Custom' from the same menu, if you would like
+Alternatively, you can choose 'Custom' from the same menu, if you would like to 
 specify another genome, e.g. a particular patient genome imported into the
 platform before. As soon as the option 'Custom' is chosen, an additional field,
 Sequence collection, automatically appears on the input form (screenshot below),
-and you can specify the sequences location manually.
+and you can specify the sequence location manually.
 
-![](media/f057902348bc79e3483fac688e38cf0d.png)
+![](new_images/genomic_variants/26.png)
 
-**Step 4**. Select the **Profile**. This profile will be applied for the
+**Step 4** Select the **Profile**. This profile will be applied for the
 identification of transcription factor binding sites overlapping with the
 variation positions. The default profile is *vertebrate_non_redundant_minSUM*
-from the most recent [TRANSFAC® release] available.
+from the most recent TRANSFAC® release available.
 
-**Step 5**. The **Score difference** from unaffected to affected site is per
+**Step 5** The **Score difference** from unaffected to affected site is per
 default 5.0. This parameter is a threshold for the difference between the TFBS
 score in the reference genome and the TFBS score at the same position with a
 variation in the alternative sequence. For TRANSFAC matrices adjust this
@@ -565,7 +557,7 @@ a small change in the score will be considered. If you are interested in those
 TFBSs that are more strongly affected by a variation, set this parameter to 0.5
 (see also example output with score difference = 0.5).
 
-**Step 5**. Specify the path and name of the **Output track**.
+**Step 6** Specify the path and name of the **Output track**.
 
 After completion the output track file is found here:
 
@@ -576,9 +568,13 @@ site is shown in the red box (V\$EBOX_Q6_01).
 
 ![](media/02b2f7682341e6bdb27f166c52b98bb6.png)
 
+<!--![](new_images/genomic_variants/27.png)-->
+
 Opening the track as a table shows all affected TFBSs in table format.
 
 ![](media/eb89782aedf999f8adb19d76e5d5e2b2.png)
+
+<!--![](new_images/genomic_variants/28.png)-->
 
 The upper example highlighted by the red box has ID=1 in the table. The columns
 **From** and **To** define the positions of the affected site within the genome
@@ -605,7 +601,7 @@ given variation created or enhanced corresponding TFBS.
 The last column **Property: siteModel** gives a link to the matrix model and can
 be opened in the workspace to view the matrix logo.
 
-### SIFT (Sorting Tolerant From Intolerant) analysis
+### SIFT (Sorting Intolerant From Tolerant) analysis
 
 The SIFT analysis tool predicts whether a single amino acid substitution (AAS)
 affects protein function, based on sequence homology and the physical properties
@@ -623,58 +619,58 @@ The tool can be found in the Galaxy section of the geneXplain platform
 or on the start page button ‘Genomic variants’ under section ‘Identify TFBS
 affected by genomic variations’.
 
-**Step 1.** Open the analysis form from the Start page. It will open in the main
+**Step 1** Open the analysis form from the Start page. It will open in the main
 Work Space and looks as shown below:
 
-![](media/4602d268d02be575f009702a892b877e.png)
+![](new_images/genomic_variants/29.png)
 
-**Step 2**. The input **Dataset** must contain columns for the chromosome,
+**Step 2** The input **Dataset** must contain columns for the chromosome,
 position, and alleles. The alleles must be two nucleotides separated by '/',
 usually the reference allele and the allele of interest. The strand must either
 be in another column.
 
 Input example format:
 
-chr3 81780820 + T/C  
-chr2 230341630 + G/A  
-chr2 43881517 + A/T  
-chr2 43857514 + T/C  
-chr6 88375602 + G/A  
-chr22 29307353 - T/A  
-chr10 115912482 - G/T  
-chr10 115900918 - C/T  
-chr16 69875502 + G/T
+chr3 81780820 + T/C  \  
+chr2 230341630 + G/A \ 
+chr2 43881517 + A/T  \
+chr2 43857514 + T/C  \
+chr6 88375602 + G/A  \
+chr22 29307353 - T/A \ 
+chr10 115912482 - G/T\  
+chr10 115900918 - C/T\  
+chr16 69875502 + G/T \
 
 One example input table can be found here on the platform: 
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons>
 
-![](media/3f96a7ff5d76904f56ed6413aace02af.png)
+![](new_images/genomic_variants/30.png)
 
-**Step 3**. Determine the **Genome ID**. The tool currently works only for
+**Step 3** Determine the **Genome ID**. The tool currently works only for
 genome builds hg18 or hg19.
 
-**Step 4.** Define the **Column with chromosome**. In our example above it is
+**Step 4** Define the **Column with chromosome**. In our example above it is
 column 5 (SNP_matching-Chromosome).
 
-**Step 5.** Define the **Column with position**. In our example above it is
+**Step 5** Define the **Column with position**. In our example above it is
 column 6 (SNP_matching-Position).
 
-**Step 6.** Selection if **Position coordinates are** one-based (default) or
+**Step 6** Selection if **Position coordinates are** one-based (default) or
 zero-based counted.
 
-**Step 7.** Define the **Column with allele**. In our example above it is column
+**Step 7** Define the **Column with allele**. In our example above it is column
 7 (SNP_matching-Allele).
 
-**Step 8.** Define whether the **Strand info** is a column in the dataset
+**Step 8** Define whether the **Strand info** is a column in the dataset
 (default).
 
-**Step 9.** Define the **Column with strand**. In our example above it is column
+**Step 9** Define the **Column with strand**. In our example above it is column
 8 (SNP_matching-Strand).
 
-**Step 10.** Select **Include comment column** for additional comments.
+**Step 10** Select **Include comment column** for additional comments.
 
-**Step 11.** Possibility to select multiple output columns and **Include the
+**Step 11** Possibility to select multiple output columns and **Include the
 following additional fields in the output** table.
 
 ![](media/6f22556b0c7e9bfc0a77c11c060fd2b6.png)
@@ -690,7 +686,7 @@ An example output table can be found here:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/SNPs%20linked%20to%20human%20height/Data/SNP_height_hg19%20%28Analyse%20SNP%20list%20%28TRANSFAC%29%29/SNPs%20in%20exons/SNP_height_hg19%20matched%20SNPs%20in%20exons%20SIFT>
 
-![](media/86dc142d686842b3ce52f4fb0fc1c8fd.png)
+![](new_images/genomic_variants/31.png)
 
 The column **Codons** in the output table shows the originally and changed codon
 of the input position coordinates. The **Transcript ID** and **Protein ID** give

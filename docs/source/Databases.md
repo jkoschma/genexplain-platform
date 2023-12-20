@@ -28,7 +28,7 @@ self-explaining: A short description of the model including references is given.
 You may open any model by a click on the corresponding Accession number in the
 last column.
 
-![](media/21cddec78781bc8d2293767048d6ea0d.png)
+![](new_images/databases/1.png)
 
 Having opened one of the diagrams by either method, the network schema will
 appear in the Work Space as well as in the Operations Field, tab Overview. The tab Layout provides a number of
@@ -59,7 +59,7 @@ User accessible entities are stored in the subdirectory *Diagrams* (presently
 
 This way, you may browse the database contents, receiving information about the
 individual entities in the Info Box, after a single click with the left mouse
-button on the corresponding entity. The Diagrams can be opened by double-click
+button on the corresponding entity. The Diagrams can be opened by double-clicking
 with the left mouse button, or by opening a context menu with the right mouse
 button and selecting “Open diagram”. These diagrams contain their components
 listed underneath as nodes (![node.gif](media/5daf605c3358fe06091c69aa3d418aec.gif)) and edges

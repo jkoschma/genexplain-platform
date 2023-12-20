@@ -1,6 +1,8 @@
 # Epigenomics
 
-![](media/image074.png)
+<!--![](media/image074.png)-->
+
+![](new_images/epigenomics/epigenomics1.png)
 
 ## Site search with TRANSFAC(R)
 ### Site search in a single interval list
@@ -66,7 +68,7 @@ Let us present an example analysis for a ChIP-seq data set consisting of 500
 peak regions and 1000 sequences randomly sampled from regulatory regions across
 the human genome. The figure below depicts the input mask of the analysis tool.
 
-![](media/image076.png)
+![](new_images/epigenomics/epigenomics2.png)
 
 **Yes set**: This is the set of sequence intervals that you want to analyze, for
 example these can be ChIP-seq peak regions.
@@ -92,26 +94,25 @@ The steps of an analysis can be described as follows:
 the set of YES intervals from the Example folder is used as input, highlighted
 blue on the screenshot below:
 
-![](media/image079.png)
+![](new_images/epigenomics/epigenomics3.png)
 
 **Step 2.** Input No set (drag-and-drop). Our example uses the set of NO
 intervals:
 
-![](media/7d5299ea8f4d59306e820e2b3018ad16.png)
+![](new_images/epigenomics/epigenomics4.png)
 
 **Step 3.** The sequence source should be set automatically upon specifying the
 interval sets. If not select the corresponding sequence source from the
 pull-down list:
 
-![](media/image077.png)
+![](new_images/epigenomics/epigenomics5.png)
 
 **Step 4.** Select the TRANSFAC® or GTRD profile from the available profiles. In
-this example, we select the TRANSFAC® 2018.1 profile named
-“vertebrate_non_redundant”:
+this example, we select the latest TRANSFAC® profile named “vertebrate_non_redundant”:
 
-![](media/b456d5c113ef482879275812093b82dd.png)
+![](new_images/epigenomics/epigenomics6.png)
 
-**Step 5.** Edit the output path (highlighted green in the figure above). After
+**Step 5.** Edit the output path. After
 setting the Yes set, a default output path is suggested. The Example folder may
 not be writable for your account requiring selection of an alternative such as
 one of your own projects. A different selection can be made easily by clicking
@@ -123,7 +124,7 @@ part of the output for our example:
 
 ![](media/image078.png)
 
-A row of the output table contains matrix identifier and its logistic regression
+A row of the output table contains a matrix identifier and its logistic regression
 coefficient. The larger the coefficient value, the more important the
 corresponding matrix was for discriminating between Yes and No sequences. In our
 example, three of the five top matrices represent members of the transcription

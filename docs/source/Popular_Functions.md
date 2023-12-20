@@ -1,6 +1,6 @@
 # Popular functions
 
-![](media/9552765f7390b07d15cf0a2fcb7dff18.png)
+![](new_images/popular_functions/popular_functions1.png)
 
 ## Operations with tables
 
@@ -49,7 +49,7 @@ under the tab *Columns*.
 For instance, if you have opened a table with data about Enrichment GO Molecular
 Mechanism (resulting from having run a GSEA), this field may look like this:
 
-![](media/image026.png)
+![](new_images/popular_functions/popular_functions2.png)
 
 Recognizably, you can change the column headers, the data type in the column, or
 its (usually hidden) descriptions. You may add an Expression, which may be a
@@ -78,7 +78,7 @@ with additional columns will be created.
 
 The input form of this method, when opened in the work space, is shown below:
 
-![](media/40ef5ae338d5babdfde207c036a46a30.png)
+![](new_images/popular_functions/popular_functions3.png)
 
 In the following, we will consider the input fields one by one:
 
@@ -108,8 +108,11 @@ Annotate table of Affymetrix probe IDs with gene description and gene symbol
 
 As input, a table with normalized Affymetrix probes is selected. This input file
 can be accessed with the URL:
-
+<!--
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)>
+-->
+
+<https://platform.genexplain.com/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Experiment%20normalized%20(RMA)>
 
 In the field Species *Human* is selected, because the input table corresponds to
 a human dataset.
@@ -119,14 +122,14 @@ field Annotation source. All columns present in this table are available in the
 drop-down menu of the field Annotation columns. As shown in the screenshot
 below, two columns are selected, Gene description and Gene symbol:
 
-![](media/4ddfbd44d93de3233106cc7054611e47.png)
+![](new_images/popular_functions/popular_functions4.png)
 
 Next, the output path is defined, and you can press the [Run] button.
 
 After completion of the analysis the output file is opened automatically in the
 work space as shown below:
 
-![](media/3f31ec722a13be449cceda4ad5a83e3b.png)
+![](new_images/popular_functions/popular_functions5.png)
 
 In this result table two new columns are added, Gene description and Gene
 symbol, to the right of the ID column. The ID column itself, and all the other
@@ -140,31 +143,34 @@ with fold change values. Such a table can be generated, e.g. by the workflows
 *Find master regulators in networks,* 
 
 Further steps are shown with the following input table:
-
+<!--
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Master%20regulators%20Transpath)/Regulators%20upstream%2010>
+-->
+
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20methods/Site%20analysis/Upregulated%20Ensembl%20genes%20filtered%20(logFC%20%3E%201.5)%20(Upstream%20analysis%20Transfac%20and%20Transpath)/Master%20regulators%20annotated>
 
 In the field Species *Human* is selected, because the input table corresponds to
 a human dataset.
 
-As Annotation source you can use a table with expression values corresponding to
+As an Annotation source you can use a table with expression values corresponding to
 this dataset. You may have such a table in your tree area, e.g. a table with
 differentially expressed genes. In this example, the following table is used as
 annotation source:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
 As soon as the annotation source table is selected in the field Annotation
 source, you can see all available columns in the drop-down menu of the
 Annotation columns field. The LogFoldchange column is selected as shown below:
 
-![](media/a2171c25be9b61d685539f77f4ab877e.png)
+![](new_images/popular_functions/popular_functions6.png)
 
 Next, the output path is defined, and you can press the [Run] button.
 
 After completion of the analysis the output file is opened automatically in the
-work space as shown below:
+workspace as shown below:
 
-![](media/aff629c79c0ff9fdd0ad07c92b781f20.png)
+![](new_images/popular_functions/popular_functions7.png)
 
 In this result table one new column is added, LogFoldChange, to the right of the
 ID column. The ID column, and all the other columns are exactly the same as they
@@ -187,7 +193,7 @@ chain of several BioHubs and use them subsequently.
 
 The analysis input form when opened in the work space is shown below:
 
-![](media/ea464a92a36b7bb9d8eff9650c64b72b.png)
+![](new_images/popular_functions/popular_functions8.png)
 
 In the following, we will consider the input fields one by one:
 
@@ -226,7 +232,7 @@ Output table: Path to store the resulting table in the tree.
 
 Note that several non-trivial situations might occur during conversion:
 
--   A single source ID matches to several target IDs. In this case the source
+-   A single source ID matches several target IDs. In this case the source
     row will be copied several times, one copy per target ID.
 
 -   A source ID doesn't match to any target ID. In this case the source row will
@@ -249,21 +255,21 @@ columns will be merged based on the selected rule. For example, if you select
 your source column has an integer type, it might be changed into float.
 
 Example: Conversion of Ensembl gene IDs to UniProt IDs
-
+<!--
 The input table with Ensembl gene IDs can be accessed via URL:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
-
+-->
 Fill the input fields and press [Run] as shown below:
 
-![](media/61f58370697ecf57e69612e5a356d208.png)
+![](new_images/popular_functions/popular_functions9.png)
 
 Upon completion of the analysis the output file is opened by default as shown
 below
-
+<!--
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Proteins%20UniProt>
-
-![](media/c44513d722994d29e0fc39e7774fbf61.png)
+-->
+![](new_images/popular_functions/popular_functions10.png)
 
 The column ID now contains UniProt IDs. The column Ensembl ID, which was the ID
 column in the input table, is also present in the output table, as the second
@@ -299,7 +305,7 @@ least one table.
 
 The input form of this method, when opened in the work space, is shown below:
 
-![](media/56a8d446a9be3d6bc67cb4d51dd0bf76.png)
+![](new_images/popular_functions/popular_functions11.png)
 
 In the following, we will consider the input fields one by one:
 
@@ -328,7 +334,7 @@ The intersection is performed according to IDs matching from "left" table to
 "right". The result is a single table that contains rows common for both input
 tables.
 
-![](media/74758c4535de59c9449d92cb0dd19a1a.png)
+![](new_images/popular_functions/popular_functions12.png)
 
 In the following, we will consider the input fields one by one:
 
@@ -354,11 +360,11 @@ tab *Analyses*, in the folder Methods/Data manipulation/Venn diagrams (![](media
 
 The initial form of this analysis looks as it is shown below:
 
-![](media/0e501b661e6951b13d17331a1d84db6e.png)
+![](new_images/popular_functions/popular_functions13.png)
 
 When the expert options are opened, the form looks like:
 
-![](media/608c05087e9d076408461873fdb1f8e6.png)
+![](new_images/popular_functions/popular_functions14.png)
 
 To perform this analysis you can input two or three tables.
 
@@ -402,7 +408,7 @@ Press [Run].
 
 The analysis will start as shown below:
 
-![](media/c7789b6e648cdaa7185253b44be85747.png)
+![](new_images/popular_functions/popular_functions15.png)
 
 Wait till the analysis is completed.
 
@@ -472,7 +478,7 @@ the geneXplain platform, tracks in the tree area are shown as (![](media/track.j
 
 The method *Annotate track with genes* (![](media/660e619d8a95fd8d5d936e411e8ec6b6.png)) helps to add information about nearby located genes to each fragment. The input form is shown below:
 
-![](media/58de33019378ccc22112a61734b16f0d.png)
+![](new_images/popular_functions/popular_functions16.png)
 
 **Input track**. Specify the input track. You can drag & drop it from your
 project within the tree area. Alternatively, you may click on the pink field
@@ -539,7 +545,7 @@ track.
 This analysis can be used, for instance, to filter predicted binding sites for
 conserved regions.
 
-![](media/3c51b157a2132b9cdc154ae414b5394b.png)
+![](new_images/popular_functions/popular_functions17.png)
 
 The parameters can be described as follows.
 
@@ -553,8 +559,7 @@ intervals are tested for overlap.
 *Operation type:* Here one can select the desired input intervals, intersection or
 difference.
 
-*Output track:* The output track will contain the input intervals contained in the
-intersection of difference set.
+*Output track:* The output track will contain the input intervals contained in the intersection of the difference set.
 
 *Overlap coverage:* The overlap coverage is the relative proportion of an input
 interval that needs to overlap with a filter interval.
@@ -571,7 +576,7 @@ around TSS (transcription start sites). It is a useful method to create a track
 of gene promoters or upstream regions for any input gene table. The input form
 is shown below:
 
-![](media/bf3e2d56bdfb0533eb854e662e6a301c.png)
+![](new_images/popular_functions/popular_functions18.png)
 
 **Input table**. Specify the input table with Ensembl gene IDs. If your table
 has different IDs, you need to convert it first. You can drag & drop the table
@@ -585,7 +590,7 @@ You can see Ensembl gene IDs in the column **ID**. Such a table may contain any
 number of additional columns. Here, three additional columns are present, **Gene
 description**, **Gene symbol** and **Affymetrix ID**.
 
-**Species**. After input of the table, the species (human, mouse or rat) is
+**Species**. After inputting the table, the species (human, mouse or rat) is
 adjusted automatically. Verify the species shown in the species field.
 
 **From** and **To**. By default this method considers the following regions
@@ -595,8 +600,7 @@ direction.
 **Output track**. Specify the path and name to store the output track.
 
 Having filled in the input form, launch the analysis with the [Run] button. Wait
-till the analysis is completed. The resulting track is automatically opened in
-genome browser in your work space.
+till the analysis is completed. The resulting track is automatically opened in the genome browser in your work space.
 
 The output track when opened as a table, is shown below:
 
@@ -615,7 +619,7 @@ The method *Track to gene set* (![](media/47afc8cc9a9e791b09f0a07a4a60845b.png))
 Genes overlapping with at least one input fragment are considered resulting
 target genes. The input form is shown below:
 
-![](media/a2b9bba31b0c7eec7166b33b949d30ac.png)
+![](new_images/popular_functions/popular_functions19.png)
 
 **Input track**. Specify input track. You can drag & drop it from your project
 within the tree area. Alternatively, you may click on the pink field *select
@@ -741,7 +745,7 @@ adding sequences from Ensembl or some other database.
 
 The initial form of this analysis looks as shown below:
 
-![](media/6cdc5bf0cd0c41f60edf870e4250657c.png)
+![](new_images/popular_functions/popular_functions20.png)
 
 **Source track:** Track you want to process  
 **Sequences:** Sequences to use  
@@ -749,7 +753,7 @@ The initial form of this analysis looks as shown below:
 **Enlarge sites at end:** Use positive numbers to enlarge and negative to shrink  
 **Merge overlapping:** Checking this box merges overlapping sites into a single
 site. Site annotations will be lost!  
-**Remove small sites:** If checked, sites smaller then Minimal site size will be
+**Remove small sites:** If checked, sites smaller than Minimal site size will be
 removed, otherwise they will be expanded to Minimal site size  
 **Minimal site size:** Sites shorter than the specified size will be removed from
 output  
@@ -758,7 +762,7 @@ output
 An example source track file saved in the repository to which you want to add
 sequences may look like this:
 
-![](media/734e825dbd98f223911c5d807cb21c55.png)
+![](new_images/popular_functions/popular_functions21.png)
 
 The track file shown provides you with the positions of promoter areas selected
 for analysis, as shown in columns From and To. The column Strand shows the
@@ -771,34 +775,37 @@ This Source track file can be selected as an input to “Process track with
 Sites”. The sequences we want to map are selected from the Ensembl database as
 shown below:
 
-![](media/eea58c33245b2938b72c64f6a79a5f20.png)
+![](new_images/popular_functions/popular_functions22.png)
 
 Using default conditions for the other parameters you can now press [Run].
 
 The output track looks like shown below:
 
-![](media/318f6ddde10ce7c5fa32d111decd11cd.png)
+![](new_images/popular_functions/popular_functions23.png)
 
 For comparison of the results you can click on individual chromosome sequences
 from both the original track and the Processed track from the Tree Area as shown
 below:
-
+<!--
 ![](media/17fb0aa1e886115cc93e32bda64a34f8.png)
 
 ![](media/29cb38a651964293c97562a4eea49e27.png)
+-->
 
+![](new_images/popular_functions/popular_functions24.png)
+<!--
 The detailed view of the processed track is as shown below:
 
 ![](media/fd378ce05d5cf4fb30e5371c4df37870.png)
 
 100bp are added to both the sides and thus from original 19bp track, you now
-have a track with 219bp. This processed track can be used further for other site
+have a track with 219bp.--> This processed track can be used further for other site
 analysis functions.
 
 ### Create random track
 
 This method creates a track of randomly sampled sequence regions, also denoted
-as intervals, segments or subsequences. Upstream regions of genes serve as
+as intervals, segments or subsequences. Upstream regions of genes serve as a
 source for the random segments.
 
 Sampling can take into account an input track in two ways. First, the lengths of
@@ -814,12 +821,12 @@ Specification of an input track is optional. Random seed and sequence length
 arguments with values less than or equal to 0 are ignored. However, if no input
 track is provided, the sequence length argument is required.
 
-![](media/0d60b770891edb0f6c1c7e6d1ed58982.png)
+![](new_images/popular_functions/popular_functions25.png)
 
 The input mask of the tool is shown above. The parameters are described in the
 following.
 
-**Input track:** This is argument is optional. The input track can be supplied to
+**Input track:** This argument is optional. The input track can be supplied to
 obtain a random track with a similar length distribution and/or void of segments
 overlapping with input intervals.
 
@@ -858,9 +865,9 @@ regions, e.g. promoters, 5’ UTRs, 3’ UTRs, exons, introns.
 The analysis method ‘Create transcript region track’ can be found on the Start
 page, under the button ‘Popular functions’.
 
-![](media/c4ce4c1d11dbe6be3a8662e438521b6f.png)
+![](new_images/popular_functions/popular_functions26.png)
 
-![](media/111333210c95bdb944cbafb043648e8b.png)
+![](new_images/popular_functions/popular_functions27.png)
 
 Here it is shown how to create a track with 5’ UTR sequences starting from input
 transcripts. The input should be a table with Ensemble transcripts.
@@ -879,7 +886,7 @@ table into Ensembl transcripts.
 wish to include in the output track. The region can be selected from 3’ UTR,
 5’ UTR, promoter, intron, and exon.
 
-![](media/c8f7646c615500c399c6aa22fb5ecd7c.png)
+![](new_images/popular_functions/popular_functions28.png)
 
 As soon as you have chosen a transcript region from the drop-down menu, the
 following input fields are adjusted. If Promoter is selected as the transcript
@@ -929,7 +936,7 @@ input transcripts. The input should be a table with Ensemble transcripts.
 
 The analysis will start as shown below:
 
-![](media/1a1d5bec5efa5794ef43b7f537db14ac.png)
+![](new_images/popular_functions/popular_functions29.png)
 
 After the run is completed, the output track is opened automatically in the work
 space as shown below:
@@ -941,7 +948,7 @@ and view the corresponding track file.
 
 The track file when viewed as a table looks like as shown below:
 
-![](media/203c18216748f6d082d085ac6297a026.png)
+![](new_images/popular_functions/popular_functions30.png)
 
 The resulting tracks file can be used as input for various other workflows, for
 example to search for TF binding sites, enriched motifs and composite modules,
@@ -957,11 +964,11 @@ by mapping it against the TSS locations defined in CAGE data in the Fantom5
 ([Nature 507:462–470](http://www.nature.com/nature/journal/v507/n7493/full/nature13182.html))
 database (see also 19.10).
 
-![](media/e13fcb2265de29539017985fbdfa507d.png)
+![](new_images/popular_functions/popular_functions31.png)
 
 The input form is as shown below:
 
-![](media/beaa3d359ca060c9808f9471bbf3c160.png)
+![](new_images/popular_functions/popular_functions32.png)
 
 **Input genes:** Enter the set of genes or a gene table to extract transcription
 start sites (TSSs).
@@ -987,21 +994,21 @@ wish to save the Fantom5 promoter track.
 For example:
 
 The method is run using a set of upregulated genes from brain tumor as input,
-specifying cerebellumadult as cell tissue condition, and keeping all other
+specifying cerebellum adult as cell tissue condition, and keeping all other
 conditions as default.
-
+<!--
 The input dataset can be found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
-
+-->
 Upon completion the output file is opened in the work space and looks as shown
 below, can be located in the Examples folder using the URL
 
-<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20Fantom5%20promoters>
+<https://platform.genexplain.com/bioumlweb/%5C#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20Fantom5%20promoters>
 
-![](media/9ec8c83fbb4c50704f0b3b789d9944b1.png)
+![](new_images/popular_functions/popular_functions33.png)
 
-These set of promoters can be used as an input for other site analysis
+This set of promoters can be used as an input for other site analysis
 workflows.
 
 ### Track statistics
@@ -1009,14 +1016,14 @@ workflows.
 The analysis method *Track Statistics* can be found on the Start page, under the
 button ‘Popular functions’ as shown below:
 
-![](media/3cc6cb95b8895b55fb3efecba0bbd2b5.png)
+![](new_images/popular_functions/popular_functions34.png)
 
 This method gathers various statistical information about any input track or
 Fastq file. This information is helpful to calculate the number of reads in a
-particular input file which is a pre-requisite for many workflows. The input
+particular input file which is a prerequisite for many workflows. The input
 form is shown below:
 
-![](media/image71.png)
+![](new_images/popular_functions/popular_functions35.png)
 
 The input form parameters are as follows:
 
@@ -1061,7 +1068,7 @@ bases.
 **Sequence length distribution** – Calculates a distribution of read lengths and
 outputs them as a table and a chart.
 
-**Duplicate sequences** – Calculates the rate of sequences duplication: how many
+**Duplicate sequences** – Calculates the rate of sequence duplication: how many
 sequences occur 2, 3 etc. times relative to unique sequences. This statistic is
 based on the first 200000 reads.
 
@@ -1072,22 +1079,22 @@ cases.
 sequence or 5x times per position.
 
 **Overrepresented prefixes** – Search for read prefixes (starting from the read
-start) up toa length od 15 bp which are overrepresented in the set.
+start) up to a length of 15 bp which are overrepresented in the set.
 
 **Output path** – Specify the output file name and path in the tree where you want
 to save the output file.
 
 After pressing ‘Run’ the method runs as shown below:
 
-![](media/48acebffcb6a9ccfd82dfbe3a312b441.png)
+![](new_images/popular_functions/popular_functions36.png)
 
 After completion of the method, the output folder is created and an HTML report
 opens in the workspace.
 
 The link to an example HTML output report for an input FastQ file is here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Output%20of%20TopHat/SRR349741.fastq%20track%202>
-
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201%20stats/Report>
+<!--
 After pressing run, the method runs as shown below:
 
 ![](media/48acebffcb6a9ccfd82dfbe3a312b441.png)
@@ -1098,10 +1105,10 @@ opens in the workspace.
 The link to an example HTML output report for an input FastQ file is here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/Fastq%20files/SRR349741.fastq%20stats/Report>
-
+-->
 The report looks as shown below:
 
-![](media/dae8c821046795d8bc56c41a4cd89d80.png)
+![](new_images/popular_functions/popular_functions37.png)
 
 It gives a summary of all the parameters at first glance; details can be
 retrieved by clicking on the respective hyperlinks.
@@ -1115,7 +1122,7 @@ The link to an output HTML file using a track file as input is here:
 
 ### Mutation effect analysis
 
-This tool allows to find proteins affected by mutations. The mutation effect
+This tool allows us to find proteins affected by mutations. The mutation effect
 analysis determines the effect of a certain genomic mutation on a protein, such
 as synonymous, gain/loss of stop codon, frameshift or others. It accepts a list
 of Single Nucleotide Variations (mutations), and determines the type for each
@@ -1125,30 +1132,30 @@ The analysis “Mutation effect” can be found in the NGS folder of analysis
 methods ([analyses/Methods/NGS/Mutation effect]<http://genexplain-platform.com/bioumlweb/#de=analyses/Methods/NGS/Mutation%20effect>)
 or on the start page button ‘Popular functions’ under the section ‘Operations with tracks’.
 
-![](media/8666624392301b96bf055f4225c491ee.png)
+![](new_images/popular_functions/popular_functions38.png)
 
 **Step 1.** Open the analysis form from the Start page. It will open in the main
 Work Space and looks as shown below:
 
-![](media/6476e44023cff4743bce2c196a2c3362.png)
+![](new_images/popular_functions/popular_functions39.png)
 
 **Step 2**. The **Input** track is a track file with a list of single nucleotide
 variations (mutations) and should be in vcf format.
 
 One input example is here on the platform:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SNP_indels.vcf>
+<https://platform.genexplain.com/#de=data/Examples/Chronic%20Myeloid%20Leukemia%20Patient%20Genotyping/Data/SRR944150%20forward.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/SNP_indels.vcf>
 
 Open the track file as a table, and for each variation point you can see several
 columns with genomic position, chromosome, alternative nucleotide etc., as shown
 below.
 
-![](media/13ff3532910e8d6db0bc489400ea7a14.png)
+![](new_images/popular_functions/popular_functions40.png)
 
 **Step 2**. Verify the Sequences source and use the drop-down menu for different
 Ensembl genome annotations of human, mouse and rat, as shown below.
 
-![](media/b54afe065f043183ebb395c7e13b4704.png)
+![](new_images/popular_functions/popular_functions41.png)
 
 Alternatively, you can choose 'Custom' from the same menu if you would like to
 specify another genome, e.g. a particular patient genome imported into the
@@ -1156,7 +1163,7 @@ platform before. As soon as the option 'Custom' is chosen, an additional field,
 Sequence collection, automatically appears on the input form (screenshot below),
 and you can specify the sequences location manually.
 
-![](media/fc9cf9dc20a5ff85f14c1e5224169a43.png)
+![](new_images/popular_functions/popular_functions42.png)
 
 **Step 3**. Specify the path and name of the Output track.
 
@@ -1228,7 +1235,7 @@ filtering.
 The output track can be opened in the genome browser as shown in the picture
 below.
 
-![](media/2a7a9aac46faf2e9e8f965ad116ada5a.png)
+![](new_images/popular_functions/popular_functions43.png)
 
 ### Remove overlapping sites
 
@@ -1237,7 +1244,7 @@ the input track with no sites overlap in the output track. It can be found under
 the tab *Analyses*, in the folder Methods/Data manipulation/Remove overlapping
 sites. Here the default input form is shown:
 
-![](media/05f5883e87ef3060f3d6c06e9baf2c93.png)
+![](new_images/popular_functions/popular_functions44.png)
 
 In the following, we will consider the input fields one by one.
 
@@ -1255,7 +1262,7 @@ independently.
 **Overlapping site selection mode** Choose one mode from the drop-down menu for the
 selection of sites.
 
-![](media/74a6da052cb67fbeff4cd1de6980883e.png)
+![](new_images/popular_functions/popular_functions45.png)
 
 The *One longest*, *One shortest*, *One with best value* and *One random* modes
 will select a single site from the set of overlapping sites. Other modes can
@@ -1303,7 +1310,7 @@ This analysis method can be found on the Start page under the button “Popular 
 
 The input form looks as shown below:
 
-![](media/804c87614085568e7ae50c60e872654e.png)
+![](new_images/popular_functions/popular_functions46.png)
 
 In the following, the input fields are shown one by one:
 
@@ -1326,7 +1333,7 @@ the output folder.
 Here, two enrichment results are taken for comparison from the Examples folder;
 the analysis will start as shown below:
 
-![](media/ca5ef5dcb943a5bf6b92d6fd411fd3d5.png)
+![](new_images/popular_functions/popular_functions47.png)
 
 The output consists of two files: the Analysis comparison plot and the Analysis
 comparison Table.
@@ -1334,7 +1341,7 @@ comparison Table.
 The Analysis comparison table as shown below lists all P-values, absolute
 differences, difference P-values and estimated FDR.
 
-![](media/ed39be33262aa645fdcde531be6555fe.png)
+![](new_images/popular_functions/popular_functions48.png)
 
 The output columns are explained below:
 

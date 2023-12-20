@@ -1,6 +1,6 @@
 # ChIP-seq
 
-![](media/image048.png)
+![](new_images/chip_seq/chip_seq1.png)
 
 ## Peak calling
 ### MACS
@@ -17,7 +17,7 @@ whose parameters are explained in the following.
 
 #### MACS 1_3_7
 
-![](media/6a63ab387c14aa99a86a704c25c0899f.png)
+![](new_images/chip_seq/chip_seq2.png)
 
 Parameters have the following meanings:
 
@@ -64,10 +64,10 @@ data to calculate the local bias.
 This is an advanced version of MACS 1.3.7. During model building, the new
 algorithm selects regions within a certain range of enrichment. By default,
 permissible enrichment values range from 10 to 30. If MACS fails to build the
-model, it will use resort to “no model”-settings with a shift size=100bps, to
-shift and extend each tags.
+model, it will resort to “no model”-settings with a shift size=100bps, to
+shift and extend each tag.
 
-![](media/04145326b324f73efd47d7c630417d56.png)
+![](new_images/chip_seq/chip_seq3.png)
 
 **Track**: Input track to search for peaks enriched with sequencing tags
 
@@ -100,7 +100,7 @@ calculate dynamic lambda. Only applied with control data.
 
 **No auto pair process (expert)**: Whether to turn off the auto pair model
 process. If marked MACS will exit with an error message if the model building
-fails. If not marked, it will resourt to “no model”-settings
+fails. If not marked, it will resort to “no model”-settings
 
 **No model (expert)**: Do not build the shifting model. In this mode (no model)
 a fixed shift size parameter is used.
@@ -133,7 +133,7 @@ associate with other genomic landmarks.
 2. Identification of reads on the ChIP-enriched regions, which can be used for
 profiling and other quantitative analysis.
 
-![](media/083b9a8845bdc6c8e0a9655f4c4dfb83.png)
+![](new_images/chip_seq/chip_seq4.png)
 
 Parameters for SICER should be set as described in the following.
 
@@ -201,7 +201,9 @@ database used to find gene/protein clusters, either TRANSPATH® or GeneWays. In 
 
 [here]: https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/GSM558469_E2F1_hg19%20filtered%20chr%201
 
-The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data
+The results for each of the three workflows can be found in the folder data/Examples/E2F1 binding regions in HeLa cells, ChIP-Seq/Data:
+
+https://platform.genexplain.com/bioumlweb/#de=data/Examples/E2F1%20binding%20regions%20in%20HeLa%20cells%2C%20ChIP-Seq/Data/
 
 #### Classification by GO categories and metabolic pathways
 
@@ -223,7 +225,7 @@ shown in the resulting table *Genes Ensembl* (![](media/image115.png)).
 Functional classification by the HumanCyc pathways has found 8 metabolic
 pathways:
 
-![](media/b4b742305c09732b8ebf76d8c9f0a700.png)
+![](new_images/chip_seq/chip_seq5.png)
 
 The top pathway visualization diagram can be opened in the work space upon a
 mouse click to the pathway ID:
@@ -258,13 +260,13 @@ network. For the same input as mentioned, the output path for this workflow is:
 For details, how to launch this workflow and look into the results, please refer
 to the description in section Classification by GO categories and metabolic pathways. In our example Functional classification by the TRANSPATH® pathways has found 21 signaling pathways and chains: 
 
-![](media/image055.png)
+![](new_images/chip_seq/chip_seq6.png)
 
 The pathway visualization diagrams can be opened in the work space upon a mouse click to the pathway ID. The fragment of the second top pathway, leptin signaling, is shown in force directed layout on the picture below. Important to mention, you can see protein complexes and modified forms on the TRANSPATH® diagrams.
 
 ![](media/image056.png)
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license. Please, feel free to ask for details (info\@genexplain.com).
+**Note** This workflow is available together with a valid TRANSPATH® license. Please, feel free to ask for details (info\@genexplain.com).
 
 #### Classification by GO categories, signaling pathway, and diseases
 
@@ -273,7 +275,7 @@ In the first step of this workflow, the input track (![](media/track.jpg)) is co
 
 The input form when opened in the work space is shown below:
 
-![](media/image053.png)
+![](new_images/chip_seq/chip_seq7.png)
 
 **Step 1**. Specify input track in BED format in the field **Input track**.
 
@@ -311,7 +313,7 @@ genes. For the input track in this example, 2187 Ensembl genes are identified.
 The resulting table *Genes Ensembl* is shown below, sorted by the column
 *Count*. 
 
-![](media/image057.png)
+![](new_images/chip_seq/chip_seq8.png)
 
 Each row in this table contains information about one identified gene including
 Ensembl gene ID, chromosome, exact genomic positions and strand (1 or -1), gene
@@ -321,7 +323,7 @@ input track are overlapping with each gene.
 These genes are then converted into TRANSPATH® proteins, the output table
 Proteins Transpath is, shown below:
 
-![](media/image058.png)
+![](new_images/chip_seq/chip_seq9.png)
 
 The structure of this table is very similar to that of Genes Ensembl, the
 critical difference is the column **ID**, which represents TRANSPATH® molecule
@@ -355,11 +357,11 @@ classification.* The results are shown in eight tables with the icon (![](media/
 
 The resulting table, e.g. *Mapping to HumanPSD GO (disease)*, looks like this:
 
-![](media/image060.png)
+![](new_images/chip_seq/chip_seq10.png)
 
 Each row corresponds to one ontological category, which in this case is one of the diseases as they are annotated in the HumanPSD™ database. Commonly accepted disease identifiers are shown in the ID column. The disease names are shown in the column Title. The column Group size represents the number of genes linked to this disease in HumanPSD™, and the column Category demonstrates the functional type of the link between genes and disease; it can be causal, correlative or negative. For each row several parameters are calculated, the expected number of hits (Expected hits), the actual number of hits (Number of hits), P-value, as well as Hit names.  IDs are hyperlinked to an external web page of CTD, the Comparative Toxicogenomics Database. With a click on each ID, a new tab will be opened displaying additional information about the disease.
 
-**Note***.* This workflow is available together with a valid HumanPSD™ license. Please, feel free to ask for details (info\@genexplain.com).
+**Note** This workflow is available together with a valid HumanPSD™ license. Please, feel free to ask for details (info\@genexplain.com).
 
 ### Site search with TRANSFAC®
 
@@ -382,14 +384,14 @@ applying the method *analyses/Methods/Site analysis/Search for enriched TFBSs
 The workflow can be found under the section “Analyze ChIP-seq peaks” →
 Site search with TRANSFAC(R) → version 2.0 (Adjusted p-values).
 
-![](media/392db3c642193747701ceb572cd04fac.png)
+![](new_images/chip_seq/chip_seq11.png)
 
 To launch the workflow, follow these steps:
 
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/image061.png)
+![](new_images/chip_seq/chip_seq12.png)
 
 **Step 2.** Specify the input track in BED format in the field **Input Yes
 track**.  
@@ -413,7 +415,7 @@ default, the most recent Ensembl human genome, hg19, is specified. Make sure you
 selected the sequence source (species and the genome build) that corresponds to
 your input set, to get correct and meaningful results.
 
-![](media/image062.png)
+![](new_images/chip_seq/chip_seq13.png)
 
 **Step 5**. Specify the biological species of the input set in the field
 **Species** by selecting it from the drop-down menu.
@@ -453,37 +455,41 @@ Please note that by default only the matrices with a **Coefficient** \>0.125
 motifs can be interpreted as the best discriminating motifs between the Yes and
 NO sets.
 
+<!--
 The table **Enriched motifs MEALR** shown below has been sorted by the values in
 the **Coefficient** column. The larger the coefficient, the more important the
 corresponding motif was for discriminating between Yes and No sequences.
 
 ![](media/image064.png)
+-->
 
 The table **Profile** is opened automatically and is an input-specific profile,
 based on the filtered *enriched motifs MEALR* from the first part of the
 workflow.
 
-![](media/image065.png)
+![](new_images/chip_seq/chip_seq14.png)
 
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis in the second part of the workflow.
 
 **Table Transcription factors Ensembl:**
 
-![](media/image066.png)
+![](new_images/chip_seq/chip_seq15.png)
 
 This table includes transcription factors (TFs) that are associated with the
 PWMs listed in the table *Site search summary*. Each row shows details for one
 TF, including its Ensembl gene ID (column **ID**), gene symbol, gene description
-and biological species of the corresponding TF (columns **Gene description**,
-**Gene symbol**, and **Species**). The column **Site model ID** shows the
+and biological species of the corresponding TF (columns **Gene description** and
+**Gene symbol**). The column **Site model ID** shows the
 identifier of the PWM associated with this TF, and several further columns
 repeat information that is also shown in the table *Site search summary*.
 
+<!--
 For further visualization of resulting *Yes sites opt* track please refer to
 the description of the workflow "Search for discriminative sites with TRANSFAC® (MEALR)"
+-->
 
-**Note***.* This workflow is available together with a valid TRANSFAC® license. Please, feel free to ask for details (info\@genexplain.com).
+**Note** This workflow is available together with a valid TRANSFAC® license. Please, feel free to ask for details (info\@genexplain.com).
 
 #### Version 1.2 (Classical)
 
@@ -499,7 +505,7 @@ The few steps to launch the workflow are described in the following.
 **Step 1**. Open workflow input form from the Start page, it will be opened in
 the main Work Space and looks as it is shown below:
 
-![](media/image068.png)
+![](new_images/chip_seq/chip_seq16.png)
 
 **Step 2.** Specify the input track in BED format in the field **Input Yes
 track**.  
@@ -515,7 +521,7 @@ default, the most recent Ensembl human genome, hg19, is specified. Make sure you
 selected the sequence source (the genome build) that corresponds to your input
 set, to get correct and meaningful results.
 
-![](media/image069.png)
+![](new_images/chip_seq/chip_seq17.png)
 
 **Step 4.** Specify the biological species of the input set in the field
 **Species** by selecting the required species from the drop-down menu.
@@ -525,7 +531,7 @@ clicking on this field, a supplementary window will open, where you can select
 the No track from your project tree, or use one of our default No tracks for
 human, mouse or rat, respectively.
 
-![](media/57b650acae11a384ca5df360122c380b.png)
+<!--![](media/57b650acae11a384ca5df360122c380b.png)-->
 
 **Step 6.** Define where the folder with the results should be located in your
 project tree. You can do so by clicking on the pink field “select element” in
@@ -542,7 +548,7 @@ Wait until the workflow is completed.
 let’s consider the results folder located under “Examples”. It is highlighted by
 blue in the figure below:
 
-![](media/image067.png)
+![](new_images/chip_seq/chip_seq18.png)
 
 The tables *Site optimization summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)) and *Transcription factors* 
 (![](media/1e0da26a6ab305b7be6f417d521ab809.png)) are opened automatically in the Work Space as soon as the workflow is
@@ -603,19 +609,19 @@ details about these scores, please see Kel et al., Nucleic Acids Res.
 
 **Tip**. Further visualization of track files in the genome browser:  
 Having tracks “Yes sites opt” and “No sites opt” opened in the Work Space, the
-menu button ![](media/3dedf14838c50548c1db5a37fccc0940.png) can be applied to get a visualization. First, a supplementary window is opened where you can select one chromosome and press [Ok], as shown below.
+menu button ![](media/3dedf14838c50548c1db5a37fccc0940.png) can be applied to get a visualization. First, a supplementary window is opened where you can select one chromosome and press [Ok].<!--, as shown below.
 
 ![](media/b030e6a40a796e1227abfc1881de74d2.png)
 
 In the second pop-up window, you can select tracks that can be visualized
 together with your track, e.g. “Yes sites opt” (see above), and press [Ok].
 
-![](media/236abeae3d020a7774abfb31af17ed53.png)
+![](media/236abeae3d020a7774abfb31af17ed53.png)-->
 
 The resulting visualization, after applying the “zoom in” button, looks like it is shown below. Matches for different 
 matrices are shown in colors, and the color schema can be customized.
 
-![](media/67ed1790072e9b9c2f4688caabb6bfa3.png)
+![](new_images/chip_seq/chip_seq19.png)
 
 Such a view may help to visually co-localize information on different tracks,
 e.g. putative TFBS with variations, repeats and genes. In the figure above, the
@@ -628,14 +634,14 @@ under the tab “Sites” (shown below). For each element information is shown o
 chromosome, positions, length, strand, type of the track, and name of the
 element.
 
-![](media/3f57813ce088024a200217de4fe1d83b.png)
+![](new_images/chip_seq/chip_seq20.png)
 
 This table can be exported as a track, in several different formats including
 intervals, bed, wig, gff, gtf and more.
 
-![](media/ba71a77e4768b83ed621c82ab580792c.png)
+![](new_images/chip_seq/chip_seq21.png)
 
-![](media/a35e062b372da19d7add587c413bd899.png)
+<!--![](media/a35e062b372da19d7add587c413bd899.png)-->
 
 **Note.** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
@@ -655,10 +661,10 @@ The steps of this workflow for a single input Yes track are described in the
 previous section. In this workflow, the same steps are performed next time for
 the 2nd Yes track, and so on iteratively for each of the input Yes tracks.
 
-This workflow helps to save time and efforts, especially when you have several
+This workflow helps to save time and effort, especially when you have several
 sets of ChIP-seq data, e.g. the peaks for a number of different TFs.
 
-**Note***.* This workflow is available together with a valid TRANSFAC® license.  
+**Note** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 ### Search for composite modules with TRANSFAC®
@@ -693,7 +699,7 @@ housekeeping genes located on chromosome 1 is taken as the No track found here:
 
 The workflow input form is completed and the run is in progress:
 
-![](media/5ec0ca15646b2eaec19bd257010017b1.png)
+![](new_images/chip_seq/chip_seq22.png)
 
 The resulting folder can be found under:
 
@@ -723,7 +729,7 @@ For more details on the individual output tables and tracks as well as for
 **visualization** of the identified composite modules in the genome browser
 please refer to the description of the method Identify composite modules.
 
-**Note***.* This workflow is available together with a valid TRANSFAC® license.  
+**Note** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 ### Identify enriched motifs in tissue specific promoters
@@ -732,12 +738,12 @@ This workflow searches for enriched transcription factor binding sites (TFBSs)
 in a set of gene promoters versus a random promoter set. The input gene set is
 used to extract promoter regions by mapping it against the TSS locations defined
 in CAGE data in the Fantom5 ([Nature 507:462–470](http://www.nature.com/nature/journal/v507/n7493/full/nature13182.html))
-database . The over-represented sites identified with the MEALR
+database . The overrepresented sites identified with the MEALR
 method are converted into a profile, which is used for a second round of site
 search, and ends up with the identification of transcription factors. To launch
 the workflow, open the workflow input form from the Start page:
 
-![](media/241a5955e4a39ba32dded1785edbe40b.png)
+![](new_images/chip_seq/chip_seq23.png)
 
 **Step 1**: To specify the **Input Yes genes**, you can drag & drop it from your
 project within the tree area. Alternatively, you may click on the pink field
@@ -762,7 +768,7 @@ your input set in order to get correct and meaningful results.
 **Step 4**: Select the **Tissue condition**, select the tissue for which you
 want to create the promoter track from the drop-down menu.
 
-![](media/image070.png)
+![](new_images/chip_seq/chip_seq24.png)
 
 **Step 5**: The **TSS selection** should be performed if there are multiple
 transcription start sites. By default, the most active site is considered as
@@ -815,9 +821,9 @@ collection of converted and filtered site models. The table *Transcription
 factors Ensembl genes* includes the corresponding 35 TFs from the second S*ite
 search summary* and is shown below:
 
-![](media/image073.PNG)
+![](new_images/chip_seq/chip_seq25.png)
 
-**Note***.* This workflow is available together with valid TRANSFAC® and
+**Note** This workflow is available together with valid TRANSFAC® and
 TRANSPATH® licenses. Please feel free to ask for details (info\@genexplain.com).
 
 ### Discover de-novo motifs using ChIPHorde and DiChIPHorde
@@ -833,7 +839,7 @@ The image below shows the ChIPHorde interface. The input mask of DiChIPHorde
 features only slight differences as pointed out in the section describing input
 parameters.
 
-![](media/c0bc940cfaa1f687aaaa96e72237dfbd.png)
+![](new_images/chip_seq/chip_seq26.png)
 
 The parameters are described in the following. For further details, please also
 refer to the [ChIPMunk manual](http://autosome.ru/smbsm/librettos/libretto_chipmunk/chipmunk_v3_manual.txt).

@@ -115,9 +115,9 @@ Create profile from site model table</a>) with <a href="https://platform.genexpl
 **Example analysis**
 <a href="https://platform.genexplain.com/bioumlweb/#de=analyses/Methods/MEALR%20combinatorial%20regulation%20analysis/Extract%20TRANSFAC(R)%20PWMs%20from%20combinatorial%20regulation%20analysis">Open</a> the tool in the user interface.
 
-- Specify a result table of a MEALR search analysis ([Input example](https://platform.genexplain.com/bioumlweb/#de=data%2FExamples%2FCombinatorial+regulation+analysis+of+TAL1%2FData%2FTAL1+track+%28Combinatorial+regulatory+analysis%29%2FMEALR+predictions%2FMEALR+search+result)).
+- Specify a result table of a MEALR search analysis ([Input example](https://platform.genexplain.com/bioumlweb/#de=data/Examples/Combinatorial%20regulation%20analysis%20of%20TAL1/Data/TAL1)).
 - Specify probability, accuracy and importance cutoffs
-- Specify an output table. A result path is suggested automatically on the basis of specified input (<a href="https://platform.genexplain.com/bioumlweb/#de=data/Examples/Combinatorial%20regulation%20analysis%20of%20TAL1/Data/TAL1%20track%20(Combinatorial%20regulatory%20analysis)/MEALR%20PWMs">Example result</a>).
+- Specify an output table. A result path is suggested automatically on the basis of specified input (<a href="https://platform.genexplain.com/bioumlweb/#de=data/Examples/Combinatorial%20regulation%20analysis%20of%20TAL1/Data/TAL1">Example result</a>).
 
 ## TRANSFAC(R) MEALR combinatorial regulation analysis
 

@@ -1,6 +1,6 @@
 # Microarrays
 
-![](media/image037.png)
+![](new_images/microarrays/1.png)
 
 ## Normalize data
 
@@ -31,7 +31,7 @@ If your readings were from a dual-channel experiment, please tick the checkbox
 In the field Output name, you find a suggested name for the output file. The
 default name is “Normalized (\<*Normalization_method*\>)”, which you can edit
 (just click into this field and change the default name). An accordingly named
-file will appear in the Tree Area after the procedure run successfully.
+file will appear in the Tree Area after the procedure runs successfully.
 
 You may also have noticed that some further information about the analyses to be
 employed is displayed in both the Info Box as well as in the Operations Field
@@ -51,7 +51,7 @@ should look like this, with the probeset IDs in the first and the normalized
 expression values from the different CEL files in the following columns, each
 hybridization being represented in one column (picture below).
 
-![](media/image036.png)
+![](new_images/microarrays/2.png)
 
 **Important note.** In the geneXplain platform, the probeset IDs are mapped to
 genes based on the Ensembl database. If some of the probeset IDs are not
@@ -71,15 +71,16 @@ TIFF image of the heatmap as well as the ordered lists of row ids (e.g. RNA or
 gene ids) and column ids. The output tables can be used to extract subsets of
 correlated rows or columns revealed by the hierarchical clustering and/or the
 heatmap presentation.
-
+<!--
 An example can be found here: 
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Normalized%20(RMA)%20subset_heatmap/heatmap.tif>
+-->
 
 **Step 1**: Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/a8844817a0066a3914e48711b91130aa.png)
+![](new_images/microarrays/3.png)
 
 **Step 2**: Specify the **Input table** with e.g. normalized data for different
 experimental conditions. To specify the input table, you can drag & drop it from
@@ -93,12 +94,12 @@ output image.
 
 **Step 5**: Specify layout heights (Lhei). This should be a list of 2 (when no
 column groups are specified) or 3 (with column groups) float values separated by
-comma that adjust the heights of the layout parts. Please refer to the
+commas that adjust the heights of the layout parts. Please refer to the
 documentation of R's heatmap.2
 {[gplots](https://cran.r-project.org/web/packages/gplots/)} tool for details.
 
 **Step 6**: Please check Row dendrogram and/or Column dendrogram if you want to
-have a raw dendogram and/or a dendrogram with column in the output image.
+have a raw dendrogram and/or a dendrogram with column in the output image.
 
 **Step 7**: Specify the conditions/groups names for up to five groups (expert
 level).
@@ -122,14 +123,14 @@ graphical program/presentation.
 
 ### Normalization quality plots
 
-This tool can be applied plot densities of columns of a data table. As its name
+This tool can be applied to plot densities of columns of a data table. As its name
 implies the intended use case is to inspect the quality of results of
 normalization as conducted in microarray experiments.
 
 Example outputs, a box plot and a density plot, are shown at the end of this
 section. Colors were automatically assigned to selected columns.
 
-![](media/19cdc9edd8a0f7d558e04be8759a8bb4.png)
+![](new_images/microarrays/4.png)
 
 The input parameters are described in the following.
 
@@ -155,7 +156,7 @@ amount of variance within the data can be expressed in fewer or, at most, as
 many dimensions as the original data. The new dimensions onto which data are
 projected are the principal components. They capture the original variance in
 decreasing order, so that the first principal component presents most of the
-variance. PCA is often used reduce the complexity of (to compress) or to
+variance. PCA is often used to reduce the complexity of (to compress) or to
 identify groups in high-dimensional data.
 
 This tool applies PCA to a table of numerical data, e.g. to normalized
@@ -171,7 +172,7 @@ coordinates is available in **PCA Transformed coordinates**. Finally, the table
 of each principal component with respect to the proportion of explained
 variance.
 
-![](media/ccfc4f1e8e0f8d39aa47b5c81f995c59.png)
+![](new_images/microarrays/5.png)
 
 The input parameters for PCA are described in the following.
 
@@ -199,7 +200,7 @@ normalized* and *Control normalized*. The methods Limma and EBarrays require one
 input table with all the conditions, and you can specify up to five different
 conditions for one run of each of these two methods.
 
-![](media/image038.PNG)
+![](new_images/microarrays/6.png)
 
 If you applied the normalization method “Experiment vs. control”, you can detect
 DEGs applying T-test and/or hypergeometric analysis to the workflows,
@@ -226,7 +227,7 @@ To launch the workflow, follow these steps:
 **Step1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/b086e8df8904c4d63d66293e54623df1.png)
+![](new_images/microarrays/7.png)
 
 **Step 2.** Specify the tables with normalized data in the fields **Experiment
 normalized** and **Control normalized**. You can drag it from your project
@@ -235,7 +236,9 @@ you may click on the pink field *(select element)* and a new window will be
 opened, where you can select the input tables.
 
 The further steps are demonstrated using the Affymetrix files found here:
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/GSE1825_RAW>
+<!--<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/GSE1825_RAW>-->
+
+![](new_images/microarrays/8.png)
 
 **Step 3.** Specify the biological species of the input sets in the field
 **Species** by selecting the required biological species from the drop-down
@@ -250,9 +253,9 @@ After entering all input fields press [Run workflow] and wait till the workflow
 is completed.
 
 The output is a folder with several files as shown below:
-
+<!--
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)>
-
+-->
 
 ![](media/image039.png)
 
@@ -260,13 +263,13 @@ The table **Genes, fold change and P-value, non-filtered**. This table contains
 all genes with LogFoldChange and p-value calculated; each row corresponds to one
 gene.
 
-![](media/image040.png)
+![](new_images/microarrays/9.png)
 
 The columns **ID, Gene description** and **Gene symbol** present Entrez
 identifiers for the genes, a full name for each gene, and a standard gene
 symbol, respectively. The column **Species** shows the corresponding taxonomic
 species. The column **AffymetrixID** contains the probe set IDs corresponding to
-each gene, and you can see sometimes more than one Affymetrix probe
+each gene, and you can sometimes see more than one Affymetrix probe
 corresponding to one gene. The column **LogFoldChange** shows the base 2
 logarithm of the ratio between expression value in experiment vs. control. The
 column **–log(P-value)** shows the negative base 10 logarithm of the *p*-value.
@@ -275,7 +278,7 @@ Please note that the column **–log(P-value)**, according to a widely accepted
 convention, has algebraic signs according to being up- (positive values) or
 down-regulated (negative values).
 
-In the course of worklow progression, this table has been filtered by several
+In the course of workflow progression, this table has been filtered by several
 conditions in parallel to identify up-regulated, down-regulated, and non-changed
 Affymetrix probeset IDs and genes.
 
@@ -291,16 +294,16 @@ The table **Upregulated Ensembl genes**. You can find the number of the
 resulting up-regulated genes written on top of each output table (highlighted by
 the red circle):
 
-![](media/6d24b6cf927e43e11028f19b9e64527e.png)
+![](new_images/microarrays/10.png)
 
 The table **Downregulated Ensembl genes**. The structure and the meaning of the
 columns in the tables are the same as in the Upregulated Ensembl genes table.
 
-![](media/3557ca33dfeeda959539e4a28b1338e7.png)
+![](new_images/microarrays/11.png)
 
 The table **Non-changed Ensembl genes**.
 
-![](media/3a708af3e13db4f9f0cb1a0c968e1ef3.png)
+![](new_images/microarrays/12.png)
 
 In this example the number of up-regulated, down-regulated and non-changed genes
 are 503, 241, and 99, respectively.
@@ -315,18 +318,20 @@ The plot (![](media/plot.png)) contains a histogram of the log fold change distr
 **The Report.** The workflow summarizes all results and automatically produces a
 report. In addition you can have a look at the list of both up-regulated and
 down-regulated genes.
-
+<!--
 ![](media/97858b4681f1f7529550fd8ce5e896ce.png)
 
 ![](media/ac9493aed79ea4d6b03b338b44cfe81f.png)
 
 ![](media/675b8a715b52c59fc28ea31e802063ec.png)
+-->
 
+![](new_images/microarrays/13.png)
 This report can be exported in html format.
 
 ### Detect differentially expressed genes by hypergeometric analysis
 
-This workflow is very similar to the workflow Detect differentially expressed genes by T-test.  The principal difference is in the statistical method for calculation of thep-value. In this workflow, the p-value is calculated by hypergeometric analysis
+This workflow is very similar to the workflow Detect differentially expressed genes by T-test.  The principal difference is in the statistical method for calculation of the p-value. In this workflow, the p-value is calculated by hypergeometric analysis
 (Y.V.Kondrakhin, R.N.Sharipov, A.E.Kel, F.A.Kolpakov. (2008) Identification of
 Differentially Expressed Genes by Meta-Analysis of Microarray Data on Breast
 Cancer, *In Silico Biology*, 8: 383-411).
@@ -341,16 +346,16 @@ instance, one patient data set with one healthy data set.
 
 The workflow input form looks as shown below:
 
-![](media/6d4b65421a9c3458afa0ab5ddf6d2d9c.png)
+![](new_images/microarrays/14.png)
 
 The output folder and the structure of the individual tables, as well as the
-report, are similar to those described Detect differentially expressed genes throught T-test.
+report, are similar to those described Detect differentially expressed genes through T-test.
 
 ### Detect differentially expressed genes with Limma
 
 This workflow is designed to find sets of up-regulated and down-regulated genes
 starting with the normalized table of your expression data. Please refer to
-method description to know about LIMMA.  This workflow is
+the method description to know about LIMMA.  This workflow is
 designed for different experimental platforms (Affymetrix, Agilent and
 Illumina).
 
@@ -367,12 +372,12 @@ versus Condition 3” and “Condition 2 versus Condition 3”. ”. The workflo
 found on the Start page, under the button Microarrays, under the section “Detect
 differentially expressed genes”.
 
-![](media/9588f4380809b50acaa8b28549f4aa5c.png)
+![](new_images/microarrays/15.png)
 
 **Step1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/6c221ca61b202999c9f66bb6b8fc01f9.png)
+![](new_images/microarrays/16.png)
 
 **Step 2.** Specify the table with normalized data in the field **Input table**.
 You can drag it from your project within the tree area and drop it in the pink
@@ -380,16 +385,16 @@ box of the fields. Alternatively, you may click on the pink field *(select
 element)* and a new window will be opened, where you can select the input table.
 
 For this example the input used can be found here:
-<https://platform.genexplain.com/bioumlweb/#de=analyses%2FMethods%2FData+normalization%2FAgilent+normalization&fromDE=data%2FExamples%2FCytokine-triggered+gene+expression+in+cell+cycle+stages%2C+GSE52465%2C+Agilent-014850+microarray%2FData%2FGSE52465_RAW%2FAgilent+normalized>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages%2C%20GSE52465%2C%20Agilent-014850%20microarray/Data/Agilent%20normalized>
 
 **Step 3.** Specify the biological species of the input table in the field
 **Species** by selecting it from the drop-down menu.
 
 **Step 4.** Specify the conditions / groups. They are shown as columns of the
-input table. You can select the column names for each condition/group via
+input table. You can select the column names for each condition/group via the
 drop-down menu.
 
-![](media/11480062a6203365ceb54294167aa1f9.png)
+![](new_images/microarrays/17.png)
 
 **Step 5.** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field (select element) in the field
@@ -411,7 +416,7 @@ folder *Output plots* show a quality control of the input normalized data table.
 The tables in the folder *Output limma* are the output tables from the limma
 method, sorted via adjusted p-values.
 
-![](media/79503ee44de3d327f3e1053b0600fb82.png)
+![](new_images/microarrays/18.png)
 
 The 10 output folders for each comparison e.g. Condition_1 vs. Condition_5
 contain the results of the identified up-, down- and non-regulated Ensembl
@@ -424,13 +429,13 @@ Condition_5* contains all differentially expressed genes filtered by
 LogFoldChange and p-value for up- and down-regulated genes; each row corresponds
 to one gene.
 
-![](media/c7a6e4c16b0e7683bc149766710e612b.png)
+![](new_images/microarrays/19.png)
 
 The columns **ID, Gene description** and **Gene symbol** represent Ensembl
 identifiers for the genes, a full name for each gene, and a standard gene
 symbol, respectively. The column **Species** shows the corresponding taxonomic
 species. The column **AffymetrixID** contains the probe set IDs corresponding to
-each gene, and you can see sometimes more than one Affymetrix probe
+each gene, and you can sometimes see more than one Affymetrix probe
 corresponding to one gene. The column **logFC** shows the base 2 logarithm of
 the ratio between expression values in experiment vs. control. The column
 **adj.P.Val** shows the adjusted *p*-value (Benjamini-Hochberg).
@@ -470,12 +475,12 @@ Condition 3”.
 The workflow can be found on the Start page, under the button Microarrays, under
 the section “Detect differentially expressed genes”.
 
-![](media/243b755bbeb4d0f8e604113ea23a8458.png)
+![](new_images/microarrays/20.png)
 
 **Step1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/1cbb19615f25e82ffccd54f125f5d44f.png)
+![](new_images/microarrays/21.png)
 
 **Step 2.** Specify the table with normalized data in the field **Input table**.
 You can drag it from your project within the tree area and drop it in the pink
@@ -489,9 +494,9 @@ Input used for this Example can be found here:
 **Species** by selecting it from the drop-down menu.
 
 **Step 4.** Specify the conditions/groups of the input table. You can select the
-column names for each condition/group via drop-down menu.
+column names for each condition/group via the drop-down menu.
 
-![](media/31eaf2de3cc187530e635408a684545e.png)
+![](new_images/microarrays/22.png)
 
 **Step 5.** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *(select element)* in the
@@ -503,9 +508,9 @@ is completed.
 
 The output is a folder with several result folders and files as shown below:
 
-![](media/33da4673a80e45505ba81618ddf9c3d6.png)
+![](new_images/microarrays/23.png)
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages,%20GSE52465,%20Agilent-014850%20microarray/Data/Agilent%20normalized%20DEGs%20with%20EBarrays>
+<!--<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Cytokine-triggered%20gene%20expression%20in%20cell%20cycle%20stages,%20GSE52465,%20Agilent-014850%20microarray/Data/Agilent%20normalized%20DEGs%20with%20EBarrays>-->
 
 The **Normalized density boxplot** and the **Normalized density plot** in the
 folder *Output plots* show a quality control of the input normalized data table.
@@ -518,18 +523,18 @@ Ensembl** and **Condition_2 upreg Ensembl** contain all differentially expressed
 genes with filtered LogFoldChange and p-value for up- and down-regulated genes;
 each row corresponds to one gene.
 
-![](media/f62cff350ce1d2cd6bf4535886cd432d.png)
+![](new_images/microarrays/24.png)
 
 The columns **ID, Gene description** and **Gene symbol** present Ensembl
 identifiers for the genes, a full name for each gene, and a standard gene
 symbol, respectively. The column **Species** shows the corresponding taxonomic
 species. The column **Agilent ID** contains the probe set IDs corresponding to
-each gene, and you can see sometimes more than one Affymetrix probe
+each gene, and you can sometimes see more than one Affymetrix probe
 corresponding to one gene. The direction of differential expression can be
 derived from the fold change column e.g. **Condition_2 FC**, which contains the
 log2-fold changes. The EBarrays method estimates a critical posterior
 probability cutoff for the given FDR level on the basis of the fitted mixture
-model. Probes / genes exceeding this cutoff in some treatment are indicated by a
+model. Probes / genes exceeding this cutoff in some treatments are indicated by a
 value of 1 (instead of -1) in the output column named e.g. **Condition_2 Sig**.
 
 In the course of workflow progression, this table has been filtered by several
@@ -611,12 +616,12 @@ As an example, let’s consider an Affymetrix-specific workflow.
 
 To launch the workflow, follow these steps:
 
-Step1. Open the workflow input form from the Start page. It opens in the main
+**Step 1** Open the workflow input form from the Start page. It opens in the main
 Work Space and looks as shown below:
 
-![](media/7b8affc79dcedbc92ea50ed360d24f01.png)
+![](new_images/microarrays/25.png)
 
-Step 2. Input the Experiment normalized and Control normalized tables from the
+**Step 2** Input the Experiment normalized and Control normalized tables from the
 tree. You can either drag-and-drop or click on the select element box to specify
 the tables in the Tree area. Here, the tables from the Example folder/ HCV
 infection in liver GSE31193, Affymetrix U133 Plus 2.0 are used. We aim to find
@@ -636,12 +641,12 @@ Affymetrix probeset IDs in the ID column. Such tables have an (![](media/a5b8d32
 You can see Affymetrix probeset IDs in the ID column, and several columns with
 the normalized values; each column corresponds to one CEL file.
 
-Step 3. Choose human, mouse, or rat species from the drop-down menu.
+**Step 3** Choose human, mouse, or rat species from the drop-down menu.
 
-Step 4. Specify location and name of the Results folder. Important: the results
+**Step 4** Specify location and name of the Results folder. Important: the results
 folder should be located in your *Project* in the tree.
 
-Step 5. Press the button [Run workflow] and wait till the workflow is completed.
+**Step 5** Press the button [Run workflow] and wait till the workflow is completed.
 
 **Results**
 
@@ -684,12 +689,12 @@ enrichment, e.g. expression value.
 
 To launch the workflow, follow these steps:
 
-Step1. Open the workflow input form from the Start page. It opens in the main
+**Step 1** Open the workflow input form from the Start page. It opens in the main
 Work Space and looks as shown below:
 
-![](media/9b37776b810b8a1f0e9193d8f8e5d41e.png)
+![](new_images/microarrays/26.png)
 
-Step 2. Input a gene table with FoldChange (LogFoldChange) calculated. You can
+**Step 2** Input a gene table with FoldChange (LogFoldChange) calculated. You can
 either drag-and-drop or click on the select element box to specify the table in
 the Tree area. Here, the table from the Example folder/HCV infection in liver
 GSE31193, Affymetrix U133 Plus 2.0 is used. We aim to find out the enriched
@@ -700,26 +705,26 @@ The input table may look like the one shown below. This table contains the
 column logFC (LogFoldChange). This table is an output of the Limma method. Input
 table used for this example can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/Normalized%20(RMA)%20DEGs%20with%20limma/Output%20limma/Control%20vs.%20IFN_24>
 
 For best GSEA results, input the table with all genes analyzed, e.g. all genes
 present on the chip in the microarray experiment.
 
-![](media/a85f52dec67dcc9e31a5d4f367121b56.png)
+![](new_images/microarrays/27.png)
 
-Step 3. As soon as you specified the input table, the drop-down menu in the
+**Step 3** As soon as you specify the input table, the drop-down menu in the
 field Enrichment Weight Column becomes active. It presents all numerical columns
 in the input table. Select which column should be used for enrichment
 calculations. Here, the column *logFC* is selected.
 
-![](media/afd60c905f276c0b98798b622503d160.png)
+![](new_images/microarrays/28.png)
 
-Step 4. Choose human, mouse, or rat **species** from the drop-down menu.
+**Step 4** Choose human, mouse, or rat **species** from the drop-down menu.
 
-Step 5. Specify location and name of the **Results folder**. It is important to
+**Step 5** Specify location and name of the **Results folder**. It is important to
 note that the results folder should be located in your *Project* in the tree.
 
-Step 5. Press the button [Run workflow] and wait till the workflow is completed.
+**Step 6** Press the button [Run workflow] and wait till the workflow is completed.
 
 **Results**
 
@@ -733,7 +738,7 @@ The GSEA results are described in detail in a separate section “**About the GS
 analysis and the interpretation of the results**”. The output folder can be
 accessed through the path:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%2024h%20vs%20Control/IFN.24hours%20vs%20Control%20Genes%20Ensembl%20(Enrichment%20analysis)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/Up-regulated%20genes%20Ensembl%20(Enrichment%20analysis)/Ensembl%20genes>
 
 #### GSEA by GO categories, signaling pathways and diseases
 
@@ -789,12 +794,12 @@ value or fold change.
 
 To launch the workflow, follow these steps:
 
-**Step1.** Open the workflow input form from the Start page. It opens in the
+**Step 1** Open the workflow input form from the Start page. It opens in the
 main Work Space and looks as shown below:
 
-![](media/d20348deb151a6f2ca97feafc77d04a6.png)
+![](new_images/microarrays/29.png)
 
-**Step 2**. Input a gene table with FoldChange (LogFoldChange) calculated. You
+**Step 2** Input a gene table with FoldChange (LogFoldChange) calculated. You
 can either drag-and-drop or click on the select element box to specify the table
 in the Tree area. Here, the table from the Example folder/ HCV infection in
 liver GSE31193, Affymetrix U133 Plus 2.0 is used. We aim to find out the
@@ -807,29 +812,29 @@ column logFC (LogFoldChange). This table is an output of the Limma method.
 For the best GSEA results, input the table with all genes analyzed, e.g. all
 genes present on the chip in the microarray experiment.
 
-![](media/a85f52dec67dcc9e31a5d4f367121b56.png)
+![](new_images/microarrays/30.png)
 
-Step 3. As soon as you specified the input table, the drop-down menu in the
+**Step 3** As soon as you specify the input table, the drop-down menu in the
 field Enrichment Weight Column becomes active. It presents all numerical columns
 in the input table. Select which column should be used for enrichment
 calculations. Here, the column *logFC* is selected.
 
-![](media/314a1e9fa2d020dd080193efb3c1ae5b.png)
+![](new_images/microarrays/31.png)
 
-Step 4. Choose human, mouse, or rat species from the drop-down menu.
+**Step 4** Choose human, mouse, or rat species from the drop-down menu.
 
-Step 5. In the field Classification, choose the ontology from the drop-down
+**Step 5** In the field Classification, choose the ontology from the drop-down
 menu. Here, GO biological process is selected.
 
-![](media/9580ec5c4b178fda937b77006ef091d8.png)
+![](new_images/microarrays/32.png)
 
-Step 6. Define a minimal number of hits in one group which you would like to
+**Step 6** Define a minimal number of hits in one group which you would like to
 consider in the field Min number of hits to group. By default it is 30.
 
-Step 7. Specify location and name of the Results folder. Please note that the
+**Step 7** Specify location and name of the Results folder. Please note that the
 results folder should be located in your *Project* in the tree.
 
-Step 5. Press the button [Run workflow] and wait till the workflow is completed.
+**Step 8** Press the button [Run workflow] and wait till the workflow is completed.
 
 **Results**
 
@@ -873,12 +878,12 @@ classification.
 
 To launch the workflow, follow these steps:
 
-Step 1. Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/98caebcd76f1d9c0bdae324c44fbaa7f.png)
+![](new_images/microarrays/33.png)
 
-Step 2. Specify the input table. The input gene set might be a list of
+**Step 2** Specify the input table. The input gene set might be a list of
 differentially regulated genes or any gene or protein list of interest. You can
 drag it from your project within the tree area and drop it in the pink box of
 the field Input table. Alternatively, you may click on the pink field “select
@@ -887,25 +892,25 @@ set as shown below.
 
 The further steps of the workflow are demonstrated for the upregulated genes shown here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Input%20for%20examples/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
-Step 3. Specify the biological species of the input set in the field Species by
+**Step 3** Specify the biological species of the input set in the field Species by
 selecting the required biological species from the drop-down menu.
 
-Step 4. Define where the folder with the results should be located in the tree.
+**Step 4** Define where the folder with the results should be located in the tree.
 You can do so by clicking on the pink field *select element* in the field
 Results folder, and a new window will be opened, where you can select the
 location of the results folder and define its name.
 
-Step 5. Press the [Run workflow] button.
+**Step 5** Press the [Run workflow] button.
 
 The workflow is running as shown below, wait till it is completed.
 
-![](media/c2f49074c6c3a7b8606cc2a05b2abf77.png)
+![](new_images/microarrays/34.png)
 
 The results folder can be found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20(Mapping%20to%20ontologies)>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)%20(Mapping%20to%20ontologies)/Ensembl%20genes>
  
 It contains several tables with the resulting mapping, one table each for the
 applied ontological groups, as well as one gene table (![](media/3376044660b26a160e52442bb6a63338.png)) as shown below:
@@ -919,7 +924,7 @@ Let’s consider the output tables.
 Mapping to the three GO branches, biological processes, cellular components, and
 molecular functions (![](media/53c2e6f818cea497939bd96d86b10eab.png)). The tables with the enriched categories look like:
 
-![](media/40758841cbc07ceb785c94559601e546.png)
+![](new_images/microarrays/35.png)
 
 Each row presents details about one ontological term. The column ID comprises
 the identifier of the ontological category, here identifiers of Gene Ontology
@@ -932,7 +937,7 @@ terms, its title and the number of genes linked to this term in the
 corresponding database, here in GO. The column Expected hits shows the number of
 genes expected to fall into this category by random chance, based on the size of
 the input set and the size of the category. The column Number of hits shows how
-many genes from the input table fall into this category. **P-**value and
+many genes from the input table fall into this category. **P**-value and
 Adjusted p-value are calculated for the difference between expected and real
 numbers of hits. The genes mapped to each category are explicitly listed in the
 column Hit names. As the lists can get quite long, only a few genes are shown by
@@ -951,7 +956,7 @@ workspace:
 
 The table Reactome pathways (![](media/53c2e6f818cea497939bd96d86b10eab.png)). In the column ID you can find the identifiers of the Reactome pathways.
 
-![](media/396014d81ff3eaf646d3abd48be0c570.png)
+![](new_images/microarrays/36.png)
 
 Upon a mouse click, a diagram of the corresponding pathway opens in the
 workspace.
@@ -962,7 +967,7 @@ The table TF classification (![](media/53c2e6f818cea497939bd96d86b10eab.png)). Y
 platform. In the column ID the identifiers of the TF classification are shown.
 They are hyperlinked to the corresponding classification categories.
 
-![](media/a5e8440d21ab45d28267b13f667732cf.png)
+![](new_images/microarrays/37.png)
 
 **The table Ensembl genes** (![](media/78414bb22b2a035950dd8d0572dc23c8.png)). The input gene or protein table is converted to a table with Ensembl gene IDs, and the result is shown in this table. For example, if your input was a
 table with UniProt IDs, it is converted into Ensembl gene IDs and included in
@@ -986,12 +991,12 @@ certain conditions.
 
 To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/33c760009ca7c006bb35642aef4e9fdc.png)
+![](new_images/microarrays/38.png)
 
-**Step 2.** Specify the input tables 1 and 2. The input gene sets might be lists
+**Step 2** Specify the input tables 1 and 2. The input gene sets might be lists
 of differentially regulated genes or any gene or protein list of interest. You
 can drag it from your project within the tree area and drop it in the pink box
 of the field Input table. Alternatively, you may click on the pink field “select
@@ -1006,18 +1011,18 @@ examples, can be found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
 
-**Step 3.** Specify the biological species of the input set in the field Species
+**Step 3** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
 
-**Step 4.** Define where the folder with the results should be located in the
+**Step 4** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *select element* in the field
 Result folder, and a new window will be opened, where you can select the
 location of the result folder and define its name.
 
-**Step 5.** Press the [Run workflow] button.
+**Step 5** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default, it is found here:
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)_Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Mapping%20to%20ontologies%20and%20compare)>
+<!--<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)_Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(Mapping%20to%20ontologies%20and%20compare)>-->
 
 
 ![](media/b63eb2aaa64393221307e2bebda8d847.png)
@@ -1075,7 +1080,7 @@ separate gene table, you need to select the corresponding row in the table with
 the classification results and apply the *Save hits* button from the top control
 menu.
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license.  
+**Note** This workflow is available together with a valid TRANSPATH® license.  
 Please feel free to ask for details (info\@genexplain.com).
 
 ##### Mapping to ontologies and comparison for two gene sets (TRANSPATH®)
@@ -1096,12 +1101,12 @@ certain conditions.
 
 To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/47d578610528aea1c575de6c2542ac7d.png)
+![](new_images/microarrays/39.png)
 
-**Step 2.** Specify the input tables 1 and 2. The input gene sets might be lists
+**Step 2** Specify the input tables 1 and 2. The input gene sets might be lists
 of differentially regulated genes or any gene or protein list of interest. You
 can drag it from your project within the tree area and drop it in the pink box
 of the field Input table. Alternatively, you may click on the pink field “select
@@ -1110,22 +1115,23 @@ set as shown below.
 
 The further steps of the workflow are demonstrated for the genes shown to be
 up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
-examples. The pertinent example file can be found in the geneXplain platform
+examples.<!-- The pertinent example file can be found in the geneXplain platform
 under:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)>
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
+-->
 
-**Step 3.** Specify the biological species of the input set in the field Species
+**Step 3** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
 
-**Step 4.** Define where the folder with the results should be located in the
+**Step 4** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *select element* in the field
 Result folder, and a new window will be opened, where you can select the
 location of the result folder and define its name.
 
-**Step 5.** Press the [Run workflow] button.
+**Step 5** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default.
 
@@ -1155,7 +1161,7 @@ The output is a folder which contains subfolders with the results for each
 individual input table. The subfolders are automatically given the same names as
 the input tables.
 
-**Note***.* This workflow is available together with a valid TRANSPATH® license.  
+**Note** This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 #### Mapping to GO categories, signaling pathways and diseases
@@ -1177,7 +1183,7 @@ When the workflow is completed, all the output files are opened by default. The
 output file HumanPSD (disease) when opened in the work space looks is shown
 here:
 
-![](media/166594e9e8ebfafa71c76d5b0ad19813.png)
+![](new_images/microarrays/40.png)
 
 The columns ID, Category, Title and Group size present information about the
 diseases, as they are curated in the HumanPSD™ database, significantly enriched
@@ -1188,14 +1194,14 @@ Toxicogenomic Database, where you can find more details about this disease:
 
 <http://ctdbase.org/>
 
-**Note***.* This workflow is available together with a valid
+**Note** This workflow is available together with a valid
 HumanPSD™/TRANSPATH® license. Please, feel free to ask for details
 (info\@genexplain.com).
 
 
 ##### Mapping to GO ontologies and comparison for two gene sets (HumanPSD™):
 
-The overall idea of this workflow is similar to that the one described above.
+The overall idea of this workflow is similar to that described above.
 However, this workflow is designed to map two input tables, to identify hits and
 to compare the results according to the eight particular ontologies. These are
 five proprietary ontologies (BIOBASE GmbH), namely the HumanPSD™-curated Gene
@@ -1213,17 +1219,17 @@ method *analyses/Methods/Statistical analysis/Compare analysis results*,![](medi
 The comparison helps to reveal ontological categories that are different between
 two input data sets. To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/6a03c9e6bef2b8f244988eab32d67584.png)
+![](new_images/microarrays/41.png)
 
-**Step 2.** Specify the input tables 1 and 2. The input gene sets might be lists
+**Step 2** Specify the input tables 1 and 2. The input gene sets might be lists
 of differentially regulated genes or any gene or protein list of interest. You
 can drag it from your project within the tree area and drop it in the pink box
 of the field Input table. Alternatively, you may click on the pink field “select
 element” and a new window will be opened, where you can select the input gene
-set as shown below.
+set.<!-- as shown below.
 
 The further steps of the workflow are demonstrated for the genes found here:
 
@@ -1231,17 +1237,17 @@ The further steps of the workflow are demonstrated for the genes found here:
 Upregulated%20Ensembl%20genes%20filtered%20(logFC%3E1)>
 
 <https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/
-Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>
+Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)>-->
 
-**Step 3.** Specify the biological species of the input set in the field Species
+**Step 3** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
 
-**Step 4.** Define where the folder with the results should be located in the
+**Step 4** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *select element* in the field
 Result folder, and a new window will be opened, where you can select the
 location of the result folder and define its name.
 
-**Step 5.** Press the [Run workflow] button.
+**Step 5** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default.
 
@@ -1253,7 +1259,7 @@ ontology and two tables (![](media/3376044660b26a160e52442bb6a63338.png)).
 The two tables correspond to the input tables with the identifiers converted
 into Ensembl gene IDs. Each subfolder contains two tables with the mapped ontology/pathway/classification results, one table with the analysis comparison result and one plot.
 
-Note**.** This workflow is available together with a valid HumanPSD™ license.
+**Note** This workflow is available together with a valid HumanPSD™ license.
 Please, feel free to ask for details (info\@genexplain.com).
 
 
@@ -1261,46 +1267,46 @@ Please, feel free to ask for details (info\@genexplain.com).
 
 ##### Single gene set
 
-This workflow is designed to map one input tables to one selected ontology
+This workflow is designed to map one input table to one selected ontology
 classification. The input can be any gene or protein table. In the first step,
 the input table is converted into one table with Ensembl Gene IDs. The table
-with Ensembl Gene ID is subjected to a functional classification. As result the
+with Ensembl Gene ID is subjected to a functional classification. As a result the
 mapped table is stored.
 
 To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/509ddd2c97077d073a236933fdb2bed8.png)
+![](new_images/microarrays/42.png)
 
-**Step 2.** Specify the input table. The input gene set might be the list of
+**Step 2** Specify the input table. The input gene set might be the list of
 differentially regulated genes or any gene or protein list of interest. You can
 drag it from your project within the tree area and drop it in the pink box of
 the field Input table. Alternatively, you may click on the pink field “select
 element” and a new window will be opened, where you can select the input gene
-set found here:
+set.<!-- found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Downregulated%20Ensembl%20genes>-->
 
-**Step 3.** Specify the biological species of the input set in the field Species
+**Step 3** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
 
-**Step 4.** In the field Classification, choose the ontology from the drop-down
+**Step 4** In the field Classification, choose the ontology from the drop-down
 menu. Here, GO biological process is selected.
 
-**Step 5.** Define where the folder with the results should be located in the
+**Step 5** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *select element* in the field
 Result folder, and a new window will be opened, where you can select the
 location of the result folder and define its name.
 
-**Step 6.** Press the [Run workflow] button.
+**Step 6** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default.
 
 The result folder contains 1 table (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl table and one table with the mapped ontology results.
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20(Reactome%20pathways%20(63))>
+<!--<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20(Reactome%20pathways%20(63))>-->
 
 ![](media/50e9f3e4c84e0d91559576ce3c3680da.png)
 
@@ -1342,18 +1348,19 @@ certain conditions.
 
 To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It looks as shown
+**Step 1** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/6d22827ab71a32f73964a1db1d46fc8c.png)
+![](new_images/microarrays/43.png)
 
-**Step 2.** Specify the input tables 1 and 2. The input gene sets might be the
+**Step 2** Specify the input tables 1 and 2. The input gene sets might be the
 lists of differentially regulated genes or any gene or protein list of interest.
 You can drag it from your project within the tree area and drop it in the pink
 box of the field Input table. Alternatively, you may click on the pink field
 “select element” and a new window will be opened, where you can select the input
 gene set as shown below.
 
+<!--
 The further steps of the workflow are demonstrated for the genes shown to be
 up-regulated (Top100) and down-regulated (Top100) in one of the pre-prepared
 examples found here:
@@ -1363,23 +1370,24 @@ examples found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma
 /Downregulated%20Ensembl%20genes%20Top%20100>
+-->
 
-**Step 3.** Specify the biological species of the input set in the field Species
+**Step 3** Specify the biological species of the input set in the field Species
 by selecting it from the drop-down menu.
 
-**Step 4.** In the field Classification, choose the ontology from the drop-down
+**Step 4** In the field Classification, choose the ontology from the drop-down
 menu. Here, GO biological process is selected.
 
-**Step 5.** Define where the folder with the results should be located in the
+**Step 5** Define where the folder with the results should be located in the
 tree. You can do so by clicking on the pink field *select element* in the field
 Result folder, and a new window will be opened, where you can select the
 location of the result folder and define its name.
 
-**Step 6.** Press the [Run workflow] button.
+**Step 6** Press the [Run workflow] button.
 
 When the workflow is completed, the result folder is opened by default, found here:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20Top%20100%20Mapping%20to%20ontology%20and%20compare>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/User%20Guide/Data/Examples%20of%20workflows/Common/Upregulated_top100_Downregulated_top100%20(Mapping%20to%20ontologies%20and%20compare)/GO%20(biological%20process)/Analysis%20comparison>
 
 The result folder contains 2 tables (![](media/3376044660b26a160e52442bb6a63338.png)) with the converted Ensembl tables, two tables
 with the mapped ontology results, two tables with the analysis comparison result annotated and one plot .
@@ -1388,7 +1396,7 @@ with the mapped ontology results, two tables with the analysis comparison result
 
 Let’s consider the output tables. The tables with the mapped selected category (![](media/53c2e6f818cea497939bd96d86b10eab.png)) look like:
 
-![](media/87f4a4e379cacbaaf136d31c648aa6ca.png)
+![](new_images/microarrays/44.png)
 
 Each row presents details about one ontological term. The column ID comprises
 the identifiers of the ontological categories, here identifiers of Gene Ontology
@@ -1475,7 +1483,7 @@ under the tab Workflows, in the folder HumanPSD™/Cross-species mapping to
 ontologies, using ortholog information (HumanPSD™). The input form of the
 workflow looks as shown below:
 
-![](media/8f7158a7e5fdfea1a151ba68dbff62ba.png)
+![](new_images/microarrays/45.png)
 
 **Step 1**: Input the gene or protein table of any species for which you wish to
 map gene ontologies. You can drag & drop it from your project within the tree
@@ -1508,7 +1516,7 @@ folder contains diverse files as shown below:
 Mapping to the three GO branches, biological processes, cellular components, and
 molecular functions (![](media/c0f635e97c7a0f1ec8d1540225873985.png)). The tables with the enriched categories look like:
 
-![](media/85966a502e563534b53478d187fd6926.png)
+![](new_images/microarrays/46.png)
 
 For each ontological term several parameters are calculated, including expected
 number of hits, actual number of hits, p-value, as well as hit names and the
@@ -1518,7 +1526,7 @@ genes linked to this term in the corresponding database, here in GO. The column
 Expected hits shows the number of genes expected to fall into this category by
 random chance, based on the size of the input set and the size of the category.
 The column Number of hits shows how many genes from the input table fall into
-this category. **P-**value and Adjusted p-value are calculated for the
+this category. **P**-value and Adjusted p-value are calculated for the
 difference between expected and real numbers of hits. The genes mapped to each
 category are explicitly listed in the column Hit names. As the lists can get
 quite long, only a few genes are shown by default in each row. To get the full
@@ -1529,7 +1537,7 @@ results of the mapping of the input gene set to each of these pathways. Each
 table has a unique identifier for the corresponding pathway; upon a mouse click,
 a diagram opens in the workspace.
 
-![](media/c41c1e290dbf05771877e9768f957656.png)
+![](new_images/microarrays/47.png)
 
 **The table TF classification**(![](media/c0f635e97c7a0f1ec8d1540225873985.png)). Your input table is mapped to the classification of Transcription factors
 
@@ -1537,7 +1545,7 @@ a diagram opens in the workspace.
 platform. In the column **ID** the identifiers of the TF classification are
 shown. They are hyperlinked to the corresponding classification categories:
 
-![](media/e7e07431e98e27d46b68c7fa7c46e9de.png)
+![](new_images/microarrays/48.png)
 
 ## Analyze regulatory regions
 
@@ -1558,19 +1566,19 @@ analysis]
 and in the start page group ‘Microarrays’ under section ‘Analyze regulatory
 regions’.
 
-**Step 1.** Open the analysis form from the Start page. It will open in the main
+**Step 1** Open the analysis form from the Start page. It will open in the main
 Work Space and looks as shown below:
 
-![](media/f9cf1d4a51469730dc5cabc9c6b8b258.png)
+![](new_images/microarrays/49.png)
 
-**Step 2**. The Sequences input is a track file with sequences containing the
+**Step 2** The Sequences input is a track file with sequences containing the
 motif.
 
 The following link directs to an example input:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/CEBP%20in%20H1-hESC%20cells%20YES>
 
-**Step 3**. Select a Site model from a profile which can be used to compare the
+**Step 3** Select a Site model from a profile which can be used to compare the
 input motif. The model can result from a workflow generated ‘Profile’, can be
 selected from the TRANSFAC® database or can be built from the ‘[Create profile
 from matrix library](https://platform.genexplain.com/bioumlweb/)’ method (input
@@ -1582,30 +1590,30 @@ For this example we selected the profile:
 
 CEBP H1-hESC cells motif profile
 
-**Step 4**. Specify the total **Number of points** for sensitivity and FDR
-calculation. By default, the analysis uses 11 points. For the example we use 50
+**Step 4** Specify the total **Number of points** for sensitivity and FDR
+calculation. By default, the analysis uses 11 points. For example we use 50
 points.
 
-**Step 5**. Specify the number of **Shuffle counts**. This is the number of
+**Step 5** Specify the number of **Shuffle counts**. This is the number of
 times sequence characters are shuffled to generate random sequences for FDR
 estimation. By default this number is 10.
 
-**Step 6**. Select a **Seed** for the random number generator or keep the
+**Step 6** Select a **Seed** for the random number generator or keep the
 default of 0.
 
-**Step 7**. Declare the **Output path** to store results in the tree area.
+**Step 7**  Declare the **Output path** to store results in the tree area.
 
 After entering the input parameters, press ‘RUN’. The method starts as shown
 below:
 
-![](media/e1ad6f85bd51cd5c0b91339463c709cf.png)
+![](new_images/microarrays/50.png)
 
 Post completion the output table is opened in the work space in a new tab and
-consists of a table like the one shown below. Path to the examples is here:
+consists of a table like the one shown below. <!--Path to the examples is here:
 
-<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/ChIPMunk/CEBP%20H1-hESC%20cells%20motif%20profile%20CEBP%20in%20H1-hESC%20cells%20YES%20roc%2050>
+<https://platform.genexplain.com/bioumlweb/\#de=data/Examples/Encode%20TFBS%20CEBPB%20in%20H1-hESC%20cells/Data/ChIPMunk/CEBP%20H1-hESC%20cells%20motif%20profile%20CEBP%20in%20H1-hESC%20cells%20YES%20roc%2050>-->
 
-![](media/4ba6960d6ccb65061f3272453b725a2b.png)
+![](new_images/microarrays/51.png)
 
 The output table can be used to create a ROC curve for the visualization of the
 motif quality and for comparison of different motifs.
@@ -1621,41 +1629,41 @@ The input can be a profile with a set of matrices or a single matrix.
 
 The input form is as shown below:
 
-![](media/52855c7851cb7d5572314a40b4e5db7d.png)
+![](new_images/microarrays/52.png)
 
 Each individual parameter is described below:
 
-PWM (profile or matrix) – Specify the input profile or a single matrix. You can
+**PWM** (profile or matrix) – Specify the input profile or a single matrix. You can
 drag it from your project within the tree area and drop it in the pink box of
 the field PWM. Alternatively, you may click on the pink field “select element”
 and a new window will be opened, where you can select the input gene set as
 shown below.
 
-Logo size – The method gives an option to select one of four different sizes for
+**Logo size** – The method gives an option to select one of four different sizes for
 the Matrix logo image. It ranges from small to extra-large.
 
-Reverse – Check this box to create logos for the reverse orientation. By default
+**Reverse** – Check this box to create logos for the reverse orientation. By default
 this box is unchecked.
 
-Adjust height to information –Check this box to adjust total height of bases to
+**Adjust height to information** – Check this box to adjust total height of bases to
 information content of position.
 
-Sort bases –Check this box to sort bases, the most important on top.
+**Sort bases** – Check this box to sort bases, the most important on top.
 
-Plot lines - Checked this box to draw lines behind bases partitioning plot
+**Plot lines** – Checked this box to draw lines behind bases partitioning plot
 region into four sections.
 
-Output folder – Specify the name and path of the output folder for the created
+**Output folder** – Specify the name and path of the output folder for the created
 logos.
-
+<!--
 Here, we take a profile created by the workflow ‘[Identify enriched composite modules in promoters(TRANSFAC®)] 
 Input can be accessed using the URL:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(enriched%20motifs%20and%20CMA)/Profile>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Downregulated%20Ensembl%20genes%20filtered%20(log%20FC%3C-2)%20(enriched%20motifs%20and%20CMA)/Profile>-->
 
 Keeping all other parameters as default, the method runs as shown below:
 
-![](media/b0051162d135a70c3ac41f3eaec472ca.png)
+![](new_images/microarrays/53.png)
 
 The output folder contains one PNG image for each matrix of the specified input.
 Existing files in the output folder are not overwritten. In case of name
@@ -1681,18 +1689,18 @@ the input gene set as compared with a background set (No set). In the first part
 of the workflow, the enriched motifs are identified by the method
 *analyses/Methods/Site analysis/Search for enriched TFBSs (genes)*, (![](media/4be066f3c65d99b2fcf74faf062ed913.png)
 
-Please refer to indiviual methods description for details on this particular analysis method.
+Please refer to individual methods description for details on this particular analysis method.
 Filtered enriched motifs serve as a basis to construct a specific profile, and this profile is run on the promoters of the input gene set, method *analyses/Methods/Site analysis/Site search on gene set*, (![](media/f92a3f997475d3aff7b33819c5b95f67.png)
 
 
 To launch the workflow, follow these steps:
 
-**Step1.** Open the workflow input form from the Start page. It will open in the
+**Step 1** Open the workflow input form from the Start page. It will open in the
 main Work Space and looks as shown below:
 
-![](media/a175e35ec40a59a926c036b129283b13.png)
+![](new_images/microarrays/54.png)
 
-**Step 2**. Input the Yes set from the tree. You can either drag-and-drop or
+**Step 2** Input the Yes set from the tree. You can either drag-and-drop or
 select the Yes set from the Tree area. Here, the set of up-regulated genes from
 the following *Examples* folder is used:
 
@@ -1701,13 +1709,13 @@ the following *Examples* folder is used:
 The Yes set in this example contains 125 genes up-regulated in human liver cells
 treated with interferon-γ (IFNγ) as compared with non-treated cells.
 
-**Step 3**. Similarly input the NO set from the tree area. By default the
-workflow uses a subset fo 300 genes randomly taken out of the human housekeeping
+**Step 3** Similarly input the NO set from the tree area. By default the
+workflow uses a subset of 300 genes randomly taken out of the human housekeeping
 genes. The default NO set can be found here:
 
 <https://platofrm.genexplain.com/bioumlweb/#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Human)%20300>
 
-**Step 4**. Select the profile. This profile will be applied at the first part
+**Step 4** Select the profile. This profile will be applied at the first part
 of the workflow for identification of the enriched motifs. The default profile
 is *vertebrate_human_p0.001* from the most recent TRANSFAC® release available.
 It can be found here:
@@ -1720,10 +1728,10 @@ Any other TRANSFAC® profile or user-specific profile can be selected. With a
 mouse click on the field **Profile**, a pop-up window will open, where a profile
 can be selected.
 
-**Step 5.** After input of the Yes and No sets, the species (human, mouse or
+**Step 5** After input of the Yes and No sets, the species (human, mouse or
 rat) is adjusted automatically. Verify the species shown in the species field.
 
-**Step 6.** Filter by TFBS enrichment fold: In this field you can specify the
+**Step 6** Filter by TFBS enrichment fold: In this field you can specify the
 enrichment fold (FE) to filter the motifs. By default it is 1.0, which means all
 motifs with FE\>1.0 will be reported in the resulting table and the same motifs
 will serve to create a specific profile. If you want to use highly-enriched
@@ -1732,23 +1740,23 @@ depending on your Yes and No sets. It is recommended that you run it with
 default parameters first, check the results, and then run again with the desired
 filter value.
 
-**Step 7**. Specify the promoter region relative to TSS as they are annotated in
+**Step 7** Specify the promoter region relative to TSS as they are annotated in
 Ensembl. The default promoter region is -1000 to +100 relative to the TSS. You
 can edit the fields *Start promoter* and *End promoter* as required.
 
-**Step 8**. Specify the result folder location and name and Press the button
+**Step 8** Specify the result folder location and name and Press the button
 [Run workflow]. Wait till the workflow is completed.
 
-**Results.**  
+**Results**  
 The results folder consists of several files and folders as shown below:
 
 ![](media/9e4bc635ffa51f7e7574ef7e968dd13f.png)
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes%20(enriched%20motifs_TRANSFAC(R))>
+<!--<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes%20(enriched%20motifs_TRANSFAC(R))>-->
 
 The table **Enriched Motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models, here TRANSFAC® matrices, which are enriched in the Yes set in comparison with the No set as shown below:
 
-![](media/e0c69e7a68b82c59bf4f2d66667e80ec.png)
+![](new_images/microarrays/55.png)
 
 Each row of the output table represents the result for one PWM from the input
 profile. Only those PWMs with adj. site FE \>1 are included in the output. For
@@ -1766,7 +1774,7 @@ considering that here the effect of IFNγ on liver cells is studied.
 
 The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*.
 
-![](media/05ab2d3c73f33a44606f23389e190327.png)
+![](new_images/microarrays/56.png)
 
 This profile is an intermediate result of the workflow and is used further for
 *Site search on gene set* analysis.
@@ -1777,36 +1785,35 @@ This profile is an intermediate result of the workflow and is used further for
 
 Each track can be opened in the genome browser by double-clicking. A visualization of the track *yes sites* is shown below:
 
-![](media/46fcffdb60c98469d43a167b18519812.png)
+![](new_images/microarrays/57.png)
 
 The same track can be opened as a table; for this use right mouse click on the track name in the tree area or Ctrl +mouse click for Mac users.
 
 With the same menu, you can apply other functions to the selected track, e.g. export it in available formats or delete.
 
-![](media/3aed9744253fd9b3050969c18c80024b.png)
+![](new_images/microarrays/58.png)
 
 Table view on the track *yes sites* is the following:
 
-![](media/6d6f80c50f844a023878d4e433a3fe32.png)
+![](new_images/microarrays/59.png)
 
-**Sites table** (![](media/50739faeef67c05f5b5a979e887b7764.png))gives the list of Transcription Factor 
-matrcies linked to the enriched motifs. 
+**Sites table** (![](media/50739faeef67c05f5b5a979e887b7764.png))gives the list of Transcription Factor matrices linked to the enriched motifs. 
 For Each Transcription factor Yes-No ratio is calculated along with the P-value
 and Matrix logo. Detailed report on selected matrices can be obtained while
 selecting each transcription factor and pressing the report on selected matrices
 button (![](media/46348235571e05c0e1074b5037ca1215.png)) on the control panel.
 
-![](media/bdbbe92c979af58f93a2f7df14fec58a.png)
+![](new_images/microarrays/60.png)
 
 The output table *TOP 3 TFBS* (![](media/8cf86734e4cbea54dbf0da21e5313c6a.png)) gives the binding site, and 
 binding positions of top three transcription factors enriched in the promoters.
 
-![](media/b96bfaae9425366801de172d63de2006.png)
-
+![](new_images/microarrays/61.png)
+<!--
 Here, top 3 Transcription Factors PDX5, SOX2, nad SOX3 are shown binding to the
-gene.
+gene.-->
 
-![](media/c933698a6315e9af4bedfa3ec6cac7f1.png)
+![](new_images/microarrays/62.png)
 
 This table can be further annotated to add a column with expression values, as
 shown below. 
@@ -1822,7 +1829,7 @@ motifs are significantly enriched in the promoters of Yes genes.
 A HTML report is generated at the end that summarizes the workflow results in a
 page as shown below:
 
-![](media/a120b5dd9425f5685f9b4fe9558b87e3.png)
+![](new_images/microarrays/63.png)
 
 This report can be exported in HTML format for further use.
 
@@ -1849,12 +1856,12 @@ the profile vertebrate_non_redundant_minSUM.
 
 To launch the workflow, follow these steps:
 
-**Step 1.** Open the workflow input form from the Start page. It will open in
+**Step 1** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/0ee94d75f64574632256cdcf21958ff5.png)
+![](new_images/microarrays/64.png)
 
-**Step 2.** Specify input gene or protein set in the field Input gene set.  
+**Step 2** Specify input gene or protein set in the field Input gene set.  
 The input table contains the genes under study, and it is also called the 'Yes'
 set. To specify a gene set, you can drag & drop it from your project within the
 Tree Area, and drop it in the pink box of the field Input gene set.
@@ -1862,33 +1869,34 @@ Alternatively, you may click on the pink field “select element”, and a new
 window will open, where you can select the input gene set as shown below. After
 you have selected the gene set, press [Ok].
 
-![](media/d861e12600c7bd1f469ece2755df137b.png)
+![](new_images/microarrays/65.png)
 
-Step 3. Specify the biological species of the input set in the field Species by
+**Step 3** Specify the biological species of the input set in the field Species by
 selecting the required species from the drop-down menu.
 
-Step 4. Define where the folder with the results should be located in the tree.
+**Step 4** Define where the folder with the results should be located in the tree.
 You can do so by clicking on the pink field “select element” in the field
 Results folder, and a new window will open where you can select the location of
 the results folder and define its name as shown below.
 
-![](media/0e80b8034c324e20f478c40d640e2ff2.png)
+<!--![](media/0e80b8034c324e20f478c40d640e2ff2.png)-->
 
 **Step 5.** Press the [Run workflow] button.
 
 Wait until the workflow is completed, which is shown below:
 
-![](media/acea1abea11ff3857d53a0922978a6a6.png)
+![](new_images/microarrays/66.png)
 
-The results folder contains several files and is found here:
+The results folder contains next files: <!--and is found here:
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825,%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Upregulated%20Ensembl%20genes%20filtered%20(log%20FC%3E1.5)%20site%20search>
+-->
 
-![](media/c4ae5ccba2a46644092b427b0c98115c.png)
+![](new_images/microarrays/67.png)
 
 The tables called *summary* (![](media/98b0f737f28ec29fc9cebfd96cc78bca.png)), *TF Ensembl genes*, and *TF Entrez genes* 
 are opened automatically in the work area as soon as the workflow is completed.
 
-**Tip.** You can easily create a similar workflow with parameter values adjusted
+**Tip** You can easily create a similar workflow with parameter values adjusted
 to your needs. For example, you can select another profile from the list of
 available TRANSFAC® profiles, or specify different promoter positions relative
 to the TSS (default is -1000 to +100).
@@ -1902,19 +1910,19 @@ gene set" analysis was selected, and in the Operations Field, on the tab
 "Workflow", all the parameters are visible. Under this mode, you can either
 check what the default parameters are, or modify them according to your needs.
 
-![](media/d4edde26e93a05eddc3f3ccaa6e4d36b.png)
+![](new_images/microarrays/68.png)
 
-**Note.** This workflow is available together with a valid TRANSFAC® license.  
+**Note** This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
 ##### GTRD
 
 This workflow is designed to search for putative transcription factor binding
 sites, TFBS, in the promoters of an input gene set. It is very similar to the
-workflow described above using TRANSFAC(R) database. The only difference is in the PWM
+workflow described above using the TRANSFAC(R) database. The only difference is in the PWM
 library applied. Here, site search is done with the help of the GTRD library
 
-For the input form and description of the results folder, please refer to
+For the input form and description of the results folder, please refer to the 
 description above. 
 
 ### Identify composite modules in promoters
@@ -1941,29 +1949,29 @@ enriched TFBSs. For more details about CMA analysis refer to indiviual method de
 
 To launch the workflow, follow these steps:
 
-**Step1.** Open the workflow input form from the Start page. It will open in the
+**Step 1** Open the workflow input form from the Start page. It will open in the
 main Work Space and looks as shown below:
 
-![](media/0c386a21d784a46ef578dd0f54680d93.png)
+![](new_images/microarrays/69.png)
 
-**Step 2**. Input the Yes set from the tree. You can either drag-and-drop or
+**Step 2** Input the Yes set from the tree. You can either drag-and-drop or
 select the Yes set from the Tree area. Here, the set of up-regulated genes from
 the following *Examples* folder is used:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193%2C%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/Normalized%20(RMA)%20DEGs%20with%20limma/Control%20vs.%20IFN_6/Down-regulated%20genes%20Ensembl>
 
 The Yes set in this example contains 125 genes up-regulated in human liver cells
 treated with interferon-γ (IFNγ) as compared with non-treated cells.
 
-**Step 3**. Similarly input the NO set from the tree area. By default the
+**Step 3** Similarly input the NO set from the tree area. By default the
 workflow uses a subset of 300 genes randomly taken out of the human housekeeping
 genes.
 
-**Step 4**. After input of the Yes and No sets, the species (human, mouse
+**Step 4** After input of the Yes and No sets, the species (human, mouse
 or rat) is adjusted automatically. Verify the species shown in the species
 field.
 
-**Step 5**. Select the profile. The selected profile will be applied at the
+**Step 5** Select the profile. The selected profile will be applied at the
 first part of the workflow for identification of enriched motifs. The default
 profile is *vertebrate_human_p0.001* from the most recent TRANSFAC® release
 available. Any other TRANSFAC® profile or user-specific profile can be chosen.
@@ -1971,36 +1979,34 @@ With a mouse click on the field *Profile*, a pop-up window will open, where a
 profile can be selected. The number of matrices in the default profile, which is
 used here, is 4961.
 
-**Step 6**. Set up parameters for the composite module search. This workflow
+**Step 6** Set up parameters for the composite module search. This workflow
 identifies pairs of sites. By default, the minimum and maximum numbers of pairs
 are given as 2 and 8. You can change these parameters according to the number of
 pairs you aim to identify. The number of iterations of the genetic algorithm is
 300 by default, and can be adapted as required.
 
-**Step 7**. Specify the promoter region relative to TSS as they are annotated in
+**Step 7** Specify the promoter region relative to TSS as they are annotated in
 Ensembl. The default promoter region is -1000 to +100 relative to the TSS. You
 can edit the fields *Start promoter* and *End promoter* as required.
 
-**Step 8**. Specify the result folder location and name and Press the button
+**Step 8** Specify the result folder location and name and Press the button
 [Run workflow]. Wait till the workflow is completed.
 
-**Note***.* This workflow may take more time depending on the size of the Yes
+**Note** This workflow may take more time depending on the size of the Yes
 and No sets and on the number of iterations. The recommended size of the Yes set
 is 150 genes maximum, and the recommended size of the No set is 300 genes
 maximum. The maximum recommended number of iterations is 300.
 
-**Results**  
-The results folder consists of several folders and files as shown below and can
-be accessed using the path
+**Results** The results folder consists of several folders and files as shown below and can be accessed using the path
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/HCV%20infection%20in%20liver%20GSE31193,%20Affymetrix%20U133%20Plus%202.0%20microarray/Data/IFN%206h%20vs%20Control/IFN%206hours%20vs%20Control%20UP%20LogFC%3E1.5,%20125%20genes%20(enriched%20motifs%20and%20CMA)>
 
-![](media/b731bdaa26f70485b6651532b311c840.png)
+![](new_images/microarrays/70.png)
 
 The table **Enriched Motifs** (![](media/8ed589ee0b31e1b240c071d30254a8be.png)) contains those site models,
 here TRANSFAC® matrices, which are enriched in the Yes set as compared to the No set as shown below.
 
-![](media/f94c31f4a4393dd714cfae7c896ed1cf.png)
+![](new_images/microarrays/71.png)
 
 Each row of the output table represents the result for one PWM from the input
 profile. Only those PWMs with adj. site FE \>1 are included in the output. For
@@ -2018,12 +2024,12 @@ considering that here the effect of IFNγ on liver cells is studied.
 
 The table **Profile** (![](media/cc3badf61d49a95e3466827ae711bce4.png)) presents details for PWMs with *adj. site FE \>1*.
 
-![](media/6f7db08fac68ac1b0d97670818117ed3.png)
+![](new_images/microarrays/72.png)
 
 This profile is an intermediate result of the workflow, and it is used further
 for *Site search on gene set* analysis.
 
-**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) is an intermediate result of the workflow, and its results are used further for the identification of composite modules. Details about the individual output files in this folder can be found in indiviual method description. 
+**Site search analysis output** (![](media/7e4f615deb96b42535625740c3eb2caa.png)) is an intermediate result of the workflow, and its results are used further for the identification of composite modules. Details about the individual output files in this folder can be found in individual method description. 
 
 The **Modules** folder (![](media/d9e5fb8a8df16ddd4b65b645140abf2f.png)) is a result of the analysis *Construct composite modules*. It contains two tables, two tracks, one histogram, and one model view as shown below:
 
@@ -2051,13 +2057,13 @@ list of transcription factors linked to the site models in the composite module 
 For each transcription factor, the Ensembl gene ID is provided, as well as a gene description, the HGNC gene symbol,
 species, and site model (TRANSFAC® PWM name).
 
-![](media/d40cd14f52757bf0d1320fffebfe1052.png)
+![](new_images/microarrays/73.png)
 
-seventeen transcription factors shown in the table above are candidate
+Seventeen transcription factors shown in the table above are candidate
 regulators of genes in the input *Yes set*. They are suggested to regulate
 transcription of Yes-genes via the identified composite elements. This table can
 be further annotated to add a column with expression values, as shown below.
-Details for annotation of the tables are given in description of Annotate table. 
+Details for annotation of the tables are given in the description of the Annotate table. 
 
 ![](media/8032ffb665be0418f0072e062039b0b4.png)
 
@@ -2070,6 +2076,7 @@ modules.
 **Note***.* This workflow is available together with a valid TRANSFAC® license.  
 Please, feel free to ask for details (info\@genexplain.com).
 
+<!--
 #### Version 1.2 (Classical) with TRANSFAC®
 
 This workflow enables the identification of combinations of several TFBSs in the
@@ -2180,6 +2187,8 @@ description, HGNC gene symbol, species, and site model (TRANSFAC® PMW name):
 
 **Note***.* This workflow is available together with a valid TRANSPATH® license.  
 Please, feel free to ask for details (info\@genexplain.com).
+-->
+
 
 ### Cross-species identification of enriched motifs in promoters using ortholog information (TRANSFAC®)
 
@@ -2196,7 +2205,7 @@ The workflow is found here:
 In the first part of the workflow, enriched motifs are identified by the method
 *analyses/Methods/Site analysis/Search for enriched TFBSs (genes)* (![](media/7262880155aba8a0362954fe7cd09fb5.png))
 
-Please refer details on this particular analysis method.
+Please refer to details on this particular analysis method.
 Filtered enriched motifs serve as a basis to construct a specific profile, and
 this profile is applied to the promoters of the input gene set, method
 *analyses/Methods/Site analysis/Site search on gene set*. The last step is a conversion to
@@ -2204,9 +2213,9 @@ homology transcription factors.
 
 The input form looks as shown below:
 
-![](media/08f2f010d55e4d52b1b8191f62587b0e.png)
+![](new_images/microarrays/74.png)
 
-Step 1: Select an Input Yes gene set from the tree. You can either drag-and-drop
+**Step 1** Select an Input Yes gene set from the tree. You can either drag-and-drop
 or select the Yes set from the Tree area.
 
 The set of up-regulated genes used in this Example can be found here:
@@ -2214,24 +2223,24 @@ The set of up-regulated genes used in this Example can be found here:
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Normalized%20(RMA)%20DEGs%20with%20EBarrays/Naphthalene_20ppm%20upreg%20Ensembl>
 
 
-Step 2: Specify the Species of the input set and the Species of the output set.
+**Step 2** Specify the Species of the input set and the Species of the output set.
 In this case Input is Mouse and Output species selected is human.
 
-Step 3: Select Input No gene set from the tree area. By default, the workflow
+**Step 3** Select Input No gene set from the tree area. By default, the workflow
 uses a subset from 300 genes randomly taken out of the human housekeeping genes.
 
 For this example the NO set used is:
 
 <https://platform.genexplain.com/bioumlweb/\#de=data/Public/Data%20sets/Data/Housekeeping%20genes%20(Mouse)%20300>
 
-Step 4: The profile will be applied in the first part of the workflow for the
+**Step 4** The profile will be applied in the first part of the workflow for the
 identification of enriched motifs. The default profile is
 *vertebrate_human_p0.001* from the most recent TRANSFAC® release available. Any
 other TRANSFAC® profile or user-specific profile can be selected. With a mouse
 click on the field **Profile**, a pop-up window will open, where a profile can
 be selected.
 
-Step 5: Filter by TFBS enrichment fold: In this field you can specify the
+**Step 5** Filter by TFBS enrichment fold: In this field you can specify the
 enrichment fold (FE) to filter the motifs. By default, it is 1.0, which means
 all motifs with FE\>1.0 will be reported in the resulting table and the same
 motifs will serve to create a specific profile. If you want to use
@@ -2240,18 +2249,16 @@ or even 2.0 or 3.0 depending on your Yes and No sets. It is recommended that you
 run it with default parameters first, check the results, and then repeat with
 the desired filter value.
 
-Step 6: Specify the promoter region relative to TSS as they are annotated in
+**Step 6** Specify the promoter region relative to TSS as they are annotated in
 Ensembl. The default promoter region is -1000 to +100 relative to the TSS. You
 can edit the fields Start promoter and End promoter as required.
 
-Step 7: Specify the Result folder location and name and Press the button [Run
+**Step 7** Specify the Result folder location and name and Press the button [Run
 workflow]. Wait till the workflow is completed.
 
 The result folder consists of several files is found here:
 
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/Transcriptional%20biomarkers%20to%20predict%20mouse%20liver%20tumors,%20GSE18858/Data/Naphthalene_20ppm%20upreg%20Ensembl%20(enriched%20motifs_TRANSFAC(R))>
-
-
 
 ![](media/3da43a032a94ddc193468e8fd2765200.png)
 
@@ -2261,16 +2268,16 @@ here TRANSFAC® matrices, which are enriched in the Yes set in comparison with t
 The table Molecules Orthologs have a list of molecules from the input gene set
 with their site search results as shown below:
 
-![](media/42c964d2b650c1fed9577af20331ac76.png)
+![](new_images/microarrays/75.png)
 
 Every gene is linked to the corresponding matrix molecule by the Yes-No ratio.
 
-The table Molecules_human contain the site models of the converted input table.
+The table Molecules_human contains the site models of the converted input table.
 In this case the output species is Human hence this table is Molecules_human
 with mapping to human Ensembl genes with corresponding matrices. If the output
 species is mouse, then this table will have mouse Ensembl genes.
 
-![](media/f5f5e42dc066b6c2cf9c0a78aeddd3c8.png)
+![](new_images/microarrays/76.png)
 
 The output table Transcription factors Ensembl genes is a list of transcription
 factors linked to the enriched motifs. For each transcription factor, the
@@ -2285,7 +2292,7 @@ This method visualizes results of the site search analyses. It can be found
 under the tab *Analyses*, in the folder Methods/Site analysis/Site search report
 (![](media/37177588ef1548341e24a247bb59e445.png)). Here the default input form is shown:
 
-![](media/a9c6f66629c88d2125071f81a6ae8080.png)
+![](new_images/microarrays/77.png)
 
 In the following, we will consider the input fields one by one.
 
