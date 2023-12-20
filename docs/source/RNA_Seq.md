@@ -3,7 +3,7 @@
 When you click on the tiled button “RNA-seq” in the Work Space of the on the
 start page, the following listing will appear:
 
-![](media/image085.png)
+![](new_images/rna_seq/rna_seq1.png)
 
 ## RNA-seq preprocessing
 
@@ -18,14 +18,14 @@ can be found here (<https://www.ncbi.nlm.nih.gov/sra?term=SRP051443>) and can be
 uploaded directly via FTP import into the geneXplain platform. The workflow “SRA
 to FASTQ” can be found on the Start page, under the NGS/RNA-seq button.
 
-![](media/37086b22f201bedb32fddceeaf62cbad.png)
+![](new_images/rna_seq/rna_seq2.png)
 
 To launch the workflow, follow these steps:
 
 **Step1.** Open the workflow input form from the Start page. It looks as shown
 below:
 
-![](media/image101.png)
+![](new_images/rna_seq/rna_seq3.png)
 
 **Step 2.** Specify the folder with the SRA files in the field **Input folder**.
 You can drag it from your project within the tree area and drop it in the box
@@ -33,9 +33,8 @@ beside the folder pictogram. Alternatively, you may click on the field *(select
 element)* and a new window will be opened, where you can select the input
 folder.
 
-**Example of an input folder:**
+**[Example of an input folder](https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/SRA%20files)**
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/SRA%20files>
 
 It contains 12 files in SRA format as shown below. Please note, this folder
 occupies **1.5 GB** work space.
@@ -56,7 +55,7 @@ Press [Run workflow] and wait till the workflow is completed.
 The output folder contains 12 files with the same names and now with the
 extension *fastq*. Please note, the size of the output folder is **16.6 GB**.
 
-**Note***.* Working with NGS data in SRA and FASTQ formats requires substantial
+**Note** Working with NGS data in SRA and FASTQ formats requires substantial
 work space available in your user account. Feel free to contact us
 (<info@genexplain.com>) to upgrade your account with additional disk space.
 
@@ -64,10 +63,10 @@ work space available in your user account. Feel free to contact us
 
 While working with NGS data, quite often it might quite often be required to
 convert positions from one genome assembly to another one, and The Lift-Over
-program is widely can be applied for this task. Within the geneXplain platform,
+program can be applied for this task. Within the geneXplain platform,
 you can find it on the Start page under the NGS button, as highlighted below.
 
-![](media/image087.png)
+![](new_images/rna_seq/rna_seq4.png)
 
 This tool is based on the LiftOver utility and Chain track from the [UC Santa
 Cruz Genome Browser](http://genome.ucsc.edu/).
@@ -79,9 +78,9 @@ assembly.
 
 To launch the workflow, follow these steps:
 
-**Step1.** Open the input form from Start page. It looks as shown below:
+**Step1.** Open the input form from the Start page. It looks as shown below:
 
-![](media/image088.png)
+![](new_images/rna_seq/rna_seq5.png)
 
 **Step 2.** Specify the input track in the field **Convert coordinates of**. You
 can drag it from your project within the tree area and drop it in the box of the
@@ -97,7 +96,7 @@ genome conversion from the drop-down menu.
 
 ![](media/a2bb67da68b0935a6cedb06b63202029.png)
 
-In the majority of cases not everything can be re-mapped to another assembly.
+In the majority of cases not everything can be remapped to another assembly.
 The minimum ratio of bases that must be re-mapped is by default 0.95, you can
 change this by typing in this field.
 
@@ -126,7 +125,7 @@ the Galaxy section of the platform
 **Input format:** Bowtie accepts files in Sanger FASTQ format. Often, the
 sequence files are represented in SRA format (Sequence Read Archives). This
 format is used to deposit sequences at the Sequence Read Archives at NCBI, EBI,
-and DDBJ. Please consider, converting the SRA files into FASTQ files before
+and DDBJ. Please consider converting the SRA files into FASTQ files before
 starting Bowtie. You can use the conversion tool *Convert Files in SRA format to
 FASTQ* or *Convert Files in SRA format to paired FASTQ* in the Galaxy section of
 the platform (analyses/Galaxy/sra_toolkit/fastq-dump).
@@ -137,7 +136,7 @@ To launch the Bowtie tool, follow these steps:
 *Alignment of FASTQ with Bowtie* option in the *RNA-seq preprocessing*
 subsection. It will open in the main Work Space and looks as shown below:
 
-![](media/image103.png)
+![](new_images/rna_seq/rna_seq6.png)
 
 **Step 2.** Specify the reference genome.
 
@@ -153,10 +152,10 @@ fields will appear in the form: **Select the reference genome** and **Choose
 whether to use Default options for building indices or to Set your own**, as
 shown in the screenshot below, highlighted by the red ovals. In this case you
 should provide a preloaded reference genome (preloaded in Fasta, EMBL or
-GeneBank formats) and choose the way how to build sequence indices which will be
+GeneBank formats) and choose how to build sequence indices which will be
 used by the alignment algorithm of Bowtie.
 
-![](media/ba9a569aeb1486560a633e6b061a3bc9.png)
+![](new_images/rna_seq/rna_seq7.png)
 
 **Step 3.** The field **Is this library mate-paired?** defines the type of the
 sequence library which was used in NGS sequencing. The default is *Single-end*,
@@ -201,7 +200,7 @@ folder.
 The result of this method is one BAM file which is generated by the Bowtie
 program as the result of the alignment of the sequence reads from the input
 FASTQ file to the reference genome.
-
+<!--
 At the end of the Bowtie run, the platform requests to specify the genome build
 again in order to link the output BAM file to the respective genome files in the
 Ensembl database installed in the platform. When you get such a pop-up form,
@@ -210,22 +209,22 @@ choose the sequence score from the drop-down menu and specify the genome ID.
 ![](media/98a89444d21593a5a7a9a3daf343c663.png)
 
 This enables a visualization of the BAM file information in the genome browser.
-Generated BAM file is a track and has the (![](media/track.jpg)) icon in the tree. As usual for all tracks, it with a double click opens in the Work Space. You can see the positions of each aligned read in the genome and
-upon zooming-in you get all detailed information about each read complete with
-sequence, length, and quality.
+-->
 
-![](media/11b46c6e51ebaef178cbd709b863ed27.png)
+Generated BAM file is a track and has the (![](media/track.jpg)) icon in the tree. As usual for all tracks, it opens in the Work Space. You can see the positions of each aligned read in the genome and upon zooming-in you get all detailed information about each read complete with sequence, length, and quality.
+
+![](new_images/rna_seq/rna_seq8.png)
 
 In the info box you can see information about the output BAM file. The number of
 aligned and not aligned reads and overall file size is shown.
 
-![](media/7d50a188be5641e469ae937396b43826.png)
+![](new_images/rna_seq/rna_seq9.png)
 
 **Note** The input FASTQ and output BAM files of the Bowtie tool require a
 considerable amount of working space. One FASTQ file can occupy several GB of
 space. If you need more space for storage and work with your FASTQ and BAM
 files, please feel free to ask for details (info\@genexplain.com).
-
+<!--
 ### Quantification of RNA-seq with Cufflinks for multiple BAM files
 
 This workflow is designed to estimate abundances of transcripts in several
@@ -404,6 +403,7 @@ G2, and their respective corresponding Ensembl exon IDs.
 ![](media/60a11e7d5c1e83c960635c692b7b1361.png)
 
 ![](media/4d9558a5aa56a8bc51c71426a6f9770d.png)
+-->
 
 ### Find genome variations and indels from RNA-seq
 
@@ -417,7 +417,7 @@ find all potential variants.
 
 The workflow can be found in the section “RNA-seq Preprocessing”.
 
-![](media/886224b5a9c0c4e746043e5ba407e0ba.png)
+![](new_images/rna_seq/rna_seq10.png)
 
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
@@ -432,7 +432,7 @@ new window will open, where you select the input track. After having selected
 the track, press the [Ok] button.
 
 **Step 3**. Specify the **Minimum read segment length**. By default a minimum
-length as 25 is given.
+length of 25 is given.
 
 **Step 4.** Define where the folder with the results should be located in your
 project tree. You can do so by clicking on the pink field “select element” in
@@ -447,23 +447,21 @@ In the following example we took as input the fastq file
 <https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20files/SRR349741.fastq>
 
 The output folder can be found here:
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC),%20GSE32424,%20FASTQ%20files/Data/Fastq%20analysis/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)>
+<https://ge.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq)/summary_hisat2>
 
+The output folder contains several files and subfolders with all results of the analysis.
 
-The output folder contains several files and sub-folders with all results of the analysis.
-
-![](media/ac5996f94beb6bb33deec3a35bdb4948.png)
+![](new_images/rna_seq/rna_seq11.png)
 
 The first step of the workflow is an alignment of all reads of fastq file using
-the [TopHat2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4053844/) tool. In
-the result folder one can see a sub-folder “tmp” which contains all found
-Deletions, Insertions, Splice junctions and Alignments. They are stored as
+the [HISAT2](https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ngs-rna-tools/hisat2) tool. In
+the result folder one can see a sub-folder “tmp” which contains all found indels. They are stored as
 tracks and can be opened in the genome browser by double-click on each of the
 tracks. Each short line (arrow in the higher zoom) represents an aligned “read”
 from the fastq file.
 
-![](media/image104.png)
-
+![](new_images/rna_seq/rna_seq12.png)
+<!--
 After zooming into each individual aligned read the insertions and deletions in
 the respective tracks of the browser become visible.
 
@@ -473,7 +471,7 @@ The *Tophat summary* file shows the total numbers of input reads, mapped reads,
 reads with multiple alignments and the overall read alignment rate.
 
 ![](media/48527fdf4efa87e03c9e388eebe3032c.png)
-
+-->
 The initial alignments are sorted and reordered to prepare the next quality
 checking steps. The results of these two steps are stored in the folder tmp as
 the two files *reorder.bam* and *sorted.bam*.
@@ -503,28 +501,26 @@ the phred quality score currently in the read. Output is a new BAM file
 
 ![](media/333e8c1a2463fe86fdf34093a73e4bba.png)
 
-This file is used for the unified GATK (Genome Analysis Toolkit) [genotyper
-method](https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper)
+This file is used for the unified GATK which is the next step of this workflow (Genome Analysis Toolkit) [genotyper method](https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/gatk/gatk_unified_genotyper)
 to detect the *SNP-indels* (table in VCF format) which the user can visualize by
 double click.
 
-![](media/b7e3acb766acc78d8992b770ec2ba260.png)
+![](new_images/rna_seq/rna_seq13.png)
 
 After Zooming in information of variation on nucleotide basis is shown.
 
-![](media/c85162f36f68ec4ca61dd1d5b927a024.png)
+![](new_images/rna_seq/rna_seq14.png)
 
 In the next step each identified variation (SNP_indels) is analysed with the
 help of the “variant_effect_predictor” algorithm
 
-<https://platform.genexplain.com/bioumlweb/\#de=analyses/Galaxy/ensembl/variant_effect_predictor>
+<https://platform.genexplain.com/bioumlweb/#de=analyses/Galaxy/ensembl/variant_effect_predictor>
 
 As a result it creates a final table that gives detailed information about each variation as shown in the example below:
 
-<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20%28ESCC%29%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20%28Genome%20variants%20and%20indels%20from%20RNA-seq%29/variant%20effects>
+<https://platform.genexplain.com/bioumlweb/#de=data/Examples/RNA-Seq%20analysis%20of%20human%20esophageal%20squamous%20cell%20carcinoma%20(ESCC)%2C%20GSE32424%2C%20FASTQ%20files/Data/SRR349741.fastq%20(Genome%20variants%20and%20indels%20from%20RNA-seq_hg38%20single)/variant%20effects>
 
-
-![](media/image106.png)
+![](new_images/rna_seq/rna_seq1.png)
 
 ### Quantification of RNA-seq with Cufflinks (no de-novo assembly) for FASTQ files
 
@@ -537,7 +533,7 @@ analysis of RNA-seq experiments with TopHat and Cufflinks”, Nat. Protoc.
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/image090.png)
+![](new_images/rna_seq/rna_seq16.png)
 
 **Step 2**. Specify the **Experiment fastq files** and the **Control fastq
 files**.  
@@ -570,7 +566,7 @@ and the alignments.
 
 Example output is opened as track:
 
-![](media/659441a0144931c6353a02c5693f54af.png)
+![](new_images/rna_seq/rna_seq17.png)
 
 Mismatches, insertions and deletions in the alignments can identify
 polymorphisms between the sequenced sample and the reference genome, or even
@@ -628,16 +624,16 @@ analysis of RNA-seq experiments with TopHat and Cufflinks”, Nat. Protoc.
 **Step 1.** Open the workflow input form from the Start page. It will open in
 the main Work Space and looks as shown below:
 
-![](media/5c288c3b321db78b38cf6f9a732f7cb5.png)
+![](new_images/rna_seq/rna_seq18.png)
 
 **Step 2**. Specify the **Experiment fastq files** and the **Control fastq
 files**.  
 To specify the input files in Sanger FASTQ format, you can drag & drop it from
 your project within the tree area.
 
-Step 3. Specify the **Reference annotation**.
+**Step 3.** Specify the **Reference annotation**.
 
-Step 4. Specify the **Reference sequence**.
+**Step 4.** Specify the **Reference sequence**.
 
 **Step 5.** Define where the folder with the results should be located in your
 project tree. You can do so by clicking on the pink field “select element” in
@@ -666,7 +662,7 @@ Example output of splice junctions
 
 opened as track is shown below:
 
-![](media/6658128803c594691ba4c5f9a8cb7c7d.png)
+![](new_images/rna_seq/rna_seq19.png)
 
 Mismatches, insertions and deletions in the alignments can identify
 polymorphisms between the sequenced sample and the reference genome, or even
@@ -687,7 +683,7 @@ variants for a given gene, Cufflinks must be able to infer the splicing
 structure of each gene. Thus, Cufflinks reports a parsimonious transcriptome
 assembly of the data. The algorithm reports as few full-length transcript
 fragments or ‘transfrags’ as are needed to ‘explain’ all the splicing event
-outcomes in the input data. Output tracks of Cufflinks is the **Assembled
+outcomes in the input data. Output tracks of Cufflinks are the **Assembled
 transcripts** track, output tables of Cufflinks are **Gene expression** and
 **Transcript expression** tables.
 
@@ -702,7 +698,7 @@ structure, no known gene or transcript names are given. All transcripts are
 defined by the tracking_id, like Cuff.1.1 and so on. This allows us to find new
 transcripts that were not yet discovered and annotated in the reference genome.
 
-![](media/9dd257adc4ba320dab7ec18d4830ae5f.png)
+![](new_images/rna_seq/rna_seq20.png)
 
 #### Assembled transcripts merging with Cuffmerge
 
@@ -713,8 +709,7 @@ proceeding to differential analysis. Cuffmerge, part of the Cufflinks package
 treats the assembled transfrags the way Cufflinks treats reads, merging them
 together parsimoniously. Output is a **Merged assembly** track.
 
-![](media/image091.png)
-
+![](new_images/rna_seq/rna_seq21.png)
 
 #### Differential analysis with Cuffdiff
 
@@ -739,7 +734,7 @@ to join all resulting gene tables into one table using the function “Join
 several tables” of the platform. The joint table can be used for detection of
 differentially expressed genes using the Limma or EBarrays functions.
 
-![](media/image092.png)
+![](new_images/rna_seq/rna_seq22.png)
 
 It should be noted here that to perform a Limma or EBarray analysis of the
 RNA-Seq data you should select the option *Unnormalized counts* in the input
@@ -765,7 +760,7 @@ contrasts AvsB, AvsC and BvsC.
 It is necessary to provide a unique name for each group. Also, at least two data
 columns are required per group.
 
-![](media/8428c42461f841d87ad0478b3828ed20.png)
+![](new_images/rna_seq/rna_seq23.png)
 
 The input parameters for Limma are described in the following.
 
@@ -783,7 +778,7 @@ automatically.
 column selections are not considered without a corresponding name. Columns can
 only be specified once and there need to be two columns per group.
 
-**Output folder**: The output folder will contain one output files for each pair
+**Output folder**: The output folder will contain one output file for each pair
 of conditions.
 
 An example output table is shown at the end of this section. Its columns are
@@ -823,7 +818,7 @@ groups.
 This tool provides for differential expression analysis using the EBarrays
 package. The platform tool can compare up to five conditions / groups. The
 groups consist of columns of a data table that contains normalized measurement
-values, e.g. from a normalized microarry experiment.
+values, e.g. from a normalized microarray experiment.
 
 EBarrays sets up a mixture model matching the specified groups. Differential
 expression is identified when components for a pattern describe the distribution
@@ -841,7 +836,7 @@ differentially expressed in a condition of interest, e.g. condition named
 the fold change column "condition name FC", which contains the log2-fold
 changes.
 
-![](media/98ec38e52d8361cff898693f6eff55a8.png)
+![](new_images/rna_seq/rna_seq24.png)
 
 The input parameters for EBarrays are described in the following.
 
@@ -863,11 +858,11 @@ the first two groups need to be set.
 **1-5. Is control**: Use this field to mark the control column group. One such
 group is required.
 
-**Output folder**: The output folder will contain one output files for each pair
+**Output folder**: The output folder will contain one output file for each pair
 of conditions.
 
 It is necessary to provide a unique name for each group. Also, at least two data
-columns are required per group and one group needs to be marked as control
+columns are required per group and one group needs to be marked as a control
 group.
 
 Besides the main output table containing differential expression estimates for

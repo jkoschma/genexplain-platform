@@ -1,6 +1,10 @@
 # Drug targets
 
+<!--
 ![](media/image030.png)
+-->
+
+![](new_images/drug_targets/drug_targets1.png)
 
 ## Find drug targets with TRANSFAC® and GeneWays
 
@@ -20,7 +24,11 @@ The geneXplain upstream analysis is an integrated promoter (TRANSFAC®) and path
 
 To launch the workflow, open the workflow input form from the Start page:
 
+<!--
 ![](media/a1ba9fdc93d773960750518260f24fe1.png)
+-->
+
+![](new_images/drug_targets/drug_targets2.png)
 
 **Step 1**: Specify a gene set under study, e.g. a list of differentially
 regulated genes, as the Input Yes gene set. You can drag & drop it from your
@@ -39,7 +47,11 @@ set. The default No set used for this workflow is data/Examples/Sample
 data/Data/Housekeeping genes (Human). If your Yes set is from mouse or rat, you may wish to adjust the No set accordingly. With a mouse click on the field
 **Input No gene set**, a pop-up window will be opened as shown below. You can select mouse or rat housekeeping genes from these pre-compiled sample sets, or you can alternatively select any of your specific gene sets from your project. When selection is done, press [Ok].
 
+<!--
 ![](media/8c1aae35e229b3f0ec7308e847aedaf4.png)
+-->
+
+![](new_images/drug_targets/drug_targets3.png)
 
 **Step 4**: Define a TRANSFAC® profile. The default profile is
 vertebrate_non_redundant_minSUM. Any other TRANSFAC® profile or user-specific profile can be chosen. With a mouse click on the field **Profile**, a pop-up window will open, where a profile can be selected.
@@ -95,7 +107,11 @@ Along with the master regulatory molecules, this workflow returns the results of
 This workflow enables a complete upstream analysis, detecting enriched transcription factor binding sites and resulting in the identification of master
 regulators upstream from the transcriptional regulators. Some master regulators with expression values (fold changes) from the input set are identified (with feedback loop). The results of this workflow include master regulators from all transcription factors and master regulators only with expression values from the input set (=feedback loop). To launch the workflow, open the workflow input form from the Start page:
 
+<!--
 ![](media/20215ad0c38152a11831356ae2314506.png)
+-->
+
+![](new_images/drug_targets/drug_targets1.png)
 
 **Step 1**: Specify a gene set under study, e.g. a list of differentially
 regulated genes, as the Input Yes gene set. You can drag & drop it from your

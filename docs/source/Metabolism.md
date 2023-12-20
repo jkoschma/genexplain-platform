@@ -1,6 +1,6 @@
 # Metabolism
 
-![](media/0fb63da1494f75eac021f7632690e129.png)
+![](new_images/metabolism/metabolism1.png)
 
 ## Analyze metabolic networks
 
@@ -17,7 +17,7 @@ analyses/Methods/Molecular networks/Find longest connected chains.
 
 The input form of the method looks as shown below:
 
-![](media/6aac32763dcb85c70f7dba419b58a34c.png)
+![](new_images/metabolism/metabolism2.png)
 
 **Step 1**: Specify the **Molecules collection**, which can be any molecule,
 protein or gene list.
@@ -36,7 +36,7 @@ reactions or both directions.
 
 **Step 6**: Specify the **Search collection**, which can be one of the drop-down menu shown below.
 
-![](media/b350bec02cf321b9025188e61b5ca6f3.png)
+![](new_images/metabolism/metabolism3.png)
 
 **Step 7**: Specify the biological species of the input set in the field
 **Species** by selecting the desired species from the drop-down menu.
@@ -46,6 +46,7 @@ project tree. You can do so by clicking on the pink box (select element) in the
 field **Output name**, and a new window will open, where you can select the
 location of the results folder and define its name.
 
+<!--
 **Example:**
 
 Input can be found here:
@@ -58,6 +59,11 @@ complete.
 The result is a table which opens by default as shown below:
 
 ![](media/d6ec5e65c439a272a912d51abf738531.png)
+-->
+
+**Example** output will look like this:
+
+![](new_images/metabolism/metabolism4.png)
 
 All chains within the radius 10 are included in the results. You can click on
 each row and visualize the results as shown below:
@@ -77,7 +83,8 @@ downstream or both by taking reactions and all intermediate molecules from a
 specified search collection. To launch the analysis, open the method form from
 the Start page:
 
-![](media/8625f7ed75f09e0432ac57eace3d2712.png)
+![](new_images/metabolism/metabolism5.png)
+![](new_images/metabolism/metabolism6.png)
 
 **Step 1**: Specify the **Molecules collection**, which can be any molecule,
 protein or gene list.
@@ -95,7 +102,7 @@ reactions or both directions.
 **Step 5**: Specify the **Search collection**, which can be one of the drop-down
 menu shown below.
 
-![](media/229d3e222a23fb1fb2bc03f14445bd2d.png)
+![](new_images/metabolism/metabolism7.png)
 
 **Step 6**: Specify the biological species of the input set in the field
 **Species** by selecting the desired species from the drop-down menu.
@@ -109,17 +116,23 @@ location of the results folder and define its name.
 
 To launch this workflow, open the workflow input form from the Start page:
 
-![](media/7e8f6395e0261e272402801af1f2e310.png)
+![](new_images/metabolism/metabolism8.png)
 
 **Step 1**: Specify a gene set under study, e.g. a list of differentially
 regulated genes, as the Input Yes gene set. You can drag & drop it from your
 project within the Tree Area and drop in the pink box of the field **Input gene
 set**.
 
+In this example we analyzed data from this study:
+
+<https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-3017>
+
+<!--
 For this example, all further steps are demonstrated with the following input
 set:
 
 <http://platform.genexplain.com/bioumlweb/#de=data/Examples/Brain%20Tumor%20GSE1825%2C%20Affymetrix%20HG-U133A%20microarray/Data/Ewing%20Family%20Tumor%20versus%20Neuroblastoma/Experiment%20normalized%20(RMA)%20(Differentially%20expressed%20genes%20Affy)/Upregulated%20Ensembl%20genes%20filtered%20>
+-->
 
 **Step 2**: Specify the metabolism database (**MetDB**) by selecting Recon2 or
 HMR from the drop-down menu. As default the Recon2 database is selected.
