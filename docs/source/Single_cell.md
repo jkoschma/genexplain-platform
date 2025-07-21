@@ -8,15 +8,15 @@ This tool identifies **differentially expressed genes (DEGs)** in single-cell RN
 
 ## Inputs 📥
 
-You must provide a metadata file and a folder with single-cell count data. A cell-typing model is mandatory if you do not provide cell types in metadata file. **You should upload all files as generic files.** 
+As input for this method a metadata file and a folder with single-cell count data should be provided. A cell-typing model is mandatory if cell types are not provided in the metadata file. **All files should be uploaded as generic files.** 
 
 * **Metadata File (CSV)**
-    A CSV file with sample metadata. It **must** contain columns for:
+    Sample metadata should be provided in the format of a CSV file. The **obligatory columns** include:
     * **Sample identifiers**.
-    * An experimental group column named `group` or `condition` with the values **'control'** and **'experiment'**.
+    * An experimental group column named `group` or `condition` with the values **'control'** or **'experiment'**.
     * An optional `cell_type` column for annotations. If missing, the tool will perform automatic cell typing.
 
-![](new_images/single_cell/matadata_example.png)
+![](new_images/single_cell/metadata_example.png)
 
 * **Folder with Single-cell RNA Sequencing Data**
     The tool accepts two formats:
@@ -45,7 +45,7 @@ The tool follows a sequential workflow from data loading to analysis.
 * **Differential Expression**: For each cell type, the tool performs DEG analysis.
     * **Primary Method**: Uses **PyDESeq2** on pseudobulk profiles to compare 'experiment' vs 'control'.
     * **Fallback Method**: If `PyDESeq2` fails (e.g., due to low sample counts), it defaults to **Scanpy's `rank_genes_groups`** (Wilcoxon test) on the original single-cell data.
-* **Output Generation**: The final DEG results are saved into separate CSV files for each cell type. Also generates filtered csv file and a **report.csv** file which contains found cell types, number of cells corresponding to each type and a type of analysis which was used.
+* **Output Generation**: The final DEG results are saved into separate CSV files for each cell type. The tool also generates a filtered csv file and a **report.csv** file which contains found cell types, number of cells corresponding to each type, and the type of analysis which was used.
 
 ---
 
@@ -53,7 +53,9 @@ The tool follows a sequential workflow from data loading to analysis.
 
 The tool returns a single **folder** containing the analysis results.
 
-Inside the zip file is one **CSV file per cell type**. The filenames indicate the cell type and the analysis method used (e.g., `T_cells_pseudobulk.csv` or `B_cells_rank_groups.csv`). Also generates filtered csv file and a **report.csv** file which contains found cell types, number of cells corresponding to each type and a type of analysis which was used.
+Inside the zip file there is one **CSV file per cell type**. The filenames indicate the cell type and the analysis method used (e.g., `T_cells_pseudobulk.csv` or `B_cells_rank_groups.csv`). The tool also generates a filtered csv file and a **report.csv** file which contains found cell types, number of cells corresponding to each type, and the type of analysis which was used.
+
+![](new_images/single_cell/output_example.png)
 
 Each CSV file includes:
 * Gene names
