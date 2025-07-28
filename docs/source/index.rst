@@ -20,6 +20,7 @@ Guide
    Drug_targets
    Genomic_variants
    Metabolism
+   Single_cell
    Popular_Functions
    Databases
    Analysis_method_description
