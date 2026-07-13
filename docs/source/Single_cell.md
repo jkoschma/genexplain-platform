@@ -1,7 +1,7 @@
 # Single-cell analysis (v0.0.1)
 
-## Overview 🎯
-
+## Overview 🎯  
+  
 This tool identifies **differentially expressed genes (DEGs)** in single-cell RNA-seq data by comparing experimental conditions. It uses robust **pseudobulk analysis** and **Wilcoxon test**  methods to accurately detect DEGs across different cell types, ensuring reliable biological insights.
 ![](new_images/single_cell/overview.png)
 ---
